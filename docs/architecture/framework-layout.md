@@ -33,8 +33,10 @@ and decisions. The latter cannot flow back into a general release.
 
 ## Intended tree
 
-Except for the source README and architecture documents, the following product,
-overlay, tool, test and distribution paths are **planned**, not existing features.
+Prompt 03 planned the tree below. Prompt 04 implements `KIYO.md` and the shared
+Core files indexed in [control-index](../../src/kiyo/framework/control-index.md),
+plus expected response examples; the README remains developer-only. Remaining
+product, overlay, tool, test and distribution paths are **planned**, not features.
 Create each directory when it receives real scoped content; no empty SKILL.md,
 dummy manifests, .gitkeep forest or initial version is required in Prompt 03.
 
@@ -142,6 +144,6 @@ what the agent reads; [naming and versioning](naming-and-versioning.md) defines
 identity and maintenance. These documents specify the architecture; later
 static, behavioral and live checks must establish that implemented files follow it.
 
-Prompt 03's only source scaffold is [the authoring README](../../src/kiyo/README.md).
-It deliberately exposes no callable skill. No consumer runtime dependency,
+Prompt 03's only source scaffold was [the authoring README](../../src/kiyo/README.md).
+Prompt 04 adds shared Core content without exposing a callable skill. No consumer runtime dependency,
 generator, MCP, hook, service, database, telemetry or Kiyo installer is introduced.

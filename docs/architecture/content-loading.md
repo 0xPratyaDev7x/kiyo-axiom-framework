@@ -43,17 +43,23 @@ network, guess omitted rules or run a generator to repair a consumer install.
 
 ## Context budget selected for authoring
 
-These are **design ceilings**, not measured token counts or native host limits:
+These are **Kiyo design ceilings**, not native host limits or token measurements.
+Prompt 04 adds line budgets and counts the complete mandatory bootstrap chain;
+see [ADR-002](decisions/ADR-002-core-loading-budgets.md). Physical lines include
+blanks/headings/frontmatter; words are whitespace-delimited.
 
 | Layer | Budget and selection rule | Verification planned |
 | --- | --- | --- |
 | Project adapter | At most 250 whitespace-delimited words per Kiyo-owned block | Static count after rendering, excluding existing human instructions |
-| Product `KIYO.md` | At most 600 whitespace-delimited words; short routing/authority/context guidance | Static count plus manual assessment of completeness |
-| Selected SKILL.md | At most 1,200 whitespace-delimited words including its entry and contract | Static count; move long reusable content to shared files |
+| Product bootstrap | `KIYO.md` plus mandatory `framework/bootstrap.md`, combined at most 120 lines and 600 words | Static count plus manual assessment of completeness; no hidden mandatory includes |
+| Selected SKILL.md | At most 250 lines and 1,200 words including native frontmatter, entry and contract | Static count after rendering; move long reusable content to relevant references |
 | Task references | Read named applicable sections only; record inspected scope and material omissions | Behavioral trace of actual reads; no claim that a fixed word count measures model tokens |
 
 Do not evade these ceilings by hiding required initial text in an unbounded include.
-If safety-relevant content cannot fit, revise the budget with an ADR and evidence.
+If content exceeds a ceiling, split genuinely conditional references or record
+the reason, measured size, impact and scoped exception in an ADR. No current
+exception is authorized. The actual Core protocol is
+[context-loading](../../src/kiyo/framework/context-loading.md).
 Near a host context limit, produce the authorized handoff with task intent, known
 facts, unresolved decisions, inspected paths, actual check results and next step.
 Host truncation and model tokenization require later target tests.

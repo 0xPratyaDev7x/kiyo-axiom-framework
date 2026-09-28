@@ -26,6 +26,12 @@ build state and stop before Prompt 04. The selected technical design is recorded
 on 2026-09-29 in [ADR-001](../architecture/decisions/ADR-001-static-canonical-packages.md).
 This authorizes architecture choices, not publication identities or later prompts.
 
+Prompt 04 was subsequently authorized on 2026-09-29: implement compact shared
+Core and expected responses, check/update build state and stop before Prompt 05.
+[ADR-002](../architecture/decisions/ADR-002-core-loading-budgets.md) records the
+requested line ceilings and retains existing word budgets over the complete
+mandatory bootstrap. No publication authority or host enforcement is added.
+
 ## Pending owner decisions
 
 | ID | Decision | Current evidence / status | Who decides | Latest needed / effect | Resolution evidence |
@@ -36,7 +42,7 @@ This authorizes architecture choices, not publication identities or later prompt
 | DEC-004 | Treatment of Codex IDE native-plugin support gap | OPEN. Official [plugin documentation](https://learn.chatgpt.com/docs/plugins) excludes IDE plugins; [skills documentation](https://learn.chatgpt.com/docs/build-skills) supports standalone IDE skills. Checked 2026-09-28; DOCUMENTED_ONLY, live NOT_TESTED | Repository/product owner | Before promising six-target native installation or accepting a standalone fallback; does not block Prompt 03 design of documented surfaces | No fallback or scope reduction approved |
 
 Ask only when an unresolved choice blocks the current authorized prompt. Existing
-instructions authorize Prompt 03 architecture and build-state updates. Do not ask for
+instructions authorize Prompt 04 Core and build-state updates. Do not ask for
 premature publication decisions to complete that scope. Publication metadata still
 requiring confirmation is listed in [SOURCES](../research/SOURCES.md#publication-information-still-requiring-the-owner).
 

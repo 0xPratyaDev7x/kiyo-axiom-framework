@@ -1,8 +1,10 @@
 # Kiyo canonical source — authoring scaffold
 
 This directory is reserved for the single authored Kiyo product specification.
-Prompt 03 creates only this non-runtime authoring note. Core and skills are not
-implemented, discoverable or installable yet.
+Prompt 03 created this non-runtime authoring note. Prompt 04 adds
+[KIYO.md](KIYO.md), shared Core instructions, the control index and expected
+response examples under framework/. Skills/native packages are not implemented
+or installable yet; Core behavior on hosts remains untested.
 
 Follow [framework layout](../../docs/architecture/framework-layout.md),
 [content loading](../../docs/architecture/content-loading.md) and

@@ -205,3 +205,63 @@ The change set is five architecture documents, one source authoring README and
 six build-state updates. No package, runtime, empty skill, manifest, generator,
 commit, tag, push or publication was created. Memory Impact: build continuity
 and ADR only; project memory is not initialized or modified.
+
+## Prompt 04 repository observation
+
+Observed 2026-09-29 (Asia/Bangkok). Root:
+C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework.
+Branch main; HEAD 73972148ba6705c915a01195972acac4fc09482a
+(feat: Add architecture documentation for Kiyo Compass).
+Initial status, staged and unstaged diff statistics were empty. Prompt 03 was
+committed before this work. Inventory contained LICENSE and 19 Markdown files:
+eight build, five research/compatibility, five architecture and source README.
+No applicable AGENTS.md found in repository or inspected ancestors; no .kiyo
+memory present. Scoped safe.directory and empty core.excludesFile were used
+without persistent configuration changes.
+
+Read the Build Contract, Progress, Handoff, issues/decisions, relevant requirements,
+traceability and architecture, plus the dated activation research. Prompt 04
+introduces no new host-specific API/schema claim and performs no external source
+revalidation or CLI/IDE/account availability inspection.
+
+## Prompt 04 checks
+
+Executed 2026-09-29 with inline Python/PowerShell, read-only Git commands and
+manual self-review. These validate authored Core text and build records, not
+agent compliance. No persistent test script, generator or dependency was added.
+
+| Check ID | Method / scope | Actual result | Evidence / limitation |
+| --- | --- | --- | --- |
+| P04-C01 | Root/branch/HEAD, initial worktree/index/diffs, scoped file and instruction inventory | PASS | Initial tree/index clean at main/73972148ba6705c915a01195972acac4fc09482a; 19 Markdown files plus LICENSE before work; no applicable AGENTS.md found. No remote freshness or host/account inspection claimed. |
+| P04-C02 | Inline Python: strict UTF-8, nonempty additions, conflict/NUL/replacement checks, source inventory, control index and knowledge/status labels | PASS | 27 Markdown files inspected; seven Core files; 16 unique control IDs; all used IDs registered; ten numbered principles; five knowledge classes and five check states present. ACTIVE is authored text, not tested enforcement. |
+| P04-C03 | Inline Python: resolve local links/anchors, enforce Core resource closure, prohibit absolute developer paths and reparse/symlink Core files | PASS | 458 local links/anchors resolve; all 29 Core links stay within the seven Core files. No operational dependency on developer docs/README, scripts or outside files. This checks source references, not installed cache relocation or a native package. |
+| P04-C04 | Physical-line/whitespace-word counts and manual relevance/loading review | PASS | KIYO.md 22 lines / 110 words; bootstrap.md 59 / 469; combined 81 / 579, within 120 / 600. Mandatory baseline is bounded; remaining references conditional. Future SKILL.md ceiling 250 lines / 1,200 words is defined but measurement NOT_RUN because no SKILL.md exists. These are Kiyo criteria, not vendor limits. |
+| P04-C05 | Manual self-review of all ten principles, trust/authority boundaries and requested expected cases; inline example-ID check | PASS | EX-01 README credential request denied; EX-02 memory self-elevation rejected; EX-03 review findings without repair; EX-04 tiny typo with focused scope/check; EX-05 automatic-loading limitation. EX-06 approved-intent conflict and EX-07 local/identity/unrun-check uncertainty supplement them. All seven are explicitly synthetic expected behavior, not executed tests or independent audit evidence. |
+| P04-C06 | Inline Python: registry/traceability, state/roadmap/handoff consistency, issue/decision identity; manual resume review | PASS | 80 contiguous requirement/table IDs, ten trace columns, planned TC IDs preserved; 32 Core instruction rows plus REQ-080 updated; 38 PARTIALLY_IMPLEMENTED, 42 NOT_IMPLEMENTED, all 80 full verifications NOT_RUN. Four pending decisions/nine issues retained. Prompt 04 DONE, Prompt 05 NOT_STARTED; safe continuation scoped to requested Memory work. |
+| P04-C07 | Inline Python plus Git: exact diff/untracked allowlists, index/HEAD, protected files/LICENSE and whitespace | PASS | Eight new and ten modified Markdown files only. LICENSE blob remains d2e60c5b160ed4f9ca096215e72efee5769936b1; REQUIREMENTS, BUILD-CONTRACT, Prompt 02 research/compatibility, packaging contract and ADR-001 unchanged; index empty and main/HEAD unchanged. git diff --check and new-file whitespace scan passed. No product memory or runtime paths created. |
+
+The initial size measurement found 659 combined bootstrap words; the entry was
+shortened to 579 without removing the ten principles or granting an exception.
+The full validator passed, then passed again after status/trace updates with
+explicit Prompt 04 DONE / Prompt 05 NOT_STARTED closure assertions. Git displayed
+LF-to-CRLF normalization notices for edited existing Markdown; diff checks still
+passed and no global configuration was changed.
+
+For reproducibility, validate the seven product paths linked in PROGRESS plus
+ADR-002 as the new-file set. The modified set is six build records (PROGRESS,
+HANDOFF, TRACEABILITY, OPEN-ISSUES, DECISIONS, BASELINE), source README and three
+architecture contracts (layout, loading, naming). Resolve local Markdown links
+and anchors outside fenced examples, require every Core target to remain inside
+the seven-file Core set, compare all KIYO control references with the 16 index
+rows, count physical lines and whitespace words, and parse the 80-row trace table.
+Read-only Git checks used diff --check, diff --name-only, diff --cached,
+ls-files --others --exclude-standard and hash-object -- LICENSE with the scoped
+overrides above. Expected prose responses are never executed by this validator.
+
+Static Core content validation: PASS within the scopes above. Native package
+validation: NOT_RUN (no package). Behavioral evaluation: NOT_RUN.
+Live native tests: NOT_TESTED for each of the six targets; no activation result
+is inferred from this editing session. Seven product Markdown files and one ADR
+are new; ten existing Markdown files change. No public skill, manifest, package,
+hook, runtime, install, commit, tag, push or publication was created/performed.
+Memory Impact: build continuity/ADR only; no project memory created or changed.

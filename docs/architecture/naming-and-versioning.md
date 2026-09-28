@@ -31,10 +31,11 @@ unsupported Codex IDE plugin route. Revalidate before implementing aliases.
 ## Stable controls independent of standards
 
 Core control IDs use `KIYO-<DOMAIN>-<NNN>`, with uppercase domain and a stable
-three-digit number, for example **KIYO-FACT-001**. The initial domain vocabulary
-and complete rule text will be introduced in Prompt 04's planned
-`src/kiyo/framework/control-index.md`. The example ID is reserved as a design
-example here, not evidence that its control is implemented.
+three-digit number, for example **KIYO-FACT-001**. Prompt 04 introduces the initial
+16-control vocabulary and canonical definitions through
+[control-index](../../src/kiyo/framework/control-index.md). ACTIVE means authored
+instruction, not behavioral verification; the original design example is now
+the evidence/knowledge-class control.
 
 Each registered control records its title, normative Markdown location, related
 REQ IDs, status and replacement/deprecation link when relevant. One ID has one

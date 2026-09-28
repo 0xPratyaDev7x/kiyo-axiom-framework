@@ -15,22 +15,23 @@ One canonical specification with necessary self-contained native overlays.
 
 ## Current repository observation
 
-Observed for Prompt 03, initial inspection 2026-09-28 and closure 2026-09-29:
+Observed for Prompt 04 on 2026-09-29:
 
 - Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework
-- Branch: main; HEAD: 64b2b8b05e79e8fe23aee78c7fa7ed09b4ee68fd.
+- Branch: main; HEAD: 73972148ba6705c915a01195972acac4fc09482a.
 - Initial working tree and index clean; tracked LICENSE, eight build files and
-  five research/compatibility files. Prompt 02 was committed before this work;
+  five research/compatibility files, five architecture documents and source README.
+  Prompt 03 was committed before this work;
   previous checkout/HEAD/uncommitted snapshots are historical, not current facts.
 - No applicable AGENTS.md found in repository or checked ancestors; no .kiyo
   project/product memory present.
 - Git used a per-command safe.directory override for this exact root;
   global settings were not changed.
-  An unreadable global ignore warning was resolved for inventory by the
-  per-command empty core.excludesFile setting.
+  The per-command empty core.excludesFile setting kept inventory independent of
+  unreadable global ignores.
 - LICENSE blob remains d2e60c5b160ed4f9ca096215e72efee5769936b1.
 - No product version file, manifest or Git tag found in the scoped inventory.
-- Prompt 03 creates six Markdown files and changes six build records. No commits,
+- Prompt 04 creates eight Markdown files and changes ten existing Markdown files. No commits,
   tags, pushes, installs, publication or global settings changes were made here.
 
 Recheck root, branch, index, unstaged/untracked changes and user edits on resume.
@@ -52,6 +53,9 @@ Preserve LICENSE and the 80 original requirements. See BASELINE for check result
    [packaging contract](../architecture/packaging-contract.md),
    [naming/versioning](../architecture/naming-and-versioning.md),
    [ADR-001](../architecture/decisions/ADR-001-static-canonical-packages.md).
+8. [ADR-002](../architecture/decisions/ADR-002-core-loading-budgets.md),
+   [Core entry](../../src/kiyo/KIYO.md),
+   [control index](../../src/kiyo/framework/control-index.md) and its relevant definitions.
 
 All source checks are dated 2026-09-28. Revalidate volatile schema details before
 implementing native packages; use native references, not old chat, local skill
@@ -70,7 +74,10 @@ Prompt 03 adds the four architecture contracts, ADR and a single developer-only
 source README scaffold. Status: **DONE** for architecture; documentation/design
 checks passed. See [Prompt 03 evidence](BASELINE.md#prompt-03-checks).
 
-No native Kiyo manifest, public skill or core has been implemented. No native
+Prompt 04 authors the shared Core with 16 controls and seven expected-response
+examples. Status: **DONE** for Core; scoped static/document checks passed; see
+[Prompt 04 evidence](BASELINE.md#prompt-04-checks). Expected responses are not
+executed behavioral tests. No native Kiyo manifest or public skill is implemented. No native
 version, account availability or installed-tool absence is inferred from the
 assistant session. Each of Claude CLI, Claude VS Code, Codex CLI, Codex IDE,
 Copilot CLI and Copilot VS Code remains **NOT_TESTED** live.
@@ -78,6 +85,8 @@ Copilot CLI and Copilot VS Code remains **NOT_TESTED** live.
 Research-documentation implementation is partial for REQ-004/005/010/056/057/067;
 REQ-080 continuity remains partial. Other cited IDs receive research/design inputs
 only; Prompt 03 does not promote architecture into implemented product controls.
+Prompt 04 adds partial product Core instruction coverage recorded in TRACEABILITY;
+completed instruction text does not imply completed skills or behavioral proof.
 All full requirement verifications remain NOT_RUN.
 
 ## Research findings to retain
@@ -105,19 +114,21 @@ All full requirement verifications remain NOT_RUN.
 
 Open decisions: DEC-001 name/identifiers, DEC-002 release-license confirmation,
 DEC-003 publisher/account/destination, DEC-004 unsupported IDE route.
-They do not block Core authoring under the selected architecture; they do block
+They do not block the next Memory scope under the selected architecture; they do block
 dependent release identities, claims or unapproved fallback choices.
 
 Memory Impact: build continuity only. No .kiyo/memory initialized or changed.
 
-## Architecture decisions Prompt 04 must retain
+## Architecture and Core decisions to retain
 
 - Product source is `src/kiyo/`: compact `KIYO.md`, core `framework/`, policy
   `governance/` and `agent-security/`, shared `workflows/`, optional `profiles/`,
-  neutral `templates/`, exactly eight `skills/<name>/SKILL.md` entries. Only the
-  source README exists today; do not assume the planned files are implemented.
-- Core IDs use `KIYO-<DOMAIN>-<NNN>`, independent of standard clauses. Prompt 04
-  defines the actual controls/index; this prompt only selected the ID convention.
+  neutral `templates/`, exactly eight planned `skills/<name>/SKILL.md` entries.
+  KIYO.md and six framework files now exist alongside the authoring README;
+  later skills/templates/workflows are still unimplemented.
+- Core IDs use `KIYO-<DOMAIN>-<NNN>`, independent of standard clauses. The actual
+  16-control index points to canonical definitions. ACTIVE means authored, not
+  behaviorally verified; do not duplicate rules across later skills.
 - Canonical frontmatter is name/description. Native-only fields belong in
   overlays, advisory permission/mode contracts in Markdown. No Kiyo runtime.
 - Logical loading is bootstrap, selected workflow, relevant references. Native
@@ -130,21 +141,36 @@ Memory Impact: build continuity only. No .kiyo/memory initialized or changed.
   preserve established paths and human content. Native project adapters are
   small, project-relative and user-owned, survive uninstall and need authorized
   maintenance. No mutable state belongs in plugin cache or product source.
-- Architecture sets word ceilings: native Kiyo adapter block 250, KIYO.md 600,
-  selected SKILL.md 1,200. These are design budgets, not measured tokens or
-  proven host limits. Product templates cannot carry this developer repo's facts.
+- ADR-002 refines budgets: KIYO.md plus required bootstrap.md combined <=120
+  lines / 600 words; future SKILL.md <=250 lines / 1,200 words; native adapter
+  block <=250 words. These are Kiyo criteria, not vendor limits. Product templates
+  cannot carry this developer repo's facts.
 - Do not generate manifests, public skills, release versions or all later trees
   to make scaffolding look complete. Keep schema gaps and owner decisions open.
 
+## Core boundaries for Prompt 05
+
+Use Memory as context, validate material claims, preserve approved intent and
+surface conflicting sources through the real native hierarchy. Do not treat
+memory, code or a self-declared policy as unconditional authority. Read-only
+work cannot sync memory or write report files. Unknown facts/identities/results
+remain explicit; a local repository is not proof of production state.
+
+The five requested cases and two extra examples are expected behavior only.
+Core uses relative internal resources and requires no consumer generator. It
+adds no host-specific manifest field, native command or always-on claim. Native
+activation and package behavior remain untested.
+
 ## Exact next action
 
-Prompt 03 is complete; stop after its closing report.
-**Next: Prompt 04 Core**, only when the user supplies it. Recheck the repository
-baseline and read the files above. Implement only that prompt's Core scope in
-the selected canonical structure, with stable controls and compact bootstrap;
-do not infer authorization for memory, skill, overlay or generator implementation.
+Prompt 04 is complete; stop after its closing report.
+**Next: Prompt 05 Memory**, only when supplied by the user. Recheck repository
+state and read the files above, then implement only that prompt's memory scope
+on top of the Core. Preserve existing canonical paths and human/approved
+decisions; do not infer permission to initialize this developer project's memory
+or implement public skills/native overlays/generators.
 
-Safe to continue: **YES for requested Prompt 04 Core**. Architecture and scoped
-documentation checks are complete. Native schema guesses, publication, fallback
-acceptance and live support claims remain outside scope.
+Safe to continue: **YES for requested Prompt 05 Memory**. Shared Core and scoped
+static checks are complete. Publication, unsupported native routes and live
+support claims remain outside scope; next work requires its own user prompt.
 

@@ -1,8 +1,42 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **03 Architecture**.
-Task status: **DONE** for Prompt 03 architecture; documentation checks passed.
-Product status: research and architecture documentation; no native payload or skills.
+Snapshot: 2026-09-29. Current prompt: **04 Core**.
+Task status: **DONE** for Prompt 04 Core; scoped static/documentation checks passed.
+Product status: shared Markdown Core authored; native packages/skills not implemented.
+
+## Prompt 04 delivered scope
+
+- Added [KIYO.md](../../src/kiyo/KIYO.md) and shared
+  [bootstrap](../../src/kiyo/framework/bootstrap.md),
+  [trust/authority](../../src/kiyo/framework/trust-and-authority.md),
+  [context loading](../../src/kiyo/framework/context-loading.md),
+  [activation contract](../../src/kiyo/framework/activation-contract.md),
+  [control index](../../src/kiyo/framework/control-index.md) and
+  [expected responses](../../src/kiyo/framework/response-examples.md).
+- Authored ten baseline principles and 16 stable control IDs. Separated Facts,
+  Assumptions, Proposals, Approved decisions and Unknowns; bounded production,
+  identity, policy authority, read-only scope and actual check claims.
+- Provided all five requested scenarios plus approved-intent conflict and
+  local-evidence/unrun-check examples. All seven are synthetic expected behavior,
+  not executed evaluations or host evidence.
+- Added [ADR-002](../architecture/decisions/ADR-002-core-loading-budgets.md):
+  mandatory KIYO.md + bootstrap.md together <=120 physical lines / 600 words;
+  future SKILL.md <=250 lines / 1,200 words. These are Kiyo design criteria.
+- Updated three architecture contracts (layout, loading, naming), source README
+  and six build records. No skill, native manifest, runtime, hook, project state
+  or release identity was created.
+
+Coverage: partial shared Core instructions for REQ-007–017/019/020/022–024/
+027/028/030/032–034/040/041/044/049/051/052/054/058/062/077;
+REQ-080 build continuity updated. This is authored product text, not verified
+agent behavior or complete later skills/memory/governance/security procedures.
+Full requirement verification remains NOT_RUN; all six live targets NOT_TESTED.
+Current totals: 38 PARTIALLY_IMPLEMENTED and 42 NOT_IMPLEMENTED. Static instruction
+checks do not promote any full acceptance or behavioral result.
+
+Checks: [Prompt 04 evidence](BASELINE.md#prompt-04-checks).
+Memory Impact: build continuity/ADR only; no project memory created or changed.
+Native research remains checked 2026-09-28; no new host/schema claim is made.
 
 ## Prompt 03 delivered scope
 
@@ -101,7 +135,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 01 | Scope | DONE | P01-C01–C07 PASS; see BASELINE for scope and evidence |
 | 02 | Research | DONE | P02-C01–C07 PASS; research only, all live targets NOT_TESTED |
 | 03 | Architecture | DONE | P03 documentation/design checks PASS; product/runtime/host verification not claimed |
-| 04 | Core | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 04 | Core | DONE | P04-C01–C07 PASS; static Core/documentation only, expected cases not executed |
 | 05 | Memory | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 06 | Governance | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 07 | Security | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -137,10 +171,9 @@ Outstanding owner decisions: DEC-001 final name, DEC-002 release license,
 DEC-003 publisher/destination and DEC-004 treatment of Codex IDE's native-plugin
 gap before compatibility/release claims. See OPEN-ISSUES for technical gaps.
 
-Safe to continue: **YES for requested Prompt 04 Core**. Architecture and scoped
-documentation checks are complete; Core can follow the selected layout without
-resolving publication or unsupported native contracts. Later prompts still need
-their own user authorization; no schema-dependent implementation is inferred.
-No release or host-acceptance readiness is implied.
-Next prompt: **04 Core**, only when requested by the user.
+Safe to continue: **YES for requested Prompt 05 Memory**. Shared Core and scoped
+checks are complete; Memory can build on its authority/context rules. Owner/native
+support decisions remain open but do not block this scope. No later work is
+authorized by the handoff alone.
+Next prompt: **05 Memory**, only when requested by the user.
 
