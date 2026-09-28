@@ -15,13 +15,14 @@ One canonical specification with necessary self-contained native overlays.
 
 ## Current repository observation
 
-Observed for Prompt 05 on 2026-09-29:
+Observed for Prompt 06 on 2026-09-29:
 
 - Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework
-- Branch: main; HEAD: b05f709fcad6836aa1fecc84175c3143c6cc9792.
+- Branch: main; HEAD: d18fe4d674489ad49d6850bc508e70ef7cf0c4a6.
 - Initial working tree and index clean; tracked LICENSE, eight build files and
-  five research/compatibility files, six architecture documents, source README and
-  seven Core files (27 Markdown files total). Prompt 04 was committed before this work;
+  five research/compatibility files, six architecture documents, source README,
+  17 product files and one Memory scenario specification (38 Markdown files total).
+  Prompt 05 was committed before this work;
   previous checkout/HEAD/uncommitted snapshots are historical, not current facts.
 - No applicable AGENTS.md found in repository or checked ancestors; no .kiyo
   project/product memory present.
@@ -31,7 +32,7 @@ Observed for Prompt 05 on 2026-09-29:
   unreadable global ignores.
 - LICENSE blob remains d2e60c5b160ed4f9ca096215e72efee5769936b1.
 - No product version file, manifest or Git tag found in the scoped inventory.
-- Prompt 05 creates eleven Markdown files and changes twelve existing Markdown files. No commits,
+- Prompt 06 creates ten Markdown files and changes eleven existing Markdown files. No commits,
   tags, pushes, installs, publication or global settings changes were made here.
 
 Recheck root, branch, index, unstaged/untracked changes and user edits on resume.
@@ -60,6 +61,8 @@ Preserve LICENSE and the 80 original requirements. See BASELINE for check result
    [shared lifecycle](../../src/kiyo/workflows/memory-lifecycle.md), relevant
    [templates](../../src/kiyo/framework/memory-specification.md#template-catalog) and
    [scenario specifications](../../tests/behavioral/memory/scenarios.md).
+10. [Governance entry/procedure](../../src/kiyo/governance/ai-usage.md), relevant
+    linked policies and [decision examples](../../src/kiyo/governance/decision-examples.md).
 
 All source checks are dated 2026-09-28. Revalidate volatile schema details before
 implementing native packages; use native references, not old chat, local skill
@@ -87,8 +90,14 @@ Prompt 05 authors the Memory specification, shared lifecycle and eight templates
 plus 20 developer-only scenario specifications. Status: **DONE** for Memory;
 scoped static checks passed; see [Prompt 05 evidence](BASELINE.md#prompt-05-checks).
 Memory scenarios are NOT_RUN; no watcher/database/runtime or populated project
-memory was created. No native
-version, account availability or installed-tool absence is inferred from the
+memory was created.
+
+Prompt 06 adds nine governance policies and 18 synthetic decision examples,
+with nine additional controls (31 total). Status: **DONE** for governance;
+scoped static checks passed; see [Prompt 06 evidence](BASELINE.md#prompt-06-checks). No policy
+engine, native settings, runtime or dangerous execution is introduced.
+
+No native version, account availability or installed-tool absence is inferred from the
 assistant session. Each of Claude CLI, Claude VS Code, Codex CLI, Codex IDE,
 Copilot CLI and Copilot VS Code remains **NOT_TESTED** live.
 
@@ -99,6 +108,8 @@ Prompt 04 adds partial product Core instruction coverage recorded in TRACEABILIT
 completed instruction text does not imply completed skills or behavioral proof.
 Prompt 05 adds shared Memory coverage; totals are 41 PARTIALLY_IMPLEMENTED and
 39 NOT_IMPLEMENTED. REQ-068/074 have scenario inputs only; future skills are absent.
+Prompt 06 adds shared governance coverage; current totals are 48 PARTIALLY_IMPLEMENTED
+and 32 NOT_IMPLEMENTED. Dependency-policy input does not complete REQ-059 release checks.
 All full requirement verifications remain NOT_RUN.
 
 ## Research findings to retain
@@ -126,7 +137,7 @@ All full requirement verifications remain NOT_RUN.
 
 Open decisions: DEC-001 name/identifiers, DEC-002 release-license confirmation,
 DEC-003 publisher/account/destination, DEC-004 unsupported IDE route.
-They do not block the next Governance scope under the selected architecture; they do block
+They do not block the next Security scope under the selected architecture; they do block
 dependent release identities, claims or unapproved fallback choices.
 
 Memory Impact: **NONE for project memory**. Build continuity/specification choices
@@ -138,10 +149,11 @@ are recorded in docs/build; no .kiyo/memory initialized or changed.
   `governance/` and `agent-security/`, shared `workflows/`, optional `profiles/`,
   neutral `templates/`, exactly eight planned `skills/<name>/SKILL.md` entries.
   Core now includes the Memory specification and shared lifecycle; eight neutral
-  Memory templates exist. Other workflows/templates and all public skills remain
-  unimplemented. Do not mistake synthetic scenarios for executed behavior.
+  Memory templates and governance policies/shared review procedure now exist.
+  Other workflows/templates and all public skills remain unimplemented. Do not mistake synthetic scenarios for executed behavior.
 - Core IDs use `KIYO-<DOMAIN>-<NNN>`, independent of standard clauses. The actual
-  22-control index points to canonical definitions (16 Core plus six new Memory IDs). ACTIVE means authored, not
+  31-control index points to canonical definitions (16 Core, six Memory and nine
+  governance IDs). ACTIVE means authored, not
   behaviorally verified; do not duplicate rules across later skills.
 - Canonical frontmatter is name/description. Native-only fields belong in
   overlays, advisory permission/mode contracts in Markdown. No Kiyo runtime.
@@ -162,7 +174,7 @@ are recorded in docs/build; no .kiyo/memory initialized or changed.
 - Do not generate manifests, public skills, release versions or all later trees
   to make scaffolding look complete. Keep schema gaps and owner decisions open.
 
-## Core and Memory boundaries for Prompt 06
+## Core, Memory and governance boundaries for Prompt 07
 
 Use Memory as context, validate material claims, preserve approved intent and
 surface conflicting sources through the real native hierarchy. Do not treat
@@ -190,16 +202,34 @@ existing IDs/paths and approved intent. Mapperly decision versus actual
 AutoMapper usage is Architecture Drift, not permission to change the decision.
 All 20 scenarios remain NOT_RUN; no Init/Memory public skill was built.
 
+Governance G1 Observe / G2 Assist / G3 Controlled / G4 Restricted are Kiyo's
+advisory model, not ISO/NIST levels or native settings. Risk is separate and
+assesses action, target, environment, data sensitivity, reversibility, blast
+radius, affected users and uncertainty. Unknown risk is unassigned, not LOW.
+
+Approval requests include action, files/resources, environment, effects, risk
+and reason, alternatives, rollback/reversibility and excluded actions. Reuse
+valid explicit scope; reassess expansion. No AI/PM agent substitutes for a human.
+Organization prohibitions and native denial survive ordinary confirmation.
+G4 execution is not performed by default, even when preparations are allowed.
+
+Data classification is content/policy-based. Provider/account/model and handling
+claims require evidence; Enterprise is not assurance. Kiyo is not DLP/egress
+control and cannot guarantee that no data was sent before loading policy.
+Read-only and test labels do not prove safety; dependency addition is not
+always HIGH; migration drafting is not applying to production. All 18 examples
+remain NOT_RUN and express expected decisions, not agent/host test outcomes.
+
 ## Exact next action
 
-Prompt 05 is complete; stop after its closing report.
-**Next: Prompt 06 Governance**, only when supplied by the user. Recheck the
-repository and read the files above, then implement only that prompt's governance
-scope under actual native authority and the established Core/Memory contracts.
-Do not initialize developer-project memory or infer authorization for native
-overlays, public skills, generators or release work.
+Prompt 06 is complete within its static policy/documentation scope; stop here.
+**Next: Prompt 07 Security**, only when supplied by the user. Recheck the
+repository and read the files above; implement only that prompt's security scope,
+reusing the canonical Core/Memory/governance rules and actual host authority.
+Do not infer authorization for dangerous execution, project policy/memory
+initialization, public skills, native overlays, generators or release work.
 
-Safe to continue: **YES for requested Prompt 06 Governance**. Shared Memory
-content and scoped static checks are complete. Publication, unsupported native
-routes and live support claims remain outside scope; await its user prompt.
+Safe to continue: **YES for a user-requested Prompt 07 Security**. Its shared
+Core/Memory/governance inputs are ready. Publication, unsupported native routes,
+dangerous execution and live support claims remain outside scope.
 

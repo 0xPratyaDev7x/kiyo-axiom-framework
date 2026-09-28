@@ -2,6 +2,9 @@
 
 These are Kiyo advisory controls, not a new permission system. Use only the
 sections relevant to an unresolved evidence, authority or intent question.
+For concrete governance decisions, consult the relevant
+[AI usage procedure and policy references](../governance/ai-usage.md); do not
+load every policy for a low-impact task.
 
 ## KIYO-FACT-001 — Evidence and knowledge classes
 

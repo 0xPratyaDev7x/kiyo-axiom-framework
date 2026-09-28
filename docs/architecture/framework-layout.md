@@ -37,6 +37,8 @@ Prompt 03 planned the tree below. Prompt 04 implements `KIYO.md` and the shared
 Core files indexed in [control-index](../../src/kiyo/framework/control-index.md),
 plus expected response examples. Prompt 05 adds the Memory specification,
 shared lifecycle and eight templates, with developer-only scenario specifications.
+Prompt 06 adds nine governance policies, the shared Governance Review procedure
+and 18 expected decision examples under governance/; no policy engine is added.
 The README remains developer-only. Remaining
 product, overlay, tool, test and distribution paths are **planned**, not features.
 Create each directory when it receives real scoped content; no empty SKILL.md,
@@ -149,5 +151,5 @@ identity and maintenance. These documents specify the architecture; later
 static, behavioral and live checks must establish that implemented files follow it.
 
 Prompt 03's only source scaffold was [the authoring README](../../src/kiyo/README.md).
-Prompts 04–05 add shared Core/Memory content without exposing a callable skill. No consumer runtime dependency,
+Prompts 04–06 add shared Core/Memory/governance content without exposing a callable skill. No consumer runtime dependency,
 generator, MCP, hook, service, database, telemetry or Kiyo installer is introduced.

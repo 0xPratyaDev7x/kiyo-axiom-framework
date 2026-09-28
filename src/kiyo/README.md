@@ -9,6 +9,9 @@ or installable yet; Core behavior on hosts remains untested. Prompt 05 adds the
 [shared lifecycle](workflows/memory-lifecycle.md) and eight neutral topic templates
 under templates/memory/. These are product instructions, not this developer
 project's populated memory. Behavioral scenarios remain specifications only.
+Prompt 06 adds [Markdown governance policies](governance/ai-usage.md) and
+[expected decision examples](governance/decision-examples.md), without a policy
+engine or native permission configuration.
 
 Follow [framework layout](../../docs/architecture/framework-layout.md),
 [content loading](../../docs/architecture/content-loading.md) and

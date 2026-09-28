@@ -327,3 +327,62 @@ is claimed from prose scenarios. Eleven new and twelve modified Markdown files;
 no public skill, package, runtime, install, commit, tag, push or publication.
 Memory Impact: NONE for project memory; build continuity is updated in docs/build,
 without initializing or modifying a canonical project-memory store.
+
+## Prompt 06 repository observation
+
+Observed 2026-09-29 (Asia/Bangkok). Root:
+C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework.
+Branch main; HEAD d18fe4d674489ad49d6850bc508e70ef7cf0c4a6
+(Add templates and workflows for Memory specification).
+Initial status, index and staged/unstaged diff statistics were empty. Prompt 05
+was committed before this work. Inventory: LICENSE plus 38 Markdown files.
+No applicable AGENTS.md in repository/checked ancestors, no .kiyo project memory
+and no Git tags found. Read-only Git uses scoped exact-root safe.directory and
+empty core.excludesFile, not persistent settings changes.
+
+Read Build Contract, Core, Memory specification, build state and relevant
+governance requirements/architecture. No current provider/account/package claims,
+external research refresh, native schema configuration or dangerous operation
+is introduced by this authoring task.
+
+## Prompt 06 checks
+
+Executed 2026-09-29 (Asia/Bangkok), against the Prompt 06 working tree. PASS below
+means the stated static authoring/consistency check passed, not that an agent
+followed a policy or a host enforced it. An inline Python validator and read-only
+Git commands were run; no consumer tool or persistent policy engine was added.
+
+| Check | Result | Actual evidence and limitation |
+| --- | --- | --- |
+| P06-C01 Repository and context | PASS | Verified main, HEAD d18fe4d674489ad49d6850bc508e70ef7cf0c4a6, initial clean index/worktree and 38-Markdown baseline. Read Build Contract, Core, Memory specification/lifecycle, build state and relevant requirements/architecture. Repository evidence only; no production/provider-state inference. |
+| P06-C02 Files and controls | PASS | Strict UTF-8/conflict-marker checks across 48 Markdown files; 27 product Markdown files excluding developer README. Exactly nine governance policies plus decision-examples.md, all nonempty; 31 unique indexed controls with all product references accounted for, including nine new canonical definitions. Checks content structure, not instruction compliance. |
+| P06-C03 Policy semantics | PASS | Checked four Kiyo governance modes separately from four risk ratings and eight assessment dimensions; eight approval-request fields and four data classes. Author review covered matching approval reuse, material scope change, human authority, organization/host denial, unknown provider identity and DLP/pre-policy limits. Modes and decisions remain advisory; this is not an independent audit or enforcement test. |
+| P06-C04 Resource closure and budget | PASS | Resolved 724 local Markdown links/anchors and 105 contained product references. Product references stay inside the product tree; no absolute developer paths or symlink/reparse resources found. KIYO.md plus bootstrap.md remain unchanged at 81 lines / 579 whitespace-separated words. No installed package/cache relocation or host-loading experiment was run. |
+| P06-C05 Expected decisions | PASS | Parsed 18 sequential GOV-E01–GOV-E18 cases, each with setup, all eight risk dimensions, separate governance/risk/decision, expected behavior and control references. Author review covered all 15 requested cases plus provider uncertainty, authorized confidential reading and host denial. All examples are synthetic expected behavior; execution remains NOT_RUN. |
+| P06-C06 Traceability and closure | PASS | Preserved 80 unique requirements and 80 ten-column trace rows; 21 rows link P06 evidence (19 partial instruction coverage, REQ-059 input only and REQ-080 continuity). Current totals: 48 PARTIALLY_IMPLEMENTED / 32 NOT_IMPLEMENTED; all 80 full verifications NOT_RUN. Confirmed Prompt 06 DONE, Prompt 07 NOT_STARTED, scoped next-step boundary, nine open issues and four pending owner decisions. |
+| P06-C07 Scope and preservation | PASS | Exact allowlist: ten new and eleven modified Markdown files, with no staged changes or HEAD change. git diff --check passed. LICENSE retains blob d2e60c5b160ed4f9ca096215e72efee5769936b1; Build Contract, requirement registry, prior research/compatibility, Core entry/bootstrap, Memory specification/templates/scenarios and packaging contract are unchanged. No .kiyo, platforms, tools, dist or public SKILL.md was introduced; all six live targets remain NOT_TESTED. |
+
+Reproduce against the nine policies and decision-examples.md under
+src/kiyo/governance. The modified set is six build files (PROGRESS, HANDOFF,
+TRACEABILITY, OPEN-ISSUES, DECISIONS, BASELINE), source README, Core
+trust-and-authority/control-index and architecture layout/naming. The inline
+validator checked file allowlists and UTF-8, resolved ordinary Markdown links and
+heading anchors outside fenced examples, constrained product links to product
+files, and checked control IDs, policy tables, case fields, budgets and trace/state
+counts. Semantic review inspected scope and denial/reuse distinctions; a string
+or table check alone does not establish their correctness in execution.
+
+Read-only Git commands used branch --show-current, rev-parse HEAD, diff --check,
+diff --name-only, diff --cached --name-only, ls-files --others --exclude-standard,
+hash-object -- LICENSE and protected-path diffs, with the scoped overrides above.
+One combined build-file read exceeded its output limit; it was reread per file
+before dependent edits. No missing output was used as evidence.
+
+Static governance/Core/documentation validation: PASS within these scopes.
+Behavioral decision execution: NOT_RUN. Native package validation: NOT_RUN.
+Live native tests: NOT_TESTED for each of the six targets. No hard enforcement,
+effective approval, provider/egress protection or dangerous-action outcome is
+claimed from these checks. No runtime, policy engine, native permission change,
+dangerous execution, commit, tag, push or publication was performed.
+Memory Impact: NONE for project memory; build continuity is updated in docs/build,
+without initializing project policy or a canonical project-memory store.

@@ -1,9 +1,46 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **05 Memory**.
-Task status: **DONE** for Prompt 05 Memory; scoped static/documentation checks passed.
-Product status: shared Core/Memory specification, lifecycle and templates authored;
-native packages/public skills not implemented.
+Snapshot: 2026-09-29. Current prompt: **06 Governance**.
+Task status: **DONE** for Prompt 06; scoped static governance/documentation checks passed.
+Product status: shared Core/Memory and Markdown governance policies authored;
+native packages/public skills remain unimplemented. A policy engine is outside the product boundary.
+
+## Prompt 06 delivered scope
+
+- Added nine policies under src/kiyo/governance/:
+  [AI usage](../../src/kiyo/governance/ai-usage.md),
+  [governance levels](../../src/kiyo/governance/governance-levels.md),
+  [risk](../../src/kiyo/governance/risk-assessment.md),
+  [human approval](../../src/kiyo/governance/human-approval.md),
+  [data handling](../../src/kiyo/governance/data-handling.md),
+  [permissions](../../src/kiyo/governance/permissions.md),
+  [dangerous actions](../../src/kiyo/governance/dangerous-actions.md),
+  [dependency governance](../../src/kiyo/governance/dependency-governance.md) and
+  [provider policy](../../src/kiyo/governance/provider-policy.md).
+- Defined G1–G4 as advisory Kiyo modes, separate from LOW/MEDIUM/HIGH/CRITICAL
+  risk and actual native permissions. Risk covers eight contextual dimensions.
+- Specified eight approval-request contents, scope matching/reuse/reassessment,
+  actual human authority, organization prohibition and host-denial boundaries.
+- Classified data from content/policy and bounded provider/account/model claims,
+  including Unknown facts and absence of DLP/egress or pre-policy guarantees.
+- Added [18 decision examples](../../src/kiyo/governance/decision-examples.md),
+  covering all 15 requested cases plus provider/read-only/host-denial variants.
+  Every example is synthetic expected behavior, execution NOT_RUN.
+- Added nine governance control IDs (31 total), conditional Core reference and
+  shared Governance Review procedure, with source README/architecture/build-state
+  updates. No policy engine, hook, runtime, native settings or populated policy
+  pack was created; no dangerous operation was executed.
+
+Coverage: partial governance instruction implementation for
+REQ-007/011–013/027/030/035/040/041/046–055; REQ-059 receives dependency-policy
+input only, with release/supply-chain implementation still pending.
+REQ-080 continuity updated. Current totals: 48 PARTIALLY_IMPLEMENTED and
+32 NOT_IMPLEMENTED; all 80 full verifications remain NOT_RUN.
+All six native targets remain NOT_TESTED.
+
+Checks: [Prompt 06 evidence](BASELINE.md#prompt-06-checks).
+Memory Impact: **NONE for project memory**; decisions/build continuity stay in
+docs/build. No project policy/memory initialization or global settings change.
 
 ## Prompt 05 delivered scope
 
@@ -168,7 +205,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 03 | Architecture | DONE | P03 documentation/design checks PASS; product/runtime/host verification not claimed |
 | 04 | Core | DONE | P04-C01–C07 PASS; static Core/documentation only, expected cases not executed |
 | 05 | Memory | DONE | P05-C01–C07 PASS; static specification/template checks, scenarios NOT_RUN |
-| 06 | Governance | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 06 | Governance | DONE | P06-C01–C07 PASS; static policies/documentation only, decision examples NOT_RUN |
 | 07 | Security | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 08 | Router/Flow | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 09 | Engineering/Profiles | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -202,9 +239,8 @@ Outstanding owner decisions: DEC-001 final name, DEC-002 release license,
 DEC-003 publisher/destination and DEC-004 treatment of Codex IDE's native-plugin
 gap before compatibility/release claims. See OPEN-ISSUES for technical gaps.
 
-Safe to continue: **YES for requested Prompt 06 Governance**. Shared Memory
-specification/templates/procedures and scoped static checks are complete.
-Owner/native support decisions remain open but do not block that scope; no
-future prompt is authorized by this handoff alone.
-Next prompt: **06 Governance**, only when requested by the user.
+Safe to continue: **YES for a user-requested Prompt 07 Security**. Core, Memory
+and governance references are ready for that scope; owner/native support
+decisions do not block it. This does not authorize later work or dangerous execution.
+Next prompt: **07 Security**, only when requested by the user.
 

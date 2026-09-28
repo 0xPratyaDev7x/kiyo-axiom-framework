@@ -29,6 +29,15 @@ REQ references identify requirement scope, not full acceptance or a runtime impo
 | KIYO-LOAD-001 | [Relevant context](context-loading.md#kiyo-load-001--load-only-what-the-task-needs) | REQ-009, REQ-014 | ACTIVE / none |
 | KIYO-LOAD-002 | [Kiyo budgets](context-loading.md#kiyo-load-002--kiyo-design-budgets) | REQ-009, REQ-014, REQ-030 | ACTIVE / none |
 | KIYO-ACT-001 | [Activation evidence](activation-contract.md#kiyo-act-001--distinguish-activation-capabilities-and-their-evidence) | REQ-005, REQ-009, REQ-010 | ACTIVE / none |
+| KIYO-GOV-001 | [Advisory AI governance](../governance/ai-usage.md#kiyo-gov-001--apply-advisory-governance-within-actual-authority) | REQ-007, REQ-011, REQ-046, REQ-054 | ACTIVE / none |
+| KIYO-GOV-002 | [Kiyo governance modes](../governance/governance-levels.md#kiyo-gov-002--keep-kiyo-modes-separate-from-risk-and-permissions) | REQ-027, REQ-047 | ACTIVE / none |
+| KIYO-RISK-001 | [Contextual risk assessment](../governance/risk-assessment.md#kiyo-risk-001--assess-the-concrete-action-and-uncertainty) | REQ-035, REQ-048 | ACTIVE / none |
+| KIYO-AUTH-004 | [Concrete approval scope and reuse](../governance/human-approval.md#kiyo-auth-004--make-approval-concrete-and-reuse-valid-scope) | REQ-049, REQ-052 | ACTIVE / none |
+| KIYO-DATA-001 | [Content-based data handling](../governance/data-handling.md#kiyo-data-001--classify-content-and-minimize-exposure) | REQ-046, REQ-050, REQ-055 | ACTIVE / none |
+| KIYO-PERM-001 | [Necessary authorized capabilities](../governance/permissions.md#kiyo-perm-001--use-only-necessary-authorized-capabilities) | REQ-007, REQ-041, REQ-051 | ACTIVE / none |
+| KIYO-ACTION-001 | [Preparation versus effects](../governance/dangerous-actions.md#kiyo-action-001--separate-preparation-from-actual-effects) | REQ-041, REQ-048, REQ-052 | ACTIVE / none |
+| KIYO-DEP-001 | [Dependency justification](../governance/dependency-governance.md#kiyo-dep-001--justify-and-inspect-dependencies-in-context) | REQ-003, REQ-053, REQ-059 | ACTIVE / none |
+| KIYO-PROVIDER-001 | [Provider evidence and limits](../governance/provider-policy.md#kiyo-provider-001--use-observed-context-and-bound-data-assurances) | REQ-013, REQ-055 | ACTIVE / none |
 
 Keep IDs when files move or wording is clarified. Never renumber or reuse retired
 IDs. A materially different obligation needs a new ID and explicit migration/

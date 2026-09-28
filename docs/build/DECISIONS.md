@@ -39,6 +39,13 @@ authoring, not initialization of this developer project's mutable memory.
 Entry-level dates, explicit Memory Impact and final-reread/no-op semantics follow
 the user's task and the existing architecture; no new runtime or store is chosen.
 
+Prompt 06 was subsequently authorized on 2026-09-29: author nine governance
+policies and at least fifteen decision examples as Markdown, check/update build
+state and stop before Prompt 07. G1–G4 are Kiyo modes, separate from risk/native
+permissions; human scope approval cannot override applicable prohibitions/denial.
+This authorizes policy content, not a policy engine, operational execution or
+organization/native permission-setting changes.
+
 ## Pending owner decisions
 
 | ID | Decision | Current evidence / status | Who decides | Latest needed / effect | Resolution evidence |
@@ -49,7 +56,7 @@ the user's task and the existing architecture; no new runtime or store is chosen
 | DEC-004 | Treatment of Codex IDE native-plugin support gap | OPEN. Official [plugin documentation](https://learn.chatgpt.com/docs/plugins) excludes IDE plugins; [skills documentation](https://learn.chatgpt.com/docs/build-skills) supports standalone IDE skills. Checked 2026-09-28; DOCUMENTED_ONLY, live NOT_TESTED | Repository/product owner | Before promising six-target native installation or accepting a standalone fallback; does not block Prompt 03 design of documented surfaces | No fallback or scope reduction approved |
 
 Ask only when an unresolved choice blocks the current authorized prompt. Existing
-instructions authorize Prompt 05 Memory and build-state updates. Do not ask for
+instructions authorize Prompt 06 governance and build-state updates. Do not ask for
 premature publication decisions to complete that scope. Publication metadata still
 requiring confirmation is listed in [SOURCES](../research/SOURCES.md#publication-information-still-requiring-the-owner).
 
