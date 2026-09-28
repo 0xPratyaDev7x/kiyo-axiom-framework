@@ -1,6 +1,6 @@
 # Kiyo Compass — Decisions
 
-Observation date: 2026-09-28. “Owner” below is a role, not an invented person,
+Snapshot date: 2026-09-29. “Owner” below is a role, not an invented person,
 publisher or approver. No approval date is assigned to unresolved decisions.
 
 ## Confirmed task constraints
@@ -20,6 +20,12 @@ Prompt 02 was subsequently authorized on 2026-09-28: research official native
 documentation and standards, create five research/compatibility files, update
 build state and stop before Prompt 03. This adds no publication authorization.
 
+Prompt 03 was subsequently authorized: design canonical architecture, create the
+four architecture contracts and ADR, add only necessary scaffold, check/update
+build state and stop before Prompt 04. The selected technical design is recorded
+on 2026-09-29 in [ADR-001](../architecture/decisions/ADR-001-static-canonical-packages.md).
+This authorizes architecture choices, not publication identities or later prompts.
+
 ## Pending owner decisions
 
 | ID | Decision | Current evidence / status | Who decides | Latest needed / effect | Resolution evidence |
@@ -30,20 +36,26 @@ build state and stop before Prompt 03. This adds no publication authorization.
 | DEC-004 | Treatment of Codex IDE native-plugin support gap | OPEN. Official [plugin documentation](https://learn.chatgpt.com/docs/plugins) excludes IDE plugins; [skills documentation](https://learn.chatgpt.com/docs/build-skills) supports standalone IDE skills. Checked 2026-09-28; DOCUMENTED_ONLY, live NOT_TESTED | Repository/product owner | Before promising six-target native installation or accepting a standalone fallback; does not block Prompt 03 design of documented surfaces | No fallback or scope reduction approved |
 
 Ask only when an unresolved choice blocks the current authorized prompt. Existing
-instructions authorize Prompt 02 research and build-state updates. Do not ask for
-premature publication decisions to complete research. Publication metadata still
+instructions authorize Prompt 03 architecture and build-state updates. Do not ask for
+premature publication decisions to complete that scope. Publication metadata still
 requiring confirmation is listed in [SOURCES](../research/SOURCES.md#publication-information-still-requiring-the-owner).
 
 ## Proposals and future technical decisions
 
-Planned paths in REQUIREMENTS are provisional implementation areas, not an
-approved architecture. Prompt 02 must establish capabilities, sources and gaps;
-Prompt 03 can then define the canonical layout and overlay boundaries.
+Planned paths in REQUIREMENTS are historical provisional implementation areas.
+Prompt 03 selects [the canonical layout](../architecture/framework-layout.md)
+and overlay boundaries; this refines future paths without rewriting requirements.
 No native manifest syntax, version policy, signing identity or marketplace
 availability was decided in Prompt 01. Prompt 02 now records documented formats
 in [platform capabilities](../compatibility/platform-capabilities.md), but does
 not choose/build overlays. Copilot plugin-rule semantics, exact Codex/Copilot CLI
 plugin-skill selector details and custom lifecycle tests remain open.
+
+ADR-001 is accepted for build design within the user's Prompt 03 scope: one
+authored specification, generated shared resources inside each skill, compact
+bootstrap and project-owned state. It is not an owner release approval, completed
+Core implementation or verified host behavior. Future version values remain
+unset; preserve any established history found when release work begins.
 
 When recording a future decision, separate observations and proposals from
 approved decisions. Record the real authority, scope, evidence and date; preserve

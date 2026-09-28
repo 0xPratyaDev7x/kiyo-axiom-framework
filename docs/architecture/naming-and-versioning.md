@@ -1,0 +1,95 @@
+# Kiyo Compass — Naming and versioning
+
+Decision date: **2026-09-29**. Design under
+[ADR-001](decisions/ADR-001-static-canonical-packages.md) and
+[REQ-001/006/017/026/054/076/079/080](../build/REQUIREMENTS.md).
+Repository observations and limits are in
+[Prompt 03 baseline](../build/BASELINE.md#prompt-03-repository-observation).
+
+## Preserve observed identity and history
+
+Kiyo Compass remains a working name. Preserve the existing repository name,
+root MIT LICENSE, requirement IDs, build history and research files. No product
+version file, native manifest or Git tag was found in the inspected baseline;
+this does not authorize inventing an initial release number, publisher or account.
+No files are renamed to manufacture a new product history.
+
+Internal directory slugs are `init`, `requirement`, `implement`, `review`, `test`,
+`security`, `architecture`, `memory`; display labels remain the eight names in
+the Build Contract. Canonical `name` matches its skill directory, and
+`description` states intent and boundaries without host-specific commands.
+These are internal authoring identities, not a reservation of marketplace names.
+No extra public router/governance/audit/self-check skills are introduced.
+
+Native plugin IDs and host-added prefixes belong to overlays. Use the actual
+discovered identity when invoking a host; do not prepend a universal `kiyo-`
+or bake `plugin:skill` into canonical names. The
+[invocation map](../compatibility/native-invocation-map.md), checked 2026-09-28,
+remains DOCUMENTED_ONLY and retains the unknown CLI qualification details and
+unsupported Codex IDE plugin route. Revalidate before implementing aliases.
+
+## Stable controls independent of standards
+
+Core control IDs use `KIYO-<DOMAIN>-<NNN>`, with uppercase domain and a stable
+three-digit number, for example **KIYO-FACT-001**. The initial domain vocabulary
+and complete rule text will be introduced in Prompt 04's planned
+`src/kiyo/framework/control-index.md`. The example ID is reserved as a design
+example here, not evidence that its control is implemented.
+
+Each registered control records its title, normative Markdown location, related
+REQ IDs, status and replacement/deprecation link when relevant. One ID has one
+canonical definition. Skills cite IDs and shared files; overlays do not redefine
+them. Do not renumber after moving a file, reuse retired IDs or change an ID's
+meaning silently. Add a new ID for a different obligation and retain a migration
+record for the old one. Correcting prose without changing meaning keeps the ID.
+
+ISO/NIST/OWASP references are dated concept mappings in developer documentation,
+not control-number namespaces, runtime dependencies or claimed certification.
+Use the [standards baseline](../research/standards-baseline.md), source check
+2026-09-28, with its edition, draft and lawful-public-metadata limits. Do not
+invent clause numbers or copy protected standards text. Supporting references
+and the conditional ISO 5338 scope remain as recorded there.
+
+## One release identity, derived native metadata
+
+When release work is authorized, first inspect existing version history again.
+If a version already exists, preserve that established convention. If still
+absent, obtain the owner's initial release identity/number instead of assuming
+`0.1.0`, `1.0.0` or a date-based version. No VERSION file is needed now.
+
+The selected policy for a future new numeric version stream is major/minor/patch:
+major for incompatible public skill/contract or project-state changes; minor for
+compatible capabilities; patch for compatible corrections. This is a Kiyo design
+policy, not evidence of an existing release or a promise about native host caches.
+Native restrictions must be revalidated before final version representation.
+
+One approved release value is an input to developer packaging. Derive every
+native version field and release inventory from it; do not edit three separate
+versions by hand. Bind the value to the exact canonical/overlay revision and
+actual digests. Rebuilding identical inputs should produce identical artifacts;
+the two-build proof belongs to later packaging checks, not this architecture.
+Changing shipped canonical content or native metadata requires a new recorded
+release identity. Do not reuse the same release label for different bytes.
+
+Project adapter revisions track the small adapter's format independently from
+the product release it was last reviewed against. They are provenance text in
+user-owned project files, not a second product release line. Missing version
+information stays UNKNOWN; no automatic updater, forced policy migration or
+memory migration is introduced.
+
+## Maintenance and publication gates
+
+Use native install/update/uninstall at the observed host scope. Catalog refresh
+and installed-bundle update are distinct where the native documentation says so;
+do not substitute one for the other. Never hardcode cache versions/locations.
+Installed resources are immutable; user memory and policy retain their established
+project-local paths across version changes and uninstall. Review adapter drift
+only when requested, as defined in [content-loading](content-loading.md).
+
+The following remain unresolved in [DECISIONS](../build/DECISIONS.md): final
+publication name/identifiers (DEC-001), intended publication license (DEC-002),
+publisher/namespace/destination (DEC-003), and whether any alternative for the
+unsupported Codex IDE plugin route is accepted (DEC-004). Marketplace availability,
+curated listing, signatures, account authority and publication approvals need
+actual evidence. None is inferred from a local folder, copyright name or
+custom-source install. These gates do not prevent Prompt 04 Core authoring.

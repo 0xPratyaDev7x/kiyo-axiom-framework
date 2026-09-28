@@ -141,3 +141,67 @@ explicitly stated UNKNOWN/UNSUPPORTED state.
 Product static validation: NOT_RUN. Behavioral evaluation: NOT_RUN.
 Live Kiyo tests: NOT_TESTED for each of the six targets.
 Memory Impact: build-state records only; no product memory touched.
+
+## Prompt 03 repository observation
+
+Initial inspection began 2026-09-28; architecture records and closure are dated
+2026-09-29 (Asia/Bangkok, after local midnight). Repository root remains
+C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework.
+Branch main; HEAD 64b2b8b05e79e8fe23aee78c7fa7ed09b4ee68fd
+(Add platform capabilities documentation and research sources).
+Initial working tree/index and staged/unstaged diff statistics had no entries.
+Tracked inventory: LICENSE, eight build records and five research/compatibility
+documents. Prompt 02 had been committed before this work; older HEAD values and
+uncommitted snapshots above are historical evidence.
+
+No applicable AGENTS.md found in the repository or checked ancestors. No product
+memory, version file, native manifest or Git tag was found by the scoped inventory.
+Git used the existing per-command exact-root safe.directory override; an initial
+unreadable global-ignore warning was avoided by the per-command empty
+core.excludesFile setting. No persistent configuration was changed.
+
+Read the Build Contract, Progress, Handoff, Open Issues, Decisions, relevant
+requirements/traceability and all five Prompt 02 research outputs. Architecture
+uses the dated 2026-09-28 research; no new external schema check, host/tool/account
+inventory, plugin installation or source generation occurred in Prompt 03.
+
+## Prompt 03 checks
+
+Executed 2026-09-29 with inline Python/PowerShell, read-only Git commands and
+manual self-review. These are documentation/design checks, not product tests or
+an independent audit. No script or development dependency was added.
+
+| Check ID | Method / scope | Actual result | Evidence / limitation |
+| --- | --- | --- | --- |
+| P03-C01 | Repository root/branch/HEAD, initial status/index/diffs, instruction and version inventory | PASS | Root and main/64b2b8b05e79e8fe23aee78c7fa7ed09b4ee68fd recorded above; initial tree/index clean; no applicable AGENTS.md or established product version/tag found. No remote fetch or host/account inventory. |
+| P03-C02 | Inline Python: six required new documents, nonempty strict UTF-8, conflict/replacement/NUL checks, new-file whitespace and absolute developer-path scan | PASS | Six new nonempty files; 19 Markdown files decoded and checked. Only src/kiyo/README.md exists in product source; no empty skill/native/runtime scaffold. |
+| P03-C03 | Inline Python: resolve local Markdown destinations and heading anchors outside illustrative fenced blocks | PASS | 334 local links/anchors resolved. Planned product paths are explicitly marked as examples, not falsely treated as existing payload links. Installed-resource resolution is NOT_TESTED. |
+| P03-C04 | Manual self-review against Prompt 03 and dated research; walk the proposed Review skill-to-rule-to-template-to-package mapping | PASS | Five ownership boundaries, eight skills/shared procedures, stable controls, native metadata separation, progressive loading/budgets, contained generated resources, neutral templates, legacy memory preservation and lifecycle/version/owner gates documented. No consumer runtime dependency. This is a design review, not executed agent/package behavior. |
+| P03-C05 | Inline Python: parse registry/table IDs, ten columns, planned test IDs, implementation states, full acceptance and six live rows | PASS | 80 unique registry/table IDs; 23 rows receive design evidence; 73 NOT_IMPLEMENTED and 7 PARTIALLY_IMPLEMENTED unchanged; all 80 full verifications NOT_RUN; all six live targets NOT_TESTED. Exactly eight planned public skill paths in layout. |
+| P03-C06 | Inline Python plus manual handoff review: current status, next step, ADR/read order and unresolved decisions/issues | PASS | Prompt 03 DONE; Prompt 04 NOT_STARTED; safe continuation only when Core is requested; four pending owner decisions and nine issue rows retained. Handoff records chosen design and exact next action. No .kiyo memory created. |
+| P03-C07 | Inline Python plus Git: exact change allowlist; protected content/index/HEAD; LICENSE hash; diff/new-file whitespace | PASS | Six new and six modified Markdown files only. LICENSE blob remains d2e60c5b160ed4f9ca096215e72efee5769936b1; REQUIREMENTS, BUILD-CONTRACT and all Prompt 02 research/compatibility files unchanged. Index empty, main/HEAD unchanged, diff checks clean. |
+
+Validation development encountered a JavaScript quoting error before command
+execution, a PowerShell brace-list parse error, and overly strict validator
+assumptions about CRLF headings and the existing extra documentation check IDs
+in TC-REQ-080's cell. Corrected command syntax, normalized newlines for parsing
+and retained the existing planned-ID plus executed-check structure; the resulting
+validator passed. Failed attempts were not counted as passing checks and did not
+justify changing the preserved requirements. Status/traceability edits were
+followed by the same validation plus explicit closure assertions; all passed.
+
+For reproducibility, validate the six added paths linked in PROGRESS, the six
+modified build files (PROGRESS, HANDOFF, TRACEABILITY, OPEN-ISSUES, DECISIONS,
+BASELINE), 80 contiguous IDs and unchanged status counts above. Resolve relative
+links against their containing files and Markdown headings, excluding code-block
+examples. Use read-only git diff --check, diff --name-only, diff --cached,
+ls-files --others --exclude-standard and hash-object -- LICENSE with the scoped
+overrides described above. No package build command exists at this stage.
+
+Product static validation: NOT_RUN. Behavioral evaluation: NOT_RUN.
+Live native tests: NOT_TESTED for each of the six targets. No schema, install,
+cache relocation, automatic activation, update or uninstall result is inferred.
+The change set is five architecture documents, one source authoring README and
+six build-state updates. No package, runtime, empty skill, manifest, generator,
+commit, tag, push or publication was created. Memory Impact: build continuity
+and ADR only; project memory is not initialized or modified.

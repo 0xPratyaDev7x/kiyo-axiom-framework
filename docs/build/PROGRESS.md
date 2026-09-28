@@ -1,8 +1,40 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-28. Current prompt: **02 Research**.
-Task status: **DONE** for Prompt 02 research; documentation checks passed.
-Product status: research documentation implemented; no native payload or skills.
+Snapshot: 2026-09-29. Current prompt: **03 Architecture**.
+Task status: **DONE** for Prompt 03 architecture; documentation checks passed.
+Product status: research and architecture documentation; no native payload or skills.
+
+## Prompt 03 delivered scope
+
+- Selected one canonical `src/kiyo/` specification, three ecosystem overlay areas,
+  six independent target records, project-owned state and developer-only tooling.
+- Defined bootstrap-before-workflow actions, relevant-reference loading, authoring
+  budgets and native project-adapter ownership without claiming automatic execution.
+- Selected generated shared snapshots within each skill, explicit relative-reference
+  transforms and parity/relocation gates. No consumer generator or runtime.
+- Preserved established memory/policy paths; new-project defaults are `.kiyo/memory/`
+  and `.kiyo/policy.md`. Project state never belongs in plugin cache.
+- Recorded stable control IDs, internal eight-skill names, future release-version
+  discipline and unresolved publication/native support decisions.
+- Created [layout](../architecture/framework-layout.md),
+  [loading](../architecture/content-loading.md),
+  [packaging](../architecture/packaging-contract.md),
+  [naming/versioning](../architecture/naming-and-versioning.md),
+  [ADR-001](../architecture/decisions/ADR-001-static-canonical-packages.md) and
+  [source authoring scaffold](../../src/kiyo/README.md).
+- Updated six build records. No Core, skill, manifest, generator or runtime was
+  implemented; later paths are explicitly planned, not empty feature placeholders.
+
+Design coverage: REQ-001/002/003/005/006/007/009/010/011/014/017/024/025/026/027/
+037/054/067/076/077/078/079/080. Architecture evidence is linked in traceability;
+it does not promote product acceptance. Existing seven partial documentation
+implementation rows remain partial; 73 other rows remain NOT_IMPLEMENTED and all
+80 full verifications remain NOT_RUN.
+
+Checks: [Prompt 03 evidence](BASELINE.md#prompt-03-checks).
+Memory Impact: build records/ADR only; no product memory initialized or changed.
+Prompt 02 source checks remain dated 2026-09-28; this prompt did not revalidate
+external schemas or test hosts. All six live targets remain NOT_TESTED.
 
 ## Prompt 02 delivered scope
 
@@ -68,7 +100,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | --- | --- | --- | --- |
 | 01 | Scope | DONE | P01-C01–C07 PASS; see BASELINE for scope and evidence |
 | 02 | Research | DONE | P02-C01–C07 PASS; research only, all live targets NOT_TESTED |
-| 03 | Architecture | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 03 | Architecture | DONE | P03 documentation/design checks PASS; product/runtime/host verification not claimed |
 | 04 | Core | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 05 | Memory | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 06 | Governance | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -105,9 +137,10 @@ Outstanding owner decisions: DEC-001 final name, DEC-002 release license,
 DEC-003 publisher/destination and DEC-004 treatment of Codex IDE's native-plugin
 gap before compatibility/release claims. See OPEN-ISSUES for technical gaps.
 
-Safe to continue: **YES for requested Prompt 03 Architecture**. Research and
-documentation checks are complete; design may use documented capabilities while
-leaving unsupported or unknown schema-dependent paths gated.
+Safe to continue: **YES for requested Prompt 04 Core**. Architecture and scoped
+documentation checks are complete; Core can follow the selected layout without
+resolving publication or unsupported native contracts. Later prompts still need
+their own user authorization; no schema-dependent implementation is inferred.
 No release or host-acceptance readiness is implied.
-Next prompt: **03 Architecture**, only when requested by the user.
+Next prompt: **04 Core**, only when requested by the user.
 
