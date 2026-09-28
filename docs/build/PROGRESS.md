@@ -1,8 +1,39 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **04 Core**.
-Task status: **DONE** for Prompt 04 Core; scoped static/documentation checks passed.
-Product status: shared Markdown Core authored; native packages/skills not implemented.
+Snapshot: 2026-09-29. Current prompt: **05 Memory**.
+Task status: **DONE** for Prompt 05 Memory; scoped static/documentation checks passed.
+Product status: shared Core/Memory specification, lifecycle and templates authored;
+native packages/public skills not implemented.
+
+## Prompt 05 delivered scope
+
+- Added [Memory specification](../../src/kiyo/framework/memory-specification.md)
+  and [shared lifecycle](../../src/kiyo/workflows/memory-lifecycle.md).
+- Added eight neutral [Memory templates](../../src/kiyo/framework/memory-specification.md#template-catalog):
+  project.md, architecture.md, conventions.md, decisions.md, domain.md,
+  integrations.md, known-issues.md and index.md under src/kiyo/templates/memory/.
+- Defined entry IDs/types/status, actual evidence/scope/dates, conditional approval
+  attribution, last_modified versus last_verified, and scoped Git context.
+- Specified one canonical store, on-demand drift checks, approved-intent protection,
+  authorized reread-before-write sync, no-delta no-op and four Memory Impact values.
+  No watcher, database or consumer runtime; no populated project memory created.
+- Added [20 scenario specifications](../../tests/behavioral/memory/scenarios.md)
+  covering the lifecycle and edge cases, including Mapperly/AutoMapper decision
+  conflict. All are synthetic specifications, execution NOT_RUN.
+- Added KIYO-MEM-002–007 (22 controls total), linked conditional Memory loading,
+  aligned the existing typo example to Memory Impact NONE, and updated source
+  README, two architecture records and six build records.
+  Bootstrap, native research, release identity and owner decisions are preserved.
+
+Coverage: partial Memory/shared instruction implementation for
+REQ-012–024/027/040/044/049/062/075; REQ-068/074 receive scenario/procedure inputs
+only, without public-skill implementation. REQ-080 continuity updated. Full
+requirement verification remains NOT_RUN; live native targets remain NOT_TESTED.
+Current totals: 41 PARTIALLY_IMPLEMENTED and 39 NOT_IMPLEMENTED.
+
+Checks: [Prompt 05 evidence](BASELINE.md#prompt-05-checks).
+Memory Impact: **NONE for project memory**; this build's decisions/continuity are
+recorded in existing docs/build. No canonical project-memory store is initialized.
 
 ## Prompt 04 delivered scope
 
@@ -136,7 +167,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 02 | Research | DONE | P02-C01–C07 PASS; research only, all live targets NOT_TESTED |
 | 03 | Architecture | DONE | P03 documentation/design checks PASS; product/runtime/host verification not claimed |
 | 04 | Core | DONE | P04-C01–C07 PASS; static Core/documentation only, expected cases not executed |
-| 05 | Memory | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 05 | Memory | DONE | P05-C01–C07 PASS; static specification/template checks, scenarios NOT_RUN |
 | 06 | Governance | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 07 | Security | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 08 | Router/Flow | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -171,9 +202,9 @@ Outstanding owner decisions: DEC-001 final name, DEC-002 release license,
 DEC-003 publisher/destination and DEC-004 treatment of Codex IDE's native-plugin
 gap before compatibility/release claims. See OPEN-ISSUES for technical gaps.
 
-Safe to continue: **YES for requested Prompt 05 Memory**. Shared Core and scoped
-checks are complete; Memory can build on its authority/context rules. Owner/native
-support decisions remain open but do not block this scope. No later work is
-authorized by the handoff alone.
-Next prompt: **05 Memory**, only when requested by the user.
+Safe to continue: **YES for requested Prompt 06 Governance**. Shared Memory
+specification/templates/procedures and scoped static checks are complete.
+Owner/native support decisions remain open but do not block that scope; no
+future prompt is authorized by this handoff alone.
+Next prompt: **06 Governance**, only when requested by the user.
 

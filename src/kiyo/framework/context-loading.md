@@ -43,7 +43,9 @@ Do not manufacture freshness dates or infer an empty store from denied access.
 Reads do not authorize sync, repair, migration or initialization. Before any
 authorized write, recheck current content and preserve concurrent human changes.
 Mutable memory and policy stay in the user project, never installed plugin cache.
-Detailed memory formats and workflows are separate from this core protocol.
+For a memory task, consult the relevant [Memory specification](memory-specification.md)
+and [shared lifecycle](../workflows/memory-lifecycle.md); do not load all templates
+or initialize a store merely by following these references.
 
 ## KIYO-LOAD-002 — Kiyo design budgets
 

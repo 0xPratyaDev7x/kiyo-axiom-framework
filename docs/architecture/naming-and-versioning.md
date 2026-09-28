@@ -35,7 +35,8 @@ three-digit number, for example **KIYO-FACT-001**. Prompt 04 introduces the init
 16-control vocabulary and canonical definitions through
 [control-index](../../src/kiyo/framework/control-index.md). ACTIVE means authored
 instruction, not behavioral verification; the original design example is now
-the evidence/knowledge-class control.
+the evidence/knowledge-class control. Prompt 05 adds KIYO-MEM-002 through
+KIYO-MEM-007 without renumbering the original controls; the index now has 22 IDs.
 
 Each registered control records its title, normative Markdown location, related
 REQ IDs, status and replacement/deprecation link when relevant. One ID has one

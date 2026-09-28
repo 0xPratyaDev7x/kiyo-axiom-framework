@@ -35,7 +35,9 @@ and decisions. The latter cannot flow back into a general release.
 
 Prompt 03 planned the tree below. Prompt 04 implements `KIYO.md` and the shared
 Core files indexed in [control-index](../../src/kiyo/framework/control-index.md),
-plus expected response examples; the README remains developer-only. Remaining
+plus expected response examples. Prompt 05 adds the Memory specification,
+shared lifecycle and eight templates, with developer-only scenario specifications.
+The README remains developer-only. Remaining
 product, overlay, tool, test and distribution paths are **planned**, not features.
 Create each directory when it receives real scoped content; no empty SKILL.md,
 dummy manifests, .gitkeep forest or initial version is required in Prompt 03.
@@ -105,8 +107,10 @@ remain native host controls; overlays cannot elevate project text to system poli
 For a **new, unconfigured consumer project**, the selected defaults are
 `.kiyo/memory/` for durable memory and `.kiyo/policy.md` for project policy and
 the optional repository-relative memory-location declaration. These are design
-defaults, not files created by installation or by this prompt. Memory file format
-and policy template details belong to subsequent prompts.
+defaults, not files created by installation. Prompt 05 implements the
+[Memory record format](../../src/kiyo/framework/memory-specification.md) and
+[lifecycle](../../src/kiyo/workflows/memory-lifecycle.md) without initializing
+project state. Project-policy template details remain for subsequent prompts.
 
 Resolution occurs in the host agent's authorized read scope:
 
@@ -145,5 +149,5 @@ identity and maintenance. These documents specify the architecture; later
 static, behavioral and live checks must establish that implemented files follow it.
 
 Prompt 03's only source scaffold was [the authoring README](../../src/kiyo/README.md).
-Prompt 04 adds shared Core content without exposing a callable skill. No consumer runtime dependency,
+Prompts 04–05 add shared Core/Memory content without exposing a callable skill. No consumer runtime dependency,
 generator, MCP, hook, service, database, telemetry or Kiyo installer is introduced.

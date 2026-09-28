@@ -265,3 +265,65 @@ is inferred from this editing session. Seven product Markdown files and one ADR
 are new; ten existing Markdown files change. No public skill, manifest, package,
 hook, runtime, install, commit, tag, push or publication was created/performed.
 Memory Impact: build continuity/ADR only; no project memory created or changed.
+
+## Prompt 05 repository observation
+
+Observed 2026-09-29 (Asia/Bangkok). Root:
+C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework.
+Branch main; HEAD b05f709fcad6836aa1fecc84175c3143c6cc9792
+(feat: Introduce Kiyo framework documentation and core loading budgets).
+Initial status, staged and unstaged diff statistics were empty. Prompt 04 was
+committed before this work. Inventory: LICENSE and 27 Markdown files; no
+applicable AGENTS.md in repository/inspected ancestors and no .kiyo project
+memory present. Git used exact-root safe.directory and empty core.excludesFile
+per command; no persistent settings change or remote fetch.
+
+Read the Build Contract, Core, Progress, Handoff, Memory requirements,
+architecture state/path boundaries, issues/decisions and traceability. No new
+external/native schema claim or host/account availability inspection is required
+or performed by this static Memory-authoring prompt.
+
+## Prompt 05 checks
+
+Executed 2026-09-29 with inline Python/PowerShell, read-only Git commands and
+manual self-review. Checks validate static product instructions/templates and
+build records; they do not execute Memory scenarios or prove agent behavior.
+No persistent validator, generator, watcher, database or dependency was added.
+
+| Check ID | Method / scope | Actual result | Evidence / limitation |
+| --- | --- | --- | --- |
+| P05-C01 | Root/branch/HEAD, initial status/index/diffs, instruction/file inventory and tag list | PASS | Clean initial tree/index on main/b05f709fcad6836aa1fecc84175c3143c6cc9792; 27 existing Markdown files plus LICENSE; no applicable AGENTS.md or project memory found, tag list empty. No host/account or remote freshness claim. |
+| P05-C02 | Inline Python: strict UTF-8, nonempty additions, conflict/NUL/replacement checks; product/control inventory and source-boundary review | PASS | 38 Markdown files inspected; 17 product files excluding source README; 22 unique control IDs with registered references, including six new Memory controls. Only static Markdown added; developer scenario specification stays outside payload. |
+| P05-C03 | Inline Python: template set and fenced artifact envelopes; manual neutrality/date/approval review | PASS | Exactly eight requested templates, each with 13 required entry fields (104 field occurrences) and optional evidence-only approval guidance. Dates default UNKNOWN, verification UNVERIFIED; no invented project dates/hashes/approvers. Artifact bodies have no developer/package-relative guidance dependencies. Status/date semantics reviewed separately from this field-count check. |
+| P05-C04 | Inline Python: resolve Markdown links/anchors and enforce product-only reference targets; path/reparse scan; bootstrap counts | PASS | 597 local links/anchors resolve; all 66 product links stay within the 17-file product set. No absolute developer path or product symlink/reparse point found. KIYO.md plus bootstrap unchanged at 81 lines / 579 words; no package relocation or consumer install test implied. |
+| P05-C05 | Manual lifecycle/edge-case review; inline eight-step/four-impact/20-scenario structure checks | PASS | Eight lifecycle steps and NONE/UPDATE_REQUIRED/CONFLICT/NOT_ASSESSED defined. MEM-S01–S20 each include setup, action, expected result, persistence oracle and requirement/control coverage. Reviewed matching/stale/insufficient evidence, Mapperly/AutoMapper approved-intent conflict, dates, read-only/no-op, paths, branches/worktrees/monorepo, moved/deleted sources, partial scope, concurrency, non-Git, sensitive data, naming inference, approvals, missing index/init and partial writes. These are specification checks only; every scenario execution remains NOT_RUN. |
+| P05-C06 | Inline Python: registry/traceability/status/closure and issue/decision identity; manual handoff review | PASS | 80 contiguous requirement/table IDs and ten trace columns; 19 shared Memory rows, two future-skill input rows and REQ-080 updated. 41 PARTIALLY_IMPLEMENTED / 39 NOT_IMPLEMENTED; all full verifications NOT_RUN. Nine issue/four decision rows retained. Prompt 05 DONE; Prompt 06 NOT_STARTED; safe continuation only on request. |
+| P05-C07 | Inline Python plus Git: exact changed-file allowlists, protected content, index/HEAD/LICENSE and whitespace | PASS | Eleven new and twelve modified Markdown files only. LICENSE hash remains d2e60c5b160ed4f9ca096215e72efee5769936b1; REQUIREMENTS, BUILD-CONTRACT, native research/compatibility, prior ADRs, loading/packaging contracts, KIYO.md/bootstrap and trust/activation rules unchanged. Index empty, main/HEAD unchanged, diff/new-file whitespace checks passed; no .kiyo state created. |
+
+The full validator passed before closure and again after final status changes.
+Self-review aligned the existing Core typo response with the exact Memory Impact
+value NONE. An initial combined patch for that alignment failed an exact Handoff
+line match and made no changes; rereading the line and applying the corrected
+patch succeeded. The updated 23-file allowlist then passed. Git emitted normal
+LF-to-CRLF notices for edited Markdown; no global configuration change was made.
+
+Reproduce static checks against the ten new product paths linked from PROGRESS
+(specification, lifecycle and eight templates) and tests/behavioral/memory/scenarios.md.
+The modified set is six build files (PROGRESS, HANDOFF, TRACEABILITY, OPEN-ISSUES,
+DECISIONS, BASELINE), source README, context-loading/control-index/response-examples,
+and architecture layout/naming. Parse one artifact fence per template with all
+13 fields, optional approval guidance, 20 MEM-S headings and the five scenario
+sections. Resolve ordinary Markdown links/anchors outside fenced examples,
+require product references to stay within product files, and compare the 80-row
+trace/status table and 22-control index. Read-only Git checks used diff --check,
+diff --name-only, diff --cached, ls-files --others --exclude-standard,
+hash-object -- LICENSE and tag --list with the scoped overrides above.
+
+Static Core/Memory/template validation: PASS within these scopes.
+Behavioral scenario execution: NOT_RUN. Native package validation: NOT_RUN.
+Live native tests: NOT_TESTED for each of the six targets. No byte/mtime no-op,
+concurrency guarantee, actual sync, cache behavior or native activation outcome
+is claimed from prose scenarios. Eleven new and twelve modified Markdown files;
+no public skill, package, runtime, install, commit, tag, push or publication.
+Memory Impact: NONE for project memory; build continuity is updated in docs/build,
+without initializing or modifying a canonical project-memory store.

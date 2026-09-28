@@ -55,7 +55,7 @@ current text and preserve other edits.
 
 Expected response after the edit and actual focused diff inspection:
 “Corrected the requested spelling. Diff inspection shows only that word changed.
-Runtime tests: NOT_APPLICABLE for this prose-only change. Memory Impact: none.”
+Runtime tests: NOT_APPLICABLE for this prose-only change. Memory Impact: NONE.”
 
 Expected boundary: no long plan, broad refactor, full repository scan or memory
 write. If the diff check is not run, replace the claimed result with NOT_RUN and

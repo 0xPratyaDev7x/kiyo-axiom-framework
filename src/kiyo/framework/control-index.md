@@ -14,6 +14,12 @@ REQ references identify requirement scope, not full acceptance or a runtime impo
 | KIYO-ENG-001 | [Existing safe patterns, principle 6](bootstrap.md#baseline-principles) | REQ-033 | ACTIVE / none |
 | KIYO-CHG-001 | [Minimum change, principle 7](bootstrap.md#baseline-principles) | REQ-015, REQ-030, REQ-034 | ACTIVE / none |
 | KIYO-MEM-001 | [Memory with evidence](context-loading.md#kiyo-mem-001--context-with-evidence-not-unquestionable-truth) | REQ-016, REQ-017, REQ-023, REQ-024 | ACTIVE / none |
+| KIYO-MEM-002 | [Canonical store and scope](memory-specification.md#kiyo-mem-002--one-canonical-store-and-explicit-scope) | REQ-017, REQ-024 | ACTIVE / none |
+| KIYO-MEM-003 | [Entry evidence and dates](memory-specification.md#kiyo-mem-003--entry-identity-evidence-and-dates) | REQ-019, REQ-020, REQ-024 | ACTIVE / none |
+| KIYO-MEM-004 | [Observation and decision drift](memory-specification.md#kiyo-mem-004--reconcile-observations-without-rewriting-intent) | REQ-016, REQ-021, REQ-022 | ACTIVE / none |
+| KIYO-MEM-005 | [Authorized minimal writes](memory-specification.md#kiyo-mem-005--authorized-minimal-concurrency-aware-writes) | REQ-023, REQ-024, REQ-027, REQ-075 | ACTIVE / none |
+| KIYO-MEM-006 | [Memory Impact](memory-specification.md#kiyo-mem-006--memory-impact-at-closure) | REQ-023, REQ-044 | ACTIVE / none |
+| KIYO-MEM-007 | [Durable minimized content](memory-specification.md#kiyo-mem-007--durable-minimized-content) | REQ-018, REQ-046, REQ-062 | ACTIVE / none |
 | KIYO-DEC-001 | [Intended behavior and conflicts](trust-and-authority.md#kiyo-dec-001--intended-behavior-and-conflicts) | REQ-019, REQ-022, REQ-049 | ACTIVE / none |
 | KIYO-AUTH-001 | [Native hierarchy](trust-and-authority.md#kiyo-auth-001--native-hierarchy-and-enforcement) | REQ-007, REQ-011, REQ-051 | ACTIVE / none |
 | KIYO-AUTH-002 | [Policy provenance](trust-and-authority.md#kiyo-auth-002--policy-provenance-and-acceptance) | REQ-011, REQ-054 | ACTIVE / none |
