@@ -47,7 +47,9 @@ are source publication states, not Kiyo verification results.
 
 The retrieved W02 summary names the same ten categories as REQ-058–067.
 The abbreviated labels below preserve the registered IDs. All proposed actions
-are Kiyo design interpretations, **not implemented controls**.
+were Prompt 02 design interpretations, **not implemented controls at that step**.
+Prompt 07 now authors [advisory controls and procedures](../../src/kiyo/agent-security/owasp-ast10.md);
+this does not establish runtime enforcement or behavioral success.
 
 Source for every row: [W02](https://owasp.github.io/www-project-agentic-skills-top-10/),
 checked **2026-09-28**, DOCUMENTED_ONLY, public-review maturity limit.
@@ -70,11 +72,36 @@ adopted as native manifest/frontmatter fields. Its runtime mitigations remain ho
 or organization responsibilities. This research neither adds runtime components
 nor imports third-party scanning dependencies.
 
+## Prompt 07 revalidation and implemented guidance
+
+Checked 2026-09-29: [W02](https://owasp.github.io/www-project-agentic-skills-top-10/)
+and its ten linked detail pages retain AST01–AST10 above. Source state remains
+DOCUMENTED_ONLY, public-review draft with mixed proposal/edition wording; no
+finalized AST release is inferred. [W05](https://genai.owasp.org/2025/12/09/owasp-top-10-for-agentic-applications-the-benchmark-for-agentic-security-in-the-age-of-autonomous-ai/)
+announces the separate Agentic Applications initiative using ASI identifiers.
+Its 2025-12-09 announcement is not a latest-minor-version determination.
+AST and ASI IDs are not interchangeable; no exhaustive crosswalk is claimed.
+
+[W01](https://owasp.org/projects/asvs) was rechecked after its original URL
+redirect: main text still calls 5.0.0 stable, with conflicting sidebar wording
+retained as a limitation. Kiyo's separate
+[application checklist](../../src/kiyo/agent-security/application-security.md)
+covers the user-requested topics; it is not a full ASVS clause mapping.
+The table above preserves Prompt 02's original check dates; other standards were
+not refreshed. Detailed URL/dates and retrieval limits are in
+[SOURCES](SOURCES.md#prompt-07-owasp-revalidation).
+
+Ten new Kiyo security controls, scoped Skill Audit/update/injection procedures,
+four optional neutral record templates and a six-target control-gap matrix are
+authored Markdown. Nineteen developer scenario specifications are NOT_RUN.
+No scanner, runtime isolation, signature verification or certification is supplied.
+
 ## Mapping and revalidation boundary
 
-Prompt 03 can use these concepts to design responsibilities and evidence paths.
-Later governance/security prompts must create original procedures and map actual
-artifacts, with scope and residual gaps. A clause-level mapping requires lawful
+The architecture and authored governance/security guidance use these concepts
+with explicit responsibility, evidence scope and residual gaps. Later packaging,
+skill and verification prompts must connect them to actual artifacts and outcomes.
+A clause-level mapping requires lawful
 access to the selected edition and review of the exact text first.
 
 Recheck editions, amendments, draft/final state and AST labels before release.

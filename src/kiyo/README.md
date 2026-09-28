@@ -12,6 +12,10 @@ project's populated memory. Behavioral scenarios remain specifications only.
 Prompt 06 adds [Markdown governance policies](governance/ai-usage.md) and
 [expected decision examples](governance/decision-examples.md), without a policy
 engine or native permission configuration.
+Prompt 07 adds [AST controls and review procedures](agent-security/owasp-ast10.md),
+a separate application checklist and four optional neutral governance templates.
+The six-target control matrix records gaps; 19 developer scenario specifications
+remain NOT_RUN. No public Security skill or security runtime is introduced.
 
 Follow [framework layout](../../docs/architecture/framework-layout.md),
 [content loading](../../docs/architecture/content-loading.md) and

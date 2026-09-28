@@ -386,3 +386,64 @@ claimed from these checks. No runtime, policy engine, native permission change,
 dangerous execution, commit, tag, push or publication was performed.
 Memory Impact: NONE for project memory; build continuity is updated in docs/build,
 without initializing project policy or a canonical project-memory store.
+
+## Prompt 07 repository observation
+
+Observed 2026-09-29 (Asia/Bangkok). Root:
+C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework.
+Branch main; HEAD 4216f5951504e7711019dfe2467d7a4880fdc9de
+(Enhance Kiyo governance framework with new policies and decision examples).
+Initial worktree/index and staged/unstaged diff statistics were empty; Prompt 06
+was committed before this task. Inventory: LICENSE plus 48 Markdown files.
+No applicable AGENTS.md in repository/checked ancestors or Git tags were found.
+Read-only Git uses exact-root safe.directory and empty core.excludesFile per
+command; no persistent settings changes. Read Build Contract, governance, Core,
+build state, relevant requirements/architecture and Prompt 02 OWASP research.
+
+## Prompt 07 checks
+
+Executed 2026-09-29 (Asia/Bangkok), against the Prompt 07 working tree. PASS below
+is limited to official-source retrieval and static authoring/consistency checks.
+It does not mean an agent followed these instructions or a host enforced them.
+Used official web-page retrieval, an inline Python validator and read-only Git;
+no scanner dependency, test harness, runtime or policy engine was installed.
+
+| Check | Result | Actual evidence and limitation |
+| --- | --- | --- |
+| P07-C01 Repository and context | PASS | Verified main, HEAD 4216f5951504e7711019dfe2467d7a4880fdc9de, initial clean worktree/index and 48-Markdown baseline. Read Build Contract, build state, governance, relevant Core/requirements/architecture and prior OWASP research. Local repository evidence is not production evidence. |
+| P07-C02 Official taxonomy/status | PASS | Retrieved W01/W02 and W05–W15: 13 source rows checked 2026-09-29. Followed W02's ten category links; AST landing/detail pages retained their shown URLs. ASVS original project URL redirected to https://owasp.org/projects/asvs; ASI announcement retained its shown URL. Recorded AST public-review/mixed status, AST versus ASI distinction and ASVS wording limits. Source claims remain DOCUMENTED_ONLY; other standards/native schemas and the linked draft Google Doc were not refreshed. No vendor examples, incidents or proposed universal schema were accepted as native contracts. |
+| P07-C03 Content structure and controls | PASS | Checked 59 UTF-8 Markdown files; six agent-security files include AST01–AST10 with all nine mapping fields (eight requested fields plus source), four owner categories, ten unique new canonical controls and 41 total indexed IDs. Four neutral templates each contain one artifact body with identity, UNKNOWN/NOT_RUN and separate modification/verification fields. Separate application checklist covers all nine requested concerns. This validates authored structure, not application or agent safety. |
+| P07-C04 References and preservation | PASS | Resolved 883 local Markdown links/anchors and 161 contained product references across 37 product files excluding developer README. Fourteen product HTTPS links are optional source citations, not operational dependencies. No product reference escapes to developer docs/tests; no absolute developer path, symlink or reparse resource found. Unchanged KIYO.md plus bootstrap.md remains 81 lines / 579 whitespace-separated words. Cache relocation/native loading was not tested. |
+| P07-C05 Semantic review and expected cases | PASS | Author review checked unsigned versus malicious, copied approval provenance, host-required-control HOLD, update scope/reuse and user-state preservation, separate static/behavioral/adversarial evidence, optional records and nine application topics. Parsed 19 sequentially authored case specifications with setup/stimulus/expected/evidence/execution fields, and resolved mapped test IDs. All cases remain NOT_RUN. Ten parity rows each cover six targets with explicit UNKNOWN/NOT_TESTED controls and the historical UNSUPPORTED IDE plugin route, marked NOT_REVALIDATED here. Review is not an independent security audit; no regex/LLM safety guarantee or native enforcement result is claimed. |
+| P07-C06 Traceability and closure | PASS | Preserved 80 unique requirements and 80 ten-column trace rows; 22 rows link P07 evidence (20 partial instruction inputs, REQ-073 shared input only, REQ-080 continuity). Totals: 55 PARTIALLY_IMPLEMENTED / 25 NOT_IMPLEMENTED; every full requirement verification stays NOT_RUN. Confirmed Prompt 07 DONE, Prompt 08 NOT_STARTED, scoped next-step boundary, nine open issues and four pending owner decisions. |
+| P07-C07 Change boundary | PASS | Exact allowlist: eleven new and thirteen modified Markdown files; git diff --check passed, staged set empty and HEAD unchanged. LICENSE retains blob d2e60c5b160ed4f9ca096215e72efee5769936b1. Build Contract, requirement registry, native compatibility research, prior ADRs/loading/packaging, Core/bootstrap, Memory templates/scenarios and existing governance rules/examples are unchanged except the conditional Skill Audit pointer in ai-usage.md. No .kiyo, platforms, tools, dist, public SKILL.md or non-Markdown addition exists; all six native targets remain NOT_TESTED. |
+
+Reproduce against the six src/kiyo/agent-security files, four templates under
+src/kiyo/templates/skill-governance and tests/behavioral/agent-security/scenarios.md.
+Modified files are six build records (PROGRESS, HANDOFF, TRACEABILITY, OPEN-ISSUES,
+DECISIONS, BASELINE), SOURCES/standards-baseline, architecture layout/naming,
+source README, control-index and governance/ai-usage. The inline validator checked
+the Git allowlists/protected paths, UTF-8/conflict markers, ordinary local links
+and heading anchors outside fences, contained product resources, control IDs,
+AST fields/source dates, owner/parity tables, template neutrality/fields, scenario
+references, application concerns, unchanged budgets and trace/build-state counts.
+Semantic review separately inspected original policy meaning and remaining gaps;
+string matching alone is not a security assessment.
+
+Read-only Git used rev-parse --show-toplevel/HEAD, branch --show-current, log -1,
+status --short --untracked-files=all, diff --stat/--numstat/--check/--name-only,
+diff --cached, protected-path diffs, ls-files --others --exclude-standard,
+hash-object -- LICENSE and tag --list, with the scoped overrides above.
+Truncated combined reads were repeated with scoped output; one Python display
+read failed under cp1252 and was rerun with UTF-8 output. An unavailable JavaScript
+clone helper and a patch-context mismatch were corrected before dependent writes.
+These were authoring-tool issues, not executed behavioral tests or evidence of
+product failures. Final static validation exited 0 with PASS.
+
+Static security/source-record/documentation checks: PASS within the stated scopes.
+Behavioral/adversarial scenario execution: NOT_RUN. Native package validation:
+NOT_RUN. Live tests: NOT_TESTED for each of the six targets. No runtime security
+control, host setting, signature verification, real secret access, external attack,
+commit, tag, push or publication was performed. No certification is claimed.
+Memory Impact: NONE for project memory; continuity is updated in docs/build,
+without initializing populated inventory, policy, approval or memory records.

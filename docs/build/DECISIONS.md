@@ -46,6 +46,13 @@ permissions; human scope approval cannot override applicable prohibitions/denial
 This authorizes policy content, not a policy engine, operational execution or
 organization/native permission-setting changes.
 
+Prompt 07 was subsequently authorized on 2026-09-29: recheck OWASP AST/ASI
+source status, author actionable AST controls/shared reviews, optional static
+records and application-security separation; check/update build state and stop
+before Prompt 08. Source-derived taxonomy does not establish native schemas,
+control enforcement, signatures or certification. No operational security setting,
+organization owner, publication identity or runtime is authorized by this task.
+
 ## Pending owner decisions
 
 | ID | Decision | Current evidence / status | Who decides | Latest needed / effect | Resolution evidence |

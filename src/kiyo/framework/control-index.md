@@ -39,6 +39,17 @@ REQ references identify requirement scope, not full acceptance or a runtime impo
 | KIYO-DEP-001 | [Dependency justification](../governance/dependency-governance.md#kiyo-dep-001--justify-and-inspect-dependencies-in-context) | REQ-003, REQ-053, REQ-059 | ACTIVE / none |
 | KIYO-PROVIDER-001 | [Provider evidence and limits](../governance/provider-policy.md#kiyo-provider-001--use-observed-context-and-bound-data-assurances) | REQ-013, REQ-055 | ACTIVE / none |
 
+| KIYO-SEC-001 | [Establish trust from evidence](../agent-security/trust-review.md#kiyo-sec-001--establish-trust-from-evidence) | REQ-058 | ACTIVE / none |
+| KIYO-SEC-002 | [Compare honest metadata with the actual payload](../agent-security/trust-review.md#kiyo-sec-002--compare-honest-metadata-with-the-actual-payload) | REQ-061, REQ-067 | ACTIVE / none |
+| KIYO-SEC-003 | [Preserve the authority boundary across retrieved content](../agent-security/prompt-injection.md#kiyo-sec-003--preserve-the-authority-boundary-across-retrieved-content) | REQ-012, REQ-062 | ACTIVE / none |
+| KIYO-SEC-004 | [Bind source review to the actual artifact](../agent-security/update-and-provenance.md#kiyo-sec-004--bind-source-review-to-the-actual-artifact) | REQ-053, REQ-059 | ACTIVE / none |
+| KIYO-SEC-005 | [Reassess changed content and scope before reuse](../agent-security/update-and-provenance.md#kiyo-sec-005--reassess-changed-content-and-scope-before-reuse) | REQ-049, REQ-064 | ACTIVE / none |
+| KIYO-SEC-006 | [Establish required host controls or hold dependent execution](../agent-security/control-ownership.md#kiyo-sec-006--establish-required-host-controls-or-hold-dependent-execution) | REQ-007, REQ-051, REQ-063 | ACTIVE / none |
+| KIYO-SEC-007 | [Keep review layers and blind spots explicit](../agent-security/trust-review.md#kiyo-sec-007--keep-review-layers-and-blind-spots-explicit) | REQ-040, REQ-065, REQ-077 | ACTIVE / none |
+| KIYO-SEC-008 | [Keep accountable optional file records](../agent-security/control-ownership.md#kiyo-sec-008--keep-accountable-optional-file-records) | REQ-049, REQ-066 | ACTIVE / none |
+| KIYO-SEC-009 | [Verify each platform control independently](../agent-security/control-ownership.md#kiyo-sec-009--verify-each-platform-control-independently) | REQ-005, REQ-067 | ACTIVE / none |
+| KIYO-SEC-010 | [Review application behavior separately from agent skills](../agent-security/application-security.md#kiyo-sec-010--review-application-behavior-separately-from-agent-skills) | REQ-057, REQ-073 | ACTIVE / none |
+
 Keep IDs when files move or wording is clarified. Never renumber or reuse retired
 IDs. A materially different obligation needs a new ID and explicit migration/
 replacement history. Skills cite this index or canonical definitions; they do not

@@ -1,6 +1,7 @@
 # Kiyo Compass — Research sources
 
-Checked: **2026-09-28**, Asia/Bangkok. Prompt 02 only.
+Original baseline: **2026-09-28**, Asia/Bangkok (Prompt 02).
+Prompt 07 rechecked W01/W02 and added W05–W15 on **2026-09-29**.
 
 ## Evidence rules
 
@@ -11,8 +12,8 @@ Checked: **2026-09-28**, Asia/Bangkok. Prompt 02 only.
 - **UNKNOWN**: inspected sources do not establish the fact, conflict, or leave relevant semantics unspecified.
 - **NOT_REVALIDATED**: freshness/access qualifier when the relevant page cannot be retrieved. It is not a synonym for UNSUPPORTED.
 
-Every source row below has source-check status **DOCUMENTED_ONLY** and checked date
-**2026-09-28**. Source IDs are stable locators, not test IDs. Capability tables inherit
+Every source row below has source-check status **DOCUMENTED_ONLY**; use each row's
+checked date. Unchanged Prompt 02 sources remain checked **2026-09-28**. Source IDs are stable locators, not test IDs. Capability tables inherit
 that date and link here; their limitation cells apply in addition to the source limits.
 All six live targets remain NOT_TESTED. No plugin, skill, account, cache relocation,
 automatic selection or permission behavior was exercised.
@@ -75,10 +76,42 @@ Only public documentation URLs were sent to the web tool.
 | N02 | [NIST SSDF 1.2 initial public draft](https://csrc.nist.gov/pubs/sp/800/218/r1/ipd) | Same | 2026-09-28 | Draft dated 2025-12-17; comment closure does not make it final. |
 | N03 | [NIST SSDF project](https://csrc.nist.gov/projects/ssdf) | Same | 2026-09-28 | Practice groups and supplementary AI profile; project page alone is not revision status. |
 | N04 | [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework) | Same | 2026-09-28 | 1.0 released; revision in progress; no assumed successor edition. |
-| W01 | [OWASP ASVS](https://owasp.org/www-project-application-security-verification-standard/) | [Final page](https://owasp.org/projects/asvs) | 2026-09-28 | Main text names stable 5.0.0; sidebar also says Bleeding Edge, so avoid equating moving repository head with stable. |
-| W02 | [OWASP Agentic Skills Top 10](https://owasp.github.io/www-project-agentic-skills-top-10/) | Same | 2026-09-28 | Public review v1 draft; status section says new proposal/1.0 (2026 Edition). Proposed universal schema is not a host contract. |
+| W01 | [OWASP ASVS](https://owasp.org/www-project-application-security-verification-standard/) | [Final page](https://owasp.org/projects/asvs) | 2026-09-29 | Main text names stable 5.0.0; sidebar also says Bleeding Edge, so avoid equating moving repository head with stable. |
+| W02 | [OWASP Agentic Skills Top 10](https://owasp.github.io/www-project-agentic-skills-top-10/) | Same | 2026-09-29 | Public review v1 draft; status section says new proposal/1.0 (2026 Edition). Proposed universal schema is not a host contract. |
 | W03 | [OWASP SAMM model](https://owaspsamm.org/model/) | Same | 2026-09-28 | Model describes version 2.0; latest patch/tool version not established. |
 | W04 | [OWASP SAMM v2 release notes](https://owaspsamm.org/release-notes-v2/) | Same | 2026-09-28 | Reached via model page link; incremental guidance updates are not automatically a new model edition. |
+| W05 | [OWASP Agentic Applications release announcement](https://genai.owasp.org/2025/12/09/owasp-top-10-for-agentic-applications-the-benchmark-for-agentic-security-in-the-age-of-autonomous-ai/) | Same | 2026-09-29 | Announcement dated 2025-12-09 uses ASI identifiers; separate from AST. Not evidence of latest minor revision or Kiyo behavior. |
+| W06 | [AST01: Malicious Skills](https://owasp.github.io/www-project-agentic-skills-top-10/ast01.html) | Same; reached from W02 summary link | 2026-09-29 | Draft taxonomy detail; original Kiyo interpretation only, no native schema/enforcement or incident validation claim. |
+| W07 | [AST02: Supply Chain Compromise](https://owasp.github.io/www-project-agentic-skills-top-10/ast02.html) | Same; reached from W02 summary link | 2026-09-29 | Draft taxonomy detail; original Kiyo interpretation only, no native schema/enforcement or incident validation claim. |
+| W08 | [AST03: Over-Privileged Skills](https://owasp.github.io/www-project-agentic-skills-top-10/ast03.html) | Same; reached from W02 summary link | 2026-09-29 | Draft taxonomy detail; original Kiyo interpretation only, no native schema/enforcement or incident validation claim. |
+| W09 | [AST04: Insecure Metadata](https://owasp.github.io/www-project-agentic-skills-top-10/ast04.html) | Same; reached from W02 summary link | 2026-09-29 | Draft taxonomy detail; original Kiyo interpretation only, no native schema/enforcement or incident validation claim. |
+| W10 | [AST05: Untrusted External Instructions](https://owasp.github.io/www-project-agentic-skills-top-10/ast05.html) | Same; reached from W02 summary link | 2026-09-29 | Draft taxonomy detail; original Kiyo interpretation only, no native schema/enforcement or incident validation claim. |
+| W11 | [AST06: Weak Isolation](https://owasp.github.io/www-project-agentic-skills-top-10/ast06.html) | Same; reached from W02 summary link | 2026-09-29 | Draft taxonomy detail; original Kiyo interpretation only, no native schema/enforcement or incident validation claim. |
+| W12 | [AST07: Update Drift](https://owasp.github.io/www-project-agentic-skills-top-10/ast07.html) | Same; reached from W02 summary link | 2026-09-29 | Draft taxonomy detail; original Kiyo interpretation only, no native schema/enforcement or incident validation claim. |
+| W13 | [AST08: Poor Scanning](https://owasp.github.io/www-project-agentic-skills-top-10/ast08.html) | Same; reached from W02 summary link | 2026-09-29 | Draft taxonomy detail; original Kiyo interpretation only, no native schema/enforcement or incident validation claim. |
+| W14 | [AST09: No Governance](https://owasp.github.io/www-project-agentic-skills-top-10/ast09.html) | Same; reached from W02 summary link | 2026-09-29 | Draft taxonomy detail; original Kiyo interpretation only, no native schema/enforcement or incident validation claim. |
+| W15 | [AST10: Cross-Platform Reuse](https://owasp.github.io/www-project-agentic-skills-top-10/ast10.html) | Same; reached from W02 summary link | 2026-09-29 | Draft taxonomy detail; original Kiyo interpretation only, no native schema/enforcement or incident validation claim. |
+
+## Prompt 07 OWASP revalidation
+
+Opened W02's recorded URL and followed its ten category links to W06–W15;
+no redirect was reported for the landing/detail pages. W01 again redirected from
+the original project URL to https://owasp.org/projects/asvs. W05 was discovered
+through official-source search and opened at its shown URL without a reported
+redirect. Browser text retrieval establishes source content, not Kiyo behavior.
+No hostile example, scanner integration or external attack was executed.
+
+W02 still presents public-review v1 together with proposal/2026-edition wording.
+Retain draft maturity and do not infer a finalized release. W05 establishes a
+separate ASI taxonomy and announcement, not interchangeability with AST. W01 main
+text identifies stable 5.0.0 while the sidebar retains bleeding-edge wording.
+Other standards, vendor schemas, host settings and the linked v1 Google Doc were
+not revalidated in Prompt 07. No clause text or OWASP schema is imported.
+
+The [Kiyo AST controls](../../src/kiyo/agent-security/owasp-ast10.md) and
+[scenario specifications](../../tests/behavioral/agent-security/scenarios.md)
+are authored interpretations/expected behavior. Execution remains NOT_RUN;
+native targets remain NOT_TESTED. See [P07 checks](../build/BASELINE.md#prompt-07-checks).
 
 ## Retrieval failures and recovery
 

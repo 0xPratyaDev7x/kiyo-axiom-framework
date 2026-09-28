@@ -1,9 +1,44 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **06 Governance**.
-Task status: **DONE** for Prompt 06; scoped static governance/documentation checks passed.
-Product status: shared Core/Memory and Markdown governance policies authored;
+Snapshot: 2026-09-29. Current prompt: **07 Security**.
+Task status: **DONE** for Prompt 07; scoped static security/documentation checks passed.
+Product status: shared Core/Memory/governance and agent-security guidance authored;
 native packages/public skills remain unimplemented. A policy engine is outside the product boundary.
+
+## Prompt 07 delivered scope
+
+- Rechecked official OWASP AST landing/detail pages, ASI release announcement and
+  ASVS project status; recorded URL destinations, check dates and limitations in
+  [sources](../research/SOURCES.md#prompt-07-owasp-revalidation).
+  AST remains public-review draft; AST and ASI are distinct identifiers.
+- Added [AST01–AST10 mapping](../../src/kiyo/agent-security/owasp-ast10.md):
+  risk, Kiyo control IDs, shared procedure, expected behavior, required evidence,
+  four responsibility categories, residual limits and case references.
+- Added [trust/metadata and layered Skill Audit](../../src/kiyo/agent-security/trust-review.md),
+  [injection handling](../../src/kiyo/agent-security/prompt-injection.md),
+  [provenance/update review](../../src/kiyo/agent-security/update-and-provenance.md)
+  and [ownership/parity](../../src/kiyo/agent-security/control-ownership.md).
+- Added a separate [Application Security checklist](../../src/kiyo/agent-security/application-security.md)
+  covering all nine requested topics; no invented ASVS clauses or certification.
+- Added four optional neutral [record templates](../../src/kiyo/agent-security/control-ownership.md#optional-file-records)
+  for inventory, approval, revocation and incidents. No populated user records,
+  central service, watcher or runtime security enforcement was created.
+- Added [19 synthetic scenario specifications](../../tests/behavioral/agent-security/scenarios.md),
+  execution NOT_RUN. Native per-control gaps remain UNKNOWN/unverified across
+  six targets, retaining the prior unsupported Codex IDE plugin route explicitly.
+- Added KIYO-SEC-001–010 (41 controls total), conditional Governance Review routing,
+  source README/architecture and research/build-state updates. No public skill,
+  native overlay, signature verifier, scanner dependency or dangerous operation.
+
+Coverage: partial instruction implementation for REQ-005/007/012/027/040/049/051/
+053/057–067/077; REQ-073 receives shared procedure/checklist input only, without
+a public Security skill. REQ-080 continuity updated. Current totals:
+55 PARTIALLY_IMPLEMENTED / 25 NOT_IMPLEMENTED. All 80 full requirement verifications
+remain NOT_RUN and all six native targets NOT_TESTED.
+
+Checks: [Prompt 07 evidence](BASELINE.md#prompt-07-checks).
+Memory Impact: **NONE for project memory**; existing build records carry continuity.
+No project inventory/policy/memory initialized; owner publication decisions remain open.
 
 ## Prompt 06 delivered scope
 
@@ -206,7 +241,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 04 | Core | DONE | P04-C01–C07 PASS; static Core/documentation only, expected cases not executed |
 | 05 | Memory | DONE | P05-C01–C07 PASS; static specification/template checks, scenarios NOT_RUN |
 | 06 | Governance | DONE | P06-C01–C07 PASS; static policies/documentation only, decision examples NOT_RUN |
-| 07 | Security | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 07 | Security | DONE | P07-C01–C07 PASS; static controls/procedures/templates only, scenarios NOT_RUN |
 | 08 | Router/Flow | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 09 | Engineering/Profiles | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 10 | Verification/DoD | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -239,8 +274,8 @@ Outstanding owner decisions: DEC-001 final name, DEC-002 release license,
 DEC-003 publisher/destination and DEC-004 treatment of Codex IDE's native-plugin
 gap before compatibility/release claims. See OPEN-ISSUES for technical gaps.
 
-Safe to continue: **YES for a user-requested Prompt 07 Security**. Core, Memory
-and governance references are ready for that scope; owner/native support
-decisions do not block it. This does not authorize later work or dangerous execution.
-Next prompt: **07 Security**, only when requested by the user.
+Safe to continue: **YES for a user-requested Prompt 08 Router/Flow**. Shared
+Core/Memory/governance/security inputs are ready; owner/native support decisions
+do not block that scope. This does not authorize later work or dangerous execution.
+Next prompt: **08 Router/Flow**, only when requested by the user.
 

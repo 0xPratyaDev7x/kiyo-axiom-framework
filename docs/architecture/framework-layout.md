@@ -151,5 +151,8 @@ identity and maintenance. These documents specify the architecture; later
 static, behavioral and live checks must establish that implemented files follow it.
 
 Prompt 03's only source scaffold was [the authoring README](../../src/kiyo/README.md).
-Prompts 04–06 add shared Core/Memory/governance content without exposing a callable skill. No consumer runtime dependency,
+Prompts 04–07 add shared Core/Memory/governance/agent-security content without exposing a callable skill.
+Prompt 07 adds six agent-security references and four neutral optional record
+templates under templates/skill-governance; developer scenario specifications
+stay outside the payload. Installed product references remain self-contained. No consumer runtime dependency,
 generator, MCP, hook, service, database, telemetry or Kiyo installer is introduced.

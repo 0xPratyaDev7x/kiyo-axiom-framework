@@ -54,5 +54,9 @@ or private reasoning in project memory. Governance records are not tamper-proof
 audit logs and do not prove all host actions were observed. Persistent artifacts
 need applicable write authority and the existing canonical project location.
 
+For requested skill adoption/update or a material agent-security finding, use
+[Skill Audit](../agent-security/trust-review.md) and only its relevant references.
+It reuses these governance boundaries and is not an extra public skill.
+
 [Decision examples](decision-examples.md) are synthetic expected behavior only;
 they do not establish native enforcement or successful execution.
