@@ -1,8 +1,35 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-28. Current prompt: **01 Scope**.
-Task status: **DONE** for Prompt 01; the documentation checks passed.
-Product status: requirements registered; product functionality not implemented.
+Snapshot: 2026-09-28. Current prompt: **02 Research**.
+Task status: **DONE** for Prompt 02 research; documentation checks passed.
+Product status: research documentation implemented; no native payload or skills.
+
+## Prompt 02 delivered scope
+
+- Retrieved official sources and recorded requested/final URLs, checked dates,
+  limitations, recovered retrieval failures and source conflicts.
+- Researched all 11 requested dimensions independently for six targets; native
+  Codex IDE plugins are UNSUPPORTED in current documentation, while standalone
+  IDE skills are documented. All six live states remain NOT_TESTED.
+- Separated metadata discovery, explicit/implicit skill use and persistent core
+  guidance; recorded self-contained resource options and unresolved contracts.
+- Established concept-level standards baseline, including ISO 12207:2026,
+  SSDF 1.1 final versus 1.2 draft, and AST v1 public-review maturity.
+- Created [SOURCES](../research/SOURCES.md),
+  [standards baseline](../research/standards-baseline.md),
+  [capabilities](../compatibility/platform-capabilities.md),
+  [invocation map](../compatibility/native-invocation-map.md), and
+  [activation modes](../compatibility/activation-modes.md).
+- Updated this file, TRACEABILITY, OPEN-ISSUES, HANDOFF, BASELINE and DECISIONS.
+  REQUIREMENTS, BUILD-CONTRACT and LICENSE are preserved.
+
+Coverage: REQ-004/005/010/056/057/067 have partial documentation implementation;
+REQ-080 build continuity remains partial. Research inputs also cover
+REQ-002/003/006/007/009/011/058–066/076–079 without claiming their product
+implementation. Full requirement verifications remain NOT_RUN.
+
+Checks: [Prompt 02 evidence](BASELINE.md#prompt-02-checks).
+Memory Impact: build records only; no .kiyo/memory or competing memory created.
 
 ## Prompt 01 delivered scope
 
@@ -40,7 +67,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | Prompt | Scope | Task / planning status | Evidence / dependency |
 | --- | --- | --- | --- |
 | 01 | Scope | DONE | P01-C01–C07 PASS; see BASELINE for scope and evidence |
-| 02 | Research | NOT_STARTED | Next only when requested; consult handoff |
+| 02 | Research | DONE | P02-C01–C07 PASS; research only, all live targets NOT_TESTED |
 | 03 | Architecture | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 04 | Core | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 05 | Memory | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -74,11 +101,13 @@ NOT_STARTED is a roadmap planning marker, not an additional task-result status.
 
 ## Continuation boundary
 
-Outstanding owner decisions: DEC-001 final name, DEC-002 release license
-confirmation, DEC-003 publisher identity. They do not block independent research.
+Outstanding owner decisions: DEC-001 final name, DEC-002 release license,
+DEC-003 publisher/destination and DEC-004 treatment of Codex IDE's native-plugin
+gap before compatibility/release claims. See OPEN-ISSUES for technical gaps.
 
-Safe to continue: **YES for requested Prompt 02 research**. Prompt 01 acceptance
-checks passed; remaining owner decisions do not block independent research.
-This is not permission to publish or a claim of product/host readiness.
-Next prompt: **02 Research**, only when requested by the user.
+Safe to continue: **YES for requested Prompt 03 Architecture**. Research and
+documentation checks are complete; design may use documented capabilities while
+leaving unsupported or unknown schema-dependent paths gated.
+No release or host-acceptance readiness is implied.
+Next prompt: **03 Architecture**, only when requested by the user.
 

@@ -92,3 +92,52 @@ Memory Impact: build continuity changes are recorded in docs/build. No product
 memory exists in the observed baseline; creating .kiyo/memory is outside this
 prompt's scope. No memory initialization or sync is performed.
 
+## Prompt 02 repository observation
+
+Observed 2026-09-28 in Asia/Bangkok. Root:
+C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework.
+Branch main; HEAD aa843a5c690d232d110c744eaecf30997c233908
+(Add TRACEABILITY documentation for Kiyo Compass requirements and implementation statuses).
+Initial status, unstaged diff and staged diff had no entries. Tracked inventory:
+LICENSE plus eight docs/build files. No repository/ancestor AGENTS.md found.
+The old Prompt 01 root/HEAD remains historical evidence above, not the current
+checkout.
+
+Initial Git calls failed on dubious ownership; retries used a per-command
+safe.directory for this exact root, with no persistent config change. Git warned
+that sandbox access to the global ignore file was denied. An attempted NUL
+exclude-file override failed; setting core.excludesFile to an empty value for
+the command succeeded. These failed attempts are not counted as passed checks.
+
+No Kiyo host/account/version availability inspection, plugin installation,
+manifest validation, behavioral evaluation or live-host test occurred.
+The initial six UNKNOWN capability entries above are the **historical Prompt 01
+baseline**. Current documentary capability states are in the
+[Prompt 02 matrix](../compatibility/platform-capabilities.md#target-summary).
+
+## Prompt 02 checks
+
+Documentation/research checks only, executed 2026-09-28. These do not verify
+product behavior or satisfy full requirement acceptance.
+
+| Check ID | Method / scope | Actual result | Evidence / limitation |
+| --- | --- | --- | --- |
+| P02-C01 | Repository root, branch, HEAD, index and initial user edits; instruction inventory | PASS | Actual Git outputs above; initial tree/index clean. Scoped override only; no fetch, remote freshness UNKNOWN. |
+| P02-C02 | Inline Python: five required files, strict UTF-8, registered source-ID references and dates/limitations | PASS | Five nonempty research files; 48 unique source IDs; references resolve; no replacement characters, NUL or conflict markers. Content/source review is C04, not implied by string checks. |
+| P02-C03 | Inline Python: parse target sections and numbered capability rows; review live-state boundaries | PASS | Six summary rows, six target sections, exactly 11 dimensions each (66); NOT_TESTED live states; all six evidence/freshness terms defined. No native behavior exercised. |
+| P02-C04 | Manual self-review of retrieved official pages against claims, redirect register, standards editions/status and task questions | PASS | Ten starting URLs opened; redirects/retrieval failures recorded; 48 official source entries. Six targets, static packaging, discovery/core/bootstrap, invocation, cache resources, distribution and owner gates addressed. All named standards covered; ISO public metadata only; AST draft/proposal caveat retained. Self-review, not independent audit or live proof. |
+| P02-C05 | Inline Python: resolve local Markdown destinations/heading anchors; registry and trace table coverage/status | PASS | 207 local links/anchors resolved at initial closing check; 80 unique contiguous IDs in each registry/table; 10 trace columns; 73 NOT_IMPLEMENTED, 7 PARTIALLY_IMPLEMENTED; all 80 full verifications NOT_RUN; planned test IDs remain labeled. |
+| P02-C06 | Inline Python and manual handoff review: build-state consistency and stop boundary | PASS | Prompt 02 DONE, Prompt 03 NOT_STARTED, safe continuation scoped to requested architecture; four unresolved decision rows, nine issue rows; trace check link present; no .kiyo memory directory. Handoff supplies read order, current root/HEAD, findings and exact next action without prior chat. |
+| P02-C07 | Inline Python plus Git: 11-file allowlist, LICENSE hash, unchanged protected files/index/HEAD and whitespace | PASS | Five new and six modified Markdown files only; LICENSE blob d2e60c5b160ed4f9ca096215e72efee5769936b1; REQUIREMENTS/BUILD-CONTRACT unchanged; index empty; main/HEAD unchanged; diff and explicit new-file whitespace checks clean. First run caught a new blank line at BASELINE EOF; corrected and rerun passed. |
+
+Research retrieval: see [SOURCES](../research/SOURCES.md) for official URLs,
+reported final destinations, checked date, limitations and failed/recovered URLs.
+No HTTP chain/hash or live result fabricated.
+Checks were inline developer-only validation; no script or dependency was added.
+The final status edits were followed by the same link/coverage/preservation checks
+and the build-state consistency check. These scoped observations are VERIFIED
+as documentation checks only; capability findings remain DOCUMENTED_ONLY or the
+explicitly stated UNKNOWN/UNSUPPORTED state.
+Product static validation: NOT_RUN. Behavioral evaluation: NOT_RUN.
+Live Kiyo tests: NOT_TESTED for each of the six targets.
+Memory Impact: build-state records only; no product memory touched.

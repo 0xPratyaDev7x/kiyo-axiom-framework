@@ -2,101 +2,112 @@
 
 ## Resume without the prior chat
 
-This repository is intended to become Kiyo Compass, a working-name AI Engineering
-& Governance Framework for coding agents. It is static, Markdown-first,
-vendor-neutral and advisory. The host agent uses tools and the host enforces
-permissions. It has no Kiyo runtime, server, database, daemon, hooks, MCP,
-telemetry, central CLI/installer or end-user runtime dependency. Do not build a
-Virtual Office, agent-team orchestration or project-management application.
+Kiyo Compass is the working-name AI Engineering & Governance Framework for coding
+agents. It is static, Markdown-first, vendor-neutral and advisory. Native hosts
+use tools and enforce permissions. No Kiyo runtime, hooks, MCP, daemon, telemetry,
+central installer, Virtual Office or agent-team orchestration is authorized.
 
-The four pillars are Project Intelligence, Software Engineering, AI Governance
-and Agentic Skill Security. The eight public skills are Init, Requirement,
-Implement, Review, Test, Security, Architecture and Memory. Workflow Router,
-Governance Review, Skill Audit and Self-check are shared procedures/submodes.
-There must be one canonical specification and necessary self-contained native
-overlays, not six independent forks of the core.
+Four pillars: Project Intelligence, Software Engineering, AI Governance, Agentic
+Skill Security. Exactly eight public skills: Init, Requirement, Implement,
+Review, Test, Security, Architecture, Memory. Workflow Router, Governance Review,
+Skill Audit and Self-check remain shared procedures/submodes.
+One canonical specification with necessary self-contained native overlays.
 
-## Repository state to recheck
+## Current repository observation
 
-- Root: C:/Users/pratya_s/source/@0xPratya7x/kiyo-codejadee-framework
-- Observed branch: main; HEAD: fb389c33f95026c43fd880334264a0946fac59e0.
-- Initial tree was clean and contained only tracked LICENSE (MIT).
-- Prompt 01 adds the eight build files below. These changes have not been
-  committed, tagged, pushed or published.
-- Root LICENSE must be preserved. Existing MIT text does not resolve the owner's
-  final release-license decision. No product version or publisher is established.
-- Recheck root, branch, status and user edits before proceeding. Do not assume this
-  snapshot still matches the working tree in a later session.
+Observed for Prompt 02 on 2026-09-28:
 
-## Read order and durable records
+- Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework
+- Branch: main; HEAD: aa843a5c690d232d110c744eaecf30997c233908.
+- Initial working tree and index clean; tracked LICENSE and eight Prompt 01 build
+  files. Prompt 01 records were committed before this session; prior handoff's
+  checkout path and uncommitted snapshot are historical, not current facts.
+- No applicable AGENTS.md found in repository or checked ancestors; no .kiyo
+  project/product memory present.
+- Git initially refused sandbox ownership. A per-command safe.directory override
+  for this exact root allowed read-only checks; global settings were not changed.
+  An unreadable global ignore warning was resolved for inventory by the
+  per-command empty core.excludesFile setting.
+- LICENSE blob remains d2e60c5b160ed4f9ca096215e72efee5769936b1.
+- Prompt 02 creates five Markdown files and changes six build records. No commits,
+  tags, pushes, installs, publication or global settings changes were made here.
 
-1. [BUILD-CONTRACT.md](BUILD-CONTRACT.md): product boundaries, authority, all-prompt
-   rules, statuses and required closing report.
-2. [PROGRESS.md](PROGRESS.md): current step and the complete 30-step roadmap.
-3. This HANDOFF and [OPEN-ISSUES.md](OPEN-ISSUES.md): pending work and blockers.
-4. [REQUIREMENTS.md](REQUIREMENTS.md): original 80 IDs, expanded acceptance criteria,
-   dependencies and proposed future areas.
-5. [TRACEABILITY.md](TRACEABILITY.md): all 80 rows and honest implementation/
-   verification state.
-6. [DECISIONS.md](DECISIONS.md): confirmed task constraints versus pending owner
-   decisions.
-7. [BASELINE.md](BASELINE.md): observed repository facts, six-target baseline and
-   actual Prompt 01 check evidence.
+Recheck root, branch, index, unstaged/untracked changes and user edits on resume.
+Preserve LICENSE and the 80 original requirements. See BASELINE for check results.
 
-These are the eight files required by Prompt 01; no old chat or local attachment
-is needed to recover the requirements and build rules.
+## Read order
 
-## Completed and outstanding work
+1. [BUILD-CONTRACT](BUILD-CONTRACT.md).
+2. [PROGRESS](PROGRESS.md), this handoff, [OPEN-ISSUES](OPEN-ISSUES.md).
+3. Relevant [REQUIREMENTS](REQUIREMENTS.md), [TRACEABILITY](TRACEABILITY.md),
+   [DECISIONS](DECISIONS.md), [BASELINE](BASELINE.md).
+4. [Sources and redirects](../research/SOURCES.md).
+5. [Standards baseline](../research/standards-baseline.md).
+6. [Platform capabilities](../compatibility/platform-capabilities.md),
+   [native invocation](../compatibility/native-invocation-map.md),
+   [activation modes](../compatibility/activation-modes.md).
 
-Prompt 01 has created the scope registry and build continuity records.
-Prompt 01 status is DONE: documentation checks P01-C01–C07 passed; see BASELINE
-for actual results and limits.
-All 80 requirements are registered, but REQ-001–REQ-079 are NOT_IMPLEMENTED as
-product capabilities. REQ-080 is PARTIALLY_IMPLEMENTED: continuity files exist,
-while later updates, final gap audit and full requirement verification remain.
-All full requirement verifications remain NOT_RUN. Planned paths/test identifiers
-are not existing features or executed tests.
+All source checks are dated 2026-09-28. Revalidate volatile schema details before
+implementing native packages; use native references, not old chat, local skill
+scaffolds or the OWASP proposed universal format.
 
-Six support targets must stay independent: Claude Code CLI, Claude Code VS Code
-Extension, Codex CLI, Codex IDE Extension, GitHub Copilot CLI and GitHub Copilot
-in VS Code. No Kiyo live-host tests were performed; all six remain NOT_TESTED.
-Capability/schema, installed-version and account facts are UNKNOWN, not inferred
-from the current assistant session. External research has not yet been done.
+## Completed work and evidence
 
-Outstanding owner decisions: DEC-001 final publication name/identifiers,
-DEC-002 intended publication-license confirmation and DEC-003 publisher identity/
-destination. None blocks independent research. No approval or identity may be
-invented. Ask only if the current step is actually blocked.
+Prompt 01 registered all REQ-001–080 and the build contract/roadmap.
+Prompt 02 researched 11 dimensions for each of six targets and created the five
+files above. Official metadata and behavior descriptions are DOCUMENTED_ONLY;
+static repository/document checks alone can be VERIFIED.
+Prompt 02 status: **DONE** for research; documentation checks passed. See
+[Prompt 02 evidence](BASELINE.md#prompt-02-checks).
 
-Memory Impact: this step records build continuity in docs/build only.
-No .kiyo/memory exists or was initialized; the planned canonical product-memory
-default is .kiyo/memory, with a single explicitly configured alternative allowed.
+No native Kiyo manifest, public skill or core has been implemented. No native
+version, account availability or installed-tool absence is inferred from the
+assistant session. Each of Claude CLI, Claude VS Code, Codex CLI, Codex IDE,
+Copilot CLI and Copilot VS Code remains **NOT_TESTED** live.
+
+Research-documentation implementation is partial for REQ-004/005/010/056/057/067;
+REQ-080 continuity remains partial. Other cited IDs receive research inputs only.
+All full requirement verifications remain NOT_RUN.
+
+## Findings Prompt 03 must retain
+
+- Codex IDE plugins are **UNSUPPORTED** by current official documentation;
+  standalone IDE skills are separately documented. DEC-004 has no approved
+  fallback/scope reduction. Do not claim six-target native-plugin compatibility.
+- OpenAI and both Copilot targets document Agent Plugins 1.0 root plugin.json.
+  Legacy manifests have different semantics. Claude documents its own manifest.
+- Installing skills exposes metadata; full skill/core instructions are not
+  automatically loaded every turn. Distinguish explicit invocation, inferred
+  matching and persistent native project guidance.
+- Claude explicitly does not load plugin-root CLAUDE.md as project context.
+  Copilot documents namespaced plugin rules but their complete trigger/grammar
+  semantics are unresolved. Do not invent a universal rules/core manifest field.
+- Exact Codex/Copilot CLI plugin-qualified skill spelling, Codex custom-source
+  lifecycle/cache behavior and minimum supported host versions need follow-up.
+- Cache-independent resources must be packaged and resolved from actual installed
+  skill/plugin locations. Bootstrap ownership/update/uninstall behavior needs
+  architecture; absolute author checkout paths are not portable.
+- ISO 12207 baseline is 2026 edition 2; 29148:2018 has a DIS replacement in
+  development. SSDF 1.1 is final and 1.2 is draft. AST v1 is public review.
+  ISO mappings are concept-level only; 38507/27034/SAMM supporting; 5338 only for
+  actual AI-system development. No certification or invented clause mapping.
+
+Open decisions: DEC-001 name/identifiers, DEC-002 release-license confirmation,
+DEC-003 publisher/account/destination, DEC-004 unsupported IDE route.
+They do not block architecture for documented capabilities; they do block
+dependent release identities, claims or unapproved fallback choices.
+
+Memory Impact: build continuity only. No .kiyo/memory initialized or changed.
 
 ## Exact next action
 
-Prompt 01 is complete; stop after its summary. Do not execute Prompt 02 yet.
-When the user supplies **Prompt 02 Research**, first reread the records above and
-recheck repository/user edits. The following research topics are carried forward,
-subject to the actual Prompt 02 instructions:
+Stop after Prompt 02's closing report. **Next: Prompt 03 Architecture**, only when
+the user supplies it. Start by rechecking repository state and reading the files
+above. Define canonical structure and overlay/bootstrap/resource boundaries using
+documented capabilities, with unsupported/unknown decisions left explicitly
+gated. Do not execute Prompt 03 from this handoff alone.
 
-- Verify official native plugin/marketplace formats, skill discovery/activation,
-  explicit invocation, hierarchy, metadata fields, installation/update/uninstall
-  and limitations separately for all six targets.
-- Record source URLs, actual research date, observed editions/versions where
-  available and explicit unknowns. Do not invent CLI/IDE equivalence or native
-  fields. Research evidence alone is not a live-host test.
-- Verify sources/editions for ISO 12207/29148/25010/29119 and
-  ISO 27001/42001/23894, NIST SSDF/AI RMF and OWASP ASVS; consider supporting
-  ISO 38507/27034 and SAMM, with ISO 5338 only where applicable.
-- Verify provenance of the supplied AST01–AST10 taxonomy before attributing it
-  to any external authority. Preserve the user's IDs and labels in the meantime.
-- Record capability gaps and any decisions that truly block the next design step.
-  Do not build native packages, implement skills or publish during research unless
-  the supplied prompt explicitly changes the authorized scope.
-- Update PROGRESS, TRACEABILITY, OPEN-ISSUES and HANDOFF with actual evidence
-  before finishing the next step.
-
-Safe to continue: **YES for requested Prompt 02 research**. The registry and
-handoff are complete and no unresolved owner decision blocks that research.
-Publication and product/host acceptance remain outside this readiness statement.
+Safe to continue: **YES for requested Prompt 03 Architecture**. Research and
+documentation checks are complete. This is limited to architecture of documented
+surfaces, not schema guesses, release, installation or live support claims.
 
