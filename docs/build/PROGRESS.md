@@ -1,9 +1,42 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **13 Implement**.
-Task status: **DONE** for Prompt 13; scoped Implement authoring checks passed.
-Product status: shared guidance/profiles/templates and canonical Init/Requirement/Implement authored;
-five public skills and native packages remain pending. No runtime engine.
+Snapshot: 2026-09-29. Current prompt: **14 Review**.
+Task status: **DONE** for Prompt 14; scoped Review authoring checks passed.
+Product status: shared guidance/profiles/templates and canonical Init/Requirement/Implement/Review authored;
+four public skills and native packages remain pending. No runtime engine.
+
+## Prompt 14 delivered scope
+
+- Added canonical [Review](../../src/kiyo/skills/review/SKILL.md), name review /
+  logical ID kiyo.review, with name/description frontmatter only. It reviews
+  existing human/AI changes, specified files, supplied ranges or actually accessible
+  PR context; no implicit source/test/Memory edits or build/test execution.
+- Added the [shared procedure](../../src/kiyo/workflows/review.md),
+  [severity/confidence guide](../../src/kiyo/framework/review-severity-confidence.md)
+  and [bounded report](../../src/kiyo/templates/reports/review-report.md).
+  Refined the existing [finding template](../../src/kiyo/templates/reports/review-finding.md)
+  with all eight requested fields plus classification and provenance.
+- Default comparison is actual current workspace, with distinct index/worktree/
+  untracked coverage. Missing bases, zero diff, effective policy protections,
+  uncertain requirements, redaction and stale Memory have explicit handling.
+  DONE describes bounded review delivery, never repair or production readiness.
+- Added KIYO-REVIEW-001 (62 controls), integration references and
+  [16 scenario specifications](../../tests/behavioral/review/scenarios.md).
+  Bounded source trials are separately recorded in
+  [forward evidence](../evidence/review/forward-trials.md).
+- Entry validation passed at 73 lines / 583 words. Four temporary resource copies
+  each contain 77 shared files and resolve contained references. These are source
+  checks, not native packages or host loading.
+
+Coverage: partial Review/shared instruction coverage for
+REQ-023/027/028/040/041/044/071/077; REQ-080 continuity updated.
+REQ-071 newly partial: 70 PARTIALLY_IMPLEMENTED / 10 NOT_IMPLEMENTED.
+All 80 full verifications remain NOT_RUN; six native targets remain NOT_TESTED.
+Full scenario matrices remain NOT_RUN; bounded trials cover only recorded variants.
+
+Checks: [Prompt 14 evidence](BASELINE.md#prompt-14-checks).
+Memory Impact: **NONE for developer project memory**. Fixture Memory remains
+unchanged; reported corrections are proposals. Owner decisions remain open.
 
 ## Prompt 13 delivered scope
 
@@ -447,7 +480,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 11 | Init | DONE | P11-C01–C07 PASS; entry/resource/closure checks and bounded source trials separately recorded; native NOT_TESTED |
 | 12 | Requirement | DONE | P12-C01–C07 PASS; static/resource checks and bounded source trials; native NOT_TESTED |
 | 13 | Implement | DONE | P13-C01–C07 PASS; source/resource checks and bounded fixture trials; native NOT_TESTED |
-| 14 | Review | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 14 | Review | DONE | P14-C01–C07 PASS; static/resource checks and bounded read-only source trials; native NOT_TESTED |
 | 15 | Test | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 16 | Security Skill | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 17 | Architecture Skill | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -473,9 +506,9 @@ Outstanding owner decisions: DEC-001 final name, DEC-002 release license,
 DEC-003 publisher/destination and DEC-004 treatment of Codex IDE's native-plugin
 gap before compatibility/release claims. See OPEN-ISSUES for technical gaps.
 
-Safe to continue: **YES for a user-requested Prompt 14 Review**.
-Shared contracts and three canonical skills are ready; publication/native gaps
+Safe to continue: **YES for a user-requested Prompt 15 Test**.
+Shared contracts and four canonical skills are ready; publication/native gaps
 remain gates for dependent packaging/activation claims. Later work is not
 authorized by this handoff alone.
-Next prompt: **14 Review**, only when requested by the user.
+Next prompt: **15 Test**, only when requested by the user.
 

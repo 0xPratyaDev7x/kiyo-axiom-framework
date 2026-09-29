@@ -57,7 +57,11 @@ skill entries remained planned. Read-only analysis and separately authorized spe
 remain Markdown procedures with no runtime.
 Prompt 13 adds skills/implement/SKILL.md and templates/short-plan.md, reusing and
 refining workflows/implement-flow.md plus existing repair/handoff/report resources.
-The remaining five skill entries are planned; no consumer runtime is introduced.
+At that step five skill entries remained planned; no consumer runtime is introduced.
+Prompt 14 adds skills/review/SKILL.md, workflows/review.md,
+framework/review-severity-confidence.md and templates/reports/review-report.md,
+and refines the existing finding template. Four skill entries remain planned.
+Review remains read-only with explicit inspection/comparison and execution limits.
 The README remains developer-only. Remaining
 product, overlay, tool, test and distribution paths are **planned**, not features.
 Create each directory when it receives real scoped content; no empty SKILL.md,
@@ -79,7 +83,7 @@ src/kiyo/
     init/SKILL.md                 authored Prompt 11; native package/test scope separate
     requirement/SKILL.md          authored Prompt 12; native acceptance separate
     implement/SKILL.md            authored Prompt 13; native acceptance separate
-    review/SKILL.md
+    review/SKILL.md               authored Prompt 14; native acceptance separate
     test/SKILL.md
     security/SKILL.md
     architecture/SKILL.md

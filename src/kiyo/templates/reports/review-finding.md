@@ -13,12 +13,25 @@ unless a separate report-file write is authorized. A found bug does not permit a
 - **Next required action:** <proposed scoped fix/decision/check or none within the review scope>
 
 **Finding ID/title:** <existing or locally assigned identifier, not a fabricated issue link>.
-**Location/evidence:** <actual safe file/line/symbol and observation>.
-**Trigger and impact:** <concrete affected behavior, supported severity and uncertainty>.
-**Expected versus observed:** <criterion/source and actual discrepancy; label inference>.
-**Reproduction/check:** <actual observation or clearly proposed/unrun method>.
-**Recommendation:** <bounded proposal, not an applied fix or approved decision>.
+**Classification:** <Confirmed defect / Plausible risk / Improvement suggestion>.
+**Severity:** <project scale or CRITICAL/HIGH/MEDIUM/LOW/INFO; impact-based reason>.
+**Confidence:** <HIGH/MEDIUM/LOW with inspected evidence and remaining premises;
+not a probability, permission or execution status>.
+**File:line or range:** <actual inspected safe location and working-tree/index/
+revision view; old-side revision for deletions, redaction limitation when needed>.
+**Observed behavior:** <supported trigger/path and observation versus inference;
+expected behavior with its source, baseline/new/unknown attribution>.
+**Impact:** <affected behavior/users/data within evidence; qualify uncertain reachability>.
+**Requirement/control reference:** <actual sourced ID/record or explicitly unavailable;
+do not invent a business rule, acceptance criterion or clause>.
+**Suggested fix:** <bounded proposal, not an applied repair or approved decision>.
+**Verification idea:** <meaningful proposed check and expected outcome, marked NOT_RUN
+unless actually executed within separately established scope; cite real evidence if so>.
 **Review provenance:** <self-review when applicable; no independent-audit claim without evidence>.
+
+Use the [classification/severity/confidence guide](../../framework/review-severity-confidence.md)
+and [bounded review report](review-report.md). For multiple findings, put the
+shared report fields once in that report rather than repeating them per issue.
 
 If no issue is identified, state “No findings in the inspected scope” with scope
 and limitations; do not invent a finding or say “no bugs” / “all tests pass.”

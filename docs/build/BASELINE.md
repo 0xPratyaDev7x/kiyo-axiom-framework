@@ -914,3 +914,94 @@ Memory Impact: NONE for developer project memory. Temporary fixture edits did
 not create/update Memory. Build continuity/evidence is developer-only, outside
 the installed payload. No runtime, initializer, dependency/global change, implicit
 publication operation or Prompt 14 implementation was introduced.
+
+## Prompt 14 repository observation
+
+Observed 2026-09-29 (Asia/Bangkok), before Prompt 14 edits:
+
+- Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework.
+- Branch main; HEAD a4712ef9be725bcd21ba81f2764f017a2e7b3b4c, subject
+  “feat(implement): introduce canonical Implement skill and workflows”.
+  Prompt 13 was committed before this work.
+- Initial index/worktree clean; staged/unstaged diffstat empty. Inventory:
+  108 Markdown files plus LICENSE; 77 product Markdown files excluding source
+  README, eight developer scenario files and three forward-evidence records.
+- No applicable AGENTS.md found in repository or checked ancestors; no .kiyo
+  project Memory. Read Build Contract, current build state, Core, read-only flow,
+  relevant engineering standards, Memory lifecycle, governance/security/evidence/
+  reporting contracts and original Review requirement before writing.
+- Git used per-command exact-root safe.directory and empty core.excludesFile;
+  no global settings changed. Applied skill-creator authoring/validation guidance,
+  including bounded independent read-only source trials. No external documentation
+  or native schema/activation mechanism was refreshed; prior dates/gaps remain.
+
+## Prompt 14 checks
+
+Executed 2026-09-29 (Asia/Bangkok) against the Prompt 14 working tree.
+PASS here means the named authoring/inspection/validation criterion met its
+scope; it never means fixture application tests or all native targets passed.
+
+| Name | Applicability | Command/method | Inspected scope | Execution status | Observed result | Evidence location | Limitations | Baseline relation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| P14-C01 Repository and context | Required Build Contract start procedure | Read-only Git root/status/HEAD/log/diff/hash/tags and focused file reads | Root/main/HEAD, initial index/tree, instructions, read-only flow/standards/Core/Memory and build state | PASS | HEAD a4712ef9be725bcd21ba81f2764f017a2e7b3b4c; initially clean, 108 Markdown files; no applicable AGENTS.md in inspected scope | Observation above and actual Git/read output | No remote, production, native/account or fresh vendor-schema inspection | Prompt 13 committed; earlier checkout snapshots remain historical |
+| P14-C02 Canonical Review contract | Required skill, finding/report and severity/confidence deliverables | Inspected skill-creator quick_validate.py; inline Python frontmatter/fields/control/budget checks; author semantic review | Entry, shared procedure, guide, refined finding and new report template | PASS | Validator exit 0 “Skill is valid!”; name/description only; logical kiyo.review; 73 lines / 583 words; ten dimensions, eight finding fields plus classification/provenance; KIYO-REVIEW-001, 62 total controls | [Entry](../../src/kiyo/skills/review/SKILL.md), [procedure](../../src/kiyo/workflows/review.md), [guide](../../src/kiyo/framework/review-severity-confidence.md), templates and actual stdout | Static fields/author review do not prove every future agent action or native dispatch | Fourth canonical skill; reuses existing read-only, Memory, engineering and reporting contracts |
+| P14-C03 Specifications and boundaries | Required minimum ten scenarios and requested edge cases | Sequential-ID/table assertions plus author comparison against user scope and shared rules | REV-01–16 specifications and synthetic output fragments | PASS | Sixteen cases cover all ten requested situations plus inaccessible PR, injected approval, approved-decision conflict, non-Git/deleted/concurrent views, uncertain risks/suggestions and separately authorized output/execute transition | [Review scenarios](../../tests/behavioral/review/scenarios.md) and author review | Full matrix remains NOT_RUN; expected fragments are not executed evidence | Earlier scenario files and execution states preserved |
+| P14-C04 References and portability | Required relative resources, loading budgets and payload boundary | Inline Python strict UTF-8/local links/anchors/control/containment checks; temporary entry transforms/shared-byte copies | Final 114 Markdown files, 81 product files; four entries with 77 shared files each | PASS | 466 contained product links and 29 unchanged optional citations; no author absolute paths/symlinks/reparse payload; bootstrap unchanged at 81 lines / 579 words. Review relocated entry/local links 11/432; existing entries also resolve | REV-RESOURCE-01 in [forward evidence](../evidence/review/forward-trials.md), checker stdout | Source copies are not native packages/cache installs or consumer tooling; resolution is not automatic loading | Existing three entries preserved; new shared snapshot tested for all authored entries |
+| P14-C05 Bounded read-only trials | Functional authoring validation in isolated synthetic developer scope | Independent agent follows actual entry with raw files; author reviews outputs and compares exact before/after snapshots | Three explicit current-file reviews, thirteen fixture files and five directories | PASS | Correct tenant finding, effective-guard false-positive rejection, zero-size finding plus stale Memory proposal; all checks distinguished static from runtime. Exact fixture bytes/mtime/sets unchanged; builds/tests NOT_RUN | REV-FWD-01–03 and REV-SNAPSHOT-01 in [forward evidence](../evidence/review/forward-trials.md) | No application execution, Git/range/PR/native or full matrix test. Execution/access claims rely on evaluator report; snapshots do not prove all transient effects | Seeded synthetic files and author-captured baseline, not regression attribution or production evidence |
+| P14-C06 Traceability and close | Required Build Contract close procedure | Inline Python registry/trace/status/issue/decision checks and build-record review | Eighty original requirement/trace rows, six build records, nine issues/four owner decisions | PASS | Nine rows link P14 evidence; REQ-023/027/028/040/041/044/071/077 partial instruction coverage, REQ-080 continuity. REQ-071 newly partial: 70 PARTIALLY_IMPLEMENTED / 10 NOT_IMPLEMENTED; all 80 full verifications NOT_RUN. Prompt 14 DONE; Prompt 15 NOT_STARTED | [Traceability](TRACEABILITY.md), [Progress](PROGRESS.md), [Handoff](HANDOFF.md) and final validator stdout | No full requirement/native acceptance or release decisions promoted | Previous 69 partial / 11 unimplemented; one newly partial skill |
+| P14-C07 Scope and preservation | Required repository/product boundary | Exact Git allowlists, index/HEAD/hash/tag checks and diff --check; static source assertions | Six new and fourteen modified Markdown files; read-only temporary evaluation fixtures | PASS | diff --check passed; index empty, HEAD unchanged, no tags; LICENSE blob d2e60c5b160ed4f9ca096215e72efee5769936b1 unchanged. No repository .kiyo/platforms/tools/dist or non-Markdown additions | Actual Git/validator output and inventory below | Developer fixtures were created solely for validation; no consumer runtime, dependency install, global/native settings, Git mutation, publication or later-prompt work | Clean committed Prompt 13 baseline; exact allowlist preserves unrelated tracked content/history |
+
+New files:
+
+- src/kiyo/skills/review/SKILL.md
+- src/kiyo/workflows/review.md
+- src/kiyo/framework/review-severity-confidence.md
+- src/kiyo/templates/reports/review-report.md
+- tests/behavioral/review/scenarios.md
+- docs/evidence/review/forward-trials.md
+
+Modified files: six build records (PROGRESS, HANDOFF, TRACEABILITY, OPEN-ISSUES,
+DECISIONS, BASELINE), architecture layout/naming, source README, framework
+context-loading/control-index/reporting-contract, workflow router and existing
+review-finding template. Shared read-only flow and DoD are reused unchanged.
+
+The exact Git allowlist preserves LICENSE, Build Contract/requirement registry,
+research/compatibility, ADR/loading/packaging design, Core/bootstrap/trust/Memory,
+Memory lifecycle/templates, governance/security/profiles/engineering, other
+evidence/DoD/report templates/flows, prior skill entries, scenarios and evidence.
+No populated developer-project facts or temporary absolute paths enter product
+content/templates. Native schemas and activation claims remain unchanged.
+
+Validation command:
+`python -X utf8 <installed-skill-creator>/scripts/quick_validate.py src/kiyo/skills/review`.
+The inspected validator exited 0 with “Skill is valid!”. Inline Python via
+PowerShell here-strings checked the exact Git allowlists, strict UTF-8, local
+references/anchors, resource closure, unique registered controls, canonical
+frontmatter, dimensions/finding fields, scenario IDs, budgets, snapshot equality
+and final build state. No validator executable was added to the repository.
+
+Scoped read-only Git methods included rev-parse --show-toplevel/HEAD,
+branch --show-current, log -1, status --short --branch --untracked-files=all,
+staged/unstaged diff --stat, diff --name-only/--check, ls-files --others
+--exclude-standard, hash-object -- LICENSE and tag --list. LF-to-CRLF notices
+did not change the validation result or authorize global Git changes.
+
+Some broad context output was truncated; focused reads supplied needed sections.
+An initial JSON reader encountered shell-warning text before JSON; the read was
+repeated with an explicit output marker and UTF-8, without changing repository
+content. A preliminary guessed Memory reference was absent; discovery/read of
+the actual workflows/memory-lifecycle.md supplied the contract. No missing
+content or command result was inferred. These are authoring read limitations,
+not successful tests of absent resources.
+
+The preliminary static pass preceded closing records. Final checks cover the
+resulting changed/new paths and build-state links. The sixteen scenario rows
+remain specifications, not sixteen passing behavioral tests. Three bounded
+source-guided variants passed their evaluation criteria; alpha/gamma application
+contract inspection findings remain defects, and all application build/tests
+were NOT_RUN. All six native targets remain NOT_TESTED.
+
+Memory Impact: NONE for developer project memory. Synthetic Memory was read and
+reported stale but not changed. Build continuity and evidence are developer-only.
+No runtime engine, initializer, policy enforcement, automatic repair/execution,
+native install, commit/push/PR/deploy or Prompt 15 implementation was introduced.

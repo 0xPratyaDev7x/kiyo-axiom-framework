@@ -114,6 +114,18 @@ The applicable skill-creator guidance supports independent source trials with
 only bounded synthetic file edits and inspected local standard-library checks.
 Those fixtures are developer validation, not product runtime or native acceptance.
 
+Prompt 14 was subsequently authorized on 2026-09-29: author read-only Review
+(logical ID kiyo.review), finding/report templates, severity/confidence guidance
+and at least ten scenario specifications; check/update build state and stop
+before Prompt 15. Use actual workspace or supplied comparison evidence, validate
+Memory and effective protections, and distinguish defects/risks/suggestions.
+No source/test/Memory edits, implicit report file or automatic build/test execution
+are authorized by the consumer Review workflow. User-required Confidence is an
+explained qualitative evidence label, separate from severity and check status.
+Developer validation may use isolated synthetic read-only source-guided trials
+under skill-creator guidance; this does not add delegation/runtime to the product
+or authorize live/native installation. Publication decisions remain unchanged.
+
 ## Pending owner decisions
 
 | ID | Decision | Current evidence / status | Who decides | Latest needed / effect | Resolution evidence |
@@ -124,7 +136,7 @@ Those fixtures are developer validation, not product runtime or native acceptanc
 | DEC-004 | Treatment of Codex IDE native-plugin support gap | OPEN. Official [plugin documentation](https://learn.chatgpt.com/docs/plugins) excludes IDE plugins; [skills documentation](https://learn.chatgpt.com/docs/build-skills) supports standalone IDE skills. Checked 2026-09-28; DOCUMENTED_ONLY, live NOT_TESTED | Repository/product owner | Before promising six-target native installation or accepting a standalone fallback; does not block Prompt 03 design of documented surfaces | No fallback or scope reduction approved |
 
 Ask only when an unresolved choice blocks the current authorized prompt. Existing
-instructions authorize Prompt 13 Implement authoring/validation and build-state updates. Do not ask for
+instructions authorize Prompt 14 Review authoring/validation and build-state updates. Do not ask for
 premature publication decisions to complete that scope. Publication metadata still
 requiring confirmation is listed in [SOURCES](../research/SOURCES.md#publication-information-still-requiring-the-owner).
 

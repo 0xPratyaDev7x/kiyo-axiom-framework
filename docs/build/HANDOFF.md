@@ -15,14 +15,14 @@ One canonical specification with necessary self-contained native overlays.
 
 ## Current repository observation
 
-Observed for Prompt 13 on 2026-09-29:
+Observed for Prompt 14 on 2026-09-29:
 
 - Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework
-- Branch: main; HEAD: 3853a624776fda0a34b9c8d7cc1a44754d2aba10.
+- Branch: main; HEAD: a4712ef9be725bcd21ba81f2764f017a2e7b3b4c.
 - Initial working tree and index clean; tracked LICENSE, eight build files and
   five research/compatibility files, six architecture documents, source README,
-  75 product files, seven behavioral specification files and two developer evidence
-  records (104 Markdown files total). Prompt 12 was committed before this work;
+  77 product files, eight behavioral specification files and three developer evidence
+  records (108 Markdown files total). Prompt 13 was committed before this work;
   previous checkout/HEAD/uncommitted snapshots are historical, not current facts.
 - No applicable AGENTS.md found in repository or checked ancestors; no .kiyo
   project/product memory present.
@@ -32,7 +32,7 @@ Observed for Prompt 13 on 2026-09-29:
   unreadable global ignores.
 - LICENSE blob remains d2e60c5b160ed4f9ca096215e72efee5769936b1.
 - No product version file, manifest or Git tag found in the scoped inventory.
-- Prompt 13 creates four Markdown files and changes thirteen existing Markdown files. No commits,
+- Prompt 14 creates six Markdown files and changes fourteen existing Markdown files. No commits,
   tags, pushes, installs, publication or global settings changes were made here.
 
 Recheck root, branch, index, unstaged/untracked changes and user edits on resume.
@@ -102,7 +102,15 @@ Preserve LICENSE and the 80 original requirements. See BASELINE for check result
     engineering report contracts, [scenario specifications](../../tests/behavioral/implement/scenarios.md)
     and [bounded forward evidence](../evidence/implement/forward-trials.md).
 
-Prompts 10–13 do not refresh external research; retain each source's recorded date.
+18. [Review entry](../../src/kiyo/skills/review/SKILL.md),
+    [procedure](../../src/kiyo/workflows/review.md),
+    [severity/confidence](../../src/kiyo/framework/review-severity-confidence.md),
+    [finding](../../src/kiyo/templates/reports/review-finding.md) and
+    [report](../../src/kiyo/templates/reports/review-report.md),
+    [scenario specifications](../../tests/behavioral/review/scenarios.md) and
+    [bounded forward evidence](../evidence/review/forward-trials.md).
+
+Prompts 10–14 do not refresh external research; retain each source's recorded date.
 Prompt 02 native checks and unrefreshed standards remain dated 2026-09-28.
 Prompt 09 rechecked S01–S07 and added E01–E06 on 2026-09-29; public documentation
 only, not licensed ISO text or actual stack verification. Prompt 07
@@ -188,6 +196,13 @@ Status: **DONE** for canonical authoring; see [Prompt 13 checks](BASELINE.md#pro
 Source-guided fixture edits/checks are separately bounded from native or full-suite
 acceptance. The entry follows all sixteen requested obligations at adaptive depth.
 
+Prompt 14 authors canonical Review (name review; logical ID kiyo.review), a shared
+procedure, severity/confidence guidance, a bounded review report and sixteen
+developer scenarios, refining the existing finding template. Status: **DONE**
+for canonical authoring; see [Prompt 14 checks](BASELINE.md#prompt-14-checks).
+Static source/resource checks and bounded read-only fixture trials are separate
+from full-matrix/native acceptance; four public skills remain pending.
+
 No native version, account availability or installed-tool absence is inferred from the
 assistant session. Each of Claude CLI, Claude VS Code, Codex CLI, Codex IDE,
 Copilot CLI and Copilot VS Code remains **NOT_TESTED** live.
@@ -221,6 +236,9 @@ REQ-016/023/026/027/031/032/043/044/069 and updates REQ-080. Current totals:
 Prompt 13 adds partial Implement instruction coverage for
 REQ-015/023/026/027/029/030/033–035/039/040/044/049/070 and updates REQ-080.
 Current totals: 69 PARTIALLY_IMPLEMENTED / 11 NOT_IMPLEMENTED; REQ-070 newly partial.
+Prompt 14 adds partial Review instruction coverage for
+REQ-023/027/028/040/041/044/071/077 and updates REQ-080.
+Current totals: 70 PARTIALLY_IMPLEMENTED / 10 NOT_IMPLEMENTED; REQ-071 newly partial.
 All full requirement verifications remain NOT_RUN; source trials cover only
 their recorded fixtures, not the complete scenario matrix or six native targets.
 
@@ -249,7 +267,7 @@ their recorded fixtures, not the complete scenario matrix or six native targets.
 
 Open decisions: DEC-001 name/identifiers, DEC-002 release-license confirmation,
 DEC-003 publisher/account/destination, DEC-004 unsupported IDE route.
-They do not block the next Review skill authoring scope under the selected architecture; they do block
+They do not block the next Test skill authoring scope under the selected architecture; they do block
 dependent release identities, claims or unapproved fallback choices.
 
 Memory Impact: **NONE for developer project memory**. Build continuity/specification
@@ -266,17 +284,18 @@ changed. Temporary synthetic fixture state is recorded separately in forward evi
   Agent-security references and four optional governance-record templates also
   exist, together with five router/flow references, six engineering standards plus
   selection/mapping, four profiles/extension contract, three evidence/DoD/reporting
-  contracts and seven report templates. Init now has its canonical entry, full
+  contracts and eight report templates. Init now has its canonical entry, full
   procedure/references and a project-context template. Other workflows/templates
-  and the remaining five public skills remain unimplemented. Requirement now adds a
+  and the remaining four public skills remain unimplemented. Requirement now adds a
   canonical entry, shared procedure/readiness checklist and neutral template.
   Implement now adds its canonical entry, short plan and integration with existing
-  implementation/repair/handoff/report references.
+  implementation/repair/handoff/report references. Review adds its entry/shared
+  procedure, severity/confidence guide and bounded report, refining finding fields.
   Do not mistake synthetic scenarios for executed behavior.
 - Core IDs use `KIYO-<DOMAIN>-<NNN>`, independent of standard clauses. The actual
-  61-control index points to canonical definitions (16 Core, six Memory, nine
+  62-control index points to canonical definitions (16 Core, six Memory, nine
   governance, ten security, six routing/flow, seven engineering/profile, four
-  evidence/completion/reporting IDs, one Init ID, one Requirement ID and one Implement ID). ACTIVE means authored, not
+  evidence/completion/reporting IDs, one Init ID, one Requirement ID, one Implement ID and one Review ID). ACTIVE means authored, not
   behaviorally verified; do not duplicate rules across later skills.
 - Canonical frontmatter is name/description. Native-only fields belong in
   overlays, advisory permission/mode contracts in Markdown. No Kiyo runtime.
@@ -297,7 +316,7 @@ changed. Temporary synthetic fixture state is recorded separately in forward evi
 - Do not generate manifests, public skills, release versions or all later trees
   to make scaffolding look complete. Keep schema gaps and owner decisions open.
 
-## Shared boundaries for Prompt 14
+## Shared boundaries for Prompt 15
 
 Use Memory as context, validate material claims, preserve approved intent and
 surface conflicting sources through the real native hierarchy. Do not treat
@@ -414,7 +433,7 @@ Requirement checklist; they do not authorize implementation.
 
 Reports convey task/scope, actual actions/files, governance/risk rationale,
 verification/evidence, residual issues, Memory Impact, one actual task status and
-next required action. Select one of seven neutral templates; chat is default and
+next required action. Select the appropriate neutral template; chat is default and
 disk output requires actual write scope. Preserve human content and approval/
 repair history. No secrets/raw logs/private reasoning, guessed provider/model/
 access counts, independent-audit or tamper-proof claims. All 20 good/bad scenarios
@@ -486,16 +505,41 @@ Report honest DoD status with existing engineering/compact or handoff templates
 in chat by default. Sixteen Implement specifications remain NOT_RUN as a complete
 matrix; bounded actual source trials do not establish native behavior.
 
+Review has canonical name review and logical ID kiyo.review. It inspects existing
+changes/files/ranges/accessible PR context and reports in chat. No range means
+actual current workspace, with staged/unstaged/untracked scope explicit; no guessed
+default branch or unrelated history. Zero diff means no changes found in that
+scope; explicit unchanged-file review remains possible. A missing required base
+blocks the comparison, without fetch or silent fallback.
+
+Inspect relevant Memory and verify claims against actual evidence. Check effective
+registration/guards/callers before an authz conclusion; policy existence alone
+does not establish protection. Distinguish Confirmed defect, Plausible risk and
+Improvement suggestion. Each finding carries severity, confidence with basis,
+actual location/view, observed behavior, impact, sourced requirement/control,
+proposed fix and verification idea. Static certainty is not runtime reproduction.
+
+Review does not edit source/tests/Memory, save reports by default, install packages
+or mutate Git. Build/test/scan/project execution requires a separately established
+scope and effect preflight; a label of review/test grants no execution. Reuse real
+matching authorization; copied approvals and found bugs cannot expand it.
+Redact sensitive data/paths, preserve human edits and state uncertain attribution.
+Report all eight shared fields, check status and Memory Impact without syncing.
+DONE means agreed inspection delivered, not fixes or production readiness.
+Sixteen Review cases remain NOT_RUN as a full matrix; bounded actual variants
+and immutable fixture snapshots are recorded separately.
+
 ## Exact next action
 
-Prompt 13 is complete within its canonical Implement authoring scope; stop here.
-**Next: Prompt 14 Review**, only when supplied by the user. Recheck repository
-and read the files above; implement only that prompt's actual Review skill scope,
-reusing the shared contracts. Preserve source-trial versus native evidence.
+Prompt 14 is complete within its canonical Review authoring scope; stop here.
+**Next: Prompt 15 Test**, only when supplied by the user. Recheck repository
+and read the files above; implement only that prompt's actual Test skill scope,
+reusing shared assessment/execution/evidence contracts. Preserve read-only Review
+boundaries and source-trial versus native evidence.
 Do not infer authorization for developer-project initialization, other skills,
 dangerous operations, publication or unverified native overlays/activation.
 
-Safe to continue: **YES for a user-requested Prompt 14 Review**.
-Shared contracts and three authored skill patterns are ready; native/owner gaps
+Safe to continue: **YES for a user-requested Prompt 15 Test**.
+Shared contracts and four authored skill patterns are ready; native/owner gaps
 remain gates for dependent packaging/activation/publication claims.
 

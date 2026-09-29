@@ -55,7 +55,8 @@ proof of prevention, certification, authorization or actual execution.
 | Multiple criteria/checks or material engineering impact | [Engineering report](../templates/reports/engineering-report.md) |
 | Missing policy-defined scoped human decision | [Approval request](../templates/reports/approval-request.md) |
 | Stale observations or approved-intent conflict | [Memory/architecture drift report](../templates/reports/memory-architecture-drift-report.md) |
-| A review issue or bounded no-findings conclusion | [Review finding](../templates/reports/review-finding.md) |
+| One evidence-based review issue | [Review finding](../templates/reports/review-finding.md) |
+| Review scope, findings/zero diff, coverage and limits | [Bounded review report](../templates/reports/review-report.md) |
 | Application/agent security assessment | [Security assessment](../templates/reports/security-assessment.md) |
 | Incomplete work, transfer or context limit | [Handoff](../templates/reports/handoff.md) |
 

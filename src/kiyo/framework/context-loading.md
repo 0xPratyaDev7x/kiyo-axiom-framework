@@ -72,6 +72,11 @@ For an authorized feature, bug fix or scoped refactor, use [implementation flow]
 and its short-plan/repair/report references only as needed. A review/analyze
 request does not acquire write permission because Implement is available.
 
+For existing-change review, use the [Review procedure](../workflows/review.md)
+and load its classification/finding/report references as needed. Resolve actual
+workspace or supplied comparison scope; review alone permits neither repairs nor
+build/test execution. Memory stays in check mode.
+
 ## KIYO-LOAD-002 — Kiyo design budgets
 
 These are Kiyo's authoring criteria, **not vendor-imposed context limits**.

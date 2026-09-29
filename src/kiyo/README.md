@@ -56,6 +56,14 @@ explicit daily engineering boundaries and requires actual authorized checks.
 Developer scenarios/trials remain outside the payload. Five public skills and
 native packages are pending; no runtime or automatic commit/PR/deployment is added.
 
+Prompt 14 adds canonical [Review](skills/review/SKILL.md), logical ID kiyo.review,
+its [shared procedure](workflows/review.md), severity/confidence guidance and a
+bounded report template; the existing finding template now exposes every required
+field. Current workspace/range scope, effective protections, static-versus-executed
+evidence and read-only effects remain explicit. Sixteen developer scenarios and
+separate trial evidence do not imply native verification. Four public skills and
+native packages are still pending.
+
 Follow [framework layout](../../docs/architecture/framework-layout.md),
 [content loading](../../docs/architecture/content-loading.md) and
 [packaging contract](../../docs/architecture/packaging-contract.md) as their
