@@ -48,7 +48,7 @@ This repository is already a custom marketplace. Pick the commands for your host
 /plugin install kiyo-axiom-framework@kiyo-codejadee
 ```
 
-**Codex CLI**
+**Codex (CLI / VS Code)**
 ```text
 codex plugin marketplace add 0xPratyaDev7x/kiyo-codejadee-framework
 codex plugin add kiyo-axiom-framework@kiyo-codejadee
