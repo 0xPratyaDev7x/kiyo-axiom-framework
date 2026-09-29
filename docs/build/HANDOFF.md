@@ -15,14 +15,14 @@ One canonical specification with necessary self-contained native overlays.
 
 ## Current repository observation
 
-Observed for Prompt 10 on 2026-09-29:
+Observed for Prompt 11 on 2026-09-29:
 
 - Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework
-- Branch: main; HEAD: 745d3e2ff2ec5154f0afd567db9eeab37fb98d9a.
+- Branch: main; HEAD: f179f8c9e66cb9d1dcd2a17d48bfb7ab3177e76f.
 - Initial working tree and index clean; tracked LICENSE, eight build files and
   five research/compatibility files, six architecture documents, source README,
-  55 product files and four behavioral specification files (79 Markdown files total).
-  Prompt 09 was committed before this work;
+  65 product files and five behavioral specification files (90 Markdown files total).
+  Prompt 10 was committed before this work;
   previous checkout/HEAD/uncommitted snapshots are historical, not current facts.
 - No applicable AGENTS.md found in repository or checked ancestors; no .kiyo
   project/product memory present.
@@ -32,7 +32,7 @@ Observed for Prompt 10 on 2026-09-29:
   unreadable global ignores.
 - LICENSE blob remains d2e60c5b160ed4f9ca096215e72efee5769936b1.
 - No product version file, manifest or Git tag found in the scoped inventory.
-- Prompt 10 creates eleven Markdown files and changes sixteen existing Markdown files. No commits,
+- Prompt 11 creates eight Markdown files and changes twelve existing Markdown files. No commits,
   tags, pushes, installs, publication or global settings changes were made here.
 
 Recheck root, branch, index, unstaged/untracked changes and user edits on resume.
@@ -84,7 +84,12 @@ Preserve LICENSE and the 80 original requirements. See BASELINE for check result
     [reporting contract/templates](../../src/kiyo/framework/reporting-contract.md)
     and [good/bad scenarios](../../tests/behavioral/verification/scenarios.md).
 
-Prompt 10 does not refresh external research; retain each source's recorded date.
+15. [Init entry](../../src/kiyo/skills/init/SKILL.md),
+    [procedure](../../src/kiyo/workflows/init.md), relevant discovery/activation/
+    output references, [scenario specifications](../../tests/behavioral/init/scenarios.md)
+    and [bounded forward evidence](../evidence/init/forward-trials.md).
+
+Prompts 10/11 do not refresh external research; retain each source's recorded date.
 Prompt 02 native checks and unrefreshed standards remain dated 2026-09-28.
 Prompt 09 rechecked S01–S07 and added E01–E06 on 2026-09-29; public documentation
 only, not licensed ISO text or actual stack verification. Prompt 07
@@ -148,6 +153,14 @@ records in [Prompt 10 evidence](BASELINE.md#prompt-10-checks).
 Authored reports and parsed scenarios do not prove agent behavior, test execution,
 complete access visibility or a tamper-proof audit trail.
 
+Prompt 11 authors canonical Init (name init; logical ID kiyo.init), its full
+procedure, discovery/activation/output references, context template and 16 scenario
+specifications. Status: **DONE** for canonical authoring; scoped validation and
+bounded source-guided trials are recorded in [Prompt 11 evidence](BASELINE.md#prompt-11-checks).
+Entry frontmatter validation and a temporary 70-shared-file resource-copy/transform
+check passed. This is neither a native prepared package nor automatic selection/
+loading or universal behavioral acceptance.
+
 No native version, account availability or installed-tool absence is inferred from the
 assistant session. Each of Claude CLI, Claude VS Code, Codex CLI, Codex IDE,
 Copilot CLI and Copilot VS Code remains **NOT_TESTED** live.
@@ -171,7 +184,12 @@ REQ-080 continuity. Current totals: 64 PARTIALLY_IMPLEMENTED / 16 NOT_IMPLEMENTE
 REQ-031/036/037/038 newly partial.
 Prompt 10 adds partial shared contract/template coverage for REQ-039–046/049/077
 and updates REQ-080. Current totals: 65 PARTIALLY_IMPLEMENTED / 15 NOT_IMPLEMENTED;
-REQ-043 newly partial. All full requirement verifications remain NOT_RUN.
+REQ-043 newly partial.
+Prompt 11 adds partial Init entry/procedure coverage for
+REQ-009/014–017/020/024/026/027/068 and updates REQ-080. Current totals:
+67 PARTIALLY_IMPLEMENTED / 13 NOT_IMPLEMENTED; REQ-026/068 newly partial.
+All full requirement verifications remain NOT_RUN; source trials cover only
+their recorded fixtures, not the complete scenario matrix or six native targets.
 
 ## Research findings to retain
 
@@ -189,8 +207,8 @@ REQ-043 newly partial. All full requirement verifications remain NOT_RUN.
 - Exact Codex/Copilot CLI plugin-qualified skill spelling, Codex custom-source
   lifecycle/cache behavior and minimum supported host versions need follow-up.
 - Cache-independent resources must be packaged and resolved from actual installed
-  skill locations. Prompt 03 defines the architecture below; resource reads and
-  lifecycle remain untested. Absolute author checkout paths are not portable.
+  skill locations. Prompt 03 defines the architecture below; Prompt 11 checks temporary
+  source-resource relocation, while native cache reads/lifecycle remain untested. Absolute author checkout paths are not portable.
 - ISO 12207 baseline is 2026 edition 2; 29148:2018 has a DIS replacement in
   development. SSDF 1.1 is final and 1.2 is draft. AST v1 is public review.
   ISO mappings are concept-level only; 38507/27034/SAMM supporting; 5338 only for
@@ -198,11 +216,12 @@ REQ-043 newly partial. All full requirement verifications remain NOT_RUN.
 
 Open decisions: DEC-001 name/identifiers, DEC-002 release-license confirmation,
 DEC-003 publisher/account/destination, DEC-004 unsupported IDE route.
-They do not block the next Init authoring scope under the selected architecture; they do block
+They do not block the next Requirement authoring scope under the selected architecture; they do block
 dependent release identities, claims or unapproved fallback choices.
 
-Memory Impact: **NONE for project memory**. Build continuity/specification choices
-are recorded in docs/build; no .kiyo/memory initialized or changed.
+Memory Impact: **NONE for developer project memory**. Build continuity/specification
+choices are recorded in docs/build; no repository .kiyo/memory was initialized or
+changed. Temporary synthetic fixture state is recorded separately in forward evidence.
 
 ## Architecture and Core decisions to retain
 
@@ -214,13 +233,14 @@ are recorded in docs/build; no .kiyo/memory initialized or changed.
   Agent-security references and four optional governance-record templates also
   exist, together with five router/flow references, six engineering standards plus
   selection/mapping, four profiles/extension contract, three evidence/DoD/reporting
-  contracts and seven report templates. Other workflows/templates and all public
-  skills remain unimplemented.
+  contracts and seven report templates. Init now has its canonical entry, full
+  procedure/references and a project-context template. Other workflows/templates
+  and the remaining seven public skills remain unimplemented.
   Do not mistake synthetic scenarios for executed behavior.
 - Core IDs use `KIYO-<DOMAIN>-<NNN>`, independent of standard clauses. The actual
-  58-control index points to canonical definitions (16 Core, six Memory, nine
-  governance, ten security, six routing/flow, seven engineering/profile and four
-  evidence/completion/reporting IDs). ACTIVE means authored, not
+  59-control index points to canonical definitions (16 Core, six Memory, nine
+  governance, ten security, six routing/flow, seven engineering/profile, four
+  evidence/completion/reporting IDs and one Init ID). ACTIVE means authored, not
   behaviorally verified; do not duplicate rules across later skills.
 - Canonical frontmatter is name/description. Native-only fields belong in
   overlays, advisory permission/mode contracts in Markdown. No Kiyo runtime.
@@ -241,7 +261,7 @@ are recorded in docs/build; no .kiyo/memory initialized or changed.
 - Do not generate manifests, public skills, release versions or all later trees
   to make scaffolding look complete. Keep schema gaps and owner decisions open.
 
-## Shared boundaries for Prompt 11
+## Shared boundaries for Prompt 12
 
 Use Memory as context, validate material claims, preserve approved intent and
 surface conflicting sources through the real native hierarchy. Do not treat
@@ -267,7 +287,8 @@ authorization, a necessary delta and immediate reread are required for sync.
 No-op does not touch content/mtime/dates. Preserve concurrent human edits,
 existing IDs/paths and approved intent. Mapperly decision versus actual
 AutoMapper usage is Architecture Drift, not permission to change the decision.
-All 20 scenarios remain NOT_RUN; no Init/Memory public skill was built.
+All 20 Memory scenarios remain NOT_RUN. Init now has a separate canonical entry
+and bounded source trials; the public Memory skill remains pending.
 
 Governance G1 Observe / G2 Assist / G3 Controlled / G4 Restricted are Kiyo's
 advisory model, not ISO/NIST levels or native settings. Risk is separate and
@@ -324,7 +345,7 @@ default, excluding initial discovery. Do not reset by changing turn/skill/scope
 labels. Replan material changes; further attempts require a bounded valid decision.
 Handoff keeps facts, next action, true approval scope and attempt history, never
 private reasoning or a write in read-only mode. All 30 routing rows and nine flow
-cases remain NOT_RUN; no public/native route has been implemented or verified.
+cases remain NOT_RUN; no native route has been implemented or verified.
 
 Engineering standards are conditional shared references in framework/engineering.
 Use existing safe architecture, minimal diff and human-edit preservation; flag
@@ -361,18 +382,40 @@ repair history. No secrets/raw logs/private reasoning, guessed provider/model/
 access counts, independent-audit or tamper-proof claims. All 20 good/bad scenarios
 are NOT_RUN and explicitly synthetic; static checks do not execute them.
 
+Init has canonical name init and logical ID kiyo.init; the latter is not a
+universal native selector or metadata field. It handles requested onboarding,
+initial analysis, Memory creation/update and readiness inspection; never every
+feature request. Preview/readiness is read-only. Writes are only necessary
+authorized local Kiyo Memory/config/managed bootstrap; no app source/dependencies/
+tests/global/credentials or Git initialization, builds, migrations and installs.
+
+Discover root/current Git/human state and existing canonical paths first.
+Sample at most 16 project text files / 1,200 inspected lines initially across
+the chosen scope, with justified targeted expansion; authority discovery cannot
+be replaced by guesses. Preserve legacy index/config, monorepo scope, entry IDs,
+approved intent and concurrent human edits; no-delta means no timestamps touched.
+Default .kiyo/memory and .kiyo/policy.md apply only to a new unconfigured authorized
+project. Empty repositories stay stack Unknown and get no application scaffold.
+
+Managed bootstrap needs a necessary evidenced native facility and valid write
+scope. The neutral init-locator-1 shape is not a native adapter or product version.
+Preserve existing AGENTS.md/CLAUDE.md/Copilot human sections; reconcile changed or
+ambiguous blocks, never overwrite wholesale. Use project-relative state locators,
+not a cache path or a copied Core. Report separate native/explicit/agent-directed/
+project-guidance/automatic-loading evidence. Unsupported/Unknown auto-load
+does not justify hooks or a guessed command. Source trials/resources checks
+are separate from scenario-suite/native success; see the evidence record.
+
 ## Exact next action
 
-Prompt 10 is complete within its static evidence/completion/reporting scope; stop here.
-**Next: Prompt 11 Init**, only when supplied by the user. Recheck repository and
-read the files above; implement only that prompt's actual Init scope, reusing
-shared Core/Memory/governance/security/flows/engineering/evidence/DoD/reporting.
-Do not infer authorization to initialize this developer repository's memory,
-execute dangerous operations, implement other public skills, publish, or resolve
-native overlay/generator/activation gaps without their relevant task/evidence.
+Prompt 11 is complete within its canonical Init authoring scope; stop here.
+**Next: Prompt 12 Requirement**, only when supplied by the user. Recheck repository
+and read the files above; implement only that prompt's actual Requirement scope,
+reusing the shared contracts. Preserve source-trial versus native evidence.
+Do not infer authorization for developer-project initialization, other skills,
+dangerous operations, publication or unverified native overlays/activation.
 
-Safe to continue: **YES for a user-requested Prompt 11 Init**.
-Its shared instruction inputs are ready; native gaps still gate dependent
-packaging/activation claims. Publication, dangerous execution and live support
-claims remain outside this handoff's authorization.
+Safe to continue: **YES for a user-requested Prompt 12 Requirement**.
+Shared contracts and the Init authoring pattern are ready; native/owner gaps
+remain gates for dependent packaging/activation/publication claims.
 

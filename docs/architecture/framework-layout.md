@@ -47,6 +47,10 @@ framework/engineering, four stack profiles and an extension contract. Sixteen
 developer engineering/profile cases remain NOT_RUN; no runtime is introduced.
 Prompt 10 adds shared evidence/completion/reporting contracts in framework and
 seven neutral report templates, plus 20 developer-only good/bad scenarios.
+Prompt 11 authors skills/init/SKILL.md (logical ID kiyo.init) and its shared
+procedure/discovery/activation/output references plus a neutral context template.
+The other seven skill entries remain planned; no native package/adapter or initializer
+executable is implemented. Developer Init scenarios/evidence stay outside the payload.
 The README remains developer-only. Remaining
 product, overlay, tool, test and distribution paths are **planned**, not features.
 Create each directory when it receives real scoped content; no empty SKILL.md,
@@ -65,7 +69,7 @@ src/kiyo/
   profiles/                       optional stack/company guidance
   templates/                      neutral memory/policy/report/artifact templates
   skills/
-    init/SKILL.md
+    init/SKILL.md                 authored Prompt 11; native package/test scope separate
     requirement/SKILL.md
     implement/SKILL.md
     review/SKILL.md
@@ -163,6 +167,8 @@ static, behavioral and live checks must establish that implemented files follow 
 Prompt 03's only source scaffold was [the authoring README](../../src/kiyo/README.md).
 Prompts 04–10 add shared Core/Memory/governance/agent-security/workflow/engineering,
 evidence/completion/reporting content, neutral report templates and optional profiles without exposing a callable skill.
+Prompt 11 adds the canonical Init entry and its resources; native catalog/invocation
+and live acceptance remain separate pending work.
 Prompt 07 adds six agent-security references and four neutral optional record
 templates under templates/skill-governance; developer scenario specifications
 stay outside the payload. Installed product references remain self-contained. No consumer runtime dependency,

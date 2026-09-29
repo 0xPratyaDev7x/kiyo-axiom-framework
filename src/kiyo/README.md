@@ -3,8 +3,8 @@
 This directory is reserved for the single authored Kiyo product specification.
 Prompt 03 created this non-runtime authoring note. Prompt 04 adds
 [KIYO.md](KIYO.md), shared Core instructions, the control index and expected
-response examples under framework/. Skills/native packages are not implemented
-or installable yet; Core behavior on hosts remains untested. Prompt 05 adds the
+response examples under framework/. At that step skills/native packages were not implemented;
+native packages remain unimplemented and Core behavior on hosts remains untested. Prompt 05 adds the
 [Memory specification](framework/memory-specification.md),
 [shared lifecycle](workflows/memory-lifecycle.md) and eight neutral topic templates
 under templates/memory/. These are product instructions, not this developer
@@ -32,6 +32,14 @@ Prompt 10 adds the shared [Evidence Contract](framework/evidence-contract.md),
 and seven neutral report templates, with 20 synthetic good/bad scenario
 specifications kept developer-only and NOT_RUN. Chat remains the default;
 no reporting engine, automatic log, public skill or evidence archive is added.
+
+Prompt 11 authors the first canonical [Init skill](skills/init/SKILL.md),
+logical ID kiyo.init, with a complete [procedure](workflows/init.md), bounded
+discovery, conditional managed-bootstrap guidance, output examples and a neutral
+project-context template. Sixteen Init scenario specifications are developer-only;
+actual forward-trial evidence is recorded separately from the specifications.
+The entry has name/description only. Remaining seven skills and native overlays/
+prepared packages are still pending; source-directed use is not native installation.
 
 Follow [framework layout](../../docs/architecture/framework-layout.md),
 [content loading](../../docs/architecture/content-loading.md) and

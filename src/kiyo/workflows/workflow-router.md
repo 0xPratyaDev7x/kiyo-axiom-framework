@@ -69,7 +69,7 @@ separately. Submode words below are logical descriptions, not native commands.
 
 | Primary skill | Select for | Initial effect boundary and completion evidence |
 | --- | --- | --- |
-| Init | Requested project initialization/bootstrap | Discover established paths first; write only authorized initial state/adapters once prerequisites are established; report actual files/checks and unresolved native gaps |
+| Init | Requested onboarding, initial project analysis, Project Memory creation or setup-readiness inspection | Use [Init procedure](init.md); preview stays read-only, initialization writes only authorized state/adapters after discovery. Ordinary feature work or missing Memory alone does not trigger Init. Report actual changes and native gaps. |
 | Requirement | Define/refine desired behavior, acceptance criteria or unresolved business scope | Read-only proposal unless an artifact write is requested; decisions/proposals stay distinct; no implementation implied |
 | Implement | Bug fix, requested implementation or scoped refactor | Authorized minimal edits; execution checks separately preflighted; actual diff, relevant check results and memory impact |
 | Review | Review/explain inspected code or a diff without a more specific specialist goal | Read-only findings/explanation by default; discovering a bug is not permission to fix it |

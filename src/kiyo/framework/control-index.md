@@ -38,7 +38,6 @@ REQ references identify requirement scope, not full acceptance or a runtime impo
 | KIYO-ACTION-001 | [Preparation versus effects](../governance/dangerous-actions.md#kiyo-action-001--separate-preparation-from-actual-effects) | REQ-041, REQ-048, REQ-052 | ACTIVE / none |
 | KIYO-DEP-001 | [Dependency justification](../governance/dependency-governance.md#kiyo-dep-001--justify-and-inspect-dependencies-in-context) | REQ-003, REQ-053, REQ-059 | ACTIVE / none |
 | KIYO-PROVIDER-001 | [Provider evidence and limits](../governance/provider-policy.md#kiyo-provider-001--use-observed-context-and-bound-data-assurances) | REQ-013, REQ-055 | ACTIVE / none |
-
 | KIYO-SEC-001 | [Establish trust from evidence](../agent-security/trust-review.md#kiyo-sec-001--establish-trust-from-evidence) | REQ-058 | ACTIVE / none |
 | KIYO-SEC-002 | [Compare honest metadata with the actual payload](../agent-security/trust-review.md#kiyo-sec-002--compare-honest-metadata-with-the-actual-payload) | REQ-061, REQ-067 | ACTIVE / none |
 | KIYO-SEC-003 | [Preserve the authority boundary across retrieved content](../agent-security/prompt-injection.md#kiyo-sec-003--preserve-the-authority-boundary-across-retrieved-content) | REQ-012, REQ-062 | ACTIVE / none |
@@ -49,14 +48,12 @@ REQ references identify requirement scope, not full acceptance or a runtime impo
 | KIYO-SEC-008 | [Keep accountable optional file records](../agent-security/control-ownership.md#kiyo-sec-008--keep-accountable-optional-file-records) | REQ-049, REQ-066 | ACTIVE / none |
 | KIYO-SEC-009 | [Verify each platform control independently](../agent-security/control-ownership.md#kiyo-sec-009--verify-each-platform-control-independently) | REQ-005, REQ-067 | ACTIVE / none |
 | KIYO-SEC-010 | [Review application behavior separately from agent skills](../agent-security/application-security.md#kiyo-sec-010--review-application-behavior-separately-from-agent-skills) | REQ-057, REQ-073 | ACTIVE / none |
-
 | KIYO-ROUTE-001 | [Select a workflow without granting authority](../workflows/workflow-router.md#kiyo-route-001--select-a-workflow-without-granting-authority) | REQ-025, REQ-026, REQ-027, REQ-028 | ACTIVE / none |
 | KIYO-FLOW-001 | [Reduce ceremony without skipping controls](../workflows/adaptive-flow.md#kiyo-flow-001--reduce-ceremony-without-skipping-controls) | REQ-029, REQ-030, REQ-035 | ACTIVE / none |
 | KIYO-FLOW-002 | [Sequence authorized changes through actual evidence](../workflows/implement-flow.md#kiyo-flow-002--sequence-authorized-changes-through-actual-evidence) | REQ-027, REQ-033, REQ-034, REQ-035, REQ-041, REQ-042 | ACTIVE / none |
 | KIYO-FLOW-003 | [Complete analysis without introducing mutation](../workflows/read-only-flow.md#kiyo-flow-003--complete-analysis-without-introducing-mutation) | REQ-027, REQ-028, REQ-044 | ACTIVE / none |
 | KIYO-FLOW-004 | [Classify failures and bound repair cycles](../workflows/repair-and-handoff.md#kiyo-flow-004--classify-failures-and-bound-repair-cycles) | REQ-029, REQ-039, REQ-040 | ACTIVE / none |
 | KIYO-FLOW-005 | [Handoff facts and authorized next actions](../workflows/repair-and-handoff.md#kiyo-flow-005--handoff-facts-and-authorized-next-actions) | REQ-014, REQ-044, REQ-045 | ACTIVE / none |
-
 | KIYO-ENG-002 | [Make behavior and acceptance traceable](engineering/requirements.md#kiyo-eng-002--make-behavior-and-acceptance-traceable) | REQ-031, REQ-032 | ACTIVE / none |
 | KIYO-ENG-003 | [Preserve safe boundaries and explicit design intent](engineering/architecture.md#kiyo-eng-003--preserve-safe-boundaries-and-explicit-design-intent) | REQ-033, REQ-035 | ACTIVE / none |
 | KIYO-ENG-004 | [Keep changed code clear, bounded and safe](engineering/coding.md#kiyo-eng-004--keep-changed-code-clear-bounded-and-safe) | REQ-033, REQ-036, REQ-053 | ACTIVE / none |
@@ -64,11 +61,11 @@ REQ references identify requirement scope, not full acceptance or a runtime impo
 | KIYO-ENG-006 | [Evaluate affected quality with proportionate evidence](engineering/quality.md#kiyo-eng-006--evaluate-affected-quality-with-proportionate-evidence) | REQ-036, REQ-056 | ACTIVE / none |
 | KIYO-ENG-007 | [Preserve human work and keep the diff necessary](engineering/change-scope.md#kiyo-eng-007--preserve-human-work-and-keep-the-diff-necessary) | REQ-030, REQ-034 | ACTIVE / none |
 | KIYO-PROF-001 | [Bind profiles to evidence without forcing a stack](../profiles/extension-contract.md#kiyo-prof-001--bind-profiles-to-evidence-without-forcing-a-stack) | REQ-037, REQ-054 | ACTIVE / none |
-
 | KIYO-VERIFY-001 | [Record scoped observations for every check](evidence-contract.md#kiyo-verify-001--record-scoped-observations-for-every-check) | REQ-040, REQ-041, REQ-043, REQ-077 | ACTIVE / none |
 | KIYO-VERIFY-002 | [Bind results to the checked state and baseline](evidence-contract.md#kiyo-verify-002--bind-results-to-the-checked-state-and-baseline) | REQ-039, REQ-040, REQ-044 | ACTIVE / none |
 | KIYO-DONE-001 | [Close the agreed workflow against current required evidence](definition-of-done.md#kiyo-done-001--close-the-agreed-workflow-against-current-required-evidence) | REQ-023, REQ-042, REQ-044, REQ-045 | ACTIVE / none |
 | KIYO-REPORT-001 | [Report scoped work without manufacturing an audit trail](reporting-contract.md#kiyo-report-001--report-scoped-work-without-manufacturing-an-audit-trail) | REQ-043, REQ-045, REQ-046, REQ-049 | ACTIVE / none |
+| KIYO-INIT-001 | [Initialize only evidenced and authorized project state](../workflows/init.md#kiyo-init-001--initialize-only-evidenced-and-authorized-project-state) | REQ-015, REQ-016, REQ-017, REQ-024, REQ-027, REQ-068 | ACTIVE / none |
 
 Keep IDs when files move or wording is clarified. Never renumber or reuse retired
 IDs. A materially different obligation needs a new ID and explicit migration/

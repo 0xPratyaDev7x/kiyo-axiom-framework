@@ -21,6 +21,11 @@ the Build Contract. Canonical `name` matches its skill directory, and
 These are internal authoring identities, not a reservation of marketplace names.
 No extra public router/governance/audit/self-check skills are introduced.
 
+Prompt 11 authors canonical name/directory init with the user-specified logical
+ID **kiyo.init** in Markdown. That logical ID is not a native command or a new
+frontmatter field; overlays later derive actual target metadata/selector names.
+Only Init is authored so far; the other seven entries remain planned.
+
 Native plugin IDs and host-added prefixes belong to overlays. Use the actual
 discovered identity when invoking a host; do not prepend a universal `kiyo-`
 or bake `plugin:skill` into canonical names. The
@@ -41,7 +46,8 @@ governance controls. Prompt 07 adds KIYO-SEC-001 through KIYO-SEC-010;
 Prompt 08 adds KIYO-ROUTE-001 and KIYO-FLOW-001 through KIYO-FLOW-005;
 Prompt 09 adds KIYO-ENG-002 through KIYO-ENG-007 and KIYO-PROF-001;
 Prompt 10 adds KIYO-VERIFY-001/002, KIYO-DONE-001 and KIYO-REPORT-001;
-the index now has 58 IDs. AST taxonomy labels remain external mapping IDs,
+Prompt 11 adds KIYO-INIT-001 for bounded, repeatable initialization;
+the index now has 59 IDs. AST taxonomy labels remain external mapping IDs,
 not Kiyo control numbers or ASI identifiers. G1–G4 are advisory Kiyo modes,
 not standards identifiers or native permission settings.
 
@@ -84,7 +90,9 @@ release identity. Do not reuse the same release label for different bytes.
 
 Project adapter revisions track the small adapter's format independently from
 the product release it was last reviewed against. They are provenance text in
-user-owned project files, not a second product release line. Missing version
+user-owned project files, not a second product release line. Prompt 11's neutral managed-block shape uses internal adapter text revision
+init-locator-1, not a product/host release number; preserve any actual established
+adapter history instead of forcing this format. Missing product version
 information stays UNKNOWN; no automatic updater, forced policy migration or
 memory migration is introduced.
 

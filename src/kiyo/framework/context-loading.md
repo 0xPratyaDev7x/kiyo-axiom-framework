@@ -62,6 +62,9 @@ Mutable memory and policy stay in the user project, never installed plugin cache
 For a memory task, consult the relevant [Memory specification](memory-specification.md)
 and [shared lifecycle](../workflows/memory-lifecycle.md); do not load all templates
 or initialize a store merely by following these references.
+For requested onboarding or setup-readiness inspection, use the [Init procedure](../workflows/init.md).
+Missing memory or an ordinary feature request alone does not authorize Init;
+preview remains read-only and existing canonical paths/human instructions survive.
 
 ## KIYO-LOAD-002 — Kiyo design budgets
 

@@ -1,10 +1,45 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **10 Verification/DoD**.
-Task status: **DONE** for Prompt 10; scoped static evidence/completion/report checks passed.
-Product status: shared Core/Memory/governance/security/workflow/engineering,
-evidence/DoD/reporting guidance and optional profiles/templates authored;
-native packages/public skills remain unimplemented. No runtime engine.
+Snapshot: 2026-09-29. Current prompt: **11 Init**.
+Task status: **DONE** for Prompt 11; scoped Init authoring checks passed.
+Product status: shared guidance/profiles/templates and canonical Init entry authored;
+seven public skills and native packages remain pending. No runtime engine.
+
+## Prompt 11 delivered scope
+
+- Added the first canonical [Init skill](../../src/kiyo/skills/init/SKILL.md):
+  name init, logical ID kiyo.init, description covering onboarding, initial
+  project analysis, Project Memory creation and setup-readiness inspection.
+  Ordinary feature/bug work does not trigger it; metadata contains only name/description.
+- Added the [twelve-step Init procedure](../../src/kiyo/workflows/init.md),
+  [bounded discovery](../../src/kiyo/framework/init-discovery.md),
+  [activation/managed-block guidance](../../src/kiyo/framework/init-activation.md),
+  [expected output examples](../../src/kiyo/framework/init-output-examples.md) and
+  [neutral context template](../../src/kiyo/templates/init/project-context.md).
+  Preserve canonical paths, human changes and native instructions; reruns are
+  incremental/no-op, preview is read-only, and empty projects get no assumed stack/app.
+- Added KIYO-INIT-001 (59 controls total), conditional reference/router updates and
+  [16 scenario specifications](../../tests/behavioral/init/scenarios.md).
+  Bounded source-guided trial results are recorded separately in
+  [forward evidence](../evidence/init/forward-trials.md); no native activation inferred.
+- Entry validation passed: 73 lines / 566 words, name/description only.
+  One-off temporary resource-copy/link-transform check passed for 70 shared files;
+  this is not a native package/generator or live cache test.
+- Allowed consumer writes remain necessary authorized project Memory/config/
+  managed guidance only; source/dependency/test/global/credential writes are forbidden.
+  No initializer executable, package installation, hook, public-skill installation
+  or initialization of this developer project's state was performed.
+
+Coverage: partial instruction/entry implementation for
+REQ-009/014–017/020/024/026/027/068; REQ-080 continuity updated.
+Current totals: 67 PARTIALLY_IMPLEMENTED / 13 NOT_IMPLEMENTED
+(REQ-026/068 newly partial). All 80 full requirement verifications remain NOT_RUN.
+All six native targets remain NOT_TESTED; research dates/native gaps are unchanged.
+
+Checks: [Prompt 11 evidence](BASELINE.md#prompt-11-checks).
+Memory Impact: **NONE for developer project memory**; build records carry continuity.
+Synthetic fixture state changes/results are separate, never developer Memory.
+Owner publication/native-gap decisions remain open and do not block Requirement authoring.
 
 ## Prompt 10 delivered scope
 
@@ -339,7 +374,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 08 | Router/Flow | DONE | P08-C01–C07 PASS; static procedures/truth-table checks only, behavioral execution NOT_RUN |
 | 09 | Engineering/Profiles | DONE | P09-C01–C07 PASS; static standards/profiles/mapping only, scenarios NOT_RUN |
 | 10 | Verification/DoD | DONE | P10-C01–C07 PASS; static contracts/templates/examples only; behavioral execution NOT_RUN |
-| 11 | Init | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 11 | Init | DONE | P11-C01–C07 PASS; entry/resource/closure checks and bounded source trials separately recorded; native NOT_TESTED |
 | 12 | Requirement | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 13 | Implement | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 14 | Review | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -368,9 +403,9 @@ Outstanding owner decisions: DEC-001 final name, DEC-002 release license,
 DEC-003 publisher/destination and DEC-004 treatment of Codex IDE's native-plugin
 gap before compatibility/release claims. See OPEN-ISSUES for technical gaps.
 
-Safe to continue: **YES for a user-requested Prompt 11 Init**.
-Shared evidence/completion/reporting and preceding controls are ready for scoped
-Init authoring. Owner/native gaps remain gates for dependent packaging/activation
-claims; this does not authorize project initialization or later work by itself.
-Next prompt: **11 Init**, only when requested by the user.
+Safe to continue: **YES for a user-requested Prompt 12 Requirement**.
+Shared contracts and the first canonical skill are ready; publication/native gaps
+remain gates for dependent packaging/activation claims. Later work is not
+authorized by this handoff alone.
+Next prompt: **12 Requirement**, only when requested by the user.
 
