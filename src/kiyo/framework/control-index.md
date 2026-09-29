@@ -73,6 +73,8 @@ REQ references identify requirement scope, not full acceptance or a runtime impo
 | KIYO-SEC-011 | [Bound Security submodes and assurance](../workflows/security.md#kiyo-sec-011--bound-security-submodes-and-assurance-to-actual-evidence) | REQ-027, REQ-042, REQ-058, REQ-065, REQ-073 | ACTIVE / none |
 | KIYO-ARCH-001 | [Observed architecture versus approved intent](../workflows/architecture.md#kiyo-arch-001--separate-observed-architecture-from-approved-intent) | REQ-019, REQ-022, REQ-027, REQ-033, REQ-074 | ACTIVE / none |
 | KIYO-MEM-008 | [Scoped Memory modes and preserved history](memory-modes.md#kiyo-mem-008--bind-memory-modes-to-scoped-deltas-and-preserved-history) | REQ-017, REQ-020, REQ-023, REQ-024, REQ-027, REQ-075 | ACTIVE / none |
+| KIYO-CONFIG-001 | [One project configuration](project-configuration.md#kiyo-config-001--reuse-one-evidenced-project-configuration) | REQ-017, REQ-037, REQ-054, REQ-068 | ACTIVE / none |
+| KIYO-POLICY-001 | [Scoped policy resolution](../governance/policy-resolution.md#kiyo-policy-001--resolve-scope-and-authority-without-self-escalation) | REQ-011, REQ-049, REQ-054, REQ-055, REQ-073 | ACTIVE / none |
 
 Keep IDs when files move or wording is clarified. Never renumber or reuse retired
 IDs. A materially different obligation needs a new ID and explicit migration/

@@ -41,14 +41,14 @@ a profile declaring itself mandatory cannot grant authority.
 
 ## Bounded extension examples
 
-These are **synthetic proposal outlines**, not shipped full profiles or tested
-support. All execution is NOT_RUN; live targets remain NOT_TESTED.
+These are **synthetic proposal outlines**, not shipped full technology profiles
+or tested support; the company row links the authored neutral policy templates. All execution is NOT_RUN; live targets remain NOT_TESTED.
 
 | Example | Required discovery / proposed scope | Actual support boundary |
 | --- | --- | --- |
 | React | Inspect package/lock/config, observed React/tool versions, component boundaries, rendering/routing/state and current checks. Apply shared behavior, UI accessibility and compatibility checks to the requested component. | Extension outline only; no version range, SSR/framework choice, state library, compiler API or migration support asserted. No React-specific implementation recipes shipped. |
 | Java | Inspect actual JDK/build descriptors/wrapper/CI, framework if any, modules and current test tools. Apply shared boundary, error and verification checks to the selected module. | Extension outline only; no assumed Maven/Gradle, Spring, JUnit, JDK upgrade or tested Java compatibility. |
-| Company | Inspect the real accepted policy source/owner, affected components, constraints and established local policy path. Propose a scoped supplement with evidence and exception/escalation handling. | Template outline only; no populated company policy, named approver, automatic precedence, certification or organization approval claimed. |
+| Company | Inspect the real accepted policy source/owner, affected components, constraints and established local policy path. Propose a scoped supplement with evidence and exception/escalation handling. | Neutral [organization](../templates/policies/organization-policy.md) and [project](../templates/policies/project-policy.md) templates plus [resolution](../governance/policy-resolution.md) are authored guidance; no populated company policy, named approver, automatic precedence, certification or organization approval claimed. |
 
 The four authored .NET/Angular/Python/PostgreSQL profiles provide discovery and
 review guidance only. They are not exhaustive recipes, compatibility guarantees,

@@ -1,9 +1,41 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **18 Memory Skill**.
-Task status: **DONE** for Prompt 18; scoped Memory authoring checks passed.
+Snapshot: 2026-09-29. Current prompt: **19 Organization Policies**.
+Task status: **DONE** for Prompt 19; scoped static policy/config checks passed.
 Product status: shared guidance/profiles/templates and canonical Init/Requirement/Implement/Review/Test/Security/Architecture/Memory authored;
 exactly eight public entries. Native packages and complete acceptance remain pending. No runtime engine.
+
+## Prompt 19 delivered scope
+
+- Added [configuration specification](../../src/kiyo/framework/project-configuration.md)
+  with seven logical fields; extended the existing Init context template.
+  Preserve .kiyo/policy.md as the established config equivalent and any accepted
+  legacy locator. No duplicate .kiyo/config.md or developer-project state was created.
+- Added [policy resolution](../../src/kiyo/governance/policy-resolution.md),
+  neutral [organization](../../src/kiyo/templates/policies/organization-policy.md) /
+  [project](../../src/kiyo/templates/policies/project-policy.md) templates and
+  three optional [presets](../../src/kiyo/governance/presets.md).
+  Preset, G1–G4, risk, policy acceptance and native enforcement remain distinct.
+- Init may offer drafts without adopting policy or selecting providers; Security
+  governance checks fields, provenance, conflicts and exception validity read-only.
+  Policy edits/adoption and operational approval are separate. An overdue review
+  does not expire a prohibition; an expired exception grants no further permission.
+- Added KIYO-CONFIG-001 / KIYO-POLICY-001: 68 controls, 34 neutral templates,
+  105 product files (8 unchanged public entries plus 97 shared resources).
+  No runtime, engine, watcher, live organization policy or native setting was added.
+- Added [16 scenario specifications](../../tests/behavioral/organization-policy/scenarios.md).
+  [Bounded forward trials](../evidence/organization-policy/forward-trials.md)
+  record four actual read-only responses and unchanged synthetic fixture snapshots.
+  Full scenarios remain NOT_RUN and native hosts NOT_TESTED.
+
+Coverage: partial source instruction coverage for
+REQ-011/013/017/037/047/049/050/051/054/055/068/073; REQ-080 continuity.
+All were already partial: 73 PARTIALLY_IMPLEMENTED / 7 NOT_IMPLEMENTED remain.
+All 80 full requirement verifications remain NOT_RUN; no release/native claim.
+
+Checks: [Prompt 19 evidence](BASELINE.md#prompt-19-checks).
+Memory Impact: **NONE for developer project memory**; no actual .kiyo store/config
+or organization policy was adopted. Owner decisions remain open.
 
 ## Prompt 18 delivered scope
 
@@ -630,7 +662,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 16 | Security Skill | DONE | P16-C01–C07 PASS; static/resource checks and bounded read-only submode trials; native NOT_TESTED |
 | 17 | Architecture Skill | DONE | P17-C01–C07 PASS; static/resource checks and bounded read-only source trials; native NOT_TESTED |
 | 18 | Memory Skill | DONE | P18-C01–C07 PASS; static/resource/inventory checks and bounded mode/no-op/concurrency trials; native NOT_TESTED |
-| 19 | Organization Policies | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 19 | Organization Policies | DONE | P19-C01–C07 PASS; static/resource checks and bounded read-only policy trials; native NOT_TESTED |
 | 20 | Claude | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 21 | Codex | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 22 | Copilot | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -651,9 +683,9 @@ Outstanding owner decisions: DEC-001 final name, DEC-002 release license,
 DEC-003 publisher/destination and DEC-004 treatment of Codex IDE's native-plugin
 gap before compatibility/release claims. See OPEN-ISSUES for technical gaps.
 
-Safe to continue: **YES for a user-requested Prompt 19 Organization Policies**.
-Shared contracts and all eight canonical skills are ready; publication/native gaps
-remain gates for dependent packaging/activation claims. Later work is not
-authorized by this handoff alone.
-Next prompt: **19 Organization Policies**, only when requested by the user.
+Safe to continue: **YES for a user-requested Prompt 20 Claude**.
+Static content/policy contracts are ready; revalidate official native schemas and
+resolve dependent owner/host gaps before packaging/activation claims. Later work
+is not authorized by this handoff alone.
+Next prompt: **20 Claude**, only when requested by the user.
 

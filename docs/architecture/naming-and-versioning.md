@@ -65,7 +65,8 @@ Prompt 15 adds KIYO-TEST-001 for separate test effects and observed results;
 Prompt 16 adds KIYO-SEC-011 for bounded Security submodes and assurance;
 Prompt 17 adds KIYO-ARCH-001 for evidence-scoped architecture and approved intent;
 Prompt 18 adds KIYO-MEM-008 for explicit Memory modes and preserved history;
-the index now has 66 IDs. AST taxonomy labels remain external mapping IDs,
+Prompt 19 adds KIYO-CONFIG-001 and KIYO-POLICY-001 for static project configuration
+and sourced policy resolution, bringing the index to 68 IDs. AST taxonomy labels remain external mapping IDs,
 not Kiyo control numbers or ASI identifiers. G1–G4 are advisory Kiyo modes,
 not standards identifiers or native permission settings.
 

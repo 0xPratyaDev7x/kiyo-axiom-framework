@@ -17,6 +17,13 @@
 5. After context loss or changed inputs, re-establish authority, intent and relevant
    evidence. Do not claim a previous read remains present merely from memory.
 
+For established config/preferences or a relevant policy question, consult
+[project configuration](project-configuration.md) and
+[policy resolution](../governance/policy-resolution.md) as needed.
+Reuse the existing locator and applicable unchanged context; do not require a new
+config before every task. Material source/scope/validity changes need rechecking.
+Presets, accepted policies, task governance mode and risk are distinct.
+
 For task selection, mixed intent or a skill/output mismatch, consult the shared
 [Workflow Router](../workflows/workflow-router.md). It selects a logical procedure,
 not native activation or permission; do not load every flow for a tiny task.

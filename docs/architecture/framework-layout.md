@@ -74,6 +74,9 @@ drift report. Architecture is read-only.
 Prompt 18 adds skills/memory/SKILL.md, framework/memory-modes.md and Memory
 diff/sync/repair report templates, reusing workflows/memory-lifecycle.md.
 All eight canonical skill entries are authored; native catalogs remain unimplemented.
+Prompt 19 adds a shared configuration contract, policy resolution/presets and two
+neutral policy templates. The existing .kiyo/policy.md equivalent is retained;
+no central governance platform, permission engine or extra public skill is added.
 The README remains developer-only. Remaining
 product, overlay, tool, test and distribution paths are **planned**, not features.
 Create each directory when it receives real scoped content; no empty SKILL.md,

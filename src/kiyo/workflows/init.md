@@ -17,7 +17,10 @@ are known; independent authorized discovery can continue around a held decision.
    never initialize Git, clean/reset/stash, change branches or commit for Init.
 2. **Discover existing Kiyo state and instructions.** Read applicable accepted
    project guidance, any established local policy/config, the canonical memory
-   index and relevant entries under KIYO-MEM-002. Inspect existing AGENTS.md,
+   index and relevant entries under KIYO-MEM-002. Preserve the equivalent config
+   under [configuration specification](../framework/project-configuration.md);
+   resolve applicable policy sources without assuming the file grants authority.
+   Inspect existing AGENTS.md,
    CLAUDE.md and Copilot instructions only where applicable/authorized; filename
    discovery is not a claim that a host loads them. Resolve paths from their
    declaring file. Inaccessible instructions or competing stores block dependent
@@ -49,6 +52,9 @@ are known; independent authorized discovery can continue around a held decision.
    Optional user preferences remain proposals unless accepted for the actual
    scope; they cannot override native/organization policy. No profile installs
    packages, upgrades frameworks, assigns an owner or invents provider identity.
+   Offer [optional presets](../governance/presets.md) or neutral policy templates
+   when relevant; do not adopt them by industry or enable native permissions.
+   Missing policies/fields need a decision only where they block the scoped work.
 8. **Resolve only missing authority.** Build a concrete destination/delta plan:
    selected root/store/config, entries affected, optional instruction block,
    effects, unknowns and exclusions. Match actual request/policy/approval using
@@ -102,6 +108,8 @@ requested setup still missing prevents full DONE. Optional native guidance can
 remain unverified without misrepresenting successful bounded Memory setup.
 
 Do not create a durable report merely for closure, an endpoint/method inventory,
-an organization policy pack, a release version or publisher. Application fixes,
+an adopted organization policy, a release version or publisher. Requested neutral
+policy drafts remain proposals; adoption and operational actions need their own
+applicable authority under [policy resolution](../governance/policy-resolution.md). Application fixes,
 test execution and dependency installation are separate tasks. Init does not
 subscribe to future file changes or automatically run on every feature request.

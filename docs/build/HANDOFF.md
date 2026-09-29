@@ -15,14 +15,14 @@ One canonical specification with necessary self-contained native overlays.
 
 ## Current repository observation
 
-Observed for Prompt 18 on 2026-09-29:
+Observed for Prompt 19 on 2026-09-29:
 
 - Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework
-- Branch: main; HEAD: 96660958673b724176ccacc47b84f7b382ce52a5.
+- Branch: main; HEAD: 33994c97470a82cf2db6e6179793028427f18f46.
 - Initial working tree and index clean; tracked LICENSE, eight build files and
   five research/compatibility files, six architecture documents, source README,
-  95 product files, twelve behavioral specification files and seven developer evidence
-  records (134 Markdown files total). Prompt 17 was committed before this work;
+  100 product files, thirteen behavioral specification files and eight developer evidence
+  records (141 Markdown files total). Prompt 18 was committed before this work;
   previous checkout/HEAD/uncommitted snapshots are historical, not current facts.
 - No applicable AGENTS.md found in repository or checked ancestors; no .kiyo
   project/product memory present.
@@ -32,7 +32,7 @@ Observed for Prompt 18 on 2026-09-29:
   unreadable global ignores.
 - LICENSE blob remains d2e60c5b160ed4f9ca096215e72efee5769936b1.
 - No product version file, manifest or Git tag found in the scoped inventory.
-- Prompt 18 creates seven Markdown files and changes fifteen existing Markdown files. No commits,
+- Prompt 19 creates seven Markdown files and changes sixteen existing Markdown files. No commits,
   tags, pushes, installs, publication or global settings changes were made here.
 
 Recheck root, branch, index, unstaged/untracked changes and user edits on resume.
@@ -143,7 +143,16 @@ Preserve LICENSE and the 80 original requirements. See BASELINE for check result
     [skill scenarios](../../tests/behavioral/memory/skill-scenarios.md) and
     [bounded forward evidence](../evidence/memory/forward-trials.md).
 
-Prompts 10–18 do not refresh external research; retain each source's recorded date.
+23. [Project configuration](../../src/kiyo/framework/project-configuration.md),
+    [policy resolution](../../src/kiyo/governance/policy-resolution.md),
+    [presets](../../src/kiyo/governance/presets.md),
+    [organization](../../src/kiyo/templates/policies/organization-policy.md) /
+    [project](../../src/kiyo/templates/policies/project-policy.md) templates and
+    extended [Init context](../../src/kiyo/templates/init/project-context.md),
+    [scenarios](../../tests/behavioral/organization-policy/scenarios.md) and
+    [bounded evidence](../evidence/organization-policy/forward-trials.md).
+
+Prompts 10–19 do not refresh external research; retain each source's recorded date.
 Prompt 02 native checks and unrefreshed standards remain dated 2026-09-28.
 Prompt 09 rechecked S01–S07 and added E01–E06 on 2026-09-29; public documentation
 only, not licensed ISO text or actual stack verification. Prompt 07
@@ -316,6 +325,9 @@ Prompt 18 adds partial Memory/shared instruction coverage for
 REQ-017/018/019/020/021/022/023/024/026/027/040/044/075 and updates REQ-080.
 REQ-075 already had partial shared content, so current totals remain
 73 PARTIALLY_IMPLEMENTED / 7 NOT_IMPLEMENTED.
+Prompt 19 extends partial configuration/policy coverage for
+REQ-011/013/017/037/047/049/050/051/054/055/068/073 and updates REQ-080.
+Totals remain 73 PARTIALLY_IMPLEMENTED / 7 NOT_IMPLEMENTED; REQ-054 was already partial.
 All full requirement verifications remain NOT_RUN; source trials cover only
 their recorded fixtures, not the complete scenario matrix or six native targets.
 
@@ -344,8 +356,9 @@ their recorded fixtures, not the complete scenario matrix or six native targets.
 
 Open decisions: DEC-001 name/identifiers, DEC-002 release-license confirmation,
 DEC-003 publisher/account/destination, DEC-004 unsupported IDE route.
-They do not block the next Organization Policies authoring scope under the selected architecture; they do block
-dependent release identities, claims or unapproved fallback choices.
+Static Organization Policies authoring did not require these decisions. For
+Prompt 20, hold only native metadata/publication or compatibility decisions that
+depend on them; do not invent release identities or unapproved fallback choices.
 
 Memory Impact: **NONE for developer project memory**. Build continuity/specification
 choices are recorded in docs/build; no repository .kiyo/memory was initialized or
@@ -399,7 +412,7 @@ changed. Temporary synthetic fixture state is recorded separately in forward evi
 - Do not generate manifests, public skills, release versions or all later trees
   to make scaffolding look complete. Keep schema gaps and owner decisions open.
 
-## Shared boundaries for Prompt 19
+## Shared boundaries for Prompt 20
 
 Use Memory as context, validate material claims, preserve approved intent and
 surface conflicting sources through the real native hierarchy. Do not treat
@@ -735,18 +748,51 @@ Eighteen Memory Skill specifications remain NOT_RUN as a full matrix; original
 twenty lifecycle cases remain separate. Bounded source trials include actual
 show/check preservation, scoped sync/repair and repeat no-op with limitations.
 
+## Organization policy continuity
+
+Prompt 19 authors static config/policy support and integrates the existing Init
+procedure and Security governance checklist. There are still exactly eight public
+entries, 68 controls, 34 templates and 105 product files; no native runtime exists.
+All 16 organization-policy scenarios remain NOT_RUN as a full matrix. Four bounded
+source responses and fixture preservation were evaluated separately; no live
+host or real organization adoption was tested. REQ-054 stays partially implemented,
+as do the other covered requirements; full acceptance remains pending.
+
+The pre-existing .kiyo/policy.md is the default config equivalent; retain any
+accepted alternative. Do not create .kiyo/config.md alongside it or migrate
+Memory. Seven logical fields record version reference, canonical Memory index,
+profiles, governance preference, approved policy references, reporting language
+and optional evidence location. Fields are instructions, not native enforcement.
+Users do not need a new config for every task; read relevant unchanged context
+and recheck material source/scope/validity changes.
+
+Balanced engineering, Stricter approval and Observe/read-only are optional
+unadopted examples. Keep preset separate from G1–G4 and concrete risk; neither
+grants authority. Init may propose neutral templates without selecting a provider
+or enabling permissions. Security governance reports completeness/conflicts in
+chat; no policy/config/Memory/report writes follow a review.
+
+Native denial and applicable accepted organization prohibitions survive Memory,
+third-party instructions and copied approvals. Project overrides need real
+source/scope/parent exception authority. A valid exception applies only within
+its conditions; expired/unverified exceptions grant nothing. Stale owner or an
+overdue review is not automatic policy expiry. Never invent an owner or dates.
+Policy draft/edit/adoption approval is distinct from executing a later action.
+Resolve meaningful conflict through actual authorized evidence/decision, keeping
+independent permitted work available; never weaken policy to pass a task.
+
 ## Exact next action
 
-Prompt 18 is complete within its canonical Memory authoring scope; stop here.
-**Next: Prompt 19 Organization Policies**, only when supplied by the user.
-Recheck repository and read the files above; implement only that prompt's actual
-policy content scope using existing trust/governance/evidence contracts.
-All eight public skills are authored; do not add router/governance/self-check
-entries or infer complete native support from this inventory.
-Do not infer authority for real organization policy adoption, developer-project
-initialization, dangerous operations, publication or unverified native overlays.
+Prompt 19 is complete within static Organization Policies authoring scope; stop here.
+**Next: Prompt 20 Claude**, only when supplied by the user.
+Recheck repository and read the files above. Revalidate current official native
+documentation before schema-dependent Claude work; use the actual requested
+Prompt 20 scope, not old chat or a guessed manifest. Preserve native/owner gates.
+Do not infer authority for real organization adoption, developer-project Init,
+dangerous operations, publication, other platforms or later prompts.
 
-Safe to continue: **YES for a user-requested Prompt 19 Organization Policies**.
-Shared contracts and all eight canonical skill patterns are ready; native/owner
-gaps remain gates for dependent packaging/activation/publication claims.
+Safe to continue: **YES for a user-requested Prompt 20 Claude**.
+Shared content, policy/config contracts and all eight canonical skills are ready;
+official schema revalidation and actual native evidence remain necessary for
+dependent packaging/activation claims. No automatic continuation is authorized.
 

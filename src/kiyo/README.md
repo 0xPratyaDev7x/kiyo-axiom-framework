@@ -94,6 +94,15 @@ Memory Skill scenarios and separate source trials do not prove whole-store
 freshness or native behavior. All eight canonical public entries are now authored;
 native catalogs/packages and complete acceptance remain pending.
 
+Prompt 19 adds [configuration specification](framework/project-configuration.md),
+[policy resolution](governance/policy-resolution.md), three optional
+[presets](governance/presets.md) and neutral organization/project policy templates.
+The established .kiyo/policy.md config equivalent is preserved; no second locator,
+provider choice, permission grant or policy engine is introduced. Init can propose
+drafts and Security governance can inspect completeness/conflicts. Sixteen
+developer scenario specifications remain separate from bounded trial evidence.
+Exactly eight public skills remain; real policy adoption and native packages are pending.
+
 Follow [framework layout](../../docs/architecture/framework-layout.md),
 [content loading](../../docs/architecture/content-loading.md) and
 [packaging contract](../../docs/architecture/packaging-contract.md) as their

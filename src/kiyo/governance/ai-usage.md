@@ -21,7 +21,9 @@ Do not write an organization/project policy pack merely by loading these files.
 This is a shared procedure, not another public skill or AI approval agent.
 
 1. Identify the user's intent, requested effects and existing valid authorization.
-   Keep review/read-only work read-only. Identify actual policy and host limits.
+   Keep review/read-only work read-only. Identify actual policy and host limits;
+   use [policy resolution](policy-resolution.md) for missing/conflicting authority
+   and [optional presets](presets.md) only for a requested continuing preference.
 2. Describe the concrete action, target, environment and relevant data from
    available permitted evidence; discover before asking. Do not read secrets to
    fill an assessment, infer production from a branch name or guess a provider.

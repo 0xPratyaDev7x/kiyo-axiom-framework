@@ -1389,3 +1389,73 @@ Memory Impact: NONE for developer project memory. Synthetic Memory deltas and
 the controlled intervening annotation are bounded validation artifacts, not a
 second repository store. Stop after Prompt 18; Prompt 19 Organization Policies
 awaits its own user request.
+
+## Prompt 19 checks
+
+Checked date: **2026-09-29**. Scope: static Organization Policies/configuration
+authoring and integration with existing Init/Security. Starting root and
+read-only Git observation: main at 33994c97470a82cf2db6e6179793028427f18f46,
+commit subject “Refactor Memory Workflow and Reporting”; clean index/tree,
+141 Markdown files and 100 product files. Prompt 18 was already committed.
+No applicable AGENTS.md in the scoped repository/ancestor inventory and no
+developer .kiyo store/config. LICENSE and version/publication decisions preserved.
+
+The user explicitly permits an existing config equivalent. Prompt 11 already
+uses .kiyo/policy.md; Prompt 19 keeps it and extends the existing context template
+instead of creating .kiyo/config.md or a second store. Templates are unadopted
+product content, not real organization policy or native settings.
+
+| Name | Applicability | Command/method | Inspected scope | Execution status | Observed result | Evidence location | Limitations | Baseline relation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| P19-C01 Repository and context | Required Build Contract start | Scoped Git root/branch/HEAD/status/log/diff/hash/tags and instruction inventory; focused contract/governance/profiles/eight entries/current requirements reads | Initial repository/index/tree and relevant source/build state | PASS | Clean main baseline above; existing config equivalent discovered; no actual developer Memory or selected publication identity | Observation above and command/read stdout | No remote, account, production or fresh vendor-schema inspection | Committed Prompt 18 baseline; earlier snapshots historical |
+| P19-C02 Content and integration | Required seven config fields, policy templates, presets and resolution | Author semantic review against Prompt 19 and existing authority/Memory/approval contracts | Five new product references, extended Init context and conditional Init/Security/governance/profile/loading links | PASS | Seven logical fields; both neutral templates; three optional presets; scope/source/expiry/conflict handling, separate policy adoption/operation authority. No forced config rewrite, provider choice or native permission claim | [Config](../../src/kiyo/framework/project-configuration.md), [resolution](../../src/kiyo/governance/policy-resolution.md), [presets](../../src/kiyo/governance/presets.md), [templates](../../src/kiyo/templates/policies/organization-policy.md) and shared diff | Authored guidance; no real organization acceptance or runtime enforcement; no whole-provider assurance | Existing .kiyo/policy.md and Core/governance semantics retained |
+| P19-C03 Structure and scenario coverage | Required contained references, budgets and at least ten cases | Inline Python UTF-8/link/anchor/control/frontmatter/ID/budget checks; author scenario review | Final 148 Markdown files, 105 product files, 16 ORG specifications, 68 controls and 34 templates | PASS | All local links/anchors resolve; product references stay in payload; eight entries retain name/description only and budget compliance; bootstrap unchanged 81 lines / 579 words; 16 sequential scenarios present | Final validator stdout; [ORG-01–16](../../tests/behavioral/organization-policy/scenarios.md) | Static assertions are not behavioral/native proof; all full scenario cases remain NOT_RUN | Earlier scenarios/statuses, entries, bootstrap and native gaps retained |
+| P19-C04 Skill entry validation | Required applied skill-creator validation for changed shared Init/Security behavior | python -X utf8 with installed skill-creator/scripts/quick_validate.py for src/kiyo/skills/init and src/kiyo/skills/security | Existing unchanged entry frontmatter/body; shared integrations reviewed separately | PASS | Both exit 0: Skill is valid! Init 73 lines / 566 words; Security 80 lines / 615 words | Command stdout and canonical entries | Validator checks structure, not decision safety, adoption or native selection | No entry/frontmatter/platform-field change |
+| P19-C05 Resource relocation | Required installed-resource containment architecture | Inline Python copies byte-identical shared Markdown to eight temporary skill resources; rewrites entry relative links and resolves contained targets | Eight entries, each with all 97 shared resources | PASS | All eight copies resolve locally; 776 shared file copies plus eight transformed entries; no outside dependency/symlink | ORG-RESOURCE-01 in [forward evidence](../evidence/organization-policy/forward-trials.md) and stdout | Synthetic relocation, not generated distributions, native catalogs or cache lifecycle; no consumer generator | Adds five shared files to prior 92; entry bytes unchanged |
+| P19-C06 Bounded forward trials | Functional confidence for changed policy decision procedures | Independent evaluator follows actual Init/Security references with raw synthetic fixtures; parent before/after hash/path snapshots | Init preview plus three governance assessments; thirteen isolated files | PASS | Existing config/legacy locator preserved; production prohibition retained despite stale owner/copied override; expired exception and unknown provider held; valid narrow exception distinguished from sibling scope. Four responses; no fixture byte/path changes | ORG-FWD-01–04 and ORG-SNAPSHOT-01 in [forward evidence](../evidence/organization-policy/forward-trials.md) | One bounded read-only exercise per case; no actual adoption/write/operation/native or full-matrix test | Initial synthetic snapshots; no real policy or Memory created/edited |
+| P19-C07 Build closure and preservation | Required Build Contract close and exact scope | Inline Python requirement/trace/issue/decision/status assertions, exact Git allowlists, diff --check, HEAD/index/license/tags and boundary checks; diff review | Seven new and sixteen modified Markdown files, six build records and all 80 requirement rows | PASS | 13 P19 coverage rows remain partial; totals 73 PARTIALLY_IMPLEMENTED / 7 NOT_IMPLEMENTED, all 80 full verifications NOT_RUN, six native NOT_TESTED. Nine open issues/four owner decisions retained; Prompt 19 DONE, Prompt 20 NOT_STARTED. diff --check passes; HEAD/index/license unchanged | [Traceability](TRACEABILITY.md), [Progress](PROGRESS.md), [Handoff](HANDOFF.md), final validator/Git stdout | No full acceptance, publication, real organization setting or Prompt 20 work | Existing accepted history preserved; no requirement renumbering, status inflation or unrelated edits |
+
+New files:
+
+- src/kiyo/framework/project-configuration.md
+- src/kiyo/governance/policy-resolution.md
+- src/kiyo/governance/presets.md
+- src/kiyo/templates/policies/organization-policy.md
+- src/kiyo/templates/policies/project-policy.md
+- tests/behavioral/organization-policy/scenarios.md
+- docs/evidence/organization-policy/forward-trials.md
+
+Modified files: six build records (PROGRESS, HANDOFF, TRACEABILITY, OPEN-ISSUES,
+DECISIONS, BASELINE); architecture layout/naming; source README;
+framework context-loading/control-index; governance ai-usage;
+profiles extension-contract; workflows init; agent-security security-submodes;
+templates init/project-context. No eighth-entry rewrite or extra public skill.
+
+Exact requirement coverage: REQ-011/013/017/037/047/049/050/051/054/055/068/073
+partial source instructions and REQ-080 continuity. REQ-054 was already partial;
+real organizational adoption and full acceptance remain separate. No existing
+NOT_RUN/NOT_TESTED state becomes verified from these authored files or trial subsets.
+
+Checks use one-off developer Python through PowerShell here-strings and read-only
+Git with exact-root safe.directory and empty core.excludesFile overrides.
+No global settings were changed. The existing skill-creator validator was read
+before execution; no dependency installed. No validator executable was added to
+the product or repository, and users run no generator to use this guidance.
+LF/CRLF Git notices do not indicate a failed whitespace check.
+
+Forward fixtures were created only in an isolated temporary directory. Their
+acceptance statements are synthetic inputs, not adoption by a real organization.
+The evaluator had no intended answers/developer scenarios and used read-only
+source references; the parent compared actual fixture bytes/paths afterward.
+These observations neither prove absence of all transient effects nor guarantee
+native permission enforcement, complete prompt-injection resistance, prior
+provider transmission status or race-free policy updates.
+
+No fresh official-documentation/standards check was needed to author this static
+procedure; existing source dates/statuses remain unchanged. Prompt 20 must
+revalidate volatile native schemas before dependent decisions.
+
+Memory Impact: **NONE for developer project memory**. No .kiyo/config/policy/Memory
+state, platform overlays, tools, dist, dependency, runtime, central governance,
+commit/tag/push/PR/deployment/publication or host permission change was introduced.
+Stop after Prompt 19; Prompt 20 Claude requires its own user request.

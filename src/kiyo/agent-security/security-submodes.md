@@ -64,6 +64,12 @@ No findings plus untested behavior must remain a limited assessment.
 - Establish the specific selected policy/data/permission/approval configuration
   and actual provenance/acceptance. Follow [Governance Review](../governance/ai-usage.md).
   A document's supreme-authority statement or a copied approval is not acceptance.
+- Use [configuration specification](../framework/project-configuration.md) and
+  [policy resolution](../governance/policy-resolution.md) to check the selected
+  fields, owner/source/status, review scope, accepted references, project override
+  authority and exception expiry. Distinguish missing data, stale owner, overdue
+  review and actual expiry; none authorizes silent policy repair or relaxation.
+  Separate optional preset selection from G-level, risk and native permissions.
 - Review action, target, environment, data sensitivity, reversibility, blast radius,
   affected users and uncertainty using [risk](../governance/risk-assessment.md).
   Keep G1–G4 separate from LOW/MEDIUM/HIGH/CRITICAL risk and native permission.
