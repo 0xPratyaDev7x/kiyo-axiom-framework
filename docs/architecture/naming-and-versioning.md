@@ -112,7 +112,10 @@ Project adapter revisions track the small adapter's format independently from
 the product release it was last reviewed against. They are provenance text in
 user-owned project files, not a second product release line. Prompt 11's neutral managed-block shape uses internal adapter text revision
 init-locator-1, not a product/host release number; preserve any actual established
-adapter history instead of forcing this format. Missing product version
+adapter history instead of forcing this format. init-locator-2 (2026-09-30) adds an
+advisory goal-to-skill list so always-loaded project instructions carry a short
+route; an unchanged owned init-locator-1 block may be proposed for update only
+during an authorized Init update. Missing product version
 information stays UNKNOWN; no automatic updater, forced policy migration or
 memory migration is introduced.
 

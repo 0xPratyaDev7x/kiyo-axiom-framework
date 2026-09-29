@@ -70,7 +70,7 @@ Follow [canonical Init activation](../kiyo/framework/init-activation.md), preser
    applicability on each target; pattern matching may not activate for a read-only
    question. If reliable scope cannot be established, keep explicit invocation
    and report the limitation rather than widening scope or enabling settings.
-4. Reuse init-locator-1 with actual instruction-file-relative project state paths,
+4. Reuse init-locator-2 with actual instruction-file-relative project state paths,
    existing canonical Memory and evidenced version, otherwise UNKNOWN. Add:
    "Select the discovered Kiyo skill for this task using this host's native UI;
    report an unresolved selector instead of substituting a built-in command."

@@ -75,7 +75,7 @@ to make it serve as a later-step acceptance gate.
    [target protocols](../compatibility/live-owner-required-tests.md).
 3. Preserve project-owned Memory, policy and human instructions. A managed block
    carries scope/revision and an actual version reference when known; current
-   block revision is init-locator-1, not a product release version.
+   block revision is init-locator-2, not a product release version.
 4. Update a managed block only in an authorized scope, after rereading current
    text and resolving concurrent edits. Avoid duplicate blocks and copying the
    whole Core into instructions each task. Preserve nested AGENTS.md, CLAUDE.md

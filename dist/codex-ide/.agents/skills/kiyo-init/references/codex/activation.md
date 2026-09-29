@@ -73,9 +73,9 @@ and instruction-location guidance:
 3. For a module-only request, consider only that module's appropriate AGENTS.md.
    Do not insert a root-wide block or duplicate canonical Memory/config. A nested
    block is guidance for its actual scope; it grants no repository-wide access.
-4. Render init-locator-1 using actual instruction-file-relative state paths and
+4. Render init-locator-2 using actual instruction-file-relative state paths and
    evidenced version, otherwise UNKNOWN. Add this sentence before the end marker:
-   "In Codex (IDE or CLI), use /skills or type $kiyo- to select the discovered Kiyo entry."
+   "In Codex (IDE or CLI), type $kiyo-<skill> (for example $kiyo-implement) or use /skills."
    Keep the whole Kiyo block within 250 words; this is a Kiyo budget.
 5. Reread immediately before the authorized write. Preserve human content inside
    and outside markers; ambiguous/duplicate markers or concurrent changes require

@@ -101,6 +101,14 @@ for Codex CLI, or Copilot repository/path instructions. Existing human and neste
 instructions stay intact; no override/global configuration change is implied.
 [Activation requirements and limits](../compatibility/activation-matrix.md).
 
+That block also carries a short goal-to-skill list (for example: bug fix or
+feature → implement; review or explain → review; write tests → test). The host
+reads the instruction file each session, so later prompts can be routed to a
+Kiyo skill without naming it. This routing is advisory and NOT_TESTED: the host
+may still not select a skill, an unclear or look-only request starts read-only,
+and naming the skill explicitly remains the reliable route. Projects initialized
+before this list existed get it through an authorized Init update.
+
 ## Daily use and reports
 
 After confirming selection, ask naturally: “Review my current changes without

@@ -52,7 +52,7 @@ Do not create competing CLAUDE.md/AGENTS.md files merely to force Kiyo loading.
 Newer host instruction-selection settings can change which file loads; inspect
 the actual target. Equivalent existing guidance means no new block.
 
-For a requested and authorized block, render the canonical init-locator-1 shape
+For a requested and authorized block, render the canonical init-locator-2 shape
 with actual config/index paths relative to that instruction file, actual reviewed
 version or UNKNOWN, and the following Claude-specific selector sentence:
 “When Kiyo is available, select the appropriate discovered /kiyo-axiom-framework:<skill>

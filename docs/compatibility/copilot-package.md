@@ -76,7 +76,7 @@ skill selection differs from metadata discovery and persistent project guidance.
 An explicit or relevant implicit selection need not depend on Init; it still
 needs readable packaged Core before actions. Installation itself performs no Init.
 
-Approved Init may render the existing short init-locator-1 block into an actual
+Approved Init may render the canonical short init-locator-2 block into an actual
 applicable project instruction file. No full Core copy, external cache import,
 automatic hook or every-turn loading guarantee is supplied. A module-only
 request cannot authorize a repository-wide block or widened applyTo pattern.

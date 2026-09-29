@@ -60,22 +60,38 @@ locator lines. It contains no native invocation command or metadata field.
 ```markdown
 <!-- KIYO:BEGIN project-context -->
 Kiyo project guidance (advisory; respects the actual native instruction hierarchy).
-Adapter revision: init-locator-1.
+Adapter revision: init-locator-2.
 Last reviewed product version: UNKNOWN.
 Applies within: <actual authorized project/module scope>.
 Project context: <actual instruction-file-relative config path, when present>.
 Project Memory: <actual instruction-file-relative canonical index path>.
 Before Kiyo work, read the applicable project context and relevant Memory within
 permissions, then follow the selected available skill and its packaged bootstrap.
-Choose the skill for the requested task; do not initialize again for every feature.
+When the user names no skill, choose one Kiyo skill by the request's goal:
+- requirement: define or refine behavior and acceptance criteria
+- implement: requested feature, bug fix or scoped refactor
+- review: review or explain code or changes without editing
+- test: assess coverage, run checks or write tests
+- security: security question or assessment
+- architecture: structure, design options or change impact
+- memory: show, check or sync Project Memory
+- init: only when onboarding is requested; not for every feature
+If the goal is unclear, or the user only asks to look or explain, start read-only
+and ask before editing. Choosing a skill grants no extra permission.
 If Kiyo is unavailable, report that limit and preserve project state; do not claim
 that a Kiyo workflow ran or that Core loaded automatically.
 <!-- KIYO:END project-context -->
 ```
 
-init-locator-1 is this Kiyo text format's internal revision, **not a product release
-or host version**. Preserve any actual established adapter history; do not overwrite
-it to adopt this example. Record the product version only from real evidence, else
+init-locator-2 is this Kiyo text format's internal revision, **not a product release
+or host version**. It adds the goal-to-skill list to init-locator-1 so the always-loaded
+project instructions carry a short route on every task; the full rules stay in the
+[Workflow Router](../workflows/workflow-router.md). The list is advisory: it does not
+guarantee native selection, replace an explicit user choice or widen any permission.
+Preserve any actual established adapter history; do not overwrite it to adopt this
+example. An unchanged owned init-locator-1 block may be proposed for update to
+init-locator-2 during an authorized Init update; a human-edited one needs
+reconciliation. Record the product version only from real evidence, else
 UNKNOWN. Keep the rendered Kiyo block within the existing **250-word** adapter
 budget; this is Kiyo's criterion, not a vendor limit.
 

@@ -36,8 +36,8 @@ account or global inventory was inspected during P23.
 ## Managed bootstrap and ownership
 
 The installed [canonical procedure](../../src/kiyo/framework/init-activation.md)
-and target adapter control the workflow. A managed block records init-locator-1
-as the text format revision, actual authorized project/module scope, actual
+and target adapter control the workflow. A managed block records init-locator-2
+as the text format revision, a short goal-to-skill list, actual authorized project/module scope, actual
 instruction-relative config/Memory paths and observed product version or UNKNOWN.
 That internal revision is not a product release.
 

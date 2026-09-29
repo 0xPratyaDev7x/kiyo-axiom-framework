@@ -57,7 +57,7 @@ from native project context (CL20-06). Installed metadata/relevance matching doe
 not establish Core loaded every turn. Project-wide guidance is a separate,
 authorized native instruction arrangement; Markdown is not a sandbox.
 
-Init renders the existing init-locator-1 shape only when needed and authorized,
+Init renders the canonical init-locator-2 shape only when needed and authorized,
 with one native selector sentence, actual instruction-file-relative state paths
 and UNKNOWN version when not evidenced. Preserve human text/blocks, existing
 CLAUDE.md choice, legacy Memory and config, no-op repeats and independent authority.
