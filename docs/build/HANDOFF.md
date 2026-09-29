@@ -15,28 +15,33 @@ One canonical specification with necessary self-contained native overlays.
 
 ## Current repository observation
 
-Observed for Prompt 21 on 2026-09-29:
+Observed for Prompt 22 on 2026-09-29:
 
 - Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework
-- Branch: main; HEAD: 5102892d7c82f8c9a0301d3146219d4eaf894bba.
-- Initial tree/index clean; Prompt 20 was committed before this task. Canonical
-  product inventory remains 105 files/68 controls/eight public entries.
-  Previous prompt snapshots are historical, not current checkout facts.
-- No applicable scoped repository/ancestor AGENTS.md and no .kiyo state.
-- Exact-root per-command Git safe.directory and empty core.excludesFile were used;
-  no global config changed. LICENSE blob:
-  d2e60c5b160ed4f9ca096215e72efee5769936b1. No version/tag was selected.
-- Prompt 21 adds ten authored files, one generated inventory and 795 Codex
-  distribution files; modifies fifteen existing Markdown files. All canonical
-  product bytes, Claude tooling/overlay and 794 Claude distribution files preserved.
-- Codex terminal --version returned codex-cli 0.158.0; bounded plugin help parsed.
-  Named IDE extension metadata reports 26.917.62051 with vscode ^1.96.2.
-  Active extension/engine/editor/account UNKNOWN. No native session or installation.
-- Bundled plugin-creator validation returned FAIL for missing version, author and
-  interface.developerName. Offline structural/parity checks pass; the actual
-  ingestion failure and owner-dependent release gate remain explicit.
-- No commits, tags, pushes, package installs, public submissions, global settings,
-  AGENTS.override.md edits or safety bypass. Developer test fixtures are separate.
+- Branch main; HEAD 46e70a52cb105b9cb83646000e4f4652115b42fc.
+- Initial tree/index clean; Prompt 21 was committed before this task. Canonical
+  inventory remains 105 product Markdown files/68 controls/eight public entries.
+- No applicable scoped ancestor/repository AGENTS/override/CLAUDE instructions
+  and no .kiyo. Git uses per-command exact safe.directory/core.excludesFile,
+  with no global mutation. LICENSE blob remains
+  d2e60c5b160ed4f9ca096215e72efee5769936b1; no version/tag chosen.
+- Prompt 22 adds nine authored files, one generated inventory and 794 Copilot
+  payload files; modifies fifteen existing Markdown documents. Canonical product,
+  prior tools/overlays and all 1,589 Claude/Codex payload files remain unchanged.
+- Scoped PATH lookup did not resolve copilot; standard github.copilot* extension
+  metadata lookup had no matches, and the standard editor package metadata path
+  was absent. No global absence is inferred. Active CLI/editor/extension/harness
+  and account remain UNKNOWN. Python 3.11.9 / Windows 10.0.26200 were observed.
+- Current GitHub/Microsoft docs support a shared minimal Agent Plugins 1.0.0
+  package; CLI's additional 1.1.0 support was not assumed for VS Code.
+  Rendered VS Code plugin page retrieval timed out; official Microsoft source
+  was retrieved instead, with that exact boundary in CP22-07.
+- Offline package/parity/relocation/no-op/rejection checks pass; no native
+  parser, installation, catalog registration, chat invocation or publication.
+- Previous Codex ingestion FAIL for owner version/author/developerName and
+  UNSUPPORTED IDE native plugins remain open; no alternate route was adopted.
+- No project bootstrap, native/global setting, commit/tag/push/PR, install,
+  safety-bypass option, VSIX, service or owner publication decision.
 
 Recheck root, branch, index, unstaged/untracked changes and user edits on resume.
 Preserve LICENSE and the 80 original requirements. See BASELINE for check results.
@@ -176,7 +181,25 @@ scaffolds or the OWASP proposed universal format.
     [disposable protocol](../compatibility/codex-local-test-protocol.md) and
     [submission requirements](../compatibility/codex-submission.md).
 
+26. [Copilot field/target delta](../compatibility/copilot-package.md),
+    [overlay](../../platforms/copilot/README.md),
+    [offline evidence](../evidence/copilot/package-checks.md),
+    [installation/lifecycle](../compatibility/copilot-installation.md),
+    [disposable protocol](../compatibility/copilot-local-test-protocol.md) and
+    [integration specifications](../../tests/integration/copilot/scenarios.md).
+
 ## Completed work and evidence
+
+Prompt 22 prepares one 794-file static Copilot bundle for independently documented
+CLI/VS Code targets: eight skills, canonical parity and contained resources.
+Actual offline checks pass, including 4,964 links, identical relocation/no-op and
+nine rejection cases. Full sample project block is 116 words, not a live trial.
+Twenty specifications remain NOT_RUN per target. See [P22 checks](BASELINE.md#prompt-22-checks).
+No canonical product or earlier artifact change, consumer runtime, fake catalog
+or global install. Counts remain 79 partial / 1 not implemented, all 80 full
+verifications NOT_RUN and six native results NOT_TESTED. Earlier summaries below
+are historical prompt scopes, not new verification claims.
+
 
 Prompt 21 completes requested development packaging/documentation: 795 Codex files
 and eight entries from unchanged canonical content, contained resources, independent
@@ -447,7 +470,7 @@ changed. Temporary synthetic fixture state is recorded separately in forward evi
 - Do not generate manifests, public skills, release versions or all later trees
   to make scaffolding look complete. Keep schema gaps and owner decisions open.
 
-## Shared boundaries for Prompt 22
+## Shared boundaries for Prompt 23
 
 Use Memory as context, validate material claims, preserve approved intent and
 surface conflicting sources through the real native hierarchy. Do not treat
@@ -870,19 +893,42 @@ list action or native session ran. Prompt 26 needs verified disposable state and
 actual CLI results. IDE native plugins remain excluded by official docs; do not
 silently substitute standalone/global skill installation. DEC-004 stays open.
 
+## Copilot distribution continuity
+
+dist/copilot/kiyo-compass is generated from canonical source and independent
+platforms/copilot input. Only $schema/name/description are needed. No permission
+or component-path fields, client extension, VSIX, hook, MCP or Actions runtime.
+Existing file/hash helpers are reused unchanged; old native manifests are not inputs.
+Source/output digests and actual Git base remain outside the installed payload.
+
+CLI generic slash syntax does not establish the exact Kiyo namespace or resolve
+built-in init/review collisions. Inspect actual discovery; do not substitute a
+built-in or copy VS Code's /kiyo-compass:<skill> syntax into CLI. Both native
+results remain NOT_TESTED. Plugin rules are not used as an unverified Core loader.
+
+The adapter reuses canonical Init guidance, preserves .github/copilot-instructions.md,
+human sections/path-specific globs and established config/Memory, and limits
+module-only insertion to real applicable scope. File writes need actual
+authorization and a fresh reread. No bootstrap was installed by this build.
+
+No marketplace JSON with fake owner values is emitted. The lifecycle guide
+separates direct cached CLI installs from local-catalog live paths and VS Code
+source/UI/local routes. Future independent disposable tests must observe reads,
+scope, update/disable/uninstall and preservation rather than reuse static success.
+No curated listing, version, publisher, signature or ready-to-publish status.
+
 ## Exact next action
 
-Prompt 21 development artifact/documentation scope is complete; ingestion/release
-readiness remains BLOCKED with the validator FAIL retained. Stop here.
-**Next: Prompt 22 Copilot**, only when supplied by the user.
-Recheck repository, read the files above and independently revalidate current
-Copilot CLI and VS Code schema, skill invocation, instruction loading, rules and
-marketplace lifecycle. Do not copy Claude/Codex manifest semantics or assume
-matching client behavior. Preserve unconfirmed owner inputs and actual evidence.
+Prompt 22 static distribution/documentation scope is complete. Stop here.
+**Next: Prompt 23 Packaging/Parity**, only when supplied by the user.
+Recheck root/branch/user edits, read the build/architecture contracts and current
+native guides, then use the supplied Prompt 23 scope. Preserve canonical ownership,
+three development inventories and independent native evidence. Do not erase the
+Codex ingestion failure or invent missing publisher/release values.
 
-Safe to continue: **YES for a user-requested Prompt 22 Copilot**.
-The canonical specification and development packaging approach are available.
-Codex ingestion/IDE/publication gaps block only their dependent claims/actions;
-current Copilot research remains a prerequisite. No later work or installation
-is authorized by this handoff alone.
+Safe to continue: **YES for a user-requested Prompt 23 Packaging/Parity**.
+Three prepared static distributions support that independent work. Native/live,
+Codex IDE and owner publication gaps continue to block their dependent claims,
+not the authorized next packaging design/checks. Memory Impact: NONE.
+No later work, installation or publication is authorized by this handoff alone.
 

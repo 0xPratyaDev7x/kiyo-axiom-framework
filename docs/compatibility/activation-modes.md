@@ -2,7 +2,8 @@
 
 Original baseline: **2026-09-28**; Claude loading rechecked **2026-09-29**
 in [Prompt 20](claude-package.md) (CL20-02/03/04/06/10); Codex rechecked
-**2026-09-29** in [Prompt 21](codex-package.md) (CX21-04/05/06). Official source IDs:
+**2026-09-29** in [Prompt 21](codex-package.md) (CX21-04/05/06); Copilot in
+[Prompt 22](copilot-package.md) (CP22-03/04/07/08/09). Official source IDs:
 [SOURCES](../research/SOURCES.md). Capability evidence is **DOCUMENTED_ONLY**;
 all live activation, relocation and maintenance checks are **NOT_TESTED**.
 Kiyo remains advisory and static.
@@ -130,4 +131,25 @@ Do not modify AGENTS.override.md/global settings or move a module block upward
 to force activation. Shadowing, truncation or unavailable skills are limitations
 to report. IDE plugins remain UNSUPPORTED; standalone support does not silently
 satisfy native installation. Both live targets remain NOT_TESTED.
+
+## Prompt 22 Copilot activation adapter
+
+The [native adapter](../../platforms/copilot/resources/activation.md) reuses
+canonical init-locator-1 plus a host-selection sentence. A rendered sample is
+116 words including markers; the actual block must satisfy Kiyo's 250-word budget.
+No consumer project instruction file was created during packaging.
+
+CLI and VS Code metadata matching can work without Init, but selected entry/Core
+reads and persistent project guidance are separate. Native rule directories are
+documented; their exact always-on semantics are not established and no rules
+component is shipped. Installing this bundle supplies no automatic Core loader.
+
+For authorized repository guidance preserve .github/copilot-instructions.md,
+human text and existing path-specific/nested files. Module-only scope must not
+become a root-wide block or a broadened applyTo pattern. CLI includes have bounded
+repository semantics; VS Code matching/settings depend on session/harness.
+The adapter uses ordinary state locators, not cross-target cache imports.
+CP22-03/04/07/08/09, checked 2026-09-29; all native loading results NOT_TESTED.
+[Separate protocols](copilot-local-test-protocol.md) cover actual reads and
+human-state preservation after updates/removal.
 

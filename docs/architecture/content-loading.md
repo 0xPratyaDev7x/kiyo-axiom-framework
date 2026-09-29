@@ -157,3 +157,18 @@ changed to force loading. Report shadowing/truncation/launch-directory limits.
 Metadata/relevance is not always-on Core; a shipped KIYO.md alone is no loader.
 Native loading/Init behavior remains NOT_TESTED, and IDE plugin capability stays
 UNSUPPORTED pending an owner decision on the separate fallback question.
+
+## Prompt 22 Copilot adapter
+
+The [Copilot overlay](../../platforms/copilot/resources/activation.md) separates
+CLI discovery/unknown qualification from documented VS Code plugin-prefixed
+selection. It supplies a 116-word sample managed block through canonical Init
+guidance, not a project write or automatic Core injection during installation.
+
+Preserve .github/copilot-instructions.md and targeted/nested human instructions.
+Existing config/Memory stay at their accepted paths. Module-only authorization
+cannot widen instruction globs, native settings or repository permissions.
+Session/harness differences and read-only glob applicability are explicit.
+Every packaged reference is relative to its installed skill; no runtime hook,
+cache import, generator or background cleanup substitutes for missing loading.
+Native use and lifecycle preservation remain independently NOT_TESTED.

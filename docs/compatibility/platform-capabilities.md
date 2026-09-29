@@ -1,24 +1,28 @@
 # Kiyo Compass — Platform capabilities
 
-Original research: **2026-09-28**; Claude and Codex refreshed **2026-09-29** in
+Original research: **2026-09-28**; Claude, Codex and Copilot refreshed **2026-09-29**.
+Copilot's [Prompt 22 field map](copilot-package.md) / CP22-01–16 supersedes its
+historical tables below. Claude/Codex refreshes are in
 [Prompt 20 field map](claude-package.md) / CL20-01–CL20-13 and
 [Prompt 21 field map](codex-package.md) / CX21-01–CX21-12. Sources: [source register](../research/SOURCES.md).
 C/O/G/V/A IDs below identify its exact official source rows. Every capability is
 DOCUMENTED_ONLY unless explicitly marked otherwise. Every live result is
 **NOT_TESTED**. Prompt 20 observes only Claude CLI --version and named extension
 metadata. Prompt 21 observes Codex version/help and named extension metadata;
-active IDE/account contexts remain unknown. Copilot environments were not inspected. Offline package validation is separate from native behavior.
+active IDE/account contexts remain unknown. Prompt 22's bounded lookup did not resolve
+copilot on PATH or matching extension metadata in the inspected standard directory;
+alternative/active environments remain UNKNOWN. Offline checks are separate.
 
 ## Target summary
 
-| Target | Native plugin capability | Observed version | Live state | Principal gap / sources (Claude/Codex 2026-09-29; Copilot 2026-09-28) |
+| Target | Native plugin capability | Observed version | Live state | Principal gap / sources (refreshed 2026-09-29) |
 | --- | --- | --- | --- | --- |
 | Claude Code CLI | DOCUMENTED_ONLY; development package statically checked | CLI --version: 2.1.220 (2026-09-29) | NOT_TESTED | CL20-01–13 and [P20 evidence](../evidence/claude/package-checks.md); native validation/loading/cache/lifecycle deferred |
 | Claude Code VS Code | DOCUMENTED_ONLY; shared development bundle | Extension manifests 2.1.283 / 2.1.284; active version UNKNOWN (2026-09-29) | NOT_TESTED | CL20-04; independent extension loading/engine/cache/lifecycle pending |
 | Codex CLI | DOCUMENTED_ONLY; static development bundle prepared | codex-cli 0.158.0 (2026-09-29) | NOT_TESTED | CX21-01–12; ingestion validator FAIL for owner release fields; exact selector/cache/lifecycle remain unverified |
 | Codex IDE Extension | UNSUPPORTED for native plugins | Extension metadata 26.917.62051; active version UNKNOWN (2026-09-29) | NOT_TESTED | CX21-04/06/07; standalone mechanism separate and not adopted as fallback, DEC-004 |
-| GitHub Copilot CLI | DOCUMENTED_ONLY | UNKNOWN | NOT_TESTED | Rule semantics and plugin-skill namespace unresolved; G01/G03 |
-| GitHub Copilot VS Code | DOCUMENTED_ONLY | UNKNOWN | NOT_TESTED | Rule semantics and independent harness test pending; V01–V03 |
+| GitHub Copilot CLI | DOCUMENTED_ONLY; static bundle prepared | UNKNOWN; not resolved on inspected PATH | NOT_TESTED | CP22-01–16; exact plugin selector/collision and rule loading remain UNKNOWN; no native parser/install |
+| GitHub Copilot VS Code | DOCUMENTED_ONLY; shared static bundle | UNKNOWN; scoped extension metadata lookup had no matches | NOT_TESTED | CP22-07/08/09; official source fallback read; independent UI/harness/loading/lifecycle untested |
 
 ## Shared schema boundary
 
@@ -128,6 +132,11 @@ CLI live state is NOT_TESTED and IDE native plugins remain UNSUPPORTED/NOT_TESTE
 
 ## GitHub Copilot CLI
 
+The following table preserves the Prompt 02 baseline. [Prompt 22](copilot-package.md)
+revalidates this target on 2026-09-29 and prepares a shared static artifact with
+independent evidence columns. Historical no-package observations are superseded;
+native results remain NOT_TESTED and rule-loader semantics remain UNKNOWN.
+
 | # | Topic | Documented capability / finding | Evidence and limitation |
 | --- | --- | --- | --- |
 | 1 | Manifest schema / file | Agent Plugins 1.0 root `plugin.json` per A01. Legacy `name` required; optional metadata/component paths. Legacy lookup: `.plugin/plugin.json`, root `plugin.json`, `.github/plugin/plugin.json`, `.claude-plugin/plugin.json`. | G01/A01; 2026-09-28; exact schema opt-in changes semantics; unknown keys are reported/ignored by host. |
@@ -143,6 +152,11 @@ CLI live state is NOT_TESTED and IDE native plugins remain UNSUPPORTED/NOT_TESTE
 | 11 | Evidence / limits | DOCUMENTED_ONLY; live **NOT_TESTED**. Rule semantics and exact plugin-skill selector need follow-up. | G01–G05; 2026-09-28; GitHub CLI `gh skill` is standalone-skill tooling, not proof of plugin installation. |
 
 ## GitHub Copilot VS Code
+
+The following table preserves the Prompt 02 baseline. [Prompt 22](copilot-package.md)
+revalidates this target on 2026-09-29 and prepares a shared static artifact with
+independent evidence columns. Historical no-package observations are superseded;
+native results remain NOT_TESTED and rule-loader semantics remain UNKNOWN.
 
 | # | Topic | Documented capability / finding | Evidence and limitation |
 | --- | --- | --- | --- |
@@ -165,4 +179,14 @@ host-specific loading boundaries. It must preserve the Codex IDE plugin gap and
 avoid committing to undocumented Copilot rule semantics, Codex plugin-qualified
 selector syntax or cache paths. See [activation modes](activation-modes.md) and
 [invocation map](native-invocation-map.md). No native payload was created here.
+
+## Prompt 22 Copilot boundary
+
+The independently documented intersection is Agent Plugins 1.0.0 with root
+plugin.json and eight skills. CLI documentation also accepts 1.1.0; this does
+not establish VS Code 1.1.0 support. No optional rules or component override is
+used. [Current delta](copilot-package.md) separates schema, naming, source
+lifecycle, account/version limits and instruction discovery for both clients.
+The original shared-schema/decision tables above are historical design inputs;
+the three native prompts now have scoped artifact evidence, not live acceptance.
 

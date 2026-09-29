@@ -124,3 +124,11 @@ This README is developer-only and excluded from native payloads. Future product
 instructions must not depend on it or on developer documentation. Keep populated
 project policy/memory out of this directory. Kiyo Compass remains a working name;
 no release version, publisher or license decision is introduced here.
+
+## Prompt 22 Copilot output
+
+The [Copilot overlay](../../platforms/copilot/README.md) generates a shared static
+CLI/VS Code package from this same canonical content. Target-specific invocation,
+instruction discovery and lifecycle remain separate in the adapter and evidence.
+No source product file changes; no VSIX/consumer runtime or additional public skill.
+All native results remain NOT_TESTED; working identity is not a published listing.

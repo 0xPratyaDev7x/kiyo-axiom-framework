@@ -6,7 +6,8 @@ Decision date: **2026-09-29**. Selected design:
 This document originally selected the architecture. Prompt 20 implements the
 [Claude development bundle](../compatibility/claude-package.md) and a bounded
 developer packager. Prompt 21 adds the [Codex development bundle](../compatibility/codex-package.md);
-Copilot outputs and all live installations remain pending.
+Prompt 22 adds the [Copilot development bundle](../compatibility/copilot-package.md).
+All live installations remain pending.
 
 ## Single authored source, self-contained derived resources
 
@@ -208,3 +209,22 @@ Portable selected-field validation and stricter ingestion are distinct:
 the latter FAILs for missing owner release metadata. See [submission gates](../compatibility/codex-submission.md).
 This artifact is DEVELOPMENT_UNRELEASED, not proof of native acceptance,
 public listing or cross-target parity. The earlier Claude output remains intact.
+
+## Prompt 22 implemented Copilot transform
+
+[Copilot builder](../../tools/package_copilot.py) independently reads the authored
+three-field Agent Plugins 1.0.0 manifest and a shared CLI/VS Code adapter.
+Current primary sources justify that manifest intersection; no compatibility
+manifest, client extension, native permission field or VSIX is necessary.
+
+dist/copilot/kiyo-compass contains eight entries with unchanged canonical shared
+snapshots. Source/resource resolution uses the same recorded transform as the
+earlier artifacts, with its own native reference. Existing filesystem/hash
+helpers are reused; Claude/Codex manifests and generated outputs are not inputs.
+[Offline evidence](../evidence/copilot/package-checks.md) records actual closure,
+parity, no-op/relocation and rejection checks. No end-user build or runtime exists.
+
+Owner-incomplete catalogs/settings are not generated. Final identity/version/
+publisher/source remain release gates; both native Copilot targets are NOT_TESTED.
+The common format does not make rules/hooks/commands or instruction semantics
+portable. Later packaging/parity work remains Prompt 23, not silently completed here.

@@ -159,3 +159,15 @@ Root portable schema/metadata is independent of Claude; concrete skill selection
 uses the actual Codex picker, not a guessed namespace. Final owner inputs must
 update the authored native input and derived outputs together under release scope.
 Publication and native live compatibility remain separate gates.
+
+## Prompt 22 Copilot working identity
+
+The minimal shared CLI/VS Code input retains kiyo-compass and all eight canonical
+slugs; it adds no numeric release or publisher. The actual JSON schema's optional
+metadata does not waive final owner/release decisions. No catalog with fake owner
+values is supplied. Copilot native defaults differ from Codex ingestion gates.
+
+The [current native map](../compatibility/copilot-package.md) distinguishes
+VS Code's documented plugin prefix from CLI's unresolved exact selector and
+built-in collisions. Do not rename canonical init/review or fabricate aliases to
+hide the gap. Real source/version/native tests must precede a release claim.

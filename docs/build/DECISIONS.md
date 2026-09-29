@@ -222,6 +222,20 @@ also cover the unresolved release identity/license/destination; version remains
 unset, not chosen here. Local metadata/help inspection grants no installation,
 submission, account-role change or global configuration authority.
 
+Prompt 22 was authorized on 2026-09-29: revalidate GitHub/Microsoft sources,
+produce a static Copilot CLI/VS Code distribution, native adapter, target delta,
+lifecycle guide and protocols; check/update state and stop before Prompt 23.
+Both clients independently document Agent Plugins 1.0.0, permitting one minimal
+shared manifest with canonical name/description skills. CLI's newer schema
+support does not extend the other target's contract. No VSIX/App/service or
+ecosystem expansion is approved.
+
+No client-specific metadata or plugin rules are required by this design. The
+unresolved CLI qualified selector and rule semantics remain explicit. Owner
+version/publisher/source/catalog values are not invented; no catalog/settings
+file is activated. Offline packaging uses the existing developer helper pattern
+and preserves earlier outputs. Native installation/lifecycle remains Prompt 26.
+
 ## Pending owner decisions
 
 | ID | Decision | Current evidence / status | Who decides | Latest needed / effect | Resolution evidence |
@@ -232,7 +246,7 @@ submission, account-role change or global configuration authority.
 | DEC-004 | Treatment of Codex IDE native-plugin support gap | OPEN. Official [plugin documentation](https://learn.chatgpt.com/docs/plugins) excludes IDE plugins; [skills documentation](https://learn.chatgpt.com/docs/build-skills) supports standalone IDE skills. Rechecked 2026-09-29 (CX21-04/06); DOCUMENTED_ONLY, live NOT_TESTED | Repository/product owner | Before promising six-target native installation or accepting a standalone fallback; does not block Prompt 03 design of documented surfaces | No fallback or scope reduction approved |
 
 Ask only when an unresolved choice blocks the current authorized prompt. Existing
-instructions authorize Prompt 21 Codex packaging/offline checks and build-state updates. Do not ask for
+instructions authorize Prompt 22 Copilot packaging/offline checks and build-state updates. Do not ask for
 premature publication decisions to complete that scope. Publication metadata still
 requiring confirmation is listed in [SOURCES](../research/SOURCES.md#publication-information-still-requiring-the-owner).
 
@@ -244,7 +258,7 @@ and overlay boundaries; this refines future paths without rewriting requirements
 No native manifest syntax, version policy, signing identity or marketplace
 availability was decided in Prompt 01. Prompt 02 now records documented formats
 in [platform capabilities](../compatibility/platform-capabilities.md), but did
-not choose/build overlays. Prompts 20/21 revalidate and build Claude/Codex independently;
+not choose/build overlays. Prompts 20–22 revalidate and build all three ecosystems;
 Copilot plugin-rule semantics, exact Codex/Copilot CLI
 plugin-skill selector details and custom lifecycle tests remain open.
 

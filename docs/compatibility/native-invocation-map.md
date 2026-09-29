@@ -1,6 +1,6 @@
 # Kiyo Compass — Native invocation map
 
-Original baseline: **2026-09-28**; Claude rechecked **2026-09-29** under CL20-01–13; Codex under CX21-01–12. Source IDs: [SOURCES](../research/SOURCES.md).
+Original baseline: **2026-09-28**; Claude rechecked **2026-09-29** under CL20-01–13; Codex under CX21-01–12; Copilot under CP22-01–16. Source IDs: [SOURCES](../research/SOURCES.md).
 Syntax below is **DOCUMENTED_ONLY**, not execution evidence.
 All six targets are **NOT_TESTED**. Angle-bracket tokens are metavariables,
 not runnable Kiyo release identifiers. No publication name or namespace is finalized. Prompt 20 uses the development
@@ -14,8 +14,8 @@ working namespace kiyo-compass with the eight canonical skill slugs.
 | Claude Code VS Code | Claude panel `/plugins` | Claude panel `/<plugin>:<skill>` | Claude description match | CL20-02/04/09, 2026-09-29; /kiyo-compass:<skill> documented convention, independent Claude panel entry untested. |
 | Codex CLI | /plugins; /skills or $ mention picker | Select actual Kiyo source entry | Description match; not guaranteed | CX21-04/06, 2026-09-29; exact plugin-qualified spelling UNKNOWN. Local 0.158.0 help separately exposes plugin add/remove; no invocation tested. |
 | Codex IDE Extension | /skills or $ for standalone skills only | Plugin invocation **UNSUPPORTED** | Standalone description match only | CX21-04/06, 2026-09-29; no native Kiyo plugin route or approved standalone fallback. |
-| GitHub Copilot CLI | `/skills list`, `/skills info`; shell `copilot plugin list` | `/<skill-name>` in prompt | Prompt/description match | G01/G03, 2026-09-28; exact plugin namespace/collision spelling UNKNOWN; do not copy VS Code spelling. |
-| GitHub Copilot VS Code | `/skills`; Extensions `@agentPlugins` | Plugin `/<plugin>:<skill>`; standalone `/<skill>` | Relevance match unless disabled | V01/V02, 2026-09-28; plugin prefix is host-added, not part of frontmatter name. |
+| GitHub Copilot CLI | /skills list/info; copilot plugin list | Generic /<skill-name> documented; resolve actual Kiyo source before selection | Prompt/description match | CP22-03, 2026-09-29; plugin qualification/built-in init/review collision unresolved; never substitute a host built-in for Kiyo. |
+| GitHub Copilot VS Code | /skills; Extensions @agentPlugins | /kiyo-compass:<skill> for the development package | Relevance match unless disabled | CP22-07/08, 2026-09-29; host supplies prefix, actual UI selection NOT_TESTED. |
 
 These are three different acts: managing a plugin, explicitly selecting a skill,
 and asking naturally for a task. Natural language such as “review this change”
@@ -86,4 +86,18 @@ The [current guide](codex-package.md), [protocol](codex-local-test-protocol.md) 
 [submission gates](codex-submission.md) separate selected fields, actual offline
 checks, stricter ingestion failure and untested host behavior. Both native target
 results remain NOT_TESTED; IDE plugin capability remains UNSUPPORTED.
+
+## Prompt 22 concrete Copilot mapping
+
+The [packaged adapter](../../platforms/copilot/resources/activation.md) lists all
+eight logical IDs and each target's distinct selector boundary. CLI generic
+slash syntax is documented; exact Kiyo plugin qualification and built-in
+collisions remain UNKNOWN. VS Code's plugin prefix is documented, not observed.
+Mode words remain intent, not an assumed cross-host parser or permission setting.
+
+Use the [current lifecycle guide](copilot-installation.md) instead of treating
+the historical Copilot installation table as a fresh contract. It distinguishes
+direct cached local installs, local-catalog path sources, catalog refresh,
+native installed updates and VS Code's local/source/UI routes. Sources CP22-01–16
+were checked 2026-09-29; both native results remain NOT_TESTED.
 

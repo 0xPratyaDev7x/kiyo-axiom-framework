@@ -225,3 +225,15 @@ unchanged. See [Codex field map](../compatibility/codex-package.md).
 There is no IDE-specific plugin payload, ninth public skill, app registration,
 agents/openai.yaml dependency, runtime, global installation or consumer generator.
 The native IDE gap and owner-dependent ingestion/publication gates remain explicit.
+
+## Prompt 22 Copilot artifact
+
+platforms/copilot supplies one independently evidenced Agent Plugins 1.0.0
+manifest and a native instructions adapter for two separately tested targets.
+[tools/package_copilot.py](../../tools/package_copilot.py) generates
+dist/copilot/kiyo-compass; [inventory/checks](../evidence/copilot/package-checks.md)
+remain developer-only. All eight skill snapshots contain their resources.
+
+This completes the three native development overlays, not Prompt 23 general
+packaging/parity or Prompt 26 live acceptance. No VSIX, runtime, GitHub App,
+Actions consumer workflow, extra public skill or mutable project state is added.

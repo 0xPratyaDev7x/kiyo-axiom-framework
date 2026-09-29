@@ -1,11 +1,42 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **21 Codex**.
-Task status: **DONE** for the requested development artifact/documentation scope.
-Offline structural checks pass; stricter ingestion validation FAILs for absent
-owner release fields. Registration/submission readiness is BLOCKED.
-Product status: eight canonical skills and Claude/Codex development distributions
-authored; Copilot, live compatibility and full acceptance pending. No runtime engine.
+Snapshot: 2026-09-29. Current prompt: **22 Copilot**.
+Task status: **DONE** for the requested static distribution/documentation scope.
+Copilot offline checks pass; CLI and VS Code native results remain NOT_TESTED.
+Product status: eight canonical skills and three development distributions authored;
+live compatibility and full acceptance pending. No runtime engine.
+Historical Codex ingestion FAIL and owner-dependent release BLOCKED remain open.
+
+## Prompt 22 delivered scope
+
+- Revalidated [sixteen current primary sources](../research/SOURCES.md#prompt-22-copilot-revalidation),
+  including an explicit Microsoft source fallback for the rendered plugins page
+  timeout and the VS Code setup redirect. No schema decision relies on chat memory.
+- Added [Copilot overlay](../../platforms/copilot/README.md), one minimal Agent Plugins
+  1.0.0 manifest and [CLI/VS Code delta](../compatibility/copilot-package.md).
+  Both targets independently document the selected format; no unsupported
+  fields, permission settings, VSIX, App, service or extra public skill.
+- [Developer packager](../../tools/package_copilot.py) produced
+  [794-file bundle](../../dist/copilot/kiyo-compass/plugin.json), eight entries,
+  97 shared resources each and a contained native adapter. All 105 canonical
+  product files and 1,589 previous Claude/Codex payload files are unchanged.
+- Actual offline checks pass for 4,964 local links, frontmatter/canonical parity,
+  relocation/rebuild no-op and nine rejection cases. A full sample managed
+  block is 116 words; static rendering is not verified Init behavior.
+- Added [native lifecycle guide](../compatibility/copilot-installation.md),
+  [disposable protocol](../compatibility/copilot-local-test-protocol.md) and
+  [20 integration specifications](../../tests/integration/copilot/scenarios.md)
+  with separate NOT_RUN columns. No native parser/install/chat test ran.
+- Exact CLI skill qualification/built-in collisions and plugin rule loading
+  remain UNKNOWN; VS Code slash prefix is DOCUMENTED_ONLY. Scoped PATH/extension
+  lookups did not establish a Copilot installation/version, not global absence.
+  No marketplace metadata or publisher/source ID is fabricated.
+
+Partial coverage: REQ-002–007/009–011/017/026/027/059–061/064/067/076–079; REQ-080 continuity.
+Totals remain **79 PARTIALLY_IMPLEMENTED / 1 NOT_IMPLEMENTED**; all 80 full
+verifications stay NOT_RUN. [P22 checks](BASELINE.md#prompt-22-checks) and
+[artifact evidence](../evidence/copilot/package-checks.md) retain the limits.
+Owner decisions and six live targets remain open. Memory Impact: **NONE**.
 
 ## Prompt 21 delivered scope
 
@@ -739,7 +770,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 19 | Organization Policies | DONE | P19-C01–C07 PASS; static/resource checks and bounded read-only policy trials; native NOT_TESTED |
 | 20 | Claude | DONE | P20-C01–C07 PASS; offline package/parity/relocation checks; native validator NOT_RUN, both Claude targets NOT_TESTED |
 | 21 | Codex | DONE | P21-C01–C07 scoped offline checks PASS; C08 ingestion FAIL for missing owner release fields; native NOT_TESTED, IDE plugins UNSUPPORTED |
-| 22 | Copilot | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 22 | Copilot | DONE | P22-C01–C07 scoped offline/document checks PASS; 794-file shared bundle, 20 cases NOT_RUN per target; both native NOT_TESTED |
 | 23 | Packaging/Parity | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 24 | Static Tests | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 25 | Behavioral Tests | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -757,10 +788,10 @@ Outstanding owner decisions: DEC-001 final name, DEC-002 release license,
 DEC-003 publisher/destination and DEC-004 treatment of Codex IDE's native-plugin
 gap before compatibility/release claims. See OPEN-ISSUES for technical gaps.
 
-Safe to continue: **YES for a user-requested Prompt 22 Copilot**.
-Canonical content and two independent development packaging paths are available.
-Revalidate current Copilot CLI/VS Code documentation separately before dependent
-schema decisions. Codex ingestion/owner/IDE gaps remain open and prohibit dependent
-registration/publication claims; they do not block independent Copilot work.
-Next prompt: **22 Copilot**, only when requested by the user.
+Safe to continue: **YES for a user-requested Prompt 23 Packaging/Parity**.
+Three scoped development packages and their source inventories are available.
+Keep six-target evidence independent and preserve owner/native gaps, including
+Codex ingestion FAIL and unsupported IDE plugins. These block dependent release
+claims, not authorized packaging/parity work.
+Next prompt: **23 Packaging/Parity**, only when requested by the user.
 

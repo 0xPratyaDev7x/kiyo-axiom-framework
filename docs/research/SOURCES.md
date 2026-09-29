@@ -6,6 +6,9 @@ Prompt 09 rechecked S01–S07 and added E01–E06 on **2026-09-29**.
 
 Prompt 20 adds CL20-01–CL20-13 on **2026-09-29** for Claude packaging.
 Prompt 21 adds CX21-01–CX21-12 on **2026-09-29** for Codex packaging.
+Prompt 22 adds CP22-01–CP22-16 on **2026-09-29** for Copilot packaging.
+The rendered VS Code plugins page retrieval failed; its official source fallback
+is documented separately in CP22-07.
 
 ## Evidence rules
 
@@ -268,4 +271,59 @@ was executed, not those actions. Named IDE extension metadata declares
 See [offline evidence](../evidence/codex/package-checks.md).
 All six Kiyo live targets remain NOT_TESTED; IDE plugin support remains
 documented UNSUPPORTED, without a silently approved standalone fallback.
+
+## Prompt 22 Copilot revalidation
+
+Checked **2026-09-29**, Asia/Bangkok. All successful rows below are
+DOCUMENTED_ONLY; CLI and VS Code Kiyo live results independently remain NOT_TESTED.
+Requested and observed destination URLs are explicit. “Same” means the web tool
+reported no redirect; no independent HTTP status/hop-chain trace is claimed.
+
+| ID | Requested source | Observed destination / access | Checked | Limitation |
+| --- | --- | --- | --- | --- |
+| CP22-01 | [CLI plugin reference](https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-plugin-reference) | Same URL; content retrieved | 2026-09-29 | CLI accepts 1.0.0/1.1.0; selected package uses 1.0.0. Managed activation, cache and component semantics are documented, not tested. |
+| CP22-02 | [Create CLI plugin](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-creating) | Same URL; content retrieved | 2026-09-29 | Independent skills-only layout; direct local install cache/reinstall guidance is distinct from local-marketplace live-path behavior. |
+| CP22-03 | [CLI skills](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/add-skills) | Same URL; content retrieved | 2026-09-29 | Name/description, generic slash selection and skills list/info; exact plugin-qualified Kiyo selector/built-in collision remains UNKNOWN. |
+| CP22-04 | [CLI custom instructions](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/add-custom-instructions) | Same URL; content retrieved | 2026-09-29 | Instruction discovery, applyTo, includes and combined guidance; no universal file precedence or automatic external cache import. |
+| CP22-05 | [Find/install CLI plugins](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-finding-installing) | Same URL; content retrieved | 2026-09-29 | Registered catalog/direct lifecycle vocabulary; no Kiyo listing or publisher acceptance. |
+| CP22-06 | [CLI marketplaces](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-marketplace) | Same URL; content retrieved | 2026-09-29 | Custom catalog ownership and repository-relative source; no owner/catalog fabricated. |
+| CP22-07 | [Microsoft plugin documentation source](https://code.visualstudio.com/docs/agent-customization/agent-plugins) | Direct page repeatedly timed out (NOT_REVALIDATED retrieval); [official Microsoft source](https://raw.githubusercontent.com/microsoft/vscode-docs/main/docs/agent-customization/agent-plugins.md) retrieved as an explicit fallback, not a redirect | 2026-09-29 | Root schema and client-specific namespace; native install/local registration/UI lifecycle. Moving main branch and template tokens; no observed host version. |
+| CP22-08 | [VS Code skills](https://code.visualstudio.com/docs/agent-customization/agent-skills) | Same URL; content retrieved | 2026-09-29 | Plain matching skill names, plugin-prefixed UI and progressive resources; no every-task activation guarantee. |
+| CP22-09 | [VS Code instructions](https://code.visualstudio.com/docs/agent-customization/custom-instructions) | Same URL; content retrieved | 2026-09-29 | Copilot Agent Host versus Local sessions, file patterns and selected-harness discovery; settings not changed. |
+| CP22-10 | [Agent Plugins JSON schema](https://agent-plugins.org/schemas/1.0.0/plugin.schema.json) | Same URL; content retrieved | 2026-09-29 | Complete 65-line JSON schema inspected; required $schema/name and closed fields. Local checker implements shipped subset, not a vendor parser/full operational test. |
+| CP22-11 | [Agent Plugins specification](https://github.com/agentplugins/agent-plugins-spec/blob/main/spec/1.0.0.md) | Same URL; content retrieved | 2026-09-29 | Portable skills and client extensions; not evidence that all commands/rules/hooks are cross-client compatible. |
+| CP22-12 | [CLI host installation](https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/install-copilot-cli) | Same URL; content retrieved | 2026-09-29 | All plans/organization policy; Windows PowerShell >=6, npm Node >=22. Host setup prerequisites, not Kiyo runtime dependencies. |
+| CP22-13 | [VS Code Copilot setup](https://code.visualstudio.com/docs/copilot/setup) | [Redirect destination](https://code.visualstudio.com/docs/setup/copilot) retrieved | 2026-09-29 | GitHub/Copilot account access and organization context; eligible Free documented. Actual entitlement and plugin version floor UNKNOWN. |
+| CP22-14 | [VSIX publication](https://code.visualstudio.com/api/working-with-extensions/publishing-extension) | Same URL; content retrieved | 2026-09-29 | Separate VS Code extension packaging path; Kiyo does not create a VSIX or extension runtime. |
+| CP22-15 | [GitHub App extension sunset](https://github.blog/changelog/2025-09-24-deprecate-github-copilot-extensions-github-apps/) | Same URL; content retrieved | 2026-09-29 | 2025-09-24 announcement, sunset date 2025-11-10 for App-based extensions; client-side VS Code extensions explicitly separate. No account operational test. |
+| CP22-16 | [Copilot plugin concepts](https://docs.github.com/en/copilot/concepts/agents/about-plugins) | Same URL; content retrieved | 2026-09-29 | Plugin packaging versus client customizations; scope remains only the two requested Copilot targets. |
+
+The VS Code plugins search result also exposed page content, but packaging uses
+the independently opened Microsoft documentation source, not a remembered schema
+or search snippet alone. Its DateApproved field is 9/16/2026; retrieval date is
+separate. The requested rendered page is not falsely marked successfully reopened.
+Schema-dependent choices are supported by that primary-source fallback and the
+independent GitHub reference/schema. Rule loader details and CLI qualification
+remain UNKNOWN; no optional rule loader or alias was manufactured.
+
+An initial CLI setup URL ending setup-copilot-cli could not be retrieved. Official
+search located the actual set-up-copilot-cli/install-copilot-cli page (CP22-12);
+that is a corrected source lookup, not a claimed redirect.
+Other successful rows reported no redirects. No account/credential lookup,
+plugin install, publisher submission or system-wide inventory was performed.
+
+Local inspection: clean main HEAD 46e70a52cb105b9cb83646000e4f4652115b42fc.
+A scoped Get-Command lookup did not resolve copilot; code.cmd and pwsh.exe paths
+were returned. No Copilot executable was invoked. No github.copilot* package.json
+matched in the inspected standard VS Code extension directory. The named standard
+editor app/package.json probe also found no file. These limited observations do
+not establish system-wide absence or the active editor/harness version.
+CLI/extension/active editor/account versions remain UNKNOWN. Developer Python
+3.11.9 and Windows 10.0.26200 came from the local Python/OS APIs.
+
+[Copilot field map](../compatibility/copilot-package.md),
+[native guide](../compatibility/copilot-installation.md) and
+[offline evidence](../evidence/copilot/package-checks.md) preserve the distinction
+between shared static format, independent native support and actual test results.
+No official curated listing, version, publisher or marketplace is asserted.
 

@@ -1598,3 +1598,59 @@ Memory Impact: **NONE for developer project memory**. No .kiyo state, project
 AGENTS/bootstrap, override/global config, auth settings, commit/tag/push/PR,
 deployment or publication change. Stop after Prompt 21. Safe to continue only
 with user-requested Prompt 22 Copilot and fresh independent CLI/VS Code research.
+
+## Prompt 22 checks
+
+Checked **2026-09-29**. Scope: current GitHub/Microsoft research, shared static
+Copilot CLI/VS Code native distribution, independent capability/invocation delta,
+project-instructions adapter, lifecycle/protocol/scenarios and build continuity.
+No native installation, VSIX, App/service, consumer runtime or publication.
+
+Start: main HEAD 46e70a52cb105b9cb83646000e4f4652115b42fc, clean index/worktree,
+no tags or applicable scoped instructions, no .kiyo. Prompt 21 was committed.
+LICENSE blob d2e60c5b160ed4f9ca096215e72efee5769936b1; canonical 105 product
+Markdown files/68 controls/eight skills remain unchanged. Existing-pattern and
+runtime-verification guidance was read; user/build-contract scope governs.
+No skill rule required another approval or prevented current authorized work.
+
+| ID / Name | Applicability | Command/method | Inspected scope | Execution status | Observed result | Evidence location | Limitations | Baseline relation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| P22-C01 Baseline/current research | Required start/native inputs | Read-only Git/instructions and official web reads | Repository and sixteen primary source records | PASS | Clean start; current 1.0.0 intersection; Microsoft source fallback and setup redirect recorded | [Sources](../research/SOURCES.md#prompt-22-copilot-revalidation) | Rendered VS Code page retrieval NOT_REVALIDATED; authoritative source retrieved; no live inference | Actual P22 Git base |
+| P22-C02 Native subset/boundary | Required native metadata | Inspect full published schema; local three-field checker and PyYAML | Shared root manifest and eight entries | PASS | Only evidenced fields, valid matching names/descriptions; no VSIX/runtime/permission fields | [Field map](../compatibility/copilot-package.md), [checks](../evidence/copilot/package-checks.md) | Not vendor parser/full operational validation; two live targets NOT_TESTED | Independent Copilot metadata, not old manifest conversion |
+| P22-C03 Closure/parity | Required canonical payload | python -B tools/package_copilot.py; source/output hashes and reverse transform | 108 inputs, 794 output files | PASS | Eight entries, 97 shared resources each; 4,964 contained links; copied bytes exact | [Inventory](../evidence/copilot/package-inventory.json), artifact checks | File evidence only, not host resource reads | Canonical product unchanged |
+| P22-C04 Rebuild/relocation/rejections | Required reproducibility/preservation | Run from alternate cwd/output; repeat mtime/byte snapshots; nine invalid cases | Two trees, inventories and synthetic invalid fixtures | PASS | Equal bytes/digest/inventory; original no-op; nine rejections preserve human output | Artifact checks | No exhaustive concurrency/security guarantee; no native cache trial | Prior Claude/Codex 1,589 files unchanged |
+| P22-C05 Adapter/protocol | Required scope/invocation separation | Inspect target guidance; render sample canonical block; count case rows | Project/module instruction procedure and 20 cases | PASS | Full sample block 116 words; preserved native/human boundaries; two NOT_RUN columns | [Adapter](../../platforms/copilot/resources/activation.md), [protocol](../compatibility/copilot-local-test-protocol.md), [cases](../../tests/integration/copilot/scenarios.md) | Static rendering is not Init/activation/approval evidence | Core/entry budgets retained |
+| P22-C06 Build continuity | Required close | Final table/link/count validation | 80 trace rows, roadmap, nine issues/four owner decisions | PASS | IDs retained; 22 trace rows reference P22; all 80 full verifications NOT_RUN; Prompt 23 unstarted | This section and build state | No full acceptance inferred; native/owner gaps retained | 79 partial / 1 not implemented unchanged |
+| P22-C07 Scope/preservation | Required final diff/check | Exact-file/Git/hash/reference validation; git diff --check | Copilot additions, canonical/old distributions/LICENSE/index/HEAD | PASS | 15 modified / 804 new files; 2,544 Markdown files, 17,940 local links, 695 canonical links and 68 controls checked; whitespace clean | This section and artifact inventory | Static worktree evidence, not native use or publication | 105 canonical and 1,589 old payload files, LICENSE/index/HEAD preserved |
+
+The packager and inline Python check actually ran. Artifact size 3662843 bytes;
+digest 9bd92a57a13bb0c47081d83802b0bf4e4dd72aec16859b1fddfc7c39dbd25ecd.
+Detailed methods, test fixture basename, tooling hashes, entry budgets and
+local availability boundaries are in [Copilot evidence](../evidence/copilot/package-checks.md).
+The full managed-block marker count was separately measured at 116 words.
+Python 3.11.9 and Windows 10.0.26200 are observed developer environment facts.
+No dependencies installed and no native executable launched.
+
+The bounded PATH lookup returned exit 1 because copilot was unresolved, while
+code.cmd and pwsh.exe were found. Matching standard Copilot extension metadata
+and standard editor package metadata were not found in the inspected locations.
+Alternative/bundled/remote installations, active versions and account context
+remain UNKNOWN. Do not report system-wide absence. Native parser and both
+live installation/activation/lifecycle layers remain NOT_RUN / NOT_TESTED.
+
+Nine authored files plus a generated inventory and 794 payload files are added;
+fifteen existing Markdown records are updated. No canonical product, previous
+overlay/tool, Claude/Codex payload, LICENSE, requirement ID or native setting changed.
+No owner publisher/version/URL, active catalog or ready listing was fabricated.
+Copilot optional metadata rules do not change the historical Codex ingestion FAIL.
+
+Partial coverage: REQ-002–007/009–011/017/026/027/059–061/064/067/076–079; REQ-080 continuity.
+Totals remain 79 PARTIALLY_IMPLEMENTED / 1 NOT_IMPLEMENTED. All 80 full
+verifications remain NOT_RUN; all six live targets NOT_TESTED, with the existing
+Codex IDE capability UNSUPPORTED. Twenty Copilot specifications are NOT_RUN
+independently for both hosts; no behavioral simulation is a native substitute.
+
+Memory Impact: **NONE for developer project memory**. No actual project bootstrap,
+mutable state, global install, permission bypass, commit/tag/push/PR or publication.
+Stop after Prompt 22. Safe to continue only with user-requested
+**Prompt 23 Packaging/Parity**, preserving native/owner gates and existing artifacts.
