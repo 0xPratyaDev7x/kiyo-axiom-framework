@@ -1,9 +1,40 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **07 Security**.
-Task status: **DONE** for Prompt 07; scoped static security/documentation checks passed.
-Product status: shared Core/Memory/governance and agent-security guidance authored;
+Snapshot: 2026-09-29. Current prompt: **08 Router/Flow**.
+Task status: **DONE** for Prompt 08; scoped static routing/flow checks passed.
+Product status: shared Core/Memory/governance/security and workflow guidance authored;
 native packages/public skills remain unimplemented. A policy engine is outside the product boundary.
+
+## Prompt 08 delivered scope
+
+- Added [Workflow Router](../../src/kiyo/workflows/workflow-router.md) with six
+  input/output fields and only Init / Requirement / Implement / Review / Test /
+  Security / Architecture / Memory as primary skills. Selection is not native
+  invocation, an authority grant, agent spawning or executable dispatch.
+- Added [adaptive flow](../../src/kiyo/workflows/adaptive-flow.md),
+  [implementation flow](../../src/kiyo/workflows/implement-flow.md) and
+  [read-only flow](../../src/kiyo/workflows/read-only-flow.md), reusing shared
+  governance, evidence, Memory and security references. Tiny reduces ceremony
+  without skipping authority, required approval, verification or memory impact.
+- Added [repair and handoff](../../src/kiyo/workflows/repair-and-handoff.md):
+  baseline/regression/environment/unknown distinctions, at most two unsuccessful
+  repair cycles by default, scope reassessment and fact-based authorized handoff.
+- Added [30 Thai/English routing rows and nine flow/recovery specifications](../../tests/behavioral/routing/truth-table.md).
+  All are synthetic expected behavior, execution NOT_RUN. No truth-table parsing
+  result is represented as a live route or model-compliance test.
+- Added six stable controls (47 total), conditional context-loading pointer,
+  source README/architecture updates and build continuity. Bootstrap is unchanged.
+  No public skill, native manifest, executable router, runtime or orchestration.
+
+Coverage: partial shared guidance for REQ-025/027–030/032–035/039–042/044/045/049/051.
+REQ-026/068–075 receive routing/shared-flow input only, not public-skill acceptance.
+REQ-080 continuity updated. Current totals: 60 PARTIALLY_IMPLEMENTED /
+20 NOT_IMPLEMENTED; all 80 full requirement verifications remain NOT_RUN.
+All six native targets remain NOT_TESTED. Prior native/research dates unchanged.
+
+Checks: [Prompt 08 evidence](BASELINE.md#prompt-08-checks).
+Memory Impact: **NONE for project memory**; build records carry continuity.
+No project memory/policy initialized or synced; owner publication decisions remain open.
 
 ## Prompt 07 delivered scope
 
@@ -242,7 +273,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 05 | Memory | DONE | P05-C01–C07 PASS; static specification/template checks, scenarios NOT_RUN |
 | 06 | Governance | DONE | P06-C01–C07 PASS; static policies/documentation only, decision examples NOT_RUN |
 | 07 | Security | DONE | P07-C01–C07 PASS; static controls/procedures/templates only, scenarios NOT_RUN |
-| 08 | Router/Flow | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 08 | Router/Flow | DONE | P08-C01–C07 PASS; static procedures/truth-table checks only, behavioral execution NOT_RUN |
 | 09 | Engineering/Profiles | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 10 | Verification/DoD | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 11 | Init | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -274,8 +305,8 @@ Outstanding owner decisions: DEC-001 final name, DEC-002 release license,
 DEC-003 publisher/destination and DEC-004 treatment of Codex IDE's native-plugin
 gap before compatibility/release claims. See OPEN-ISSUES for technical gaps.
 
-Safe to continue: **YES for a user-requested Prompt 08 Router/Flow**. Shared
-Core/Memory/governance/security inputs are ready; owner/native support decisions
-do not block that scope. This does not authorize later work or dangerous execution.
-Next prompt: **08 Router/Flow**, only when requested by the user.
+Safe to continue: **YES for a user-requested Prompt 09 Engineering/Profiles**.
+Shared Core/Memory/governance/security/flows are ready; owner/native support
+decisions do not block that scope. This does not authorize later work or execution.
+Next prompt: **09 Engineering/Profiles**, only when requested by the user.
 

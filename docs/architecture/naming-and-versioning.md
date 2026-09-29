@@ -38,7 +38,8 @@ instruction, not behavioral verification; the original design example is now
 the evidence/knowledge-class control. Prompt 05 adds KIYO-MEM-002 through
 KIYO-MEM-007 without renumbering the original controls. Prompt 06 adds nine
 governance controls. Prompt 07 adds KIYO-SEC-001 through KIYO-SEC-010;
-the index now has 41 IDs. AST taxonomy labels remain external mapping IDs,
+Prompt 08 adds KIYO-ROUTE-001 and KIYO-FLOW-001 through KIYO-FLOW-005;
+the index now has 47 IDs. AST taxonomy labels remain external mapping IDs,
 not Kiyo control numbers or ASI identifiers. G1–G4 are advisory Kiyo modes,
 not standards identifiers or native permission settings.
 

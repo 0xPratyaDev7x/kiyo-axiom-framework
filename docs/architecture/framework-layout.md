@@ -39,6 +39,9 @@ plus expected response examples. Prompt 05 adds the Memory specification,
 shared lifecycle and eight templates, with developer-only scenario specifications.
 Prompt 06 adds nine governance policies, the shared Governance Review procedure
 and 18 expected decision examples under governance/; no policy engine is added.
+Prompt 07 adds agent-security references and four optional neutral record templates.
+Prompt 08 adds five shared workflow references and developer-only routing/flow
+specifications, without a runnable router or public skill.
 The README remains developer-only. Remaining
 product, overlay, tool, test and distribution paths are **planned**, not features.
 Create each directory when it receives real scoped content; no empty SKILL.md,
@@ -151,7 +154,7 @@ identity and maintenance. These documents specify the architecture; later
 static, behavioral and live checks must establish that implemented files follow it.
 
 Prompt 03's only source scaffold was [the authoring README](../../src/kiyo/README.md).
-Prompts 04–07 add shared Core/Memory/governance/agent-security content without exposing a callable skill.
+Prompts 04–08 add shared Core/Memory/governance/agent-security/workflow content without exposing a callable skill.
 Prompt 07 adds six agent-security references and four neutral optional record
 templates under templates/skill-governance; developer scenario specifications
 stay outside the payload. Installed product references remain self-contained. No consumer runtime dependency,

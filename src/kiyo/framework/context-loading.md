@@ -17,6 +17,10 @@
 5. After context loss or changed inputs, re-establish authority, intent and relevant
    evidence. Do not claim a previous read remains present merely from memory.
 
+For task selection, mixed intent or a skill/output mismatch, consult the shared
+[Workflow Router](../workflows/workflow-router.md). It selects a logical procedure,
+not native activation or permission; do not load every flow for a tiny task.
+
 The bootstrap's reference map and control index are lookup aids, not a request to
 read all framework files. Load a linked section when its condition matters.
 Missing/unreadable resources require a scoped limitation and a pause on dependent

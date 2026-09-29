@@ -53,6 +53,14 @@ before Prompt 08. Source-derived taxonomy does not establish native schemas,
 control enforcement, signatures or certification. No operational security setting,
 organization owner, publication identity or runtime is authorized by this task.
 
+Prompt 08 was subsequently authorized on 2026-09-29: author the Markdown Workflow
+Router, adaptive/implementation/read-only flows, bounded repair/handoff and at
+least twenty Thai/English routing examples; check/update build state and stop
+before Prompt 09. Exactly eight skill intents are retained; routing does not
+grant access, spawn agents or create a runtime. The default limit is two
+unsuccessful repair cycles, with material scope reassessment and honest evidence.
+No publication or later public-skill implementation is authorized by this task.
+
 ## Pending owner decisions
 
 | ID | Decision | Current evidence / status | Who decides | Latest needed / effect | Resolution evidence |

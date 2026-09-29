@@ -447,3 +447,63 @@ control, host setting, signature verification, real secret access, external atta
 commit, tag, push or publication was performed. No certification is claimed.
 Memory Impact: NONE for project memory; continuity is updated in docs/build,
 without initializing populated inventory, policy, approval or memory records.
+
+## Prompt 08 repository observation
+
+Observed 2026-09-29 (Asia/Bangkok). Root:
+C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework.
+Branch main; HEAD 5eb5aef532d83f4cc696b7e1e265c56f3871b37c
+(Add OWASP Agentic Skills Top 10 mapping and related security procedures).
+Initial worktree/index and staged/unstaged diff statistics were empty; Prompt 07
+was committed before this task. Inventory: LICENSE plus 59 Markdown files.
+No applicable AGENTS.md in repository/checked ancestors or Git tags found.
+Read Build Contract, Core, Governance, Memory, Security, relevant requirements/
+architecture and build state. Git used per-command exact-root safe.directory and
+empty core.excludesFile; no persistent setting changed. No new vendor/API claim
+or external research refresh is part of this static procedure authoring task.
+
+## Prompt 08 checks
+
+Executed 2026-09-29 (Asia/Bangkok), against the Prompt 08 working tree. PASS below
+is limited to static procedure, specification and build-record checks. Used an
+inline Python validator and read-only Git; no executable router, public skill,
+test harness, agent orchestration or runtime dependency was introduced.
+
+| Check | Result | Actual evidence and limitation |
+| --- | --- | --- |
+| P08-C01 Repository and context | PASS | Verified main, HEAD 5eb5aef532d83f4cc696b7e1e265c56f3871b37c, initial clean worktree/index and 59-Markdown baseline. Read Build Contract, relevant Core/Governance/Memory/Security, requirements/architecture and build state. No external research was refreshed or native availability inferred. |
+| P08-C02 Router and flow structure | PASS | Five nonempty workflow references contain six router input fields, six output fields and exactly the eight logical skill choices. Checked the ordered twelve implementation stages and seven read-only stages, three adaptive depths, two-unsuccessful-cycle default and handoff/status fields. Six new canonical controls bring the index to 47 unique IDs. Structural consistency does not demonstrate a host or model following them. |
+| P08-C03 Routing and recovery specifications | PASS | Matched 30 sequential ROUTE IDs across paired input/output tables, each with all six fields; Thai and English requests are present. Outputs use only eight primary skill names (proposed when mismatched) and read-only/write/execute. Checked key bug-fix/security/coverage/memory/login/mismatch/report-output cases and nine FLOW scenarios. These are synthetic expected behavior, execution NOT_RUN, not automated routing results. |
+| P08-C04 References and budget | PASS | Strict UTF-8/conflict-marker checks across 65 Markdown files. Resolved 1,027 local links/anchors and 205 contained product references across 42 product files excluding developer README. Fourteen pre-existing optional product citations are unchanged. Product links do not require developer docs/tests; no absolute developer path, symlink or reparse resource found. KIYO.md plus bootstrap.md remains unchanged at 81 lines / 579 whitespace-separated words. No installed-cache or native-loading trial was run. |
+| P08-C05 Scoped author review | PASS | Reviewed intent versus effects, explicit mismatch without silent permission changes, no read-only implementation/memory/report writes, separate authorized report output, relevant Memory orientation/validation, Tiny controls, required human scope/reuse, self-review and honest completion. Failure guidance separates baseline/regression/environment/unknown, excludes initial verification from repair count, retains count across handoff/replanning and stops after two unsuccessful cycles by default. Review is not independent and specifications do not prove mutation prevention or reliable routing. |
+| P08-C06 Traceability and closure | PASS | Preserved 80 unique requirements and 80 ten-column trace rows. Twenty-seven rows link P08 evidence: 17 partial shared-guidance contributions, nine catalog/public-skill input-only rows and REQ-080 continuity. Totals: 60 PARTIALLY_IMPLEMENTED / 20 NOT_IMPLEMENTED; all full verification statuses remain NOT_RUN. Confirmed Prompt 08 DONE, Prompt 09 NOT_STARTED, scoped next-step boundary, nine open issues and four pending owner decisions. |
+| P08-C07 Scope and preservation | PASS | Exact allowlist: six new and eleven modified Markdown files; git diff --check passed, index empty and HEAD unchanged. LICENSE blob remains d2e60c5b160ed4f9ca096215e72efee5769936b1. Build Contract, requirement registry, research/compatibility, prior ADRs/packaging, Core entry/bootstrap/trust/Memory, Memory lifecycle/templates, governance/security and prior scenarios are unchanged. No .kiyo, platforms, tools, dist, public SKILL.md or non-Markdown addition exists. Each of the six native targets remains NOT_TESTED. |
+
+Reproduce against workflow-router.md, adaptive-flow.md, implement-flow.md,
+read-only-flow.md and repair-and-handoff.md under src/kiyo/workflows, plus
+tests/behavioral/routing/truth-table.md. Modified files are six build records
+(PROGRESS, HANDOFF, TRACEABILITY, OPEN-ISSUES, DECISIONS, BASELINE), architecture
+layout/naming, source README and Core context-loading/control-index.
+
+The inline validator checked actual Git allowlists/protected-path diffs, UTF-8,
+ordinary local links/heading anchors outside fences, product-resource containment,
+control IDs, ordered flow stages, routing input/output fields, all thirty paired
+rows, nine scenario rows, budgets, requirement/trace counts and closing state.
+Author review separately checked meaning, authorization and evidence boundaries;
+matching strings/tables is not behavioral verification.
+
+Read-only Git used rev-parse --show-toplevel/HEAD, branch --show-current, log -1,
+status --short --untracked-files=all, diff --stat/--check/--name-only,
+diff --cached, protected-path diffs, ls-files --others --exclude-standard,
+hash-object -- LICENSE and tag --list, with the scoped overrides above.
+Some combined context output was truncated; relevant excerpts were read with
+focused output before dependent authoring. Missing output was not used as a
+check result. Static validation exited 0 with PASS.
+
+Static routing/flow/documentation checks: PASS within these scopes.
+Behavioral routing/recovery execution: NOT_RUN. Native package validation: NOT_RUN.
+Live targets: NOT_TESTED independently for all six. No actual routing activation,
+read-only mutation prevention or repair/handoff behavior is claimed from the
+truth table. No runtime, native setting change, commit, tag, push or publication.
+Memory Impact: NONE for project memory; build continuity is updated in docs/build,
+without initializing or syncing project memory/policy.

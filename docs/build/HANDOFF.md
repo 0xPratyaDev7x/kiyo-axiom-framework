@@ -15,14 +15,14 @@ One canonical specification with necessary self-contained native overlays.
 
 ## Current repository observation
 
-Observed for Prompt 07 on 2026-09-29:
+Observed for Prompt 08 on 2026-09-29:
 
 - Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework
-- Branch: main; HEAD: 4216f5951504e7711019dfe2467d7a4880fdc9de.
+- Branch: main; HEAD: 5eb5aef532d83f4cc696b7e1e265c56f3871b37c.
 - Initial working tree and index clean; tracked LICENSE, eight build files and
   five research/compatibility files, six architecture documents, source README,
-  27 product files and one Memory scenario specification (48 Markdown files total).
-  Prompt 06 was committed before this work;
+  37 product files and two behavioral specification files (59 Markdown files total).
+  Prompt 07 was committed before this work;
   previous checkout/HEAD/uncommitted snapshots are historical, not current facts.
 - No applicable AGENTS.md found in repository or checked ancestors; no .kiyo
   project/product memory present.
@@ -32,7 +32,7 @@ Observed for Prompt 07 on 2026-09-29:
   unreadable global ignores.
 - LICENSE blob remains d2e60c5b160ed4f9ca096215e72efee5769936b1.
 - No product version file, manifest or Git tag found in the scoped inventory.
-- Prompt 07 creates eleven Markdown files and changes thirteen existing Markdown files. No commits,
+- Prompt 08 creates six Markdown files and changes eleven existing Markdown files. No commits,
   tags, pushes, installs, publication or global settings changes were made here.
 
 Recheck root, branch, index, unstaged/untracked changes and user edits on resume.
@@ -67,6 +67,13 @@ Preserve LICENSE and the 80 original requirements. See BASELINE for check result
 11. [AST mapping](../../src/kiyo/agent-security/owasp-ast10.md),
     [Skill Audit](../../src/kiyo/agent-security/trust-review.md), relevant security
     references/templates and [security scenarios](../../tests/behavioral/agent-security/scenarios.md).
+
+12. [Workflow Router](../../src/kiyo/workflows/workflow-router.md),
+    [adaptive depth](../../src/kiyo/workflows/adaptive-flow.md),
+    [implementation](../../src/kiyo/workflows/implement-flow.md),
+    [read-only](../../src/kiyo/workflows/read-only-flow.md),
+    [repair/handoff](../../src/kiyo/workflows/repair-and-handoff.md) and
+    [routing/flow specifications](../../tests/behavioral/routing/truth-table.md).
 
 Prompt 02 native/other standards checks remain dated 2026-09-28. Prompt 07
 rechecked AST/ASVS and the separate ASI announcement on 2026-09-29; see SOURCES.
@@ -109,6 +116,11 @@ Status: **DONE** for security guidance; scoped static checks passed; see
 [Prompt 07 evidence](BASELINE.md#prompt-07-checks). AST taxonomy/status and ASI
 separation were rechecked; no host/schema refresh or behavioral success is claimed.
 
+Prompt 08 adds five workflow references, six controls (47 total), 30 Thai/English
+routing rows and nine flow/recovery specifications. Status: **DONE** for shared
+router/flow guidance; scoped static checks passed; see [Prompt 08 evidence](BASELINE.md#prompt-08-checks).
+Router and flows are Markdown only; examples are NOT_RUN, not native dispatch.
+
 No native version, account availability or installed-tool absence is inferred from the
 assistant session. Each of Claude CLI, Claude VS Code, Codex CLI, Codex IDE,
 Copilot CLI and Copilot VS Code remains **NOT_TESTED** live.
@@ -124,7 +136,9 @@ Prompt 06 adds shared governance coverage; current totals are 48 PARTIALLY_IMPLE
 and 32 NOT_IMPLEMENTED. Dependency-policy input does not complete REQ-059 release checks.
 Prompt 07 adds partial security guidance; current totals are 55 PARTIALLY_IMPLEMENTED
 and 25 NOT_IMPLEMENTED. REQ-073 has shared input only; public Security skill pending.
-All full requirement verifications remain NOT_RUN.
+Prompt 08 adds partial router/flow guidance; current totals are 60 PARTIALLY_IMPLEMENTED
+and 20 NOT_IMPLEMENTED. REQ-026/068–075 get routing/shared-flow inputs only;
+no public skill acceptance is promoted. All full requirement verifications remain NOT_RUN.
 
 ## Research findings to retain
 
@@ -151,7 +165,7 @@ All full requirement verifications remain NOT_RUN.
 
 Open decisions: DEC-001 name/identifiers, DEC-002 release-license confirmation,
 DEC-003 publisher/account/destination, DEC-004 unsupported IDE route.
-They do not block the next Router/Flow scope under the selected architecture; they do block
+They do not block the next Engineering/Profiles scope under the selected architecture; they do block
 dependent release identities, claims or unapproved fallback choices.
 
 Memory Impact: **NONE for project memory**. Build continuity/specification choices
@@ -165,11 +179,12 @@ are recorded in docs/build; no .kiyo/memory initialized or changed.
   Core now includes the Memory specification and shared lifecycle; eight neutral
   Memory templates and governance policies/shared review procedure now exist.
   Agent-security references and four optional governance-record templates also
-  exist. Other workflows/templates and all public skills remain unimplemented.
+  exist, together with five router/flow references. Other workflows/templates,
+  profiles and all public skills remain unimplemented.
   Do not mistake synthetic scenarios for executed behavior.
 - Core IDs use `KIYO-<DOMAIN>-<NNN>`, independent of standard clauses. The actual
-  41-control index points to canonical definitions (16 Core, six Memory, nine
-  governance and ten security IDs). ACTIVE means authored, not
+  47-control index points to canonical definitions (16 Core, six Memory, nine
+  governance, ten security and six routing/flow IDs). ACTIVE means authored, not
   behaviorally verified; do not duplicate rules across later skills.
 - Canonical frontmatter is name/description. Native-only fields belong in
   overlays, advisory permission/mode contracts in Markdown. No Kiyo runtime.
@@ -190,7 +205,7 @@ are recorded in docs/build; no .kiyo/memory initialized or changed.
 - Do not generate manifests, public skills, release versions or all later trees
   to make scaffolding look complete. Keep schema gaps and owner decisions open.
 
-## Shared boundaries for Prompt 08
+## Shared boundaries for Prompt 09
 
 Use Memory as context, validate material claims, preserve approved intent and
 surface conflicting sources through the real native hierarchy. Do not treat
@@ -253,16 +268,38 @@ Do not initialize them merely by loading a template; revocation text is not nati
 disablement. The ten-row/six-target parity matrix records UNKNOWN/NOT_TESTED
 controls and the historical unsupported IDE route, with freshness limits.
 
+Router output separates one of eight primary skills from read-only/write/execute
+effects, relevant shared checklists, risk treatment, decisions and completion evidence.
+Explicit mismatch is reported with a proposed route; it cannot silently replace
+invocation or authorize effects. Bug fixes use Implement; reviews/explanations
+stay read-only, coverage assessment uses Test assess and memory audit Memory check.
+Ambiguous login requests begin read-only. No agent/team orchestration exists.
+
+Implementation orders preflight, authorized Memory orientation, understanding,
+current inspection/validation, plan, risk/governance, required human decision,
+edits, verification, self-review, memory impact/sync and completion. Read-only
+flow has seven analysis stages, no implementation or Memory writes. A requested
+report-file output is separately scoped write, not a hidden read-only side effect.
+
+Tiny/Normal/High-impact scales ceremony, not safety or evidence. A tiny sensitive
+change still needs applicable approval. Repair distinguishes baseline, regression,
+environment and Unknown; at most two unsuccessful correction/recheck cycles by
+default, excluding initial discovery. Do not reset by changing turn/skill/scope
+labels. Replan material changes; further attempts require a bounded valid decision.
+Handoff keeps facts, next action, true approval scope and attempt history, never
+private reasoning or a write in read-only mode. All 30 routing rows and nine flow
+cases remain NOT_RUN; no public/native route has been implemented or verified.
+
 ## Exact next action
 
-Prompt 07 is complete within its static security/documentation scope; stop here.
-**Next: Prompt 08 Router/Flow**, only when supplied by the user. Recheck the
-repository and read the files above; implement only that prompt's routing/flow
-scope, reusing shared Core/Memory/governance/security and actual host authority.
+Prompt 08 is complete within its static routing/flow scope; stop here.
+**Next: Prompt 09 Engineering/Profiles**, only when supplied by the user. Recheck
+repository and read the files above; implement only that prompt's engineering/
+profile scope, reusing shared Core/Memory/governance/security/flows.
 Do not infer authorization for dangerous execution, project policy/memory
 initialization, public skills, native overlays, generators or release work.
 
-Safe to continue: **YES for a user-requested Prompt 08 Router/Flow**. Its shared
-Core/Memory/governance/security inputs are ready. Publication, unsupported native routes,
+Safe to continue: **YES for a user-requested Prompt 09 Engineering/Profiles**.
+Its shared instruction inputs are ready. Publication, unsupported native routes,
 dangerous execution and live support claims remain outside scope.
 

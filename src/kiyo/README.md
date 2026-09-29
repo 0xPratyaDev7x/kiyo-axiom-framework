@@ -16,6 +16,10 @@ Prompt 07 adds [AST controls and review procedures](agent-security/owasp-ast10.m
 a separate application checklist and four optional neutral governance templates.
 The six-target control matrix records gaps; 19 developer scenario specifications
 remain NOT_RUN. No public Security skill or security runtime is introduced.
+Prompt 08 adds the shared [Workflow Router](workflows/workflow-router.md),
+adaptive/implementation/read-only flows and bounded repair/handoff guidance.
+Thirty routing rows and nine recovery/flow specifications are developer-only
+expected behavior, NOT_RUN; no executable router or public skill is created.
 
 Follow [framework layout](../../docs/architecture/framework-layout.md),
 [content loading](../../docs/architecture/content-loading.md) and

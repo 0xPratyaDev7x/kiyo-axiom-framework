@@ -50,6 +50,13 @@ REQ references identify requirement scope, not full acceptance or a runtime impo
 | KIYO-SEC-009 | [Verify each platform control independently](../agent-security/control-ownership.md#kiyo-sec-009--verify-each-platform-control-independently) | REQ-005, REQ-067 | ACTIVE / none |
 | KIYO-SEC-010 | [Review application behavior separately from agent skills](../agent-security/application-security.md#kiyo-sec-010--review-application-behavior-separately-from-agent-skills) | REQ-057, REQ-073 | ACTIVE / none |
 
+| KIYO-ROUTE-001 | [Select a workflow without granting authority](../workflows/workflow-router.md#kiyo-route-001--select-a-workflow-without-granting-authority) | REQ-025, REQ-026, REQ-027, REQ-028 | ACTIVE / none |
+| KIYO-FLOW-001 | [Reduce ceremony without skipping controls](../workflows/adaptive-flow.md#kiyo-flow-001--reduce-ceremony-without-skipping-controls) | REQ-029, REQ-030, REQ-035 | ACTIVE / none |
+| KIYO-FLOW-002 | [Sequence authorized changes through actual evidence](../workflows/implement-flow.md#kiyo-flow-002--sequence-authorized-changes-through-actual-evidence) | REQ-027, REQ-033, REQ-034, REQ-035, REQ-041, REQ-042 | ACTIVE / none |
+| KIYO-FLOW-003 | [Complete analysis without introducing mutation](../workflows/read-only-flow.md#kiyo-flow-003--complete-analysis-without-introducing-mutation) | REQ-027, REQ-028, REQ-044 | ACTIVE / none |
+| KIYO-FLOW-004 | [Classify failures and bound repair cycles](../workflows/repair-and-handoff.md#kiyo-flow-004--classify-failures-and-bound-repair-cycles) | REQ-029, REQ-039, REQ-040 | ACTIVE / none |
+| KIYO-FLOW-005 | [Handoff facts and authorized next actions](../workflows/repair-and-handoff.md#kiyo-flow-005--handoff-facts-and-authorized-next-actions) | REQ-014, REQ-044, REQ-045 | ACTIVE / none |
+
 Keep IDs when files move or wording is clarified. Never renumber or reuse retired
 IDs. A materially different obligation needs a new ID and explicit migration/
 replacement history. Skills cite this index or canonical definitions; they do not
