@@ -57,6 +57,7 @@ proof of prevention, certification, authorization or actual execution.
 | Stale observations or approved-intent conflict | [Memory/architecture drift report](../templates/reports/memory-architecture-drift-report.md) |
 | One evidence-based review issue | [Review finding](../templates/reports/review-finding.md) |
 | Review scope, findings/zero diff, coverage and limits | [Bounded review report](../templates/reports/review-report.md) |
+| Test assessment, execution or authoring evidence | [Test report](../templates/reports/test-report.md) |
 | Application/agent security assessment | [Security assessment](../templates/reports/security-assessment.md) |
 | Incomplete work, transfer or context limit | [Handoff](../templates/reports/handoff.md) |
 

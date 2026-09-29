@@ -64,6 +64,13 @@ evidence and read-only effects remain explicit. Sixteen developer scenarios and
 separate trial evidence do not imply native verification. Four public skills and
 native packages are still pending.
 
+Prompt 15 adds canonical [Test](skills/test/SKILL.md), logical ID kiyo.test,
+a [shared procedure](workflows/test.md), assess/run/write safety matrix and neutral
+test plan/report templates. Mode boundaries preserve user intent; only actual
+executions support outcomes/counts, and coverage requires measurement.
+Eighteen developer scenarios and separate source trials do not establish native
+acceptance. Three public skills and native packages remain pending.
+
 Follow [framework layout](../../docs/architecture/framework-layout.md),
 [content loading](../../docs/architecture/content-loading.md) and
 [packaging contract](../../docs/architecture/packaging-contract.md) as their

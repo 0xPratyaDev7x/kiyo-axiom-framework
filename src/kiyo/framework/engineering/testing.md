@@ -46,3 +46,10 @@ automated/manual checks, behavioral scenarios and native host tests. Never turn
 an expected example into a passing result, hide failed checks, or imply all
 acceptance passed from one green check. Complete with covered behavior, uncovered
 risk and the next decision where needed, without fabricating command results.
+
+For a Test task, select assess/run/write using the [shared Test procedure](../../workflows/test.md)
+and [mode/safety matrix](../test-mode-safety.md). Assessment never runs discovery
+or collection scripts; run preserves tracked source/tests/config; write stays
+inside requested tests/test-only fixtures. Use the relevant
+[test plan](../../templates/test-plan.md) or [report](../../templates/reports/test-report.md)
+without treating a mode name as native parser syntax or permission.

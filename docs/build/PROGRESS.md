@@ -1,9 +1,45 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **14 Review**.
-Task status: **DONE** for Prompt 14; scoped Review authoring checks passed.
-Product status: shared guidance/profiles/templates and canonical Init/Requirement/Implement/Review authored;
-four public skills and native packages remain pending. No runtime engine.
+Snapshot: 2026-09-29. Current prompt: **15 Test**.
+Task status: **DONE** for Prompt 15; scoped Test authoring checks passed.
+Product status: shared guidance/profiles/templates and canonical Init/Requirement/Implement/Review/Test authored;
+three public skills and native packages remain pending. No runtime engine.
+
+## Prompt 15 delivered scope
+
+- Added canonical [Test](../../src/kiyo/skills/test/SKILL.md), name test / logical
+  ID kiyo.test, with name/description only. assess/run/write are logical UX modes,
+  not universal native parser syntax or permission settings.
+- Added [shared procedure](../../src/kiyo/workflows/test.md),
+  [mode/safety matrix](../../src/kiyo/framework/test-mode-safety.md),
+  [test plan](../../src/kiyo/templates/test-plan.md) and
+  [Test report](../../src/kiyo/templates/reports/test-report.md).
+  Integrated existing testing, evidence, completion, reporting and routing contracts.
+- assess remains read-only; run preflights exact non-production checks/artifacts
+  and preserves tracked source; write limits changes to requested tests/fixtures.
+  Production fixes/new dependencies/installations outside scope need separate
+  authority. No weakening/deleting/skipping tests to obtain green results.
+- Counts, skips, blockers, baseline relation and coverage require actual evidence.
+  Test-source existence and authoring completion are separate from execution.
+  Missing required environments remain blocked; no automatic installs or fallback
+  to production. Multi-mode requests reuse valid scope after effect preflight.
+- Added KIYO-TEST-001 (63 controls) and
+  [18 scenario specifications](../../tests/behavioral/test/scenarios.md).
+  Actual bounded trials are separately recorded in
+  [forward evidence](../evidence/test/forward-trials.md).
+  Entry validates at 89 lines / 692 words; five temporary copies each contain
+  81 shared files with contained references. No native/runtime addition.
+
+Coverage: partial Test/shared instruction coverage for
+REQ-023/027/038/039/040/041/044/072/077; REQ-080 continuity updated.
+REQ-072 newly partial: 71 PARTIALLY_IMPLEMENTED / 9 NOT_IMPLEMENTED.
+All 80 full verifications remain NOT_RUN; six native targets remain NOT_TESTED.
+Complete scenario matrices are NOT_RUN; actual source trials support only their
+recorded modes/effects, including intentionally failing fixture checks.
+
+Checks: [Prompt 15 evidence](BASELINE.md#prompt-15-checks).
+Memory Impact: **NONE for developer project memory**. Synthetic test authoring/
+execution is developer validation outside the product payload. Owner decisions remain open.
 
 ## Prompt 14 delivered scope
 
@@ -481,7 +517,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 12 | Requirement | DONE | P12-C01–C07 PASS; static/resource checks and bounded source trials; native NOT_TESTED |
 | 13 | Implement | DONE | P13-C01–C07 PASS; source/resource checks and bounded fixture trials; native NOT_TESTED |
 | 14 | Review | DONE | P14-C01–C07 PASS; static/resource checks and bounded read-only source trials; native NOT_TESTED |
-| 15 | Test | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 15 | Test | DONE | P15-C01–C07 PASS; static/resource checks and bounded mode-specific source trials; native NOT_TESTED |
 | 16 | Security Skill | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 17 | Architecture Skill | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 18 | Memory Skill | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -506,9 +542,9 @@ Outstanding owner decisions: DEC-001 final name, DEC-002 release license,
 DEC-003 publisher/destination and DEC-004 treatment of Codex IDE's native-plugin
 gap before compatibility/release claims. See OPEN-ISSUES for technical gaps.
 
-Safe to continue: **YES for a user-requested Prompt 15 Test**.
-Shared contracts and four canonical skills are ready; publication/native gaps
+Safe to continue: **YES for a user-requested Prompt 16 Security Skill**.
+Shared contracts and five canonical skills are ready; publication/native gaps
 remain gates for dependent packaging/activation claims. Later work is not
 authorized by this handoff alone.
-Next prompt: **15 Test**, only when requested by the user.
+Next prompt: **16 Security Skill**, only when requested by the user.
 

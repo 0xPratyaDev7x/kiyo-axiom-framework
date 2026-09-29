@@ -62,6 +62,9 @@ Prompt 14 adds skills/review/SKILL.md, workflows/review.md,
 framework/review-severity-confidence.md and templates/reports/review-report.md,
 and refines the existing finding template. Four skill entries remain planned.
 Review remains read-only with explicit inspection/comparison and execution limits.
+Prompt 15 adds skills/test/SKILL.md, workflows/test.md, framework/test-mode-safety.md
+and templates/test-plan.md plus templates/reports/test-report.md. assess/run/write
+are logical effect contracts, not a runtime/parser. Three skill entries remain planned.
 The README remains developer-only. Remaining
 product, overlay, tool, test and distribution paths are **planned**, not features.
 Create each directory when it receives real scoped content; no empty SKILL.md,
@@ -84,7 +87,7 @@ src/kiyo/
     requirement/SKILL.md          authored Prompt 12; native acceptance separate
     implement/SKILL.md            authored Prompt 13; native acceptance separate
     review/SKILL.md               authored Prompt 14; native acceptance separate
-    test/SKILL.md
+    test/SKILL.md                 authored Prompt 15; native acceptance separate
     security/SKILL.md
     architecture/SKILL.md
     memory/SKILL.md

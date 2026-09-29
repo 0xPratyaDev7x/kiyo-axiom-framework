@@ -77,6 +77,11 @@ and load its classification/finding/report references as needed. Resolve actual
 workspace or supplied comparison scope; review alone permits neither repairs nor
 build/test execution. Memory stays in check mode.
 
+For Test work, use the [shared Test procedure](../workflows/test.md) and relevant
+mode/safety row. assess is read-only; run preflights authorized execution and
+artifacts; write is limited to requested tests/test-only fixtures. Explicit
+multi-mode scope can cover several phases; test creation alone is not a run.
+
 ## KIYO-LOAD-002 — Kiyo design budgets
 
 These are Kiyo's authoring criteria, **not vendor-imposed context limits**.

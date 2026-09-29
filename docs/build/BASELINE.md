@@ -1005,3 +1005,100 @@ Memory Impact: NONE for developer project memory. Synthetic Memory was read and
 reported stale but not changed. Build continuity and evidence are developer-only.
 No runtime engine, initializer, policy enforcement, automatic repair/execution,
 native install, commit/push/PR/deploy or Prompt 15 implementation was introduced.
+
+## Prompt 15 repository observation
+
+Observed 2026-09-29 (Asia/Bangkok), before Prompt 15 edits:
+
+- Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework.
+- Branch main; HEAD 84ba036eecaaa5178e78cc019480d376bd30b546, subject
+  “Enhance review procedures and documentation”. Prompt 14 was committed first.
+- Initial index/worktree clean; staged/unstaged diffstat empty. Inventory:
+  114 Markdown files plus LICENSE; 81 product files excluding source README,
+  nine behavioral specification files and four forward-evidence records.
+- No applicable AGENTS.md found in repository or checked ancestors; no .kiyo
+  project Memory. Read Build Contract, testing standard, Evidence Contract,
+  current build state and relevant original requirements, Core, governance,
+  recovery, Memory and reporting/completion references before implementation.
+- Used per-command exact-root safe.directory and empty core.excludesFile only;
+  no global settings changed. Continued applicable skill-creator guidance and
+  bounded independent source trials. No native schema/external research refresh
+  was performed; earlier source dates and native limitations remain explicit.
+
+## Prompt 15 checks
+
+Executed 2026-09-29 (Asia/Bangkok) against the Prompt 15 working tree.
+The named authoring/evaluation checks are separate from actual fixture test
+outcomes, full behavioral acceptance and native verification.
+
+| Name | Applicability | Command/method | Inspected scope | Execution status | Observed result | Evidence location | Limitations | Baseline relation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| P15-C01 Repository and context | Required Build Contract start | Scoped read-only Git root/branch/HEAD/status/log/diff/hash/tags, instruction inventory and focused contract/standard/build reads | Root/main/HEAD, initial index/tree, relevant Test/evidence/governance/recovery requirements | PASS | HEAD 84ba036eecaaa5178e78cc019480d376bd30b546; initially clean; 114 Markdown files; no applicable AGENTS.md in inspected scope | Observation above and actual Git/read stdout | No production, remote, native/account or fresh vendor documentation check | Prompt 14 committed; old baseline snapshots remain historical |
+| P15-C02 Canonical modes and templates | Required Test entry, safety matrix and plan/report deliverables | Previously inspected skill-creator quick_validate.py; inline Python frontmatter/mode/field/control/budget assertions; author semantic review | Entry, shared Test procedure, mode/safety matrix, neutral templates and shared DoD/testing integration | PASS | Validator exit 0 “Skill is valid!”; name/description only; logical kiyo.test; 89 lines / 692 words; three mode rows, seven plan fields, KIYO-TEST-001 (63 controls) | [Entry](../../src/kiyo/skills/test/SKILL.md), [procedure](../../src/kiyo/workflows/test.md), [matrix](../../src/kiyo/framework/test-mode-safety.md), plan/report and validation stdout | Structure and authored rules do not prove every agent action or native command parsing | Fifth canonical skill, reusing shared evidence/testing/recovery instead of adding a runner |
+| P15-C03 Specifications and safeguards | Required minimum ten scenarios across modes/environment limits | Sequential-ID/table assertions and author comparison to requested behavior/prohibitions | TST-01–18 specifications and synthetic expected fragments | PASS | Eighteen cases cover assess/run/write, ambiguity, valid scope reuse, source preservation, failures, missing/unknown/production/denied targets, install/injection effects, zero/skipped/partial results, coverage/freshness and bounded recovery | [Scenarios](../../tests/behavioral/test/scenarios.md) and author review | Complete matrix remains NOT_RUN; expected examples are not executed test evidence | Prior scenario specifications and their results unchanged |
+| P15-C04 References and portability | Required resource/loading/payload constraints | Inline Python UTF-8/local links/anchors/control/containment checks; temporary entry-link transforms/shared-byte comparisons | Final 121 Markdown files, 86 product files; five entries with 81 shared files per copy | PASS | 508 contained product links, 29 unchanged optional citations; no absolute developer paths/symlink/reparse payload; bootstrap unchanged 81 lines / 579 words. Test copy resolves eleven entry links/463 local links | TEST-RESOURCE-01 in [forward evidence](../evidence/test/forward-trials.md), checker stdout | Source copies are not native packages/cache installs/host loading or consumer tooling | Existing four entry bytes preserved and checked with new shared resources |
+| P15-C05 Bounded mode trials | Functional authoring validation within isolated developer fixtures | Independent evaluator follows source skill; exact authorized unittest run; author checks final files, hashes/mtime and static AST/JSON data | Four mode/environment requests; thirteen original files and one new fixture | PASS | assess read-only; run actually ran two tests (one pass/one fail, exit 1) and reported FAIL without repair; write changed only test_labels.py and added cases.json, tests NOT_RUN; absent driver held E2E BLOCKED. Twelve original files and four directories unchanged | TEST-FWD-01–04 and TEST-SNAPSHOT-01 in [forward evidence](../evidence/test/forward-trials.md) | Evaluation PASS covers recorded effects/reporting, not green fixture tests or full report-template/native compliance. Author did not rerun evaluator's suite; snapshots do not prove all transient effects | Author-captured fixtures; failed suite has no historical baseline/regression evidence; production helper preserved |
+| P15-C06 Traceability and close | Required Build Contract close procedure | Inline Python registry/trace/status/issue/decision checks and build-record review | Eighty original requirement/trace rows, six build records, nine issues/four open owner decisions | PASS | Ten rows link P15 evidence; REQ-023/027/038/039/040/041/044/072/077 partial instruction coverage and REQ-080 continuity. REQ-072 newly partial: 71 PARTIALLY_IMPLEMENTED / 9 NOT_IMPLEMENTED; all 80 full verifications NOT_RUN. Prompt 15 DONE, Prompt 16 NOT_STARTED | [Traceability](TRACEABILITY.md), [Progress](PROGRESS.md), [Handoff](HANDOFF.md), final validator stdout | No full requirement/native acceptance or release decision promoted | Prior 70 partial / 10 unimplemented; one newly partial public skill |
+| P15-C07 Scope and preservation | Required repository/product boundaries | Exact Git allowlists, diff --check, index/HEAD/license hash/tag checks and static boundary assertions | Seven new and fifteen modified repository Markdown files; separately scoped temporary fixture edits/run | PASS | diff --check passed; index empty, HEAD unchanged, no tags; LICENSE blob d2e60c5b160ed4f9ca096215e72efee5769936b1 preserved. No repository .kiyo/platforms/tools/dist or non-Markdown addition | Actual Git/validator stdout and inventory below | Local fixture test execution is developer validation; no consumer runtime, dependency/native/global installation, production operation, commit/push/PR/deploy or later-prompt work | Clean committed Prompt 14 baseline; exact allowlist preserves unrelated content/history |
+
+New files:
+
+- src/kiyo/skills/test/SKILL.md
+- src/kiyo/workflows/test.md
+- src/kiyo/framework/test-mode-safety.md
+- src/kiyo/templates/test-plan.md
+- src/kiyo/templates/reports/test-report.md
+- tests/behavioral/test/scenarios.md
+- docs/evidence/test/forward-trials.md
+
+Modified files: six build records (PROGRESS, HANDOFF, TRACEABILITY, OPEN-ISSUES,
+DECISIONS, BASELINE), architecture layout/naming, source README, framework
+context-loading/control-index/definition-of-done/reporting-contract,
+engineering/testing and workflow-router. Test DoD now explicitly distinguishes
+assess/run/write, reusing the existing task/check statuses and evidence semantics.
+
+The exact Git allowlist preserves LICENSE, Build Contract/requirement registry,
+research/compatibility, ADR/loading/packaging, Core entry/bootstrap/trust/Memory,
+Memory lifecycle/templates, governance/security/profiles, other engineering/flows/
+reports, the existing four skill entries, prior scenarios and prior evidence.
+No populated developer-project fact, temporary fixture or absolute author path
+is placed in the consumer product/templates.
+
+Validation command:
+`python -X utf8 <installed-skill-creator>/scripts/quick_validate.py src/kiyo/skills/test`
+(exit 0, Skill is valid!). Inline Python via PowerShell here-strings checked
+strict UTF-8, local links/anchors/containment, registered controls, frontmatter,
+budgets, mode/plan fields, scenario IDs, exact Git allowlists and build state.
+Temporary source-resource transforms remained developer-only; no validation
+executable or initializer was added to the repository.
+
+Read-only Git covered rev-parse --show-toplevel/HEAD, branch --show-current,
+log -1, status --short --branch --untracked-files=all, staged/unstaged diff --stat,
+diff --name-only/--check, ls-files --others --exclude-standard,
+hash-object -- LICENSE and tag --list. LF-to-CRLF notices did not authorize
+global settings changes or invalidate the scoped content checks.
+
+The independent evaluator inspected the actual run fixture and executed only
+`python -B -m unittest -v test_paging` there. Runtime output, observed interpreter
+and scope limitations are recorded in forward evidence. The parent author
+inspected final test/JSON artifacts and compared exact paths/bytes/mtime; parsing
+AST/JSON did not execute/import the authored tests. Twelve untouched originals
+and all four directories retained their snapshots; only the two authorized test/
+fixture paths changed or were added. The absent driver was checked by safe path
+inspection; its runner was not invoked. No fixture installation was attempted.
+
+Preliminary static validation preceded close records; final validation rechecks
+the resulting files, resource references, preservation and traceability. Static
+assertions are not eighteen behavioral test executions. The local two-test suite
+had one intentional seeded failure; the failure was retained, not repaired or
+reclassified as PASS. Four bounded evaluations passed their mode-specific criteria,
+including honest NOT_RUN/BLOCKED outcomes; coverage was not measured.
+
+All eighteen scenario specifications remain NOT_RUN as a full matrix; all 80 full
+requirement verifications remain NOT_RUN and six native targets remain NOT_TESTED.
+No claim of comprehensive isolation, native parser support, independent security
+audit, production readiness or certification follows from these checks.
+
+Memory Impact: NONE for developer project memory. Fixture test writes did not
+create/update Memory; reports and build continuity are developer-only. Stop after
+Prompt 15; Prompt 16 Security Skill needs its own user request.
