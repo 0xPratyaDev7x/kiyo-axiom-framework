@@ -1,9 +1,44 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **12 Requirement**.
-Task status: **DONE** for Prompt 12; scoped Requirement authoring checks passed.
-Product status: shared guidance/profiles/templates and canonical Init/Requirement authored;
-six public skills and native packages remain pending. No runtime engine.
+Snapshot: 2026-09-29. Current prompt: **13 Implement**.
+Task status: **DONE** for Prompt 13; scoped Implement authoring checks passed.
+Product status: shared guidance/profiles/templates and canonical Init/Requirement/Implement authored;
+five public skills and native packages remain pending. No runtime engine.
+
+## Prompt 13 delivered scope
+
+- Added canonical [Implement](../../src/kiyo/skills/implement/SKILL.md),
+  name implement / logical ID kiyo.implement, name/description frontmatter only.
+  Features, bug fixes and explicitly scoped refactors require actual change intent;
+  review/analyze-only requests do not enter implementation.
+- Added a neutral [short plan](../../src/kiyo/templates/short-plan.md) and refined
+  [shared implementation flow](../../src/kiyo/workflows/implement-flow.md), reusing
+  existing repair/handoff, engineering/compact reports, governance, evidence and
+  Memory contracts. The entry covers all sixteen requested workflow obligations;
+  Tiny work may use a scope sentence instead of a plan file.
+- Added KIYO-IMPL-001 (61 controls), conditional references and
+  [16 scenario specifications](../../tests/behavioral/implement/scenarios.md).
+  Actual bounded source trials are separate in
+  [forward evidence](../evidence/implement/forward-trials.md).
+- Baseline/human changes, minimal scope, necessary tests, inspected command effects,
+  valid approval reuse, failure attribution and bounded repairs remain explicit.
+  Auth/schema is assessed from actual effects/policy; migration drafting is distinct
+  from applying. No production DB fallback, automatic commit/PR/deploy or decision rewrite.
+- Entry validation passed at 93 lines / 789 words. Temporary copies for three
+  authored entries each contain 74 shared files; no native package/activation
+  or consumer runtime is introduced.
+
+Coverage: partial Implement/shared instruction coverage for
+REQ-015/023/026/027/029/030/033–035/039/040/044/049/070;
+REQ-080 continuity updated. REQ-070 newly partial:
+69 PARTIALLY_IMPLEMENTED / 11 NOT_IMPLEMENTED.
+All 80 full verifications remain NOT_RUN; six native targets remain NOT_TESTED.
+Full scenario matrices are NOT_RUN; source trials only support their recorded scopes.
+
+Checks: [Prompt 13 evidence](BASELINE.md#prompt-13-checks).
+Memory Impact: **NONE for developer project memory**. Isolated synthetic fixture
+edits/checks are developer evidence, not changes to this repository's Memory or app.
+Owner publication/native-gap decisions remain open.
 
 ## Prompt 12 delivered scope
 
@@ -411,7 +446,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 10 | Verification/DoD | DONE | P10-C01–C07 PASS; static contracts/templates/examples only; behavioral execution NOT_RUN |
 | 11 | Init | DONE | P11-C01–C07 PASS; entry/resource/closure checks and bounded source trials separately recorded; native NOT_TESTED |
 | 12 | Requirement | DONE | P12-C01–C07 PASS; static/resource checks and bounded source trials; native NOT_TESTED |
-| 13 | Implement | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 13 | Implement | DONE | P13-C01–C07 PASS; source/resource checks and bounded fixture trials; native NOT_TESTED |
 | 14 | Review | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 15 | Test | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 16 | Security Skill | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -438,9 +473,9 @@ Outstanding owner decisions: DEC-001 final name, DEC-002 release license,
 DEC-003 publisher/destination and DEC-004 treatment of Codex IDE's native-plugin
 gap before compatibility/release claims. See OPEN-ISSUES for technical gaps.
 
-Safe to continue: **YES for a user-requested Prompt 13 Implement**.
-Shared contracts and two canonical skills are ready; publication/native gaps
+Safe to continue: **YES for a user-requested Prompt 14 Review**.
+Shared contracts and three canonical skills are ready; publication/native gaps
 remain gates for dependent packaging/activation claims. Later work is not
 authorized by this handoff alone.
-Next prompt: **13 Implement**, only when requested by the user.
+Next prompt: **14 Review**, only when requested by the user.
 

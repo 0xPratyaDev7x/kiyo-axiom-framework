@@ -68,6 +68,9 @@ preview remains read-only and existing canonical paths/human instructions surviv
 For requirement drafting/readiness, use the [Requirement procedure](../workflows/requirement.md)
 and its relevant template/checklist. Default delivery is chat; readiness grants
 no source/test/config/Memory write or automatic implementation.
+For an authorized feature, bug fix or scoped refactor, use [implementation flow](../workflows/implement-flow.md)
+and its short-plan/repair/report references only as needed. A review/analyze
+request does not acquire write permission because Implement is available.
 
 ## KIYO-LOAD-002 — Kiyo design budgets
 

@@ -52,9 +52,12 @@ procedure/discovery/activation/output references plus a neutral context template
 At that step the other seven entries remained planned; no native package/adapter or initializer
 executable is implemented. Developer Init scenarios/evidence stay outside the payload.
 Prompt 12 adds skills/requirement/SKILL.md, workflows/requirement.md,
-framework/requirement-readiness.md and templates/requirement.md; the remaining six
-skill entries are planned. Read-only analysis and separately authorized spec output
+framework/requirement-readiness.md and templates/requirement.md; at that step six
+skill entries remained planned. Read-only analysis and separately authorized spec output
 remain Markdown procedures with no runtime.
+Prompt 13 adds skills/implement/SKILL.md and templates/short-plan.md, reusing and
+refining workflows/implement-flow.md plus existing repair/handoff/report resources.
+The remaining five skill entries are planned; no consumer runtime is introduced.
 The README remains developer-only. Remaining
 product, overlay, tool, test and distribution paths are **planned**, not features.
 Create each directory when it receives real scoped content; no empty SKILL.md,
@@ -75,7 +78,7 @@ src/kiyo/
   skills/
     init/SKILL.md                 authored Prompt 11; native package/test scope separate
     requirement/SKILL.md          authored Prompt 12; native acceptance separate
-    implement/SKILL.md
+    implement/SKILL.md            authored Prompt 13; native acceptance separate
     review/SKILL.md
     test/SKILL.md
     security/SKILL.md

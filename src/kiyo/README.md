@@ -49,6 +49,13 @@ Readiness never starts implementation or authorizes Memory/source/test/config ed
 Twelve scenario specifications and separate bounded evidence remain developer-only;
 six public skills and native packages are still pending.
 
+Prompt 13 adds canonical [Implement](skills/implement/SKILL.md), logical ID
+kiyo.implement, and a neutral [short plan](templates/short-plan.md). It reuses the
+existing implementation/repair/handoff and engineering-report contracts, adds
+explicit daily engineering boundaries and requires actual authorized checks.
+Developer scenarios/trials remain outside the payload. Five public skills and
+native packages are pending; no runtime or automatic commit/PR/deployment is added.
+
 Follow [framework layout](../../docs/architecture/framework-layout.md),
 [content loading](../../docs/architecture/content-loading.md) and
 [packaging contract](../../docs/architecture/packaging-contract.md) as their

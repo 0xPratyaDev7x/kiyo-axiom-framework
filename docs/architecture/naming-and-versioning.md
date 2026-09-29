@@ -25,7 +25,8 @@ Prompt 11 authors canonical name/directory init with the user-specified logical
 ID **kiyo.init** in Markdown. That logical ID is not a native command or a new
 frontmatter field; overlays later derive actual target metadata/selector names.
 Prompt 12 adds name/directory requirement and logical ID **kiyo.requirement**
-under the same boundary. Init and Requirement are authored; six entries remain planned.
+under the same boundary. Prompt 13 adds name/directory implement with logical ID
+**kiyo.implement**. Init, Requirement and Implement are authored; five entries remain planned.
 
 Native plugin IDs and host-added prefixes belong to overlays. Use the actual
 discovered identity when invoking a host; do not prepend a universal `kiyo-`
@@ -49,7 +50,8 @@ Prompt 09 adds KIYO-ENG-002 through KIYO-ENG-007 and KIYO-PROF-001;
 Prompt 10 adds KIYO-VERIFY-001/002, KIYO-DONE-001 and KIYO-REPORT-001;
 Prompt 11 adds KIYO-INIT-001 for bounded, repeatable initialization;
 Prompt 12 adds KIYO-REQ-001 for evidenced requirements and bounded delivery;
-the index now has 60 IDs. AST taxonomy labels remain external mapping IDs,
+Prompt 13 adds KIYO-IMPL-001 for intent, baseline and checked engineering scope;
+the index now has 61 IDs. AST taxonomy labels remain external mapping IDs,
 not Kiyo control numbers or ASI identifiers. G1–G4 are advisory Kiyo modes,
 not standards identifiers or native permission settings.
 
