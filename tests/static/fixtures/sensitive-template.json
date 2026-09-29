@@ -1,0 +1,11 @@
+{
+  "id": "sensitive-template",
+  "synthetic": true,
+  "group": "G11",
+  "operation": "append",
+  "path": "src/kiyo/templates/memory/project.md",
+  "match": "",
+  "value": "\nSYNTHETIC_PRIVATE_SENTINEL\n",
+  "expected_code": "TEMPLATE_SENSITIVE_CONTENT",
+  "expected_detail": "templates/memory/project.md"
+}

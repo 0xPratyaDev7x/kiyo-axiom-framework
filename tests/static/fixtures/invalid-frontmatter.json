@@ -1,0 +1,11 @@
+{
+  "id": "invalid-frontmatter",
+  "synthetic": true,
+  "group": "G02",
+  "operation": "replace",
+  "path": "src/kiyo/skills/review/SKILL.md",
+  "match": "---\nname: review\n",
+  "value": "---\nname: review\nkiyo-permissions: SYNTHETIC\n",
+  "expected_code": "FRONTMATTER_FIELDS",
+  "expected_detail": "review"
+}

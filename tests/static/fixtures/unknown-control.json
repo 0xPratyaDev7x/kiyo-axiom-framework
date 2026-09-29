@@ -1,0 +1,11 @@
+{
+  "id": "unknown-control",
+  "synthetic": true,
+  "group": "G06",
+  "operation": "append",
+  "path": "src/kiyo/framework/bootstrap.md",
+  "match": "",
+  "value": "\nKIYO-SYNTHETIC-999\n",
+  "expected_code": "CONTROL_REFERENCE",
+  "expected_detail": "undefined"
+}

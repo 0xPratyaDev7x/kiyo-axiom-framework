@@ -1,0 +1,13 @@
+{
+  "id": "unsupported-manifest-field",
+  "synthetic": true,
+  "group": "G05",
+  "operation": "json-field",
+  "path": "platforms/copilot/plugin.json",
+  "match": "permissions",
+  "value": {
+    "allow": "SYNTHETIC_UNSUPPORTED"
+  },
+  "expected_code": "MANIFEST_FIELDS",
+  "expected_detail": "copilot"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "duplicate-skill",
+  "synthetic": true,
+  "group": "G01",
+  "operation": "copy",
+  "path": "src/kiyo/skills/init/SKILL.md",
+  "match": "",
+  "value": "src/kiyo/skills/synthetic-duplicate/SKILL.md",
+  "expected_code": "DUPLICATE_SKILL",
+  "expected_detail": "duplicate"
+}

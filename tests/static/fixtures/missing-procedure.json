@@ -1,0 +1,11 @@
+{
+  "id": "missing-procedure",
+  "synthetic": true,
+  "group": "G03",
+  "operation": "delete",
+  "path": "src/kiyo/workflows/review.md",
+  "match": "",
+  "value": "",
+  "expected_code": "REQUIRED_FILE",
+  "expected_detail": "workflows/review.md"
+}

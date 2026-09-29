@@ -1,0 +1,11 @@
+{
+  "id": "unreviewed-product-file",
+  "synthetic": true,
+  "group": "G12",
+  "operation": "set",
+  "path": "src/kiyo/framework/SYNTHETIC-private.md",
+  "match": "",
+  "value": "SYNTHETIC_PRIVATE_SENTINEL\n",
+  "expected_code": "INPUT_ALLOWLIST",
+  "expected_detail": "unreviewed"
+}

@@ -1,0 +1,664 @@
+{
+  "behavioral_evidence": "NOT_TESTED by this suite",
+  "checks": [
+    {
+      "id": "G01",
+      "kind": "positive",
+      "name": "Eight public Skills",
+      "observed": {
+        "canonical_entries": 8,
+        "package_entries": {
+          "claude": 8,
+          "codex": 8,
+          "copilot": 8
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "G02",
+      "kind": "positive",
+      "name": "Frontmatter",
+      "observed": {
+        "canonical_entries": 8,
+        "package_entries": {
+          "claude": 8,
+          "codex": 8,
+          "copilot": 8
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "G03",
+      "kind": "positive",
+      "name": "Mandatory resources",
+      "observed": {
+        "required_resources": 37,
+        "skill_routes": 8
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "G04",
+      "kind": "positive",
+      "name": "Contained exact-case references",
+      "observed": {
+        "canonical_links": 695,
+        "package_links": {
+          "claude": 4956,
+          "codex": 4956,
+          "copilot": 4964
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "G05",
+      "kind": "positive",
+      "name": "Selected native manifest properties",
+      "observed": {
+        "manifests": 4,
+        "schemas": "selected properties only"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "G06",
+      "kind": "positive",
+      "name": "Identity/control/content parity",
+      "observed": {
+        "controls": 68,
+        "entry_transforms": 24,
+        "release_version": "UNKNOWN; absent, not invented",
+        "shared_byte_copies": 2328
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "G07",
+      "kind": "positive",
+      "name": "Read-only and approval boundaries",
+      "observed": {
+        "contract": "selected structured/normative assertions satisfied"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "G08",
+      "kind": "positive",
+      "name": "Enums and example roles",
+      "observed": {
+        "contract": "selected structured/normative assertions satisfied"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "G09",
+      "kind": "positive",
+      "name": "AST coverage/ownership",
+      "observed": {
+        "contract": "selected structured/normative assertions satisfied"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "G10",
+      "kind": "positive",
+      "name": "Memory record types",
+      "observed": {
+        "contract": "selected structured/normative assertions satisfied"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "G11",
+      "kind": "positive",
+      "name": "Neutral template regression scan",
+      "observed": {
+        "scan": "bounded patterns and field defaults; not DLP",
+        "templates": 34
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "G12",
+      "kind": "positive",
+      "name": "Input/payload allowlists",
+      "observed": {
+        "allowlisted_inputs": 112,
+        "payload_files": {
+          "claude": 794,
+          "codex": 795,
+          "copilot": 794
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "G13",
+      "kind": "positive",
+      "name": "Actual relocation/extraction",
+      "observed": {
+        "isolated_results": {
+          "claude": {
+            "files": 794,
+            "local_links": 4956,
+            "outside_read_probe": "DENIED",
+            "payload_digest": "f4db50436dbed4f9158420dc36ef39ae2176bc4d74e387c78a325dd7d9e7d007",
+            "result": "PASS",
+            "shared_per_skill": 97,
+            "skills": 8
+          },
+          "codex": {
+            "files": 795,
+            "local_links": 4956,
+            "outside_read_probe": "DENIED",
+            "payload_digest": "0b6bdbf0526f4717e73729f989c4444bc9ed693870d035b0c49b6277f3f6fae4",
+            "result": "PASS",
+            "shared_per_skill": 97,
+            "skills": 8
+          },
+          "copilot": {
+            "files": 794,
+            "local_links": 4964,
+            "outside_read_probe": "DENIED",
+            "payload_digest": "819e8909c4341dabd1ff924d9188d280a709916b89e4e6a50d493912ebd134c2",
+            "result": "PASS",
+            "shared_per_skill": 97,
+            "skills": 8
+          }
+        },
+        "limitations": "Cooperative audit guard, not OS sandbox; Windows only; native hosts NOT_TESTED",
+        "scratch": "C:\\Users\\praty\\AppData\\Local\\Temp\\kiyo p24 static wkbuimf4"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "G14",
+      "kind": "positive",
+      "name": "Context budgets",
+      "observed": {
+        "bootstrap_lines": 81,
+        "bootstrap_words": 579
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "G15",
+      "kind": "positive",
+      "name": "Required content substance",
+      "observed": {
+        "canonical_nonempty_files": 105
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "G16",
+      "kind": "positive",
+      "name": "Requirement ID coverage",
+      "observed": {
+        "full_requirement_verification": "NOT_RUN",
+        "unique_requirements": 80,
+        "unique_trace_rows": 80
+      },
+      "status": "PASS"
+    },
+    {
+      "expected_code": "TEMPLATE_SENSITIVE_CONTENT",
+      "expected_detail": "templates/memory/project.md",
+      "group": "G11",
+      "id": "absolute-developer-path",
+      "kind": "negative",
+      "observed_code": "TEMPLATE_SENSITIVE_CONTENT",
+      "observed_detail": "templates/memory/project.md",
+      "status": "PASS"
+    },
+    {
+      "expected_code": "MEMORY_APPROVAL_DEFAULT",
+      "expected_detail": "decisions.md",
+      "group": "G10",
+      "id": "approved-memory-default",
+      "kind": "negative",
+      "observed_code": "MEMORY_APPROVAL_DEFAULT",
+      "observed_detail": "templates/memory/decisions.md",
+      "status": "PASS"
+    },
+    {
+      "expected_code": "CONTEXT_BUDGET",
+      "expected_detail": "bootstrap",
+      "group": "G14",
+      "id": "bootstrap-budget",
+      "kind": "negative",
+      "observed_code": "CONTEXT_BUDGET",
+      "observed_detail": "bootstrap",
+      "status": "PASS"
+    },
+    {
+      "expected_code": "RESOURCE_MISSING",
+      "expected_detail": "SYNTHETIC-missing.md",
+      "group": "G04",
+      "id": "broken-resource",
+      "kind": "negative",
+      "observed_code": "RESOURCE_MISSING",
+      "observed_detail": "skills/init/SKILL.md -> ../../SYNTHETIC-missing.md",
+      "status": "PASS"
+    },
+    {
+      "expected_code": "RESOURCE_CASE",
+      "expected_detail": "kiyo.md",
+      "group": "G04",
+      "id": "case-mismatched-link",
+      "kind": "negative",
+      "observed_code": "RESOURCE_CASE",
+      "observed_detail": "skills/init/SKILL.md -> ../../kiyo.md",
+      "status": "PASS"
+    },
+    {
+      "expected_code": "EVIDENCE_CONTRADICTION",
+      "expected_detail": "EVID-01",
+      "group": "G08",
+      "id": "contradictory-fake-pass",
+      "kind": "negative",
+      "observed_code": "EVIDENCE_CONTRADICTION",
+      "observed_detail": "EVID-01: source authored but execution absent",
+      "status": "PASS"
+    },
+    {
+      "expected_code": "REQUIREMENT_DUPLICATE",
+      "expected_detail": "registry",
+      "group": "G16",
+      "id": "duplicate-requirement",
+      "kind": "negative",
+      "observed_code": "REQUIREMENT_DUPLICATE",
+      "observed_detail": "registry",
+      "status": "PASS"
+    },
+    {
+      "expected_code": "DUPLICATE_SKILL",
+      "expected_detail": "duplicate",
+      "group": "G01",
+      "id": "duplicate-skill",
+      "kind": "negative",
+      "observed_code": "DUPLICATE_SKILL",
+      "observed_detail": "duplicate native/canonical name",
+      "status": "PASS"
+    },
+    {
+      "expected_code": "RESOURCE_ESCAPE",
+      "expected_detail": "SYNTHETIC-outside",
+      "group": "G04",
+      "id": "escaping-link",
+      "kind": "negative",
+      "observed_code": "RESOURCE_ESCAPE",
+      "observed_detail": "skills/init/SKILL.md -> ../../../../SYNTHETIC-outside.md",
+      "status": "PASS"
+    },
+    {
+      "expected_code": "TEMPLATE_PROJECT_FACT",
+      "expected_detail": "observed_date",
+      "group": "G11",
+      "id": "fake-project-fact",
+      "kind": "negative",
+      "observed_code": "TEMPLATE_PROJECT_FACT",
+      "observed_detail": "templates/memory/project.md:observed_date",
+      "status": "PASS"
+    },
+    {
+      "expected_code": "FRONTMATTER_FIELDS",
+      "expected_detail": "review",
+      "group": "G02",
+      "id": "invalid-frontmatter",
+      "kind": "negative",
+      "observed_code": "FRONTMATTER_FIELDS",
+      "observed_detail": "skills/review/SKILL.md",
+      "status": "PASS"
+    },
+    {
+      "expected_code": "APPROVAL_BOUNDARY_MISSING",
+      "expected_detail": "KIYO-AUTH-003",
+      "group": "G07",
+      "id": "missing-approval-boundary",
+      "kind": "negative",
+      "observed_code": "APPROVAL_BOUNDARY_MISSING",
+      "observed_detail": "KIYO-AUTH-003 required waiting boundary",
+      "status": "PASS"
+    },
+    {
+      "expected_code": "AST_FIELDS",
+      "expected_detail": "AST01",
+      "group": "G09",
+      "id": "missing-ast-owner",
+      "kind": "negative",
+      "observed_code": "AST_FIELDS",
+      "observed_detail": "AST01 owner/evidence/limitations",
+      "status": "PASS"
+    },
+    {
+      "expected_code": "REQUIRED_FILE",
+      "expected_detail": "workflows/review.md",
+      "group": "G03",
+      "id": "missing-procedure",
+      "kind": "negative",
+      "observed_code": "REQUIRED_FILE",
+      "observed_detail": "workflows/review.md",
+      "status": "PASS"
+    },
+    {
+      "expected_code": "PAYLOAD_ALLOWLIST",
+      "expected_detail": "private/",
+      "group": "G12",
+      "id": "private-package-file",
+      "kind": "negative",
+      "observed_code": "PAYLOAD_ALLOWLIST",
+      "observed_detail": "claude/private/SYNTHETIC-notes.md",
+      "status": "PASS"
+    },
+    {
+      "expected_code": "UNREQUESTED_WRITE",
+      "expected_detail": "review",
+      "group": "G07",
+      "id": "read-only-write-grant",
+      "kind": "negative",
+      "observed_code": "UNREQUESTED_WRITE",
+      "observed_detail": "skills/review/SKILL.md",
+      "status": "PASS"
+    },
+    {
+      "expected_code": "TEMPLATE_SENSITIVE_CONTENT",
+      "expected_detail": "templates/memory/project.md",
+      "group": "G11",
+      "id": "sensitive-template",
+      "kind": "negative",
+      "observed_code": "TEMPLATE_SENSITIVE_CONTENT",
+      "observed_detail": "templates/memory/project.md",
+      "status": "PASS"
+    },
+    {
+      "expected_code": "TODO_ONLY",
+      "expected_detail": "workflows/review.md",
+      "group": "G15",
+      "id": "todo-only-procedure",
+      "kind": "negative",
+      "observed_code": "TODO_ONLY",
+      "observed_detail": "workflows/review.md",
+      "status": "PASS"
+    },
+    {
+      "expected_code": "CONTROL_REFERENCE",
+      "expected_detail": "undefined",
+      "group": "G06",
+      "id": "unknown-control",
+      "kind": "negative",
+      "observed_code": "CONTROL_REFERENCE",
+      "observed_detail": "undefined or unused control IDs",
+      "status": "PASS"
+    },
+    {
+      "expected_code": "INPUT_ALLOWLIST",
+      "expected_detail": "unreviewed",
+      "group": "G12",
+      "id": "unreviewed-product-file",
+      "kind": "negative",
+      "observed_code": "INPUT_ALLOWLIST",
+      "observed_detail": "private/unreviewed/missing product input",
+      "status": "PASS"
+    },
+    {
+      "expected_code": "MANIFEST_FIELDS",
+      "expected_detail": "copilot",
+      "group": "G05",
+      "id": "unsupported-manifest-field",
+      "kind": "negative",
+      "observed_code": "MANIFEST_FIELDS",
+      "observed_detail": "copilot unexpected/missing properties",
+      "status": "PASS"
+    }
+  ],
+  "command": [
+    "C:\\Users\\praty\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "-B",
+    "tests/static/test_contracts.py",
+    "--report",
+    "docs/evidence/static/test-results-02.json"
+  ],
+  "consulted_sha256": {
+    "LICENSE": "8e0c945706c844311a05cdd010ce2a67f373118c4474529b9c0cae62d2c6b070",
+    "docs/build/REQUIREMENTS.md": "94bf708f031c761bf0e263eaa98f5330cd8636271cebfeecba008bf41f9b0ca5",
+    "docs/build/TRACEABILITY.md": "caa8d1bf8f19d07c92c36ad8ca854dba417c390ee8b8bd88b0be1e9ecd231877",
+    "platforms/claude/.claude-plugin/plugin.json": "16697da3d668e35a2dc84e358ca3cacbad876cd63f89a09c8a141149b0052068",
+    "platforms/claude/resources/activation.md": "2c07680d40f86bfd4df852cfeaac2fd7061f5abfb98da23c57c9d4b5a0740239",
+    "platforms/codex/plugin.json": "b8e3e80a0411920278ad5fcd857e7dc50ad711089569aeaa6cdf3873d3dac2bf",
+    "platforms/codex/resources/activation.md": "f595860a92cd0510156d1692e17ee61e8000c52ba11ee993d06b7aaf42485872",
+    "platforms/copilot/plugin.json": "63be86fea1b06c5739f74d5870feb37e55e5eb686ae023ae72393487317a207c",
+    "platforms/copilot/resources/activation.md": "d55da39530518032c32d7af6aa311d8588a2582e93b9dd130e26ebc76a645a10",
+    "src/kiyo/KIYO.md": "2daf85ca47a54366ac13b5b6ae0ccb2658ff8f7981badd545e8fdf4faf0ed3c1",
+    "src/kiyo/agent-security/application-security.md": "0effa306c071c81bb4a5afff56a6686d9174f3eb479d127ab2098ce235f9cddf",
+    "src/kiyo/agent-security/control-ownership.md": "d4a303eb28c92d5cadd474af049215253d26e9dd6fc895bdd18ab5335049a04d",
+    "src/kiyo/agent-security/owasp-ast10.md": "902475ff92f5500711fe359119c874ccff90cc109bd99506f236c4facebe4a4e",
+    "src/kiyo/agent-security/prompt-injection.md": "2c614a4fda6ec35a7503dd2b0382686e2b254ab179bec8a75efa93b0a8274501",
+    "src/kiyo/agent-security/security-submodes.md": "b43eb26d981069236088ab34b388cca437620cbe3d236d99c0543a465911aa17",
+    "src/kiyo/agent-security/trust-review.md": "4894d129200403ae5fd2f103d6c32a3874aba6051dcb3e8beb8572369d50b1f8",
+    "src/kiyo/agent-security/update-and-provenance.md": "22b6dd7fcaa03a1e6f05556c13793c2a815b9d0a05dc46840dedcd2e6cdcebcc",
+    "src/kiyo/framework/activation-contract.md": "7094f2be8ca44b33072807803c9248897f02ea9eb7115f98d863c8dc94321b71",
+    "src/kiyo/framework/bootstrap.md": "019593560277c9e61b117a9a32896ee5df3b27e4545bf9899840eef8dc2f8813",
+    "src/kiyo/framework/context-loading.md": "8b52df0bbe16b3e54237fa0e7ac6e325cfacaed29c83a9a20daf6c6c7e28f694",
+    "src/kiyo/framework/control-index.md": "fd007e0223cb5f26b9f2bdc1feee2a3988ed0bd4b5f5f5f49d563ad13bef3425",
+    "src/kiyo/framework/definition-of-done.md": "fa6d8255f47aeff166408c03b4c5b84ad8a690b0b9caa967db5b37e5e29588b2",
+    "src/kiyo/framework/engineering/architecture.md": "3c6961f88e5f9165b9ea117a5b3b973254ba6a33e11364629b7f2e285a2fb5b3",
+    "src/kiyo/framework/engineering/change-scope.md": "0be1274aa8cee825461ab9e6633b6b1dad9f5e61db1ef445c5a0e4a3a579dea4",
+    "src/kiyo/framework/engineering/coding.md": "0b846f397d7409d6f0df1c2e3fd07d7fa8bd2dcd1e823d3d82d63007d04135b9",
+    "src/kiyo/framework/engineering/index.md": "f0dec2349d8dc86a29da7875a571c7e666517b8b4da4c67ee3d8d97179770d31",
+    "src/kiyo/framework/engineering/quality.md": "6ac81ba0a4280a7fed8043caab74a41cd1372f52540cfe9e1979f6d303f9e87b",
+    "src/kiyo/framework/engineering/requirements.md": "3e01e9ac7d48939aab91fe9e1b2ca24c022ad550103926f3988ab765f99a6608",
+    "src/kiyo/framework/engineering/standards-mapping.md": "a21299f26129cf4874b5865ff20b52615e281452d0db88900c7200c9c15b24f1",
+    "src/kiyo/framework/engineering/testing.md": "0b627f65277026464eb6e2d1727df43d4689458aa4a61abbd3480ce0aa3099d1",
+    "src/kiyo/framework/evidence-contract.md": "b6744bec3da1b877c622ffd8233a3e7ef2933af96be8bb26469967d967a6a8fe",
+    "src/kiyo/framework/init-activation.md": "b2dfee80d3916c82495661b29e5eb69888a7c293d35877254f0dcf624b4b0950",
+    "src/kiyo/framework/init-discovery.md": "b8da9e8fa2c8ca1ea52bd64136645b9eef58c7ab72c9aa8c84d8b199ec51ed12",
+    "src/kiyo/framework/init-output-examples.md": "c9f46873190a4278ddcd14426c9558a6a651ef882cd4962959959515be553c52",
+    "src/kiyo/framework/memory-modes.md": "b526ac4af0b54a3487c4e62cbfd374801d881baf2c798a9e72d0f74cdf95afd7",
+    "src/kiyo/framework/memory-specification.md": "d54a2a5f00501ab6da138644dc0afec17081506ed901af3d95e4c42386e52ee5",
+    "src/kiyo/framework/project-configuration.md": "8e487aa063d098cb37c5f0ef5831967d8fbc04bc267d8b80937f63c01092a4df",
+    "src/kiyo/framework/reporting-contract.md": "443ae933d79b8a4626a4536cdf6eba6fac02f3694111a340ff585d02567debe5",
+    "src/kiyo/framework/requirement-readiness.md": "a1e417616a0018e01e7537cd9044e24562b753daff87d2b66c7aafd78fde0942",
+    "src/kiyo/framework/response-examples.md": "9d25e5e20bb94d99e3212cd64f67f08dcaac8998e0fffaf4415b71da3b876c97",
+    "src/kiyo/framework/review-severity-confidence.md": "92a7e13e59c7fb191d4a6b13e4762151e2ad251429bd7b990dcadcdc648aa8b3",
+    "src/kiyo/framework/test-mode-safety.md": "a9951343def1d39173c3ca68ef032b73537519016db60784c1c08e889859a044",
+    "src/kiyo/framework/trust-and-authority.md": "85852c1000c033e4842ada7e9c6b3bb1672f08d1a6dbd0e71a4e25f75b44c7ee",
+    "src/kiyo/governance/ai-usage.md": "eed2d1941367fb0e3fb7f6277c3425e1c7b07af6f25c178b9bb82748d9a6aa66",
+    "src/kiyo/governance/dangerous-actions.md": "39e5c208203169adf0c6b613bc6936c2400ecb8cb89b43a725c83f4fbd722ab3",
+    "src/kiyo/governance/data-handling.md": "7779d88b4424b697ec08e4d34ef472ea39243e90ebedb06706b964887e2915eb",
+    "src/kiyo/governance/decision-examples.md": "82507ae507d8986d64b13839bd801a04d880d98063ffd1c52a9611bcff98644e",
+    "src/kiyo/governance/dependency-governance.md": "5e3114d12f4c8afc8b524b178a4e8731d072c74f1be21a6aab44e248288a98b9",
+    "src/kiyo/governance/governance-levels.md": "c9beb7b9a1349a116b16aca9a6423d1c4f767ac71e2b8e6fa54da34f78b81aa8",
+    "src/kiyo/governance/human-approval.md": "2d88b4501e5e2b0fa70e8094abcfef57afb520b214b3b51b98272e58123ec532",
+    "src/kiyo/governance/permissions.md": "1aa8b40a9b4fb25a7aca82022022236a8a4a34d9cb96b3fc7d85146febe3fb1a",
+    "src/kiyo/governance/policy-resolution.md": "562644f88172d296a3e1d122e37949e15ce07150251f521c6e1782aadd7ee1f9",
+    "src/kiyo/governance/presets.md": "3d17fa5350b5df984aa69bdf8e4e2ae2790cd9fa0ece39fa9e19a7f810ecf3b6",
+    "src/kiyo/governance/provider-policy.md": "e9298cbd350fa79264f8efaf466f876e01fd8365e845c2fa54b7e665f1c37d63",
+    "src/kiyo/governance/risk-assessment.md": "91552a4a86ee58edd0209e9d3950b70cf6ff5d4d6ca58bed14eb476f1c9b7438",
+    "src/kiyo/profiles/angular.md": "8f3cd1a97b8fd8f7c31df0223a28dc4dadc7f9322584e602e7f85c20c1a73836",
+    "src/kiyo/profiles/dotnet.md": "7c3a5ca6aea794748eb8a59a32a4d585caef29e906a57263536d426be91187b0",
+    "src/kiyo/profiles/extension-contract.md": "84a0f2409c357c3fc0d25c343c62fa511a26db4e3aefadf336ac1f1d3dc3249f",
+    "src/kiyo/profiles/postgresql.md": "bf3415c19dcbaf0963bf1a5a9dc9e2d4d6849fe8ae3de4b48c81dd3f34e9f147",
+    "src/kiyo/profiles/python.md": "323336abc7bf908164d2441565b079745bcc785e45906124f04061e3e05a4e86",
+    "src/kiyo/skills/architecture/SKILL.md": "27081c665ad7f1a2ea83aeda11204e9017ac597c12b8728eabadef0bb6705ea3",
+    "src/kiyo/skills/implement/SKILL.md": "56e16b34b38d9407f594f4a40f74e581b0559fdc42710ed6008ba428affb5db6",
+    "src/kiyo/skills/init/SKILL.md": "6198cdec34c2d52a178e9b2f91d3c36e143388d0ec8a57a9fc34a197ec13eb4b",
+    "src/kiyo/skills/memory/SKILL.md": "b6a4b3affb6b634b7c47f6a579c9270e1eac3d2f863be397ff46510643164057",
+    "src/kiyo/skills/requirement/SKILL.md": "4916e426c8425c31321523ebfcb2806ca38b3efe5902233e3e004466faba0e56",
+    "src/kiyo/skills/review/SKILL.md": "0afc737082e6865988c1e698e32af063f0e76d789c60e74c0e2822b22af3d244",
+    "src/kiyo/skills/security/SKILL.md": "600cf147f918221289f69fdb1e29e5645a5ffe87da8b9d2f003e6315771483d2",
+    "src/kiyo/skills/test/SKILL.md": "26921d45894fa5d89532c8f32d6ff5fc1ad5987fc03ee15ab01351f31653e20c",
+    "src/kiyo/templates/init/project-context.md": "7b2f0ee4bafc2116bd7d8543ab1c4ba37b27a4b075d3c5af3ff3276c5571584f",
+    "src/kiyo/templates/memory/architecture.md": "e5bd7f477dd70b06d3ec13f02d667febddbc9db94371ebd0fce037ff5221d22b",
+    "src/kiyo/templates/memory/conventions.md": "37bf6cb2b9fbea20a33f93ece45bcd7dc90cbd7c37f94548669153ed8dcdcbf0",
+    "src/kiyo/templates/memory/decisions.md": "9b52163cd1cafeef695cf114a79a49a8db2fdb4c9fbcb83f238fd7df64bfa9aa",
+    "src/kiyo/templates/memory/domain.md": "a6855f2c858e0f271eae2a1b553a44ea8bce08d314a6ac1584ff06eae50cf287",
+    "src/kiyo/templates/memory/index.md": "a5f86c499af3ba8b6220444499491c15bea44d9164a8569294c3406cb3dffee9",
+    "src/kiyo/templates/memory/integrations.md": "75987784577b6c91cf3c589256950f89b4a618b17b311cb1a5c421dff594c32a",
+    "src/kiyo/templates/memory/known-issues.md": "da3399ee3462053e93c697371b4c1dfee77db53ef66bd1e8c4a3633787fcfcb6",
+    "src/kiyo/templates/memory/project.md": "50675cb5bcd8ad9757cd0f7f1015fc1482a960b8c87d40f9c14f268f792b0802",
+    "src/kiyo/templates/policies/organization-policy.md": "bac39dd627d54e70d85351e4ff2c924cdd50a9c418453f6e5254b052e97e8866",
+    "src/kiyo/templates/policies/project-policy.md": "c05e2365ead8b491b8786326ee4d1274e6a02551768d68925d9c02b865ca5ef2",
+    "src/kiyo/templates/reports/approval-request.md": "43f947467f30a958b8701270c40e7e67ea9e67c216176632595cdae3eab53489",
+    "src/kiyo/templates/reports/architecture-impact-report.md": "b2515fec307c32666e7b27307d23201579821cdbdc72b00139fca29b489a345b",
+    "src/kiyo/templates/reports/architecture-observation.md": "e53fe83199e4f24afef55aea04c9d089eda97c83bd7b7deb7300eddb4d66bb29",
+    "src/kiyo/templates/reports/compact-task-report.md": "0ab9fe58774c3ba7fad25583d859f717973746f5796cb041a867d73b2fc9e102",
+    "src/kiyo/templates/reports/engineering-report.md": "e1e12b5a4e9e36c4777dd77075c30e91642eb5ec470056bd74997a8abaa09158",
+    "src/kiyo/templates/reports/handoff.md": "4d3973a63672e381f623d25033b5a3f174b126b5452321d24fa2890b8fc4d4a8",
+    "src/kiyo/templates/reports/memory-architecture-drift-report.md": "4796f9844b3d99d993655a696f010b3f6103fcb0ecd83c22110c214ac581887d",
+    "src/kiyo/templates/reports/memory-diff.md": "0bb13167b54229a670f1c1326ac8f82176fc9eaa61b68538c382e137390f869e",
+    "src/kiyo/templates/reports/memory-repair-report.md": "95d8f8eac12546b954842d5c837f497e031d7a0dfc9394ec6745411f00b4e23a",
+    "src/kiyo/templates/reports/memory-sync-report.md": "2e06bb99a490e4c410237b4769d08adbd9d3db2aab784c36a536fa07cbeecd46",
+    "src/kiyo/templates/reports/review-finding.md": "203ef1d10ce93eba5f988936b3b2b114fad575f6c4ab6a98b63a7f20142dd425",
+    "src/kiyo/templates/reports/review-report.md": "f8302dd2e0ba3d8f698569edcfe6dccffc832b7cd49dd6e9e39287d81d5b8324",
+    "src/kiyo/templates/reports/security-assessment.md": "cca96a8584ac3e0546c8b80f0c07f223edc82bc97870740d28ea8847c93765c8",
+    "src/kiyo/templates/reports/security-finding.md": "869258f9765bc1a1a64286e40a330d6ccafce16886f14fc420aa80039dba7a0c",
+    "src/kiyo/templates/reports/self-check-report.md": "95f6675d979496c9accaf79143bd5e433d4e462ba64c1279b0c4e7f27e3e2e10",
+    "src/kiyo/templates/reports/test-report.md": "fbc9acdf4f0de2490ff72bcf367da7a2acdee5f8ac19263fb0bfaa732e205019",
+    "src/kiyo/templates/requirement.md": "09fc6adc53d8691f6ff39b3715572b86a4b6b22b593b69ab614ad5ff705693e8",
+    "src/kiyo/templates/short-plan.md": "3e619827b7f2e59098581e86cc542c5df6a5a124a606cbe61c3c660738fe8d59",
+    "src/kiyo/templates/skill-governance/approval.md": "3c462c919048701b594012a1f044819572a75b9823d17b4f69ce46b152072777",
+    "src/kiyo/templates/skill-governance/incident.md": "c221b84048c75b2580c4d13ba146ae1d3b4caffdbe4bcb49251841905a67cea3",
+    "src/kiyo/templates/skill-governance/inventory.md": "50c0a67dfffcb644eec41878a36c8d4bc3b8d1188a757ec0bf2f2e6f82f86bf5",
+    "src/kiyo/templates/skill-governance/revocation.md": "5f8af73f122c46c69857df8b3f537e45e4182fd8d6dfbec857c865c37ca21162",
+    "src/kiyo/templates/test-plan.md": "be91e6da6a815892999a68c332b2c3614a75426be2c4a82540860aded0961063",
+    "src/kiyo/workflows/adaptive-flow.md": "c228302dd273d4e4922a40831b5d37712cd97ac891decb0421448fd5e8c4833d",
+    "src/kiyo/workflows/architecture.md": "56397a9026f7f1808f4b867298a4b8fe44c98f69fafdeddf45d345b206591b13",
+    "src/kiyo/workflows/implement-flow.md": "6f53d28b5b555040329df72b12b1841562d368998881cca4b4d4f7e683a4c69f",
+    "src/kiyo/workflows/init.md": "332b1fb12d17be94ee8e817d14e039f2c0f16bc0d56c84248540eea20bf33835",
+    "src/kiyo/workflows/memory-lifecycle.md": "85117c8d97375c0e1d753f5723bf778dbd5856aacf2dd0427b27d8adff5b6f1e",
+    "src/kiyo/workflows/read-only-flow.md": "ff0679c6742e8920a67a975b32ca4e91925501267a393f13149adfd82280cac2",
+    "src/kiyo/workflows/repair-and-handoff.md": "ecbd73518716f69da5ec6af1cee6c5ceb3e41f183760f91d18f123f793a67b4c",
+    "src/kiyo/workflows/requirement.md": "067983d4f6a9a54bfbf838c75bf7a4ff46d50cea79b1a49b9b3f3c67e95a1f60",
+    "src/kiyo/workflows/review.md": "08bb940ef5d1c01ab21f43a22134c149295b6d4511309b22aa1fb09d4a111179",
+    "src/kiyo/workflows/security.md": "c2bee4fc908c7e513ef41b97ff763f9568cb8f7776fe8b49cfea5c1c2dadc79f",
+    "src/kiyo/workflows/test.md": "594c7331f15b0140d180c95dc3dc9e5c3c4bc014f333638fa8c7b391b350244d",
+    "src/kiyo/workflows/workflow-router.md": "fa0062ca824b7ff2742b84e9a74685d7ea8da05bf10e29997b09caa6f8facbe2",
+    "tests/behavioral/agent-security/scenarios.md": "a23aaccd968518d6a3f0b56ee0dc94222ac37754f23a9a058c7dade909abfdda",
+    "tests/behavioral/verification/scenarios.md": "2fffa1daf33d46887fe9826652a53ae6954e252d3e9978fb32ff5333b1ceb9a1"
+  },
+  "cwd": "C:\\Users\\praty\\source\\@0xPratya7x\\kiyo-codejadee-framework\\kiyo-codejadee-framework",
+  "errors": 0,
+  "exit_code": 0,
+  "failures": 0,
+  "finished_utc": "2026-09-29T12:02:25.347482+00:00",
+  "fixtures_sha256": {
+    "tests/static/fixtures/absolute-developer-path.json": "e00aaec66c840f19a22d695d536805c431934ee9c732d001628c2c8b5b249c12",
+    "tests/static/fixtures/approved-memory-default.json": "ba52b1f8c7fdc4e18e41f40d89534bcec86a29c9fe73d88424be502348a9bbf5",
+    "tests/static/fixtures/bootstrap-budget.json": "4dbc90c813d62d5e920bfbdafdfa1ef44af8133780c3fe965c0d4bda63e887a1",
+    "tests/static/fixtures/broken-resource.json": "771fa16b8c865878e668873da9773bb3323dc16224f01624e99b5b0d3664bfa7",
+    "tests/static/fixtures/case-mismatched-link.json": "c58496a445bcbb522cb24cbed045830bded887dda1503029bcf07b2a7fe71951",
+    "tests/static/fixtures/contradictory-fake-pass.json": "7061b480caa07c9c0589bb4a5c6f1d7ae0cc1cbaccacc06b52684d55fc5cfc1c",
+    "tests/static/fixtures/duplicate-requirement.json": "356ce56fd1f2553f672ffeb863783f1aad62950a6cc19847072ab8d9455cb6fb",
+    "tests/static/fixtures/duplicate-skill.json": "633891f313e3121c71eb2433bd5ab8f7cebe550d7dd47b827fcf3472e6d097fd",
+    "tests/static/fixtures/escaping-link.json": "ed043146caa26b16fa075eae25e2ad0da9c8bb42584448267e6fe1d1c8f942ab",
+    "tests/static/fixtures/fake-project-fact.json": "34388b0073f3186dae1a446cf375304b48c3cbad7c8c68d2c25eb0429b3342ff",
+    "tests/static/fixtures/invalid-frontmatter.json": "39ba67bc6f7a0785a6e199342d70d19f71d92753ef27e3fddf667b72cfc836a7",
+    "tests/static/fixtures/missing-approval-boundary.json": "3f28886e54254459b207db5538c199c3a73c73cdfe9cc2b156cf552a043f0d40",
+    "tests/static/fixtures/missing-ast-owner.json": "cadb8562fc9a790c64bbab6304ad2afef456a176f0af249ed025c65c60bb106d",
+    "tests/static/fixtures/missing-procedure.json": "e9dc8766ffc5008fcad891fcb7d1e10d14c76cd61baf075dc05c80e3d5aae180",
+    "tests/static/fixtures/private-package-file.json": "a94b98c5578c01da0738d26bdb907bd161cf1c96856c7a85d0829a677ddc7a65",
+    "tests/static/fixtures/read-only-write-grant.json": "23023e9991903b72189db7c7f899b0351bfecc2670c965ef8f9ae54caea1a0b0",
+    "tests/static/fixtures/sensitive-template.json": "84b73bf4316a15542b00556a811c866279e5caf960d8e0f1601de6c66b265a02",
+    "tests/static/fixtures/todo-only-procedure.json": "7d418d9b846ba3e2ab486217742f6395475e1ba85f2ab92551c5475a444b06fd",
+    "tests/static/fixtures/unknown-control.json": "d1125042af7bd6ed60658701e61450f84522d25326828dade6409a8010bedd94",
+    "tests/static/fixtures/unreviewed-product-file.json": "271624cff76170613001468a29728d0c03339603cf098bdf738e0c32c735bac3",
+    "tests/static/fixtures/unsupported-manifest-field.json": "06c1cb15e59f6fd5651edb1ebafb77fe498699d80579c8d07215a09c558fddb2"
+  },
+  "format": "kiyo-static-contract-evidence-1",
+  "git_observation": {
+    "command": [
+      "git",
+      "-c",
+      "safe.directory=C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework",
+      "-c",
+      "core.excludesFile=",
+      "-C",
+      "C:\\Users\\praty\\source\\@0xPratya7x\\kiyo-codejadee-framework\\kiyo-codejadee-framework",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exit_code": 0,
+    "scope": "Base commit only; worktree hashes above identify inspected inputs",
+    "stderr": "",
+    "stdout": "434f1df4729130d195650fcc40f007572e4e6759\n"
+  },
+  "limitations": [
+    "No proof agents obey Markdown; no security/DLP certification",
+    "No native parser, installation, network, production, or OS sandbox test",
+    "P23 real filesystem symlink creation BLOCKED; not retried here"
+  ],
+  "native_host_evidence": "NOT_TESTED; Codex IDE native plugin route UNSUPPORTED",
+  "os": "Windows-10-10.0.26200-SP0",
+  "output": "unittest.case.FunctionTestCase (check)\nG01 Eight public Skills ... ok\nunittest.case.FunctionTestCase (check)\nG02 Frontmatter ... ok\nunittest.case.FunctionTestCase (check)\nG03 Mandatory resources ... ok\nunittest.case.FunctionTestCase (check)\nG04 Contained exact-case references ... ok\nunittest.case.FunctionTestCase (check)\nG05 Selected native manifest properties ... ok\nunittest.case.FunctionTestCase (check)\nG06 Identity/control/content parity ... ok\nunittest.case.FunctionTestCase (check)\nG07 Read-only and approval boundaries ... ok\nunittest.case.FunctionTestCase (check)\nG08 Enums and example roles ... ok\nunittest.case.FunctionTestCase (check)\nG09 AST coverage/ownership ... ok\nunittest.case.FunctionTestCase (check)\nG10 Memory record types ... ok\nunittest.case.FunctionTestCase (check)\nG11 Neutral template regression scan ... ok\nunittest.case.FunctionTestCase (check)\nG12 Input/payload allowlists ... ok\nunittest.case.FunctionTestCase (check)\nG13 Actual relocation/extraction ... ok\nunittest.case.FunctionTestCase (check)\nG14 Context budgets ... ok\nunittest.case.FunctionTestCase (check)\nG15 Required content substance ... ok\nunittest.case.FunctionTestCase (check)\nG16 Requirement ID coverage ... ok\nunittest.case.FunctionTestCase (check)\nnegative absolute-developer-path ... ok\nunittest.case.FunctionTestCase (check)\nnegative approved-memory-default ... ok\nunittest.case.FunctionTestCase (check)\nnegative bootstrap-budget ... ok\nunittest.case.FunctionTestCase (check)\nnegative broken-resource ... ok\nunittest.case.FunctionTestCase (check)\nnegative case-mismatched-link ... ok\nunittest.case.FunctionTestCase (check)\nnegative contradictory-fake-pass ... ok\nunittest.case.FunctionTestCase (check)\nnegative duplicate-requirement ... ok\nunittest.case.FunctionTestCase (check)\nnegative duplicate-skill ... ok\nunittest.case.FunctionTestCase (check)\nnegative escaping-link ... ok\nunittest.case.FunctionTestCase (check)\nnegative fake-project-fact ... ok\nunittest.case.FunctionTestCase (check)\nnegative invalid-frontmatter ... ok\nunittest.case.FunctionTestCase (check)\nnegative missing-approval-boundary ... ok\nunittest.case.FunctionTestCase (check)\nnegative missing-ast-owner ... ok\nunittest.case.FunctionTestCase (check)\nnegative missing-procedure ... ok\nunittest.case.FunctionTestCase (check)\nnegative private-package-file ... ok\nunittest.case.FunctionTestCase (check)\nnegative read-only-write-grant ... ok\nunittest.case.FunctionTestCase (check)\nnegative sensitive-template ... ok\nunittest.case.FunctionTestCase (check)\nnegative todo-only-procedure ... ok\nunittest.case.FunctionTestCase (check)\nnegative unknown-control ... ok\nunittest.case.FunctionTestCase (check)\nnegative unreviewed-product-file ... ok\nunittest.case.FunctionTestCase (check)\nnegative unsupported-manifest-field ... ok\n\n----------------------------------------------------------------------\nRan 37 tests in 36.003s\n\nOK\n",
+  "python": "3.11.9",
+  "scope": "Selected static contracts; NOT full schema validation",
+  "scratch": "C:\\Users\\praty\\AppData\\Local\\Temp\\kiyo p24 static wkbuimf4",
+  "skipped": 0,
+  "started_utc": "2026-09-29T12:01:48.870199+00:00",
+  "subcommands": [
+    {
+      "command": [
+        "C:\\Users\\praty\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-I",
+        "-B",
+        "C:\\Users\\praty\\AppData\\Local\\Temp\\kiyo p24 static wkbuimf4\\isolated payload checker.py",
+        "C:\\Users\\praty\\AppData\\Local\\Temp\\kiyo p24 static wkbuimf4\\claude path with spaces\\kiyo-compass",
+        "claude",
+        "--deny-probe",
+        "C:\\Users\\praty\\source\\@0xPratya7x\\kiyo-codejadee-framework\\kiyo-codejadee-framework\\src\\kiyo\\KIYO.md"
+      ],
+      "cwd": "C:\\Users\\praty\\AppData\\Local\\Temp\\kiyo p24 static wkbuimf4",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\n  \"result\": \"PASS\",\n  \"files\": 794,\n  \"skills\": 8,\n  \"shared_per_skill\": 97,\n  \"local_links\": 4956,\n  \"payload_digest\": \"f4db50436dbed4f9158420dc36ef39ae2176bc4d74e387c78a325dd7d9e7d007\",\n  \"outside_read_probe\": \"DENIED\"\n}\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\praty\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-I",
+        "-B",
+        "C:\\Users\\praty\\AppData\\Local\\Temp\\kiyo p24 static wkbuimf4\\isolated payload checker.py",
+        "C:\\Users\\praty\\AppData\\Local\\Temp\\kiyo p24 static wkbuimf4\\codex path with spaces\\kiyo-compass",
+        "codex",
+        "--deny-probe",
+        "C:\\Users\\praty\\source\\@0xPratya7x\\kiyo-codejadee-framework\\kiyo-codejadee-framework\\src\\kiyo\\KIYO.md"
+      ],
+      "cwd": "C:\\Users\\praty\\AppData\\Local\\Temp\\kiyo p24 static wkbuimf4",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\n  \"result\": \"PASS\",\n  \"files\": 795,\n  \"skills\": 8,\n  \"shared_per_skill\": 97,\n  \"local_links\": 4956,\n  \"payload_digest\": \"0b6bdbf0526f4717e73729f989c4444bc9ed693870d035b0c49b6277f3f6fae4\",\n  \"outside_read_probe\": \"DENIED\"\n}\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\praty\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-I",
+        "-B",
+        "C:\\Users\\praty\\AppData\\Local\\Temp\\kiyo p24 static wkbuimf4\\isolated payload checker.py",
+        "C:\\Users\\praty\\AppData\\Local\\Temp\\kiyo p24 static wkbuimf4\\copilot path with spaces\\kiyo-compass",
+        "copilot",
+        "--deny-probe",
+        "C:\\Users\\praty\\source\\@0xPratya7x\\kiyo-codejadee-framework\\kiyo-codejadee-framework\\src\\kiyo\\KIYO.md"
+      ],
+      "cwd": "C:\\Users\\praty\\AppData\\Local\\Temp\\kiyo p24 static wkbuimf4",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\n  \"result\": \"PASS\",\n  \"files\": 794,\n  \"skills\": 8,\n  \"shared_per_skill\": 97,\n  \"local_links\": 4964,\n  \"payload_digest\": \"819e8909c4341dabd1ff924d9188d280a709916b89e4e6a50d493912ebd134c2\",\n  \"outside_read_probe\": \"DENIED\"\n}\n"
+    }
+  ],
+  "tests_run": 37,
+  "tooling_sha256": {
+    "tests/packaging/test_distributions.py": "1133c7d38a7ce5305c60a2d6baf56c53e19ab68c3ab4ebfce859ffadc6d09d9c",
+    "tests/static/contracts.py": "984b79264b62bb8149804f701ddd80256f54269d15327846e45533ad8bf9e851",
+    "tests/static/test_contracts.py": "e944807316e73fc736e17fc3f7cc03301c2bdb5c058da49fb7bdce33d97c0952",
+    "tools/package_claude.py": "b2aee831d19406ba61cdd0598cc6f6194b18da0e1b76e650310615d636bb3c6b",
+    "tools/package_codex.py": "be65187fcb802253310704409cf60d0099c71e7d555811e1f53299d1a4a38309",
+    "tools/package_copilot.py": "9b62d5ec367fddf1ccf68cf05cbbb20ed07bc4421fb54e1b5c83612b39c8c4ac",
+    "tools/package_distributions.py": "f5d579fb7adc4ad87b134e7bde1cd54e5fc224eac9c66169ca49577681850083",
+    "tools/packaging-inputs.json": "c2f39e1de2f101ac5eb226004be1c21087b5334564c7edb16a2f1cd19f0e7984",
+    "tools/verify_payload.py": "cda482fa8c20c27b040211b5ea90671f798f7f7612da079da7576f2c92d5533f"
+  }
+}

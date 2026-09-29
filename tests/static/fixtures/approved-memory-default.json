@@ -1,0 +1,11 @@
+{
+  "id": "approved-memory-default",
+  "synthetic": true,
+  "group": "G10",
+  "operation": "replace",
+  "path": "src/kiyo/templates/memory/decisions.md",
+  "match": "- status: <status valid for record_type>",
+  "value": "- status: APPROVED",
+  "expected_code": "MEMORY_APPROVAL_DEFAULT",
+  "expected_detail": "decisions.md"
+}

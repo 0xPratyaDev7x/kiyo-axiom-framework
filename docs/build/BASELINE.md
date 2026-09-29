@@ -1694,3 +1694,36 @@ to certify the canonical clarification; final execution hashes match current fil
 Memory Impact: NONE for developer project state. No actual .kiyo store, bootstrap,
 policy, commit/push/tag or publication. Stop after Prompt 23; safe to continue only
 with user-requested Prompt 24 Static Tests, preserving these evidence boundaries.
+
+## Prompt 24 checks
+
+Observed: 2026-09-29. Branch main; base HEAD
+434f1df4729130d195650fcc40f007572e4e6759; Prompt 23 committed, initial tree/index
+clean. Scoped instruction lookup found no applicable file or .kiyo state.
+LICENSE blob d2e60c5b160ed4f9ca096215e72efee5769936b1 remains unchanged.
+Python 3.11.9 / Windows-10-10.0.26200-SP0; no host version/account reinspection.
+
+| Check | Applicability | Command / method | Inspected scope | Execution status | Observed result | Evidence location | Limitations | Baseline relation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| P24-C01 Baseline | Required before writes | Git root/branch/HEAD/status; scoped instructions and contract reads | Worktree/index; canonical contracts, requirements, packages and build state | PASS | Correct clean main baseline; original tooling inspected before execution | This section | No production or remote inference | P23 committed before task |
+| P24-C02 Contract groups | Required 16 groups | python -B tests/static/test_contracts.py --report docs/evidence/static/test-results-final.json | Canonical files, native manifests, actual three ZIPs, registry and trace data | PASS | G01–G16 pass; eight entries, 68 controls, 34 templates; 695 canonical and 14,876 payload local links | [Final execution](../evidence/static/test-results-final.json), [properties](../../tests/static/README.md) | Selected properties, NOT full schema validation; no agent compliance claim | Product/overlays/archives unchanged from P23 |
+| P24-C03 Negative detection | Required six cases plus additional regressions | Same command; isolated byte mutations assert exact expected code and detail | 21 synthetic fixtures outside payloads | PASS | All 21 rejected for expected reason; unrelated failure never counts as success | [Fixture map](../../tests/static/fixtures/README.md), final execution | Synthetic sentinels only; bounded, not exhaustive or a DLP proof | All initial cases retained; one path regression added |
+| P24-C04 Relocation/isolation | Required real extraction | G13: safe_extract, copied standalone checker under Python -I -B; actual commands recorded | Three fresh paths with spaces; 794/795/794 files, eight Skills each | PASS | Each outside source read probe DENIED; exact extracted bytes and contained resources match | Final execution subcommands/G13 | Cooperative guard, not OS sandbox; native POSIX NOT_RUN; P23 filesystem symlink probe remains BLOCKED | Existing ZIPs, not regenerated inputs |
+| P24-C05 Failures/fixes | Required honest execution history | Initial run, corrected rerun, final run with fresh report paths | Newly authored validators/fixtures and final consulted hashes | PASS | Initial exit 1: five errors; corrected/final exits 0: 37 tests, no errors/failures/skips | [Validation history](../evidence/static/validation-report.md) | Earlier PASS does not cover later test/trace edits; final hashes do | Five checker/wiring errors fixed without weakening product contracts |
+| P24-C06 Coverage/continuity | Required requirement/build evidence | G16 and coverage/trace update | 80 requirements, 80 trace rows, 40 partial P24 references | PASS | Original unique IDs preserved; 79 partial/1 not implemented; all full verifications NOT_RUN | [Coverage](../evidence/static/coverage-interpretation.md), [TRACEABILITY](TRACEABILITY.md) | Unrun behavioral/live evidence NOT_TESTED; native/owner gaps retained | No full acceptance promoted by static PASS |
+| P24-C07 Scope/preservation | Required close | Read-only continuity/hash/reference audit and git diff --check | Changed developer files, LICENSE, baseline, complete document references | PASS | 2,553 Markdown files / 18,278 local links checked; 146 final tested hashes match; only six build files modified plus developer test/evidence additions | [Actual closure audit](../evidence/static/closure-audit.json) | Counts precede the audit record/new evidence link; no native/behavioral claim | Product/builders/overlays/packages, LICENSE, index and HEAD unchanged |
+
+Final execution occurred 2026-09-29T12:06:37.381970+00:00 through
+2026-09-29T12:06:56.236336+00:00. Reports include command, exit, output, failures,
+exact negative reasons, consulted hashes and per-check applicability/method/
+scope/status/evidence/limitations/baseline relation. Static PASS does not prove
+an agent follows Markdown, and this suite is not a formal schema validator.
+
+Partial static coverage: REQ-002/003/006/009/011/019/020/022/023/026/027/040/
+043–050/058–067/069/071–075/077–080 (40 trace rows). DEC-001–004 remain open;
+native results remain independent. Historical Codex ingestion FAIL/IDE
+UNSUPPORTED and P23 filesystem-symlink BLOCKED are not erased by P24.
+
+Memory Impact: NONE. No actual project memory/config/bootstrap writes; no
+consumer runtime, MCP/hooks, new dependencies, global install or publication.
+Stop after Prompt 24; next is user-requested Prompt 25 Behavioral Tests.

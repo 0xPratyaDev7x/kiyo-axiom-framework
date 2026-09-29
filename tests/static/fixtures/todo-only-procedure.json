@@ -1,0 +1,11 @@
+{
+  "id": "todo-only-procedure",
+  "synthetic": true,
+  "group": "G15",
+  "operation": "set",
+  "path": "src/kiyo/workflows/review.md",
+  "match": "",
+  "value": "# TODO\n",
+  "expected_code": "TODO_ONLY",
+  "expected_detail": "workflows/review.md"
+}

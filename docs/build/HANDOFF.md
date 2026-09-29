@@ -15,32 +15,33 @@ One canonical specification with necessary self-contained native overlays.
 
 ## Current repository observation
 
-Observed for Prompt 23 on 2026-09-29:
+Observed for Prompt 24 on 2026-09-29:
 
 - Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework
-- Branch main; HEAD 90880886cfb6ad895cefceb478314ea6c3a031a7. Initial tree/index
-  clean; Prompt 22 committed before this task. No scoped instructions or .kiyo
-  found. Git uses per-command exact safe.directory/core.excludesFile only.
+- Branch main; HEAD 434f1df4729130d195650fcc40f007572e4e6759. Initial tree/index
+  clean; Prompt 23 committed before task. No scoped instructions or .kiyo found.
+  Git uses per-command exact safe.directory/core.excludesFile only.
 - LICENSE blob d2e60c5b160ed4f9ca096215e72efee5769936b1 preserved; no version/tag.
-  Canonical inventory remains 105 product files/68 controls/eight public entries.
-- Only canonical framework/init-activation.md changed, for explicit scope,
-  outdated-Core handling and block-only cleanup; 24 generated copies match it.
-  Other canonical files, native overlays and original builders remain unchanged.
-- Three development ZIPs in dist/archives contain 794/795/794 files. Two fresh
-  builds match inventories and ZIP bytes. Current P23 inventory includes actual
-  input/tool/output hashes and 456 independent target parity records.
-  P20–22 inventories remain historical snapshots, not current attestations.
-- Final test report has ten PASS rows and PKG-08 BLOCKED (Windows symlink creation
-  error 1314). ZIP symlink rejection/regular-member checks pass. Cooperative source
-  read isolation is not an OS sandbox; native POSIX execution is NOT_RUN.
-- Python 3.11.9 / Windows-10-10.0.26200-SP0 observed. No native host/account/version
-  was inspected in P23. All native behavior remains NOT_TESTED. Historical Codex
-  ingestion FAIL and IDE UNSUPPORTED remain unresolved.
-- No user bootstrap/policy/Memory, global setting, install, dependency, runtime,
+  All 105 canonical files, three overlays, original builders and distributions
+  are unchanged. P24 adds only developer tests/evidence and build-state updates.
+- tests/static uses Python standard library: 16 positive groups plus 21 synthetic
+  negatives. Final execution: 37 PASS, exit 0, zero failures/errors/skips. Retain
+  initial failed report and checker fixes; they were not product regressions.
+- Three actual ZIP extractions (794/795/794 files, eight Skills each) pass source-
+  denied standalone inspection from fresh paths with spaces. Shared copies,
+  allowed entry transforms and P23 input/output hashes agree. Not an OS sandbox.
+- P23 extra filesystem symlink probe remains BLOCKED (Windows 1314); ZIP regular
+  membership/rejection evidence remains valid. No native POSIX execution.
+- Python 3.11.9 / Windows-10-10.0.26200-SP0 observed. P24 inspected no native
+  host/account/version. Native behavior NOT_TESTED, Codex ingestion FAIL and
+  Codex IDE native plugins UNSUPPORTED remain distinct unresolved results.
+- 40 trace rows gain partial static evidence; 79 partial/1 not implemented,
+  all 80 full requirement verifications NOT_RUN. No release readiness claim.
+- No project bootstrap/policy/Memory, global setting, install, dependency, runtime,
   commit/tag/push/PR, signature or publication was created.
 
 Recheck root/branch/user edits on resume. Preserve LICENSE and all 80 requirements.
-See [packaging checks](../evidence/packaging/package-checks.md) for exact limits.
+See [P24 validation](../evidence/static/validation-report.md) for exact limits.
 
 ## Read order
 
@@ -934,16 +935,35 @@ The real filesystem symlink probe remains BLOCKED; regular ZIP inventory,
 symlink rejection and extracted reference checks support artifact containment.
 Native Init/update/uninstall and actual target loading remain unverified.
 
+## Static validation continuity
+
+Read [test contract](../../tests/static/README.md),
+[actual final execution](../evidence/static/test-results-final.json),
+[validation history](../evidence/static/validation-report.md) and
+[coverage interpretation](../evidence/static/coverage-interpretation.md).
+The final report hashes current test source/fixtures, product inputs and trace
+data. Earlier execution files preserve their earlier snapshots. Reruns require
+a fresh report path; do not overwrite evidence.
+
+No assertion or mandatory negative was removed to get green output. Pinned
+normative clauses, typed tables, closure/identity checks and synthetic mutations
+check specific regressions, not every possible English contradiction. Selected
+native properties are not FULL SCHEMA VALIDATION. Static PASS cannot establish
+agent compliance, security enforcement or host discovery. Behavioral/live work
+not run by this suite stays NOT_TESTED; scenario execution stays NOT_RUN.
+Source trials from earlier prompts retain their original bounded scope.
+
 ## Exact next action
 
-Prompt 23 scoped packaging/parity is complete. Stop here.
-**Next: Prompt 24 Static Tests**, only when supplied by the user.
+Prompt 24 scoped static/contract tests are complete. Stop here.
+**Next: Prompt 25 Behavioral Tests**, only when supplied by the user.
 Recheck root/branch/user edits, read Build Contract and current evidence, then
-execute only that prompt. Reuse tooling; preserve independent static/behavioral/
-native evidence and historical failures. Do not invent release identity or IDE fallback.
+execute only that prompt. Use the actual canonical/package contracts and keep
+static, behavioral and native evidence independent. Do not invent owner fields,
+host capabilities, installation results or a Codex IDE fallback.
 
-Safe to continue: **YES for a user-requested Prompt 24 Static Tests**.
-Artifacts and tests are concrete inputs; owner/native gaps block dependent
-release/compatibility claims, not static work. Memory Impact: NONE.
+Safe to continue: **YES for a user-requested Prompt 25 Behavioral Tests**.
+Contracts, tested packages and failure-detecting fixtures are concrete inputs;
+owner/native gaps still gate release and compatibility claims. Memory Impact: NONE.
 No later work, installation or publication is authorized by this handoff alone.
 

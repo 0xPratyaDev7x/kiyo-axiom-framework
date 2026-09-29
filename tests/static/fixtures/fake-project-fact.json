@@ -1,0 +1,11 @@
+{
+  "id": "fake-project-fact",
+  "synthetic": true,
+  "group": "G11",
+  "operation": "replace",
+  "path": "src/kiyo/templates/memory/project.md",
+  "match": "- observed_date: UNKNOWN",
+  "value": "- observed_date: 2099-01-01",
+  "expected_code": "TEMPLATE_PROJECT_FACT",
+  "expected_detail": "observed_date"
+}

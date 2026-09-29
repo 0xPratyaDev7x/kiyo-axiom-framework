@@ -1,0 +1,11 @@
+{
+  "id": "private-package-file",
+  "synthetic": true,
+  "group": "G12",
+  "operation": "package-add",
+  "path": "claude",
+  "match": "private/SYNTHETIC-notes.md",
+  "value": "SYNTHETIC_PRIVATE_SENTINEL",
+  "expected_code": "PAYLOAD_ALLOWLIST",
+  "expected_detail": "private/"
+}

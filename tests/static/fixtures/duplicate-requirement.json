@@ -1,0 +1,11 @@
+{
+  "id": "duplicate-requirement",
+  "synthetic": true,
+  "group": "G16",
+  "operation": "append",
+  "path": "docs/build/REQUIREMENTS.md",
+  "match": "",
+  "value": "\n## REQ-001\n\nSYNTHETIC duplicate.\n",
+  "expected_code": "REQUIREMENT_DUPLICATE",
+  "expected_detail": "registry"
+}

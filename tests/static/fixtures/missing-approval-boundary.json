@@ -1,0 +1,11 @@
+{
+  "id": "missing-approval-boundary",
+  "synthetic": true,
+  "group": "G07",
+  "operation": "replace",
+  "path": "src/kiyo/framework/trust-and-authority.md",
+  "match": "Do not perform dependent actions while waiting.",
+  "value": "SYNTHETIC: waiting boundary removed.",
+  "expected_code": "APPROVAL_BOUNDARY_MISSING",
+  "expected_detail": "KIYO-AUTH-003"
+}

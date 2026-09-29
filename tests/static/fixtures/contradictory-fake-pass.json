@@ -1,0 +1,11 @@
+{
+  "id": "contradictory-fake-pass",
+  "synthetic": true,
+  "group": "G08",
+  "operation": "replace",
+  "path": "tests/behavioral/verification/scenarios.md",
+  "match": "| Execution status | NOT_RUN |",
+  "value": "| Execution status | PASS |",
+  "expected_code": "EVIDENCE_CONTRADICTION",
+  "expected_detail": "EVID-01"
+}

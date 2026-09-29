@@ -1,10 +1,33 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **23 Packaging/Parity**.
-Task status: **DONE** for scoped development packaging and static parity.
-Ten packaging result rows PASS; extra filesystem symlink probe BLOCKED by Windows.
-ZIP symlink rejection PASS. Native behavior remains independently NOT_TESTED.
-Codex ingestion FAIL and unsupported IDE route remain open. No runtime engine.
+Snapshot: 2026-09-29. Current prompt: **24 Static Tests**.
+Task status: **DONE** for scoped static/contract validation.
+37 tests PASS: 16 positive groups and 21 exact-reason negative cases.
+Static evidence does not prove agent behavior; no native host ran.
+
+## Prompt 24 delivered scope
+
+- Added [developer-only tests and fixtures](../../tests/static/README.md), reusing
+  existing builders and the standalone payload checker; no new dependencies.
+- [Final execution](../evidence/static/test-results-final.json): 37 tests PASS,
+  exit 0, no failures/errors/skips. Initial five checker/fixture errors and their
+  fixes remain in [validation history](../evidence/static/validation-report.md).
+- Actual canonical/ZIP checks cover eight Skills per package, closed metadata,
+  37 required resources, 68 controls, 34 templates, scoped read-only/approval
+  contracts, enums/examples, AST ownership/limits, Memory types and all 80 IDs.
+- Three fresh extractions with spaces retain source-denied reference closure;
+  112 input hashes and 2,383 payload files agree with P23 inventory.
+- [Coverage interpretation](../evidence/static/coverage-interpretation.md)
+  explicitly lists selected properties, not FULL SCHEMA VALIDATION, and preserves
+  separate static/behavioral/native evidence. No canonical/overlay/package change.
+
+Partial static coverage: REQ-002/003/006/009/011/019/020/022/023/026/027/040/
+043–050/058–067/069/071–075/077–080 (40 trace rows).
+Totals: **79 PARTIALLY_IMPLEMENTED / 1 NOT_IMPLEMENTED**; all 80 full verifications
+remain NOT_RUN. See [P24 checks](BASELINE.md#prompt-24-checks).
+Owner DEC-001–004, historical Codex ingestion FAIL/IDE UNSUPPORTED and P23
+filesystem-symlink BLOCKED remain unresolved. Native targets NOT_TESTED.
+No install/publication/global change or actual Memory write. Memory Impact: **NONE**.
 
 ## Prompt 23 delivered scope
 
@@ -794,7 +817,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 21 | Codex | DONE | P21-C01–C07 scoped offline checks PASS; C08 ingestion FAIL for missing owner release fields; native NOT_TESTED, IDE plugins UNSUPPORTED |
 | 22 | Copilot | DONE | P22-C01–C07 scoped offline/document checks PASS; 794-file shared bundle, 20 cases NOT_RUN per target; both native NOT_TESTED |
 | 23 | Packaging/Parity | DONE | P23-C01–C07 scoped checks; equal builds, 456 parity records; extra filesystem-symlink probe BLOCKED; native NOT_TESTED |
-| 24 | Static Tests | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 24 | Static Tests | DONE | P24 selected contract groups and exact-reason negatives: 37 PASS; actual extraction; static only |
 | 25 | Behavioral Tests | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 26 | Live Host Tests | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 27 | Documentation | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -809,9 +832,9 @@ NOT_STARTED is a roadmap planning marker, not an additional task-result status.
 DEC-001 name, DEC-002 release license, DEC-003 publisher/destination and DEC-004
 Codex IDE treatment remain open. No release version, signature or approval invented.
 
-Safe to continue: **YES for a user-requested Prompt 24 Static Tests**.
-Actual archives, inventories and parity/test records are available. Preserve
+Safe to continue: **YES for a user-requested Prompt 25 Behavioral Tests**.
+Static assertions and negative controls are concrete inputs. Preserve historical
 PKG-08 BLOCKED, six native NOT_TESTED results, Codex ingestion FAIL and unsupported
-IDE plugins. These gaps do not prevent independent static-test work.
-Next prompt: **24 Static Tests**, only when requested by the user.
+IDE plugins. These gaps do not prevent independent authorized behavioral work.
+Next prompt: **25 Behavioral Tests**, only when requested by the user.
 

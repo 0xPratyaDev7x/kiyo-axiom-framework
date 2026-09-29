@@ -1,0 +1,11 @@
+{
+  "id": "missing-ast-owner",
+  "synthetic": true,
+  "group": "G09",
+  "operation": "replace",
+  "path": "src/kiyo/agent-security/owasp-ast10.md",
+  "match": "- Control owner: Kiyo Markdown guidance: assess/report; Developer release process: inspect shipped bytes; Human organization process: accepted adoption policy; Host-native security: actual access boundary.",
+  "value": "SYNTHETIC owner removed.",
+  "expected_code": "AST_FIELDS",
+  "expected_detail": "AST01"
+}

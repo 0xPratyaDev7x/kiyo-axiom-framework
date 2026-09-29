@@ -1,0 +1,11 @@
+{
+  "id": "broken-resource",
+  "synthetic": true,
+  "group": "G04",
+  "operation": "replace",
+  "path": "src/kiyo/skills/init/SKILL.md",
+  "match": "(../../KIYO.md)",
+  "value": "(../../SYNTHETIC-missing.md)",
+  "expected_code": "RESOURCE_MISSING",
+  "expected_detail": "SYNTHETIC-missing.md"
+}

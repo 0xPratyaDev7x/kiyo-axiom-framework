@@ -1,0 +1,11 @@
+{
+  "id": "case-mismatched-link",
+  "synthetic": true,
+  "group": "G04",
+  "operation": "replace",
+  "path": "src/kiyo/skills/init/SKILL.md",
+  "match": "(../../KIYO.md)",
+  "value": "(../../kiyo.md)",
+  "expected_code": "RESOURCE_CASE",
+  "expected_detail": "kiyo.md"
+}

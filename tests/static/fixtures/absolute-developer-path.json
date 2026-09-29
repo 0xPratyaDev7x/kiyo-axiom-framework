@@ -1,0 +1,11 @@
+{
+  "id": "absolute-developer-path",
+  "synthetic": true,
+  "group": "G11",
+  "operation": "append",
+  "path": "src/kiyo/templates/memory/project.md",
+  "match": "",
+  "value": "\nSynthetic accidental reference: /Users/SYNTHETIC-owner/project\n",
+  "expected_code": "TEMPLATE_SENSITIVE_CONTENT",
+  "expected_detail": "templates/memory/project.md"
+}

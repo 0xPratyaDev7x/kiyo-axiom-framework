@@ -1,0 +1,11 @@
+{
+  "id": "escaping-link",
+  "synthetic": true,
+  "group": "G04",
+  "operation": "replace",
+  "path": "src/kiyo/skills/init/SKILL.md",
+  "match": "(../../KIYO.md)",
+  "value": "(../../../../SYNTHETIC-outside.md)",
+  "expected_code": "RESOURCE_ESCAPE",
+  "expected_detail": "SYNTHETIC-outside"
+}
