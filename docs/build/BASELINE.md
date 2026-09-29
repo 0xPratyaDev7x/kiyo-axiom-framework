@@ -1198,3 +1198,98 @@ Memory Impact: NONE for developer project memory. Synthetic MEM-POL-1 conflict
 was reported without changing content/dates. No remediation or other workflow
 was started. Stop after Prompt 16; Prompt 17 Architecture Skill requires its
 own user request.
+
+## Prompt 17 repository observation
+
+Observed 2026-09-29 (Asia/Bangkok), before Prompt 17 edits:
+
+- Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework.
+- Branch main; HEAD e16dc813ed5f6923a6f7da8a0f628240fc340afc, subject
+  “Add security assessment framework and documentation”. Prompt 16 was committed.
+- Initial index/worktree clean; staged/unstaged diffstat empty. Inventory:
+  128 Markdown files plus LICENSE, 91 product files excluding source README,
+  eleven behavioral specification files and six forward-evidence records.
+- No applicable AGENTS.md found in repository or checked ancestors; no .kiyo
+  Project Memory. Read Build Contract, architecture standard, Memory contracts,
+  build state and relevant original requirements/authority/evidence/read-only
+  references before authoring. No global Git settings changed.
+- Per-command exact-root safe.directory and empty core.excludesFile preserve
+  the scoped inventory. skill-creator guidance supports bounded independent
+  forward trials. No external research/native schema refresh was performed.
+
+## Prompt 17 checks
+
+Executed 2026-09-29 (Asia/Bangkok) against the Prompt 17 working tree.
+PASS for authoring/evaluation does not turn drift into conformance, unavailable
+evidence into verification, or static inspection into runtime/production proof.
+
+| Name | Applicability | Command/method | Inspected scope | Execution status | Observed result | Evidence location | Limitations | Baseline relation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| P17-C01 Repository and context | Required Build Contract start | Scoped read-only Git root/branch/HEAD/status/log/diff/hash/tags, instruction inventory and focused contract/Memory/standard reads | Root/main/HEAD, initial index/tree, actual architecture/read-only and original requirement scope | PASS | HEAD e16dc813ed5f6923a6f7da8a0f628240fc340afc; clean initial state; 128 Markdown files; no applicable AGENTS.md in inspected scope | Observation above and actual Git/read stdout | No production, remote, account/native or fresh vendor check | Prompt 16 committed; earlier checkout snapshots historical |
+| P17-C02 Entry and reports | Required Architecture entry, observed/impact/drift contracts | skill-creator quick_validate.py; inline Python frontmatter/field/control/budget assertions; author semantic review | Entry, shared procedure, two new templates, existing drift report and DoD integration | PASS | Validator exit 0 “Skill is valid!”; name/description only; logical kiyo.architecture; 71 lines / 515 words. Nine dimensions, five output categories, seven drift fields; KIYO-ARCH-001, 65 controls | [Entry](../../src/kiyo/skills/architecture/SKILL.md), [procedure](../../src/kiyo/workflows/architecture.md), templates and validator stdout | Authored content/structure does not prove universal behavior or native selection | Seventh canonical entry within eight planned; shared drift extended, not duplicated |
+| P17-C03 Scenario coverage | Required at least eight scenarios and supplied drift distinctions | Sequential-ID/table assertions and author review against requested scope | ARC-01–16 and synthetic expected fragments | PASS | Sixteen cases cover actual usage versus dependency-only drift, no ADR, Match, impact, unsafe patterns, Memory/record gaps, read-only defects, worktrees/concurrency, deployment unknowns, score/rubric, injection, dependency bans and approval reuse | [Architecture scenarios](../../tests/behavioral/architecture/scenarios.md) and author review | Complete matrix remains NOT_RUN; expected examples are not passing tests | Existing scenarios/execution states unchanged |
+| P17-C04 Resources and portability | Required static payload/resource/loading constraints | Inline Python strict UTF-8/local links/anchors/control/containment checks; temporary entry transforms/shared-byte copies | Final 134 Markdown files, 95 product files; seven entries with 88 shared files each | PASS | 618 contained product links, 29 unchanged optional citations; no author absolute paths/symlink/reparse payload; bootstrap unchanged 81 lines / 579 words. Architecture copy resolves twelve entry links/549 contained local links | ARC-RESOURCE-01 in [forward evidence](../evidence/architecture/forward-trials.md), validator stdout | Source layout check, not native cache/host installation or automatic activation; no consumer generator | Existing six entries preserved, resolved against current shared snapshot |
+| P17-C05 Bounded read-only trials | Functional source authoring validation in isolated developer fixtures | Independent evaluator follows real entry with raw artifacts; author reviews outcomes and exact before/after sets/bytes/mtime | Four realistic requests; seventeen fixture files and nine directories | PASS | Actual AutoMapper chain produces Deviation/CONFLICT; reference-only case Insufficient evidence/PARTIALLY COMPLETE; impact conditional with topology unknown; narrow port criterion Match. All original files/directories unchanged | ARC-FWD-01–04 and ARC-SNAPSHOT-01 in [forward evidence](../evidence/architecture/forward-trials.md) | Underlying alpha conformance FAIL, beta BLOCKED; behavioral/native checks NOT_RUN. No full report-field acceptance; snapshots do not prove all transient effects/access | Synthetic accepted decisions/proposal versus actual supplied source; historical regression timing unknown |
+| P17-C06 Traceability and closure | Required Build Contract close | Inline Python registry/trace/status/issue/decision assertions and final record review | Eighty original requirements/trace rows, six build records, nine issues/four owner decisions | PASS | Twelve P17 evidence rows; REQ-019/022/023/024/026/027/028/033/040/044/074 partial instructions, REQ-080 continuity. REQ-074 newly partial: 73 PARTIALLY_IMPLEMENTED / 7 NOT_IMPLEMENTED. All 80 full verifications NOT_RUN. Prompt 17 DONE; Prompt 18 NOT_STARTED | [Traceability](TRACEABILITY.md), [Progress](PROGRESS.md), [Handoff](HANDOFF.md), final stdout | No full requirement/native acceptance or publication decision promoted | Prior 72 partial / 8 unimplemented; one newly partial public entry |
+| P17-C07 Scope and preservation | Required repository/product boundaries | Exact Git allowlists, diff --check, index/HEAD/license hash/tag checks and static boundary assertions | Six new and seventeen modified repository Markdown files; isolated read-only assessment fixtures | PASS | diff --check passed; index empty, HEAD unchanged, no tags; LICENSE blob d2e60c5b160ed4f9ca096215e72efee5769936b1 preserved. No repository .kiyo/platforms/tools/dist or non-Markdown additions | Git/validator stdout and inventory below | No consumer runtime, project migration, dependency install, native/global change, commit/push/PR/deploy/publication or later-prompt work | Clean committed Prompt 16 baseline; exact allowlist preserves unrelated content/history |
+
+New files:
+
+- src/kiyo/skills/architecture/SKILL.md
+- src/kiyo/workflows/architecture.md
+- src/kiyo/templates/reports/architecture-observation.md
+- src/kiyo/templates/reports/architecture-impact-report.md
+- tests/behavioral/architecture/scenarios.md
+- docs/evidence/architecture/forward-trials.md
+
+Modified files: six build records (PROGRESS, HANDOFF, TRACEABILITY, OPEN-ISSUES,
+DECISIONS, BASELINE), architecture layout/naming, source README, framework
+context-loading/control-index/reporting-contract/definition-of-done, engineering
+architecture, shared read-only flow/router and existing Memory/architecture drift
+report. No duplicate drift store or product Memory was created.
+
+The exact Git allowlist preserves LICENSE, Build Contract/requirement registry,
+research/compatibility, ADR/loading/packaging, Core/bootstrap/trust/Memory rules,
+Memory lifecycle/templates, governance/security/profiles, prior public entries,
+unrelated engineering/flows/reports and earlier scenarios/evidence.
+All consumer templates remain neutral; no fixture/developer-project fact or
+absolute author locator was shipped in product content.
+
+Validation command:
+`python -X utf8 <installed-skill-creator>/scripts/quick_validate.py src/kiyo/skills/architecture`
+(exit 0, Skill is valid!). Inline Python via PowerShell here-strings checks exact
+Git scope, UTF-8, relative links/anchors/containment, registered controls, frontmatter,
+budgets, relevant template fields/dimensions/categories, scenario IDs and final
+build state. Temporary resource copies and snapshot checks are developer-only.
+No executable validator, analyzer or initializer was added to the repository.
+
+Read-only Git methods covered rev-parse --show-toplevel/HEAD, branch --show-current,
+log -1, status --short --branch --untracked-files=all, staged/unstaged diff --stat,
+diff --name-only/--check, ls-files --others --exclude-standard,
+hash-object -- LICENSE and tag --list. Per-command overrides did not change global
+configuration. LF-to-CRLF notices do not imply an executed application test.
+
+An inherited preliminary checker incorrectly expected REQ-075 to be unimplemented;
+the actual existing Memory shared coverage is already partial. That obsolete
+assertion was removed without changing the requirement or its row. The corrected
+checker passed. A broad context retrieval yielded incomplete in-memory context;
+focused/chunked reads recovered all eighty trace rows before any build-record
+edit. Neither limitation is treated as missing repository content or product failure.
+The first closing diff check found an added blank line at BASELINE's end; it was
+removed. Final validation checks the resulting scope/references/state after close.
+
+Four bounded evaluation outcomes passed their reasoning/effect criteria while
+preserving the underlying FAIL/BLOCKED results. Tests in fixtures were inspected
+only; alpha's test file is comments, not an executed assertion. No code, package,
+migration or native surface ran. Author snapshot equality covered seventeen files
+and nine directories, not all possible transient access/effects.
+
+All sixteen Architecture specifications remain NOT_RUN as a full matrix.
+All 80 full requirement verifications remain NOT_RUN; six native targets remain
+NOT_TESTED. Source/resource checks establish neither live topology, compatible
+vendor APIs, independent architecture audit nor automatic host behavior.
+
+Memory Impact: NONE for developer project memory. Synthetic alpha conflict was
+reported without changing approved intent or Memory; beta's missing evidence
+remained explicit. Stop after Prompt 17; Prompt 18 Memory Skill awaits its own
+user request.

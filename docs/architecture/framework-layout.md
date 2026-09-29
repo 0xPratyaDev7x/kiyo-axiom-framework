@@ -67,7 +67,10 @@ and templates/test-plan.md plus templates/reports/test-report.md. assess/run/wri
 are logical effect contracts, not a runtime/parser. At that step three entries remained planned.
 Prompt 16 adds skills/security/SKILL.md, workflows/security.md,
 agent-security/security-submodes.md and security-finding/self-check report templates.
-Security has four logical submodes within one public entry. Two skill entries remain planned.
+Security has four logical submodes within one public entry.
+Prompt 17 adds skills/architecture/SKILL.md, workflows/architecture.md,
+architecture-observation/architecture-impact report templates and extends the shared
+drift report. Architecture is read-only; only the Memory skill entry remains planned.
 The README remains developer-only. Remaining
 product, overlay, tool, test and distribution paths are **planned**, not features.
 Create each directory when it receives real scoped content; no empty SKILL.md,
@@ -92,7 +95,7 @@ src/kiyo/
     review/SKILL.md               authored Prompt 14; native acceptance separate
     test/SKILL.md                 authored Prompt 15; native acceptance separate
     security/SKILL.md             authored Prompt 16; native acceptance separate
-    architecture/SKILL.md
+    architecture/SKILL.md         authored Prompt 17; native acceptance separate
     memory/SKILL.md
 platforms/
   claude/                         Claude manifest/frontmatter/project adapter sources

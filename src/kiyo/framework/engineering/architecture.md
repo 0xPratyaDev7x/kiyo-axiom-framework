@@ -35,3 +35,7 @@ decisions. State partial inspection and untested consumers. For read-only
 architecture work, return analysis/proposals without implementation or memory
 writes. Follow [Change scope](change-scope.md) for authorized edits and the
 [Memory lifecycle](../../workflows/memory-lifecycle.md) for drift handling.
+
+For a requested bounded architecture assessment, the
+[Architecture procedure](../../workflows/architecture.md) selects inspection
+dimensions and observation/impact/drift reports while preserving read-only intent.

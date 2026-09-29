@@ -1,9 +1,44 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **16 Security Skill**.
-Task status: **DONE** for Prompt 16; scoped Security authoring checks passed.
-Product status: shared guidance/profiles/templates and canonical Init/Requirement/Implement/Review/Test/Security authored;
-two public skills and native packages remain pending. No runtime engine.
+Snapshot: 2026-09-29. Current prompt: **17 Architecture Skill**.
+Task status: **DONE** for Prompt 17; scoped Architecture authoring checks passed.
+Product status: shared guidance/profiles/templates and canonical Init/Requirement/Implement/Review/Test/Security/Architecture authored;
+the Memory public skill and native packages remain pending. No runtime engine.
+
+## Prompt 17 delivered scope
+
+- Added canonical [Architecture](../../src/kiyo/skills/architecture/SKILL.md),
+  name architecture / logical ID kiyo.architecture, name/description only.
+  Analysis/review/impact/drift remain one public skill with read-only effects.
+- Added [shared procedure](../../src/kiyo/workflows/architecture.md),
+  [observation](../../src/kiyo/templates/reports/architecture-observation.md) and
+  [impact](../../src/kiyo/templates/reports/architecture-impact-report.md) templates;
+  extended the existing [drift report](../../src/kiyo/templates/reports/memory-architecture-drift-report.md).
+  Nine inspection dimensions, five output categories and seven drift fields
+  separate source observations, approved intent, proposals and runtime unknowns.
+- Comparison outcomes Match / Deviation / Insufficient evidence are separate
+  from task/check statuses. Actual usage differs from package declaration;
+  no ADR means no established mandate in scope, not permission to invent one.
+- No automatic source/Memory/policy/ADR/report writes, execution, refactor,
+  migration or score without rubric/evidence. Memory Impact is reported only.
+  Relevant existing safe patterns and approval provenance remain binding inputs.
+- Added KIYO-ARCH-001 (65 controls), shared integrations and
+  [16 scenario specifications](../../tests/behavioral/architecture/scenarios.md).
+  [Bounded forward evidence](../evidence/architecture/forward-trials.md) separates
+  actual read-only variants from complete matrix/native acceptance.
+  Entry: 71 lines / 515 words. Seven temporary source copies each contain
+  88 shared resources; no consumer runtime or generator dependency.
+
+Coverage: partial Architecture/shared instruction coverage for
+REQ-019/022/023/024/026/027/028/033/040/044/074; REQ-080 continuity updated.
+REQ-074 newly partial: 73 PARTIALLY_IMPLEMENTED / 7 NOT_IMPLEMENTED.
+All 80 full verifications remain NOT_RUN; six native targets remain NOT_TESTED.
+Sixteen scenarios are NOT_RUN as a full matrix; fixture evidence is separately scoped.
+
+Checks: [Prompt 17 evidence](BASELINE.md#prompt-17-checks).
+Memory Impact: **NONE for developer project memory**. Synthetic conflicts were
+assessment inputs; no Project Memory or approved decision was rewritten.
+Owner decisions remain open.
 
 ## Prompt 16 delivered scope
 
@@ -557,7 +592,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 14 | Review | DONE | P14-C01–C07 PASS; static/resource checks and bounded read-only source trials; native NOT_TESTED |
 | 15 | Test | DONE | P15-C01–C07 PASS; static/resource checks and bounded mode-specific source trials; native NOT_TESTED |
 | 16 | Security Skill | DONE | P16-C01–C07 PASS; static/resource checks and bounded read-only submode trials; native NOT_TESTED |
-| 17 | Architecture Skill | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 17 | Architecture Skill | DONE | P17-C01–C07 PASS; static/resource checks and bounded read-only source trials; native NOT_TESTED |
 | 18 | Memory Skill | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 19 | Organization Policies | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 20 | Claude | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -580,9 +615,9 @@ Outstanding owner decisions: DEC-001 final name, DEC-002 release license,
 DEC-003 publisher/destination and DEC-004 treatment of Codex IDE's native-plugin
 gap before compatibility/release claims. See OPEN-ISSUES for technical gaps.
 
-Safe to continue: **YES for a user-requested Prompt 17 Architecture Skill**.
-Shared contracts and six canonical skills are ready; publication/native gaps
+Safe to continue: **YES for a user-requested Prompt 18 Memory Skill**.
+Shared contracts and seven canonical skills are ready; publication/native gaps
 remain gates for dependent packaging/activation claims. Later work is not
 authorized by this handoff alone.
-Next prompt: **17 Architecture Skill**, only when requested by the user.
+Next prompt: **18 Memory Skill**, only when requested by the user.
 

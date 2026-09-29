@@ -79,6 +79,13 @@ unverified-signature/incomplete-inventory distinctions and no automatic remediat
 Eighteen developer scenarios and separate bounded source trials do not prove
 native security or full compliance. Architecture and Memory skills remain pending.
 
+Prompt 17 adds canonical [Architecture](skills/architecture/SKILL.md), logical ID
+kiyo.architecture, its [shared procedure](workflows/architecture.md), observation
+and impact templates and the extended shared drift report. It separates observed
+structure, approved intent, proposals and deployment unknowns; assessments stay
+read-only. Sixteen developer scenarios and bounded source trials do not establish
+production topology or native acceptance. The public Memory entry remains pending.
+
 Follow [framework layout](../../docs/architecture/framework-layout.md),
 [content loading](../../docs/architecture/content-loading.md) and
 [packaging contract](../../docs/architecture/packaging-contract.md) as their

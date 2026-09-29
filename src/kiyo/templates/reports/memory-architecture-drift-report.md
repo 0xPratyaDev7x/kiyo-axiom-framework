@@ -28,3 +28,34 @@ A Mapperly approved decision conflicting with observed AutoMapper usage is
 Architecture Drift; do not rewrite the decision from code. Separate the current
 assessment from persisted status. A read-only check can finish with a conflict
 finding while any requested implementation/sync remains pending.
+
+## Architecture decision comparison
+
+For an Architecture task, use the [shared procedure](../../workflows/architecture.md#compare-approved-intent-and-detect-drift)
+and keep the [five output categories](architecture-observation.md) distinct.
+This section extends the shared report above, not a second mutable decision store.
+
+- **Decision ID:** <actual existing ID and statement, approval source/scope/
+  applicability if established; Unknown rather than an invented approved ADR>
+- **Files/symbols/config:** <exact safe locations actually inspected, snapshot/
+  component scope and relevant registration/callers/tests; unread areas separate>
+- **Observed difference:** <comparison outcome Match / Deviation / Insufficient
+  evidence; actual implementation versus intended criterion, not deployment claims>
+- **Potential impact:** <supported consequences and conditional risks, affected
+  boundary/consumers and unknown reachability>
+- **Confidence:** <HIGH/MEDIUM/LOW, concrete evidence basis and remaining premises
+  using the shared guide; confidence in source comparison is not runtime proof>
+- **Possible interpretations:** <evidence-compatible explanations, such as
+  unauthorized drift, an unrecorded approved exception, unused dependency or
+  incomplete inspection; none becomes a fact without evidence>
+- **Required human decision:** <specific unresolved choice and authorized scope
+  needed, or none for a scoped Match; existing matching authority is not discarded>
+
+For a usage-only Mapperly decision, an AutoMapper package reference alone means
+possible drift / Insufficient evidence, unless actual usage is established.
+An explicit dependency prohibition can be contradicted by the reference itself.
+No ADR in inspected scope means observed pattern without established mandate.
+Do not infer a new decision, rewrite decisions.md, or treat an unverified
+explanation as approval. Known decision conflict is Memory CONFLICT.
+Use the [confidence guide](../../framework/review-severity-confidence.md).
+Comparison outcomes do not replace the five check or four task statuses.

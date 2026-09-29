@@ -154,6 +154,20 @@ developer validation, not product orchestration or native certification.
 Prompt 16 reuses recorded AST/ASVS sources/status/dates without revalidating them
 or choosing a native schema. Publication/unsupported-route decisions stay open.
 
+Prompt 17 was subsequently authorized on 2026-09-29: author read-only Architecture
+(logical ID kiyo.architecture), observation/impact/drift reports and at least eight
+scenarios; validate/update build state and stop before Prompt 18. Use current
+repository evidence separately from approved intent, proposals and deployment
+unknowns. Match/Deviation/Insufficient evidence are comparison outcomes, not new
+check/task statuses. Dependency references alone do not prove usage; actual
+decision wording controls what evidence can establish a contradiction.
+Reuse the existing shared drift report instead of creating a parallel record.
+No project migration, architecture redesign, ADR/Memory/policy rewrite, score
+without rubric/evidence or production assertion is authorized by consumer review.
+skill-creator guidance supports isolated read-only synthetic forward trials;
+these do not introduce product orchestration or native verification.
+No external research/schema refresh or publication decision is part of this scope.
+
 ## Pending owner decisions
 
 | ID | Decision | Current evidence / status | Who decides | Latest needed / effect | Resolution evidence |
@@ -164,7 +178,7 @@ or choosing a native schema. Publication/unsupported-route decisions stay open.
 | DEC-004 | Treatment of Codex IDE native-plugin support gap | OPEN. Official [plugin documentation](https://learn.chatgpt.com/docs/plugins) excludes IDE plugins; [skills documentation](https://learn.chatgpt.com/docs/build-skills) supports standalone IDE skills. Checked 2026-09-28; DOCUMENTED_ONLY, live NOT_TESTED | Repository/product owner | Before promising six-target native installation or accepting a standalone fallback; does not block Prompt 03 design of documented surfaces | No fallback or scope reduction approved |
 
 Ask only when an unresolved choice blocks the current authorized prompt. Existing
-instructions authorize Prompt 16 Security authoring/validation and build-state updates. Do not ask for
+instructions authorize Prompt 17 Architecture authoring/validation and build-state updates. Do not ask for
 premature publication decisions to complete that scope. Publication metadata still
 requiring confirmation is listed in [SOURCES](../research/SOURCES.md#publication-information-still-requiring-the-owner).
 

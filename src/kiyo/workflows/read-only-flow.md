@@ -43,7 +43,7 @@ transition. Keep host denial and organization prohibitions intact.
 Use [Core read-only authority](../framework/trust-and-authority.md#kiyo-safe-001--preserve-read-only-intent),
 [Memory lifecycle](memory-lifecycle.md), [permissions](../governance/permissions.md)
 and relevant [injection handling](../agent-security/prompt-injection.md).
-Apply the relevant review/requirement/memory/security row of
+Apply the relevant Review/Requirement/Memory/Security/Architecture row of
 [Definition of Done](../framework/definition-of-done.md), keeping delivery status
 separate from application correctness and implementation readiness.
 Use [check evidence](../framework/evidence-contract.md) and the smallest

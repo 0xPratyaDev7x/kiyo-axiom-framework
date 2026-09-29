@@ -88,6 +88,12 @@ Supplied scope and read-only reporting remain default; no global inventory sweep
 payload execution or automatic remediation. Self-check distinguishes visible
 resources from native activation, integrity and isolation evidence.
 
+For Architecture analysis/review/impact/drift, use the
+[Architecture procedure](../workflows/architecture.md) and relevant engineering
+dimensions. Inspect permitted Memory/ADRs against current implementation; keep
+observed structure, approved intent, proposals and deployment unknowns separate.
+Use only needed observation/impact/drift report sections; no migration or sync.
+
 ## KIYO-LOAD-002 — Kiyo design budgets
 
 These are Kiyo's authoring criteria, **not vendor-imposed context limits**.
