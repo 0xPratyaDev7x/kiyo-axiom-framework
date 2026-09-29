@@ -1,6 +1,7 @@
 # Kiyo Compass — Standards baseline
 
-Checked: **2026-09-28**. Official source IDs resolve in
+Original baseline: **2026-09-28**. S01–S07 rechecked **2026-09-29** for Prompt 09;
+other refreshes retain their explicitly scoped dates below. Official source IDs resolve in
 [SOURCES.md](SOURCES.md). This is a concept-level research baseline for
 REQ-056–067, not a conformity assessment, certification, legal opinion, complete
 control mapping or evidence that product controls exist.
@@ -14,13 +15,13 @@ are source publication states, not Kiyo verification results.
 
 | Reference | Edition / status observed | Proposed Kiyo concept alignment | Source / checked | Limitation |
 | --- | --- | --- | --- | --- |
-| ISO/IEC/IEEE 12207 | **2026, edition 2**, published April 2026; replaces withdrawn 2017 edition | Lifecycle-aware Requirement, Implement, Review, Test and release/handoff evidence | [S01](https://www.iso.org/standard/90219.html), 2026-09-28 | Catalog/abstract only; do not retain 2017 as “latest” or claim lifecycle compliance. |
-| ISO/IEC/IEEE 29148 | **2018, edition 2**, published; confirmed 2024, now revision in development (DIS 29148) | Requirement provenance, measurable acceptance criteria and traceability | [S02](https://www.iso.org/standard/72089.html), 2026-09-28 | A DIS is not a published replacement; recheck before detailed mapping. |
-| ISO/IEC 25010 | **2023, edition 2**, published; product quality model, supersedes 2011 | Quality-attribute questions and measurable quality criteria in Architecture/Review/Test | [S03](https://www.iso.org/standard/78176.html), 2026-09-28 | Do not treat old quality-in-use coverage as unchanged or reproduce the model's full normative text. |
-| ISO/IEC/IEEE 29119-1 | **2022, edition 2**, published | Testing vocabulary and separation of test intent from evidence | [S04](https://www.iso.org/standard/81291.html), 2026-09-28 | Part 1, not an edition for the whole series. |
-| ISO/IEC/IEEE 29119-2 | **2021, edition 2**, published | Test planning, execution, reporting and completion decisions | [S05](https://www.iso.org/standard/79428.html), 2026-09-28 | Process alignment proposal; no process-conformity claim. |
-| ISO/IEC/IEEE 29119-3 | **2021, edition 2**, published | Kiyo-authored test/evidence templates and trace records | [S06](https://www.iso.org/standard/79429.html), 2026-09-28 | Do not copy copyrighted standard templates. |
-| ISO/IEC/IEEE 29119-4 | **2021, edition 2**, published | Risk-relevant test-design technique selection | [S07](https://www.iso.org/standard/79430.html), 2026-09-28 | Detailed technique/clause correspondence not assessed; other series parts outside this baseline. |
+| ISO/IEC/IEEE 12207 | **2026, edition 2**, published April 2026; replaces withdrawn 2017 edition | Lifecycle-aware Requirement, Implement, Review, Test and release/handoff evidence | [S01](https://www.iso.org/standard/90219.html), 2026-09-29 | Catalog/abstract only; do not retain 2017 as “latest” or claim lifecycle compliance. |
+| ISO/IEC/IEEE 29148 | **2018, edition 2**, published; confirmed 2024, now revision in development (DIS 29148) | Requirement provenance, measurable acceptance criteria and traceability | [S02](https://www.iso.org/standard/72089.html), 2026-09-29 | A DIS is not a published replacement; recheck before detailed mapping. |
+| ISO/IEC 25010 | **2023, edition 2**, published; product quality model, supersedes 2011 | Quality-attribute questions and measurable quality criteria in Architecture/Review/Test | [S03](https://www.iso.org/standard/78176.html), 2026-09-29 | Do not treat old quality-in-use coverage as unchanged or reproduce the model's full normative text. |
+| ISO/IEC/IEEE 29119-1 | **2022, edition 2**, published | Testing vocabulary and separation of test intent from evidence | [S04](https://www.iso.org/standard/81291.html), 2026-09-29 | Part 1, not an edition for the whole series. |
+| ISO/IEC/IEEE 29119-2 | **2021, edition 2**, published | Test planning, execution, reporting and completion decisions | [S05](https://www.iso.org/standard/79428.html), 2026-09-29 | Process alignment proposal; no process-conformity claim. |
+| ISO/IEC/IEEE 29119-3 | **2021, edition 2**, published | Kiyo-authored test/evidence templates and trace records | [S06](https://www.iso.org/standard/79429.html), 2026-09-29 | Do not copy copyrighted standard templates. |
+| ISO/IEC/IEEE 29119-4 | **2021, edition 2**, published | Risk-relevant test-design technique selection | [S07](https://www.iso.org/standard/79430.html), 2026-09-29 | Detailed technique/clause correspondence not assessed; other series parts outside this baseline. |
 
 ## Primary governance and security references
 
@@ -87,14 +88,30 @@ redirect: main text still calls 5.0.0 stable, with conflicting sidebar wording
 retained as a limitation. Kiyo's separate
 [application checklist](../../src/kiyo/agent-security/application-security.md)
 covers the user-requested topics; it is not a full ASVS clause mapping.
-The table above preserves Prompt 02's original check dates; other standards were
-not refreshed. Detailed URL/dates and retrieval limits are in
+The governance/security table above preserves Prompt 02's original check dates;
+other standards were not refreshed by Prompt 07. Detailed URL/dates and retrieval limits are in
 [SOURCES](SOURCES.md#prompt-07-owasp-revalidation).
 
 Ten new Kiyo security controls, scoped Skill Audit/update/injection procedures,
 four optional neutral record templates and a six-target control-gap matrix are
 authored Markdown. Nineteen developer scenario specifications are NOT_RUN.
 No scanner, runtime isolation, signature verification or certification is supplied.
+
+## Prompt 09 engineering mapping
+
+S01–S07 official public catalogue pages were retrieved on **2026-09-29**, with
+editions/status unchanged as recorded in the engineering table. Each requested
+URL remained the final displayed URL. This refresh is DOCUMENTED_ONLY; licensed
+texts were not reviewed, and no clause numbers or standards text were copied.
+
+The packaged [concept → Kiyo rule → expected evidence mapping](../../src/kiyo/framework/engineering/standards-mapping.md)
+now connects these engineering concepts to authored actionable checks. It is an
+original adaptation, not an exact ISO quality taxonomy or compliance assessment.
+[Four optional profiles and extension outlines](../../src/kiyo/profiles/extension-contract.md)
+use new E01–E06 official documentation for discovery guidance, with explicit
+version/toolchain limits. React/Java/company outlines do not assert tested support.
+Sixteen [engineering scenarios](../../tests/behavioral/engineering/scenarios.md)
+remain NOT_RUN. No behavioral/native or actual stack verification is inferred.
 
 ## Mapping and revalidation boundary
 

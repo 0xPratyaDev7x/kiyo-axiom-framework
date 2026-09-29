@@ -2,6 +2,7 @@
 
 Original baseline: **2026-09-28**, Asia/Bangkok (Prompt 02).
 Prompt 07 rechecked W01/W02 and added W05–W15 on **2026-09-29**.
+Prompt 09 rechecked S01–S07 and added E01–E06 on **2026-09-29**.
 
 ## Evidence rules
 
@@ -58,13 +59,13 @@ Only public documentation URLs were sent to the web tool.
 | V04 | [VS Code Copilot setup](https://code.visualstudio.com/docs/copilot/setup) | [Final page](https://code.visualstudio.com/docs/setup/copilot) | 2026-09-28 | Account/plan access; not proof of this machine's entitlement. |
 | A01 | [Agent Plugins JSON Schema 1.0.0](https://agent-plugins.org/schemas/1.0.0/plugin.schema.json) | Same | 2026-09-28 | Schema fetched; semantic requirements also exist; host support still needs independent evidence. |
 | A02 | [Agent Skills specification](https://agentskills.io/specification) | Same | 2026-09-28 | Portable conventions; host extensions and enforcement differ. |
-| S01 | [ISO/IEC/IEEE 12207:2026](https://www.iso.org/standard/90219.html) | Same | 2026-09-28 | Public catalog/abstract; full copyrighted text not reviewed. |
-| S02 | [ISO/IEC/IEEE 29148:2018](https://www.iso.org/standard/72089.html) | Same | 2026-09-28 | Published edition with DIS replacement in development; not the draft as baseline. |
-| S03 | [ISO/IEC 25010:2023](https://www.iso.org/standard/78176.html) | Same | 2026-09-28 | Public product-quality abstract; no clause-level mapping. |
-| S04 | [ISO/IEC/IEEE 29119-1:2022](https://www.iso.org/standard/81291.html) | Same | 2026-09-28 | Part 1 only; do not call all of 29119 a single edition. |
-| S05 | [ISO/IEC/IEEE 29119-2:2021](https://www.iso.org/standard/79428.html) | Same | 2026-09-28 | Test-process catalog/abstract only. |
-| S06 | [ISO/IEC/IEEE 29119-3:2021](https://www.iso.org/standard/79429.html) | Same | 2026-09-28 | Test-documentation catalog/abstract only; no copied templates. |
-| S07 | [ISO/IEC/IEEE 29119-4:2021](https://www.iso.org/standard/79430.html) | Same | 2026-09-28 | Test-technique catalog/abstract only. |
+| S01 | [ISO/IEC/IEEE 12207:2026](https://www.iso.org/standard/90219.html) | Same | 2026-09-29 | Public catalog/abstract; full copyrighted text not reviewed. |
+| S02 | [ISO/IEC/IEEE 29148:2018](https://www.iso.org/standard/72089.html) | Same | 2026-09-29 | Published edition with DIS replacement in development; not the draft as baseline. |
+| S03 | [ISO/IEC 25010:2023](https://www.iso.org/standard/78176.html) | Same | 2026-09-29 | Public product-quality abstract; no clause-level mapping. |
+| S04 | [ISO/IEC/IEEE 29119-1:2022](https://www.iso.org/standard/81291.html) | Same | 2026-09-29 | Part 1 only; do not call all of 29119 a single edition. |
+| S05 | [ISO/IEC/IEEE 29119-2:2021](https://www.iso.org/standard/79428.html) | Same | 2026-09-29 | Test-process catalog/abstract only. |
+| S06 | [ISO/IEC/IEEE 29119-3:2021](https://www.iso.org/standard/79429.html) | Same | 2026-09-29 | Test-documentation catalog/abstract only; no copied templates. |
+| S07 | [ISO/IEC/IEEE 29119-4:2021](https://www.iso.org/standard/79430.html) | Same | 2026-09-29 | Test-technique catalog/abstract only. |
 | S08 | [ISO/IEC 27001:2022](https://www.iso.org/standard/27001) | Same | 2026-09-28 | Management-system reference, not product certification. |
 | S09 | [ISO/IEC 27001:2022/Amd 1:2024](https://www.iso.org/standard/88435.html) | Same | 2026-09-28 | Amendment identified separately; no clause reproduction. |
 | S10 | [ISO/IEC 42001:2023](https://www.iso.org/standard/42001) | Same | 2026-09-28 | Management-system reference; no organizational conformity assessment. |
@@ -112,6 +113,37 @@ The [Kiyo AST controls](../../src/kiyo/agent-security/owasp-ast10.md) and
 [scenario specifications](../../tests/behavioral/agent-security/scenarios.md)
 are authored interpretations/expected behavior. Execution remains NOT_RUN;
 native targets remain NOT_TESTED. See [P07 checks](../build/BASELINE.md#prompt-07-checks).
+
+## Prompt 09 engineering and profile sources
+
+S01–S07 were retrieved again on **2026-09-29**. Their requested ISO URLs remained
+the final displayed URLs; published editions remain 12207:2026, 29148:2018,
+25010:2023, 29119-1:2022 and 29119-2/3/4:2021 (each edition 2). The 29148 DIS
+remains in development. Public catalogue metadata/abstracts only were inspected;
+no full-text or clause-level review is claimed. Other source dates are unchanged.
+
+| ID | Requested official URL | Final URL / redirect | Checked | Limit / use |
+| --- | --- | --- | --- | --- |
+| E01 | [Microsoft .NET SDK selection](https://learn.microsoft.com/en-us/dotnet/core/tools/global-json) | Same; no redirect reported | 2026-09-29 | SDK selection is distinct from target framework/runtime; no local SDK/version established. |
+| E02 | [Microsoft .NET testing overview](https://learn.microsoft.com/en-us/dotnet/core/testing/) | Same; no redirect reported | 2026-09-29 | Test platform and framework are separate; no project runner/framework choice or safe command established. |
+| E03 | [Angular workspace configuration](https://angular.dev/reference/configs/workspace-config) | Same; no redirect reported | 2026-09-29 | Angular CLI workspace/project/build-target scope; not evidence that all repositories use this layout or current APIs. |
+| E04 | [PyPA pyproject.toml guide](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/) | Same; no redirect reported | 2026-09-29 | Metadata, build configuration and Python constraints; examples do not select a backend, package manager or framework. |
+| E05 | [PostgreSQL transactions](https://www.postgresql.org/docs/current/tutorial-transactions.html) | Same; no redirect reported | 2026-09-29 | Current alias rendered documentation 18; not target-version evidence or a guarantee every migration is reversible. |
+| E06 | [PostgreSQL libpq execution](https://www.postgresql.org/docs/current/libpq-exec.html) | Same; no redirect reported | 2026-09-29 | Current alias rendered documentation 18; separate value parameters documented for libpq, not every driver's API. |
+
+All six profile sources are DOCUMENTED_ONLY. Read the relevant source body, not
+just search snippets. Microsoft's SDK page displayed an authorization banner
+alongside readable public article text; the public body supplied the observation,
+without sign-in or privileged access. PostgreSQL's current aliases are moving
+URLs even when no redirect occurs; recheck against an actually observed target
+version before using version-specific APIs.
+
+These sources support discovery guidance in the
+[packaged engineering/profile selection](../../src/kiyo/framework/engineering/index.md).
+They do not prove stack support, command safety or native-host behavior. The
+[concept mapping](../../src/kiyo/framework/engineering/standards-mapping.md)
+retains N01's 2026-09-28 and W01's Prompt 07 2026-09-29 dates; neither was
+revalidated by Prompt 09. No dependencies were installed or database contacted.
 
 ## Retrieval failures and recovery
 

@@ -21,6 +21,12 @@ adaptive/implementation/read-only flows and bounded repair/handoff guidance.
 Thirty routing rows and nine recovery/flow specifications are developer-only
 expected behavior, NOT_RUN; no executable router or public skill is created.
 
+Prompt 09 adds [six engineering standards](framework/engineering/index.md),
+a dated concept-to-rule/evidence mapping, four optional stack profiles and the
+[extension contract](profiles/extension-contract.md). React/Java/company examples
+are bounded outlines, not full supported recipes. Sixteen developer-only scenario
+specifications remain NOT_RUN; no stack/runtime/package is installed.
+
 Follow [framework layout](../../docs/architecture/framework-layout.md),
 [content loading](../../docs/architecture/content-loading.md) and
 [packaging contract](../../docs/architecture/packaging-contract.md) as their

@@ -61,6 +61,14 @@ grant access, spawn agents or create a runtime. The default limit is two
 unsuccessful repair cycles, with material scope reassessment and honest evidence.
 No publication or later public-skill implementation is authorized by this task.
 
+Prompt 09 was subsequently authorized on 2026-09-29: author six actionable
+engineering standards, four optional stack profiles, extension guidance and
+concept-to-rule/evidence mapping; check/update build state and stop before
+Prompt 10. Standards live in framework/engineering and profiles in profiles,
+inside the previously selected shared payload trees. This is an implementation
+of ADR-001, not a new architecture or authority hierarchy. No forced library,
+modernization, package upgrade, database operation or release identity is approved.
+
 ## Pending owner decisions
 
 | ID | Decision | Current evidence / status | Who decides | Latest needed / effect | Resolution evidence |
@@ -71,7 +79,7 @@ No publication or later public-skill implementation is authorized by this task.
 | DEC-004 | Treatment of Codex IDE native-plugin support gap | OPEN. Official [plugin documentation](https://learn.chatgpt.com/docs/plugins) excludes IDE plugins; [skills documentation](https://learn.chatgpt.com/docs/build-skills) supports standalone IDE skills. Checked 2026-09-28; DOCUMENTED_ONLY, live NOT_TESTED | Repository/product owner | Before promising six-target native installation or accepting a standalone fallback; does not block Prompt 03 design of documented surfaces | No fallback or scope reduction approved |
 
 Ask only when an unresolved choice blocks the current authorized prompt. Existing
-instructions authorize Prompt 06 governance and build-state updates. Do not ask for
+instructions authorize Prompt 09 engineering/profile and build-state updates. Do not ask for
 premature publication decisions to complete that scope. Publication metadata still
 requiring confirmation is listed in [SOURCES](../research/SOURCES.md#publication-information-still-requiring-the-owner).
 

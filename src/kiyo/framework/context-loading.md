@@ -21,6 +21,12 @@ For task selection, mixed intent or a skill/output mismatch, consult the shared
 [Workflow Router](../workflows/workflow-router.md). It selects a logical procedure,
 not native activation or permission; do not load every flow for a tiny task.
 
+For behavior, code or quality work, use [engineering reference selection](engineering/index.md)
+to choose just the affected checklist/profile. Profiles require actual component
+version/config/toolchain/architecture discovery; they never install a preset or
+authorize modernization. The concept mapping is optional rationale, not an
+initial mandatory load.
+
 The bootstrap's reference map and control index are lookup aids, not a request to
 read all framework files. Load a linked section when its condition matters.
 Missing/unreadable resources require a scoped limitation and a pause on dependent

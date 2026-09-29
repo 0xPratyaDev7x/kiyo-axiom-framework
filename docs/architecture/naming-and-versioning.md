@@ -39,7 +39,8 @@ the evidence/knowledge-class control. Prompt 05 adds KIYO-MEM-002 through
 KIYO-MEM-007 without renumbering the original controls. Prompt 06 adds nine
 governance controls. Prompt 07 adds KIYO-SEC-001 through KIYO-SEC-010;
 Prompt 08 adds KIYO-ROUTE-001 and KIYO-FLOW-001 through KIYO-FLOW-005;
-the index now has 47 IDs. AST taxonomy labels remain external mapping IDs,
+Prompt 09 adds KIYO-ENG-002 through KIYO-ENG-007 and KIYO-PROF-001;
+the index now has 54 IDs. AST taxonomy labels remain external mapping IDs,
 not Kiyo control numbers or ASI identifiers. G1–G4 are advisory Kiyo modes,
 not standards identifiers or native permission settings.
 
@@ -50,10 +51,12 @@ them. Do not renumber after moving a file, reuse retired IDs or change an ID's
 meaning silently. Add a new ID for a different obligation and retain a migration
 record for the old one. Correcting prose without changing meaning keeps the ID.
 
-ISO/NIST/OWASP references are dated concept mappings in developer documentation,
-not control-number namespaces, runtime dependencies or claimed certification.
-Use the [standards baseline](../research/standards-baseline.md), source check
-2026-09-28, with its edition, draft and lawful-public-metadata limits. Do not
+ISO/NIST/OWASP research is recorded in developer documentation. Prompt 09 adds an
+optional packaged [concept mapping](../../src/kiyo/framework/engineering/standards-mapping.md)
+for engineering rationale; neither mapping is a control-number namespace, runtime
+dependency or claimed certification.
+Use the [standards baseline](../research/standards-baseline.md), original source check
+2026-09-28 and scoped Prompt 07/09 refreshes, with their edition, draft and lawful-public-metadata limits. Do not
 invent clause numbers or copy protected standards text. Supporting references
 and the conditional ISO 5338 scope remain as recorded there.
 

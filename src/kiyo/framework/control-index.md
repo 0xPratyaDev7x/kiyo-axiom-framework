@@ -57,6 +57,14 @@ REQ references identify requirement scope, not full acceptance or a runtime impo
 | KIYO-FLOW-004 | [Classify failures and bound repair cycles](../workflows/repair-and-handoff.md#kiyo-flow-004--classify-failures-and-bound-repair-cycles) | REQ-029, REQ-039, REQ-040 | ACTIVE / none |
 | KIYO-FLOW-005 | [Handoff facts and authorized next actions](../workflows/repair-and-handoff.md#kiyo-flow-005--handoff-facts-and-authorized-next-actions) | REQ-014, REQ-044, REQ-045 | ACTIVE / none |
 
+| KIYO-ENG-002 | [Make behavior and acceptance traceable](engineering/requirements.md#kiyo-eng-002--make-behavior-and-acceptance-traceable) | REQ-031, REQ-032 | ACTIVE / none |
+| KIYO-ENG-003 | [Preserve safe boundaries and explicit design intent](engineering/architecture.md#kiyo-eng-003--preserve-safe-boundaries-and-explicit-design-intent) | REQ-033, REQ-035 | ACTIVE / none |
+| KIYO-ENG-004 | [Keep changed code clear, bounded and safe](engineering/coding.md#kiyo-eng-004--keep-changed-code-clear-bounded-and-safe) | REQ-033, REQ-036, REQ-053 | ACTIVE / none |
+| KIYO-ENG-005 | [Match checks to behavior, risk and observed results](engineering/testing.md#kiyo-eng-005--match-checks-to-behavior-risk-and-observed-results) | REQ-038, REQ-040, REQ-041 | ACTIVE / none |
+| KIYO-ENG-006 | [Evaluate affected quality with proportionate evidence](engineering/quality.md#kiyo-eng-006--evaluate-affected-quality-with-proportionate-evidence) | REQ-036, REQ-056 | ACTIVE / none |
+| KIYO-ENG-007 | [Preserve human work and keep the diff necessary](engineering/change-scope.md#kiyo-eng-007--preserve-human-work-and-keep-the-diff-necessary) | REQ-030, REQ-034 | ACTIVE / none |
+| KIYO-PROF-001 | [Bind profiles to evidence without forcing a stack](../profiles/extension-contract.md#kiyo-prof-001--bind-profiles-to-evidence-without-forcing-a-stack) | REQ-037, REQ-054 | ACTIVE / none |
+
 Keep IDs when files move or wording is clarified. Never renumber or reuse retired
 IDs. A materially different obligation needs a new ID and explicit migration/
 replacement history. Skills cite this index or canonical definitions; they do not

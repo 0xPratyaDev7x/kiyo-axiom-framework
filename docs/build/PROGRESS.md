@@ -1,9 +1,41 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **08 Router/Flow**.
-Task status: **DONE** for Prompt 08; scoped static routing/flow checks passed.
-Product status: shared Core/Memory/governance/security and workflow guidance authored;
-native packages/public skills remain unimplemented. A policy engine is outside the product boundary.
+Snapshot: 2026-09-29. Current prompt: **09 Engineering/Profiles**.
+Task status: **DONE** for Prompt 09; scoped static engineering/profile checks passed.
+Product status: shared Core/Memory/governance/security/workflow/engineering guidance
+and optional profiles authored; native packages/public skills remain unimplemented.
+Runtime/policy engines are outside the product boundary.
+
+## Prompt 09 delivered scope
+
+- Added [six actionable engineering standards](../../src/kiyo/framework/engineering/index.md):
+  requirements, architecture, coding, testing, quality and change scope.
+  Conditional selection preserves compact Core and read-only/write boundaries.
+- Added optional [.NET](../../src/kiyo/profiles/dotnet.md),
+  [Angular](../../src/kiyo/profiles/angular.md), [Python](../../src/kiyo/profiles/python.md)
+  and [PostgreSQL](../../src/kiyo/profiles/postgresql.md) profiles, each starting with
+  actual version/config/toolchain/architecture discovery. No forced libraries,
+  unsolicited architecture migration, package upgrades or database execution.
+- Added [profile extension contract](../../src/kiyo/profiles/extension-contract.md)
+  with bounded React/Java/company outlines, not full/tested stack recipes.
+- Added [concept → Kiyo rule → expected evidence mapping](../../src/kiyo/framework/engineering/standards-mapping.md).
+  Rechecked S01–S07 public ISO catalogues and recorded E01–E06 official profile
+  sources on 2026-09-29; DOCUMENTED_ONLY, no clauses/certification or exact ISO
+  quality-taxonomy claim. Other source check dates remain scoped.
+- Added seven controls (54 total) and
+  [16 synthetic engineering/profile scenarios](../../tests/behavioral/engineering/scenarios.md),
+  all NOT_RUN. Updated relevant loading/architecture/source/build records.
+  No runtime, public skill, manifest, dependency installation or consumer generator.
+
+Coverage: partial instruction implementation for REQ-031–038/053/056;
+REQ-080 continuity updated. Current totals: 64 PARTIALLY_IMPLEMENTED /
+16 NOT_IMPLEMENTED; all 80 full requirement verifications remain NOT_RUN.
+The four new partial rows are REQ-031/036/037/038. Public skills remain pending;
+all six native targets remain NOT_TESTED.
+
+Checks: [Prompt 09 evidence](BASELINE.md#prompt-09-checks).
+Memory Impact: **NONE for project memory**; no project memory/policy initialized
+or synced. Publication decisions remain open and do not block Prompt 10 authoring.
 
 ## Prompt 08 delivered scope
 
@@ -274,7 +306,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 06 | Governance | DONE | P06-C01–C07 PASS; static policies/documentation only, decision examples NOT_RUN |
 | 07 | Security | DONE | P07-C01–C07 PASS; static controls/procedures/templates only, scenarios NOT_RUN |
 | 08 | Router/Flow | DONE | P08-C01–C07 PASS; static procedures/truth-table checks only, behavioral execution NOT_RUN |
-| 09 | Engineering/Profiles | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 09 | Engineering/Profiles | DONE | P09-C01–C07 PASS; static standards/profiles/mapping only, scenarios NOT_RUN |
 | 10 | Verification/DoD | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 11 | Init | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 12 | Requirement | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -305,8 +337,8 @@ Outstanding owner decisions: DEC-001 final name, DEC-002 release license,
 DEC-003 publisher/destination and DEC-004 treatment of Codex IDE's native-plugin
 gap before compatibility/release claims. See OPEN-ISSUES for technical gaps.
 
-Safe to continue: **YES for a user-requested Prompt 09 Engineering/Profiles**.
-Shared Core/Memory/governance/security/flows are ready; owner/native support
+Safe to continue: **YES for a user-requested Prompt 10 Verification/DoD**.
+Shared standards/profiles and preceding controls are ready; owner/native support
 decisions do not block that scope. This does not authorize later work or execution.
-Next prompt: **09 Engineering/Profiles**, only when requested by the user.
+Next prompt: **10 Verification/DoD**, only when requested by the user.
 

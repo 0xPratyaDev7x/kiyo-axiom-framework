@@ -43,6 +43,8 @@ covers the check's effects; do not ask again merely because the stage changed.
 Reuse [Core authority](../framework/trust-and-authority.md),
 [Memory lifecycle](memory-lifecycle.md), [Governance Review](../governance/ai-usage.md)
 and the relevant [application security checklist](../agent-security/application-security.md).
+Select the relevant [engineering checks and stack profile](../framework/engineering/index.md)
+from inspected task/component evidence; do not load all standards/profiles.
 Do not duplicate their detailed policies or load irrelevant references.
 Existing insecure patterns should be flagged with a scoped safer proposal.
 

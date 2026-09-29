@@ -15,14 +15,14 @@ One canonical specification with necessary self-contained native overlays.
 
 ## Current repository observation
 
-Observed for Prompt 08 on 2026-09-29:
+Observed for Prompt 09 on 2026-09-29:
 
 - Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework
-- Branch: main; HEAD: 5eb5aef532d83f4cc696b7e1e265c56f3871b37c.
+- Branch: main; HEAD: 372fd7a58ee51bbb98aef1c95940b84c39b8fe49.
 - Initial working tree and index clean; tracked LICENSE, eight build files and
   five research/compatibility files, six architecture documents, source README,
-  37 product files and two behavioral specification files (59 Markdown files total).
-  Prompt 07 was committed before this work;
+  42 product files and three behavioral specification files (65 Markdown files total).
+  Prompt 08 was committed before this work;
   previous checkout/HEAD/uncommitted snapshots are historical, not current facts.
 - No applicable AGENTS.md found in repository or checked ancestors; no .kiyo
   project/product memory present.
@@ -32,7 +32,7 @@ Observed for Prompt 08 on 2026-09-29:
   unreadable global ignores.
 - LICENSE blob remains d2e60c5b160ed4f9ca096215e72efee5769936b1.
 - No product version file, manifest or Git tag found in the scoped inventory.
-- Prompt 08 creates six Markdown files and changes eleven existing Markdown files. No commits,
+- Prompt 09 creates fourteen Markdown files and changes fourteen existing Markdown files. No commits,
   tags, pushes, installs, publication or global settings changes were made here.
 
 Recheck root, branch, index, unstaged/untracked changes and user edits on resume.
@@ -75,7 +75,13 @@ Preserve LICENSE and the 80 original requirements. See BASELINE for check result
     [repair/handoff](../../src/kiyo/workflows/repair-and-handoff.md) and
     [routing/flow specifications](../../tests/behavioral/routing/truth-table.md).
 
-Prompt 02 native/other standards checks remain dated 2026-09-28. Prompt 07
+13. [Engineering selection](../../src/kiyo/framework/engineering/index.md), relevant
+    standards/profiles, [concept mapping](../../src/kiyo/framework/engineering/standards-mapping.md)
+    and [engineering/profile scenarios](../../tests/behavioral/engineering/scenarios.md).
+
+Prompt 02 native checks and unrefreshed standards remain dated 2026-09-28.
+Prompt 09 rechecked S01–S07 and added E01–E06 on 2026-09-29; public documentation
+only, not licensed ISO text or actual stack verification. Prompt 07
 rechecked AST/ASVS and the separate ASI announcement on 2026-09-29; see SOURCES.
 Revalidate volatile schema details before
 implementing native packages; use native references, not old chat, local skill
@@ -121,6 +127,14 @@ routing rows and nine flow/recovery specifications. Status: **DONE** for shared
 router/flow guidance; scoped static checks passed; see [Prompt 08 evidence](BASELINE.md#prompt-08-checks).
 Router and flows are Markdown only; examples are NOT_RUN, not native dispatch.
 
+Prompt 09 adds eight engineering references (six standards, selection and mapping),
+four stack profiles plus an extension contract, seven controls (54 total) and
+16 synthetic developer scenarios. Status: **DONE** for engineering/profile
+guidance; static checks passed; see [Prompt 09 evidence](BASELINE.md#prompt-09-checks).
+S01–S07 official catalogue metadata and E01–E06 profile sources were checked.
+No full ISO text, exact taxonomy, certification, executed stack support or
+automatic package installation is claimed.
+
 No native version, account availability or installed-tool absence is inferred from the
 assistant session. Each of Claude CLI, Claude VS Code, Codex CLI, Codex IDE,
 Copilot CLI and Copilot VS Code remains **NOT_TESTED** live.
@@ -138,7 +152,10 @@ Prompt 07 adds partial security guidance; current totals are 55 PARTIALLY_IMPLEM
 and 25 NOT_IMPLEMENTED. REQ-073 has shared input only; public Security skill pending.
 Prompt 08 adds partial router/flow guidance; current totals are 60 PARTIALLY_IMPLEMENTED
 and 20 NOT_IMPLEMENTED. REQ-026/068–075 get routing/shared-flow inputs only;
-no public skill acceptance is promoted. All full requirement verifications remain NOT_RUN.
+no public skill acceptance is promoted.
+Prompt 09 adds partial instruction coverage for REQ-031–038/053/056 and updates
+REQ-080 continuity. Current totals: 64 PARTIALLY_IMPLEMENTED / 16 NOT_IMPLEMENTED;
+REQ-031/036/037/038 newly partial. All full requirement verifications remain NOT_RUN.
 
 ## Research findings to retain
 
@@ -165,7 +182,7 @@ no public skill acceptance is promoted. All full requirement verifications remai
 
 Open decisions: DEC-001 name/identifiers, DEC-002 release-license confirmation,
 DEC-003 publisher/account/destination, DEC-004 unsupported IDE route.
-They do not block the next Engineering/Profiles scope under the selected architecture; they do block
+They do not block the next Verification/DoD scope under the selected architecture; they do block
 dependent release identities, claims or unapproved fallback choices.
 
 Memory Impact: **NONE for project memory**. Build continuity/specification choices
@@ -179,12 +196,13 @@ are recorded in docs/build; no .kiyo/memory initialized or changed.
   Core now includes the Memory specification and shared lifecycle; eight neutral
   Memory templates and governance policies/shared review procedure now exist.
   Agent-security references and four optional governance-record templates also
-  exist, together with five router/flow references. Other workflows/templates,
-  profiles and all public skills remain unimplemented.
+  exist, together with five router/flow references, six engineering standards plus
+  selection/mapping, four profiles and an extension contract. Other workflows/
+  templates and all public skills remain unimplemented.
   Do not mistake synthetic scenarios for executed behavior.
 - Core IDs use `KIYO-<DOMAIN>-<NNN>`, independent of standard clauses. The actual
-  47-control index points to canonical definitions (16 Core, six Memory, nine
-  governance, ten security and six routing/flow IDs). ACTIVE means authored, not
+  54-control index points to canonical definitions (16 Core, six Memory, nine
+  governance, ten security, six routing/flow and seven engineering/profile IDs). ACTIVE means authored, not
   behaviorally verified; do not duplicate rules across later skills.
 - Canonical frontmatter is name/description. Native-only fields belong in
   overlays, advisory permission/mode contracts in Markdown. No Kiyo runtime.
@@ -205,7 +223,7 @@ are recorded in docs/build; no .kiyo/memory initialized or changed.
 - Do not generate manifests, public skills, release versions or all later trees
   to make scaffolding look complete. Keep schema gaps and owner decisions open.
 
-## Shared boundaries for Prompt 09
+## Shared boundaries for Prompt 10
 
 Use Memory as context, validate material claims, preserve approved intent and
 surface conflicting sources through the real native hierarchy. Do not treat
@@ -290,16 +308,29 @@ Handoff keeps facts, next action, true approval scope and attempt history, never
 private reasoning or a write in read-only mode. All 30 routing rows and nine flow
 cases remain NOT_RUN; no public/native route has been implemented or verified.
 
+Engineering standards are conditional shared references in framework/engineering.
+Use existing safe architecture, minimal diff and human-edit preservation; flag
+insecure patterns instead of copying them. Quality grouping is Kiyo's adaptation,
+not exact ISO taxonomy. Distinguish requirements/proposals from approved intent
+and actual checks from expected evidence. No new textbook or mandatory full read.
+
+Every profile starts with actual version/config/toolchain/architecture discovery.
+Retain project-selected .NET packages/tests, Angular forms/state/style, Python
+manager/framework/tests and PostgreSQL migration tooling. Presets are opt-in;
+migration-file authoring is separate from execution. React/Java/company examples
+are extension outlines only. All 16 engineering cases remain NOT_RUN; source
+containment checks do not establish relocated-cache behavior or actual stack support.
+
 ## Exact next action
 
-Prompt 08 is complete within its static routing/flow scope; stop here.
-**Next: Prompt 09 Engineering/Profiles**, only when supplied by the user. Recheck
-repository and read the files above; implement only that prompt's engineering/
-profile scope, reusing shared Core/Memory/governance/security/flows.
+Prompt 09 is complete within its static engineering/profile scope; stop here.
+**Next: Prompt 10 Verification/DoD**, only when supplied by the user. Recheck
+repository and read the files above; implement only that prompt's verification/
+completion scope, reusing shared Core/Memory/governance/security/flows/engineering.
 Do not infer authorization for dangerous execution, project policy/memory
 initialization, public skills, native overlays, generators or release work.
 
-Safe to continue: **YES for a user-requested Prompt 09 Engineering/Profiles**.
+Safe to continue: **YES for a user-requested Prompt 10 Verification/DoD**.
 Its shared instruction inputs are ready. Publication, unsupported native routes,
 dangerous execution and live support claims remain outside scope.
 

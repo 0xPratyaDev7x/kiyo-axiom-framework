@@ -507,3 +507,66 @@ read-only mutation prevention or repair/handoff behavior is claimed from the
 truth table. No runtime, native setting change, commit, tag, push or publication.
 Memory Impact: NONE for project memory; build continuity is updated in docs/build,
 without initializing or syncing project memory/policy.
+
+## Prompt 09 repository observation
+
+Observed 2026-09-29 (Asia/Bangkok), before Prompt 09 edits:
+
+- Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework.
+- Branch main; HEAD 372fd7a58ee51bbb98aef1c95940b84c39b8fe49, subject
+  “Enhance Kiyo workflows and documentation”. Prompt 08 was committed before this step.
+- Worktree/index clean; 65 Markdown files plus LICENSE, including 42 product
+  Markdown files excluding the developer README and three behavioral specifications.
+- Read Build Contract, relevant requirements/build state, Core, standards research,
+  existing shared flows and canonical layout/packaging boundaries. No applicable
+  AGENTS.md found in the scoped repository/ancestor check; no .kiyo state initialized.
+- Per-command exact-root safe.directory and empty core.excludesFile were used;
+  no global Git setting was changed. No live host/account/stack availability
+  is inferred from this assistant session.
+
+## Prompt 09 checks
+
+Executed 2026-09-29 (Asia/Bangkok), against the Prompt 09 working tree. PASS means
+scoped static authoring/review, not an engineering scenario, native installation,
+stack execution, ISO conformity or runtime result. Inline Python validation and
+read-only Git were used; no persistent test harness/dependency was introduced.
+
+| Check | Result | Actual evidence and limitation |
+| --- | --- | --- |
+| P09-C01 Repository and required context | PASS | Verified root/main/HEAD, initial clean index/worktree and 65-Markdown baseline. Read contract, Core, standards research, relevant requirements/architecture and build state before authoring. Current checkout facts replace only current handoff facts; prior check history is retained. |
+| P09-C02 Standards and source mapping | PASS | Six nonempty engineering checklists cover requested requirement fields, safe architecture/contracts/ADR proposals, coding concerns, risk-based check types/evidence, contextual quality and minimal scope. Nine concept-mapping rows include rule, expected evidence, source, date and limits. Retrieved S01–S07 public ISO catalogues on 2026-09-29; final displayed URLs unchanged. Published editions recorded without clause numbers/full-text or certification claims; SSDF/ASVS retain earlier scoped research dates. |
+| P09-C03 Profiles and specifications | PASS | Four profiles start with actual version/config/toolchain/architecture discovery; explicit .NET opt-in packages, Angular forms/state/style preservation, Python tool preservation and PostgreSQL draft/execute separation inspected. E01–E06 retrieved from official documentation; final displayed URLs unchanged, PostgreSQL current aliases showed documentation 18 without establishing project versions. Extension contract bounds React/Java/company examples. Checked 16 sequential five-column ENG scenario rows, all NOT_RUN; no application fixture, stack test or database operation executed. |
+| P09-C04 Resource closure and budgets | PASS | Strict UTF-8/conflict-marker checks across 79 Markdown files; ordinary relative links and heading anchors resolve. All 275 product-internal links remain inside 55 product files, excluding developer README; 29 optional citations are provenance, not required online loads. No absolute developer path, symlink or reparse resource found. Seven new canonical controls bring the index to 54 unique IDs. KIYO.md plus bootstrap.md unchanged at 81 lines / 579 words. Source closure is not an installed-cache/live loading trial. |
+| P09-C05 Scoped author review | PASS | Inspected legacy/no-forced-library/no-tiny-upgrade cases, insecure-pattern reporting, human-edit reread/preservation, contextual loads, proposal/approval distinction, read-only intent, script effects/unknown DB target, baseline/new/environment attribution, production-evidence limits and honest NOT_RUN status. Reviewed concept adaptation versus exact ISO taxonomy and profile/version boundaries. Author review is not independent review, security certification or proof an agent follows the guidance. |
+| P09-C06 Traceability and closure | PASS | Preserved 80 unique original requirements and 80 ten-column trace rows; 11 rows link P09 checks. REQ-031–038/053/056 receive partial shared-guidance coverage; REQ-080 continuity updated. Four newly partial rows yield 64 PARTIALLY_IMPLEMENTED / 16 NOT_IMPLEMENTED, all full verification NOT_RUN. Prompt 09 DONE and Prompt 10 NOT_STARTED; nine issues and four owner decisions retained. Public skills/full stack acceptance are not promoted. |
+| P09-C07 Scope and preservation | PASS | Fourteen new and fourteen modified Markdown files only; git diff --check passed, index empty, HEAD unchanged, no tags. LICENSE blob d2e60c5b160ed4f9ca096215e72efee5769936b1 unchanged. Contract, requirement registry, native compatibility, ADR/packaging, Core entry/bootstrap/trust/activation/Memory, governance/security/templates, prior scenarios and other flow files preserved. No .kiyo, native overlays, tools, dist, SKILL.md, dependency/runtime or non-Markdown addition. Six live targets remain NOT_TESTED. |
+
+New files: eight references under src/kiyo/framework/engineering, five under
+src/kiyo/profiles and tests/behavioral/engineering/scenarios.md. Modified files:
+six build records (PROGRESS, HANDOFF, TRACEABILITY, OPEN-ISSUES, DECISIONS, BASELINE),
+research SOURCES/standards-baseline, architecture layout/naming, source README,
+Core context-loading/control-index and the implementation flow's conditional link.
+
+Reproduce the static review over these files and the existing payload tree:
+strict UTF-8, conflict markers, links/heading anchors outside code fences,
+product-contained operational references, optional citation scope, unique canonical
+IDs, unchanged bootstrap budgets, profile entry/opt-in bounds, six checklists,
+mapping provenance, sequential NOT_RUN scenarios and registry/build-state counts.
+Git checks use rev-parse --show-toplevel/HEAD, branch --show-current, log -1,
+status --short --untracked-files=all, diff --stat/--check/--name-only, diff --cached,
+protected-path diffs, ls-files --others --exclude-standard, hash-object -- LICENSE
+and tag --list with scoped overrides. Inline validator exits 0 with PASS.
+
+The initial link check found punctuation in two newly generated control-index
+fragments; both were corrected before the passing rerun. A subsequent validator
+assertion was adjusted to compare whitespace-normalized wrapped prose; no scenario
+was executed by that assertion. Some large context/tool results were truncated;
+focused reads/finds supplied the needed evidence rather than treating missing
+output as observed. Final validation includes the closing build records.
+
+Static documentation/review: PASS in this scope. Behavioral/profile execution:
+NOT_RUN. Native package checks: NOT_RUN. Each of six live targets: NOT_TESTED.
+No source catalogue, Markdown parser or authored scenario proves agent compliance,
+safe database behavior, version compatibility or a standards assessment.
+Memory Impact: NONE for project memory; only docs/build continuity is updated.
+No commit, tag, push, publication, package upgrade or Prompt 10 work performed.
