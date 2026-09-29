@@ -17,7 +17,7 @@ publisher. Obtain the complete prepared payload, not only SKILL.md or platforms/
 | Claude Code CLI | [Claude ZIP](../../dist/archives/kiyo-axiom-framework-claude-development.zip); load its extracted kiyo-axiom-framework root with session-only --plugin-dir | Directory/ZIP metadata discovery VERIFIED on 2.1.220; invocation NOT_TESTED |
 | Claude Code VS Code | Same Claude payload; Claude panel /plugins for an actual approved marketplace/source | DOCUMENTED_ONLY; Kiyo UI install NOT_TESTED; no ready public source supplied |
 | Codex CLI | [Codex ZIP](../../dist/archives/kiyo-axiom-framework-codex-development.zip); register an approved local catalog, install its actual plugin ID, start a new session | Disposable local install/cache/uninstall VERIFIED on 0.158.0; agent behavior NOT_TESTED |
-| Codex IDE Extension | No supported native plugin route | UNSUPPORTED; do not silently copy Skills into a global directory as a fallback |
+| Codex IDE Extension | [Standalone skills](../../dist/codex-ide/.agents/skills); copy the eight kiyo-* folders into `<repo>/.agents/skills/` or `$HOME/.agents/skills/`, then open a new chat ([steps](../../platforms/codex-ide/README.md#install-user)) | Native plugins UNSUPPORTED, so this is the standalone-skill route (DEC-004); discovery DOCUMENTED_ONLY; Kiyo use NOT_TESTED |
 | GitHub Copilot CLI | [Copilot ZIP](../../dist/archives/kiyo-axiom-framework-copilot-development.zip); native direct-directory install or actual approved catalog | DOCUMENTED_ONLY; native storage can be user-scoped, not a promised project-only install |
 | GitHub Copilot VS Code | Same Copilot payload; approved source through Agent Plugins UI, or documented local plugin location in an explicitly chosen settings scope | DOCUMENTED_ONLY; NOT_TESTED; agent plugin, not a VSIX |
 
@@ -68,7 +68,7 @@ Mode words such as assess or sync are plain intent, not a promised host parser.
 | Claude CLI | /kiyo-axiom-framework:init; replace init with the chosen slug | DOCUMENTED_ONLY |
 | Claude VS Code | Same namespaced selector in the Claude panel | DOCUMENTED_ONLY, independent of CLI |
 | Codex CLI | Open /skills or the $ picker and select the entry from Kiyo | DOCUMENTED_ONLY; exact qualified spelling UNKNOWN |
-| Codex IDE | No Kiyo native plugin selector | UNSUPPORTED |
+| Codex IDE | Open /skills or type $kiyo-init; replace init with the chosen slug | DOCUMENTED_ONLY; standalone skills, not a plugin |
 | Copilot CLI | Use /skills list and /skills info to identify the Kiyo source, then its actual exposed selector | Generic /<skill-name> documented; Kiyo qualification UNKNOWN |
 | Copilot VS Code | /kiyo-axiom-framework:init, or choose the Kiyo entry in Configure Skills | DOCUMENTED_ONLY |
 

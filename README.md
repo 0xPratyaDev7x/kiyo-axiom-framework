@@ -48,7 +48,7 @@ activation test. [Exact results and limitations](docs/compatibility/live-test-ma
 | Claude Code CLI | VERIFIED: 2.1.220 normal validation and directory/ZIP discovery of eight Skills | Strict validation FAIL for missing version/author; persistent install and Skill behavior NOT_TESTED |
 | Claude Code VS Code | DOCUMENTED_ONLY plugin route; extension metadata observed | Kiyo installation, invocation and activation NOT_TESTED |
 | Codex CLI | VERIFIED: 0.158.0 disposable local catalog install, cache and uninstall | Skill behavior/update NOT_TESTED; public ingestion FAIL for unresolved release metadata |
-| Codex IDE Extension | UNSUPPORTED native plugins per official documentation | Standalone Skills are a different route; no Kiyo fallback approved |
+| Codex IDE Extension | DOCUMENTED_ONLY standalone-skill route ([dist/codex-ide](dist/codex-ide)); native plugins UNSUPPORTED | Kiyo discovery, invocation and activation NOT_TESTED |
 | GitHub Copilot CLI | DOCUMENTED_ONLY plugin route | Kiyo native checks NOT_TESTED; exact plugin-qualified Skill selector UNKNOWN |
 | GitHub Copilot VS Code | DOCUMENTED_ONLY agent-plugin route | Kiyo installation, selection and activation NOT_TESTED |
 
@@ -68,6 +68,11 @@ OS, account or IDE. Codex's observed fallback version 1.0.0 is not a Kiyo releas
    Codex ([.agents/plugins/marketplace.json](.agents/plugins/marketplace.json)):
    `codex plugin marketplace add 0xPratyaDev7x/kiyo-codejadee-framework`, then
    `codex plugin add kiyo-axiom-framework@kiyo-codejadee`.
+   Codex IDE extension (VS Code) cannot load plugins, so copy the eight
+   `kiyo-*` folders from [dist/codex-ide/.agents/skills](dist/codex-ide/.agents/skills)
+   into your repository's `.agents/skills/` (or `$HOME/.agents/skills/` for all
+   projects), open a new chat and type `$kiyo-init`
+   ([details](platforms/codex-ide/README.md)).
    GitHub Copilot ([.github/plugin/marketplace.json](.github/plugin/marketplace.json)):
    `copilot plugin marketplace add 0xPratyaDev7x/kiyo-codejadee-framework`, then
    `copilot plugin install kiyo-axiom-framework@kiyo-codejadee`.
