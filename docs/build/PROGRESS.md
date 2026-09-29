@@ -1,11 +1,33 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **22 Copilot**.
-Task status: **DONE** for the requested static distribution/documentation scope.
-Copilot offline checks pass; CLI and VS Code native results remain NOT_TESTED.
-Product status: eight canonical skills and three development distributions authored;
-live compatibility and full acceptance pending. No runtime engine.
-Historical Codex ingestion FAIL and owner-dependent release BLOCKED remain open.
+Snapshot: 2026-09-29. Current prompt: **23 Packaging/Parity**.
+Task status: **DONE** for scoped development packaging and static parity.
+Ten packaging result rows PASS; extra filesystem symlink probe BLOCKED by Windows.
+ZIP symlink rejection PASS. Native behavior remains independently NOT_TESTED.
+Codex ingestion FAIL and unsupported IDE route remain open. No runtime engine.
+
+## Prompt 23 delivered scope
+
+- Added [developer-only build tooling and a closed input allowlist](../architecture/distribution-build.md),
+  reusing the three native builders without changing schemas or adding dependencies.
+- Created [three actual ZIPs](../evidence/packaging/parity-report.md#artifacts-and-limitations):
+  794/795/794 files, eight Skills each. Two fresh builds produce identical inventories
+  and ZIP bytes; every extracted operational reference stays inside its payload.
+- [Isolation tests](../../tests/packaging/README.md) exercise paths with spaces,
+  source-denied standalone inspection, exact case, LF/CRLF, unsafe ZIP entries,
+  exclusion canaries, drift and no-op/overwrite preservation. Windows error 1314
+  blocks only the additional real filesystem symlink probe. No OS sandbox claim.
+- [Parity report](../evidence/packaging/parity-report.md) covers 68 controls plus
+  eight Skills in 456 independent target records. Content is distinct from behavior.
+- [Activation matrix](../compatibility/activation-matrix.md) keeps six targets separate.
+  Canonical Init guidance now makes scope, outdated-Core reporting and block-only
+  cleanup explicit; 24 generated copies were mechanically refreshed.
+
+Partial coverage: REQ-002/003/005/006/007/009/017/024/026/059/061/064/067/076–080.
+Totals: **79 PARTIALLY_IMPLEMENTED / 1 NOT_IMPLEMENTED**; all 80 full verifications
+remain NOT_RUN. [P23 checks](BASELINE.md#prompt-23-checks) and
+[actual evidence](../evidence/packaging/package-checks.md) retain all limits.
+No installation/publication or actual user-state write. Memory Impact: **NONE**.
 
 ## Prompt 22 delivered scope
 
@@ -771,7 +793,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 20 | Claude | DONE | P20-C01–C07 PASS; offline package/parity/relocation checks; native validator NOT_RUN, both Claude targets NOT_TESTED |
 | 21 | Codex | DONE | P21-C01–C07 scoped offline checks PASS; C08 ingestion FAIL for missing owner release fields; native NOT_TESTED, IDE plugins UNSUPPORTED |
 | 22 | Copilot | DONE | P22-C01–C07 scoped offline/document checks PASS; 794-file shared bundle, 20 cases NOT_RUN per target; both native NOT_TESTED |
-| 23 | Packaging/Parity | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 23 | Packaging/Parity | DONE | P23-C01–C07 scoped checks; equal builds, 456 parity records; extra filesystem-symlink probe BLOCKED; native NOT_TESTED |
 | 24 | Static Tests | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 25 | Behavioral Tests | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 26 | Live Host Tests | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -784,14 +806,12 @@ NOT_STARTED is a roadmap planning marker, not an additional task-result status.
 
 ## Continuation boundary
 
-Outstanding owner decisions: DEC-001 final name, DEC-002 release license,
-DEC-003 publisher/destination and DEC-004 treatment of Codex IDE's native-plugin
-gap before compatibility/release claims. See OPEN-ISSUES for technical gaps.
+DEC-001 name, DEC-002 release license, DEC-003 publisher/destination and DEC-004
+Codex IDE treatment remain open. No release version, signature or approval invented.
 
-Safe to continue: **YES for a user-requested Prompt 23 Packaging/Parity**.
-Three scoped development packages and their source inventories are available.
-Keep six-target evidence independent and preserve owner/native gaps, including
-Codex ingestion FAIL and unsupported IDE plugins. These block dependent release
-claims, not authorized packaging/parity work.
-Next prompt: **23 Packaging/Parity**, only when requested by the user.
+Safe to continue: **YES for a user-requested Prompt 24 Static Tests**.
+Actual archives, inventories and parity/test records are available. Preserve
+PKG-08 BLOCKED, six native NOT_TESTED results, Codex ingestion FAIL and unsupported
+IDE plugins. These gaps do not prevent independent static-test work.
+Next prompt: **24 Static Tests**, only when requested by the user.
 

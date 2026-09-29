@@ -227,4 +227,23 @@ parity, no-op/relocation and rejection checks. No end-user build or runtime exis
 Owner-incomplete catalogs/settings are not generated. Final identity/version/
 publisher/source remain release gates; both native Copilot targets are NOT_TESTED.
 The common format does not make rules/hooks/commands or instruction semantics
-portable. Later packaging/parity work remains Prompt 23, not silently completed here.
+portable. Packaging/parity remained Prompt 23 at that prompt's close.
+
+## Prompt 23 reproducible distributions and parity
+
+[Distribution build](distribution-build.md) implements deterministic development
+ZIPs, a closed input allowlist and developer-only isolation tests using the three
+existing native renderers. [Current inventory](../evidence/packaging/artifact-inventory.json)
+binds input/tool/output hashes and 456 independent target parity records.
+[Actual checks](../evidence/packaging/package-checks.md) cover equal builds, fresh
+extraction, exact case, LF/CRLF and source-denied reference inspection. The extra
+real filesystem symlink probe is BLOCKED by Windows privilege; ZIP symlink
+rejection and regular-member inspection pass. No OS sandbox/native result follows.
+
+Canonical Init guidance now explicitly records managed scope, outdated-Core
+handling and block-only cleanup. Its 24 copies were mechanically refreshed after
+checking baseline identity; other product/native inputs remain unchanged.
+P20–22 inventories retain their historical snapshots. The P23 inventory identifies
+current bytes. [Activation/lifecycle records](../compatibility/activation-matrix.md)
+retain six-target gaps and user-owned instructions/policy/Memory. Native lifecycle
+is still NOT_TESTED. No publication authority is added.

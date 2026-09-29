@@ -230,6 +230,12 @@ shared manifest with canonical name/description skills. CLI's newer schema
 support does not extend the other target's contract. No VSIX/App/service or
 ecosystem expansion is approved.
 
+Prompt 23 was authorized on 2026-09-29: produce reproducible static archives,
+inventory/parity/activation records and payload isolation tests using developer
+tooling; update state and stop before Prompt 24. The managed-scope/cleanup
+clarification and derived copies add no release identity, runtime, native schema
+change, installation or publication authority.
+
 No client-specific metadata or plugin rules are required by this design. The
 unresolved CLI qualified selector and rule semantics remain explicit. Owner
 version/publisher/source/catalog values are not invented; no catalog/settings
@@ -246,7 +252,7 @@ and preserves earlier outputs. Native installation/lifecycle remains Prompt 26.
 | DEC-004 | Treatment of Codex IDE native-plugin support gap | OPEN. Official [plugin documentation](https://learn.chatgpt.com/docs/plugins) excludes IDE plugins; [skills documentation](https://learn.chatgpt.com/docs/build-skills) supports standalone IDE skills. Rechecked 2026-09-29 (CX21-04/06); DOCUMENTED_ONLY, live NOT_TESTED | Repository/product owner | Before promising six-target native installation or accepting a standalone fallback; does not block Prompt 03 design of documented surfaces | No fallback or scope reduction approved |
 
 Ask only when an unresolved choice blocks the current authorized prompt. Existing
-instructions authorize Prompt 22 Copilot packaging/offline checks and build-state updates. Do not ask for
+instructions authorize Prompt 23 reproducible packaging/parity and build-state updates. Do not ask for
 premature publication decisions to complete that scope. Publication metadata still
 requiring confirmation is listed in [SOURCES](../research/SOURCES.md#publication-information-still-requiring-the-owner).
 

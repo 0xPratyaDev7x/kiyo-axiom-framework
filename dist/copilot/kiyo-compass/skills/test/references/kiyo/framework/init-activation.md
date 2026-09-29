@@ -62,6 +62,7 @@ locator lines. It contains no native invocation command or metadata field.
 Kiyo project guidance (advisory; respects the actual native instruction hierarchy).
 Adapter revision: init-locator-1.
 Last reviewed product version: UNKNOWN.
+Applies within: <actual authorized project/module scope>.
 Project context: <actual instruction-file-relative config path, when present>.
 Project Memory: <actual instruction-file-relative canonical index path>.
 Before Kiyo work, read the applicable project context and relevant Memory within
@@ -78,6 +79,9 @@ it to adopt this example. Record the product version only from real evidence, el
 UNKNOWN. Keep the rendered Kiyo block within the existing **250-word** adapter
 budget; this is Kiyo's criterion, not a vendor limit.
 
+Resolve the scope label from the authorized project/module and actual instruction
+discovery boundary; the label does not grant permissions or expand native scope.
+
 A single unambiguous owned block may be inserted or minimally updated only within
 authority; preserve all other bytes/sections. Duplicate, missing-end or nested
 markers and ambiguous ownership require a scoped decision before block writes.
@@ -91,3 +95,13 @@ does not itself authorize modifying/removing it or Memory. Report stale/unavaila
 locators during an authorized maintenance pass, never via background cleanup.
 A successful file diff/path check establishes only those file facts; native
 loading still needs separate target evidence before VERIFIED readiness.
+
+If available evidence shows an outdated Core or a mismatch with the block's
+reviewed version, report the observed difference and hold dependent claims of
+current loading. UNKNOWN is not proof of outdated content. Propose only scoped
+maintenance; never refresh the whole Core or overwrite human text per task.
+
+For separately authorized cleanup, identify and reread the single unambiguous
+Kiyo block, reconcile human edits and remove only that reviewed range. Preserve
+all other bytes and the containing instructions file, even if it becomes empty.
+Never delete user policy, Memory or reports as part of plugin removal.

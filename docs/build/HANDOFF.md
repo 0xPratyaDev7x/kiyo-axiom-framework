@@ -15,36 +15,32 @@ One canonical specification with necessary self-contained native overlays.
 
 ## Current repository observation
 
-Observed for Prompt 22 on 2026-09-29:
+Observed for Prompt 23 on 2026-09-29:
 
 - Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework
-- Branch main; HEAD 46e70a52cb105b9cb83646000e4f4652115b42fc.
-- Initial tree/index clean; Prompt 21 was committed before this task. Canonical
-  inventory remains 105 product Markdown files/68 controls/eight public entries.
-- No applicable scoped ancestor/repository AGENTS/override/CLAUDE instructions
-  and no .kiyo. Git uses per-command exact safe.directory/core.excludesFile,
-  with no global mutation. LICENSE blob remains
-  d2e60c5b160ed4f9ca096215e72efee5769936b1; no version/tag chosen.
-- Prompt 22 adds nine authored files, one generated inventory and 794 Copilot
-  payload files; modifies fifteen existing Markdown documents. Canonical product,
-  prior tools/overlays and all 1,589 Claude/Codex payload files remain unchanged.
-- Scoped PATH lookup did not resolve copilot; standard github.copilot* extension
-  metadata lookup had no matches, and the standard editor package metadata path
-  was absent. No global absence is inferred. Active CLI/editor/extension/harness
-  and account remain UNKNOWN. Python 3.11.9 / Windows 10.0.26200 were observed.
-- Current GitHub/Microsoft docs support a shared minimal Agent Plugins 1.0.0
-  package; CLI's additional 1.1.0 support was not assumed for VS Code.
-  Rendered VS Code plugin page retrieval timed out; official Microsoft source
-  was retrieved instead, with that exact boundary in CP22-07.
-- Offline package/parity/relocation/no-op/rejection checks pass; no native
-  parser, installation, catalog registration, chat invocation or publication.
-- Previous Codex ingestion FAIL for owner version/author/developerName and
-  UNSUPPORTED IDE native plugins remain open; no alternate route was adopted.
-- No project bootstrap, native/global setting, commit/tag/push/PR, install,
-  safety-bypass option, VSIX, service or owner publication decision.
+- Branch main; HEAD 90880886cfb6ad895cefceb478314ea6c3a031a7. Initial tree/index
+  clean; Prompt 22 committed before this task. No scoped instructions or .kiyo
+  found. Git uses per-command exact safe.directory/core.excludesFile only.
+- LICENSE blob d2e60c5b160ed4f9ca096215e72efee5769936b1 preserved; no version/tag.
+  Canonical inventory remains 105 product files/68 controls/eight public entries.
+- Only canonical framework/init-activation.md changed, for explicit scope,
+  outdated-Core handling and block-only cleanup; 24 generated copies match it.
+  Other canonical files, native overlays and original builders remain unchanged.
+- Three development ZIPs in dist/archives contain 794/795/794 files. Two fresh
+  builds match inventories and ZIP bytes. Current P23 inventory includes actual
+  input/tool/output hashes and 456 independent target parity records.
+  P20–22 inventories remain historical snapshots, not current attestations.
+- Final test report has ten PASS rows and PKG-08 BLOCKED (Windows symlink creation
+  error 1314). ZIP symlink rejection/regular-member checks pass. Cooperative source
+  read isolation is not an OS sandbox; native POSIX execution is NOT_RUN.
+- Python 3.11.9 / Windows-10-10.0.26200-SP0 observed. No native host/account/version
+  was inspected in P23. All native behavior remains NOT_TESTED. Historical Codex
+  ingestion FAIL and IDE UNSUPPORTED remain unresolved.
+- No user bootstrap/policy/Memory, global setting, install, dependency, runtime,
+  commit/tag/push/PR, signature or publication was created.
 
-Recheck root, branch, index, unstaged/untracked changes and user edits on resume.
-Preserve LICENSE and the 80 original requirements. See BASELINE for check results.
+Recheck root/branch/user edits on resume. Preserve LICENSE and all 80 requirements.
+See [packaging checks](../evidence/packaging/package-checks.md) for exact limits.
 
 ## Read order
 
@@ -917,18 +913,37 @@ source/UI/local routes. Future independent disposable tests must observe reads,
 scope, update/disable/uninstall and preservation rather than reuse static success.
 No curated listing, version, publisher, signature or ready-to-publish status.
 
+## Packaging and parity continuity
+
+Read [distribution build](../architecture/distribution-build.md),
+[final checks](../evidence/packaging/package-checks.md),
+[artifact inventory](../evidence/packaging/artifact-inventory.json),
+[parity](../evidence/packaging/parity-report.md) and
+[activation matrix](../compatibility/activation-matrix.md).
+
+Edit canonical rules only in src/kiyo and native differences in platforms.
+The wrapper creates ZIPs from current source, not stale dist content. Inventory
+is outside payloads. Equal output is a no-op; differing output/inventory requires
+a fresh destination and is never overwritten. No consumer tooling is shipped.
+
+The existing init-locator-1 format now describes explicit authorized scope and
+cleanup limits. Existing human blocks are not regenerated automatically.
+Final test-results-final.json covers current bytes; test-results.json records
+the earlier pre-clarification snapshot. Keep those evidence scopes distinct.
+The real filesystem symlink probe remains BLOCKED; regular ZIP inventory,
+symlink rejection and extracted reference checks support artifact containment.
+Native Init/update/uninstall and actual target loading remain unverified.
+
 ## Exact next action
 
-Prompt 22 static distribution/documentation scope is complete. Stop here.
-**Next: Prompt 23 Packaging/Parity**, only when supplied by the user.
-Recheck root/branch/user edits, read the build/architecture contracts and current
-native guides, then use the supplied Prompt 23 scope. Preserve canonical ownership,
-three development inventories and independent native evidence. Do not erase the
-Codex ingestion failure or invent missing publisher/release values.
+Prompt 23 scoped packaging/parity is complete. Stop here.
+**Next: Prompt 24 Static Tests**, only when supplied by the user.
+Recheck root/branch/user edits, read Build Contract and current evidence, then
+execute only that prompt. Reuse tooling; preserve independent static/behavioral/
+native evidence and historical failures. Do not invent release identity or IDE fallback.
 
-Safe to continue: **YES for a user-requested Prompt 23 Packaging/Parity**.
-Three prepared static distributions support that independent work. Native/live,
-Codex IDE and owner publication gaps continue to block their dependent claims,
-not the authorized next packaging design/checks. Memory Impact: NONE.
+Safe to continue: **YES for a user-requested Prompt 24 Static Tests**.
+Artifacts and tests are concrete inputs; owner/native gaps block dependent
+release/compatibility claims, not static work. Memory Impact: NONE.
 No later work, installation or publication is authorized by this handoff alone.
 

@@ -1654,3 +1654,43 @@ Memory Impact: **NONE for developer project memory**. No actual project bootstra
 mutable state, global install, permission bypass, commit/tag/push/PR or publication.
 Stop after Prompt 22. Safe to continue only with user-requested
 **Prompt 23 Packaging/Parity**, preserving native/owner gates and existing artifacts.
+
+## Prompt 23 checks
+
+Observed 2026-09-29. Branch main, base HEAD
+90880886cfb6ad895cefceb478314ea6c3a031a7; starting tree/index clean.
+Scoped instruction lookup found no applicable repository/ancestor instructions.
+LICENSE blob d2e60c5b160ed4f9ca096215e72efee5769936b1 preserved. No tags/version
+selected or global Git changes. User scope authorizes developer packaging,
+canonical managed-guidance clarification and generated artifacts, not installation.
+
+| Check | Applicability | Command / method | Inspected scope | Execution status | Observed result | Evidence location | Limitations | Baseline relation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| P23-C01 Baseline | Required before writes | Git root/branch/HEAD/status; scoped instructions and contract reads | Worktree/index, Build Contract, overlays, requirements | PASS | Correct clean main baseline; contracts and existing builders reviewed | This section | No production/remote/environment inference | P22 committed before task |
+| P23-C02 Payload contract | Required package scope | Closed input inventory, existing native validators, source/output comparisons | Three native bundles, 105 canonical inputs, legal copy | PASS | Only static allowlisted content; eight Skills, 97 shared files per Skill; developer tooling excluded | [Inventory](../evidence/packaging/artifact-inventory.json) | Selected native fields, not actual native ingestion; Codex prior ingestion FAIL retained | One canonical guidance file and 24 derived copies changed |
+| P23-C03 Reproducibility | Required two builds | python -B tests/packaging/test_distributions.py; actual wrapper run and no-op rerun | Three fresh archives and complete inventories | PASS | Two builds byte-identical; default ZIP generation and unchanged rerun succeed | [Final execution](../evidence/packaging/test-results-final.json), [commands](../evidence/packaging/package-checks.md) | Same input/toolchain bytes; fixed ZIP epoch is metadata only | Old inventories remain historical |
+| P23-C04 Isolation | Required artifact portability | PKG-02–07/09; extraction with spaces, denied source reads, case/LF/CRLF/rejection tests | 2,383 payload files; 14,876 local links across three artifacts | PASS | Eight entries each; closure and canary/drift/rejection/no-op checks pass | [Isolation tests](../../tests/packaging/README.md), final execution | Cooperative checker, not OS sandbox; native POSIX NOT_RUN; extra real filesystem symlink probe PKG-08 BLOCKED by Windows 1314 | ZIP symlink rejection/regular members pass independently |
+| P23-C05 Parity and lifecycle | Required content/target separation | Source hash/body parity, generated matrix and advisory lifecycle review | 68 controls/eight Skills, six activation records | PASS | 456 per-target records; content-only static evidence; explicit scope/version and block-only cleanup | [Parity](../evidence/packaging/parity-report.md), [activation](../compatibility/activation-matrix.md) | Behavioral NOT_RUN; native NOT_TESTED; unsupported IDE remains explicit | No native schema changed or user state written |
+| P23-C06 Continuity | Required close | Read-only inline Python requirement/trace/roadmap/link audit | 80 registry/trace rows, nine issues, four owner decisions | PASS | 18 trace rows reference P23; all original IDs retained; Prompt 24 unstarted | This section | No full acceptance inferred | 79 partial/1 not implemented; all full verifications NOT_RUN |
+| P23-C07 Scope and preservation | Required close | Read-only inline Python diff/hash/reference validation and git diff --check | Current files, prior unchanged inputs, LICENSE/index/HEAD | PASS | 32 modified / 15 new files; 2,549 Markdown files and 18,178 local links checked; 695 canonical links, 112 allowlisted inputs and 456 parity records consistent | This section and current artifact inventory | Static developer evidence only; no native use | Native overlays/original builders and all other canonical files unchanged; LICENSE/index/HEAD preserved |
+
+Ten packaging result rows PASS; PKG-08 remains BLOCKED for a Windows privilege
+limitation. It is an additional OS-dependent source-link negative probe, not a
+waiver of generated artifact containment: regular ZIP members, symlink rejection
+and source-denied closure pass. Detailed limits and the two corrected checker
+false positives are retained in the evidence document. No native host ran.
+
+Partial coverage: REQ-002/003/005/006/007/009/017/024/026/059/061/064/067/076–080.
+Owner decisions remain DEC-001–004; no release identity, signature or public
+listing claimed. Content parity is not behavior/enforcement parity. All 80 full
+requirement verifications remain NOT_RUN; six native live targets NOT_TESTED.
+
+The final document audit initially found one new Claude protocol link using the
+wrong filename. It was corrected to the existing claude-installation-test-protocol.md;
+the full audit then returned PASS. The actual wrapper no-op rerun reported
+output_created false with unchanged archive digests. No old test result is used
+to certify the canonical clarification; final execution hashes match current files.
+
+Memory Impact: NONE for developer project state. No actual .kiyo store, bootstrap,
+policy, commit/push/tag or publication. Stop after Prompt 23; safe to continue only
+with user-requested Prompt 24 Static Tests, preserving these evidence boundaries.

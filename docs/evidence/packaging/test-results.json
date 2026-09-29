@@ -1,0 +1,191 @@
+{
+  "archives": {
+    "claude": {
+      "archive": "kiyo-compass-claude-development.zip",
+      "archive_bytes": 3830585,
+      "archive_sha256": "65e46996798918a46289005226914b773f516ac4a8593cd579ba4c0e5dab62c2",
+      "metrics": {
+        "bytes": 3651629,
+        "files": 794,
+        "local_links": 4956,
+        "payload_digest": "dd1a6c3f12988b9e946a9656fab01294f4a1a04bfa9236355ff56b008d26a854",
+        "skills": 8
+      }
+    },
+    "codex": {
+      "archive": "kiyo-compass-codex-development.zip",
+      "archive_bytes": 3837543,
+      "archive_sha256": "4a1337a442a24a8ce129ca70a23117be086b26fd3e8c38adc98a2817bd8190c7",
+      "metrics": {
+        "bytes": 3658481,
+        "files": 795,
+        "local_links": 4956,
+        "payload_digest": "d8f04fab527109ec5e097d72c5a8fc3e6942002ba13804b9fd1a02db0672fdd7",
+        "skills": 8
+      }
+    },
+    "copilot": {
+      "archive": "kiyo-compass-copilot-development.zip",
+      "archive_bytes": 3841785,
+      "archive_sha256": "53297bcbd260bf77a5d7f29f1fc048daef0d8563d82475f13c60357b9c1eb0fe",
+      "metrics": {
+        "bytes": 3662843,
+        "files": 794,
+        "local_links": 4964,
+        "payload_digest": "9bd92a57a13bb0c47081d83802b0bf4e4dd72aec16859b1fddfc7c39dbd25ecd",
+        "skills": 8
+      }
+    }
+  },
+  "checked_at_utc": "2026-09-29T10:28:05.476909+00:00",
+  "checks": [
+    {
+      "id": "PKG-01",
+      "observed": {
+        "archives": "byte-identical",
+        "builds": 2,
+        "inventories": "byte-identical"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "PKG-02-claude",
+      "observed": {
+        "files": 794,
+        "local_links": 4956,
+        "outside_read_probe": "DENIED",
+        "payload_digest": "dd1a6c3f12988b9e946a9656fab01294f4a1a04bfa9236355ff56b008d26a854",
+        "result": "PASS",
+        "shared_per_skill": 97,
+        "skills": 8
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "PKG-02-codex",
+      "observed": {
+        "files": 795,
+        "local_links": 4956,
+        "outside_read_probe": "DENIED",
+        "payload_digest": "d8f04fab527109ec5e097d72c5a8fc3e6942002ba13804b9fd1a02db0672fdd7",
+        "result": "PASS",
+        "shared_per_skill": 97,
+        "skills": 8
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "PKG-02-copilot",
+      "observed": {
+        "files": 794,
+        "local_links": 4964,
+        "outside_read_probe": "DENIED",
+        "payload_digest": "9bd92a57a13bb0c47081d83802b0bf4e4dd72aec16859b1fddfc7c39dbd25ecd",
+        "result": "PASS",
+        "shared_per_skill": 97,
+        "skills": 8
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "PKG-03",
+      "observed": [
+        "missing-core",
+        "wrong-case",
+        "escape",
+        "encoded-escape",
+        "absolute-developer-path",
+        "unsupported-frontmatter",
+        "runtime",
+        "project-memory",
+        "build-log",
+        "fixture",
+        "credentials",
+        "shared-drift"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "PKG-04",
+      "observed": {
+        "claude-CRLF": 4956,
+        "claude-LF": 4956,
+        "codex-CRLF": 4956,
+        "codex-LF": 4956,
+        "copilot-CRLF": 4964,
+        "copilot-LF": 4964
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "PKG-05",
+      "observed": [
+        "zip-traversal",
+        "zip-absolute",
+        "zip-symlink",
+        "zip-case-collision"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "PKG-06",
+      "observed": {
+        "excluded_canaries": 9,
+        "output_unchanged": true,
+        "unreviewed_file": "unknown-product-file"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "PKG-07",
+      "observed": {
+        "native_update_uninstall": "NOT_RUN",
+        "no_op": true,
+        "overwrite_refused": true,
+        "timestamp_preserved": true,
+        "user_state_unchanged": true
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "PKG-08",
+      "limitation": "ZIP symlink rejection passed; real filesystem link test unavailable",
+      "observed": {
+        "reason": "OS denied local symlink creation",
+        "winerror": 1314
+      },
+      "status": "BLOCKED"
+    },
+    {
+      "id": "PKG-09",
+      "observed": {
+        "archive_epoch": "fixed serialization value; not build date",
+        "canonical_files": 105,
+        "controls": 68,
+        "public_skills_per_package": 8,
+        "templates": 34
+      },
+      "status": "PASS"
+    }
+  ],
+  "format": "kiyo-packaging-tests-1",
+  "limitations": [
+    "Offline developer checks only; no native client or agent behavior was executed.",
+    "Audit hook restricts this cooperative verifier, not an OS sandbox or Kiyo enforcement.",
+    "Exact-case ZIP/resolver tests ran on Windows; native POSIX host execution NOT_RUN.",
+    "LF/CRLF variants test reference semantics; differing input bytes produce different digests.",
+    "Unsigned development artifacts; no owner release approval, no publication."
+  ],
+  "os": "Windows-10-10.0.26200-SP0",
+  "python": "3.11.9",
+  "source_git_head": "90880886cfb6ad895cefceb478314ea6c3a031a7",
+  "tooling_sha256": {
+    "tests/packaging/test_distributions.py": "1133c7d38a7ce5305c60a2d6baf56c53e19ab68c3ab4ebfce859ffadc6d09d9c",
+    "tools/package_claude.py": "b2aee831d19406ba61cdd0598cc6f6194b18da0e1b76e650310615d636bb3c6b",
+    "tools/package_codex.py": "be65187fcb802253310704409cf60d0099c71e7d555811e1f53299d1a4a38309",
+    "tools/package_copilot.py": "9b62d5ec367fddf1ccf68cf05cbbb20ed07bc4421fb54e1b5c83612b39c8c4ac",
+    "tools/package_distributions.py": "46295f7b15296eb5699f267b66459790909b20006074b2b04b94188bf5a298b7",
+    "tools/packaging-inputs.json": "c2f39e1de2f101ac5eb226004be1c21087b5334564c7edb16a2f1cd19f0e7984",
+    "tools/verify_payload.py": "cda482fa8c20c27b040211b5ea90671f798f7f7612da079da7576f2c92d5533f"
+  }
+}
