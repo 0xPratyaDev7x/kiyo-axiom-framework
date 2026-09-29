@@ -60,7 +60,11 @@ OS, account or IDE. Codex's observed fallback version 1.0.0 is not a Kiyo releas
 
 1. Choose a target from the table. Use its prepared
    [development package](docs/user/README.md#install-or-load-a-prepared-package)
-   and native mechanism. There is no published Kiyo marketplace listing to install.
+   and native mechanism. There is no official/curated Kiyo marketplace listing.
+   For Claude Code, this repository is itself a custom marketplace
+   ([.claude-plugin/marketplace.json](.claude-plugin/marketplace.json)):
+   run `/plugin marketplace add 0xPratyaDev7x/kiyo-codejadee-framework`, then
+   `/plugin install kiyo-compass@kiyo-codejadee`.
 2. Confirm the Kiyo source and eight entries in that host. Select **Init**
    explicitly using the [native selection table](docs/user/README.md#select-a-skill).
 3. Start with: “Preview onboarding for this repository; report evidence,
