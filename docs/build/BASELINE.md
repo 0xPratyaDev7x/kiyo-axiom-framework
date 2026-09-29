@@ -737,3 +737,93 @@ Memory Impact: NONE for developer project memory. Build records carry continuity
 temporary fixture initialization is separately documented, not a second repository
 memory store. No consumer runtime, initializer executable, package/global setting,
 commit, tag, push, publication or Prompt 12 implementation was introduced.
+
+## Prompt 12 repository observation
+
+Observed 2026-09-29 (Asia/Bangkok), before Prompt 12 edits:
+
+- Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework.
+- Branch main; HEAD 3c85e3633d1af2d3b5e6f0bf2da35673fda76d0b, subject
+  “feat(init): Implement comprehensive Init workflow and evidence framework”.
+  Prompt 11 was committed before this work.
+- Initial index/worktree clean; staged/unstaged diffstat empty. Inventory:
+  98 Markdown files plus LICENSE, with 71 product files excluding source README,
+  six developer scenario files and one developer forward-evidence record.
+- No applicable AGENTS.md found in repository or checked ancestor chain; no .kiyo
+  project Memory present. Read Build Contract, Core/bootstrap/trust, requirements
+  standard, Memory specification/lifecycle, relevant requirements and build state.
+  Consulted existing packaging/naming and the applicable skill-creator guidance.
+- Exact-root safe.directory and empty core.excludesFile were per-command settings;
+  no global configuration changed. No vendor schema/API or research source was
+  refreshed, and existing dates/compatibility gaps remain intact.
+
+## Prompt 12 checks
+
+Executed 2026-09-29 (Asia/Bangkok) against the Prompt 12 working tree.
+Scoped authoring checks and bounded source-guided trials below are distinct from
+native targets, a complete behavioral suite and full requirement acceptance.
+
+| Name | Applicability | Command/method | Inspected scope | Execution status | Observed result | Evidence location | Limitations | Baseline relation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| P12-C01 Repository and context | Required Build Contract start procedure | Read-only Git root/status/log/diff/hash/tag checks, scoped file/instruction discovery and reads | Root/main/HEAD, initial tree/index, Core/requirements/Memory/contracts and build state | PASS | HEAD 3c85e3633d1af2d3b5e6f0bf2da35673fda76d0b; initially clean, 98 Markdown files; no applicable AGENTS.md in inspected scope | Observation above; actual Git/context outputs in the Prompt 12 conversation | No production, remote/native/account inspection or external research refresh | Prompt 11 committed; earlier HEAD/uncommitted snapshots remain historical |
+| P12-C02 Canonical requirement contract | Required Prompt 12 entry/template/readiness acceptance | skill-creator quick_validate.py; inline Python frontmatter/field/status/control assertions and scoped author review | Requirement entry, shared procedure, neutral template, readiness checklist and conditional references | PASS | Validator exit 0 “Skill is valid!”; name/description only, logical kiyo.requirement in Markdown; entry 69 lines / 567 words; fourteen fields, four origin classes, three exact readiness values and chat/spec-only access contract. One new control, 60 total; DoD/report labels aligned | [Entry](../../src/kiyo/skills/requirement/SKILL.md), [procedure](../../src/kiyo/workflows/requirement.md), [template](../../src/kiyo/templates/requirement.md), [readiness](../../src/kiyo/framework/requirement-readiness.md); actual check stdout | Structure/prose review does not prove every agent decision; no native metadata, loader, initializer or runtime created | Second canonical skill added; earlier generic readiness labels refined by explicit Prompt 12 values without changing task statuses |
+| P12-C03 Scenario and output review | Required at least eight input/output cases and exclusions | Inline Python sequential-ID/table assertions; author reviews synthetic input/output pairs and full example | Twelve RQM-01–12 specifications and full fourteen-field export draft example | PASS | Covers incomplete Excel export, complete/no-repeat input, actual admin policy, stale Memory route, brainstorm, READY stop, authorized file/concurrency, missing evidence, copied approval/injection, mixed blockers, IDs and output path limits | [Scenario specifications](../../tests/behavioral/requirement/scenarios.md) | Expected behavior only for the complete matrix; bounded source variants have their own evidence. No scenario file itself counts as PASS behavior | Adds Requirement cases to six existing scenario files; prior matrices remain unchanged/NOT_RUN |
+| P12-C04 References and source portability | Required packaging/loading/budget constraints | Inline Python UTF-8/link/anchor/containment/ID/budget checks; temporary copy/entry-link transformation and shared-byte comparison | Final 104 Markdown files, 75 product files; two entries with separate copies of 73 shared resources | PASS | Source references resolve; 396 contained product links and 29 unchanged optional citations; each temporary skill copy resolves ten entry links and 386 contained links. No absolute author path/symlink/reparse payload; bootstrap unchanged at 81 lines / 579 words | REQ-RESOURCE-01 in [forward evidence](../evidence/requirement/forward-trials.md); validation stdout | Source-resource relocation is not a native package, installed cache or consumer generator; no automatic-loading claim | Prior source resources extended; Init entry bytes unchanged, both entries checked against the current shared snapshot |
+| P12-C05 Bounded behavior and semantic review | Required functional skill check within synthetic developer scope | Independent forward agent follows entry; author reviews actual responses and compares path/SHA-256/exact mtime snapshots | Three chat-only requests, twelve fixture files and four directories; permission/readiness/knowledge boundaries | PASS | Export draft identifies decisions and stale route; complete UI-42 yields READY without repeat questions or implementation; admin ambiguity cites real fixture policy/entitlement. All twelve final file snapshots and directory sets unchanged | REQ-FWD-01–03 and actual methods/results/limits in [forward evidence](../evidence/requirement/forward-trials.md) | Three limited source trials, not an independent security audit, complete access trace, native run or application test. Final snapshots do not exclude every transient effect | Actual initial synthetic fixture snapshots and supplied requests/policy compared with delivered responses/final state |
+| P12-C06 Traceability and closure | Required Build Contract close procedure | Inline Python registry/trace/count/status checks and build-record review | Eighty original requirement/trace rows, six build records, nine issues/four owner decisions | PASS | Ten rows link P12 checks; partial coverage REQ-016/023/026/027/031/032/043/044/069, REQ-080 continuity. REQ-069 newly partial: 68 PARTIALLY_IMPLEMENTED / 12 NOT_IMPLEMENTED; all 80 full verifications NOT_RUN. Prompt 12 DONE, Prompt 13 NOT_STARTED | [Traceability](TRACEABILITY.md), [Progress](PROGRESS.md), [Handoff](HANDOFF.md), final validation stdout | Full catalogue/requirement/native acceptance and publication decisions not promoted | Prior totals 67 partial / 13 unimplemented; one additional partial canonical-skill contribution |
+| P12-C07 Scope and preservation | Required preservation/product boundary | Git allowlists, staged/unstaged diff checks, hash-object, tags and diff --check; boundary assertions | Six new and sixteen modified Markdown files; protected prior product/research/history | PASS | diff --check passed; index empty, HEAD unchanged, no tags; LICENSE blob d2e60c5b160ed4f9ca096215e72efee5769936b1 unchanged. No repository .kiyo, platforms, tools, dist or non-Markdown addition; exactly two canonical entries | Actual Git/static output; inventory below; [target summary](../compatibility/platform-capabilities.md#target-summary) | No source/test/config/Memory consumer mutation, package/native install, app execution, commit, push or publication performed | Clean committed Prompt 11 baseline; exact allowlist preserves all other tracked files and history |
+
+New files:
+
+- src/kiyo/skills/requirement/SKILL.md
+- src/kiyo/workflows/requirement.md
+- src/kiyo/framework/requirement-readiness.md
+- src/kiyo/templates/requirement.md
+- tests/behavioral/requirement/scenarios.md
+- docs/evidence/requirement/forward-trials.md
+
+Modified files: PROGRESS, HANDOFF, TRACEABILITY, OPEN-ISSUES, DECISIONS and BASELINE;
+architecture layout/naming; source README; framework context-loading/control-index/
+definition-of-done; framework/engineering/requirements; workflow router; the
+engineering report template; EVID-10 in the existing verification scenario file.
+That case's expected readiness now uses DECISION_REQUIRED, with execution still
+NOT_RUN. Changes to shared readiness labels implement the
+user's explicit Prompt 12 contract, without changing existing task statuses.
+
+All other tracked files are preserved by the exact Git allowlist, including
+LICENSE, Build Contract/requirement registry, research/compatibility, ADR/loading/
+packaging design, Core entry/bootstrap/trust/activation/Memory, Memory templates/
+lifecycle, other governance/security/engineering/profile/report files, Init entry/
+procedure/resources, other prior scenario content and the earlier forward-trial
+evidence. The sole earlier-scenario change aligns EVID-10 with Prompt 12 readiness.
+No populated developer-project facts enter templates or product content.
+
+Validation used the inspected installed skill-creator quick_validate.py with
+`python -X utf8 <installed-skill-creator>/scripts/quick_validate.py src/kiyo/skills/requirement`;
+it exited 0 with “Skill is valid!”. Inline Python through PowerShell here-strings
+checked exact Git allowlists, strict UTF-8, relative references/anchors, shared
+containment, unique controls/contiguous index table, budgets, metadata/fields,
+readiness labels, specification IDs and final build-state counts. Temporary
+resource-copy checks were developer-only; no script was added to the repository.
+Scoped read-only Git covered rev-parse --show-toplevel/HEAD, branch --show-current,
+log -1, status --short --branch --untracked-files=all, staged/unstaged diff --stat,
+diff --name-only/--check, ls-files --others --exclude-standard, hash-object -- LICENSE
+and tag --list. Some combined context output was truncated; focused reads supplied
+the relevant parts rather than treating missing output as known.
+
+The preliminary static pass preceded closing records; final validation rechecked
+the resulting tree, links and traceability. Behavioral outputs and exact snapshot
+checks are recorded separately, with actual source hashes and limitations.
+A parser/assertion is not evidence that acceptance tests or all behavioral cases ran.
+
+Static/source/closure checks: PASS within the records above. Bounded source-guided
+trials: three PASS within their stated limits. Complete twelve-case Requirement
+matrix: NOT_RUN. Application tests and native package/live loading checks: NOT_RUN.
+All six target states remain NOT_TESTED; active assistant use is not native Kiyo
+installation evidence. No certification or universal safety claim is made.
+
+Memory Impact: NONE for developer project memory. The export trial reported a
+pending correction to synthetic Memory but changed no fixture record. Build
+continuity is stored only in docs/build, with developer evidence outside the payload.
+No runtime/initializer, package/global change, automatic implementation, commit,
+tag, push, publication or Prompt 13 work was introduced.

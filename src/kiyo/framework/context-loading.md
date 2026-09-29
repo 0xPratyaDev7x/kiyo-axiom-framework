@@ -65,6 +65,9 @@ or initialize a store merely by following these references.
 For requested onboarding or setup-readiness inspection, use the [Init procedure](../workflows/init.md).
 Missing memory or an ordinary feature request alone does not authorize Init;
 preview remains read-only and existing canonical paths/human instructions survive.
+For requirement drafting/readiness, use the [Requirement procedure](../workflows/requirement.md)
+and its relevant template/checklist. Default delivery is chat; readiness grants
+no source/test/config/Memory write or automatic implementation.
 
 ## KIYO-LOAD-002 — Kiyo design budgets
 

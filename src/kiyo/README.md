@@ -41,6 +41,14 @@ actual forward-trial evidence is recorded separately from the specifications.
 The entry has name/description only. Remaining seven skills and native overlays/
 prepared packages are still pending; source-directed use is not native installation.
 
+Prompt 12 adds the canonical [Requirement skill](skills/requirement/SKILL.md),
+logical ID kiyo.requirement, its [shared procedure](workflows/requirement.md),
+neutral requirement template and readiness checklist. It uses authorized evidence,
+returns chat by default and permits only explicitly scoped specification output.
+Readiness never starts implementation or authorizes Memory/source/test/config edits.
+Twelve scenario specifications and separate bounded evidence remain developer-only;
+six public skills and native packages are still pending.
+
 Follow [framework layout](../../docs/architecture/framework-layout.md),
 [content loading](../../docs/architecture/content-loading.md) and
 [packaging contract](../../docs/architecture/packaging-contract.md) as their

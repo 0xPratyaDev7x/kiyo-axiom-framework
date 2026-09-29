@@ -27,8 +27,9 @@ Do not retroactively weaken a mandatory check to obtain DONE.
 
 1. Compare final deliverables to each agreed criterion. Separate inspection,
    authored artifact, executed behavior and remaining work. For requirements,
-   state **Implementation readiness: READY / NOT_READY / UNKNOWN** with evidence
-   and open decisions; these are readiness labels, not additional task statuses.
+   state **Implementation readiness: READY_FOR_IMPLEMENTATION / DECISION_REQUIRED /
+   INSUFFICIENT_EVIDENCE** using the [Requirement readiness checklist](requirement-readiness.md).
+   Include evidence/open decisions; readiness is not task status or implementation approval.
 2. Review the final affected scope against requirements, architecture/quality,
    security and governance; explain actual non-applicability. Confirm approval
    validity under [human approval](../governance/human-approval.md); do not ask

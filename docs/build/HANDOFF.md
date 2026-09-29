@@ -15,14 +15,14 @@ One canonical specification with necessary self-contained native overlays.
 
 ## Current repository observation
 
-Observed for Prompt 11 on 2026-09-29:
+Observed for Prompt 12 on 2026-09-29:
 
 - Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework
-- Branch: main; HEAD: f179f8c9e66cb9d1dcd2a17d48bfb7ab3177e76f.
+- Branch: main; HEAD: 3c85e3633d1af2d3b5e6f0bf2da35673fda76d0b.
 - Initial working tree and index clean; tracked LICENSE, eight build files and
   five research/compatibility files, six architecture documents, source README,
-  65 product files and five behavioral specification files (90 Markdown files total).
-  Prompt 10 was committed before this work;
+  71 product files, six behavioral specification files and one developer evidence
+  record (98 Markdown files total). Prompt 11 was committed before this work;
   previous checkout/HEAD/uncommitted snapshots are historical, not current facts.
 - No applicable AGENTS.md found in repository or checked ancestors; no .kiyo
   project/product memory present.
@@ -32,7 +32,7 @@ Observed for Prompt 11 on 2026-09-29:
   unreadable global ignores.
 - LICENSE blob remains d2e60c5b160ed4f9ca096215e72efee5769936b1.
 - No product version file, manifest or Git tag found in the scoped inventory.
-- Prompt 11 creates eight Markdown files and changes twelve existing Markdown files. No commits,
+- Prompt 12 creates six Markdown files and changes sixteen existing Markdown files. No commits,
   tags, pushes, installs, publication or global settings changes were made here.
 
 Recheck root, branch, index, unstaged/untracked changes and user edits on resume.
@@ -89,7 +89,14 @@ Preserve LICENSE and the 80 original requirements. See BASELINE for check result
     output references, [scenario specifications](../../tests/behavioral/init/scenarios.md)
     and [bounded forward evidence](../evidence/init/forward-trials.md).
 
-Prompts 10/11 do not refresh external research; retain each source's recorded date.
+16. [Requirement entry](../../src/kiyo/skills/requirement/SKILL.md),
+    [shared procedure](../../src/kiyo/workflows/requirement.md),
+    [readiness](../../src/kiyo/framework/requirement-readiness.md),
+    [template](../../src/kiyo/templates/requirement.md),
+    [scenario specifications](../../tests/behavioral/requirement/scenarios.md) and
+    [bounded forward evidence](../evidence/requirement/forward-trials.md).
+
+Prompts 10–12 do not refresh external research; retain each source's recorded date.
 Prompt 02 native checks and unrefreshed standards remain dated 2026-09-28.
 Prompt 09 rechecked S01–S07 and added E01–E06 on 2026-09-29; public documentation
 only, not licensed ISO text or actual stack verification. Prompt 07
@@ -161,6 +168,13 @@ Entry frontmatter validation and a temporary 70-shared-file resource-copy/transf
 check passed. This is neither a native prepared package nor automatic selection/
 loading or universal behavioral acceptance.
 
+Prompt 12 authors canonical Requirement (name requirement; logical ID
+kiyo.requirement), a full shared procedure, fourteen-field template/readiness
+checklist and twelve input/output scenario specifications. Status: **DONE** for
+canonical authoring; [Prompt 12 evidence](BASELINE.md#prompt-12-checks) separates
+frontmatter/static/resource checks, bounded source trials and native gaps.
+Readiness labels in shared DoD/report guidance now match Prompt 12 exactly.
+
 No native version, account availability or installed-tool absence is inferred from the
 assistant session. Each of Claude CLI, Claude VS Code, Codex CLI, Codex IDE,
 Copilot CLI and Copilot VS Code remains **NOT_TESTED** live.
@@ -188,6 +202,9 @@ REQ-043 newly partial.
 Prompt 11 adds partial Init entry/procedure coverage for
 REQ-009/014–017/020/024/026/027/068 and updates REQ-080. Current totals:
 67 PARTIALLY_IMPLEMENTED / 13 NOT_IMPLEMENTED; REQ-026/068 newly partial.
+Prompt 12 adds partial Requirement instruction coverage for
+REQ-016/023/026/027/031/032/043/044/069 and updates REQ-080. Current totals:
+68 PARTIALLY_IMPLEMENTED / 12 NOT_IMPLEMENTED; REQ-069 newly partial.
 All full requirement verifications remain NOT_RUN; source trials cover only
 their recorded fixtures, not the complete scenario matrix or six native targets.
 
@@ -216,7 +233,7 @@ their recorded fixtures, not the complete scenario matrix or six native targets.
 
 Open decisions: DEC-001 name/identifiers, DEC-002 release-license confirmation,
 DEC-003 publisher/account/destination, DEC-004 unsupported IDE route.
-They do not block the next Requirement authoring scope under the selected architecture; they do block
+They do not block the next Implement skill authoring scope under the selected architecture; they do block
 dependent release identities, claims or unapproved fallback choices.
 
 Memory Impact: **NONE for developer project memory**. Build continuity/specification
@@ -235,12 +252,13 @@ changed. Temporary synthetic fixture state is recorded separately in forward evi
   selection/mapping, four profiles/extension contract, three evidence/DoD/reporting
   contracts and seven report templates. Init now has its canonical entry, full
   procedure/references and a project-context template. Other workflows/templates
-  and the remaining seven public skills remain unimplemented.
+  and the remaining six public skills remain unimplemented. Requirement now adds a
+  canonical entry, shared procedure/readiness checklist and neutral template.
   Do not mistake synthetic scenarios for executed behavior.
 - Core IDs use `KIYO-<DOMAIN>-<NNN>`, independent of standard clauses. The actual
-  59-control index points to canonical definitions (16 Core, six Memory, nine
+  60-control index points to canonical definitions (16 Core, six Memory, nine
   governance, ten security, six routing/flow, seven engineering/profile, four
-  evidence/completion/reporting IDs and one Init ID). ACTIVE means authored, not
+  evidence/completion/reporting IDs, one Init ID and one Requirement ID). ACTIVE means authored, not
   behaviorally verified; do not duplicate rules across later skills.
 - Canonical frontmatter is name/description. Native-only fields belong in
   overlays, advisory permission/mode contracts in Markdown. No Kiyo runtime.
@@ -261,7 +279,7 @@ changed. Temporary synthetic fixture state is recorded separately in forward evi
 - Do not generate manifests, public skills, release versions or all later trees
   to make scaffolding look complete. Keep schema gaps and owner decisions open.
 
-## Shared boundaries for Prompt 12
+## Shared boundaries for Prompt 13
 
 Use Memory as context, validate material claims, preserve approved intent and
 surface conflicting sources through the real native hierarchy. Do not treat
@@ -372,7 +390,9 @@ current required verification, scope/security/governance self-review and assesse
 Memory Impact with mandatory sync completed. Missing required evidence/sync is
 partial/blocked, never silently optional. Read-only review or bounded security/
 memory assessment completion is not bug-free/secure/certified/whole-project proof.
-Requirement delivery and READY/NOT_READY/UNKNOWN implementation readiness differ.
+Requirement delivery and implementation readiness differ. Use the exact values
+READY_FOR_IMPLEMENTATION, DECISION_REQUIRED or INSUFFICIENT_EVIDENCE from the
+Requirement checklist; they do not authorize implementation.
 
 Reports convey task/scope, actual actions/files, governance/risk rationale,
 verification/evidence, residual issues, Memory Impact, one actual task status and
@@ -406,16 +426,36 @@ project-guidance/automatic-loading evidence. Unsupported/Unknown auto-load
 does not justify hooks or a guessed command. Source trials/resources checks
 are separate from scenario-suite/native success; see the evidence record.
 
+Requirement has canonical name requirement and logical ID kiyo.requirement.
+Raw requests/issues/documents/proposals become fourteen-field engineering requirements.
+First inspect authorized Memory and relevant current repository evidence; technical
+facts do not decide business permissions. Separate Existing facts, User requirements,
+AI proposals and Unresolved decisions. Ask only material blocking choices with
+known facts/options/tradeoffs; never repeat complete inputs or invent HTTP/retention.
+Preserve stale Memory/approved intent and report impact without syncing.
+
+Default output is chat. Specification-file writes require an actually requested/
+approved path and immediate reread/human-edit preservation. No source/tests/config/
+Memory/global writes or application execution. Reuse real IDs; a response-local
+provisional draft label is not project allocation. All fourteen fields must be
+addressed; unknown/non-applicability has a reason. Use proportionate detail.
+
+Readiness and task completion are independent. A requested draft may be DONE
+with DECISION_REQUIRED/INSUFFICIENT_EVIDENCE; a requested ready specification cannot
+be called complete with material blockers. Even READY_FOR_IMPLEMENTATION does not
+launch Implement, run tests or create approval. Twelve scenario specifications
+remain NOT_RUN as a full matrix; bounded source trials are separately recorded.
+
 ## Exact next action
 
-Prompt 11 is complete within its canonical Init authoring scope; stop here.
-**Next: Prompt 12 Requirement**, only when supplied by the user. Recheck repository
-and read the files above; implement only that prompt's actual Requirement scope,
+Prompt 12 is complete within its canonical Requirement authoring scope; stop here.
+**Next: Prompt 13 Implement**, only when supplied by the user. Recheck repository
+and read the files above; implement only that prompt's actual Implement skill scope,
 reusing the shared contracts. Preserve source-trial versus native evidence.
 Do not infer authorization for developer-project initialization, other skills,
 dangerous operations, publication or unverified native overlays/activation.
 
-Safe to continue: **YES for a user-requested Prompt 12 Requirement**.
-Shared contracts and the Init authoring pattern are ready; native/owner gaps
+Safe to continue: **YES for a user-requested Prompt 13 Implement**.
+Shared contracts and both authored skill patterns are ready; native/owner gaps
 remain gates for dependent packaging/activation/publication claims.
 

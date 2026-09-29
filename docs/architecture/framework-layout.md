@@ -49,8 +49,12 @@ Prompt 10 adds shared evidence/completion/reporting contracts in framework and
 seven neutral report templates, plus 20 developer-only good/bad scenarios.
 Prompt 11 authors skills/init/SKILL.md (logical ID kiyo.init) and its shared
 procedure/discovery/activation/output references plus a neutral context template.
-The other seven skill entries remain planned; no native package/adapter or initializer
+At that step the other seven entries remained planned; no native package/adapter or initializer
 executable is implemented. Developer Init scenarios/evidence stay outside the payload.
+Prompt 12 adds skills/requirement/SKILL.md, workflows/requirement.md,
+framework/requirement-readiness.md and templates/requirement.md; the remaining six
+skill entries are planned. Read-only analysis and separately authorized spec output
+remain Markdown procedures with no runtime.
 The README remains developer-only. Remaining
 product, overlay, tool, test and distribution paths are **planned**, not features.
 Create each directory when it receives real scoped content; no empty SKILL.md,
@@ -70,7 +74,7 @@ src/kiyo/
   templates/                      neutral memory/policy/report/artifact templates
   skills/
     init/SKILL.md                 authored Prompt 11; native package/test scope separate
-    requirement/SKILL.md
+    requirement/SKILL.md          authored Prompt 12; native acceptance separate
     implement/SKILL.md
     review/SKILL.md
     test/SKILL.md

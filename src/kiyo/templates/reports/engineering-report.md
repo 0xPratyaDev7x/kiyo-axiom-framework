@@ -20,7 +20,9 @@ The tables express relationships, not pre-populated test results or audit logs.
 Use the [nine-field check record](../../framework/evidence-contract.md) for each
 check; the trace table is not a substitute. Identify the checked state and any
 later changes requiring recheck. Report requirement-document delivery separately
-from **Implementation readiness:** <READY / NOT_READY / UNKNOWN, basis> when relevant.
+from **Implementation readiness:** <READY_FOR_IMPLEMENTATION / DECISION_REQUIRED /
+INSUFFICIENT_EVIDENCE, basis> when relevant; use the
+[Requirement readiness checklist](../../framework/requirement-readiness.md).
 
 **Self-review:** <requirements, architecture, quality, security, governance;
 evidence/findings or reason not applicable per dimension>. Label actual independent

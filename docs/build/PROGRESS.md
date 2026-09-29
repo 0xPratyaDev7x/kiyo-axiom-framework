@@ -1,9 +1,44 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **11 Init**.
-Task status: **DONE** for Prompt 11; scoped Init authoring checks passed.
-Product status: shared guidance/profiles/templates and canonical Init entry authored;
-seven public skills and native packages remain pending. No runtime engine.
+Snapshot: 2026-09-29. Current prompt: **12 Requirement**.
+Task status: **DONE** for Prompt 12; scoped Requirement authoring checks passed.
+Product status: shared guidance/profiles/templates and canonical Init/Requirement authored;
+six public skills and native packages remain pending. No runtime engine.
+
+## Prompt 12 delivered scope
+
+- Added canonical [Requirement](../../src/kiyo/skills/requirement/SKILL.md),
+  name requirement / logical ID kiyo.requirement, with name/description only.
+  Raw requests, issues, documents and proposed changes become scoped requirements;
+  the skill stops before implementation.
+- Added the [shared procedure](../../src/kiyo/workflows/requirement.md),
+  [fourteen-field template](../../src/kiyo/templates/requirement.md) and
+  [readiness checklist](../../src/kiyo/framework/requirement-readiness.md).
+  Discover authorized Memory/current evidence before asking; separate Existing facts,
+  User requirements, AI proposals and Unresolved decisions. Never invent HTTP,
+  business permission or retention decisions.
+- Chat is default. Only the requested/approved specification path may be written;
+  source/tests/config/Memory are forbidden outputs. Preserve human edits and IDs;
+  a chat-local provisional ID is not an allocated project record.
+- Readiness is exactly READY_FOR_IMPLEMENTATION, DECISION_REQUIRED or
+  INSUFFICIENT_EVIDENCE, separate from task completion and implementation approval.
+  Aligned shared DoD/report labels with Prompt 12; no automatic implementation.
+- Added KIYO-REQ-001 (60 controls), conditional integration references and
+  [12 input/output scenario specifications](../../tests/behavioral/requirement/scenarios.md).
+  Bounded source trials are recorded separately in
+  [forward evidence](../evidence/requirement/forward-trials.md).
+  Entry validation passed at 69 lines / 567 words. Two temporary resource copies
+  each contain 73 shared files with contained links; no native package is implied.
+
+Coverage: partial Requirement/shared instruction coverage for
+REQ-016/023/026/027/031/032/043/044/069; REQ-080 continuity updated.
+REQ-069 newly partial: 68 PARTIALLY_IMPLEMENTED / 12 NOT_IMPLEMENTED.
+All 80 full verification states remain NOT_RUN and all six native targets NOT_TESTED.
+Complete scenario suites remain NOT_RUN; bounded trials establish only their scope.
+
+Checks: [Prompt 12 evidence](BASELINE.md#prompt-12-checks).
+Memory Impact: **NONE for developer project memory**; no Memory/config/application
+changes. Six build records carry continuity; publication/native-gap decisions remain open.
 
 ## Prompt 11 delivered scope
 
@@ -375,7 +410,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 09 | Engineering/Profiles | DONE | P09-C01–C07 PASS; static standards/profiles/mapping only, scenarios NOT_RUN |
 | 10 | Verification/DoD | DONE | P10-C01–C07 PASS; static contracts/templates/examples only; behavioral execution NOT_RUN |
 | 11 | Init | DONE | P11-C01–C07 PASS; entry/resource/closure checks and bounded source trials separately recorded; native NOT_TESTED |
-| 12 | Requirement | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 12 | Requirement | DONE | P12-C01–C07 PASS; static/resource checks and bounded source trials; native NOT_TESTED |
 | 13 | Implement | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 14 | Review | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 15 | Test | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -403,9 +438,9 @@ Outstanding owner decisions: DEC-001 final name, DEC-002 release license,
 DEC-003 publisher/destination and DEC-004 treatment of Codex IDE's native-plugin
 gap before compatibility/release claims. See OPEN-ISSUES for technical gaps.
 
-Safe to continue: **YES for a user-requested Prompt 12 Requirement**.
-Shared contracts and the first canonical skill are ready; publication/native gaps
+Safe to continue: **YES for a user-requested Prompt 13 Implement**.
+Shared contracts and two canonical skills are ready; publication/native gaps
 remain gates for dependent packaging/activation claims. Later work is not
 authorized by this handoff alone.
-Next prompt: **12 Requirement**, only when requested by the user.
+Next prompt: **13 Implement**, only when requested by the user.
 

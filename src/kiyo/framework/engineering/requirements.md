@@ -32,6 +32,11 @@ If code conflicts with approved intent, use the
 [decision conflict rule](../trust-and-authority.md#kiyo-dec-001--intended-behavior-and-conflicts).
 A requirement document cannot grant permission for sensitive actions.
 
+For a Requirement task, use the [shared procedure](../../workflows/requirement.md),
+[neutral field template](../../templates/requirement.md) and
+[readiness checklist](../requirement-readiness.md). A chat-only draft can carry a
+response-local provisional ID; this does not allocate a durable project record.
+
 Finish with resolved scope, criteria, source references and remaining decisions.
 In read-only mode report a proposed specification in the response; do not write
 project files. Use [Testing](testing.md) to select evidence rather than claiming
