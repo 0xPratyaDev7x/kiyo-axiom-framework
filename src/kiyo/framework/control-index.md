@@ -70,6 +70,7 @@ REQ references identify requirement scope, not full acceptance or a runtime impo
 | KIYO-IMPL-001 | [Bind daily engineering to intent, baseline and checked scope](../workflows/implement-flow.md#kiyo-impl-001--bind-daily-engineering-to-intent-baseline-and-checked-scope) | REQ-015, REQ-023, REQ-027, REQ-029, REQ-034, REQ-035, REQ-070 | ACTIVE / none |
 | KIYO-REVIEW-001 | [Read-only bounded review](../workflows/review.md#kiyo-review-001--review-actual-scope-without-repairing-it) | REQ-028, REQ-040, REQ-041, REQ-044, REQ-071 | ACTIVE / none |
 | KIYO-TEST-001 | [Test modes and actual evidence](../workflows/test.md#kiyo-test-001--separate-assessment-execution-and-test-authoring) | REQ-027, REQ-038, REQ-039, REQ-040, REQ-041, REQ-072 | ACTIVE / none |
+| KIYO-SEC-011 | [Bound Security submodes and assurance](../workflows/security.md#kiyo-sec-011--bound-security-submodes-and-assurance-to-actual-evidence) | REQ-027, REQ-042, REQ-058, REQ-065, REQ-073 | ACTIVE / none |
 
 Keep IDs when files move or wording is clarified. Never renumber or reuse retired
 IDs. A materially different obligation needs a new ID and explicit migration/

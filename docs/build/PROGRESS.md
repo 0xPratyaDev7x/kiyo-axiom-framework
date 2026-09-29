@@ -1,9 +1,47 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **15 Test**.
-Task status: **DONE** for Prompt 15; scoped Test authoring checks passed.
-Product status: shared guidance/profiles/templates and canonical Init/Requirement/Implement/Review/Test authored;
-three public skills and native packages remain pending. No runtime engine.
+Snapshot: 2026-09-29. Current prompt: **16 Security Skill**.
+Task status: **DONE** for Prompt 16; scoped Security authoring checks passed.
+Product status: shared guidance/profiles/templates and canonical Init/Requirement/Implement/Review/Test/Security authored;
+two public skills and native packages remain pending. No runtime engine.
+
+## Prompt 16 delivered scope
+
+- Added canonical [Security](../../src/kiyo/skills/security/SKILL.md), name
+  security / logical ID kiyo.security, with name/description frontmatter only.
+  application/skills/governance/self-check are logical submodes under one entry.
+- Added [shared procedure](../../src/kiyo/workflows/security.md),
+  [submode checklists](../../src/kiyo/agent-security/security-submodes.md),
+  [security finding](../../src/kiyo/templates/reports/security-finding.md) and
+  [honest self-check](../../src/kiyo/templates/reports/self-check-report.md).
+  Refined the existing assessment template and linked shared AST/trust/provenance
+  resources without refreshing their external-source dates or native claims.
+- Supplied-scope read-only assessment forbids global home/plugin sweeps, credentials/
+  environment dumps, probes, suspicious payload execution, scanner installs and
+  automatic remediation. Missing write approval is resolved only for concrete
+  implementation scope; real matching approval is reused.
+- Findings separate concept/evidence/impact/confidence/mitigation/owner/coverage.
+  Signature NOT_VERIFIED is an assurance field, not a sixth check status; incomplete
+  inventory is explicit. Self-check separates declarations/read resources from
+  actual native activation, cryptographic integrity, sandbox/network enforcement.
+- Added KIYO-SEC-011 (64 controls), integration references and
+  [18 scenario specifications](../../tests/behavioral/security/scenarios.md).
+  Actual scoped trials are separately recorded in
+  [forward evidence](../evidence/security/forward-trials.md).
+  Entry validates at 80 lines / 615 words; six temporary copies each contain
+  85 shared files with contained references. No native/runtime/security guarantee.
+
+Coverage: partial Security/shared instruction coverage for
+REQ-026/027/042/051/058/061/062/063/065/067/073; REQ-080 continuity updated.
+REQ-073 newly partial: 72 PARTIALLY_IMPLEMENTED / 8 NOT_IMPLEMENTED.
+All 80 full verifications remain NOT_RUN; six native targets remain NOT_TESTED.
+Complete scenario matrices remain NOT_RUN; source trials cover only recorded
+synthetic variants and cannot establish full AST compliance or native security.
+
+Checks: [Prompt 16 evidence](BASELINE.md#prompt-16-checks).
+Memory Impact: **NONE for developer project memory**. Synthetic Memory is
+assessment input only, never a source of new authority or an automatic write.
+Owner decisions remain open.
 
 ## Prompt 15 delivered scope
 
@@ -518,7 +556,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 13 | Implement | DONE | P13-C01–C07 PASS; source/resource checks and bounded fixture trials; native NOT_TESTED |
 | 14 | Review | DONE | P14-C01–C07 PASS; static/resource checks and bounded read-only source trials; native NOT_TESTED |
 | 15 | Test | DONE | P15-C01–C07 PASS; static/resource checks and bounded mode-specific source trials; native NOT_TESTED |
-| 16 | Security Skill | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 16 | Security Skill | DONE | P16-C01–C07 PASS; static/resource checks and bounded read-only submode trials; native NOT_TESTED |
 | 17 | Architecture Skill | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 18 | Memory Skill | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 19 | Organization Policies | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -542,9 +580,9 @@ Outstanding owner decisions: DEC-001 final name, DEC-002 release license,
 DEC-003 publisher/destination and DEC-004 treatment of Codex IDE's native-plugin
 gap before compatibility/release claims. See OPEN-ISSUES for technical gaps.
 
-Safe to continue: **YES for a user-requested Prompt 16 Security Skill**.
-Shared contracts and five canonical skills are ready; publication/native gaps
+Safe to continue: **YES for a user-requested Prompt 17 Architecture Skill**.
+Shared contracts and six canonical skills are ready; publication/native gaps
 remain gates for dependent packaging/activation claims. Later work is not
 authorized by this handoff alone.
-Next prompt: **16 Security Skill**, only when requested by the user.
+Next prompt: **17 Architecture Skill**, only when requested by the user.
 

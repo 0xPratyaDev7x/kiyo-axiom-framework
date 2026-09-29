@@ -19,7 +19,9 @@ A hash computed from a candidate proves neither its origin nor that it matches a
 independently trusted expected artifact. Record the digest method/value only if
 actually run. A signature claim needs the real verification result, artifact,
 trust basis and signer evidence from the authorized release/native mechanism.
-Missing evidence stays UNKNOWN/NOT_RUN. Unsigned is not automatically malicious;
+Unavailable/unchecked signature assurance is NOT_VERIFIED; missing provenance
+facts stay UNKNOWN and an unperformed verification check stays NOT_RUN. These
+are separate evidence fields, not additional check statuses. Unsigned is not automatically malicious;
 apply the accepted policy as described in [trust review](trust-review.md).
 
 Kiyo supplies no runtime signature verifier, signing keys, transparency service

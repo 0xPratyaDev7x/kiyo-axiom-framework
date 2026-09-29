@@ -139,6 +139,21 @@ or invent business rules. skill-creator guidance supports isolated developer
 source trials using existing local standard-library tooling and narrowly scoped
 test/fixture writes, separate from native activation or product runtime.
 
+Prompt 16 was subsequently authorized on 2026-09-29: author one Security skill
+(logical ID kiyo.security), four logical application/skills/governance/self-check
+submodes, finding/checklist/self-check templates and at least twelve scenarios;
+validate/update build state and stop before Prompt 17. Default supplied-scope
+read-only inspection adds no global inventory scan, credential/environment dump,
+external probe, suspicious payload execution, scanner install or automatic fix.
+Remediation requires concrete scope and any missing policy-defined approval before
+a workflow transition; existing matching approval is reused. NOT_VERIFIED labels
+signature assurance only, preserving the five check statuses. Static/LLM inspection
+is not behavioral/native or cryptographic/isolation/security assurance.
+skill-creator supports isolated read-only synthetic forward trials; this is
+developer validation, not product orchestration or native certification.
+Prompt 16 reuses recorded AST/ASVS sources/status/dates without revalidating them
+or choosing a native schema. Publication/unsupported-route decisions stay open.
+
 ## Pending owner decisions
 
 | ID | Decision | Current evidence / status | Who decides | Latest needed / effect | Resolution evidence |
@@ -149,7 +164,7 @@ test/fixture writes, separate from native activation or product runtime.
 | DEC-004 | Treatment of Codex IDE native-plugin support gap | OPEN. Official [plugin documentation](https://learn.chatgpt.com/docs/plugins) excludes IDE plugins; [skills documentation](https://learn.chatgpt.com/docs/build-skills) supports standalone IDE skills. Checked 2026-09-28; DOCUMENTED_ONLY, live NOT_TESTED | Repository/product owner | Before promising six-target native installation or accepting a standalone fallback; does not block Prompt 03 design of documented surfaces | No fallback or scope reduction approved |
 
 Ask only when an unresolved choice blocks the current authorized prompt. Existing
-instructions authorize Prompt 15 Test authoring/validation and build-state updates. Do not ask for
+instructions authorize Prompt 16 Security authoring/validation and build-state updates. Do not ask for
 premature publication decisions to complete that scope. Publication metadata still
 requiring confirmation is listed in [SOURCES](../research/SOURCES.md#publication-information-still-requiring-the-owner).
 

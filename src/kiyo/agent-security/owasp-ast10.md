@@ -27,8 +27,9 @@ The mapping adds no runtime, sandbox, network block or signature verifier.
 
 Every entry below inherits the checked date/status above and its own residual
 limitation. Kiyo IDs point through the [canonical index](../framework/control-index.md).
-Shared procedures exist as Markdown; eventual Security/Review/public skill callers
-remain unimplemented. Test references are synthetic scenario specifications;
+Shared procedures exist as Markdown; the [Security procedure](../workflows/security.md)
+and Review now reuse them. This authoring update does not refresh source status
+or establish native security behavior. Test references are synthetic scenario specifications;
 **execution NOT_RUN**, not observed behavior or six-target native evidence.
 
 ## AST01 Malicious Skills

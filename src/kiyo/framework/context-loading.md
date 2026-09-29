@@ -82,6 +82,12 @@ mode/safety row. assess is read-only; run preflights authorized execution and
 artifacts; write is limited to requested tests/test-only fixtures. Explicit
 multi-mode scope can cover several phases; test creation alone is not a run.
 
+For a bounded Security task, use the [Security procedure](../workflows/security.md)
+and just the selected application/skills/governance/self-check checklist.
+Supplied scope and read-only reporting remain default; no global inventory sweep,
+payload execution or automatic remediation. Self-check distinguishes visible
+resources from native activation, integrity and isolation evidence.
+
 ## KIYO-LOAD-002 — Kiyo design budgets
 
 These are Kiyo's authoring criteria, **not vendor-imposed context limits**.

@@ -2,8 +2,8 @@
 
 Use this shared **Skill Audit** for requested skill/package reviews, proposed
 adoption and material updates. It is not a ninth public skill or an installer.
-Public Security/Review skills can later call it; they are not implemented by this
-procedure. Review defaults to G1: report findings without changing files, memory,
+Security and Review use this shared guidance; the bounded
+[Security procedure](../workflows/security.md) selects its relevant checklist. Review defaults to G1: report findings without changing files, memory,
 host settings, installed skills or permissions. An explicit authorized authoring
 task can use its G2 scope; inspect execution effects separately.
 

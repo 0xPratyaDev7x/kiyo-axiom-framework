@@ -1102,3 +1102,99 @@ audit, production readiness or certification follows from these checks.
 Memory Impact: NONE for developer project memory. Fixture test writes did not
 create/update Memory; reports and build continuity are developer-only. Stop after
 Prompt 15; Prompt 16 Security Skill needs its own user request.
+
+## Prompt 16 repository observation
+
+Observed 2026-09-29 (Asia/Bangkok), before Prompt 16 edits:
+
+- Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework.
+- Branch main; HEAD 0f63f519d4bf3eedae72c597d47c27a65f5d2e0b, subject
+  “Implement comprehensive test framework and procedures”. Prompt 15 was committed.
+- Initial index/worktree clean; staged/unstaged diffstat empty. Inventory:
+  121 Markdown files plus LICENSE; 86 product files excluding source README,
+  ten behavioral specification files and five forward-evidence records.
+- No applicable AGENTS.md found in repository or checked ancestors; no .kiyo
+  Project Memory. Read Build Contract, governance, secure coding, AST10 mapping,
+  build state and relevant Core/Memory/reporting/original requirements first.
+- Used per-command exact-root safe.directory and empty core.excludesFile only;
+  no global settings changed. Continued applicable skill-creator guidance and
+  independently evaluated bounded source trials; no native/schema/research refresh.
+  AST public-review/documentation status and previous checked dates remain intact.
+
+## Prompt 16 checks
+
+Executed 2026-09-29 (Asia/Bangkok) against the Prompt 16 working tree.
+Authoring/evaluation PASS below does not turn observed fixture defects into
+passed controls, execute inspected packages or establish native activation.
+
+| Name | Applicability | Command/method | Inspected scope | Execution status | Observed result | Evidence location | Limitations | Baseline relation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| P16-C01 Repository and context | Required Build Contract start | Scoped read-only Git root/branch/HEAD/status/log/diff/hash/tags, instruction inventory and focused context reads | Root/main/HEAD, initial index/tree, Security/governance/AST/coding and original requirement scope | PASS | HEAD 0f63f519d4bf3eedae72c597d47c27a65f5d2e0b; clean start; 121 Markdown files; no applicable AGENTS.md in inspected scope | Observation above and actual Git/read stdout | No production/remote/account/native or fresh vendor documentation verification | Prompt 15 committed; earlier checkout snapshots are historical |
+| P16-C02 Canonical submodes and reports | Required single Security entry, checklists and honest reports | Previously inspected skill-creator quick_validate.py; inline Python frontmatter/field/mode/control/budget assertions; author semantic review | Security entry/procedure, four checklists, finding/self-check and existing assessment integration | PASS | Validator exit 0 “Skill is valid!”; name/description only; kiyo.security; 80 lines / 615 words. Four logical submodes, ten AST rows, seven required finding fields/seven self-check properties; KIYO-SEC-011, 64 controls | [Entry](../../src/kiyo/skills/security/SKILL.md), [procedure](../../src/kiyo/workflows/security.md), [checklists](../../src/kiyo/agent-security/security-submodes.md), templates and stdout | Authored instructions/structure do not prove enforcement, native parser behavior or universal report conformance | Sixth canonical entry, within eight planned public skills; existing procedures reused |
+| P16-C03 Specifications and safeguards | Required at least twelve cases and listed edge conditions | Sequential-ID/table assertions and author comparison to request | SEC-01–18 specifications and synthetic expected fragments | PASS | Eighteen cases cover poisoned Memory/README, unsigned package, metadata mismatch, isolation/resource gaps, unsafe execution, remediation scope/reuse, clean limits, inventory, effective guards, copied approval, identity/activation, updates/parity and redaction | [Scenarios](../../tests/behavioral/security/scenarios.md) and author review | Complete matrix remains NOT_RUN; examples are expected behavior only | Prior scenario files/execution statuses unchanged |
+| P16-C04 References and portability | Required contained resources/loading budgets/static payload | Inline Python UTF-8/local link/anchor/control/containment checks; temporary entry transforms/shared-byte copies | Final 128 Markdown files, 91 product files; six entries with 85 shared files each | PASS | 574 contained product links, 29 unchanged optional citations; no absolute developer paths/symlink/reparse payload; bootstrap unchanged 81 lines / 579 words. Security copy resolves thirteen entry references/518 local links; all six copies resolve | SEC-RESOURCE-01 in [forward evidence](../evidence/security/forward-trials.md), final validator stdout | Source copies are not native packages/cache installs/activation or crypto verification; no consumer generator | Existing five entries preserved, evaluated with current shared resources |
+| P16-C05 Bounded read-only trials | Functional authoring validation in isolated synthetic scope | Independent evaluator follows actual source entry; author reviews reports and compares exact fixture paths/bytes/mtime/directory sets | Four submode requests, thirteen fixture files and eight directories | PASS | Effective guard recognized; unsafe instructions/metadata conflict and copied approval/Memory conflict surfaced; self-check distinguishes read from activation, signature NOT_VERIFIED and incomplete inventory. Files/directories unchanged | SEC-FWD-01–04 and SEC-SNAPSHOT-01 in [forward evidence](../evidence/security/forward-trials.md) | Assessment criteria PASS, while package/governance/assurance checks FAIL; payload behavioral/native methods NOT_RUN. Snapshots do not prove all transient access/effects | Author-captured synthetic baseline and accepted local application/policy contracts; no historical regression attribution |
+| P16-C06 Traceability and close | Required Build Contract close procedure | Inline Python registry/trace/status/issue/decision assertions and build-record review | Eighty original requirements/trace rows, six build records, nine issues/four owner decisions | PASS | Twelve rows link P16 checks: REQ-026/027/042/051/058/061/062/063/065/067/073 partial instructions and REQ-080 continuity. REQ-073 newly partial: 72 PARTIALLY_IMPLEMENTED / 8 NOT_IMPLEMENTED; all 80 full verifications NOT_RUN. Prompt 16 DONE, Prompt 17 NOT_STARTED | [Traceability](TRACEABILITY.md), [Progress](PROGRESS.md), [Handoff](HANDOFF.md), final stdout | No full requirement/native acceptance or release decision promoted | Prior 71 partial / 9 unimplemented; one newly partial public skill |
+| P16-C07 Scope and preservation | Required repository/product boundaries | Exact Git allowlists, diff --check, index/HEAD/license hash/tag checks and static boundary assertions | Seven new and seventeen modified Markdown files; separate temporary read-only fixture assessments | PASS | diff --check passed; index empty, HEAD unchanged, no tags; LICENSE blob d2e60c5b160ed4f9ca096215e72efee5769936b1 preserved. No repository .kiyo/platforms/tools/dist or non-Markdown additions | Git/validator stdout and inventory below | Developer fixture creation/inspection only; no consumer runtime, package execution, scanner/install/native/global change, publication, commit/push or next-prompt work | Clean committed Prompt 15 baseline; exact allowlist preserves unrelated history/content |
+
+New files:
+
+- src/kiyo/skills/security/SKILL.md
+- src/kiyo/workflows/security.md
+- src/kiyo/agent-security/security-submodes.md
+- src/kiyo/templates/reports/security-finding.md
+- src/kiyo/templates/reports/self-check-report.md
+- tests/behavioral/security/scenarios.md
+- docs/evidence/security/forward-trials.md
+
+Modified files: six build records (PROGRESS, HANDOFF, TRACEABILITY, OPEN-ISSUES,
+DECISIONS, BASELINE), architecture layout/naming, source README, framework
+context-loading/control-index/reporting-contract, workflow router, existing
+security-assessment report, AST mapping authoring-state paragraph, trust-review
+integration and update-and-provenance assurance wording. Source dates, taxonomy
+and control ownership evidence are not silently revalidated.
+
+The exact Git allowlist preserves LICENSE, Build Contract/requirement registry,
+research/compatibility, ADR/loading/packaging, Core/bootstrap/trust/Memory,
+governance, engineering/profiles, shared read-only/DoD/evidence contracts, prior
+skill entries/scenarios/evidence and all other unchanged files.
+No developer-project facts or temporary absolute locators enter product templates.
+
+Validation command:
+`python -X utf8 <installed-skill-creator>/scripts/quick_validate.py src/kiyo/skills/security`
+(exit 0, Skill is valid!). Inline Python via PowerShell here-strings checks
+strict UTF-8, exact Git scope, relative links/anchors/containment, registered
+controls, frontmatter, budgets, four modes, AST rows, report fields, scenario IDs
+and final trace/build state. Source relocation and snapshot checks are
+developer-only; no checker executable or consumer initializer was added.
+
+Read-only Git methods covered rev-parse --show-toplevel/HEAD, branch --show-current,
+log -1, status --short --branch --untracked-files=all, staged/unstaged diff --stat,
+diff --name-only/--check, ls-files --others --exclude-standard,
+hash-object -- LICENSE and tag --list. Per-command settings did not alter global
+configuration; LF-to-CRLF warnings did not change content validation outcomes.
+
+The first preliminary structural checker incorrectly counted the AST table
+header as a topic row and failed its assertion. The selector was corrected to
+match numbered AST IDs only; the same actual product content then passed.
+No product defect or passing native/behavioral result is inferred from that
+harness correction. Preliminary checks preceded close records; final checks
+cover the resulting files and their build links.
+
+Independent forward outputs were reviewed against synthetic requested boundaries;
+no assessed application/package was run. The evaluator reported four completed
+assessments: application guard inspection PASS, unsafe package/policy/assurance
+controls FAIL, behavioral/native/signature methods NOT_RUN. Unavailable signature
+assurance is NOT_VERIFIED, not a sixth check status or malicious/safe verdict.
+The author checked exact post-trial snapshots of thirteen files/eight directories;
+this does not prove all possible access or transient effects.
+
+All eighteen scenario specifications remain NOT_RUN as a full matrix, all
+80 full requirement verifications remain NOT_RUN and six native targets remain
+NOT_TESTED. Static content, readable Core or LLM review establishes no trusted
+signature, isolation, network enforcement, 100% AST compliance or certification.
+
+Memory Impact: NONE for developer project memory. Synthetic MEM-POL-1 conflict
+was reported without changing content/dates. No remediation or other workflow
+was started. Stop after Prompt 16; Prompt 17 Architecture Skill requires its
+own user request.

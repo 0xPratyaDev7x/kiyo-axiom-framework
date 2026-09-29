@@ -28,8 +28,10 @@ Prompt 12 adds name/directory requirement and logical ID **kiyo.requirement**
 under the same boundary. Prompt 13 adds name/directory implement with logical ID
 **kiyo.implement**. Prompt 14 adds name/directory review and logical ID
 **kiyo.review**. Prompt 15 adds name/directory test and logical ID **kiyo.test**.
-Five canonical entries are authored; three remain planned. assess/run/write are
-logical UX modes, not universal native command arguments.
+Prompt 16 adds name/directory security and logical ID **kiyo.security**.
+Six canonical entries are authored; Architecture and Memory remain planned.
+assess/run/write and Security application/skills/governance/self-check are logical
+submodes under their existing public skills, not universal native command arguments.
 
 Native plugin IDs and host-added prefixes belong to overlays. Use the actual
 discovered identity when invoking a host; do not prepend a universal `kiyo-`
@@ -56,7 +58,8 @@ Prompt 12 adds KIYO-REQ-001 for evidenced requirements and bounded delivery;
 Prompt 13 adds KIYO-IMPL-001 for intent, baseline and checked engineering scope;
 Prompt 14 adds KIYO-REVIEW-001 for bounded evidence-based read-only review;
 Prompt 15 adds KIYO-TEST-001 for separate test effects and observed results;
-the index now has 63 IDs. AST taxonomy labels remain external mapping IDs,
+Prompt 16 adds KIYO-SEC-011 for bounded Security submodes and assurance;
+the index now has 64 IDs. AST taxonomy labels remain external mapping IDs,
 not Kiyo control numbers or ASI identifiers. G1–G4 are advisory Kiyo modes,
 not standards identifiers or native permission settings.
 

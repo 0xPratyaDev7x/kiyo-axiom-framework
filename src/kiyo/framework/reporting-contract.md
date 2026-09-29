@@ -58,7 +58,9 @@ proof of prevention, certification, authorization or actual execution.
 | One evidence-based review issue | [Review finding](../templates/reports/review-finding.md) |
 | Review scope, findings/zero diff, coverage and limits | [Bounded review report](../templates/reports/review-report.md) |
 | Test assessment, execution or authoring evidence | [Test report](../templates/reports/test-report.md) |
-| Application/agent security assessment | [Security assessment](../templates/reports/security-assessment.md) |
+| Bounded application/skills/governance assessment | [Security assessment](../templates/reports/security-assessment.md) |
+| One security finding with owner and limits | [Security finding](../templates/reports/security-finding.md) |
+| Exposed Kiyo resources/identity/activation evidence | [Honest self-check report](../templates/reports/self-check-report.md) |
 | Incomplete work, transfer or context limit | [Handoff](../templates/reports/handoff.md) |
 
 Load one needed template, not the whole catalog. A required approval request uses

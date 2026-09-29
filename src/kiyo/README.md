@@ -71,6 +71,14 @@ executions support outcomes/counts, and coverage requires measurement.
 Eighteen developer scenarios and separate source trials do not establish native
 acceptance. Three public skills and native packages remain pending.
 
+Prompt 16 adds canonical [Security](skills/security/SKILL.md), logical ID
+kiyo.security, its [shared procedure](workflows/security.md), four logical
+submode checklists, security finding and honest self-check report. It reuses
+AST/application/governance guidance with supplied-scope read-only boundaries,
+unverified-signature/incomplete-inventory distinctions and no automatic remediation.
+Eighteen developer scenarios and separate bounded source trials do not prove
+native security or full compliance. Architecture and Memory skills remain pending.
+
 Follow [framework layout](../../docs/architecture/framework-layout.md),
 [content loading](../../docs/architecture/content-loading.md) and
 [packaging contract](../../docs/architecture/packaging-contract.md) as their

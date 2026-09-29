@@ -64,7 +64,10 @@ and refines the existing finding template. Four skill entries remain planned.
 Review remains read-only with explicit inspection/comparison and execution limits.
 Prompt 15 adds skills/test/SKILL.md, workflows/test.md, framework/test-mode-safety.md
 and templates/test-plan.md plus templates/reports/test-report.md. assess/run/write
-are logical effect contracts, not a runtime/parser. Three skill entries remain planned.
+are logical effect contracts, not a runtime/parser. At that step three entries remained planned.
+Prompt 16 adds skills/security/SKILL.md, workflows/security.md,
+agent-security/security-submodes.md and security-finding/self-check report templates.
+Security has four logical submodes within one public entry. Two skill entries remain planned.
 The README remains developer-only. Remaining
 product, overlay, tool, test and distribution paths are **planned**, not features.
 Create each directory when it receives real scoped content; no empty SKILL.md,
@@ -88,7 +91,7 @@ src/kiyo/
     implement/SKILL.md            authored Prompt 13; native acceptance separate
     review/SKILL.md               authored Prompt 14; native acceptance separate
     test/SKILL.md                 authored Prompt 15; native acceptance separate
-    security/SKILL.md
+    security/SKILL.md             authored Prompt 16; native acceptance separate
     architecture/SKILL.md
     memory/SKILL.md
 platforms/
