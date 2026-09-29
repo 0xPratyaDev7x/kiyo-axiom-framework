@@ -1,45 +1,46 @@
 # Kiyo Axiom Framework
+**English** | [ภาษาไทย](README.th.md)
 
-**ให้ AI coding agent ทำงานแบบวิศวกรมืออาชีพ: อ่านโปรเจกต์จริงก่อนลงมือ แก้แค่ที่สั่ง และรายงานตามหลักฐานจริง**
+**Make your AI coding agent work like a professional engineer: read the real project first, change only what was asked, and report only what it can prove.**
 
-📖 **อ่านเอกสารฉบับเต็มได้ที่ [kiyo-axiom.codejadee.com](https://kiyo-axiom.codejadee.com/)**
+📖 **Full documentation: [kiyo-axiom.codejadee.com](https://kiyo-axiom.codejadee.com/)**
 
-Kiyo เป็นชุด Skill แบบ Markdown สำหรับ Claude Code, Codex และ GitHub Copilot
-ติดตั้งแล้วใช้ได้ทันที ไม่มี runtime, MCP, hook, database หรือ watcher ให้ดูแลเพิ่ม
-
----
-
-## ทำไมต้องใช้ Kiyo
-
-ถ้าเคยเจอ AI agent แบบนี้ Kiyo ช่วยได้:
-
-| ปัญหาที่เจอบ่อย | Kiyo ช่วยอย่างไร |
-| --- | --- |
-| 🤔 **เดาเอาเอง** ว่าโปรเจกต์ใช้ stack อะไร มี convention แบบไหน | อ่านโค้ด เอกสาร และ test จริงก่อน แยก *ข้อเท็จจริง / สมมติฐาน / ข้อเสนอ / สิ่งที่ยังไม่รู้* ให้ชัด |
-| ✂️ **แก้เกินที่สั่ง** เช่น ขอแก้บั๊กเดียวแต่ refactor ทั้งไฟล์ | จำกัดขอบเขตการเปลี่ยนแปลงให้พอดีกับงาน และเก็บงานของคุณที่ไม่เกี่ยวข้องไว้เหมือนเดิม |
-| ✅ **อ้างว่ารัน test ผ่าน** ทั้งที่ไม่ได้รัน | รายงานสถานะตามจริง: `PASS` / `FAIL` / `NOT_RUN` / `BLOCKED` พร้อมหลักฐาน |
-| 🔧 **ขอแค่ review แต่ดันไปแก้โค้ด** | Review, Security และ Architecture เป็นแบบ read-only ตรวจแล้วรายงาน ไม่แตะโค้ด |
-| 🧠 **ลืม context** ทุกครั้งที่เปิด session ใหม่ | Project Memory เก็บ context ของโปรเจกต์ไว้ใน repo และตรวจ drift เทียบกับโค้ดปัจจุบันได้ |
-| ⚠️ **ทำ action อันตราย** เช่น push, deploy, แก้ production DB | มี governance และ human approval กำกับ ไม่ commit/push/deploy เองถ้าไม่ได้สั่ง |
-
-**สรุปสั้น ๆ:** agent ทำงานได้คาดเดาง่ายขึ้น ตรวจสอบได้ และปลอดภัยกับ codebase ของทีมมากขึ้น
-
-### สี่เสาหลัก
-
-| เสาหลัก | ใช้ทำอะไร |
-| --- | --- |
-| **Project Intelligence** | เข้าใจโปรเจกต์จากหลักฐานจริง, Project Memory, ตรวจ drift |
-| **Software Engineering** | Requirement, implement แบบ minimal, review, test |
-| **AI Governance** | ขอบเขตงาน, ความเสี่ยง, การจัดการข้อมูล, การอนุมัติโดยมนุษย์ |
-| **Agentic Skill Security** | ความน่าเชื่อถือและที่มาของ Skill, กัน prompt injection |
+Kiyo is a set of Markdown Skills for Claude Code, Codex and GitHub Copilot.
+Install it and start working. There is no runtime, MCP server, hook, database or watcher to maintain.
 
 ---
 
-## 🚀 เริ่มใช้งานใน 3 ขั้นตอน
+## Why Kiyo
 
-### 1. ติดตั้ง
+If your AI agent has ever done any of these, Kiyo helps:
 
-repo นี้เป็น custom marketplace อยู่แล้ว เลือกคำสั่งตาม host ที่ใช้
+| Common problem | How Kiyo helps |
+| --- | --- |
+| 🤔 **Guesses** your stack and conventions | Reads the real code, docs and tests first, and keeps *facts / assumptions / proposals / unknowns* clearly apart |
+| ✂️ **Changes more than asked**, e.g. refactors a whole file to fix one bug | Keeps the change scoped to the task and leaves your unrelated edits alone |
+| ✅ **Claims tests passed** when they never ran | Reports honestly: `PASS` / `FAIL` / `NOT_RUN` / `BLOCKED`, with evidence |
+| 🔧 **Starts editing when you only asked for a review** | Review, Security and Architecture are read-only: they inspect and report, never touch code |
+| 🧠 **Forgets context** every new session | Project Memory stores project context in your repo and can check drift against current code |
+| ⚠️ **Takes risky actions** like push, deploy or touching a production DB | Governance and human approval rules apply: no commit, push or deploy unless you ask |
+
+**In short:** your agent becomes more predictable, easier to verify and safer for your team's codebase.
+
+### Four pillars
+
+| Pillar | What it covers |
+| --- | --- |
+| **Project Intelligence** | Evidence-based project understanding, Project Memory, drift checks |
+| **Software Engineering** | Requirements, minimal implementation, review, tests |
+| **AI Governance** | Task scope, risk, data handling, human approval |
+| **Agentic Skill Security** | Skill trust and provenance, prompt-injection defense |
+
+---
+
+## 🚀 Get started in 3 steps
+
+### 1. Install
+
+This repository is already a custom marketplace. Pick the commands for your host.
 
 **Claude Code** (CLI / VS Code)
 ```text
@@ -59,128 +60,128 @@ copilot plugin marketplace add 0xPratyaDev7x/kiyo-codejadee-framework
 copilot plugin install kiyo-axiom-framework@kiyo-codejadee
 ```
 
-**Codex IDE Extension (VS Code)** โหลด plugin ไม่ได้ ให้ copy โฟลเดอร์ `kiyo-*`
-ทั้งแปดโฟลเดอร์จาก `dist/codex-ide/.agents/skills/` ไปไว้ที่ `.agents/skills/` ของ repo
-(หรือ `$HOME/.agents/skills/` ถ้าจะใช้ทุกโปรเจกต์) แล้วเปิดแชทใหม่
-([ขั้นตอนละเอียด](platforms/codex-ide/README.md))
+**Codex IDE Extension (VS Code)** cannot load plugins. Copy all eight `kiyo-*`
+folders from `dist/codex-ide/.agents/skills/` into your repository's `.agents/skills/`
+(or `$HOME/.agents/skills/` for every project), then open a new chat
+([detailed steps](platforms/codex-ide/README.md)).
 
-> ตัวเลือกอื่น เช่น ZIP สำหรับทดลองแบบ session เดียว ดูที่
-> [คู่มือติดตั้ง](docs/user/README.md#install-or-load-a-prepared-package)
+> Other options, such as a ZIP for a single-session trial, are in the
+> [install guide](docs/user/README.md#install-or-load-a-prepared-package).
 
-### 2. รัน Init เพื่อให้ Kiyo รู้จักโปรเจกต์
+### 2. Run Init so Kiyo learns your project
 
-เรียก Skill **Init** (วิธีเรียกของแต่ละ host อยู่ในหัวข้อ “เรียก Skill ยังไง” ด้านล่าง) แล้วเริ่มจากโหมด preview ก่อน:
+Invoke the **Init** Skill (see the per-host syntax under "Invoking a Skill" below) and start with a preview:
 
 ```text
 Preview onboarding for this repository; report evidence, unknowns and proposed
 Memory/config/bootstrap changes without writing files.
 ```
 
-ถ้าพอใจกับผล preview ก็สั่งต่อ:
+If you are happy with the preview, continue:
 
 ```text
 Create the proposed local Memory/config; preserve existing instructions.
 ```
 
-ค่าเริ่มต้น Kiyo จะสร้าง Memory ไว้ที่ `.kiyo/memory` และ config ที่ `.kiyo/policy.md`
-โดยไม่แตะ source code, test หรือ dependency ของคุณ
+By default Kiyo creates Memory in `.kiyo/memory` and config in `.kiyo/policy.md`,
+without touching your source code, tests or dependencies.
 
-### 3. ใช้งานประจำวัน
+### 3. Daily work
 
-เลือก Skill ให้ตรงกับงาน บอกเป้าหมายและขอบเขตที่อนุญาต แล้วอ่านรายงานที่ได้
-พิมพ์ภาษาไทยได้เลย Kiyo ตอบกลับตามภาษาที่คุณใช้
+Pick the Skill that fits the task, state the goal and the allowed scope, then read the report.
+Kiyo replies in the language you write in.
 
 ---
 
-## 📋 Cheatsheet: Skill ทั้ง 8 ตัว
+## 📋 Cheatsheet: the 8 Skills
 
-| Skill | ใช้เมื่อ | ตัวอย่าง prompt | แก้ไฟล์ได้ไหม |
+| Skill | Use it when | Example prompt | Writes files? |
 | --- | --- | --- | --- |
-| **Init** | เริ่มใช้กับโปรเจกต์ใหม่ หรืออยากให้ Kiyo วิเคราะห์โปรเจกต์ | “Preview onboarding only.” | preview: ❌ / initialize: เฉพาะ Memory/config |
-| **Requirement** | แปลงคำขอดิบหรือ issue เป็น requirement ที่พร้อมทำ | “เพิ่ม export Excel ช่วยหาว่ายังขาด field หรือ permission อะไร” | ❌ ตอบในแชท (เขียนไฟล์เฉพาะ path ที่ขอ) |
-| **Implement** | เพิ่ม feature, แก้บั๊ก, refactor ที่ระบุขอบเขตชัด | “Fix the boundary error and add its regression test.” | ✅ เฉพาะโค้ด/test/docs ในขอบเขต |
-| **Review** | ตรวจ diff, ไฟล์, commit หรือ PR | “Review my unstaged changes; do not edit.” | ❌ read-only |
-| **Test** | หา test gap, รัน test, หรือเขียน test | “Assess authorization test gaps in this module.” | แล้วแต่โหมด (ดูด้านล่าง) |
-| **Security** | ตรวจความเสี่ยงของโค้ด, Skill หรือ policy | “Assess this handler for validation and authorization risks.” | ❌ read-only |
-| **Architecture** | คำถามเชิงออกแบบ, วิเคราะห์ผลกระทบ, ตรวจ drift จาก ADR | “Compare ADR-007 with this module; report deviations only.” | ❌ read-only |
-| **Memory** | ดู, ตรวจ, sync หรือซ่อม Project Memory | “Compare these Memory observations with this branch.” | show/check: ❌ / sync/repair: เฉพาะ entry ที่อนุญาต |
+| **Init** | Onboarding a project, or asking Kiyo to analyze it | “Preview onboarding only.” | preview: ❌ / initialize: Memory/config only |
+| **Requirement** | Turning a raw request or issue into an implementation-ready requirement | “Add Excel export; identify missing fields and permissions first.” | ❌ chat only (writes only a spec path you request) |
+| **Implement** | Adding a feature, fixing a bug, or an explicitly scoped refactor | “Fix the boundary error and add its regression test.” | ✅ code/tests/docs within scope |
+| **Review** | Reviewing a diff, files, a commit range or a PR | “Review my unstaged changes; do not edit.” | ❌ read-only |
+| **Test** | Finding test gaps, running tests, or writing tests | “Assess authorization test gaps in this module.” | Depends on mode (see below) |
+| **Security** | Assessing risk in code, a Skill package or a policy | “Assess this handler for validation and authorization risks.” | ❌ read-only |
+| **Architecture** | Design questions, impact analysis, drift from an ADR | “Compare ADR-007 with this module; report deviations only.” | ❌ read-only |
+| **Memory** | Showing, checking, syncing or repairing Project Memory | “Compare these Memory observations with this branch.” | show/check: ❌ / sync/repair: authorized entries only |
 
-### โหมดย่อยที่ควรรู้
+### Modes worth knowing
 
-| Skill | โหมด | ทำอะไร |
+| Skill | Mode | What it does |
 | --- | --- | --- |
-| Init | `preview` | อ่านอย่างเดียว รายงานสิ่งที่พบและสิ่งที่จะเสนอให้สร้าง |
-| Init | `initialize` | สร้าง/อัปเดต Memory, config และ bootstrap ที่อนุญาต |
-| Test | `assess` | อ่าน test แล้วหาช่องว่าง ไม่เขียนไฟล์ ไม่รันอะไร |
-| Test | `run` | รัน test suite ที่มีอยู่หลังตรวจ script และ environment แล้ว ไม่แก้ source/test |
-| Test | `write` | เขียน test ตามเคสที่ตกลงกัน (การเขียนไม่ได้แปลว่าอนุญาตให้รันด้วย) |
-| Security | `application` / `skills` / `governance` / `self-check` | ตรวจโค้ดแอป / ตรวจ Skill package ตาม AST01–AST10 / ตรวจ policy / ตรวจตัว Kiyo เอง |
-| Memory | `show` / `check` | สรุป entry / เทียบ Memory กับโค้ดปัจจุบันเพื่อหา drift (ไม่เขียนไฟล์) |
-| Memory | `sync` / `repair` | อัปเดตเฉพาะ observation ที่มีหลักฐาน / ซ่อมลิงก์ที่ย้ายไฟล์ (เก็บ decision และประวัติไว้) |
+| Init | `preview` | Read-only; reports findings and what it would propose |
+| Init | `initialize` | Creates/updates authorized Memory, config and bootstrap |
+| Test | `assess` | Reads tests and finds gaps; no writes, no execution |
+| Test | `run` | Runs an existing suite after inspecting its script and environment; no source/test edits |
+| Test | `write` | Writes tests for agreed cases (writing does not authorize running them) |
+| Security | `application` / `skills` / `governance` / `self-check` | App code / Skill package against AST01–AST10 / policy / Kiyo itself |
+| Memory | `show` / `check` | Summarize entries / compare Memory with current code for drift (no writes) |
+| Memory | `sync` / `repair` | Apply evidence-backed observation fixes / repair moved-file links (decisions and history preserved) |
 
-### เรียก Skill ยังไง
+### Invoking a Skill
 
-slug ทั้งแปดคือ `init`, `requirement`, `implement`, `review`, `test`, `security`, `architecture`, `memory`
+The eight slugs are `init`, `requirement`, `implement`, `review`, `test`, `security`, `architecture`, `memory`.
 
-| Host | วิธีเรียก (ตัวอย่างใช้ `init`) |
+| Host | How to invoke (example: `init`) |
 | --- | --- |
 | Claude Code CLI / VS Code | `/kiyo-axiom-framework:init` |
-| Codex CLI | เปิด `/skills` หรือ `$` picker แล้วเลือก entry ของ Kiyo |
-| Codex IDE Extension | `$kiyo-init` หรือเลือกจาก `/skills` |
-| GitHub Copilot CLI | `/skills list` หรือ `/skills info` เพื่อหา selector ของ Kiyo |
-| GitHub Copilot VS Code | `/kiyo-axiom-framework:init` หรือเลือกใน Configure Skills |
+| Codex CLI | Open `/skills` or the `$` picker and choose the Kiyo entry |
+| Codex IDE Extension | `$kiyo-init`, or choose it from `/skills` |
+| GitHub Copilot CLI | `/skills list` or `/skills info` to find Kiyo's selector |
+| GitHub Copilot VS Code | `/kiyo-axiom-framework:init`, or choose it in Configure Skills |
 
-> ระวังอย่าสับสนกับคำสั่ง built-in ของ host อย่าง `/init` หรือ `/review`
+> Don't confuse these with host built-ins such as `/init` or `/review`.
 
-### อ่านรายงานให้เป็น
+### Reading a report
 
-| ป้าย | ความหมาย |
+| Label | Meaning |
 | --- | --- |
-| `PASS` / `FAIL` | รันการตรวจจริงแล้ว ผ่าน / ไม่ผ่าน |
-| `NOT_RUN` | ยังไม่ได้รัน (ไม่ใช่ “ผ่าน”) |
-| `NOT_APPLICABLE` | ไม่เกี่ยวกับงานนี้ |
-| `BLOCKED` | ทำต่อไม่ได้ เช่น ไม่มี environment หรือไม่มีสิทธิ์ |
-| `DONE` / `PARTIALLY COMPLETE` / `DECISION REQUIRED` | สถานะของงาน: เสร็จ / เสร็จบางส่วน / ต้องให้คุณตัดสินใจก่อน |
+| `PASS` / `FAIL` | The check actually ran and passed / failed |
+| `NOT_RUN` | The check did not run (this is not a pass) |
+| `NOT_APPLICABLE` | Not relevant to this task |
+| `BLOCKED` | Could not proceed, e.g. missing environment or permission |
+| `DONE` / `PARTIALLY COMPLETE` / `DECISION REQUIRED` | Task status: finished / partly finished / needs your decision |
 
-Requirement มีสถานะความพร้อมอีกชุด: `READY_FOR_IMPLEMENTATION`, `DECISION_REQUIRED`,
-`INSUFFICIENT_EVIDENCE` (สถานะ READY ไม่ได้แปลว่าให้เริ่มเขียนโค้ดเอง ต้องสั่ง Implement ต่อ)
+Requirement has its own readiness labels: `READY_FOR_IMPLEMENTATION`, `DECISION_REQUIRED`,
+`INSUFFICIENT_EVIDENCE`. READY does not mean coding starts on its own; invoke Implement next.
 
-### เคล็ดลับ
+### Tips
 
-- **ระบุเป้าหมายและขอบเขตทุกครั้ง** เช่น “แก้เฉพาะไฟล์เหล่านี้” หรือ “ห้ามแก้ไฟล์”
-- **คำขอกำกวมจะเริ่มแบบ read-only** เช่น “ดู login ให้หน่อย” Kiyo จะตรวจหรือถามก่อน ไม่แก้ทันที
-- **เรียก Skill ให้ชัดเจน** คือวิธีที่แน่นอนที่สุด (Init ใส่ routing hint ให้ host เลือก Skill เองได้ แต่ยังไม่แน่นอน 100%)
-- **ต้องการคำตอบภาษาอื่น** ให้บอก “answer in English” ส่วนโค้ด คำสั่ง และ path จะคงเดิม
+- **Always state the goal and the scope**, e.g. “only these files” or “do not edit”.
+- **Ambiguous requests start read-only.** “Take a look at login” makes Kiyo inspect or ask first, not edit.
+- **Invoking the Skill explicitly** is the most reliable route. Init adds routing hints so the host can pick a Skill on its own, but that is not guaranteed.
+- **Want another language?** Say “answer in Thai” (or any language). Code, commands and paths stay unchanged.
 
 ---
 
-## 📚 เอกสาร
+## 📚 Documentation
 
-**เอกสารฉบับเต็ม: [https://kiyo-axiom.codejadee.com/](https://kiyo-axiom.codejadee.com/)**
+**Full documentation: [https://kiyo-axiom.codejadee.com/](https://kiyo-axiom.codejadee.com/)**
 
-คู่มือใน repo:
+Guides in this repository:
 
-- [คู่มือผู้ใช้: ติดตั้ง → Init → ใช้งานประจำวัน → รายงาน](docs/user/README.md)
-- [รายละเอียด input, โหมด และขอบเขตของแต่ละ Skill](docs/user/skills.md)
-- [Governance และการอนุมัติ](docs/user/governance.md)
-- [Memory และ drift](docs/user/memory.md)
-- [Security ของแอปและของ agent](docs/user/security.md)
+- [User guide: install → Init → daily work → reports](docs/user/README.md)
+- [Skill inputs, modes and scopes](docs/user/skills.md)
+- [Governance and approval](docs/user/governance.md)
+- [Memory and drift](docs/user/memory.md)
+- [Application and agentic security](docs/user/security.md)
 - [Troubleshooting](docs/user/troubleshooting.md)
-- [ตัวอย่าง walkthrough 9 แบบ](docs/user/walkthroughs.md)
-- [คู่มือสำหรับ maintainer](docs/developer/maintainer-guide.md)
+- [Nine illustrative walkthroughs](docs/user/walkthroughs.md)
+- [Maintainer guide](docs/developer/maintainer-guide.md)
 
 ---
 
-## สถานะโปรเจกต์
+## Project status
 
-Kiyo อยู่ในช่วง **development preview** (ชื่อยังเป็น working name และยังไม่มี public release)
-ติดตั้งผ่าน marketplace ของ repo นี้ได้ แต่การทดสอบ agent workflow แบบเต็มบนทุก host ยังไม่เสร็จ
+Kiyo is a **development preview** (working name, no public release yet).
+You can install it from this repository's marketplace, but full agent-workflow testing on every host is not finished.
 
-- Kiyo เป็นแนวทางให้ agent ทำตาม ส่วนสิทธิ์และการรันคำสั่งยังเป็นของ host
-  Kiyo ไม่ได้ทำ sandbox และไม่รับประกันว่า agent จะทำตามทุกครั้ง
-- ไม่ได้รับรอง ISO/OWASP compliance หรือนโยบาย privacy ของ provider ใด ๆ
-- ผลทดสอบรายละเอียดของแต่ละ host: [compatibility matrix](docs/compatibility/live-test-matrix.md)
-  และ [Final Acceptance Report](docs/build/FINAL-ACCEPTANCE.md)
+- Kiyo guides the agent; permissions and command execution remain the host's job.
+  Kiyo does not provide a sandbox or guarantee agent compliance.
+- It does not certify ISO/OWASP compliance or any provider's privacy terms.
+- Per-host test results: [compatibility matrix](docs/compatibility/live-test-matrix.md)
+  and [Final Acceptance Report](docs/build/FINAL-ACCEPTANCE.md).
 
 ## License
 
