@@ -15,14 +15,14 @@ One canonical specification with necessary self-contained native overlays.
 
 ## Current repository observation
 
-Observed for Prompt 17 on 2026-09-29:
+Observed for Prompt 18 on 2026-09-29:
 
 - Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework
-- Branch: main; HEAD: e16dc813ed5f6923a6f7da8a0f628240fc340afc.
+- Branch: main; HEAD: 96660958673b724176ccacc47b84f7b382ce52a5.
 - Initial working tree and index clean; tracked LICENSE, eight build files and
   five research/compatibility files, six architecture documents, source README,
-  91 product files, eleven behavioral specification files and six developer evidence
-  records (128 Markdown files total). Prompt 16 was committed before this work;
+  95 product files, twelve behavioral specification files and seven developer evidence
+  records (134 Markdown files total). Prompt 17 was committed before this work;
   previous checkout/HEAD/uncommitted snapshots are historical, not current facts.
 - No applicable AGENTS.md found in repository or checked ancestors; no .kiyo
   project/product memory present.
@@ -32,7 +32,7 @@ Observed for Prompt 17 on 2026-09-29:
   unreadable global ignores.
 - LICENSE blob remains d2e60c5b160ed4f9ca096215e72efee5769936b1.
 - No product version file, manifest or Git tag found in the scoped inventory.
-- Prompt 17 creates six Markdown files and changes seventeen existing Markdown files. No commits,
+- Prompt 18 creates seven Markdown files and changes fifteen existing Markdown files. No commits,
   tags, pushes, installs, publication or global settings changes were made here.
 
 Recheck root, branch, index, unstaged/untracked changes and user edits on resume.
@@ -134,7 +134,16 @@ Preserve LICENSE and the 80 original requirements. See BASELINE for check result
     [scenarios](../../tests/behavioral/architecture/scenarios.md) and
     [bounded forward evidence](../evidence/architecture/forward-trials.md).
 
-Prompts 10–17 do not refresh external research; retain each source's recorded date.
+22. [Memory entry](../../src/kiyo/skills/memory/SKILL.md),
+    [mode definitions](../../src/kiyo/framework/memory-modes.md),
+    existing [lifecycle](../../src/kiyo/workflows/memory-lifecycle.md),
+    [diff](../../src/kiyo/templates/reports/memory-diff.md),
+    [sync](../../src/kiyo/templates/reports/memory-sync-report.md) and
+    [repair](../../src/kiyo/templates/reports/memory-repair-report.md) templates,
+    [skill scenarios](../../tests/behavioral/memory/skill-scenarios.md) and
+    [bounded forward evidence](../evidence/memory/forward-trials.md).
+
+Prompts 10–18 do not refresh external research; retain each source's recorded date.
 Prompt 02 native checks and unrefreshed standards remain dated 2026-09-28.
 Prompt 09 rechecked S01–S07 and added E01–E06 on 2026-09-29; public documentation
 only, not licensed ISO text or actual stack verification. Prompt 07
@@ -250,6 +259,14 @@ Source/resource checks and bounded read-only assessments are distinct from
 complete matrix/native acceptance, architecture adoption and production behavior.
 Only the public Memory entry remains pending.
 
+Prompt 18 authors canonical Memory (name memory; logical ID kiyo.memory), explicit
+mode definitions, three neutral diff/sync/repair reports and eighteen additional
+scenario specifications, reusing the existing shared lifecycle.
+Status: **DONE** for canonical authoring; see [Prompt 18 checks](BASELINE.md#prompt-18-checks).
+All eight canonical public entries are now authored without extra router,
+governance or self-check skills. Bounded fixture writes/read-only/no-op checks are
+not full behavioral acceptance, native catalogs or installed host validation.
+
 No native version, account availability or installed-tool absence is inferred from the
 assistant session. Each of Claude CLI, Claude VS Code, Codex CLI, Codex IDE,
 Copilot CLI and Copilot VS Code remains **NOT_TESTED** live.
@@ -295,6 +312,10 @@ Current totals: 72 PARTIALLY_IMPLEMENTED / 8 NOT_IMPLEMENTED; REQ-073 newly part
 Prompt 17 adds partial Architecture/shared instruction coverage for
 REQ-019/022/023/024/026/027/028/033/040/044/074 and updates REQ-080.
 Current totals: 73 PARTIALLY_IMPLEMENTED / 7 NOT_IMPLEMENTED; REQ-074 newly partial.
+Prompt 18 adds partial Memory/shared instruction coverage for
+REQ-017/018/019/020/021/022/023/024/026/027/040/044/075 and updates REQ-080.
+REQ-075 already had partial shared content, so current totals remain
+73 PARTIALLY_IMPLEMENTED / 7 NOT_IMPLEMENTED.
 All full requirement verifications remain NOT_RUN; source trials cover only
 their recorded fixtures, not the complete scenario matrix or six native targets.
 
@@ -323,7 +344,7 @@ their recorded fixtures, not the complete scenario matrix or six native targets.
 
 Open decisions: DEC-001 name/identifiers, DEC-002 release-license confirmation,
 DEC-003 publisher/account/destination, DEC-004 unsupported IDE route.
-They do not block the next Memory skill authoring scope under the selected architecture; they do block
+They do not block the next Organization Policies authoring scope under the selected architecture; they do block
 dependent release identities, claims or unapproved fallback choices.
 
 Memory Impact: **NONE for developer project memory**. Build continuity/specification
@@ -340,9 +361,8 @@ changed. Temporary synthetic fixture state is recorded separately in forward evi
   Agent-security references and four optional governance-record templates also
   exist, together with five router/flow references, six engineering standards plus
   selection/mapping, four profiles/extension contract, three evidence/DoD/reporting
-  contracts and thirteen report templates. Init now has its canonical entry, full
-  procedure/references and a project-context template. Other workflows/templates
-  and the remaining public Memory skill remain unimplemented. Requirement now adds a
+  contracts and sixteen report templates. Init now has its canonical entry, full
+  procedure/references and a project-context template. Remaining workflows/templates and native artifacts remain unimplemented. Requirement now adds a
   canonical entry, shared procedure/readiness checklist and neutral template.
   Implement now adds its canonical entry, short plan and integration with existing
   implementation/repair/handoff/report references. Review adds its entry/shared
@@ -352,9 +372,11 @@ changed. Temporary synthetic fixture state is recorded separately in forward evi
   finding/self-check templates and integration with the assessment report.
   Architecture adds its entry/procedure, observation/impact templates and the
   extended shared drift report; no automatic migration or record sync.
+  Memory adds its entry/modes and diff/sync/repair reports using the shared
+  lifecycle. All eight public entries now exist; native catalogs remain pending.
   Do not mistake synthetic scenarios for executed behavior.
 - Core IDs use `KIYO-<DOMAIN>-<NNN>`, independent of standard clauses. The actual
-  65-control index points to canonical definitions (16 Core, six Memory, nine
+  66-control index points to canonical definitions (16 Core, seven Memory, nine
   governance, eleven security, six routing/flow, seven engineering/profile, four
   evidence/completion/reporting IDs, one Init ID, one Requirement ID, one Implement ID, one Review ID, one Test ID and one Architecture ID). ACTIVE means authored, not
   behaviorally verified; do not duplicate rules across later skills.
@@ -377,7 +399,7 @@ changed. Temporary synthetic fixture state is recorded separately in forward evi
 - Do not generate manifests, public skills, release versions or all later trees
   to make scaffolding look complete. Keep schema gaps and owner decisions open.
 
-## Shared boundaries for Prompt 18
+## Shared boundaries for Prompt 19
 
 Use Memory as context, validate material claims, preserve approved intent and
 surface conflicting sources through the real native hierarchy. Do not treat
@@ -404,7 +426,7 @@ No-op does not touch content/mtime/dates. Preserve concurrent human edits,
 existing IDs/paths and approved intent. Mapperly decision versus actual
 AutoMapper usage is Architecture Drift, not permission to change the decision.
 All 20 Memory scenarios remain NOT_RUN. Init now has a separate canonical entry
-and bounded source trials; the public Memory skill remains pending.
+and bounded source trials; Memory now adds its canonical entry and explicit modes.
 
 Governance G1 Observe / G2 Assist / G3 Controlled / G4 Restricted are Kiyo's
 advisory model, not ISO/NIST levels or native settings. Risk is separate and
@@ -679,18 +701,52 @@ explicit scope transition and applicable approval, reusing valid matching scope.
 Sixteen scenario specifications remain NOT_RUN as a complete matrix; bounded
 source evaluations and immutable fixture snapshots are separately recorded.
 
+Memory has canonical name memory and logical ID kiyo.memory. show/check/sync/repair
+are logical effects, not native commands/settings or additional skills. show
+summarizes selected stored claims/freshness without pretending to revalidate;
+check compares current authorized evidence and reports outcomes. Both write zero
+files, including dates, statuses and report artifacts. Previews also write nothing.
+
+Sync updates only necessary authorized observations/provenance and pointers;
+repair handles scoped links/duplicates/structural inconsistencies. Preserve
+canonical/legacy paths, IDs, observed dates, decisions/history and human sections.
+No whole-folder rewrite, duplicate store, forced Init after manual edits, cache
+Memory, secrets/PII/raw logs/private reasoning or redundant endpoint inventories.
+
+Prepare an entry delta, separate factual corrections from Architecture Drift and
+UNVERIFIED gaps, reuse real scoped authority and reread latest entry/index/human
+text/evidence immediately before writes. Recompute safe non-overlapping edits;
+hold ambiguous overlap, decision conflict or identity uncertainty. No timestamp
+winner, old-snapshot overwrite, reset/stash or atomicity guarantee.
+
+Last_modified reflects changed entries; last_verified reflects actually checked
+claims within scope, never pointer resolution alone or a blanket date refresh.
+No necessary delta means no writes/formatting/timestamp change on repeat sync.
+Exact redundant index pointers can be repaired with identity evidence and
+authority; conflicting duplicate records/approved history require human resolution,
+not silent deletion or supersession. Ordinary sync cannot approve a decision.
+
+Report actual deltas/links/evidence, pending/conflicting parts and Memory Impact.
+An applied necessary correction retains UPDATE_REQUIRED with applied/no-pending
+scope; a later no-op can be NONE. Read-only conflict findings can finish a bounded
+check, but mandatory unapplied sync/repair or missing evidence prevents full DONE.
+No watcher, whole-project currency or automatic production verification exists.
+Eighteen Memory Skill specifications remain NOT_RUN as a full matrix; original
+twenty lifecycle cases remain separate. Bounded source trials include actual
+show/check preservation, scoped sync/repair and repeat no-op with limitations.
+
 ## Exact next action
 
-Prompt 17 is complete within its canonical Architecture authoring scope; stop here.
-**Next: Prompt 18 Memory Skill**, only when supplied by the user. Recheck repository
-and read the files above; implement only that prompt's actual Memory skill scope,
-reusing the specification, lifecycle, governance and evidence contracts.
-Preserve read-only versus authorized sync, observed versus approved intent,
-canonical paths, human edits and source-trial versus native evidence.
-Do not infer authorization for developer-project initialization, other skills,
-dangerous operations, publication or unverified native overlays/activation.
+Prompt 18 is complete within its canonical Memory authoring scope; stop here.
+**Next: Prompt 19 Organization Policies**, only when supplied by the user.
+Recheck repository and read the files above; implement only that prompt's actual
+policy content scope using existing trust/governance/evidence contracts.
+All eight public skills are authored; do not add router/governance/self-check
+entries or infer complete native support from this inventory.
+Do not infer authority for real organization policy adoption, developer-project
+initialization, dangerous operations, publication or unverified native overlays.
 
-Safe to continue: **YES for a user-requested Prompt 18 Memory Skill**.
-Shared contracts and seven authored skill patterns are ready; native/owner gaps
-remain gates for dependent packaging/activation/publication claims.
+Safe to continue: **YES for a user-requested Prompt 19 Organization Policies**.
+Shared contracts and all eight canonical skill patterns are ready; native/owner
+gaps remain gates for dependent packaging/activation/publication claims.
 

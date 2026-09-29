@@ -30,9 +30,12 @@ under the same boundary. Prompt 13 adds name/directory implement with logical ID
 **kiyo.review**. Prompt 15 adds name/directory test and logical ID **kiyo.test**.
 Prompt 16 adds name/directory security and logical ID **kiyo.security**.
 Prompt 17 adds name/directory architecture and logical ID **kiyo.architecture**.
-Seven canonical entries are authored; Memory remains planned.
+Prompt 18 adds name/directory memory and logical ID **kiyo.memory**.
+All eight canonical entries are authored; no extra router/governance/self-check
+entry exists. Native catalogs and per-target acceptance remain pending.
 assess/run/write and Security application/skills/governance/self-check are logical
 submodes under their existing public skills, not universal native command arguments.
+Memory show/check/sync/repair likewise describe logical effects, not native permissions.
 
 Native plugin IDs and host-added prefixes belong to overlays. Use the actual
 discovered identity when invoking a host; do not prepend a universal `kiyo-`
@@ -61,7 +64,8 @@ Prompt 14 adds KIYO-REVIEW-001 for bounded evidence-based read-only review;
 Prompt 15 adds KIYO-TEST-001 for separate test effects and observed results;
 Prompt 16 adds KIYO-SEC-011 for bounded Security submodes and assurance;
 Prompt 17 adds KIYO-ARCH-001 for evidence-scoped architecture and approved intent;
-the index now has 65 IDs. AST taxonomy labels remain external mapping IDs,
+Prompt 18 adds KIYO-MEM-008 for explicit Memory modes and preserved history;
+the index now has 66 IDs. AST taxonomy labels remain external mapping IDs,
 not Kiyo control numbers or ASI identifiers. G1–G4 are advisory Kiyo modes,
 not standards identifiers or native permission settings.
 

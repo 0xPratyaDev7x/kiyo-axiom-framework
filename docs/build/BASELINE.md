@@ -1293,3 +1293,99 @@ Memory Impact: NONE for developer project memory. Synthetic alpha conflict was
 reported without changing approved intent or Memory; beta's missing evidence
 remained explicit. Stop after Prompt 17; Prompt 18 Memory Skill awaits its own
 user request.
+
+## Prompt 18 repository observation
+
+Observed 2026-09-29 (Asia/Bangkok), before Prompt 18 edits:
+
+- Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework.
+- Branch main; HEAD 96660958673b724176ccacc47b84f7b382ce52a5, subject
+  “Refine architecture documentation and reporting templates”. Prompt 17 committed.
+- Initial index/worktree clean; staged/unstaged diffstat empty. Inventory:
+  134 Markdown files plus LICENSE, 95 product files excluding source README,
+  twelve behavioral specification files and seven forward-evidence records.
+- No applicable AGENTS.md found in repository or checked ancestors; no .kiyo
+  Project Memory. Read Build Contract, Memory specification/lifecycle, trust rules,
+  current build state, relevant requirements and reporting/approval boundaries.
+- Exact-root safe.directory and empty core.excludesFile used per command only;
+  no global settings change. Applied skill-creator guidance for canonical entry
+  and bounded independent trials. No external research/native schema refresh.
+
+## Prompt 18 checks
+
+Executed 2026-09-29 (Asia/Bangkok) against the Prompt 18 working tree.
+Authoring/evaluation PASS is separate from claim conformance, full behavioral
+acceptance and native support. Fixture writes are developer validation only.
+
+| Name | Applicability | Command/method | Inspected scope | Execution status | Observed result | Evidence location | Limitations | Baseline relation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| P18-C01 Repository and context | Required Build Contract start | Scoped read-only Git root/branch/HEAD/status/log/diff/hash/tags, instruction inventory and focused contract/Memory/trust reads | Root/main/HEAD, initial index/tree and relevant original requirements | PASS | HEAD 96660958673b724176ccacc47b84f7b382ce52a5; clean initial state; 134 Markdown files; no applicable AGENTS.md in inspected scope | Observation above and Git/read stdout | No production, remote, account/native or fresh vendor check | Prompt 17 committed; prior checkout snapshots historical |
+| P18-C02 Modes and templates | Required functional Memory entry, modes and diff/sync/repair reports | skill-creator quick_validate.py; inline Python frontmatter/control/budget/field assertions; author semantic review | Entry, four mode rows, shared lifecycle integration and three neutral templates | PASS | Validator exit 0 “Skill is valid!”; name/description only; kiyo.memory, 74 lines / 609 words; seven diff fields and eight shared fields in both result reports; KIYO-MEM-008, 66 controls | [Entry](../../src/kiyo/skills/memory/SKILL.md), [modes](../../src/kiyo/framework/memory-modes.md), reports and stdout | Structure/instructions alone do not establish safe host behavior, locking or all decisions | Eighth entry reuses existing specification/lifecycle; no duplicate store/schema engine |
+| P18-C03 Scenario coverage | Required at least twelve cases and listed preservation properties | Sequential-ID/table checks and author review against requested effects | MSK-01–18 and synthetic expected fragments; original twenty Memory lifecycle cases unchanged | PASS | Eighteen cases cover show/check, factual sync, repeat no-op, approved-intent conflicts, injection, concurrent independent/overlapping edits, repair/duplicates/links, canonical paths, worktree/module scope, preview, sensitive data, Git/dates and partial failure | [Memory Skill scenarios](../../tests/behavioral/memory/skill-scenarios.md) | Complete matrix remains NOT_RUN; expected examples are not executed results | Earlier scenario states preserved, bounded trials separately recorded |
+| P18-C04 Resources and eight-skill inventory | Required static payload/loading/relative resources and exactly eight public source entries | Inline Python strict UTF-8/local links/anchors/controls/containment/frontmatter; temporary entry transforms and shared-byte copies | Final 141 Markdown files, 100 product files; eight entries with 92 shared files each | PASS | Init/Requirement/Implement/Review/Test/Security/Architecture/Memory only, no extra router/governance/self-check entry. 659 contained product links, 29 unchanged optional citations; bootstrap 81 lines / 579 words. Memory copy resolves eleven entry links/578 contained local links | MEM-RESOURCE-01 and inventory in [forward evidence](../evidence/memory/forward-trials.md), final validator stdout | Canonical inventory/resource copies are not native catalogs, installation or cache lifecycle; no consumer generator | Existing seven entries preserved; eighth completes source inventory within declared eight |
+| P18-C05 Bounded mode, preservation and no-op trials | Functional source validation in isolated synthetic scope | Independent evaluator follows actual entry; parent snapshots before/after phases, controlled intervening annotation, reverse-delta/hash comparisons | Show, check, first sync, repair and repeat sync; fourteen fixture files/ten directories | PASS | Show/check zero writes; conflicts reported without decision rewrite. Sync changed four observation fields and retained intervening human note; repair changed only index pointers. Twelve other files unchanged; repeat sync preserved all fourteen files/mtimes and ten directories | MEM-FWD-01–05 and MEM-SNAPSHOT-01–03 in [forward evidence](../evidence/memory/forward-trials.md) | Read-fixture checks FAIL as expected; runtime/native NOT_RUN. One controlled non-overlapping edit and one repeat, not all races/overlap cases or full template acceptance | Actual initial, latest human-edit, first-write and repeat snapshots; approved intent retained |
+| P18-C06 Traceability and close | Required Build Contract closure | Inline Python registry/trace/status/issue/decision assertions and record review | Eighty original requirements/trace rows, six build records, nine issues/four owner decisions | PASS | Fourteen P18 evidence rows: REQ-017/018/019/020/021/022/023/024/026/027/040/044/075 partial instructions, REQ-080 continuity. Totals stay 73 PARTIALLY_IMPLEMENTED / 7 NOT_IMPLEMENTED; REQ-075 already partial. All 80 full verifications NOT_RUN. Prompt 18 DONE; Prompt 19 NOT_STARTED | [Traceability](TRACEABILITY.md), [Progress](PROGRESS.md), [Handoff](HANDOFF.md), final stdout | No full requirement/native acceptance or owner release/adoption decision promoted | Existing partial coverage extended; source inventory does not complete native catalog criteria |
+| P18-C07 Scope and preservation | Required repository/product boundaries | Exact Git allowlists, diff --check, index/HEAD/license hash/tag checks and static boundary assertions | Seven new and fifteen modified Markdown files; separate bounded temporary fixture writes | PASS | diff --check passed; index empty, HEAD unchanged, no tags; LICENSE blob d2e60c5b160ed4f9ca096215e72efee5769936b1 preserved. No repository .kiyo/platforms/tools/dist or non-Markdown additions | Git/validator stdout and inventory below | No consumer runtime/watcher, application/config/policy migration, dependency install, native/global change, commit/push/PR/deploy/publication or Prompt 19 work | Clean committed Prompt 17 baseline; exact allowlist preserves unrelated content/history |
+
+New files:
+
+- src/kiyo/skills/memory/SKILL.md
+- src/kiyo/framework/memory-modes.md
+- src/kiyo/templates/reports/memory-diff.md
+- src/kiyo/templates/reports/memory-sync-report.md
+- src/kiyo/templates/reports/memory-repair-report.md
+- tests/behavioral/memory/skill-scenarios.md
+- docs/evidence/memory/forward-trials.md
+
+Modified files: six build records (PROGRESS, HANDOFF, TRACEABILITY, OPEN-ISSUES,
+DECISIONS, BASELINE), architecture layout/naming, source README, framework
+context-loading/control-index/reporting-contract/definition-of-done, shared
+Memory lifecycle and workflow router. No second lifecycle, schema, store or
+mutable consumer state was introduced in the payload.
+
+Exact scope preserves LICENSE, Build Contract/requirement registry,
+research/compatibility, ADR/loading/packaging, Core/bootstrap/trust, Memory
+specification/eight original templates, governance/security/profiles/engineering,
+prior seven entries and prior scenarios/evidence. All consumer templates remain
+neutral: fixture/developer-project facts and absolute locators are developer-only.
+
+Validation command:
+`python -X utf8 <installed-skill-creator>/scripts/quick_validate.py src/kiyo/skills/memory`
+(exit 0, Skill is valid!). Inline Python via PowerShell here-strings checks Git
+scope, UTF-8, links/anchors/containment, unique controls, budgets, canonical
+frontmatter/inventory, mode/report fields, scenario IDs and build closure.
+Temporary source transforms/snapshots add no validator executable, watcher or
+end-user prerequisite. Final validation follows the build/evidence record edits.
+
+Read-only Git methods covered rev-parse --show-toplevel/HEAD, branch --show-current,
+log -1, status --short --branch --untracked-files=all, staged/unstaged diff --stat,
+diff --name-only/--check, ls-files --others --exclude-standard,
+hash-object -- LICENSE and tag --list. Per-command overrides did not change
+global settings; LF-to-CRLF notices do not imply application/native execution.
+
+The independent evaluator used source instructions with isolated read-only and
+narrow write requests. The parent first verified show/check/preparation changed
+none of fourteen files/ten directories, then appended one independent synthetic
+human annotation before resuming the same sync. The evaluator reread current
+inputs and preserved it. Only four observation fields and the separately scoped
+repair index pointers changed; reverse-delta hash checks reproduced the respective
+pre-write baselines, demonstrating other bytes were retained.
+
+The parent captured the first-write snapshot before requesting repeat sync.
+The repeated task found no necessary delta and wrote nothing; all fourteen file
+hashes/mtime strings and ten directory names matched exactly. This controlled
+interruption tests one non-overlapping edit, not all concurrent races or ambiguous
+overlap. Snapshot equality does not prove absence of every transient effect/access.
+Actual show/check consistency failures and approved-intent conflict were reported
+rather than normalized; no project scripts, tests, payloads or native hosts ran.
+
+All eighteen Memory Skill specifications and the original twenty lifecycle cases
+remain NOT_RUN as full matrices; all 80 full requirement verifications remain
+NOT_RUN and six native targets NOT_TESTED. Actual static/source trials do not
+prove real-time detection, whole-project freshness, production truth, race-free
+concurrency or complete native behavior.
+
+Memory Impact: NONE for developer project memory. Synthetic Memory deltas and
+the controlled intervening annotation are bounded validation artifacts, not a
+second repository store. Stop after Prompt 18; Prompt 19 Organization Policies
+awaits its own user request.

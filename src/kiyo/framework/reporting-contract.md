@@ -63,6 +63,9 @@ proof of prevention, certification, authorization or actual execution.
 | Exposed Kiyo resources/identity/activation evidence | [Honest self-check report](../templates/reports/self-check-report.md) |
 | Current architecture observations and approved intent | [Architecture observation](../templates/reports/architecture-observation.md) |
 | Proposed architecture change and scoped consequences | [Architecture impact](../templates/reports/architecture-impact-report.md) |
+| Proposed entry-specific Memory delta | [Memory diff](../templates/reports/memory-diff.md) |
+| Applied, held or no-op observation sync | [Memory sync](../templates/reports/memory-sync-report.md) |
+| Scoped pointer/duplicate/structure repair | [Memory repair](../templates/reports/memory-repair-report.md) |
 | Incomplete work, transfer or context limit | [Handoff](../templates/reports/handoff.md) |
 
 Load one needed template, not the whole catalog. A required approval request uses

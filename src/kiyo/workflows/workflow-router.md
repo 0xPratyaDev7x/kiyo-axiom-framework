@@ -76,7 +76,7 @@ separately. Submode words below are logical descriptions, not native commands.
 | Test | Coverage assessment, test design/authoring or a requested test run | Use [Test procedure](test.md) and its assess/run/write matrix. Unclear intent resolves or begins assess; run preflights non-production effects and preserves tracked source; write limits tests/fixtures. Counts/coverage require actual evidence |
 | Security | Security question or application/skill/governance security review | Use [Security procedure](security.md) with application/skills/governance/self-check logical submodes; supplied scope, read-only default, honest owner/evidence/gaps. No global inventory scans, unsafe payload execution or automatic remediation |
 | Architecture | Architecture explanation, options or design/decision analysis | Use [Architecture procedure](architecture.md) for observed/approved/proposed distinctions and scoped impact/drift; Match/Deviation/Insufficient evidence needs actual evidence. Read-only, no automatic refactor, migration or decision rewrite |
-| Memory | Show/check/audit or expressly requested sync/repair | check/audit is read-only; sync/repair writes only authorized memory deltas under the shared lifecycle; no source-code fix implied |
+| Memory | Show/check/audit or expressly requested sync/repair | Use [Memory modes](../framework/memory-modes.md) with the shared lifecycle: show/check zero writes; sync/repair only necessary authorized deltas after latest reread. Preserve decisions/human edits, no-op without date refresh; no source fix implied |
 
 A security-related bug fix is Implement with a Security checklist, not an
 automatic second skill or permission escalation. Coverage analysis is Test

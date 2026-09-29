@@ -86,6 +86,14 @@ structure, approved intent, proposals and deployment unknowns; assessments stay
 read-only. Sixteen developer scenarios and bounded source trials do not establish
 production topology or native acceptance. The public Memory entry remains pending.
 
+Prompt 18 adds canonical [Memory](skills/memory/SKILL.md), logical ID kiyo.memory,
+[mode definitions](framework/memory-modes.md) and diff/sync/repair reports using
+the existing lifecycle. show/check stay read-only; scoped sync/repair preserves
+provenance, human edits and decisions with no-delta no-op. Eighteen additional
+Memory Skill scenarios and separate source trials do not prove whole-store
+freshness or native behavior. All eight canonical public entries are now authored;
+native catalogs/packages and complete acceptance remain pending.
+
 Follow [framework layout](../../docs/architecture/framework-layout.md),
 [content loading](../../docs/architecture/content-loading.md) and
 [packaging contract](../../docs/architecture/packaging-contract.md) as their

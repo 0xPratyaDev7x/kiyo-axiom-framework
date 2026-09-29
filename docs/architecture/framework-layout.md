@@ -70,7 +70,10 @@ agent-security/security-submodes.md and security-finding/self-check report templ
 Security has four logical submodes within one public entry.
 Prompt 17 adds skills/architecture/SKILL.md, workflows/architecture.md,
 architecture-observation/architecture-impact report templates and extends the shared
-drift report. Architecture is read-only; only the Memory skill entry remains planned.
+drift report. Architecture is read-only.
+Prompt 18 adds skills/memory/SKILL.md, framework/memory-modes.md and Memory
+diff/sync/repair report templates, reusing workflows/memory-lifecycle.md.
+All eight canonical skill entries are authored; native catalogs remain unimplemented.
 The README remains developer-only. Remaining
 product, overlay, tool, test and distribution paths are **planned**, not features.
 Create each directory when it receives real scoped content; no empty SKILL.md,
@@ -96,7 +99,7 @@ src/kiyo/
     test/SKILL.md                 authored Prompt 15; native acceptance separate
     security/SKILL.md             authored Prompt 16; native acceptance separate
     architecture/SKILL.md         authored Prompt 17; native acceptance separate
-    memory/SKILL.md
+    memory/SKILL.md               authored Prompt 18; native acceptance separate
 platforms/
   claude/                         Claude manifest/frontmatter/project adapter sources
   codex/                          supported Codex metadata; IDE gap retained

@@ -16,7 +16,8 @@ all templates or all project memory simply because they exist.
 
 Mode names are logical contracts, not invented native commands. An ordinary task
 can use this shared procedure without creating a ninth skill or auto-invoking
-the future Memory skill. A code-edit request does not automatically authorize
+the Memory skill. Select its [mode contract](../framework/memory-modes.md) for
+an explicit Memory task. A code-edit request does not automatically authorize
 every memory rewrite; consult the actual scope and accepted project workflow.
 
 ## Eight-step lifecycle

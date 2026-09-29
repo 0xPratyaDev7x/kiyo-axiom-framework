@@ -94,6 +94,11 @@ dimensions. Inspect permitted Memory/ADRs against current implementation; keep
 observed structure, approved intent, proposals and deployment unknowns separate.
 Use only needed observation/impact/drift report sections; no migration or sync.
 
+For a requested Memory task, use [mode definitions](memory-modes.md) with the
+existing lifecycle. show/check preserve every file; sync/repair require a necessary
+scoped delta, current-entry reread and actual authority. Load only the selected
+diff/sync/repair report and affected records; no second store or freshness sweep.
+
 ## KIYO-LOAD-002 — Kiyo design budgets
 
 These are Kiyo's authoring criteria, **not vendor-imposed context limits**.

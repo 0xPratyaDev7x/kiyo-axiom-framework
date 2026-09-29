@@ -72,6 +72,7 @@ REQ references identify requirement scope, not full acceptance or a runtime impo
 | KIYO-TEST-001 | [Test modes and actual evidence](../workflows/test.md#kiyo-test-001--separate-assessment-execution-and-test-authoring) | REQ-027, REQ-038, REQ-039, REQ-040, REQ-041, REQ-072 | ACTIVE / none |
 | KIYO-SEC-011 | [Bound Security submodes and assurance](../workflows/security.md#kiyo-sec-011--bound-security-submodes-and-assurance-to-actual-evidence) | REQ-027, REQ-042, REQ-058, REQ-065, REQ-073 | ACTIVE / none |
 | KIYO-ARCH-001 | [Observed architecture versus approved intent](../workflows/architecture.md#kiyo-arch-001--separate-observed-architecture-from-approved-intent) | REQ-019, REQ-022, REQ-027, REQ-033, REQ-074 | ACTIVE / none |
+| KIYO-MEM-008 | [Scoped Memory modes and preserved history](memory-modes.md#kiyo-mem-008--bind-memory-modes-to-scoped-deltas-and-preserved-history) | REQ-017, REQ-020, REQ-023, REQ-024, REQ-027, REQ-075 | ACTIVE / none |
 
 Keep IDs when files move or wording is clarified. Never renumber or reuse retired
 IDs. A materially different obligation needs a new ID and explicit migration/

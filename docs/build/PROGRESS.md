@@ -1,9 +1,45 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **17 Architecture Skill**.
-Task status: **DONE** for Prompt 17; scoped Architecture authoring checks passed.
-Product status: shared guidance/profiles/templates and canonical Init/Requirement/Implement/Review/Test/Security/Architecture authored;
-the Memory public skill and native packages remain pending. No runtime engine.
+Snapshot: 2026-09-29. Current prompt: **18 Memory Skill**.
+Task status: **DONE** for Prompt 18; scoped Memory authoring checks passed.
+Product status: shared guidance/profiles/templates and canonical Init/Requirement/Implement/Review/Test/Security/Architecture/Memory authored;
+exactly eight public entries. Native packages and complete acceptance remain pending. No runtime engine.
+
+## Prompt 18 delivered scope
+
+- Added canonical [Memory](../../src/kiyo/skills/memory/SKILL.md), name memory /
+  logical ID kiyo.memory, name/description frontmatter only, 74 lines / 609 words.
+- Added [mode definitions](../../src/kiyo/framework/memory-modes.md) and neutral
+  [diff](../../src/kiyo/templates/reports/memory-diff.md),
+  [sync](../../src/kiyo/templates/reports/memory-sync-report.md) and
+  [repair](../../src/kiyo/templates/reports/memory-repair-report.md) templates.
+  Reused the shared lifecycle, provenance, approval and report contracts.
+- show/check and previews write zero files; sync/repair need a necessary scoped
+  delta and latest-entry/evidence reread. Preserve IDs, dates, approved history
+  and human text. No-delta repeat sync is a no-op, not a freshness refresh.
+- Actual observation corrections differ from approved-intent conflicts and
+  missing evidence. Unknown remains UNVERIFIED; no decision normalization,
+  folder rewrite, second store, forced Init, source fix or watcher.
+- Added KIYO-MEM-008 (66 controls) and
+  [18 Memory Skill scenarios](../../tests/behavioral/memory/skill-scenarios.md),
+  separate from the original twenty lifecycle scenarios.
+  [Forward evidence](../evidence/memory/forward-trials.md) records actual bounded
+  mode, controlled human-edit and repeated-sync effects with limitations.
+- Final source inventory is exactly Init, Requirement, Implement, Review, Test,
+  Security, Architecture and Memory. Router/Governance Review/Skill Audit/Self-check
+  remain shared procedures/submodes. All eight temporary copies contain 92 shared
+  resources; canonical inventory is not a native catalog or host acceptance.
+
+Coverage: partial Memory/shared instruction coverage for
+REQ-017/018/019/020/021/022/023/024/026/027/040/044/075; REQ-080 continuity updated.
+REQ-075 was already partial: totals remain 73 PARTIALLY_IMPLEMENTED /
+7 NOT_IMPLEMENTED. All 80 full verifications remain NOT_RUN; native targets
+remain NOT_TESTED. Complete scenario matrices are not promoted by bounded trials.
+
+Checks: [Prompt 18 evidence](BASELINE.md#prompt-18-checks).
+Memory Impact: **NONE for developer project memory**. Only isolated synthetic
+fixture writes were used for validation; repository Memory was not initialized.
+Owner publication/native-route decisions remain open.
 
 ## Prompt 17 delivered scope
 
@@ -593,7 +629,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 15 | Test | DONE | P15-C01–C07 PASS; static/resource checks and bounded mode-specific source trials; native NOT_TESTED |
 | 16 | Security Skill | DONE | P16-C01–C07 PASS; static/resource checks and bounded read-only submode trials; native NOT_TESTED |
 | 17 | Architecture Skill | DONE | P17-C01–C07 PASS; static/resource checks and bounded read-only source trials; native NOT_TESTED |
-| 18 | Memory Skill | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 18 | Memory Skill | DONE | P18-C01–C07 PASS; static/resource/inventory checks and bounded mode/no-op/concurrency trials; native NOT_TESTED |
 | 19 | Organization Policies | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 20 | Claude | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 21 | Codex | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -615,9 +651,9 @@ Outstanding owner decisions: DEC-001 final name, DEC-002 release license,
 DEC-003 publisher/destination and DEC-004 treatment of Codex IDE's native-plugin
 gap before compatibility/release claims. See OPEN-ISSUES for technical gaps.
 
-Safe to continue: **YES for a user-requested Prompt 18 Memory Skill**.
-Shared contracts and seven canonical skills are ready; publication/native gaps
+Safe to continue: **YES for a user-requested Prompt 19 Organization Policies**.
+Shared contracts and all eight canonical skills are ready; publication/native gaps
 remain gates for dependent packaging/activation claims. Later work is not
 authorized by this handoff alone.
-Next prompt: **18 Memory Skill**, only when requested by the user.
+Next prompt: **19 Organization Policies**, only when requested by the user.
 
