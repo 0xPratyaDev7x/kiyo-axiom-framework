@@ -1,0 +1,285 @@
+{
+  "format": 1,
+  "checked_date": "2026-09-29",
+  "target": "Codex CLI",
+  "target_id": "CXL",
+  "documented_capability": "DOCUMENTED_ONLY",
+  "host_version": "0.158.0",
+  "plugin_version": "Manifest UNSET; installer reports fallback 1.0.0",
+  "model": "NOT_INVOKED",
+  "account": "NOT_INSPECTED",
+  "settings": "No global or organization settings changed by the harness; disposable state details in command evidence",
+  "scope_summary": "Disposable marketplace installation, plugin listing, native cache and uninstall observed.",
+  "full_behavioral_suite": "NOT_TESTED",
+  "screenshots": [],
+  "source_register": "docs/research/SOURCES.md#prompt-26-native-revalidation",
+  "checks": [
+    {
+      "id": "LT-CXL-01",
+      "protocol_case": "LT-01",
+      "name": "Native installation and discovery",
+      "applicability": "Required for this target's native acceptance",
+      "method": "Actual codex plugin marketplace add, filtered list --available, plugin add, fresh-process filtered list; full argv in evidence",
+      "inspected_scope": "Only kiyo-compass@kiyo-p26-disposable, child process state and synthetic project",
+      "evidence_status": "VERIFIED",
+      "execution_status": "PASS",
+      "observed": {
+        "outputs": "Local install/list exit 0; installed/enabled true; native cache path returned.",
+        "actions": [
+          "Register disposable local catalog",
+          "Install unchanged candidate",
+          "List exact marketplace"
+        ],
+        "file_changes": "Only synthetic native state/cache observed; project bytes unchanged."
+      },
+      "evidence": [
+        "codex-native-attempt-01.json",
+        "codex-lifecycle-attempt-01.json"
+      ],
+      "limitations": "Local route and this version only; not account entitlement, publication/ingestion acceptance, native picker syntax or Skill behavior. Native 1.0.0 is a host fallback, not product release version.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CXL-02",
+      "protocol_case": "LT-02",
+      "name": "Eight Skills visible and loadable",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": "Eight SKILL.md files are present in the 795-file native cache; all bytes match distribution.",
+        "actions": [
+          "Static inspection of actual native installed cache"
+        ],
+        "file_changes": "No changes by static inspection"
+      },
+      "evidence": [
+        "codex-native-attempt-01.json",
+        "codex-lifecycle-attempt-01.json"
+      ],
+      "limitations": "Native Skill picker/selection/loadability NOT_TESTED; filesystem inventory is not host skill discovery.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CXL-03",
+      "protocol_case": "LT-03",
+      "name": "Explicit Init within scope",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "codex-native-attempt-01.json",
+        "codex-lifecycle-attempt-01.json"
+      ],
+      "limitations": "No agent session/model turns; eight cached entries are static evidence, not eight successful invocations. No approved second update candidate. User explicitly permits only native checks without quota; no model execution.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CXL-04",
+      "protocol_case": "LT-04",
+      "name": "Simple Implement and actual verification",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "codex-native-attempt-01.json",
+        "codex-lifecycle-attempt-01.json"
+      ],
+      "limitations": "No agent session/model turns; eight cached entries are static evidence, not eight successful invocations. No approved second update candidate. User explicitly permits only native checks without quota; no model execution.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CXL-05",
+      "protocol_case": "LT-05",
+      "name": "Review-only file preservation",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "codex-native-attempt-01.json",
+        "codex-lifecycle-attempt-01.json"
+      ],
+      "limitations": "No agent session/model turns; eight cached entries are static evidence, not eight successful invocations. No approved second update candidate. User explicitly permits only native checks without quota; no model execution.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CXL-06",
+      "protocol_case": "LT-06",
+      "name": "Observation drift versus decision conflict",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "codex-native-attempt-01.json",
+        "codex-lifecycle-attempt-01.json"
+      ],
+      "limitations": "No agent session/model turns; eight cached entries are static evidence, not eight successful invocations. No approved second update candidate. User explicitly permits only native checks without quota; no model execution.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CXL-07",
+      "protocol_case": "LT-07",
+      "name": "Sensitive approval and native restrictions",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "codex-native-attempt-01.json",
+        "codex-lifecycle-attempt-01.json"
+      ],
+      "limitations": "No agent session/model turns; eight cached entries are static evidence, not eight successful invocations. No approved second update candidate. User explicitly permits only native checks without quota; no model execution.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CXL-08",
+      "protocol_case": "LT-08",
+      "name": "Resources after relocation/cache",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": "Native cache creation VERIFIED; copied standalone checker PASS: 795 files, 8 skills, 4,956 links, outside-source probe denied.",
+        "actions": [
+          "Hash comparison",
+          "Static contained-reference audit on real native cache"
+        ],
+        "file_changes": "No cache content changes"
+      },
+      "evidence": [
+        "codex-native-attempt-01.json",
+        "codex-lifecycle-attempt-01.json"
+      ],
+      "limitations": "Native agent resource reads NOT_TESTED. Denial is a cooperative Python audit guard, not a host sandbox or OS-wide source isolation.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CXL-09",
+      "protocol_case": "LT-09",
+      "name": "Automatic activation in fresh session",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "codex-native-attempt-01.json",
+        "codex-lifecycle-attempt-01.json"
+      ],
+      "limitations": "No agent session/model turns; eight cached entries are static evidence, not eight successful invocations. No approved second update candidate. User explicitly permits only native checks without quota; no model execution.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CXL-10",
+      "protocol_case": "LT-10",
+      "name": "Restart uses current policy/version",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": "Fresh CLI process reports candidate installed/enabled before removal.",
+        "actions": [
+          "plugin list in a new process"
+        ],
+        "file_changes": "Project bytes unchanged"
+      },
+      "evidence": [
+        "codex-native-attempt-01.json",
+        "codex-lifecycle-attempt-01.json"
+      ],
+      "limitations": "Fresh management process is not a fresh agent session; policy/Core/version loading NOT_TESTED.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CXL-11",
+      "protocol_case": "LT-11",
+      "name": "Update preserves project state",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "codex-native-attempt-01.json",
+        "codex-lifecycle-attempt-01.json"
+      ],
+      "limitations": "No agent session/model turns; eight cached entries are static evidence, not eight successful invocations. No approved second update candidate.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CXL-12",
+      "protocol_case": "LT-12",
+      "name": "Uninstall preserves user state",
+      "applicability": "Required for this target's native acceptance",
+      "method": "Actual codex plugin remove, filtered list --available, marketplace remove and before/after project hashes",
+      "inspected_scope": "Only disposable candidate/cache/catalog and three synthetic human instruction/Memory/policy files",
+      "evidence_status": "VERIFIED",
+      "execution_status": "PASS",
+      "observed": {
+        "outputs": "All native commands exit 0; installed array empty; cache removed; source catalog payload retained.",
+        "actions": [
+          "Native uninstall",
+          "Check exact marketplace",
+          "Remove test-only marketplace registration"
+        ],
+        "file_changes": "AGENTS.md, legacy-memory/project.md and project-policy.md bytes unchanged; native cache removed."
+      },
+      "evidence": [
+        "codex-native-attempt-01.json",
+        "codex-lifecycle-attempt-01.json"
+      ],
+      "limitations": "One synthetic legacy path on Windows, no Kiyo-created managed block; does not verify every layout or update. No instructions cleanup performed.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    }
+  ]
+}

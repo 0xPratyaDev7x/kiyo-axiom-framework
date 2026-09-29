@@ -1,0 +1,78 @@
+{
+  "layer": "offline_evidence_record_audit",
+  "started_at": "2026-09-29T13:16:36.298689+00:00",
+  "command": [
+    "C:\\Users\\praty\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "-B",
+    "tests/live/check_records.py",
+    "--report",
+    "docs/evidence/live/record-audit-02.json"
+  ],
+  "checks": [
+    {
+      "id": "P26-A01",
+      "status": "PASS",
+      "observed": "72 independent records; 2 PASS, 70 NOT_RUN; expected cases separate"
+    },
+    {
+      "id": "P26-A02",
+      "status": "PASS",
+      "observed": "Claude actual normal acceptance, strict FAIL, eight metadata entries and preservation agree with reports"
+    },
+    {
+      "id": "P26-A03",
+      "status": "PASS",
+      "observed": "Codex native install/cache/removal evidence consistent; fallback version separated; three project files preserved"
+    },
+    {
+      "id": "P26-A04",
+      "status": "PASS",
+      "observed": "112 product/overlay/license inputs, packaging tooling and 3 ZIP hashes unchanged; P25 remains 48 NOT_RUN"
+    },
+    {
+      "id": "P26-A05",
+      "status": "PASS",
+      "observed": {
+        "markdown_files": 2564,
+        "local_links": 18531
+      },
+      "limitations": "Inline link convention; external URLs not re-fetched; platform adapters rebased to installed form"
+    },
+    {
+      "id": "P26-A06",
+      "status": "PASS",
+      "observed": "80 unique requirements/full NOT_RUN; 30 scoped trace additions; 9 issues/4 owner decisions retained; next27"
+    },
+    {
+      "id": "P26-A07",
+      "status": "PASS",
+      "observed": {
+        "modified_files": 12,
+        "new_files": 22,
+        "diff_check": "PASS"
+      },
+      "limitations": "Read-only closure audit; does not verify absent global/transient effects or agent behavior"
+    }
+  ],
+  "host_or_model_executions": 0,
+  "inputs_sha256": {
+    "docs/evidence/live/claude-cli.json": "f0bed06f8898b20da0c2219cbfc39090b14e97229124239d7244fbaed73a4924",
+    "docs/evidence/live/claude-native-attempt-01.json": "7ff98e2144b4f64996dec96a66a1b1657a7a632e7a57f76daac94636821188ea",
+    "docs/evidence/live/claude-native-attempt-02.json": "7a5b565a3c70143c157344a41895488eb726a33543790653684a04500f761bb8",
+    "docs/evidence/live/claude-vscode.json": "ee3fd76bd8d1fb28f71a9ca902420e5eba2259ba09b9e17ba58a6009abb7bcec",
+    "docs/evidence/live/claude-zip-attempt-01.json": "dafb45e66e0c71b5250211ff4485a385b302860755a2698aa45a4e35ff76991b",
+    "docs/evidence/live/codex-cli.json": "3fc457c81246f08f17cb029d08174e2ad25bb20eb98b6f24843325f21d106f12",
+    "docs/evidence/live/codex-ide.json": "3a73d9307de3b88a7a2af23aabc38b34a4be277f5f3ebc4307cf67ce207dc854",
+    "docs/evidence/live/codex-lifecycle-attempt-01.json": "88081f2b8b154c7d59ea55ee8e8b1b5e7af247a7e13dd71eee972eaa6beebb46",
+    "docs/evidence/live/codex-native-attempt-01.json": "e4c78f277412832663302e639b77f92b414e4cda13f52c7c1ff202b680927dab",
+    "docs/evidence/live/copilot-cli.json": "d1e4d7411fc81fe76909b541f17c3c4368c1df2cf583d142aa86958f70f8e045",
+    "docs/evidence/live/copilot-vscode.json": "c011436a70ecb0d0c52d309f708dca82d6a2f0569ad766a7007afa75d74fc385",
+    "docs/evidence/live/environment.json": "6e5c834d24c18daee2f90da76e58b8110a59542a96006f5534833e9b24513e01",
+    "docs/evidence/live/native-help.json": "acf27c38feee4e5a6e73328132ab1b57a85af55f1b5c064babd161835cd663f8"
+  },
+  "audit_source_sha256": "e14875638eb9512ed76f9bd68cb0120052cfb57dad912bafbfd4b384847ac844",
+  "case_catalog_sha256": "5ab1ecbb6412f5fc4823cbb5fd6a6e9ef7be3bacc506b0f2bf022ccb362fd1c2",
+  "result": "PASS",
+  "exit_code": 0,
+  "finished_at": "2026-09-29T13:16:46.219831+00:00"
+}

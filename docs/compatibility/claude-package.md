@@ -1,5 +1,10 @@
 # Claude native development distribution
 
+P26 follow-up: [native results](../evidence/live/claude-cli.json) establish
+normal validation with warnings, strict FAIL and eight-entry directory/ZIP metadata
+discovery. No agent/Core or persistent marketplace result. The P20 statements
+below remain historical except where superseded by those bounded observations.
+
 Checked **2026-09-29**. Official sources CL20-01–CL20-13 are recorded in
 [SOURCES](../research/SOURCES.md#prompt-20-claude-revalidation).
 Native statements are DOCUMENTED_ONLY; actual offline package checks and local

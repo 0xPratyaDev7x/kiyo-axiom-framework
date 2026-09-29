@@ -6,8 +6,9 @@ historical tables below. Claude/Codex refreshes are in
 [Prompt 20 field map](claude-package.md) / CL20-01–CL20-13 and
 [Prompt 21 field map](codex-package.md) / CX21-01–CX21-12. Sources: [source register](../research/SOURCES.md).
 C/O/G/V/A IDs below identify its exact official source rows. Every capability is
-DOCUMENTED_ONLY unless explicitly marked otherwise. Every live result is
-**NOT_TESTED**. Prompt 20 observes only Claude CLI --version and named extension
+DOCUMENTED_ONLY unless explicitly marked otherwise. The [Prompt 26 live matrix](live-test-matrix.md) supersedes the blanket
+NOT_TESTED baseline for bounded native management/discovery checks only. All model
+behavior and activation remain NOT_TESTED. Prompt 20 observes only Claude CLI --version and named extension
 metadata. Prompt 21 observes Codex version/help and named extension metadata;
 active IDE/account contexts remain unknown. Prompt 22's bounded lookup did not resolve
 copilot on PATH or matching extension metadata in the inspected standard directory;
@@ -17,12 +18,16 @@ alternative/active environments remain UNKNOWN. Offline checks are separate.
 
 | Target | Native plugin capability | Observed version | Live state | Principal gap / sources (refreshed 2026-09-29) |
 | --- | --- | --- | --- | --- |
-| Claude Code CLI | DOCUMENTED_ONLY; development package statically checked | CLI --version: 2.1.220 (2026-09-29) | NOT_TESTED | CL20-01–13 and [P20 evidence](../evidence/claude/package-checks.md); native validation/loading/cache/lifecycle deferred |
+| Claude Code CLI | DOCUMENTED_ONLY plus bounded native observations | CLI 2.1.220 (2026-09-29) | VERIFIED subset; behavior NOT_TESTED | [P26 evidence](../evidence/live/claude-cli.json): normal validation warns, strict FAIL; directory/ZIP inventory finds eight Skills; marketplace/agent loading pending |
 | Claude Code VS Code | DOCUMENTED_ONLY; shared development bundle | Extension manifests 2.1.283 / 2.1.284; active version UNKNOWN (2026-09-29) | NOT_TESTED | CL20-04; independent extension loading/engine/cache/lifecycle pending |
-| Codex CLI | DOCUMENTED_ONLY; static development bundle prepared | codex-cli 0.158.0 (2026-09-29) | NOT_TESTED | CX21-01–12; ingestion validator FAIL for owner release fields; exact selector/cache/lifecycle remain unverified |
+| Codex CLI | DOCUMENTED_ONLY plus bounded native observations | codex-cli 0.158.0 (2026-09-29) | VERIFIED local install/cache/uninstall subset; behavior NOT_TESTED | [P26 evidence](../evidence/live/codex-cli.json): temporary local catalog/cache/removal observed; ingestion FAIL still open; exact skill selector/update/activation pending |
 | Codex IDE Extension | UNSUPPORTED for native plugins | Extension metadata 26.917.62051; active version UNKNOWN (2026-09-29) | NOT_TESTED | CX21-04/06/07; standalone mechanism separate and not adopted as fallback, DEC-004 |
 | GitHub Copilot CLI | DOCUMENTED_ONLY; static bundle prepared | UNKNOWN; not resolved on inspected PATH | NOT_TESTED | CP22-01–16; exact plugin selector/collision and rule loading remain UNKNOWN; no native parser/install |
 | GitHub Copilot VS Code | DOCUMENTED_ONLY; shared static bundle | UNKNOWN; scoped extension metadata lookup had no matches | NOT_TESTED | CP22-07/08/09; official source fallback read; independent UI/harness/loading/lifecycle untested |
+
+P26 [environment](../evidence/live/environment.json) also observes editor 1.139.1
+and the same named Claude/Codex extension metadata; active IDEs remain UNKNOWN.
+The Copilot lookups are still bounded negative observations, not proof of absence.
 
 ## Shared schema boundary
 

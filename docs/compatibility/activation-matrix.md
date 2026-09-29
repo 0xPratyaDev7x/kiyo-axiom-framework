@@ -6,6 +6,10 @@ native execution is claimed here. The three development ZIPs do not establish
 six supported installation results. See [capabilities](platform-capabilities.md)
 and [native invocation](native-invocation-map.md) for documented prerequisites.
 
+P26 [native matrix](live-test-matrix.md) adds actual Claude component discovery
+and Codex disposable install/cache/uninstall. These are metadata/lifecycle subsets;
+no agent Core/automatic activation result is added.
+
 ## Six target records
 
 Each record below is also the activation requirement/host dependency referenced
@@ -17,9 +21,9 @@ or per-task Core loading. No runtime loader is supplied.
 
 | Target ID / target | Candidate artifact / native selection | Project facility and activation requirement | Capability evidence / checked | Native behavior and gap |
 | --- | --- | --- | --- | --- |
-| claude-cli — Claude Code CLI | Claude; documented /kiyo-compass:<skill> | E; P via existing applicable CLAUDE.md. Plugin-root CLAUDE.md does not load as project context | CL20-02/03/06; 2026-09-29; DOCUMENTED_ONLY | NOT_TESTED; actual discovery, Core reads, implicit selection and lifecycle pending |
+| claude-cli — Claude Code CLI | Claude; documented /kiyo-compass:<skill> | E; P via existing applicable CLAUDE.md. Plugin-root CLAUDE.md does not load as project context | CL20-02/03/06; 2026-09-29; DOCUMENTED_ONLY | Core/implicit behavior NOT_TESTED; P26 native directory/ZIP component discovery VERIFIED, marketplace lifecycle pending |
 | claude-vscode — Claude Code VS Code | Same Claude candidate; actual extension skill selection | E; P through that extension's applicable Claude instructions, with actual version/workspace scope | CL20-03/04; 2026-09-29; DOCUMENTED_ONLY; see Claude target guide | NOT_TESTED independently; CLI success cannot cover extension/remote behavior |
-| codex-cli — Codex CLI | Codex; /skills or $ picker; exact plugin-qualified spelling UNKNOWN | E; P via applicable AGENTS chain and launch scope; never change AGENTS.override.md/global config to force Kiyo | CX21-04/05/06; 2026-09-29; DOCUMENTED_ONLY | NOT_TESTED; public ingestion FAIL for missing owner fields; exact update/cache and selector behavior unverified |
+| codex-cli — Codex CLI | Codex; /skills or $ picker; exact plugin-qualified spelling UNKNOWN | E; P via applicable AGENTS chain and launch scope; never change AGENTS.override.md/global config to force Kiyo | CX21-04/05/06; 2026-09-29; DOCUMENTED_ONLY | Core/Skill behavior NOT_TESTED; P26 local install/cache/uninstall subset VERIFIED; public ingestion FAIL, update and exact selector unresolved |
 | codex-ide — Codex IDE Extension | No native plugin route selected | Native plugins UNSUPPORTED. Standalone skills/AGENTS are different mechanisms and not an approved fallback | CX21-04/06; 2026-09-29; DOCUMENTED_ONLY source of limitation | NOT_TESTED; DEC-004 open; Codex ZIP content is not IDE support evidence |
 | copilot-cli — GitHub Copilot CLI | Copilot; discover actual /skills list/info entries; exact selector/collisions UNKNOWN | E; P through applicable existing Copilot/AGENTS instructions; no unverified plugin-rule loader | CP22-01/03/04; 2026-09-29; DOCUMENTED_ONLY | NOT_TESTED; bare /init or /review must not silently substitute built-ins |
 | copilot-vscode — GitHub Copilot VS Code | Copilot; documented /kiyo-compass:<skill> in actual native skill UI | E; P via applicable .github/copilot-instructions.md or scoped instructions; actual harness/settings matter | CP22-07/08/09; 2026-09-29; DOCUMENTED_ONLY; official source fallback for plugin page | NOT_TESTED independently; settings, matching and remote paths unverified |

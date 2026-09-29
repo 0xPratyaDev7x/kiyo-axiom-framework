@@ -1,5 +1,10 @@
 # Codex native development distribution
 
+P26 follow-up: [native results](../evidence/live/codex-cli.json) establish
+local disposable install/cache/uninstall. Public ingestion failure is unchanged;
+installer fallback 1.0.0 is not an approved Kiyo release. No Skill/agent/IDE result.
+The P21 statements below remain historical except for that bounded lifecycle.
+
 Checked **2026-09-29**; [CX21-01–12](../research/SOURCES.md#prompt-21-codex-revalidation)
 record actual official URLs, redirects and limits. Host capabilities here are
 DOCUMENTED_ONLY unless a bounded local observation is explicitly identified.

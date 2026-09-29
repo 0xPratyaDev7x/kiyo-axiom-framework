@@ -1,9 +1,36 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **25 Behavioral Suite (offline)**.
-Task status: **DONE** for the explicitly selected offline suite/protocol scope.
-**48 host cases NOT_RUN; 13 offline helper tests PASS.** No host/model call,
-paid API, external quota, installation or behavioral metric was claimed.
+Snapshot: 2026-09-29. Current prompt: **26 Native Integration (no-quota subset)**.
+Task status: **DONE for the user-selected available no-quota checks and reporting**.
+Full six-target integration acceptance is **PARTIALLY COMPLETE**: no model/agent
+workflow or automatic Core activation was tested. No support-complete claim.
+
+## Prompt 26 delivered scope
+
+- [Live matrix](../compatibility/live-test-matrix.md) contains 72 separate records,
+  twelve for each target, with expected cases separate from observed results.
+- Claude CLI 2.1.220: native normal validation passes with version/author warnings;
+  strict validation FAILs. Actual relocated directory and ZIP component discovery
+  lists exactly eight Skills, no agents/hooks/MCP/LSP. No persistent installation.
+- Codex CLI 0.158.0: actual disposable local catalog install/list/cache/uninstall,
+  with three synthetic project files unchanged. Native cache equals all 795
+  distribution files; independent static cache checker passes 4,956 links.
+  Native fallback 1.0.0 does not set Kiyo's unassigned release version.
+- [Evidence](../evidence/live/README.md) preserves commands, exits, warnings,
+  snapshots, first helper encoding failure and corrected rerun. VS Code 1.139.1
+  and named extension metadata do not establish an active IDE/account.
+- User selected native checks without quota. IDE/Copilot runs remain NOT_TESTED;
+  Codex IDE plugins remain UNSUPPORTED. No model session or account lookup.
+- [Reproduction](../compatibility/live-reproduction-guide.md) and
+  [owner-required tests](../compatibility/live-owner-required-tests.md) retain
+  invocation/activation/update/behavioral gaps. Two complete bounded lifecycle
+  rows PASS; partial metadata/cache evidence never upgrades other full cases.
+
+P25's 48 host cases remain NOT_RUN; no behavioral metrics are inferred.
+All 80 full requirement verifications remain NOT_RUN; **79 PARTIALLY_IMPLEMENTED /
+1 NOT_IMPLEMENTED** unchanged. See [P26 checks](BASELINE.md#prompt-26-checks).
+Product content, native overlays, distributions, version and LICENSE preserved.
+Memory Impact: **NONE** for the developer project; synthetic fixture state only.
 
 ## Prompt 25 delivered scope
 
@@ -846,7 +873,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 23 | Packaging/Parity | DONE | P23-C01–C07 scoped checks; equal builds, 456 parity records; extra filesystem-symlink probe BLOCKED; native NOT_TESTED |
 | 24 | Static Tests | DONE | P24 selected contract groups and exact-reason negatives: 37 PASS; actual extraction; static only |
 | 25 | Behavioral Tests | DONE | User selected offline: 48 host cases NOT_RUN; 13 helper checks PASS; no behavioral metrics |
-| 26 | Live Host Tests | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 26 | Live Host Tests | DONE | Selected no-quota subset: Claude native discovery/validation; Codex disposable install/cache/uninstall; full six-target acceptance partial |
 | 27 | Documentation | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 28 | Release Tooling | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 29 | Gap Audit | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -859,9 +886,9 @@ NOT_STARTED is a roadmap planning marker, not an additional task-result status.
 DEC-001 name, DEC-002 release license, DEC-003 publisher/destination and DEC-004
 Codex IDE treatment remain open. No release version, signature or approval invented.
 
-Safe to continue: **YES for a user-requested Prompt 26 Live Host Tests**.
-The suite and evidence capture protocol are ready for separately authorized host
-work. Preserve offline NOT_RUN records, owner decisions and native gaps; obtain
-case/target/quota scope before model calls. P25 grants no such execution authority.
-Next prompt: **26 Live Host Tests**, only when requested by the user.
+Safe to continue: **YES for a user-requested Prompt 27 Documentation**.
+Use the actual scoped results and retain NOT_TESTED/UNSUPPORTED gaps; do not claim
+complete compatibility or release readiness. No later model/quota/publication
+authority follows from P26.
+Next prompt: **27 Documentation**, only when requested by the user.
 

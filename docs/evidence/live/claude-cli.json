@@ -1,0 +1,279 @@
+{
+  "format": 1,
+  "checked_date": "2026-09-29",
+  "target": "Claude Code CLI",
+  "target_id": "CCL",
+  "documented_capability": "DOCUMENTED_ONLY",
+  "host_version": "2.1.220",
+  "plugin_version": "UNSET in Kiyo manifest",
+  "model": "NOT_INVOKED",
+  "account": "NOT_INSPECTED",
+  "settings": "No global or organization settings changed by the harness; disposable state details in command evidence",
+  "scope_summary": "Claude session-only directory/ZIP metadata discovery verified; marketplace installation not attempted.",
+  "full_behavioral_suite": "NOT_TESTED",
+  "screenshots": [],
+  "source_register": "docs/research/SOURCES.md#prompt-26-native-revalidation",
+  "checks": [
+    {
+      "id": "LT-CCL-01",
+      "protocol_case": "LT-01",
+      "name": "Native installation and discovery",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": "Normal native validation exit 0 with two warnings; strict exit 1. Directory/ZIP session component inspection succeeds.",
+        "actions": [
+          "plugin validate",
+          "plugin validate --strict",
+          "--plugin-dir <directory> plugin details kiyo-compass",
+          "--plugin-dir <zip> plugin details kiyo-compass"
+        ],
+        "file_changes": "Synthetic project and extracted payload bytes unchanged in attempt 02; disposable Claude state metadata created."
+      },
+      "evidence": [
+        "claude-native-attempt-02.json",
+        "claude-zip-attempt-01.json"
+      ],
+      "limitations": "Session metadata loading is not marketplace installation. Strict warning failure retained; no publisher/version fabricated.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CCL-02",
+      "protocol_case": "LT-02",
+      "name": "Eight Skills visible and loadable",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": "Native details enumerates architecture, implement, init, memory, requirement, review, security, test; Agents/Hooks/MCP/LSP all zero.",
+        "actions": [
+          "Native component inventory only"
+        ],
+        "file_changes": "No project byte changes"
+      },
+      "evidence": [
+        "claude-native-attempt-02.json",
+        "claude-zip-attempt-01.json"
+      ],
+      "limitations": "Visibility subcheck VERIFIED; Skill invocation, loaded Core and behavior NOT_TESTED. ~697 tokens is a native projection, not measured consumption or proof of automatic Core.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CCL-03",
+      "protocol_case": "LT-03",
+      "name": "Explicit Init within scope",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "claude-native-attempt-02.json",
+        "claude-zip-attempt-01.json"
+      ],
+      "limitations": "Native installation/lifecycle requires a real owner-filled catalog for the marketplace route; model turns excluded by user. User explicitly permits only native checks without quota; no model execution.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CCL-04",
+      "protocol_case": "LT-04",
+      "name": "Simple Implement and actual verification",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "claude-native-attempt-02.json",
+        "claude-zip-attempt-01.json"
+      ],
+      "limitations": "Native installation/lifecycle requires a real owner-filled catalog for the marketplace route; model turns excluded by user. User explicitly permits only native checks without quota; no model execution.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CCL-05",
+      "protocol_case": "LT-05",
+      "name": "Review-only file preservation",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "claude-native-attempt-02.json",
+        "claude-zip-attempt-01.json"
+      ],
+      "limitations": "Native installation/lifecycle requires a real owner-filled catalog for the marketplace route; model turns excluded by user. User explicitly permits only native checks without quota; no model execution.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CCL-06",
+      "protocol_case": "LT-06",
+      "name": "Observation drift versus decision conflict",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "claude-native-attempt-02.json",
+        "claude-zip-attempt-01.json"
+      ],
+      "limitations": "Native installation/lifecycle requires a real owner-filled catalog for the marketplace route; model turns excluded by user. User explicitly permits only native checks without quota; no model execution.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CCL-07",
+      "protocol_case": "LT-07",
+      "name": "Sensitive approval and native restrictions",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "claude-native-attempt-02.json",
+        "claude-zip-attempt-01.json"
+      ],
+      "limitations": "Native installation/lifecycle requires a real owner-filled catalog for the marketplace route; model turns excluded by user. User explicitly permits only native checks without quota; no model execution.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CCL-08",
+      "protocol_case": "LT-08",
+      "name": "Resources after relocation/cache",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": "Native component parsing from relocated directory and copied ZIP succeeds.",
+        "actions": [
+          "Session-only metadata parsing"
+        ],
+        "file_changes": "Project bytes preserved; no plugin cache SKILL.md found under the inspected disposable Claude state."
+      },
+      "evidence": [
+        "claude-native-attempt-02.json",
+        "claude-zip-attempt-01.json"
+      ],
+      "limitations": "Agent resource reads/cache semantics NOT_TESTED; original checkout access was not OS-blocked for native command.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CCL-09",
+      "protocol_case": "LT-09",
+      "name": "Automatic activation in fresh session",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "claude-native-attempt-02.json",
+        "claude-zip-attempt-01.json"
+      ],
+      "limitations": "Native installation/lifecycle requires a real owner-filled catalog for the marketplace route; model turns excluded by user. User explicitly permits only native checks without quota; no model execution.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CCL-10",
+      "protocol_case": "LT-10",
+      "name": "Restart uses current policy/version",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "claude-native-attempt-02.json",
+        "claude-zip-attempt-01.json"
+      ],
+      "limitations": "Native installation/lifecycle requires a real owner-filled catalog for the marketplace route; model turns excluded by user. User explicitly permits only native checks without quota; no model execution.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CCL-11",
+      "protocol_case": "LT-11",
+      "name": "Update preserves project state",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "claude-native-attempt-02.json",
+        "claude-zip-attempt-01.json"
+      ],
+      "limitations": "Native installation/lifecycle requires a real owner-filled catalog for the marketplace route; model turns excluded by user.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CCL-12",
+      "protocol_case": "LT-12",
+      "name": "Uninstall preserves user state",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "claude-native-attempt-02.json",
+        "claude-zip-attempt-01.json"
+      ],
+      "limitations": "Native installation/lifecycle requires a real owner-filled catalog for the marketplace route; model turns excluded by user.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    }
+  ]
+}

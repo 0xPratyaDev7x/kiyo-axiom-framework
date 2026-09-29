@@ -1,0 +1,54 @@
+{
+  "checked_at": "2026-09-29T12:57:57.298170+00:00",
+  "os": "Windows-10-10.0.26200-SP0",
+  "python": "3.11.9",
+  "account": "NOT_INSPECTED",
+  "model": "NOT_INVOKED",
+  "quota_authorization": "User selected native checks without quota",
+  "ui_automation": "Native computer APIs unavailable in this session; browser-only tool cannot operate VS Code",
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\praty\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code.CMD",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "1.139.1\n04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1\nx64\n",
+      "stderr": "[0929/195757.439:ERROR:third_party\\crashpad\\crashpad\\util\\win\\registration_protocol_win.cc:108] CreateFile: Access is denied. (0x5)\n"
+    }
+  ],
+  "extensions": [
+    {
+      "path": "C:\\Users\\praty\\.vscode\\extensions\\anthropic.claude-code-2.1.283-win32-x64\\package.json",
+      "name": "claude-code",
+      "publisher": "Anthropic",
+      "version": "2.1.283",
+      "vscode_engine": "^1.94.0",
+      "active": "UNKNOWN"
+    },
+    {
+      "path": "C:\\Users\\praty\\.vscode\\extensions\\anthropic.claude-code-2.1.284-win32-x64\\package.json",
+      "name": "claude-code",
+      "publisher": "Anthropic",
+      "version": "2.1.284",
+      "vscode_engine": "^1.94.0",
+      "active": "UNKNOWN"
+    },
+    {
+      "path": "C:\\Users\\praty\\.vscode\\extensions\\openai.chatgpt-26.917.62051-win32-x64\\package.json",
+      "name": "chatgpt",
+      "publisher": "openai",
+      "version": "26.917.62051",
+      "vscode_engine": "^1.96.2",
+      "active": "UNKNOWN"
+    }
+  ],
+  "path_lookup": {
+    "codex": "C:\\Users\\praty\\AppData\\Roaming\\npm\\codex.CMD",
+    "claude": "C:\\Users\\praty\\AppData\\Roaming\\npm\\claude.CMD",
+    "copilot": null,
+    "code": "C:\\Users\\praty\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code.CMD"
+  },
+  "extension_metadata_scope": "C:\\Users\\praty\\.vscode\\extensions",
+  "limits": "Named installed metadata only; no full plugin inventory, credential/config reads, sign-in, GUI launch, extension installation or active-session claims."
+}

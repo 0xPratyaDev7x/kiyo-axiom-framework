@@ -1,0 +1,258 @@
+{
+  "format": 1,
+  "checked_date": "2026-09-29",
+  "target": "GitHub Copilot CLI",
+  "target_id": "CPL",
+  "documented_capability": "DOCUMENTED_ONLY",
+  "host_version": "UNKNOWN",
+  "plugin_version": "UNSET in Kiyo manifest",
+  "model": "NOT_INVOKED",
+  "account": "NOT_INSPECTED",
+  "settings": "No global or organization settings changed by the harness; disposable state details in command evidence",
+  "scope_summary": "No native CLI integration executed.",
+  "full_behavioral_suite": "NOT_TESTED",
+  "screenshots": [],
+  "source_register": "docs/research/SOURCES.md#prompt-26-native-revalidation",
+  "checks": [
+    {
+      "id": "LT-CPL-01",
+      "protocol_case": "LT-01",
+      "name": "Native installation and discovery",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "environment.json"
+      ],
+      "limitations": "No copilot executable resolved on inspected PATH; alternate locations/accounts not inspected. No host installation authorized or performed.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CPL-02",
+      "protocol_case": "LT-02",
+      "name": "Eight Skills visible and loadable",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "environment.json"
+      ],
+      "limitations": "No copilot executable resolved on inspected PATH; alternate locations/accounts not inspected. No host installation authorized or performed.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CPL-03",
+      "protocol_case": "LT-03",
+      "name": "Explicit Init within scope",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "environment.json"
+      ],
+      "limitations": "No copilot executable resolved on inspected PATH; alternate locations/accounts not inspected. No host installation authorized or performed. User explicitly permits only native checks without quota; no model execution.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CPL-04",
+      "protocol_case": "LT-04",
+      "name": "Simple Implement and actual verification",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "environment.json"
+      ],
+      "limitations": "No copilot executable resolved on inspected PATH; alternate locations/accounts not inspected. No host installation authorized or performed. User explicitly permits only native checks without quota; no model execution.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CPL-05",
+      "protocol_case": "LT-05",
+      "name": "Review-only file preservation",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "environment.json"
+      ],
+      "limitations": "No copilot executable resolved on inspected PATH; alternate locations/accounts not inspected. No host installation authorized or performed. User explicitly permits only native checks without quota; no model execution.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CPL-06",
+      "protocol_case": "LT-06",
+      "name": "Observation drift versus decision conflict",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "environment.json"
+      ],
+      "limitations": "No copilot executable resolved on inspected PATH; alternate locations/accounts not inspected. No host installation authorized or performed. User explicitly permits only native checks without quota; no model execution.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CPL-07",
+      "protocol_case": "LT-07",
+      "name": "Sensitive approval and native restrictions",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "environment.json"
+      ],
+      "limitations": "No copilot executable resolved on inspected PATH; alternate locations/accounts not inspected. No host installation authorized or performed. User explicitly permits only native checks without quota; no model execution.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CPL-08",
+      "protocol_case": "LT-08",
+      "name": "Resources after relocation/cache",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "environment.json"
+      ],
+      "limitations": "No copilot executable resolved on inspected PATH; alternate locations/accounts not inspected. No host installation authorized or performed. User explicitly permits only native checks without quota; no model execution.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CPL-09",
+      "protocol_case": "LT-09",
+      "name": "Automatic activation in fresh session",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "environment.json"
+      ],
+      "limitations": "No copilot executable resolved on inspected PATH; alternate locations/accounts not inspected. No host installation authorized or performed. User explicitly permits only native checks without quota; no model execution.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CPL-10",
+      "protocol_case": "LT-10",
+      "name": "Restart uses current policy/version",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "environment.json"
+      ],
+      "limitations": "No copilot executable resolved on inspected PATH; alternate locations/accounts not inspected. No host installation authorized or performed. User explicitly permits only native checks without quota; no model execution.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CPL-11",
+      "protocol_case": "LT-11",
+      "name": "Update preserves project state",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "environment.json"
+      ],
+      "limitations": "No copilot executable resolved on inspected PATH; alternate locations/accounts not inspected. No host installation authorized or performed.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    },
+    {
+      "id": "LT-CPL-12",
+      "protocol_case": "LT-12",
+      "name": "Uninstall preserves user state",
+      "applicability": "Required for this target's native acceptance",
+      "method": "NOT_RUN; follow tests/live/cases.json and docs/compatibility/live-reproduction-guide.md",
+      "inspected_scope": "No live agent session",
+      "evidence_status": "NOT_TESTED",
+      "execution_status": "NOT_RUN",
+      "observed": {
+        "outputs": null,
+        "actions": [],
+        "file_changes": null
+      },
+      "evidence": [
+        "environment.json"
+      ],
+      "limitations": "No copilot executable resolved on inspected PATH; alternate locations/accounts not inspected. No host installation authorized or performed.",
+      "baseline_relation": "P20–22 planned integration and P25 offline cases do not constitute this target's execution."
+    }
+  ]
+}

@@ -242,6 +242,16 @@ version/publisher/source/catalog values are not invented; no catalog/settings
 file is activated. Offline packaging uses the existing developer helper pattern
 and preserves earlier outputs. Native installation/lifecycle remains Prompt 26.
 
+Prompt 26 was authorized on 2026-09-29 for native integration across six targets.
+The user then selected “ทำเฉพาะ native checks ที่ไม่ใช้ quota”. This permits the
+available disposable native metadata/management checks, not model calls.
+A synthetic private Codex test catalog was registered only in temporary child
+state and removed; no final catalog/publisher was chosen. Local native acceptance
+does not resolve public ingestion or owner release gates. Claude directory/ZIP
+discovery, warnings/strict failure and Codex install/cache/removal are retained
+in [actual evidence](../evidence/live/README.md). IDE/model/update gaps stay open.
+Stop before Prompt 27.
+
 ## Pending owner decisions
 
 | ID | Decision | Current evidence / status | Who decides | Latest needed / effect | Resolution evidence |
@@ -249,10 +259,10 @@ and preserves earlier outputs. Native installation/lifecycle remains Prompt 26.
 | DEC-001 | Final publication name and native marketplace identifiers | OPEN. Kiyo Compass is only the working name; marketplace availability UNKNOWN | Repository/product owner | Before final release identities or marketplace registration/publication; does not block scope or research | None |
 | DEC-002 | Confirm license intended for publication | OPEN. Existing root LICENSE is MIT and must remain intact; final owner confirmation is not supplied | Repository/product owner | Before release/legal metadata is finalized or the existing license is changed; does not block Prompt 01/02 | None |
 | DEC-003 | Publisher identity, namespace and authorized publication destination | OPEN. No publisher/account evidence or approval supplied; do not infer from repository path or copyright | Repository/product owner | Before final publisher metadata, registration or publication; does not block Prompt 01/02 | None |
-| DEC-004 | Treatment of Codex IDE native-plugin support gap | OPEN. Official [plugin documentation](https://learn.chatgpt.com/docs/plugins) excludes IDE plugins; [skills documentation](https://learn.chatgpt.com/docs/build-skills) supports standalone IDE skills. Rechecked 2026-09-29 (CX21-04/06); DOCUMENTED_ONLY, live NOT_TESTED | Repository/product owner | Before promising six-target native installation or accepting a standalone fallback; does not block Prompt 03 design of documented surfaces | No fallback or scope reduction approved |
+| DEC-004 | Treatment of Codex IDE native-plugin support gap | OPEN. Official [plugin documentation](https://learn.chatgpt.com/docs/plugins) excludes IDE plugins; [skills documentation](https://learn.chatgpt.com/docs/build-skills) supports standalone IDE skills. Rechecked 2026-09-29 (CX21-04/06 and NL26-09); DOCUMENTED_ONLY, live NOT_TESTED | Repository/product owner | Before promising six-target native installation or accepting a standalone fallback; does not block Prompt 03 design of documented surfaces | No fallback or scope reduction approved |
 
 Ask only when an unresolved choice blocks the current authorized prompt. Existing
-instructions authorize Prompt 25 offline behavioral case/fixture/protocol authoring, developer helper checks and build-state updates. The user explicitly kept host cases NOT_RUN; no model calls or external quota are authorized by that scope. Do not ask for
+instructions authorize Prompt 26's selected no-quota native checks and build-state reporting. No model calls or paid quota are authorized. Temporary fixture catalog identity is not a publisher/release decision. Do not ask for
 premature publication decisions to complete that scope. Publication metadata still
 requiring confirmation is listed in [SOURCES](../research/SOURCES.md#publication-information-still-requiring-the-owner).
 

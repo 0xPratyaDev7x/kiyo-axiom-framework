@@ -1,0 +1,60 @@
+{
+  "layer": "offline_evidence_record_audit",
+  "started_at": "2026-09-29T13:14:24.688530+00:00",
+  "command": [
+    "C:\\Users\\praty\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "tests/live/check_records.py",
+    "--report",
+    "docs/evidence/live/record-audit-01.json"
+  ],
+  "checks": [
+    {
+      "id": "P26-A01",
+      "status": "PASS",
+      "observed": "72 independent records; 2 PASS, 70 NOT_RUN; expected cases separate"
+    },
+    {
+      "id": "P26-A02",
+      "status": "PASS",
+      "observed": "Claude actual normal acceptance, strict FAIL, eight metadata entries and preservation agree with reports"
+    },
+    {
+      "id": "P26-A03",
+      "status": "PASS",
+      "observed": "Codex native install/cache/removal evidence consistent; fallback version separated; three project files preserved"
+    },
+    {
+      "id": "P26-A04",
+      "status": "PASS",
+      "observed": "112 product/overlay/license inputs, packaging tooling and 3 ZIP hashes unchanged; P25 remains 48 NOT_RUN"
+    },
+    {
+      "id": "P26-A05",
+      "status": "PASS",
+      "observed": {
+        "markdown_files": 2564,
+        "local_links": 18529
+      },
+      "limitations": "Inline link convention; external URLs not re-fetched; platform adapters rebased to installed form"
+    },
+    {
+      "id": "P26-A06",
+      "status": "PASS",
+      "observed": "80 unique requirements/full NOT_RUN; 30 scoped trace additions; 9 issues/4 owner decisions retained; next27"
+    },
+    {
+      "id": "P26-A07",
+      "status": "PASS",
+      "observed": {
+        "modified_files": 12,
+        "new_files": 21,
+        "diff_check": "PASS"
+      },
+      "limitations": "Read-only closure audit; does not verify absent global/transient effects or agent behavior"
+    }
+  ],
+  "host_or_model_executions": 0,
+  "result": "PASS",
+  "exit_code": 0,
+  "finished_at": "2026-09-29T13:14:45.193108+00:00"
+}

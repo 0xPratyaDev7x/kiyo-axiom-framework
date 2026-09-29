@@ -1,0 +1,60 @@
+{
+  "record_type": "actual_native_zip_metadata_probe",
+  "started_at": "2026-09-29T12:57:30.013566+00:00",
+  "scope": {
+    "trial_root": "C:\\Users\\praty\\AppData\\Local\\Temp\\kiyo-p26-claude spaces-0167d_34",
+    "cwd": "C:\\Users\\praty\\AppData\\Local\\Temp\\kiyo-p26-claude spaces-0167d_34\\project",
+    "child_configuration_root": "C:\\Users\\praty\\AppData\\Local\\Temp\\kiyo-p26-claude spaces-0167d_34\\native-state",
+    "method": "Child process CLAUDE_CONFIG_DIR only; session plugin-dir; no marketplace/global install",
+    "limits": "Not an OS sandbox; no systemwide file/network monitor; parent environment and settings unchanged by harness"
+  },
+  "archive": "C:\\Users\\praty\\AppData\\Local\\Temp\\kiyo-p26-claude spaces-0167d_34\\local candidate.zip",
+  "archive_sha256": "10bc505a083f86276d0ba78ebb4c06fa64f93143ff607eed63898ffafc711672",
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\praty\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\bin\\claude.exe",
+        "--plugin-dir",
+        "C:\\Users\\praty\\AppData\\Local\\Temp\\kiyo-p26-claude spaces-0167d_34\\local candidate.zip",
+        "plugin",
+        "details",
+        "kiyo-compass"
+      ],
+      "exit_code": 0,
+      "stdout": "kiyo-compass\n  Eight static Kiyo engineering and governance skills with shared guidance and project-owned memory.\n  Source: kiyo-compass@inline\n\nComponent inventory\n  Skills (8)  architecture, implement, init, memory, requirement, review, security, test\n  Agents (0)\n  Hooks (0)\n  MCP servers (0)\n  LSP servers (0)\n\nProjected token cost\n  Always-on:   ~697 tok   added to every session\n\nPer-component (rounded)\n  component     always-on  on-invoke\n  architecture        ~80      ~1.1k\n  implement           ~90      ~1.6k\n  init                ~70      ~1.1k\n  memory              ~90      ~1.2k\n  requirement        ~100      ~1.1k\n  review              ~90      ~1.1k\n  security            ~90      ~1.3k\n  test                ~90      ~1.3k\n\n  On-invoke cost is paid each time a skill or agent fires.\n  Token counts are estimates and may differ from actual usage.\n",
+      "stderr": "",
+      "finished_at": "2026-09-29T12:57:31.101458+00:00"
+    },
+    {
+      "argv": [
+        "C:\\Users\\praty\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\bin\\claude.exe",
+        "plugin",
+        "list",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": "[]\n",
+      "stderr": "",
+      "finished_at": "2026-09-29T12:57:31.449235+00:00"
+    }
+  ],
+  "model": "NOT_INVOKED",
+  "native_cache_skill_paths": [],
+  "project_after": {
+    "CLAUDE.md": {
+      "sha256": "1d6484ee68ed08f756fcebd552dbbd14fa288b7baf28e31488588b5263ca6a6f",
+      "size": 68
+    },
+    "legacy-memory/project.md": {
+      "sha256": "ec534154ec9c89f4268cfcd5302d2098da21e8d57b24f19893ba256100560e7d",
+      "size": 68
+    },
+    "project-policy.md": {
+      "sha256": "4e877d27f36b16bfd23803153f8ccdb45f29fd270a127268ab8a1f864c563a95",
+      "size": 82
+    }
+  },
+  "project_unchanged": true,
+  "native_state_file_count": 2,
+  "finished_at": "2026-09-29T12:57:31.451235+00:00"
+}

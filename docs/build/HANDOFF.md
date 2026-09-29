@@ -15,36 +15,43 @@ One canonical specification with necessary self-contained native overlays.
 
 ## Current repository observation
 
-Observed for Prompt 25 on 2026-09-29:
+Observed for Prompt 26 on 2026-09-29:
 
-- Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework
-- Branch main; HEAD cef426c3cf228df95945572ce3a782589930f0ac; initial tree/index
-  clean, Prompt 24 committed. No applicable scoped instructions or .kiyo found.
-  Git uses exact per-command safe.directory/core.excludesFile only.
-- Existing LICENSE/naming/version/history, 105 canonical product files, native
-  overlays, original builders and packages remain untouched. No extra public Skill.
-- User explicitly chose “ทำ suite/protocol แบบ offline; host cases คง NOT_RUN”.
-  No host/model, paid API, external quota, global changes or installation occurred.
-- Source-guided catalog has 48 cases: four per Skill plus 16 cross-cutting;
-  31 synthetic fixture bundles. Expected criteria and observed records are separate.
-  Host/model/version/settings are UNKNOWN/UNSELECTED; all 48 records NOT_RUN.
-- Actual offline command ran 13 helper tests PASS, zero failures/errors/skips.
-  It materialized 48 cases with all 105 framework files and exercised prepare/
-  capture CLI. Synthetic helper mutations are not host defects or metric samples.
-- Codex/Claude launch scripts resolve on PATH; Copilot command has no PATH match.
-  No executable was invoked for version/account/usability; no absence inferred.
-  Python 3.11.9 / Windows-10-10.0.26200-SP0 observed from helper execution.
-- All eight behavioral metrics unmeasured, model/human grading absent. All six
-  native targets remain NOT_TESTED; Codex IDE plugin route UNSUPPORTED, prior
-  ingestion FAIL and P23 filesystem-symlink BLOCKED retained.
-- 55 trace rows gain authored case/protocol coverage; 79 partial/1 not implemented,
-  all 80 full requirement verifications NOT_RUN. No behavioral/release acceptance.
-- No actual project Memory/bootstrap/policy, dependency, runtime, Git commit/tag/
-  push/PR, publication or signature was created.
+- Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework.
+  Branch main; HEAD cb4647c56c2ea0c711d9c35b861c0ad0fc76280a; initial tree/index
+  clean. No applicable ancestor AGENTS/CLAUDE or .kiyo found. Git uses exact
+  per-command safe.directory/core.excludesFile only.
+- User selected “ทำเฉพาะ native checks ที่ไม่ใช้ quota”. No model/agent turn,
+  account/credential read, global install/settings, organization change or publication.
+- Claude 2.1.220: native normal validation exit 0 with missing version/author
+  warnings; strict exit 1. Session-only directory and ZIP details enumerate eight
+  Skills and no runtime components. Persistent marketplace install untested.
+- Codex 0.158.0: test-only local catalog registration/install/list/remove succeed
+  in child disposable state. Native cache has 795 byte-identical payload files;
+  static cache checker passes eight entries and 4,956 links. Uninstall removes
+  cache/installed entry, preserves source and three synthetic human/Memory/policy files.
+- Product manifest version stays UNSET; Codex's returned 1.0.0 is a host fallback.
+  No publisher or release identity was assigned. Prior public ingestion FAIL stays.
+- Editor 1.139.1 metadata obtained with crashpad diagnostic. Claude extension
+  metadata 2.1.283/2.1.284; Codex metadata 26.917.62051; active engines UNKNOWN.
+  No Copilot PATH/matching standard extension result; alternate locations unknown.
+- Seventy-two case records retain independent target states. Two bounded Codex
+  lifecycle rows PASS; other full cases remain NOT_TESTED, with Codex IDE plugin
+  capability UNSUPPORTED. Claude discovery and cache checks are partial evidence.
+  No Skill invocation, automatic Core, update or behavioral acceptance exists.
+- First probe console Unicode failure and corrected rerun retained; native strict
+  failure/host warnings not hidden. Incidental editor debug.log moved to developer
+  evidence after inspection. No product fix was made to silence a check.
+- 105 canonical files, all overlays/builders/packages, LICENSE/history preserved.
+  P25's 48 NOT_RUN observations and unmeasured behavioral metrics unchanged.
+  All 80 full verifications remain NOT_RUN, with 79 partial/1 not implemented.
 
-Recheck root/branch/user edits on resume. Preserve LICENSE and all 80 requirements.
-See [P25 validation](../evidence/behavioral/validation-report.md) and
-[environment evidence](../evidence/behavioral/environment.json).
+Recheck root/branch/user edits on resume. Read
+[live matrix](../compatibility/live-test-matrix.md),
+[actual records](../evidence/live/README.md),
+[reproduction](../compatibility/live-reproduction-guide.md) and
+[owner-required remaining tests](../compatibility/live-owner-required-tests.md).
+Native state mapping is not an OS sandbox or comprehensive network/file monitoring.
 
 ## Read order
 
@@ -984,13 +991,15 @@ No canonical fix was justified by the unrun behavioral cases.
 
 ## Exact next action
 
-Prompt 25 offline suite/protocol delivery is complete. Stop here.
-**Next: Prompt 26 Live Host Tests**, only when supplied by the user.
-Recheck baseline and Build Contract, inspect authorized host prerequisites and
-obtain specific case/target/quota authority before any model call. P25's offline
-choice is not permission for later runs, installations or public submission.
+Prompt 26 available no-quota native checks and documentation are complete. Stop.
+**Next: Prompt 27 Documentation**, only when supplied by the user.
+Broader native integration acceptance remains partial; use per-target evidence,
+never a global compatibility PASS. User's no-quota choice remains in force unless
+explicitly changed for a later bounded run.
 
-Safe to continue: **YES for a user-requested Prompt 26 Live Host Tests**.
-Prepared fixtures/protocols provide inputs; owner/native gaps remain visible.
-Memory Impact: NONE. No later work is authorized by this handoff alone.
+Safe to continue: **YES for Prompt 27 documentation** with truthful support limits.
+DEC-001–004, Claude strict metadata failure, Codex ingestion failure, IDE gaps,
+model/activation/update tests and earlier P23 filesystem-symlink limit remain open.
+Memory Impact: NONE for the actual developer project. Synthetic native fixtures
+do not initialize project Memory here. No later prompt is authorized by this handoff.
 

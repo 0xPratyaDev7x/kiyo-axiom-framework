@@ -1,5 +1,11 @@
 # Codex local/disposable test protocol
 
+P26 follow-up: [actual no-quota reproduction](live-reproduction-guide.md)
+uses a synthetic test-only local catalog and unchanged unversioned payload.
+The user-authorized disposable source does not fill release owner fields or adopt
+a publisher; local native acceptance is tested separately from public ingestion.
+Agent/model steps below remain NOT_RUN under the user's no-quota selection.
+
 **PLANNED / NOT_RUN** for live testing in a user-requested Prompt 26.
 Sources checked 2026-09-29:
 [CX21 register](../research/SOURCES.md#prompt-21-codex-revalidation).

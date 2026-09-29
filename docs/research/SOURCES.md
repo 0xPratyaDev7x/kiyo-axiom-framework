@@ -327,3 +327,36 @@ CLI/extension/active editor/account versions remain UNKNOWN. Developer Python
 between shared static format, independent native support and actual test results.
 No official curated listing, version, publisher or marketplace is asserted.
 
+## Prompt 26 native revalidation
+
+Checked **2026-09-29** before dependent native probes. NL26 rows below are
+official documentation evidence, **DOCUMENTED_ONLY**, except the explicitly
+unretrieved row. Local results are separately recorded in
+[live evidence](../evidence/live/README.md); documentation never substitutes for
+execution. Every successful fetch below returned the same requested URL; no
+redirect destination is inferred from older research.
+
+| ID | Requested URL / actual destination | Inspected fact | Limitation |
+| --- | --- | --- | --- |
+| NL26-01 | [Claude plugin development](https://code.claude.com/docs/en/plugins/create) — same URL | Directory/ZIP session loading with --plugin-dir; validation entry point | Current docs can describe newer versions than installed 2.1.220; local help and actual subset recorded |
+| NL26-02 | [Claude manifest](https://code.claude.com/docs/en/plugins-reference) — same URL | Native validation and warning/error distinctions | Native normal/strict outcomes are separate evidence, not blanket schema support |
+| NL26-03 | [Claude environment](https://code.claude.com/docs/en/env-vars) — same URL | CLAUDE_CONFIG_DIR state relocation | Not proof of OS isolation, credential isolation or zero external effects |
+| NL26-04 | [Claude installation](https://code.claude.com/docs/en/plugins/install) — same URL | Local/project/user scope, lifecycle and separate VS Code UI | Marketplace lifecycle not executed here; session-only loading is different |
+| NL26-05 | [Claude VS Code](https://code.claude.com/docs/en/vs-code) — same URL | Extension uses its own bundled engine | Terminal version does not identify active panel engine |
+| NL26-06 | [OpenAI packaging](https://developers.openai.com/plugins/build/plugins) — same URL | Static skills, local catalogs, relative source path and optional manifest version | Public/release metadata readiness remains separate from observed local native acceptance |
+| NL26-07 | [Codex native commands](https://learn.chatgpt.com/docs/developer-commands) — same URL | Marketplace add/remove, plugin add/list/remove and JSON output | Installed 0.158.0 help plus actual command records bound the observed behavior |
+| NL26-08 | [Codex state variables](https://learn.chatgpt.com/docs/config-file/environment-variables) — same URL | Existing CODEX_HOME directory scopes documented state | Child-only test mapping is not a permission grant or comprehensive isolation |
+| NL26-09 | [OpenAI plugins](https://learn.chatgpt.com/docs/plugins) — same URL | CLI plugins supported; IDE native plugins excluded | IDE UNSUPPORTED capability, no executed IDE result or adopted standalone fallback |
+| NL26-10 | [Copilot CLI reference](https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-plugin-reference) — same URL | Local source install, native lifecycle and managed-setting precedence | No available CLI resolved; all Copilot native results NOT_TESTED |
+| NL26-11 | [VS Code agent plugins](https://code.visualstudio.com/docs/agent-customization/agent-plugins) — same URL | Local plugin registration through chat.pluginLocations | Page now retrieved directly; P22 source fallback history remains intact; no settings written or GUI tested |
+| NL26-12 | [VS Code command line](https://code.visualstudio.com/docs/configure/command-line) — same URL | Separate editor data/extension roots | Editor isolation alone does not isolate extension-specific state or establish accounts |
+| NL26-13 | [Codex app-server](https://learn.chatgpt.com/docs/app-server) — same URL | Metadata methods considered as a possible discovery route | Exploratory help only; no app-server, API session or daemon launched; not a Kiyo component |
+| NL26-14 | [Claude plugins/manage lookup](https://code.claude.com/docs/en/plugins/manage) — retrieval returned Internal Error, no destination verified | None | NOT_REVALIDATED; not used for any command decision; NL26-04 supplies actual maintenance documentation |
+
+[Local help](../evidence/live/native-help.json) was read before commands. Observed
+versions: Claude CLI 2.1.220, Codex CLI 0.158.0, VS Code 1.139.1 x64. Named
+extension metadata is separate from active runtime. The Codex native installer
+returned 1.0.0 for an unversioned manifest; that value does not set Kiyo's version.
+No quota/model run or publication occurred. The synthetic Codex catalog is an
+ephemeral test source under P26 authority, not a new release identity.
+
