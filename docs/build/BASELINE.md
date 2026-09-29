@@ -1789,3 +1789,25 @@ No product version/license/publisher/permission change or new consumer runtime.
 Memory Impact: NONE for this developer project; synthetic fixtures are test data.
 Safe to continue: YES for user-requested Prompt 27 Documentation with explicit
 support limits. Stop; Prompt 27 is not authorized by this record alone.
+
+## Prompt 27 checks
+
+Observed **2026-09-29**. Initial main HEAD
+b422d201c4dae8aa29963a8f7753583862f0c86a, clean tree/index. P26 committed;
+no ancestor AGENTS/CLAUDE or actual developer-project Memory. Scope is
+documentation, official wording recheck and offline validation only.
+
+| Check | Applicability | Command / method | Inspected scope | Status | Observed result | Evidence | Limitations | Baseline relation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| P27-C01 Baseline/source review | Required before drafting | Git root/branch/HEAD/status, Build Contract/state, shipped eight entries, shared contracts, manifests and P26 records | Current repository and relevant native documentation | PASS | Correct clean main; seven official pages fetched with same destination URLs | [UG27 sources](../research/SOURCES.md#prompt-27-documentation-source-check), this section | Documentation is not a new host run; prior local versions remain dated P26 observations | Existing source/permission boundaries retained |
+| P27-C02 User documentation | Required deliverables | Authored-guide review and P27-A01 | README, user/Skill/governance/Memory/security/troubleshooting guides | PASS | Eight Skills, modes/effects, independent governance/risk, evidence/status/activation and drift limits described | [User entry](../user/README.md), [audit 01](../evidence/documentation/audit-01.json) | Text coverage is not proof agents comply or users completed the guide | Canonical source and generated packages unchanged |
+| P27-C03 Examples/maintenance/copy | Required deliverables | Guide/metadata review, P27-A01/A03 | Nine walkthroughs, maintainer guide, marketplace draft | PASS | All nine expected/observed sections say NOT_RUN; copy matches actual identity/descriptions/interface; developer tooling separated | [Walkthroughs](../user/walkthroughs.md), [maintainer guide](../developer/maintainer-guide.md), [copy](../release/marketplace-copy.md) | No native walkthrough, publication or real update/migration trial | Release owner gates retained; no fake values |
+| P27-C04 Support discipline | Required claim boundary | P27-A02 and comparison with target records | Six support rows, 72 P26 records, 48 P25 observations | PASS | No target upgraded; two bounded native PASS rows, other cases still unrun; Codex IDE capability excluded | [Actual audit](../evidence/documentation/audit-01.json), [live matrix](../compatibility/live-test-matrix.md) | No invocation/automatic Core/model metric measured | First native failures and all historical observations preserved |
+| P27-C05 Links/payload preservation | Required offline check | PowerShell single-quoted Python audit via python -B -; P27-A04/A05 | All local Markdown links, 112 inputs/tooling/three ZIP hashes/LICENSE | PASS | First audit: 2,574 Markdown files, 18,642 links; exact-case/anchor/containment checks pass, hashes unchanged | [Audit 01](../evidence/documentation/audit-01.json) | Inline link convention; external pages not re-fetched by script; no full schema/behavior claim | Counts precede this closure record; final closure kept separately |
+| P27-C06 Trace/state | Required close | P27-A06; scoped row/doc review and closure audit | 80 unique requirements; eight added documentation trace rows; six build-state files | PASS | Full statuses retained: 79 partial/1 not implemented, all verification NOT_RUN; next28 | [Validation report](../evidence/documentation/validation-report.md), [TRACEABILITY](TRACEABILITY.md) | Documentation implementation only; final gap/acceptance still pending | No prior evidence deleted or relabeled |
+| P27-C07 Native walkthroughs | Not executed in documentation scope | No native/model/account/install command | All nine illustrative walkthroughs and six host workflow/activation surfaces | NOT_RUN | No observed transcript/action/diff or demo test counts | [Walkthroughs](../user/walkthroughs.md) | User no-quota boundary unchanged; required host evidence remains open | P26 bounded native results remain available separately |
+
+Task status: DONE for Prompt 27 documentation/offline checks. Memory Impact: NONE.
+No product/runtime/permission/global/release change. DEC-001–004 remain open.
+Safe to continue: YES for user-requested Prompt 28 Release Tooling; owner gates,
+native behavior and final acceptance cannot be inferred from this completion.

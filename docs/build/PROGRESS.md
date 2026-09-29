@@ -1,9 +1,36 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **26 Native Integration (no-quota subset)**.
-Task status: **DONE for the user-selected available no-quota checks and reporting**.
-Full six-target integration acceptance is **PARTIALLY COMPLETE**: no model/agent
-workflow or automatic Core activation was tested. No support-complete claim.
+Snapshot: 2026-09-29. Current prompt: **27 Documentation**.
+Task status: **DONE for the requested documentation and offline checks**.
+Native workflow/activation evidence remains unchanged; full six-target integration
+acceptance remains PARTIALLY COMPLETE.
+
+## Prompt 27 delivered scope
+
+- [README](../../README.md) presents Kiyo, four pillars/eight Skills, development
+  quickstart and six independent support rows with actual limits.
+- [User guide](../user/README.md), [Skill guide](../user/skills.md), governance,
+  Memory, security and troubleshooting guides describe shipped contracts,
+  native selection, effects and evidence without requiring every policy up front.
+- [Nine walkthroughs](../user/walkthroughs.md) are explicitly illustrative/synthetic,
+  NOT_RUN. No fake transcript, test count or native success is presented.
+- [Maintainer guide](../developer/maintainer-guide.md) separates canonical/overlays/
+  generated outputs, existing developer tooling and scoped lifecycle/migration.
+  [Marketplace copy](../release/marketplace-copy.md) matches real metadata and
+  retains owner gates; no listing or release identity is fabricated.
+- [UG27 sources](../research/SOURCES.md#prompt-27-documentation-source-check)
+  recheck seven official pages. The invocation-map introduction now distinguishes
+  untested Skill invocation from P26 native metadata/lifecycle results.
+- [Documentation audit](../evidence/documentation/validation-report.md) records
+  six offline checks PASS in the first run: links/case/anchors, eight-Skill
+  inventory, nine example boundaries, metadata, retained evidence and hashes.
+  Closure checks are recorded separately after build-state updates.
+
+REQ-004/005/010/076–080 gain documentation coverage; no full verification is
+promoted. All 80 full requirement verifications remain NOT_RUN, with
+79 PARTIALLY_IMPLEMENTED / 1 NOT_IMPLEMENTED. Canonical content, overlays, tools,
+tests, distributions and LICENSE remain unchanged. Memory Impact: **NONE**.
+No native/model/account/quota operation, global settings or publication in P27.
 
 ## Prompt 26 delivered scope
 
@@ -874,7 +901,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 24 | Static Tests | DONE | P24 selected contract groups and exact-reason negatives: 37 PASS; actual extraction; static only |
 | 25 | Behavioral Tests | DONE | User selected offline: 48 host cases NOT_RUN; 13 helper checks PASS; no behavioral metrics |
 | 26 | Live Host Tests | DONE | Selected no-quota subset: Claude native discovery/validation; Codex disposable install/cache/uninstall; full six-target acceptance partial |
-| 27 | Documentation | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 27 | Documentation | DONE | Ten user/maintainer/draft documents; nine illustrative NOT_RUN walkthroughs; actual offline documentation audit; native gaps preserved |
 | 28 | Release Tooling | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 29 | Gap Audit | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 30 | Final Acceptance | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -886,9 +913,9 @@ NOT_STARTED is a roadmap planning marker, not an additional task-result status.
 DEC-001 name, DEC-002 release license, DEC-003 publisher/destination and DEC-004
 Codex IDE treatment remain open. No release version, signature or approval invented.
 
-Safe to continue: **YES for a user-requested Prompt 27 Documentation**.
-Use the actual scoped results and retain NOT_TESTED/UNSUPPORTED gaps; do not claim
-complete compatibility or release readiness. No later model/quota/publication
-authority follows from P26.
-Next prompt: **27 Documentation**, only when requested by the user.
+Safe to continue: **YES for a user-requested Prompt 28 Release Tooling**.
+Use the actual scoped results and retain NOT_TESTED/UNSUPPORTED gaps; release
+tooling must preserve owner gates and cannot establish release readiness by itself.
+No later model/quota/publication authority follows from P26 or P27.
+Next prompt: **28 Release Tooling**, only when requested by the user.
 

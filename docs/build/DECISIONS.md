@@ -252,6 +252,12 @@ discovery, warnings/strict failure and Codex install/cache/removal are retained
 in [actual evidence](../evidence/live/README.md). IDE/model/update gaps stay open.
 Stop before Prompt 27.
 
+Prompt 27 was authorized on 2026-09-29 for documentation of shipped contracts and
+actual support, nine illustrative walkthroughs, draft marketplace copy, checks
+and build-state closure. Guides do not select a release name/version/license/
+publisher or adopt a Codex IDE fallback. No model/quota/native installation or
+publication is authorized by writing these docs. Stop before Prompt 28.
+
 ## Pending owner decisions
 
 | ID | Decision | Current evidence / status | Who decides | Latest needed / effect | Resolution evidence |
@@ -262,8 +268,10 @@ Stop before Prompt 27.
 | DEC-004 | Treatment of Codex IDE native-plugin support gap | OPEN. Official [plugin documentation](https://learn.chatgpt.com/docs/plugins) excludes IDE plugins; [skills documentation](https://learn.chatgpt.com/docs/build-skills) supports standalone IDE skills. Rechecked 2026-09-29 (CX21-04/06 and NL26-09); DOCUMENTED_ONLY, live NOT_TESTED | Repository/product owner | Before promising six-target native installation or accepting a standalone fallback; does not block Prompt 03 design of documented surfaces | No fallback or scope reduction approved |
 
 Ask only when an unresolved choice blocks the current authorized prompt. Existing
-instructions authorize Prompt 26's selected no-quota native checks and build-state reporting. No model calls or paid quota are authorized. Temporary fixture catalog identity is not a publisher/release decision. Do not ask for
-premature publication decisions to complete that scope. Publication metadata still
+instructions authorize Prompt 27 documentation and its offline checks/reporting.
+P26's no-quota restriction remains; no model calls or paid quota are authorized.
+Temporary fixture catalog identity is not a publisher/release decision. Do not
+ask for premature publication decisions to complete documentation. Publication metadata still
 requiring confirmation is listed in [SOURCES](../research/SOURCES.md#publication-information-still-requiring-the-owner).
 
 ## Proposals and future technical decisions

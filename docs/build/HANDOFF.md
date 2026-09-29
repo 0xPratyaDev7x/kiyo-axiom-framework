@@ -15,43 +15,46 @@ One canonical specification with necessary self-contained native overlays.
 
 ## Current repository observation
 
-Observed for Prompt 26 on 2026-09-29:
+Observed for Prompt 27 on 2026-09-29:
 
 - Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework.
-  Branch main; HEAD cb4647c56c2ea0c711d9c35b861c0ad0fc76280a; initial tree/index
-  clean. No applicable ancestor AGENTS/CLAUDE or .kiyo found. Git uses exact
-  per-command safe.directory/core.excludesFile only.
-- User selected “ทำเฉพาะ native checks ที่ไม่ใช้ quota”. No model/agent turn,
-  account/credential read, global install/settings, organization change or publication.
-- Claude 2.1.220: native normal validation exit 0 with missing version/author
-  warnings; strict exit 1. Session-only directory and ZIP details enumerate eight
-  Skills and no runtime components. Persistent marketplace install untested.
-- Codex 0.158.0: test-only local catalog registration/install/list/remove succeed
-  in child disposable state. Native cache has 795 byte-identical payload files;
-  static cache checker passes eight entries and 4,956 links. Uninstall removes
-  cache/installed entry, preserves source and three synthetic human/Memory/policy files.
-- Product manifest version stays UNSET; Codex's returned 1.0.0 is a host fallback.
-  No publisher or release identity was assigned. Prior public ingestion FAIL stays.
-- Editor 1.139.1 metadata obtained with crashpad diagnostic. Claude extension
-  metadata 2.1.283/2.1.284; Codex metadata 26.917.62051; active engines UNKNOWN.
-  No Copilot PATH/matching standard extension result; alternate locations unknown.
-- Seventy-two case records retain independent target states. Two bounded Codex
-  lifecycle rows PASS; other full cases remain NOT_TESTED, with Codex IDE plugin
-  capability UNSUPPORTED. Claude discovery and cache checks are partial evidence.
-  No Skill invocation, automatic Core, update or behavioral acceptance exists.
-- First probe console Unicode failure and corrected rerun retained; native strict
-  failure/host warnings not hidden. Incidental editor debug.log moved to developer
-  evidence after inspection. No product fix was made to silence a check.
-- 105 canonical files, all overlays/builders/packages, LICENSE/history preserved.
-  P25's 48 NOT_RUN observations and unmeasured behavioral metrics unchanged.
-  All 80 full verifications remain NOT_RUN, with 79 partial/1 not implemented.
+  Branch main; HEAD b422d201c4dae8aa29963a8f7753583862f0c86a; initial tree/index
+  clean. No applicable ancestor AGENTS/CLAUDE or developer-project .kiyo found.
+  Git uses exact per-command safe.directory/core.excludesFile only.
+- P26 is committed. Its user-selected no-quota scope remains unchanged; P27
+  performs no native/model/account/installation operation.
+- [README](../../README.md) plus nine linked guide/draft files provide first use,
+  eight Skills, governance, Memory, security, troubleshooting, nine synthetic
+  walkthroughs, maintenance and unpublished marketplace copy.
+- Product default config is .kiyo/policy.md; explicit/legacy equivalents such as
+  .kiyo/config.md are preserved, never duplicated. Memory defaults to .kiyo/memory
+  only for new projects. Walkthroughs do not initialize this repository.
+- [Seven official page checks](../research/SOURCES.md#prompt-27-documentation-source-check)
+  support current native wording. Codex IDE native plugins remain UNSUPPORTED;
+  exact Codex/Copilot CLI plugin-qualified selectors remain UNKNOWN.
+- [Documentation checks](../evidence/documentation/validation-report.md) separate
+  actual offline audit from unexecuted walkthroughs. All 112 package inputs,
+  tooling, three archive hashes and original LICENSE are preserved.
+- P26 Claude CLI 2.1.220 normal validation/discovery succeeds, strict validation
+  fails missing version/author. No persistent marketplace install or agent use.
+- P26 Codex CLI 0.158.0 disposable local install/cache/uninstall succeeds and
+  preserves three synthetic project files; 795 cached files match distribution.
+  Native fallback 1.0.0 is not a product version; public ingestion failure stays.
+- IDE/Copilot native behavior remains untested. Named extension/editor metadata
+  does not establish active engines/accounts. All 48 P25 host cases remain NOT_RUN.
+  P26 has two complete bounded lifecycle PASS rows, 70 unexecuted full case rows.
+- No Skill invocation, automatic Core, update or managed-block lifecycle behavior
+  was newly verified. No publisher/version/license decision or release promise.
+- REQ-004/005/010/076–080 gain scoped documentation trace entries. All 80 full
+  verifications remain NOT_RUN, with 79 partial/1 not implemented.
 
-Recheck root/branch/user edits on resume. Read
-[live matrix](../compatibility/live-test-matrix.md),
+Recheck root/branch/user edits on resume. For historical actual native commands,
+read [live matrix](../compatibility/live-test-matrix.md),
 [actual records](../evidence/live/README.md),
 [reproduction](../compatibility/live-reproduction-guide.md) and
 [owner-required remaining tests](../compatibility/live-owner-required-tests.md).
-Native state mapping is not an OS sandbox or comprehensive network/file monitoring.
+Native state mapping is not an OS sandbox. The documentation does not supply
+permission for later model calls, installs or publication.
 
 ## Read order
 
@@ -989,17 +992,30 @@ is separate and needs its own authority. Critical unauthorized effects or fake
 results block release. Preserve first attempt and rerun as separate records.
 No canonical fix was justified by the unrun behavioral cases.
 
+## Prompt 27 documentation continuity
+
+Start with the [README](../../README.md), [user guide](../user/README.md),
+[walkthroughs](../user/walkthroughs.md) and
+[maintainer guide](../developer/maintainer-guide.md).
+[Marketplace copy](../release/marketplace-copy.md) is an owner-review draft from
+actual metadata, not a submitted listing. Native commands remain dated and
+source-bound; do not generalize a CLI result to an IDE. P27 changes documentation
+only and does not rebuild or modify the product packages.
+
+P26's check_records.py is a historical pinned-state audit; it is not a general
+later-prompt gate. Preserve old evidence. New documentation audit records include
+their own time/command/scope and limitations. No new behavioral metrics exist.
+
 ## Exact next action
 
-Prompt 26 available no-quota native checks and documentation are complete. Stop.
-**Next: Prompt 27 Documentation**, only when supplied by the user.
-Broader native integration acceptance remains partial; use per-target evidence,
-never a global compatibility PASS. User's no-quota choice remains in force unless
-explicitly changed for a later bounded run.
+Prompt 27 documentation and offline checks are complete. Stop.
+**Next: Prompt 28 Release Tooling**, only when supplied by the user.
+Read Build Contract, packaging/lifecycle contracts, existing builders/tests,
+owner decisions and current documentation. Build only the subsequently requested
+scope; do not infer commit/tag/push/publication or model/quota authority.
 
-Safe to continue: **YES for Prompt 27 documentation** with truthful support limits.
-DEC-001–004, Claude strict metadata failure, Codex ingestion failure, IDE gaps,
-model/activation/update tests and earlier P23 filesystem-symlink limit remain open.
-Memory Impact: NONE for the actual developer project. Synthetic native fixtures
-do not initialize project Memory here. No later prompt is authorized by this handoff.
+Safe to continue: **YES for Prompt 28 release tooling** while preserving unresolved
+release gates. DEC-001–004, Claude strict metadata failure, Codex ingestion failure,
+IDE gaps, model/activation/update tests and the P23 filesystem-symlink limit remain
+open. Memory Impact: NONE. No later prompt is authorized by this handoff.
 

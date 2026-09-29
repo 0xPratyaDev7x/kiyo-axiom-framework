@@ -1,0 +1,64 @@
+{
+  "layer": "documentation_static_audit",
+  "started_at": "2026-09-29T13:33:07.743330+00:00",
+  "command": [
+    "C:\\Users\\praty\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "-B",
+    "-"
+  ],
+  "shell_method": "PowerShell single-quoted here-string piped to python -B -",
+  "checks": [
+    {
+      "id": "P27-A01",
+      "status": "PASS",
+      "observed": "10 public/maintainer/draft documents; 9 separated NOT_RUN walkthroughs; guides link exactly eight Skills, matching source and all packages"
+    },
+    {
+      "id": "P27-A02",
+      "status": "PASS",
+      "observed": "Six separate support rows retain gaps; underlying 72 live records remain 2 PASS/70 NOT_RUN and 48 behavioral cases NOT_RUN"
+    },
+    {
+      "id": "P27-A03",
+      "status": "PASS",
+      "observed": "Draft identity/descriptions/interface match real manifests; version unset and publication gates retained"
+    },
+    {
+      "id": "P27-A04",
+      "status": "PASS",
+      "observed": "112 allowlisted input hashes, packaging tooling, three ZIP hashes and original LICENSE preserved; no product/tool/test/package diff"
+    },
+    {
+      "id": "P27-A05",
+      "status": "PASS",
+      "observed": {
+        "markdown_files": 2574,
+        "local_inline_links": 18642,
+        "scope": "Contained exact-case paths and heading anchors; external links not re-fetched by this script; adapters rebased to shipped location"
+      }
+    },
+    {
+      "id": "P27-A06",
+      "status": "PASS",
+      "observed": "80 unique requirements and full NOT_RUN statuses preserved; clean index/unchanged main HEAD; no project Memory/bootstrap/config; git diff --check passes"
+    }
+  ],
+  "host_or_model_calls": 0,
+  "limitations": "Selected document/link/hash/record properties, not agent behavior, full schema validation or proof of every semantic claim.",
+  "result": "PASS",
+  "exit_code": 0,
+  "finished_at": "2026-09-29T13:33:26.053902+00:00",
+  "document_sha256": {
+    "README.md": "a01680b8424c96c7b2a3fb243fd0abb50b1dc0414885f8327881903c80bf13a0",
+    "docs/user/README.md": "fba1e8427024526a862ede7d55032ada04e1f0ad3ba9c05e48f7adc183b8f44c",
+    "docs/user/skills.md": "39678dd59e686b8f7fddc8aedd5aa2327b9e368e2c3f9a558f9d442cc3deae2c",
+    "docs/user/governance.md": "00312cbbdb96982ca67c81005b65fca552af2579aad030a05fa9aaff116c7f7e",
+    "docs/user/memory.md": "1584c90db713cbebf7ef072088f1a31f1648352fae2d4c18e913d2aa4263a004",
+    "docs/user/security.md": "bc0bf94d150aaba568d78bc51c4f75d00aa0e36ea32835a405a98b45425e2d4c",
+    "docs/user/troubleshooting.md": "1b708c036cb3077e8308295864998daaa0d73b3c0e6bc00d12001809b8c8e5e3",
+    "docs/user/walkthroughs.md": "f28a80fc342d778f70f3b284fdb4fbaae51f3e8868792b30a1e317e27e704f28",
+    "docs/developer/maintainer-guide.md": "f59d355dbbe084ce68c344a5f56e47d4c5f552803f1339800c2ae7c455f6ccb0",
+    "docs/release/marketplace-copy.md": "b6f4d186af63bc862eaf15f7eb5bd24645dd7639e9f220b2f23f04daf0419eed"
+  },
+  "git_status": "M docs/compatibility/native-invocation-map.md\n M docs/research/SOURCES.md\n?? README.md\n?? docs/developer/\n?? docs/release/\n?? docs/user/"
+}

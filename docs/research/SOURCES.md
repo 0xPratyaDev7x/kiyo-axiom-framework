@@ -360,3 +360,25 @@ returned 1.0.0 for an unversioned manifest; that value does not set Kiyo's versi
 No quota/model run or publication occurred. The synthetic Codex catalog is an
 ephemeral test source under P26 authority, not a new release identity.
 
+## Prompt 27 documentation source check
+
+Checked **2026-09-29**. Official pages below were retrieved for user-facing
+installation/selection wording. Requested URLs and returned destinations match;
+no redirect was reported. Status is **DOCUMENTED_ONLY**, never a new native
+execution result. P26 version/command evidence remains the dated observed source.
+
+| ID | Requested URL / actual destination | Guide fact | Limitation |
+| --- | --- | --- | --- |
+| UG27-01 | [Claude plugin creation](https://code.claude.com/docs/en/plugins/create) — same URL | Session --plugin-dir and plugin-prefixed Skill selection | Interactive Kiyo invocation NOT_TESTED; installed version can lag current docs |
+| UG27-02 | [OpenAI plugins](https://learn.chatgpt.com/docs/plugins) — same URL | CLI browser/new session; IDE plugins excluded | No fallback or UI result; local native acceptance is not publication |
+| UG27-03 | [OpenAI skills](https://learn.chatgpt.com/docs/build-skills) — same URL | /skills or $ selection, metadata-first loading, conditional matching | Exact Kiyo plugin-qualified selector UNKNOWN; standalone IDE skills do not establish native plugins |
+| UG27-04 | [Copilot CLI skills](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/add-skills) — same URL | list/info and generic slash selection | Kiyo qualification/built-in collision unresolved; no CLI run |
+| UG27-05 | [VS Code skills](https://code.visualstudio.com/docs/agent-customization/agent-skills) — same URL | Plugin supplies command prefix; plain frontmatter names | Actual Kiyo picker/activation NOT_TESTED |
+| UG27-06 | [VS Code agent plugins](https://code.visualstudio.com/docs/agent-customization/agent-plugins) — same URL | Agent Plugins UI/source install and explicit local-location settings | No settings changed or IDE behavior tested; native policy still applies |
+| UG27-07 | [Copilot CLI plugin reference](https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-plugin-reference) — same URL | Direct local-directory install and source-dependent native lifecycle | Kiyo route NOT_TESTED; no project-only scope flag inferred |
+
+The [user guide](../user/README.md) cites shipped contracts and the
+[live matrix](../compatibility/live-test-matrix.md). Nine walkthroughs are
+illustrative/synthetic expected behavior, NOT_RUN. No external API/quota,
+installation, publication or account operation was performed in Prompt 27.
+

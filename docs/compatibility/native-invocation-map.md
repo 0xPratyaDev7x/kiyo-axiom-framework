@@ -2,7 +2,14 @@
 
 Original baseline: **2026-09-28**; Claude rechecked **2026-09-29** under CL20-01–13; Codex under CX21-01–12; Copilot under CP22-01–16. Source IDs: [SOURCES](../research/SOURCES.md).
 Syntax below is **DOCUMENTED_ONLY**, not execution evidence.
-All six targets are **NOT_TESTED**. Angle-bracket tokens are metavariables,
+Skill invocation on all six targets is **NOT_TESTED**; Codex IDE plugin capability
+is **UNSUPPORTED**. P26 adds bounded native metadata/lifecycle evidence, not Skill
+execution: see the [live matrix](live-test-matrix.md). Historical installation
+notes below retain their original prompt scope; use the current
+[user guide](../user/README.md) and [reproduction guide](live-reproduction-guide.md)
+for the evidence-bounded development routes. P27's
+[source refresh](../research/SOURCES.md#prompt-27-documentation-source-check)
+does not change any observed result. Angle-bracket tokens are metavariables,
 not runnable Kiyo release identifiers. No publication name or namespace is finalized. Prompt 20 uses the development
 working namespace kiyo-compass with the eight canonical skill slugs.
 
