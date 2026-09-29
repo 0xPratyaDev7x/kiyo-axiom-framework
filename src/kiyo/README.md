@@ -108,7 +108,11 @@ Prompt 20 generates a [Claude native development bundle](../../docs/compatibilit
 from this unchanged canonical product content and a small native overlay.
 Eight complete resource snapshots preserve canonical bytes; the developer-only
 packager is not installed. Live CLI/VS Code trials remain separately NOT_TESTED.
-Other platforms, publication identities and final release acceptance remain pending.
+Prompt 21 also generates the [Codex development bundle](../../docs/compatibility/codex-package.md)
+from these same canonical bytes with independent OpenAI metadata and AGENTS guidance.
+Offline checks pass; ingestion validation fails absent owner release fields;
+CLI live behavior remains NOT_TESTED and IDE plugins UNSUPPORTED. Copilot packaging,
+publication identities and final release acceptance remain pending.
 
 Follow [framework layout](../../docs/architecture/framework-layout.md),
 [content loading](../../docs/architecture/content-loading.md) and

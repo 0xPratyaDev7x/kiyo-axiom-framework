@@ -1,0 +1,20 @@
+{
+  "name": "{{OWNER_CONFIRMED_MARKETPLACE_NAME}}",
+  "interface": {
+    "displayName": "{{OWNER_CONFIRMED_MARKETPLACE_LABEL}}"
+  },
+  "plugins": [
+    {
+      "name": "kiyo-compass",
+      "source": {
+        "source": "local",
+        "path": "./plugins/kiyo-compass"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1532,3 +1532,69 @@ Memory Impact: **NONE for developer project memory**. No .kiyo store/config/poli
 or bootstrap created. Stop after Prompt 20. Safe to continue with a user-requested
 Prompt 21 Codex after its own current schema and independent IDE-gap revalidation;
 no automatic continuation or release authority.
+
+## Prompt 21 checks
+
+Checked 2026-09-29. Scope: current official OpenAI research and independent static
+Codex package/interface/AGENTS adapter, developer-only offline validation,
+local protocol, submission gates and build continuity. No live native test,
+installation, global configuration, public submission or owner identity selection.
+
+Baseline: main, HEAD 5102892d7c82f8c9a0301d3146219d4eaf894bba, clean tree/index,
+no tags or applicable scoped AGENTS.md, no .kiyo. The 105 canonical product files,
+68 controls, eight public skills and LICENSE blob
+d2e60c5b160ed4f9ca096215e72efee5769936b1 are preserved. Prompt 20 was committed
+before this work; its artifact bytes remain unchanged.
+
+Twelve official OpenAI pages were retrieved with redirects in
+[CX21-01–12](../research/SOURCES.md#prompt-21-codex-revalidation), checked
+2026-09-29, DOCUMENTED_ONLY. Bundled openai-docs/plugin-creator guidance was read.
+The user's no-global/no-fabricated-publisher scope takes precedence over the
+local scaffold's personal-marketplace/default-author/default-version examples.
+No permission question or installation followed from those defaults.
+
+| ID / Name | Applicability | Command/method | Inspected scope | Execution status | Observed result | Evidence location | Limitations | Baseline relation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| P21-C01 Baseline/current sources | Required start/native inputs | Read-only Git/root/instructions; official web opens; scoped --version/--help and extension JSON reads | Repository, twelve sources, Codex terminal and named extension metadata | PASS | Clean baseline; redirects recorded; codex-cli 0.158.0, extension metadata 26.917.62051; active IDE UNKNOWN | [Sources](../research/SOURCES.md#prompt-21-codex-revalidation), [observations](../evidence/codex/package-checks.md) | Version/help is not install or Kiyo behavior; no auth/credentials inspected | Actual Prompt 21 Git base |
+| P21-C02 Selected native fields | Required independent native format | Official field-map review and selected-field JSON/frontmatter checks | Portable input, derived compatibility/interface, inactive catalog, eight entries | PASS | Justified OpenAI fields, no Claude manifest input, no unnecessary per-skill YAML or runtime declaration | [Field map](../compatibility/codex-package.md), [overlay](../../platforms/codex/README.md) | Not full portal/native schema acceptance; stricter validator separately FAILs C08 | First independent Codex artifact |
+| P21-C03 Parity/resource closure | Required self-contained canonical content | python -B tools/package_codex.py; byte/source hashes; reverse-entry transform; bundled skill parser and quick_validate.py | 108 inputs, 795 output files | PASS | Eight entries, 97 shared resources each, eight adapters, two manifests/LICENSE; 4,956 contained links; eight parser checks and eight quick validations pass | [Inventory/checks](../evidence/codex/package-checks.md) | Text/hash evidence, not host behavior or signature | 105 canonical product files unchanged |
+| P21-C04 Relocation/no-op/rejections | Required reproducibility/preservation | Isolated second output/different cwd; repeat file/mtime snapshots; seven invalid cases | Two 795-file trees, inventory and synthetic invalid outputs | PASS | Equal digest/bytes/inventory; identical repeat no-op; seven rejections and human-byte preservation | Artifact checks above | Not actual native cache, atomic multi-file or exhaustive security testing | Before/after fixture snapshots |
+| P21-C05 Activation/protocol/specifications | Required target/scope limits | Inspect native adapter, render sample canonical block, count/match scenario rows | AGENTS scopes, explicit/implicit distinction, protocol and 18 expected cases | PASS | 108-word sample; entry budgets pass; no override/global edits; IDE unsupported and all cases unrun | [Adapter](../../platforms/codex/resources/activation.md), [protocol](../compatibility/codex-local-test-protocol.md), [cases](../../tests/integration/codex/scenarios.md) | Rendering is not Init/loading/approval evidence; 250-word limit is Kiyo's | Canonical block and Core unchanged |
+| P21-C06 Build continuity | Required close | Read-only final table/link/count validation | 80 trace rows, roadmap, nine issues/four owner decisions | PASS | All IDs retained; 21 trace rows reference P21; next Prompt 22 unstarted; all full verifications NOT_RUN and six live targets NOT_TESTED | This section and build state | No full acceptance inferred; C08 FAIL retained | 79 partial / 1 not implemented unchanged |
+| P21-C07 Scope/preservation | Required final diff/check | Exact-file/Git/hash/reference validation; git diff --check | New Codex work, previous artifact, source/LICENSE/index/HEAD | PASS | 15 modified / 806 new; 105 canonical and 794 Claude files unchanged; 1,745 Markdown files, 12,766 local links, 695 canonical links and 68 controls checked; whitespace clean | This section and artifact inventory | Static worktree evidence, not native live behavior | Baseline index/HEAD/LICENSE preserved |
+| P21-C08 Ingestion readiness | Required bundled validator execution; release gate | python -B installed plugin-creator/scripts/validate_plugin.py dist/codex/kiyo-compass | Compatibility manifest and eight skill entries | FAIL | Exit 1: absent version, author object, interface.developerName | [Exact diagnostics and validator hashes](../evidence/codex/package-checks.md#ingestion-failure-retained) | Stricter ingestion profile, not portable root schema or native runtime; readiness BLOCKED until owner evidence | Previously unresolved release/publisher inputs, not a canonical content regression |
+
+Artifact size/digest, tooling hashes, actual source/output provenance, entry
+budgets, command grammar and validator limits are recorded in
+[Codex evidence](../evidence/codex/package-checks.md).
+No package validator FAIL was reclassified as PASS. C02 is only the documented
+selected-field development check; C08 remains the actual stricter failure.
+The user requested unresolved owner inputs and no public submission, so requested
+development artifact/documentation delivery is DONE while ingestion/publication
+readiness remains BLOCKED. No claim of a release-ready/native-accepted package.
+
+Added ten authored files (native manifest/catalog/adapter/README, developer
+builder, three compatibility/protocol/submission documents, scenario specification
+and check record), one generated inventory and 795 distribution files.
+Changed fifteen existing Markdown documents: six build records, SOURCES,
+three compatibility maps, four architecture documents and source README.
+Canonical product content, previous Claude overlay/tooling/distribution and
+LICENSE are unchanged; no ninth skill or IDE fallback payload.
+
+Partial coverage: REQ-002–007/009/010/017/026/027/059–061/064/067/076–079;
+REQ-080 continuity. Totals remain 79 PARTIALLY_IMPLEMENTED / 1 NOT_IMPLEMENTED.
+All 80 full verifications remain NOT_RUN. Eighteen native integration rows
+remain NOT_RUN with IDE applicability UNSUPPORTED; all six live targets remain
+NOT_TESTED. No behavioral simulation was used as a live substitute.
+
+Developer checks used inspected Python standard-library packaging, existing
+PyYAML in the bundled validator and read-only Git with per-command settings.
+No dependency installation. A requirements-read command initially hit Windows
+stdout encoding and was rerun with UTF-8; no file changed. A JavaScript test-call
+quoting error was corrected before the script executed. These are tool invocation
+corrections, separate from the retained C08 ingestion failure.
+
+Memory Impact: **NONE for developer project memory**. No .kiyo state, project
+AGENTS/bootstrap, override/global config, auth settings, commit/tag/push/PR,
+deployment or publication change. Stop after Prompt 21. Safe to continue only
+with user-requested Prompt 22 Copilot and fresh independent CLI/VS Code research.

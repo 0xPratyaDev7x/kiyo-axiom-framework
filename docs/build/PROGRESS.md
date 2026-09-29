@@ -1,9 +1,47 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **20 Claude**.
-Task status: **DONE** for Prompt 20; scoped offline package checks passed.
-Product status: eight canonical skills and Claude development distribution authored;
-other native packages, live compatibility and complete acceptance remain pending. No runtime engine.
+Snapshot: 2026-09-29. Current prompt: **21 Codex**.
+Task status: **DONE** for the requested development artifact/documentation scope.
+Offline structural checks pass; stricter ingestion validation FAILs for absent
+owner release fields. Registration/submission readiness is BLOCKED.
+Product status: eight canonical skills and Claude/Codex development distributions
+authored; Copilot, live compatibility and full acceptance pending. No runtime engine.
+
+## Prompt 21 delivered scope
+
+- Revalidated [twelve official OpenAI sources](../research/SOURCES.md#prompt-21-codex-revalidation)
+  with actual redirects, dates and limits. IDE plugins remain UNSUPPORTED; no
+  standalone fallback was adopted. CLI and IDE live results stay NOT_TESTED.
+- Added [independent Codex metadata/adapter](../../platforms/codex/README.md):
+  a portable root manifest and generated compatibility manifest, documented
+  package interface, inactive catalog template and minimal AGENTS guidance.
+  Optional agents/openai.yaml is unnecessary and omitted. No Claude manifest reuse.
+- Generated [Codex plugin](../../dist/codex/kiyo-compass/plugin.json):
+  795 files, eight entries, 97 shared references per entry plus native adapters.
+  Canonical 105 files/68 controls and all 794 prior Claude artifact files remain
+  unchanged. Only developer packaging uses Python; no consumer runtime.
+- Offline checks passed for 4,956 contained links, canonical parity, independent
+  relocation/reproducibility, no-op snapshots and seven rejection cases. The
+  sample managed block is 108 words; this is static evidence, not Init behavior.
+- The required bundled ingestion validator actually returned **FAIL** for missing
+  version, author and interface.developerName. [Failure evidence](../evidence/codex/package-checks.md)
+  is retained; it is not waived, labeled PASS or fixed with invented identity.
+  [Submission requirements](../compatibility/codex-submission.md) separate that
+  readiness gate from this prompt's development-package work.
+- Added [local test protocol](../compatibility/codex-local-test-protocol.md) and
+  [18 integration specifications](../../tests/integration/codex/scenarios.md), NOT_RUN.
+  Actual CLI version/help identifies 0.158.0 and plugin add/remove grammar;
+  extension metadata reports 26.917.62051, active engine UNKNOWN. No install,
+  global settings, safety bypass, marketplace registration or submission.
+
+Partial coverage: REQ-002–007/009/010/017/026/027/059–061/064/067/076–079;
+REQ-080 continuity. Totals unchanged: **79 PARTIALLY_IMPLEMENTED /
+1 NOT_IMPLEMENTED**. All 80 full requirement verifications remain NOT_RUN.
+No native compatibility, ingestion readiness or publication acceptance is claimed.
+
+Checks: [P21-C01–C08](BASELINE.md#prompt-21-checks), including the explicit
+ingestion FAIL. Owner identity/version/license/destination gates and DEC-004
+remain open. Memory Impact: **NONE for developer project memory**.
 
 ## Prompt 20 delivered scope
 
@@ -700,7 +738,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 18 | Memory Skill | DONE | P18-C01–C07 PASS; static/resource/inventory checks and bounded mode/no-op/concurrency trials; native NOT_TESTED |
 | 19 | Organization Policies | DONE | P19-C01–C07 PASS; static/resource checks and bounded read-only policy trials; native NOT_TESTED |
 | 20 | Claude | DONE | P20-C01–C07 PASS; offline package/parity/relocation checks; native validator NOT_RUN, both Claude targets NOT_TESTED |
-| 21 | Codex | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 21 | Codex | DONE | P21-C01–C07 scoped offline checks PASS; C08 ingestion FAIL for missing owner release fields; native NOT_TESTED, IDE plugins UNSUPPORTED |
 | 22 | Copilot | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 23 | Packaging/Parity | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 24 | Static Tests | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -719,9 +757,10 @@ Outstanding owner decisions: DEC-001 final name, DEC-002 release license,
 DEC-003 publisher/destination and DEC-004 treatment of Codex IDE's native-plugin
 gap before compatibility/release claims. See OPEN-ISSUES for technical gaps.
 
-Safe to continue: **YES for a user-requested Prompt 21 Codex**.
-Canonical content and the Claude packaging pattern are available; revalidate
-current OpenAI documentation and the independent IDE capability gap before
-schema-dependent decisions. No publication or native compatibility is approved.
-Next prompt: **21 Codex**, only when requested by the user.
+Safe to continue: **YES for a user-requested Prompt 22 Copilot**.
+Canonical content and two independent development packaging paths are available.
+Revalidate current Copilot CLI/VS Code documentation separately before dependent
+schema decisions. Codex ingestion/owner/IDE gaps remain open and prohibit dependent
+registration/publication claims; they do not block independent Copilot work.
+Next prompt: **22 Copilot**, only when requested by the user.
 

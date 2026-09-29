@@ -1,7 +1,8 @@
 # Kiyo Compass — Activation and resource loading
 
 Original baseline: **2026-09-28**; Claude loading rechecked **2026-09-29**
-in [Prompt 20](claude-package.md) (CL20-02/03/04/06/10). Official source IDs:
+in [Prompt 20](claude-package.md) (CL20-02/03/04/06/10); Codex rechecked
+**2026-09-29** in [Prompt 21](codex-package.md) (CX21-04/05/06). Official source IDs:
 [SOURCES](../research/SOURCES.md). Capability evidence is **DOCUMENTED_ONLY**;
 all live activation, relocation and maintenance checks are **NOT_TESTED**.
 Kiyo remains advisory and static.
@@ -115,4 +116,18 @@ the observed terminal 2.1.220 must not inherit a newer feature claim.
 No actual project instruction file or host setting was changed. Offline
 resource copies resolve from their own paths; native cache loading remains
 NOT_TESTED separately for CLI and VS Code. See [actual checks](../evidence/claude/package-checks.md).
+
+## Prompt 21 Codex implementation boundary
+
+The [Codex adapter](../../platforms/codex/resources/activation.md) now ships with
+each derived entry. Metadata discovery, explicit selection, implicit relevance
+and per-run AGENTS guidance are separate. No plugin-wide Core loader is asserted.
+An authorized managed block uses canonical init-locator-1 plus native picker
+guidance; its static sample is 108 words, not observed Init/loading behavior.
+
+Preserve AGENTS.md, nested instructions, human content and actual state paths.
+Do not modify AGENTS.override.md/global settings or move a module block upward
+to force activation. Shadowing, truncation or unavailable skills are limitations
+to report. IDE plugins remain UNSUPPORTED; standalone support does not silently
+satisfy native installation. Both live targets remain NOT_TESTED.
 

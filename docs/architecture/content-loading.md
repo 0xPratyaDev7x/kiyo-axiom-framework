@@ -6,6 +6,7 @@ in [REQUIREMENTS](../build/REQUIREMENTS.md), and Prompt 02
 [activation modes](../compatibility/activation-modes.md) / [invocation map](../compatibility/native-invocation-map.md).
 Original native source checks are **2026-09-28, DOCUMENTED_ONLY**. Claude-only
 Prompt 20 revalidation is **2026-09-29**, with [current limits](../compatibility/claude-package.md);
+Codex Prompt 21 revalidation is **2026-09-29** in [its field map](../compatibility/codex-package.md);
 all six live loading results remain NOT_TESTED.
 
 ## Ordered instruction use
@@ -141,3 +142,18 @@ version/context limits, not universal automatic Core loading. Preserve existing
 instruction choice and human sections. Live selection/loading, authorized Init
 behavior and update/uninstall preservation remain Prompt 26 tests, separately
 for terminal and extension. Offline resource containment is not that evidence.
+
+## Prompt 21 Codex adapter
+
+The [Codex resource](../../platforms/codex/resources/activation.md) supplies
+native picker and AGENTS discovery details while reusing the canonical Init block.
+Actual instruction-file-relative Memory/config paths, scoped approval and a
+fresh reread precede writes. A sample block measured 108 words; no real project
+AGENTS.md or bootstrap was created by packaging.
+
+Monorepo/module guidance stays at the authorized scope, preserving ancestor and
+nested human content. Existing AGENTS.override.md/global configuration is never
+changed to force loading. Report shadowing/truncation/launch-directory limits.
+Metadata/relevance is not always-on Core; a shipped KIYO.md alone is no loader.
+Native loading/Init behavior remains NOT_TESTED, and IDE plugin capability stays
+UNSUPPORTED pending an owner decision on the separate fallback question.

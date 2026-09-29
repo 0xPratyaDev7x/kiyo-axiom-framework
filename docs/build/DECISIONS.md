@@ -205,6 +205,23 @@ omitted; unresolved catalog tokens are excluded from the payload.
 No native session/install/global settings/publication is authorized here;
 live tests remain deferred to Prompt 26. Canonical product content is unchanged.
 
+Prompt 21 was authorized on 2026-09-29 for current OpenAI research, independent
+Codex development distribution/interface/AGENTS adapter, local test protocol,
+submission requirements and build-state updates, then stop before Prompt 22.
+The portable input and compatibility projection follow current official docs;
+no Claude manifest conversion is used. Optional per-skill OpenAI YAML is omitted.
+Native IDE plugin support remains excluded; no standalone fallback is authorized.
+
+The bundled plugin-creator validator was run unchanged and FAILs missing version,
+author and interface.developerName. Public ingestion/registration is blocked
+until real owner values and required checks exist. This does not authorize
+fabricating its scaffold's default publisher/version or changing the validator.
+The build artifact and documentation are complete within the requested development
+scope; no release-ready or native acceptance is declared. Pending DEC-001/002/003
+also cover the unresolved release identity/license/destination; version remains
+unset, not chosen here. Local metadata/help inspection grants no installation,
+submission, account-role change or global configuration authority.
+
 ## Pending owner decisions
 
 | ID | Decision | Current evidence / status | Who decides | Latest needed / effect | Resolution evidence |
@@ -212,10 +229,10 @@ live tests remain deferred to Prompt 26. Canonical product content is unchanged.
 | DEC-001 | Final publication name and native marketplace identifiers | OPEN. Kiyo Compass is only the working name; marketplace availability UNKNOWN | Repository/product owner | Before final release identities or marketplace registration/publication; does not block scope or research | None |
 | DEC-002 | Confirm license intended for publication | OPEN. Existing root LICENSE is MIT and must remain intact; final owner confirmation is not supplied | Repository/product owner | Before release/legal metadata is finalized or the existing license is changed; does not block Prompt 01/02 | None |
 | DEC-003 | Publisher identity, namespace and authorized publication destination | OPEN. No publisher/account evidence or approval supplied; do not infer from repository path or copyright | Repository/product owner | Before final publisher metadata, registration or publication; does not block Prompt 01/02 | None |
-| DEC-004 | Treatment of Codex IDE native-plugin support gap | OPEN. Official [plugin documentation](https://learn.chatgpt.com/docs/plugins) excludes IDE plugins; [skills documentation](https://learn.chatgpt.com/docs/build-skills) supports standalone IDE skills. Checked 2026-09-28; DOCUMENTED_ONLY, live NOT_TESTED | Repository/product owner | Before promising six-target native installation or accepting a standalone fallback; does not block Prompt 03 design of documented surfaces | No fallback or scope reduction approved |
+| DEC-004 | Treatment of Codex IDE native-plugin support gap | OPEN. Official [plugin documentation](https://learn.chatgpt.com/docs/plugins) excludes IDE plugins; [skills documentation](https://learn.chatgpt.com/docs/build-skills) supports standalone IDE skills. Rechecked 2026-09-29 (CX21-04/06); DOCUMENTED_ONLY, live NOT_TESTED | Repository/product owner | Before promising six-target native installation or accepting a standalone fallback; does not block Prompt 03 design of documented surfaces | No fallback or scope reduction approved |
 
 Ask only when an unresolved choice blocks the current authorized prompt. Existing
-instructions authorize Prompt 20 Claude packaging/offline validation and build-state updates. Do not ask for
+instructions authorize Prompt 21 Codex packaging/offline checks and build-state updates. Do not ask for
 premature publication decisions to complete that scope. Publication metadata still
 requiring confirmation is listed in [SOURCES](../research/SOURCES.md#publication-information-still-requiring-the-owner).
 
@@ -227,7 +244,7 @@ and overlay boundaries; this refines future paths without rewriting requirements
 No native manifest syntax, version policy, signing identity or marketplace
 availability was decided in Prompt 01. Prompt 02 now records documented formats
 in [platform capabilities](../compatibility/platform-capabilities.md), but did
-not choose/build overlays. Prompt 20 now revalidates and builds Claude only;
+not choose/build overlays. Prompts 20/21 revalidate and build Claude/Codex independently;
 Copilot plugin-rule semantics, exact Codex/Copilot CLI
 plugin-skill selector details and custom lifecycle tests remain open.
 

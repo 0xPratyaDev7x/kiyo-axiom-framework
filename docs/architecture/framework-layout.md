@@ -212,3 +212,16 @@ specifications define current limits. Other platform outputs remain planned.
 This introduces no new canonical Core, mutable project state, public skill,
 native extension executable or consumer build dependency. The canonical 105
 product files and their 68 control IDs are unchanged.
+
+## Prompt 21 concrete Codex package
+
+platforms/codex contains one portable manifest input, an inactive catalog template
+and a native instruction adapter. tools/package_codex.py generates
+dist/codex/kiyo-compass with portable/compatibility manifests, LICENSE and eight
+self-contained skill trees. Developer evidence stays in docs/evidence/codex.
+No independent Core copy is authored; all 105 product files/68 controls remain
+unchanged. See [Codex field map](../compatibility/codex-package.md).
+
+There is no IDE-specific plugin payload, ninth public skill, app registration,
+agents/openai.yaml dependency, runtime, global installation or consumer generator.
+The native IDE gap and owner-dependent ingestion/publication gates remain explicit.

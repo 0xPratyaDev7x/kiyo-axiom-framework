@@ -5,6 +5,7 @@ Prompt 07 rechecked W01/W02 and added W05–W15 on **2026-09-29**.
 Prompt 09 rechecked S01–S07 and added E01–E06 on **2026-09-29**.
 
 Prompt 20 adds CL20-01–CL20-13 on **2026-09-29** for Claude packaging.
+Prompt 21 adds CX21-01–CX21-12 on **2026-09-29** for Codex packaging.
 
 ## Evidence rules
 
@@ -225,4 +226,46 @@ version, account and provider/model remain UNKNOWN. See
 [actual check evidence](../evidence/claude/package-checks.md).
 Both native targets remain NOT_TESTED; no install/activation/cache/lifecycle claim
 follows from the observations or offline generated-package checks.
+
+## Prompt 21 Codex revalidation
+
+All rows below are **DOCUMENTED_ONLY**, checked **2026-09-29**.
+Requested legacy Codex URLs were opened or followed from official links;
+reported redirects are recorded explicitly. "Same" means no redirect reported,
+not an independent HTTP-chain capture. No guessed status code or hop is used.
+
+| ID | Requested official source | Observed destination | Checked | Limitation |
+| --- | --- | --- | --- | --- |
+| CX21-01 | [OpenAI package/schema/interface/catalog](https://developers.openai.com/plugins/build/plugins) | Same | 2026-09-29 | Portable and compatibility precedence; selected fields documented, ingestion/live acceptance separate. |
+| CX21-02 | [Plugin architecture](https://developers.openai.com/plugins/concepts/plugins) | Same | 2026-09-29 | Skills-only supported; optional MCP/runtime examples do not require those components. |
+| CX21-03 | [Plugin skill authoring](https://developers.openai.com/plugins/build/skills) | Same | 2026-09-29 | Instruction-only workflow documented; ChatGPT and Codex invocation differ. |
+| CX21-04 | [Codex skills/frontmatter/metadata](https://developers.openai.com/codex/skills/) | [Final page](https://learn.chatgpt.com/docs/build-skills) | 2026-09-29 | Name/description, progressive loading, /skills/$ and optional agents/openai.yaml; exact plugin-qualified Kiyo selector unknown. |
+| CX21-05 | [Project instructions](https://developers.openai.com/codex/guides/agents-md/) | [Final page](https://learn.chatgpt.com/docs/agent-configuration/agents-md) | 2026-09-29 | Per-run AGENTS chain/scope/precedence; no automatic Kiyo Core guarantee. |
+| CX21-06 | [Supported plugin surfaces](https://learn.chatgpt.com/docs/plugins) | Same | 2026-09-29 | CLI plugin browser; IDE plugins explicitly excluded; no account access or compatibility demonstrated. |
+| CX21-07 | [Codex IDE setup](https://developers.openai.com/codex/ide) | [Final page](https://learn.chatgpt.com/docs/codex/ide) | 2026-09-29 | Editor/setup guidance does not grant plugin support or identify active local extension. |
+| CX21-08 | [Codex CLI setup](https://developers.openai.com/codex/cli) | [Final page](https://learn.chatgpt.com/docs/codex/cli) | 2026-09-29 | OS setup/sign-in routes, not tested Kiyo minimum versions or entitlement. |
+| CX21-09 | [Submission flow](https://developers.openai.com/plugins/deploy/submission) | Same | 2026-09-29 | Skills-only track, verified identity, role/review/publication; no portal used. |
+| CX21-10 | [Submission error/field requirements](https://developers.openai.com/plugins/deploy/submission-errors) | Same | 2026-09-29 | Stricter version/publisher/scan/listing requirements; remote-MCP requirements kept separate. |
+| CX21-11 | [Config precedence](https://developers.openai.com/codex/config-file/config-basic) | [Final page](https://learn.chatgpt.com/docs/config-file/config-basic) | 2026-09-29 | Trusted project config and native constraints; no config written or trust changed. |
+| CX21-12 | [State/environment locations](https://developers.openai.com/codex/config-file/environment-variables) | [Final page](https://learn.chatgpt.com/docs/config-file/environment-variables) | 2026-09-29 | CODEX_HOME documents state root, not complete OS/credential/marketplace isolation. |
+
+Direct .md variants for submission/error pages returned unsupported-content-type
+errors in the web tool; their HTML pages were successfully retrieved above.
+This does not make the established HTML evidence NOT_REVALIDATED. Original O01–O07
+remain the dated Prompt 02 baseline; use CX21 rows for current Codex decisions.
+Claude/Copilot/standards sources were not refreshed in this Codex-only step.
+
+[Current field map](../compatibility/codex-package.md) distinguishes portable
+packaging from stricter ingestion/publication. The local plugin-creator validator
+actually fails absent version, author and interface.developerName; official
+submission rules corroborate those gates. No missing identity was invented.
+Local skill-creator/plugin scaffolding defaults are not a native schema authority.
+
+Actual local observations: codex-cli 0.158.0 from --version; bounded plugin
+--help output exposes add/remove and marketplace add/upgrade. Only version/help
+was executed, not those actions. Named IDE extension metadata declares
+26.917.62051, vscode ^1.96.2; active extension/editor/engine UNKNOWN.
+See [offline evidence](../evidence/codex/package-checks.md).
+All six Kiyo live targets remain NOT_TESTED; IDE plugin support remains
+documented UNSUPPORTED, without a silently approved standalone fallback.
 

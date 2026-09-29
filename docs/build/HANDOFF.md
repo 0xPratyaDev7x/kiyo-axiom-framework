@@ -15,24 +15,28 @@ One canonical specification with necessary self-contained native overlays.
 
 ## Current repository observation
 
-Observed for Prompt 20 on 2026-09-29:
+Observed for Prompt 21 on 2026-09-29:
 
 - Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework
-- Branch: main; HEAD: f5b6f57bbda7ea0f33d7726312357b4e5d690a65.
-- Initial tree/index clean; 148 Markdown files under docs/src/tests, including
-  105 canonical product files. Prompt 19 was committed before this work.
-  Earlier checkout snapshots are historical, not current facts.
-- No applicable AGENTS.md in the scoped repository/ancestor inspection; no .kiyo.
-- Git used exact-root per-command safe.directory and empty core.excludesFile;
-  no global configuration changed. LICENSE blob remains
-  d2e60c5b160ed4f9ca096215e72efee5769936b1. No version or tag was selected.
-- Prompt 20 adds nine authored files, one generated inventory and 794 distribution
-  files; modifies fifteen existing Markdown files. All 105 canonical product
-  files remain unchanged; source README is developer documentation.
-- Terminal --version returned 2.1.220 (Claude Code). Two scoped extension
-  manifests declare 2.1.283 / 2.1.284; active extension and running VS Code version
-  UNKNOWN. No native plugin validator/install/session was run.
-- No commits, tags, pushes, installs, publication or global setting changes.
+- Branch: main; HEAD: 5102892d7c82f8c9a0301d3146219d4eaf894bba.
+- Initial tree/index clean; Prompt 20 was committed before this task. Canonical
+  product inventory remains 105 files/68 controls/eight public entries.
+  Previous prompt snapshots are historical, not current checkout facts.
+- No applicable scoped repository/ancestor AGENTS.md and no .kiyo state.
+- Exact-root per-command Git safe.directory and empty core.excludesFile were used;
+  no global config changed. LICENSE blob:
+  d2e60c5b160ed4f9ca096215e72efee5769936b1. No version/tag was selected.
+- Prompt 21 adds ten authored files, one generated inventory and 795 Codex
+  distribution files; modifies fifteen existing Markdown files. All canonical
+  product bytes, Claude tooling/overlay and 794 Claude distribution files preserved.
+- Codex terminal --version returned codex-cli 0.158.0; bounded plugin help parsed.
+  Named IDE extension metadata reports 26.917.62051 with vscode ^1.96.2.
+  Active extension/engine/editor/account UNKNOWN. No native session or installation.
+- Bundled plugin-creator validation returned FAIL for missing version, author and
+  interface.developerName. Offline structural/parity checks pass; the actual
+  ingestion failure and owner-dependent release gate remain explicit.
+- No commits, tags, pushes, package installs, public submissions, global settings,
+  AGENTS.override.md edits or safety bypass. Developer test fixtures are separate.
 
 Recheck root, branch, index, unstaged/untracked changes and user edits on resume.
 Preserve LICENSE and the 80 original requirements. See BASELINE for check results.
@@ -166,7 +170,24 @@ scaffolds or the OWASP proposed universal format.
     [installation protocol](../compatibility/claude-installation-test-protocol.md)
     and [integration specifications](../../tests/integration/claude/scenarios.md).
 
+25. [Codex field/invocation map](../compatibility/codex-package.md),
+    [overlay](../../platforms/codex/README.md),
+    [offline/failed-ingestion evidence](../evidence/codex/package-checks.md),
+    [disposable protocol](../compatibility/codex-local-test-protocol.md) and
+    [submission requirements](../compatibility/codex-submission.md).
+
 ## Completed work and evidence
+
+Prompt 21 completes requested development packaging/documentation: 795 Codex files
+and eight entries from unchanged canonical content, contained resources, independent
+OpenAI metadata/AGENTS adapter and eighteen NOT_RUN integration specifications.
+Offline checks pass; the full local ingestion validator FAILs for three absent
+owner fields. Registration/submission readiness is BLOCKED, not part of a fabricated
+successful native trial. See [P21 checks](BASELINE.md#prompt-21-checks).
+Current totals remain 79 PARTIALLY_IMPLEMENTED / 1 NOT_IMPLEMENTED and all 80
+full verifications NOT_RUN. All six native targets are NOT_TESTED; Codex IDE
+plugins remain UNSUPPORTED. Earlier prompt counts/scope summaries are historical.
+
 
 Prompt 20 adds the first generated native artifact, for Claude only. It contains
 eight entries and shared resources; offline source parity, 4,956 local links,
@@ -426,7 +447,7 @@ changed. Temporary synthetic fixture state is recorded separately in forward evi
 - Do not generate manifests, public skills, release versions or all later trees
   to make scaffolding look complete. Keep schema gaps and owner decisions open.
 
-## Shared boundaries for Prompt 21
+## Shared boundaries for Prompt 22
 
 Use Memory as context, validate material claims, preserve approved intent and
 surface conflicting sources through the real native hierarchy. Do not treat
@@ -820,19 +841,48 @@ template is not registration-ready. No existing global profile may be changed.
 Publication identity, version, publisher/destination and license confirmation
 remain pending; custom source metadata does not establish curated listing.
 
+## Codex distribution continuity
+
+The prepared root is dist/codex/kiyo-compass. tools/package_codex.py reads canonical
+content and platforms/codex/plugin.json, derives the compatibility manifest and
+copies a distinct native adapter. It reuses only audited developer filesystem/
+hash helpers from the existing packager, not Claude schema or product artifacts.
+No consumer runtime/MCP/app registration exists. Optional agents/openai.yaml
+was omitted because no invocation override/tool dependency/UI requirement needs it.
+
+Use actual /skills/$ picker discovery; exact plugin-qualified Kiyo spelling remains
+UNKNOWN. Metadata/relevance, selected Core reads and per-run AGENTS guidance
+are separate. Minimal managed text reuses init-locator-1 and stays within actual
+authorized module scope. Preserve AGENTS.md/nested/human content; never change
+AGENTS.override.md/global config or broaden a module block to force Kiyo.
+Static sample 108 words is not verified Init/loading behavior.
+
+Current docs prefer portable manifests and retain compatibility support, but
+public ingestion requires real version/author/developerName. The actual bundled
+validator returns FAIL for exactly those missing values. Do not fabricate a
+publisher or 0.1.0 release to make it pass. Owner inputs, supported catalog scope,
+native behavior and portal review remain separate prerequisites. The inactive
+catalog template has unresolved name/label and must not be registered.
+
+Local CLI 0.158.0 help exposes plugin add/remove; marketplace upgrade refreshes
+Git snapshots, not proven installed-payload replacement. No add/remove/upgrade/
+list action or native session ran. Prompt 26 needs verified disposable state and
+actual CLI results. IDE native plugins remain excluded by official docs; do not
+silently substitute standalone/global skill installation. DEC-004 stays open.
+
 ## Exact next action
 
-Prompt 20 is complete within static Claude distribution/offline validation scope;
-stop here. **Next: Prompt 21 Codex**, only when supplied by the user.
-Recheck repository and read the files above. Revalidate current official OpenAI
-documentation, redirects, native schema and independent CLI/IDE support. Preserve
-DEC-004's unresolved IDE gap until current evidence/authorized decisions resolve it.
-Do not copy Claude fields or infer Codex behavior from the Claude artifact.
-No authority for publication, real project Init, native live testing or later
-prompts follows from this handoff.
+Prompt 21 development artifact/documentation scope is complete; ingestion/release
+readiness remains BLOCKED with the validator FAIL retained. Stop here.
+**Next: Prompt 22 Copilot**, only when supplied by the user.
+Recheck repository, read the files above and independently revalidate current
+Copilot CLI and VS Code schema, skill invocation, instruction loading, rules and
+marketplace lifecycle. Do not copy Claude/Codex manifest semantics or assume
+matching client behavior. Preserve unconfirmed owner inputs and actual evidence.
 
-Safe to continue: **YES for a user-requested Prompt 21 Codex**.
-Canonical content and an offline packaging pattern are ready; current Codex
-schema/capability research remains a prerequisite for its dependent decisions.
-Owner publication blockers and six independent native NOT_TESTED states remain.
+Safe to continue: **YES for a user-requested Prompt 22 Copilot**.
+The canonical specification and development packaging approach are available.
+Codex ingestion/IDE/publication gaps block only their dependent claims/actions;
+current Copilot research remains a prerequisite. No later work or installation
+is authorized by this handoff alone.
 

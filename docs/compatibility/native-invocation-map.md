@@ -1,6 +1,6 @@
 # Kiyo Compass — Native invocation map
 
-Original baseline: **2026-09-28**; Claude rechecked **2026-09-29** under CL20-01–13. Source IDs: [SOURCES](../research/SOURCES.md).
+Original baseline: **2026-09-28**; Claude rechecked **2026-09-29** under CL20-01–13; Codex under CX21-01–12. Source IDs: [SOURCES](../research/SOURCES.md).
 Syntax below is **DOCUMENTED_ONLY**, not execution evidence.
 All six targets are **NOT_TESTED**. Angle-bracket tokens are metavariables,
 not runnable Kiyo release identifiers. No publication name or namespace is finalized. Prompt 20 uses the development
@@ -12,8 +12,8 @@ working namespace kiyo-compass with the eight canonical skill slugs.
 | --- | --- | --- | --- | --- |
 | Claude Code CLI | `/plugin`; shell `claude plugin list` | Plugin `/<plugin>:<skill>`; standalone `/<skill>` | Description match unless disabled | CL20-01/02/05/09, 2026-09-29; working package /kiyo-compass:<skill>, actual selection untested; no action approval implied. |
 | Claude Code VS Code | Claude panel `/plugins` | Claude panel `/<plugin>:<skill>` | Claude description match | CL20-02/04/09, 2026-09-29; /kiyo-compass:<skill> documented convention, independent Claude panel entry untested. |
-| Codex CLI | `/plugins` for plugins; `/skills` for skills | `$<skill>` or selector entry | Description match | O04/O05, 2026-09-28; exact plugin-qualified name UNKNOWN; select actual discovered entry. |
-| Codex IDE Extension | `/skills` for standalone skills | Standalone `$<skill>`; plugin invocation **UNSUPPORTED** | Standalone description match only | O04/O05, 2026-09-28; cannot advertise native Kiyo plugin install/invocation here. |
+| Codex CLI | /plugins; /skills or $ mention picker | Select actual Kiyo source entry | Description match; not guaranteed | CX21-04/06, 2026-09-29; exact plugin-qualified spelling UNKNOWN. Local 0.158.0 help separately exposes plugin add/remove; no invocation tested. |
+| Codex IDE Extension | /skills or $ for standalone skills only | Plugin invocation **UNSUPPORTED** | Standalone description match only | CX21-04/06, 2026-09-29; no native Kiyo plugin route or approved standalone fallback. |
 | GitHub Copilot CLI | `/skills list`, `/skills info`; shell `copilot plugin list` | `/<skill-name>` in prompt | Prompt/description match | G01/G03, 2026-09-28; exact plugin namespace/collision spelling UNKNOWN; do not copy VS Code spelling. |
 | GitHub Copilot VS Code | `/skills`; Extensions `@agentPlugins` | Plugin `/<plugin>:<skill>`; standalone `/<skill>` | Relevance match unless disabled | V01/V02, 2026-09-28; plugin prefix is host-added, not part of frontmatter name. |
 
@@ -73,4 +73,17 @@ not VERIFIED invocations. Source/date/limitations and CLI/VS Code observations:
 Both live targets remain NOT_TESTED. The current
 [disposable protocol](claude-installation-test-protocol.md) supersedes historical
 Claude lifecycle examples for future testing; nothing was installed or published.
+
+## Prompt 21 Codex mapping
+
+The [shipped adapter](../../platforms/codex/resources/activation.md) maps all eight
+logical IDs to their actual canonical names and intent. Choose the discovered
+Kiyo entry via native /skills/$ UI; do not guess a plugin-qualified alias from
+the manifest ID or copy the Claude selector. Mode words remain logical UX.
+Version/help observation is not a successful Kiyo invocation.
+
+The [current guide](codex-package.md), [protocol](codex-local-test-protocol.md) and
+[submission gates](codex-submission.md) separate selected fields, actual offline
+checks, stricter ingestion failure and untested host behavior. Both native target
+results remain NOT_TESTED; IDE plugin capability remains UNSUPPORTED.
 

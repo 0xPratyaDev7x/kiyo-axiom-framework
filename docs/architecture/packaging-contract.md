@@ -5,7 +5,8 @@ Decision date: **2026-09-29**. Selected design:
 [REQ-002–007/026/027/053/054/059/064/067/076–079](../build/REQUIREMENTS.md).
 This document originally selected the architecture. Prompt 20 implements the
 [Claude development bundle](../compatibility/claude-package.md) and a bounded
-developer packager; other native outputs and all live installations remain pending.
+developer packager. Prompt 21 adds the [Codex development bundle](../compatibility/codex-package.md);
+Copilot outputs and all live installations remain pending.
 
 ## Single authored source, self-contained derived resources
 
@@ -154,7 +155,7 @@ No default publisher, release version or signing identity is manufactured.
 
 | Layer | Future acceptance evidence | Current state |
 | --- | --- | --- |
-| Static package validation | Native schema; exactly eight entries; complete relative references; standalone copy; normalized body/control parity; neutral templates; two builds with identical inputs and equal artifact digests | Claude offline checks PASS in [P20 evidence](../evidence/claude/package-checks.md); native validator NOT_RUN; other platforms pending |
+| Static package validation | Native schema; exactly eight entries; complete relative references; standalone copy; normalized body/control parity; neutral templates; two builds with identical inputs and equal artifact digests | Claude offline checks PASS in [P20 evidence](../evidence/claude/package-checks.md); Codex selected-field/closure checks PASS in [P21 evidence](../evidence/codex/package-checks.md), ingestion FAIL for owner fields; native loading pending |
 | Behavioral evaluation | Agent follows bootstrap then selected procedure; uses relevant template; preserves permissions, project policy, read-only effects and existing memory location | NOT_RUN |
 | Six independent live tests | Observed host/OS/account-policy scope; install, discover, invoke, implicit selection, relocated/cache resource reads, update, disable and uninstall | NOT_TESTED for every target; unsupported IDE route stays explicit |
 
@@ -188,3 +189,22 @@ the generator's own digest/environment and tests are in
 Identical output is a no-op; different pre-existing output is rejected without
 overwrite/deletion. This bounded builder is not a generalized cross-platform
 release engine or a consumer installation dependency.
+
+## Prompt 21 implemented Codex transform
+
+[Codex builder](../../tools/package_codex.py) reads the same 105 canonical product
+files, a distinct portable OpenAI manifest/adapter and root LICENSE. It derives
+the compatibility manifest from the portable input; it does not consume Claude
+metadata. Existing developer filesystem/hash helpers are reused unchanged.
+dist/codex/kiyo-compass is the plugin root; its outer name matches the working ID.
+
+The generated entry/remapping/shared-snapshot contract is unchanged. Only the
+conditional native adapter differs by target. Both manifests carry truthful
+documented fields, no runtime components; optional agents/openai.yaml is omitted.
+Source/output/tooling hashes remain outside the payload. No IDE fallback or
+consumer build dependency is introduced.
+
+Portable selected-field validation and stricter ingestion are distinct:
+the latter FAILs for missing owner release metadata. See [submission gates](../compatibility/codex-submission.md).
+This artifact is DEVELOPMENT_UNRELEASED, not proof of native acceptance,
+public listing or cross-target parity. The earlier Claude output remains intact.

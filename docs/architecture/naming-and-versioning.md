@@ -146,3 +146,16 @@ The inactive marketplace template retains unresolved owner/name tokens.
 A later owner-selected identity/version must be reviewed and reflected in
 manifest, catalog, native adapter, docs and rebuilt outputs together.
 Build reproducibility hashes identify actual bytes, not a released version.
+
+## Prompt 21 Codex identity and ingestion boundary
+
+Codex retains the same working kiyo-compass identity and eight canonical slugs.
+Its portable and derived compatibility manifests agree; no product release
+number, author or developerName is invented. The stricter local ingestion
+validator fails those absent fields, as recorded in [P21 evidence](../evidence/codex/package-checks.md).
+A source digest is not a release version or verified publisher.
+
+Root portable schema/metadata is independent of Claude; concrete skill selection
+uses the actual Codex picker, not a guessed namespace. Final owner inputs must
+update the authored native input and derived outputs together under release scope.
+Publication and native live compatibility remain separate gates.

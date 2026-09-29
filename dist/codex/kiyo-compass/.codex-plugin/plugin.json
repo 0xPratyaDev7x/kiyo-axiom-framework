@@ -1,0 +1,15 @@
+{
+  "name": "kiyo-compass",
+  "description": "Eight static engineering and governance skills with shared guidance and project-owned memory.",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Kiyo Compass",
+    "shortDescription": "Engineering workflow guidance",
+    "longDescription": "Static guidance for eight engineering workflows using authorized project evidence. The native host controls tools and permissions.",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Review the supplied changes without editing files."
+    ]
+  }
+}

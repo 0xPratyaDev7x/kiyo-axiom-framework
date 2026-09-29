@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "kiyo-compass",
+  "description": "Eight static engineering and governance skills with shared guidance and project-owned memory.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Kiyo Compass",
+        "shortDescription": "Engineering workflow guidance",
+        "longDescription": "Static guidance for eight engineering workflows using authorized project evidence. The native host controls tools and permissions.",
+        "category": "Productivity",
+        "capabilities": [],
+        "defaultPrompt": [
+          "Review the supplied changes without editing files."
+        ]
+      }
+    }
+  }
+}
