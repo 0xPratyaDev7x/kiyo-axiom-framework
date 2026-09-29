@@ -34,11 +34,11 @@ new regressions or environment problems; when attribution is insufficient,
 record Unknown. Report each failure even if unrelated, but repair only authorized
 scope under [bounded recovery](../../workflows/repair-and-handoff.md).
 
-For each performed check record: behavior/requirement or scope, exact command or
-manual method, inspected configuration, environment/tool versions where relevant,
-observed result/exit code and sanitized evidence location or concise output.
-Record repository/revision only from actual Git and identify uncommitted changes;
-neither revision nor local test success proves production state.
+Record every performed or unperformed check under the nine-field
+[Evidence Contract](../evidence-contract.md), including applicability, inspected
+state, actual result/evidence, limitations and baseline relation. Later affected
+edits require rechecks; preserve an old PASS as historical, not final-state proof.
+Report baseline failures without an “all tests pass” claim.
 
 For an unrun check state NOT_RUN and why; use BLOCKED for a concrete prerequisite.
 PASS/FAIL describe the actual scoped check only. Separate static review, executed

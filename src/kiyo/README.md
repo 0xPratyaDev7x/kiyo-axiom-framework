@@ -27,6 +27,12 @@ a dated concept-to-rule/evidence mapping, four optional stack profiles and the
 are bounded outlines, not full supported recipes. Sixteen developer-only scenario
 specifications remain NOT_RUN; no stack/runtime/package is installed.
 
+Prompt 10 adds the shared [Evidence Contract](framework/evidence-contract.md),
+[Definition of Done](framework/definition-of-done.md), [reporting contract](framework/reporting-contract.md)
+and seven neutral report templates, with 20 synthetic good/bad scenario
+specifications kept developer-only and NOT_RUN. Chat remains the default;
+no reporting engine, automatic log, public skill or evidence archive is added.
+
 Follow [framework layout](../../docs/architecture/framework-layout.md),
 [content loading](../../docs/architecture/content-loading.md) and
 [packaging contract](../../docs/architecture/packaging-contract.md) as their

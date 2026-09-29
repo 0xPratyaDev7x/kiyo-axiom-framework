@@ -30,7 +30,9 @@ Each needed approval request must include:
 | Rollback/reversibility | Actual restoration options, limitations and whether tested; do not promise an unverified rollback |
 | Excluded actions | What will not be done under this approval: unrelated resources, deployments, cleanup, data reads or follow-on actions as applicable |
 
-Use ordinary text with these contents; do not force a long form for an already
+The optional [approval-request template](../templates/reports/approval-request.md)
+uses these fields and shared evidence/reporting rules without creating a record
+or approval automatically. Use ordinary text with these contents; do not force a long form for an already
 authorized low-impact task. Do not include secrets in the request. A declaration
 of excluded actions bounds this approval; it is not proof that tools enforce it.
 

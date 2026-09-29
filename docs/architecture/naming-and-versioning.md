@@ -40,7 +40,8 @@ KIYO-MEM-007 without renumbering the original controls. Prompt 06 adds nine
 governance controls. Prompt 07 adds KIYO-SEC-001 through KIYO-SEC-010;
 Prompt 08 adds KIYO-ROUTE-001 and KIYO-FLOW-001 through KIYO-FLOW-005;
 Prompt 09 adds KIYO-ENG-002 through KIYO-ENG-007 and KIYO-PROF-001;
-the index now has 54 IDs. AST taxonomy labels remain external mapping IDs,
+Prompt 10 adds KIYO-VERIFY-001/002, KIYO-DONE-001 and KIYO-REPORT-001;
+the index now has 58 IDs. AST taxonomy labels remain external mapping IDs,
 not Kiyo control numbers or ASI identifiers. G1–G4 are advisory Kiyo modes,
 not standards identifiers or native permission settings.
 

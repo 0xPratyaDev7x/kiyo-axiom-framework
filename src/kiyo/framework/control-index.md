@@ -65,6 +65,11 @@ REQ references identify requirement scope, not full acceptance or a runtime impo
 | KIYO-ENG-007 | [Preserve human work and keep the diff necessary](engineering/change-scope.md#kiyo-eng-007--preserve-human-work-and-keep-the-diff-necessary) | REQ-030, REQ-034 | ACTIVE / none |
 | KIYO-PROF-001 | [Bind profiles to evidence without forcing a stack](../profiles/extension-contract.md#kiyo-prof-001--bind-profiles-to-evidence-without-forcing-a-stack) | REQ-037, REQ-054 | ACTIVE / none |
 
+| KIYO-VERIFY-001 | [Record scoped observations for every check](evidence-contract.md#kiyo-verify-001--record-scoped-observations-for-every-check) | REQ-040, REQ-041, REQ-043, REQ-077 | ACTIVE / none |
+| KIYO-VERIFY-002 | [Bind results to the checked state and baseline](evidence-contract.md#kiyo-verify-002--bind-results-to-the-checked-state-and-baseline) | REQ-039, REQ-040, REQ-044 | ACTIVE / none |
+| KIYO-DONE-001 | [Close the agreed workflow against current required evidence](definition-of-done.md#kiyo-done-001--close-the-agreed-workflow-against-current-required-evidence) | REQ-023, REQ-042, REQ-044, REQ-045 | ACTIVE / none |
+| KIYO-REPORT-001 | [Report scoped work without manufacturing an audit trail](reporting-contract.md#kiyo-report-001--report-scoped-work-without-manufacturing-an-audit-trail) | REQ-043, REQ-045, REQ-046, REQ-049 | ACTIVE / none |
+
 Keep IDs when files move or wording is clarified. Never renumber or reuse retired
 IDs. A materially different obligation needs a new ID and explicit migration/
 replacement history. Skills cite this index or canonical definitions; they do not

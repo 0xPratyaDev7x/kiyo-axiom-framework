@@ -48,6 +48,12 @@ from inspected task/component evidence; do not load all standards/profiles.
 Do not duplicate their detailed policies or load irrelevant references.
 Existing insecure patterns should be flagged with a scoped safer proposal.
 
+Use the [Evidence Contract](../framework/evidence-contract.md) to record checks
+against the final affected state and the Implement row of
+[Definition of Done](../framework/definition-of-done.md) before closing.
+Choose the smallest [report template](../framework/reporting-contract.md#template-selection);
+required checks or mandatory Memory sync cannot be waived to claim DONE.
+
 When a check fails, use [repair and handoff](repair-and-handoff.md). A failed
 verification does not authorize unrelated repairs, blanket cleanup, policy changes
 or an endless retry loop. If mandatory evidence is unavailable, report partial or

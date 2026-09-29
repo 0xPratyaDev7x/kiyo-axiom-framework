@@ -570,3 +570,77 @@ No source catalogue, Markdown parser or authored scenario proves agent complianc
 safe database behavior, version compatibility or a standards assessment.
 Memory Impact: NONE for project memory; only docs/build continuity is updated.
 No commit, tag, push, publication, package upgrade or Prompt 10 work performed.
+
+## Prompt 10 repository observation
+
+Observed 2026-09-29 (Asia/Bangkok), before Prompt 10 edits:
+
+- Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework.
+- Branch main; HEAD 745d3e2ff2ec5154f0afd567db9eeab37fb98d9a, subject
+  “feat: Enhance engineering framework with new checklists and profiles”.
+  Prompt 09 was committed before this work.
+- Initial worktree/index clean; staged/unstaged diffstat empty. Inventory:
+  79 Markdown files plus LICENSE, including 55 product files excluding the
+  developer README and four developer behavioral specification files.
+- No applicable AGENTS.md in the scoped repository inventory or checked ancestor
+  chain; no .kiyo state present. Read Build Contract, relevant workflows/standards,
+  Core/Memory/approval boundaries, requirements and current build state.
+- Used per-command exact-root safe.directory and empty core.excludesFile.
+  No global settings, branches, installed packages or external services changed.
+  Existing research dates remain unchanged; Prompt 10 has no new native/API claim.
+
+## Prompt 10 checks
+
+Executed 2026-09-29 (Asia/Bangkok), against the Prompt 10 working tree.
+These seven required **static authoring/closure checks** use the new nine-field
+Evidence Contract. The results do not execute the good/bad scenarios or establish
+host behavior. Inline Python and read-only Git supplied structural observations;
+author review supplied the scoped semantic assessment.
+
+| Name | Applicability | Command/method | Inspected scope | Execution status | Observed result | Evidence location | Limitations | Baseline relation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| P10-C01 Repository and context | Required by Build Contract start procedure | Read-only git rev-parse, branch, log, status, staged/unstaged diff; scoped instruction/file reads | Actual root/main/HEAD and initial worktree; contract, relevant workflows/standards/Core/Memory/approval, requirements/build records | PASS | HEAD 745d3e2ff2ec5154f0afd567db9eeab37fb98d9a; initial clean index/worktree, 79 Markdown files; no applicable AGENTS.md found in checked scope | Observation above and actual Git/context output in the Prompt 10 conversation | No remote fetch, native/stack/account inspection or production claim | Prompt 09 was committed; previous uncommitted/HEAD observations remain historical, not current state |
+| P10-C02 Evidence and DoD structure | Required by Prompt 10 contract/DoD acceptance | Inline Python table/field/control assertions plus scoped author review | Three new framework contracts; testing/flow references and control index | PASS | Nine check fields, five exact check statuses, eight workflow DoD rows, four task statuses; four new canonical IDs, 58 total. Reviewed current-state rechecks, baseline FAIL visibility, no mandatory downgrade and delivery/readiness distinctions | Contract files linked below; validator stdout in current conversation; this check record | Field/string assertions are structure checks, not proof of agent compliance; no runner/runtime engine | Expands prior generic check/closure guidance; no application regression execution/comparison performed |
+| P10-C03 Templates and examples | Required by Prompt 10 template/example acceptance | Inline Python field/table/ID assertions and author review | Seven report templates and tests/behavioral/verification/scenarios.md | PASS | Each template includes eight report fields; compact record supplies all nine check fields; approval template has eight scope fields. Twenty sequential good/bad EVID cases and a full synthetic record are labeled NOT_RUN | [Reporting/templates](../../src/kiyo/framework/reporting-contract.md); [scenario specifications](../../tests/behavioral/verification/scenarios.md); validator stdout | Synthetic expected outcomes only; no scenario executed, no real report/approval populated | New templates/specifications compared with requested fields; no behavioral baseline/result available |
+| P10-C04 References and budgets | Required by packaging/loading constraints | Inline Python strict UTF-8, link/heading resolution, containment, ID and budget checks | 90 Markdown files; 65 product files excluding developer README; all new operational references | PASS | Local references/anchors resolve; 328 contained product links, 29 unchanged optional citations; no absolute developer path/symlink/reparse resource found. Bootstrap unchanged at 81 lines / 579 words | Validator stdout and actual files; [control index](../../src/kiyo/framework/control-index.md), [Core entry](../../src/kiyo/KIYO.md) | Source-tree closure only; no generated distribution, relocated-cache or host-loading test | Inventory rises from 79/55 Markdown/product files to 90/65; required bootstrap size unchanged from P09 |
+| P10-C05 Meaning and safety review | Required by Prompt 10 and scoped self-review | Manual author review of request against contracts/templates/scenarios and edited references | Evidence freshness/applicability/baseline, workflow completion, approvals/Memory, report privacy/authority and integration | PASS | Required gaps remain visible; no missing-environment N/A or authored-test PASS; no old PASS for affected new state; read-only/chat boundaries preserved; mandatory sync never grants writes. Self-review/metadata/access/audit limitations explicit | New contracts/templates and EVID-01–20; current scoped review | Self-review, not independent audit. No claim of hard enforcement, tamper-proof logs, complete security or executed application behavior | Preserves prior Core/governance/Memory rules; no observed application failures to classify |
+| P10-C06 Traceability and closure | Required by Build Contract close procedure | Inline Python requirement/trace/status/issue/decision assertions and build-record review | Original 80 requirements, 80 ten-column trace rows and six updated build records | PASS | Eleven rows link P10 evidence; REQ-039–046/049/077 partial coverage and REQ-080 continuity; REQ-043 newly partial. Totals 65 PARTIALLY_IMPLEMENTED / 15 NOT_IMPLEMENTED; all 80 full verifications NOT_RUN. Prompt 10 DONE, Prompt 11 NOT_STARTED; nine issues/four decisions retained | [Traceability](TRACEABILITY.md), [Progress](PROGRESS.md), [Handoff](HANDOFF.md), validator stdout | Full requirement/skill/host acceptance not established; no publication decision invented | P09 totals 64 partial / 16 unimplemented; one new partial instruction contribution, no full acceptance promotion |
+| P10-C07 Scope and preservation | Required by Build Contract preservation/product boundary | Read-only Git allowlists, protected diffs, hash-object, tag list and git diff --check; inline boundary checks | Eleven new and sixteen modified Markdown files; protected prior product/research/config/history | PASS | diff --check passed; index empty, HEAD unchanged, no tags. LICENSE blob d2e60c5b160ed4f9ca096215e72efee5769936b1 unchanged; no .kiyo, platforms, tools, dist, SKILL.md or non-Markdown addition; six live targets stay NOT_TESTED | Git/validator output; file inventory below; [target summary](../compatibility/platform-capabilities.md#target-summary) | No native install, database operation, stack test, commit, push or deployment checked/executed | Clean committed P09 base; exact scoped changes preserved original requirements, research, compatibility and existing user history |
+
+New files: framework/evidence-contract.md, definition-of-done.md and
+reporting-contract.md under src/kiyo; seven templates under templates/reports;
+tests/behavioral/verification/scenarios.md. Modified files: six build records
+(PROGRESS, HANDOFF, TRACEABILITY, OPEN-ISSUES, DECISIONS, BASELINE), architecture
+layout/naming, source README, framework context-loading/control-index/testing
+(the latter under engineering), implementation/read-only/repair-handoff workflows
+and governance/human-approval's optional template reference.
+
+Protected unchanged areas include LICENSE, Build Contract/requirement registry,
+research/compatibility, existing ADR/loading/packaging design, Core entry/bootstrap/
+trust/activation/Memory, Memory lifecycle/templates, agent-security, profiles,
+other governance/engineering files, router/adaptive flow and all prior scenarios.
+Only the stated contextual references and task-status table consolidation changed
+in previously authored product files.
+
+The inline validator ran through a PowerShell here-string piped to Python, exited
+0 and printed PASS. It checked actual Git allowlists/protected diffs, UTF-8,
+ordinary local links/heading anchors outside fences, resource containment,
+canonical IDs, required fields/statuses, neutral template shapes, sequential
+synthetic cases, budgets, traceability counts and final closing state.
+Git calls used rev-parse --show-toplevel/HEAD, branch --show-current, log -1,
+status --short --branch --untracked-files=all, diff --stat/--check/--name-only,
+diff --cached, protected-path diffs, ls-files --others --exclude-standard,
+hash-object -- LICENSE and tag --list, with the scoped overrides above.
+Some combined context output was truncated; focused reads supplied needed
+requirements/Memory/standards details rather than inferring missing output.
+The preliminary static pass preceded build-record edits; final validation
+rechecked the resulting links, traceability and final state.
+
+Observed static checks: PASS only within the records above.
+Behavioral good/bad execution: NOT_RUN (specifications only, execution belongs
+to a later requested evaluation scope). Native package checks: NOT_RUN.
+Six live targets: individually NOT_TESTED, not inferred from the assistant session.
+These out-of-scope executions are not silently dropped mandatory Prompt 10 checks.
+Memory Impact: NONE for project memory; build continuity alone changed.
+No automatic report file, mutable consumer state, runtime, external research
+refresh, new package/tool installation or Prompt 11 implementation was performed.

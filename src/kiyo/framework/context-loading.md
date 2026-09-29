@@ -27,6 +27,12 @@ version/config/toolchain/architecture discovery; they never install a preset or
 authorize modernization. The concept mapping is optional rationale, not an
 initial mandatory load.
 
+For check planning/results use the shared [Evidence Contract](evidence-contract.md).
+At closure use the relevant workflow row in [Definition of Done](definition-of-done.md)
+and [reporting contract](reporting-contract.md); select only the needed template.
+Tiny answers can combine fields; current evidence, mandatory gaps and status
+remain explicit. Chat reporting does not require creating an evidence archive.
+
 The bootstrap's reference map and control index are lookup aids, not a request to
 read all framework files. Load a linked section when its condition matters.
 Missing/unreadable resources require a scoped limitation and a pause on dependent

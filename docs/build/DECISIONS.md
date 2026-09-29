@@ -69,6 +69,15 @@ inside the previously selected shared payload trees. This is an implementation
 of ADR-001, not a new architecture or authority hierarchy. No forced library,
 modernization, package upgrade, database operation or release identity is approved.
 
+Prompt 10 was subsequently authorized on 2026-09-29: author shared Evidence
+Contract, workflow DoD, reporting contract, seven templates and at least twelve
+good/bad scenarios; check/update build state and stop before Prompt 11.
+The three contracts live in framework and templates in templates/reports,
+within ADR-001's existing payload trees. Existing workflow status meanings
+reference DoD rather than maintaining a second detailed table. This authorizes
+static product content, not an evidence service, automatic logs, project reports/
+memory writes, execution, publication or implementation of the next public skill.
+
 ## Pending owner decisions
 
 | ID | Decision | Current evidence / status | Who decides | Latest needed / effect | Resolution evidence |
@@ -79,7 +88,7 @@ modernization, package upgrade, database operation or release identity is approv
 | DEC-004 | Treatment of Codex IDE native-plugin support gap | OPEN. Official [plugin documentation](https://learn.chatgpt.com/docs/plugins) excludes IDE plugins; [skills documentation](https://learn.chatgpt.com/docs/build-skills) supports standalone IDE skills. Checked 2026-09-28; DOCUMENTED_ONLY, live NOT_TESTED | Repository/product owner | Before promising six-target native installation or accepting a standalone fallback; does not block Prompt 03 design of documented surfaces | No fallback or scope reduction approved |
 
 Ask only when an unresolved choice blocks the current authorized prompt. Existing
-instructions authorize Prompt 09 engineering/profile and build-state updates. Do not ask for
+instructions authorize Prompt 10 evidence/completion/reporting and build-state updates. Do not ask for
 premature publication decisions to complete that scope. Publication metadata still
 requiring confirmation is listed in [SOURCES](../research/SOURCES.md#publication-information-still-requiring-the-owner).
 

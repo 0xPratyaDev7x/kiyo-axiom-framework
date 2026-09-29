@@ -45,6 +45,8 @@ specifications, without a runnable router or public skill.
 Prompt 09 adds six engineering checklists plus selection/mapping references under
 framework/engineering, four stack profiles and an extension contract. Sixteen
 developer engineering/profile cases remain NOT_RUN; no runtime is introduced.
+Prompt 10 adds shared evidence/completion/reporting contracts in framework and
+seven neutral report templates, plus 20 developer-only good/bad scenarios.
 The README remains developer-only. Remaining
 product, overlay, tool, test and distribution paths are **planned**, not features.
 Create each directory when it receives real scoped content; no empty SKILL.md,
@@ -54,7 +56,7 @@ dummy manifests, .gitkeep forest or initial version is required in Prompt 03.
 src/kiyo/
   README.md                       authoring boundary; excluded from payload
   KIYO.md                         compact product bootstrap
-  framework/                      core controls, authority, context, memory protocol
+  framework/                      core controls, authority, context, memory/evidence/closure protocols
     control-index.md              stable Kiyo control ID register
     engineering/                  contextual standards, selection and concept mapping
   governance/                     shared advisory policies and Governance Review
@@ -98,7 +100,7 @@ this architecture without renaming requirement IDs or rewriting their source tex
 
 | Content | Owns | References; never duplicates |
 | --- | --- | --- |
-| Core / `framework/` | Authority, evidence, scope, access-contract vocabulary, memory protocol, stable controls | Other core sections as needed; no native schema details |
+| Core / `framework/` | Authority, evidence/check records, completion/reporting, scope, access-contract vocabulary, memory protocol, stable controls | Other core sections as needed; no native schema details |
 | Policies / `governance/`, `agent-security/` | Kiyo governance/data/action policies, security review procedures and their limitations | Core IDs and relevant templates; no claim of host enforcement |
 | Workflows | Routing, task sequence, repair limits, closure | Core, policies, applicable profiles and output templates |
 | Engineering / `framework/engineering/` | Actionable requirements, architecture, coding, testing, quality and scope checks | Shared Core/governance/security and optional profiles; concept mapping is optional rationale |
@@ -159,8 +161,8 @@ identity and maintenance. These documents specify the architecture; later
 static, behavioral and live checks must establish that implemented files follow it.
 
 Prompt 03's only source scaffold was [the authoring README](../../src/kiyo/README.md).
-Prompts 04–09 add shared Core/Memory/governance/agent-security/workflow/engineering
-content and optional profiles without exposing a callable skill.
+Prompts 04–10 add shared Core/Memory/governance/agent-security/workflow/engineering,
+evidence/completion/reporting content, neutral report templates and optional profiles without exposing a callable skill.
 Prompt 07 adds six agent-security references and four neutral optional record
 templates under templates/skill-governance; developer scenario specifications
 stay outside the payload. Installed product references remain self-contained. No consumer runtime dependency,

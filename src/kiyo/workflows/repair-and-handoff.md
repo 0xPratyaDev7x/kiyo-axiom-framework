@@ -89,16 +89,12 @@ become canonical project memory.
 
 ### Closing status
 
-Use the scope's actual acceptance and required checks, with separate check results:
+Use the canonical [Definition of Done and four task statuses](../framework/definition-of-done.md#exact-task-statuses)
+for the actual workflow scope, with separate
+[check records](../framework/evidence-contract.md). Do not mark incomplete work
+DONE because repair budget/context is exhausted. Read-only review completion
+does not claim tested behavior; no commit, PR, installation, deployment or
+publication is required merely to close a workflow.
 
-| Task status | Meaning |
-| --- | --- |
-| DONE | Requested scope and its required checks are complete; name remaining out-of-scope limits without claiming wider success |
-| PARTIALLY COMPLETE | Some scoped work is delivered, but requested work or mandatory evidence remains unfinished |
-| BLOCKED | A concrete prerequisite prevents required progress; identify it and the next action |
-| DECISION REQUIRED | A specific unresolved choice/authority conflict prevents the dependent scoped action |
-
-Do not mark incomplete work DONE merely because the repair budget or context is
-exhausted. Read-only review can be DONE as an inspection without claiming tested
-behavior. No commit, PR, installation, deployment or publication is required merely
-to close a workflow.
+Use the packaged [handoff template](../templates/reports/handoff.md) when needed;
+its facts/next action/approval fields do not grant new access or reset attempts.

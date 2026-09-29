@@ -15,14 +15,14 @@ One canonical specification with necessary self-contained native overlays.
 
 ## Current repository observation
 
-Observed for Prompt 09 on 2026-09-29:
+Observed for Prompt 10 on 2026-09-29:
 
 - Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework
-- Branch: main; HEAD: 372fd7a58ee51bbb98aef1c95940b84c39b8fe49.
+- Branch: main; HEAD: 745d3e2ff2ec5154f0afd567db9eeab37fb98d9a.
 - Initial working tree and index clean; tracked LICENSE, eight build files and
   five research/compatibility files, six architecture documents, source README,
-  42 product files and three behavioral specification files (65 Markdown files total).
-  Prompt 08 was committed before this work;
+  55 product files and four behavioral specification files (79 Markdown files total).
+  Prompt 09 was committed before this work;
   previous checkout/HEAD/uncommitted snapshots are historical, not current facts.
 - No applicable AGENTS.md found in repository or checked ancestors; no .kiyo
   project/product memory present.
@@ -32,7 +32,7 @@ Observed for Prompt 09 on 2026-09-29:
   unreadable global ignores.
 - LICENSE blob remains d2e60c5b160ed4f9ca096215e72efee5769936b1.
 - No product version file, manifest or Git tag found in the scoped inventory.
-- Prompt 09 creates fourteen Markdown files and changes fourteen existing Markdown files. No commits,
+- Prompt 10 creates eleven Markdown files and changes sixteen existing Markdown files. No commits,
   tags, pushes, installs, publication or global settings changes were made here.
 
 Recheck root, branch, index, unstaged/untracked changes and user edits on resume.
@@ -79,6 +79,12 @@ Preserve LICENSE and the 80 original requirements. See BASELINE for check result
     standards/profiles, [concept mapping](../../src/kiyo/framework/engineering/standards-mapping.md)
     and [engineering/profile scenarios](../../tests/behavioral/engineering/scenarios.md).
 
+14. [Evidence Contract](../../src/kiyo/framework/evidence-contract.md),
+    [Definition of Done](../../src/kiyo/framework/definition-of-done.md),
+    [reporting contract/templates](../../src/kiyo/framework/reporting-contract.md)
+    and [good/bad scenarios](../../tests/behavioral/verification/scenarios.md).
+
+Prompt 10 does not refresh external research; retain each source's recorded date.
 Prompt 02 native checks and unrefreshed standards remain dated 2026-09-28.
 Prompt 09 rechecked S01–S07 and added E01–E06 on 2026-09-29; public documentation
 only, not licensed ISO text or actual stack verification. Prompt 07
@@ -135,6 +141,13 @@ S01–S07 official catalogue metadata and E01–E06 profile sources were checked
 No full ISO text, exact taxonomy, certification, executed stack support or
 automatic package installation is claimed.
 
+Prompt 10 adds three shared evidence/DoD/reporting contracts, seven neutral report
+templates, four controls (58 total) and 20 synthetic good/bad scenario specifications.
+Status: **DONE** for the requested static scope; checks passed using nine-field
+records in [Prompt 10 evidence](BASELINE.md#prompt-10-checks).
+Authored reports and parsed scenarios do not prove agent behavior, test execution,
+complete access visibility or a tamper-proof audit trail.
+
 No native version, account availability or installed-tool absence is inferred from the
 assistant session. Each of Claude CLI, Claude VS Code, Codex CLI, Codex IDE,
 Copilot CLI and Copilot VS Code remains **NOT_TESTED** live.
@@ -155,7 +168,10 @@ and 20 NOT_IMPLEMENTED. REQ-026/068–075 get routing/shared-flow inputs only;
 no public skill acceptance is promoted.
 Prompt 09 adds partial instruction coverage for REQ-031–038/053/056 and updates
 REQ-080 continuity. Current totals: 64 PARTIALLY_IMPLEMENTED / 16 NOT_IMPLEMENTED;
-REQ-031/036/037/038 newly partial. All full requirement verifications remain NOT_RUN.
+REQ-031/036/037/038 newly partial.
+Prompt 10 adds partial shared contract/template coverage for REQ-039–046/049/077
+and updates REQ-080. Current totals: 65 PARTIALLY_IMPLEMENTED / 15 NOT_IMPLEMENTED;
+REQ-043 newly partial. All full requirement verifications remain NOT_RUN.
 
 ## Research findings to retain
 
@@ -182,7 +198,7 @@ REQ-031/036/037/038 newly partial. All full requirement verifications remain NOT
 
 Open decisions: DEC-001 name/identifiers, DEC-002 release-license confirmation,
 DEC-003 publisher/account/destination, DEC-004 unsupported IDE route.
-They do not block the next Verification/DoD scope under the selected architecture; they do block
+They do not block the next Init authoring scope under the selected architecture; they do block
 dependent release identities, claims or unapproved fallback choices.
 
 Memory Impact: **NONE for project memory**. Build continuity/specification choices
@@ -197,12 +213,14 @@ are recorded in docs/build; no .kiyo/memory initialized or changed.
   Memory templates and governance policies/shared review procedure now exist.
   Agent-security references and four optional governance-record templates also
   exist, together with five router/flow references, six engineering standards plus
-  selection/mapping, four profiles and an extension contract. Other workflows/
-  templates and all public skills remain unimplemented.
+  selection/mapping, four profiles/extension contract, three evidence/DoD/reporting
+  contracts and seven report templates. Other workflows/templates and all public
+  skills remain unimplemented.
   Do not mistake synthetic scenarios for executed behavior.
 - Core IDs use `KIYO-<DOMAIN>-<NNN>`, independent of standard clauses. The actual
-  54-control index points to canonical definitions (16 Core, six Memory, nine
-  governance, ten security, six routing/flow and seven engineering/profile IDs). ACTIVE means authored, not
+  58-control index points to canonical definitions (16 Core, six Memory, nine
+  governance, ten security, six routing/flow, seven engineering/profile and four
+  evidence/completion/reporting IDs). ACTIVE means authored, not
   behaviorally verified; do not duplicate rules across later skills.
 - Canonical frontmatter is name/description. Native-only fields belong in
   overlays, advisory permission/mode contracts in Markdown. No Kiyo runtime.
@@ -223,7 +241,7 @@ are recorded in docs/build; no .kiyo/memory initialized or changed.
 - Do not generate manifests, public skills, release versions or all later trees
   to make scaffolding look complete. Keep schema gaps and owner decisions open.
 
-## Shared boundaries for Prompt 10
+## Shared boundaries for Prompt 11
 
 Use Memory as context, validate material claims, preserve approved intent and
 surface conflicting sources through the real native hierarchy. Do not treat
@@ -321,16 +339,40 @@ migration-file authoring is separate from execution. React/Java/company examples
 are extension outlines only. All 16 engineering cases remain NOT_RUN; source
 containment checks do not establish relocated-cache behavior or actual stack support.
 
+Evidence records always carry Name, Applicability, Command/method, Inspected
+scope, Execution status, Observed result, Evidence location, Limitations and
+Baseline relation. Use only PASS/FAIL/NOT_RUN/NOT_APPLICABLE/BLOCKED. N/A requires
+a real scope reason, never missing environment. Commands/counts/times/versions
+need real observations; test creation is not execution and old PASS cannot
+certify later affected edits. Preserve baseline failures and Unknown attribution.
+
+DoD is workflow-specific: Implement needs agreed behavior/AC, valid approvals,
+current required verification, scope/security/governance self-review and assessed
+Memory Impact with mandatory sync completed. Missing required evidence/sync is
+partial/blocked, never silently optional. Read-only review or bounded security/
+memory assessment completion is not bug-free/secure/certified/whole-project proof.
+Requirement delivery and READY/NOT_READY/UNKNOWN implementation readiness differ.
+
+Reports convey task/scope, actual actions/files, governance/risk rationale,
+verification/evidence, residual issues, Memory Impact, one actual task status and
+next required action. Select one of seven neutral templates; chat is default and
+disk output requires actual write scope. Preserve human content and approval/
+repair history. No secrets/raw logs/private reasoning, guessed provider/model/
+access counts, independent-audit or tamper-proof claims. All 20 good/bad scenarios
+are NOT_RUN and explicitly synthetic; static checks do not execute them.
+
 ## Exact next action
 
-Prompt 09 is complete within its static engineering/profile scope; stop here.
-**Next: Prompt 10 Verification/DoD**, only when supplied by the user. Recheck
-repository and read the files above; implement only that prompt's verification/
-completion scope, reusing shared Core/Memory/governance/security/flows/engineering.
-Do not infer authorization for dangerous execution, project policy/memory
-initialization, public skills, native overlays, generators or release work.
+Prompt 10 is complete within its static evidence/completion/reporting scope; stop here.
+**Next: Prompt 11 Init**, only when supplied by the user. Recheck repository and
+read the files above; implement only that prompt's actual Init scope, reusing
+shared Core/Memory/governance/security/flows/engineering/evidence/DoD/reporting.
+Do not infer authorization to initialize this developer repository's memory,
+execute dangerous operations, implement other public skills, publish, or resolve
+native overlay/generator/activation gaps without their relevant task/evidence.
 
-Safe to continue: **YES for a user-requested Prompt 10 Verification/DoD**.
-Its shared instruction inputs are ready. Publication, unsupported native routes,
-dangerous execution and live support claims remain outside scope.
+Safe to continue: **YES for a user-requested Prompt 11 Init**.
+Its shared instruction inputs are ready; native gaps still gate dependent
+packaging/activation claims. Publication, dangerous execution and live support
+claims remain outside this handoff's authorization.
 

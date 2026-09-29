@@ -1,10 +1,41 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **09 Engineering/Profiles**.
-Task status: **DONE** for Prompt 09; scoped static engineering/profile checks passed.
-Product status: shared Core/Memory/governance/security/workflow/engineering guidance
-and optional profiles authored; native packages/public skills remain unimplemented.
-Runtime/policy engines are outside the product boundary.
+Snapshot: 2026-09-29. Current prompt: **10 Verification/DoD**.
+Task status: **DONE** for Prompt 10; scoped static evidence/completion/report checks passed.
+Product status: shared Core/Memory/governance/security/workflow/engineering,
+evidence/DoD/reporting guidance and optional profiles/templates authored;
+native packages/public skills remain unimplemented. No runtime engine.
+
+## Prompt 10 delivered scope
+
+- Added the shared [Evidence Contract](../../src/kiyo/framework/evidence-contract.md)
+  with nine check fields, five exact statuses, applicability/mandatory boundaries,
+  requirement-to-evidence trace, baseline attribution and final-state rechecks.
+  An authored test, historical PASS or missing environment cannot become current PASS/N/A.
+- Added [Definition of Done](../../src/kiyo/framework/definition-of-done.md)
+  with workflow-specific completion for all eight logical skills, four exact task
+  statuses, current approvals/checks, scoped self-review and mandatory Memory sync.
+  Requirement delivery and implementation readiness are separate.
+- Added [reporting contract and seven neutral templates](../../src/kiyo/framework/reporting-contract.md#template-selection):
+  compact task, engineering, approval, drift, finding, security and handoff.
+  Chat is default; disk output requires actual write scope. No secrets/raw logs/
+  private reasoning, guessed identities/counts or tamper-proof/independent-audit claims.
+- Added four stable controls (58 total) and
+  [20 synthetic good/bad scenarios](../../tests/behavioral/verification/scenarios.md),
+  all NOT_RUN. Integrated conditional references into existing flows/testing/
+  approval guidance; canonical task-status details now live in DoD.
+- Updated architecture/source/build records. No public skill, runtime, automatic
+  evidence store, project-memory write or native mechanism is introduced.
+  No external source or platform/schema research was refreshed.
+
+Coverage: partial shared instruction/template implementation for
+REQ-039–046/049/077; REQ-080 continuity updated. Current totals:
+65 PARTIALLY_IMPLEMENTED / 15 NOT_IMPLEMENTED (REQ-043 newly partial).
+All 80 full requirement verifications remain NOT_RUN; all six live targets NOT_TESTED.
+
+Checks: [Prompt 10 evidence](BASELINE.md#prompt-10-checks), with the nine-field record.
+Memory Impact: **NONE for project memory**; only build continuity updated.
+Owner publication/native-gap decisions remain open and do not block scoped Init authoring.
 
 ## Prompt 09 delivered scope
 
@@ -307,7 +338,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 07 | Security | DONE | P07-C01–C07 PASS; static controls/procedures/templates only, scenarios NOT_RUN |
 | 08 | Router/Flow | DONE | P08-C01–C07 PASS; static procedures/truth-table checks only, behavioral execution NOT_RUN |
 | 09 | Engineering/Profiles | DONE | P09-C01–C07 PASS; static standards/profiles/mapping only, scenarios NOT_RUN |
-| 10 | Verification/DoD | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 10 | Verification/DoD | DONE | P10-C01–C07 PASS; static contracts/templates/examples only; behavioral execution NOT_RUN |
 | 11 | Init | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 12 | Requirement | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 13 | Implement | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -337,8 +368,9 @@ Outstanding owner decisions: DEC-001 final name, DEC-002 release license,
 DEC-003 publisher/destination and DEC-004 treatment of Codex IDE's native-plugin
 gap before compatibility/release claims. See OPEN-ISSUES for technical gaps.
 
-Safe to continue: **YES for a user-requested Prompt 10 Verification/DoD**.
-Shared standards/profiles and preceding controls are ready; owner/native support
-decisions do not block that scope. This does not authorize later work or execution.
-Next prompt: **10 Verification/DoD**, only when requested by the user.
+Safe to continue: **YES for a user-requested Prompt 11 Init**.
+Shared evidence/completion/reporting and preceding controls are ready for scoped
+Init authoring. Owner/native gaps remain gates for dependent packaging/activation
+claims; this does not authorize project initialization or later work by itself.
+Next prompt: **11 Init**, only when requested by the user.
 
