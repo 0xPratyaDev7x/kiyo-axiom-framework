@@ -45,19 +45,19 @@ repo นี้เป็น custom marketplace อยู่แล้ว เลื
 **Claude Code** (CLI / VS Code)
 ```text
 /plugin marketplace add 0xPratyaDev7x/kiyo-codejadee-framework
-/plugin install kiyo-axiom-framework@kiyo-codejadee
+/plugin install kiyo-axiom-framework@kiyo-axiom-framework
 ```
 
 **Codex (CLI / VS Code)**
 ```text
 codex plugin marketplace add 0xPratyaDev7x/kiyo-codejadee-framework
-codex plugin add kiyo-axiom-framework@kiyo-codejadee
+codex plugin add kiyo-axiom-framework@kiyo-axiom-framework
 ```
 
 **GitHub Copilot** (CLI / VS Code)
 ```text
 copilot plugin marketplace add 0xPratyaDev7x/kiyo-codejadee-framework
-copilot plugin install kiyo-axiom-framework@kiyo-codejadee
+copilot plugin install kiyo-axiom-framework@kiyo-axiom-framework
 ```
 
 **Codex IDE Extension (VS Code)** โหลด plugin ไม่ได้ ให้ copy โฟลเดอร์ `kiyo-*`

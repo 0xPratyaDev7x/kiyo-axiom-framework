@@ -1,7 +1,7 @@
 {
-  "name": "kiyo-codejadee",
+  "name": "kiyo-axiom-framework",
   "interface": {
-    "displayName": "Kiyo Codejadee"
+    "displayName": "Kiyo Axiom Framework"
   },
   "plugins": [
     {
