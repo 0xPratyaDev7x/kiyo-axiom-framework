@@ -37,13 +37,18 @@ REQUIRED_NEGATIVES = {"broken-resource", "duplicate-skill", "unsupported-manifes
                       "missing-approval-boundary", "contradictory-fake-pass", "private-package-file"}
 
 
-def load_context():
+def load_context(inventory_path=None, archive_dir=None):
     data = pack.inputs(ROOT)
     data.update({p: (ROOT/p).read_bytes() for p in SUPPORT})
-    inventory = json.loads((ROOT/"docs/evidence/packaging/artifact-inventory.json").read_bytes())
+    inventory_path = inventory_path or ROOT/"docs/evidence/packaging/artifact-inventory.json"
+    archive_dir = archive_dir or ROOT/"dist/archives"
+    inventory = json.loads(inventory_path.read_bytes())
     packages, archives = {}, {}
     for target, record in inventory["packages"].items():
-        archives[target] = (ROOT/"dist/archives"/record["archive"]).read_bytes()
+        filename = record["archive"]
+        c.need(Path(filename).name == filename and "/" not in filename and "\\" not in filename
+               and ":" not in filename, "ARCHIVE_PATH", str(filename))
+        archives[target] = (archive_dir/filename).read_bytes()
         with zipfile.ZipFile(io.BytesIO(archives[target])) as z:
             names = z.namelist()
             c.need(len(names) == len(set(n.casefold() for n in names)), "ZIP_DUPLICATE", target)
@@ -176,6 +181,8 @@ def mutate(fixture, data, packages):
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--report",type=Path,required=True)
+    parser.add_argument("--inventory",type=Path,help="Candidate inventory; defaults to retained P23 inventory")
+    parser.add_argument("--archives",type=Path,help="Candidate ZIP directory; defaults to dist/archives")
     args=parser.parse_args()
     if args.report.exists():
         raise SystemExit("Choose a fresh report path; retain previous executions.")
@@ -193,7 +200,11 @@ def main():
                            "P23 real filesystem symlink creation BLOCKED; not retried here"]}
     stream=io.StringIO()
     try:
-        data,packages,archives,inventory=load_context()
+        c.need(bool(args.inventory) == bool(args.archives), "CANDIDATE_ARGUMENTS",
+               "Supply --inventory and --archives together")
+        data,packages,archives,inventory=load_context(args.inventory,args.archives)
+        report["candidate"]={"inventory":str(args.inventory or ROOT/"docs/evidence/packaging/artifact-inventory.json"),
+                             "archives":str(args.archives or ROOT/"dist/archives")}
         context.update(archives=archives,inventory=inventory)
         report["consulted_sha256"]={p:sha(b) for p,b in data.items()}
         codepaths = ("tests/static/contracts.py","tests/static/test_contracts.py",
@@ -213,7 +224,7 @@ def main():
                      "applicability":"Required Prompt 24 static group", "command_ref":"command",
                      "method":"run_group("+group+")", "inspected_scope":"Canonical files and existing ZIPs as defined by this group",
                      "evidence_location":str(args.report), "limitations":"Selected properties; no behavioral/native assertion",
-                     "baseline_relation":"New P24 validator against unchanged P23 product; previous attempts retained"}
+                     "baseline_relation":"Selected candidate bytes and recorded source hashes; previous attempts retained"}
                 checks.append(row)
                 try:
                     row["observed"]=run_group(group,data,packages,context)

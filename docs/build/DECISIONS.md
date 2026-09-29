@@ -258,6 +258,13 @@ and build-state closure. Guides do not select a release name/version/license/
 publisher or adopt a Codex IDE fallback. No model/quota/native installation or
 publication is authorized by writing these docs. Stop before Prompt 28.
 
+Prompt 28 was authorized on 2026-09-29 for developer-only local release tooling,
+artifacts, inventories, actual available checks, reports and runbook. Reuse the
+existing Python tooling; no CI service or credential is necessary. No owner
+metadata/signing mechanism is selected, and no commit/tag/push/publish/register
+or account setting change is authorized. NOT_SIGNED/NOT_ATTESTED are honest
+artifact states, not proof of malice. Stop before Prompt 29.
+
 ## Pending owner decisions
 
 | ID | Decision | Current evidence / status | Who decides | Latest needed / effect | Resolution evidence |
@@ -268,10 +275,10 @@ publication is authorized by writing these docs. Stop before Prompt 28.
 | DEC-004 | Treatment of Codex IDE native-plugin support gap | OPEN. Official [plugin documentation](https://learn.chatgpt.com/docs/plugins) excludes IDE plugins; [skills documentation](https://learn.chatgpt.com/docs/build-skills) supports standalone IDE skills. Rechecked 2026-09-29 (CX21-04/06 and NL26-09); DOCUMENTED_ONLY, live NOT_TESTED | Repository/product owner | Before promising six-target native installation or accepting a standalone fallback; does not block Prompt 03 design of documented surfaces | No fallback or scope reduction approved |
 
 Ask only when an unresolved choice blocks the current authorized prompt. Existing
-instructions authorize Prompt 27 documentation and its offline checks/reporting.
+instructions authorize Prompt 28 local release engineering and available offline checks/reporting.
 P26's no-quota restriction remains; no model calls or paid quota are authorized.
 Temporary fixture catalog identity is not a publisher/release decision. Do not
-ask for premature publication decisions to complete documentation. Publication metadata still
+ask for premature publication decisions or credentials to complete local readiness reporting. Publication metadata still
 requiring confirmation is listed in [SOURCES](../research/SOURCES.md#publication-information-still-requiring-the-owner).
 
 ## Proposals and future technical decisions

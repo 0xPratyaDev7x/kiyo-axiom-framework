@@ -15,46 +15,50 @@ One canonical specification with necessary self-contained native overlays.
 
 ## Current repository observation
 
-Observed for Prompt 27 on 2026-09-29:
+Observed for Prompt 28 on 2026-09-29:
 
 - Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework.
-  Branch main; HEAD b422d201c4dae8aa29963a8f7753583862f0c86a; initial tree/index
-  clean. No applicable ancestor AGENTS/CLAUDE or developer-project .kiyo found.
-  Git uses exact per-command safe.directory/core.excludesFile only.
-- P26 is committed. Its user-selected no-quota scope remains unchanged; P27
-  performs no native/model/account/installation operation.
-- [README](../../README.md) plus nine linked guide/draft files provide first use,
-  eight Skills, governance, Memory, security, troubleshooting, nine synthetic
-  walkthroughs, maintenance and unpublished marketplace copy.
-- Product default config is .kiyo/policy.md; explicit/legacy equivalents such as
-  .kiyo/config.md are preserved, never duplicated. Memory defaults to .kiyo/memory
-  only for new projects. Walkthroughs do not initialize this repository.
-- [Seven official page checks](../research/SOURCES.md#prompt-27-documentation-source-check)
-  support current native wording. Codex IDE native plugins remain UNSUPPORTED;
-  exact Codex/Copilot CLI plugin-qualified selectors remain UNKNOWN.
-- [Documentation checks](../evidence/documentation/validation-report.md) separate
-  actual offline audit from unexecuted walkthroughs. All 112 package inputs,
-  tooling, three archive hashes and original LICENSE are preserved.
-- P26 Claude CLI 2.1.220 normal validation/discovery succeeds, strict validation
-  fails missing version/author. No persistent marketplace install or agent use.
-- P26 Codex CLI 0.158.0 disposable local install/cache/uninstall succeeds and
-  preserves three synthetic project files; 795 cached files match distribution.
-  Native fallback 1.0.0 is not a product version; public ingestion failure stays.
-- IDE/Copilot native behavior remains untested. Named extension/editor metadata
-  does not establish active engines/accounts. All 48 P25 host cases remain NOT_RUN.
-  P26 has two complete bounded lifecycle PASS rows, 70 unexecuted full case rows.
-- No Skill invocation, automatic Core, update or managed-block lifecycle behavior
-  was newly verified. No publisher/version/license decision or release promise.
-- REQ-004/005/010/076–080 gain scoped documentation trace entries. All 80 full
-  verifications remain NOT_RUN, with 79 partial/1 not implemented.
+  Branch main; HEAD f368ecf736c3b4d9558e77ab030487a00f071602; initial tree/index
+  clean. P27 committed; no applicable ancestor AGENTS/CLAUDE or project .kiyo.
+- [Release coordinator](../../tools/release_candidate.py) uses existing Python
+  standard-library builders/tests. It accepts only a fresh named child of
+  dist/releases, retains failures, performs no recursive cleanup or native action.
+- [Final run](../../dist/releases/p28-run-02/pipeline.json) completes six stages,
+  exit 0. Three ZIPs built twice with identical bytes/inventories; old P23 hashes
+  unchanged. Source revision, worktree input/tool/fixture hashes and commands
+  are actual. No consumer generator/runtime/MCP/hooks installed.
+- Static runner now optionally takes paired --inventory / --archives to test
+  actual candidate ZIPs. Defaults and all mandatory negatives are preserved.
+  Final 37 static tests and eight release-tool regressions PASS. Packaging ten
+  PASS plus PKG-08 BLOCKED by Windows 1314. No native POSIX probe or elevation.
+- p28-run-01 remains the earlier execution. p28-run-02 follows report exit-code
+  clarity and empty-evidence guard changes. No required pipeline test failed;
+  both runs retain the filesystem-symlink limitation.
+- Version consistently UNSET, signature NOT_SIGNED, provenance NOT_ATTESTED.
+  Dependency inventory has no payload runtime packages; attribution records
+  existing LICENSE and 38 canonical citations. Neither is a formal SBOM.
+- [Runbook](../release/runbook.md), [submission checklists](../release/submission-checklists.md),
+  [security disclosure/update/revocation](../release/security-lifecycle.md) and
+  [actual validation](../evidence/release/validation-report.md) are developer docs.
+  Owner metadata and disclosure channel unresolved; no credentials requested.
+- [Six official source refreshes](../research/SOURCES.md#prompt-28-release-source-check)
+  document channel/skills-only requirements. No portal/account or marketplace
+  registration. Old Claude strict/Codex ingestion failures remain.
+- P26 bounded Claude discovery and Codex install/cache/uninstall evidence remains
+  separate. P25 48 host cases NOT_RUN; no new agent/model/quota use. Codex IDE native
+  plugins UNSUPPORTED, all other full workflow/activation acceptance untested.
+- Eleven scoped trace rows gain P28 evidence. All 80 full requirement checks remain
+  NOT_RUN, with 79 PARTIALLY_IMPLEMENTED / 1 NOT_IMPLEMENTED.
+- Canonical Core/skills, all platform overlays, original distributions/LICENSE
+  and user state preserved. No commit/tag/push/publish/settings change.
 
-Recheck root/branch/user edits on resume. For historical actual native commands,
-read [live matrix](../compatibility/live-test-matrix.md),
-[actual records](../evidence/live/README.md),
-[reproduction](../compatibility/live-reproduction-guide.md) and
-[owner-required remaining tests](../compatibility/live-owner-required-tests.md).
-Native state mapping is not an OS sandbox. The documentation does not supply
-permission for later model calls, installs or publication.
+Recheck current root/branch/user edits before further work. The candidate source
+record includes the contract snapshot at pipeline execution; build-state closure
+updates are later documentation, not a changed product artifact.
+Read [live matrix](../compatibility/live-test-matrix.md) for P26 scope and
+[owner-required tests](../compatibility/live-owner-required-tests.md) for remaining
+native prerequisites. Package validation is not publisher authentication or
+HOST_VERIFIED/PUBLISHED evidence.
 
 ## Read order
 
@@ -1006,16 +1010,31 @@ P26's check_records.py is a historical pinned-state audit; it is not a general
 later-prompt gate. Preserve old evidence. New documentation audit records include
 their own time/command/scope and limitations. No new behavioral metrics exist.
 
+## Prompt 28 release continuity
+
+Use [runbook](../release/runbook.md) and
+[final readiness](../../dist/releases/p28-run-02/readiness.md).
+Inspect individual status/limitations even when pipeline exit is 0. Never overwrite
+run directories or old test records. Current ordinary inventory format is not
+SPDX/CycloneDX, formal SBOM, signature or attestation. No approved signing service
+or public contact has been invented.
+
+Only tests/static/test_contracts.py gained candidate-path selection; original
+native builders and product schemas are unchanged. New release tests are
+developer-only. Future real version/owner fields require deliberate canonical/
+native/static-contract review, not weakening assertions to obtain green output.
+The tool creates a local rehearsal, never a publication-ready approval by itself.
+
 ## Exact next action
 
-Prompt 27 documentation and offline checks are complete. Stop.
-**Next: Prompt 28 Release Tooling**, only when supplied by the user.
-Read Build Contract, packaging/lifecycle contracts, existing builders/tests,
-owner decisions and current documentation. Build only the subsequently requested
-scope; do not infer commit/tag/push/publication or model/quota authority.
+Prompt 28 release engineering and available checks are complete. Stop.
+**Next: Prompt 29 Gap Audit**, only when supplied by the user.
+Read Build Contract, full requirements/traceability, actual layer-separated
+evidence, release readiness and owner/native gaps. Reconcile criteria without
+promoting static evidence or silently filling missing metadata.
 
-Safe to continue: **YES for Prompt 28 release tooling** while preserving unresolved
-release gates. DEC-001–004, Claude strict metadata failure, Codex ingestion failure,
-IDE gaps, model/activation/update tests and the P23 filesystem-symlink limit remain
-open. Memory Impact: NONE. No later prompt is authorized by this handoff.
+Safe to continue: **YES for Prompt 29 Gap Audit**. Publication remains BLOCKED,
+NOT_PUBLISHED, NOT_SIGNED and NOT_ATTESTED; DEC-001–004 and live/update/activation/
+filesystem-symlink limitations remain. Memory Impact: NONE.
+No subsequent task or model/quota/publication authority follows from this handoff.
 

@@ -1811,3 +1811,26 @@ Task status: DONE for Prompt 27 documentation/offline checks. Memory Impact: NON
 No product/runtime/permission/global/release change. DEC-001–004 remain open.
 Safe to continue: YES for user-requested Prompt 28 Release Tooling; owner gates,
 native behavior and final acceptance cannot be inferred from this completion.
+
+## Prompt 28 checks
+
+Observed **2026-09-29**, initial main HEAD
+f368ecf736c3b4d9558e77ab030487a00f071602 and clean tree/index. P27 committed.
+No applicable ancestor instructions or developer-project Memory. Scope:
+developer-only local release engineering and available offline execution.
+
+| Check | Applicability | Command / method | Inspected scope | Status | Observed result | Evidence | Limitations | Baseline relation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| P28-C01 Baseline/contracts/sources | Required before changes | Git metadata/status, Build Contract/state, packaging/tests/AST provenance and six official pages | Actual checkout and chosen submission documentation | PASS | Existing standard-library toolchain reused; real base recorded; owner fields unset | [REL28 sources](../research/SOURCES.md#prompt-28-release-source-check), [source record](../../dist/releases/p28-run-02/source-revision.json) | Docs not portal/account evidence; one read-only console encoding error corrected | P27 preserved; no new release identity |
+| P28-C02 Pipeline/reproducibility | Required available execution | python -B tools/release_candidate.py --output dist/releases/p28-run-01 and p28-run-02 | Six local stages and three ZIPs built twice per run | PASS | Both exits 0; complete inventories/archive bytes equal | [Final commands/results](../../dist/releases/p28-run-02/pipeline.json), [first run](../../dist/releases/p28-run-01/pipeline.json) | PACKAGE_VALIDATED_WITH_LIMITATIONS only; no host/publish/signing | Final follows summary-exit clarity and empty-evidence guard; history retained |
+| P28-C03 Candidate/static/regressions | Required available tests | Actual static/packaging/release child argv in pipeline.json | Candidate ZIPs, 16 groups/21 negatives, eight new helper regressions | PASS | 37 static PASS; eight helper PASS; ten packaging PASS | [Validation report](../evidence/release/validation-report.md) | Not full schema, behavioral compliance, native isolation or comprehensive secrets scan | Existing mandatory assertions/fixtures retained; static defaults preserved |
+| P28-C04 Filesystem-symlink probe | Existing additional OS-dependent check | Packaging PKG-08 | Actual local symlink creation | BLOCKED | Windows 1314; no privilege elevation | [Packaging result](../../dist/releases/p28-run-02/evidence/packaging.json) | ZIP symlink/path negatives passed separately; no POSIX execution | Same explicit P23 limit; not relabeled PASS |
+| P28-C05 Inventory/security/release gates | Required output | Computed hashes, static import/citation inventory, input delta and authored procedures | Four version values, 112 inputs, three archives, dev/payload split, six targets | PASS | UNSET consistent; zero payload runtime deps; 38 citations; license intact; NOT_SIGNED/NOT_ATTESTED/NOT_PUBLISHED | [Readiness](../../dist/releases/p28-run-02/readiness.md), [runbook](../release/runbook.md), [submission](../release/submission-checklists.md), [lifecycle](../release/security-lifecycle.md) | Ordinary inventories not formal SBOM or legal clearance; checksum not identity; human gates open | No allowlisted product input delta against P23 |
+| P28-C06 Closure/trace | Required close | Read-only link/hash/record/requirement audit; git diff --check | Build state, eleven trace additions, local artifacts and original product/history | PASS | Current 80 IDs/full NOT_RUN, nine issues/four decisions, next29; evidence consistency checked | [Closure record](../evidence/release/closure-audit.json) | Later build-state documentation does not change tested product bytes; no native upgrade | 79 partial/1 not implemented unchanged |
+| P28-C07 Host/signing/publication | Outside authorized local execution; required before dependent claims | No native/model/account/signing/publish action | Six targets and unapproved release identity/destination | NOT_RUN | Host state unchanged; no credentials or account settings requested | [Live matrix](../compatibility/live-test-matrix.md), [owner decisions](DECISIONS.md) | No HOST_VERIFIED/PUBLISHED claim from package checks | P25/P26 evidence and all owner gaps preserved |
+
+Task status: DONE for requested local release engineering and available checks.
+Publication readiness remains BLOCKED. Memory Impact: NONE. No consumer runtime,
+new dependency, global/organization permission change, commit/tag/push/publish
+or marketplace registration. Safe to continue: YES for user-requested
+Prompt 29 Gap Audit with current owner/native/final acceptance gaps retained.

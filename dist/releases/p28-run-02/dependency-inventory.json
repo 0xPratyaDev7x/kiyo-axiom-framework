@@ -1,0 +1,60 @@
+{
+  "developer": {
+    "git": "See source-revision.json",
+    "python": "3.11.9",
+    "python_packages_required": [],
+    "repository_modules": [
+      "contracts",
+      "package_claude",
+      "package_codex",
+      "package_copilot",
+      "package_distributions",
+      "release_candidate",
+      "test_contracts",
+      "test_distributions",
+      "verify_payload"
+    ],
+    "stdlib_imports": [
+      "argparse",
+      "ast",
+      "collections",
+      "datetime",
+      "hashlib",
+      "io",
+      "json",
+      "os",
+      "pathlib",
+      "platform",
+      "posixpath",
+      "re",
+      "shutil",
+      "stat",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "traceback",
+      "unittest",
+      "urllib",
+      "zipfile"
+    ]
+  },
+  "formal_sbom": false,
+  "format": "kiyo-dependency-inventory-1",
+  "host_prerequisites": "External native host/account/policy; not bundled runtime dependencies",
+  "limitations": "Reviewed static imports/tooling; not an installed-machine inventory or formal SBOM",
+  "payload_executables_hooks_mcp": [],
+  "payload_runtime_dependencies": [],
+  "scope": [
+    "tools/packaging-inputs.json",
+    "tools/package_distributions.py",
+    "tools/package_claude.py",
+    "tools/package_codex.py",
+    "tools/package_copilot.py",
+    "tools/verify_payload.py",
+    "tools/release_candidate.py",
+    "tests/packaging/test_distributions.py",
+    "tests/static/contracts.py",
+    "tests/static/test_contracts.py",
+    "tests/release/test_release.py"
+  ]
+}

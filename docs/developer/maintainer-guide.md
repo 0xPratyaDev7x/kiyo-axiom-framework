@@ -103,7 +103,8 @@ Local acceptance is not curated approval. Critical unsafe behavior, secret
 exposure or fabricated check results block release; missing required evidence
 cannot be relabeled optional.
 
-Prompt 28 release tooling, Prompt 29 gap audit and Prompt 30 final acceptance
-are subsequent work, not implemented by this guide. No command here commits,
+Prompt 28 adds the [local release runbook](../release/runbook.md) and actual
+offline rehearsal; publication remains blocked. Prompt 29 gap audit and Prompt 30
+final acceptance remain subsequent work. No command here commits,
 tags, pushes, submits or publishes. Keep [build state](../build/PROGRESS.md),
 traceability and honest limitations current.

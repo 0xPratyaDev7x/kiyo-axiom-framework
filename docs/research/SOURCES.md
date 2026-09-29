@@ -382,3 +382,24 @@ The [user guide](../user/README.md) cites shipped contracts and the
 illustrative/synthetic expected behavior, NOT_RUN. No external API/quota,
 installation, publication or account operation was performed in Prompt 27.
 
+## Prompt 28 release source check
+
+Checked **2026-09-29**. All six successful official fetches returned the requested
+URL below; no redirect was reported. Status **DOCUMENTED_ONLY**. These support
+inactive submission checklists, not account verification, portal acceptance,
+native execution or publication.
+
+| ID | Requested URL / actual destination | Inspected requirement | Limitation |
+| --- | --- | --- | --- |
+| REL28-01 | [Claude publication](https://code.claude.com/docs/en/plugins/publish) — same URL | Custom catalog versus directory/official marketplace, metadata, validation and review | No submission/listing or account check; P26 strict failure retained |
+| REL28-02 | [OpenAI packaging](https://developers.openai.com/plugins/build/plugins) — same URL | Static skill package and native metadata boundary | Current development schema does not establish public ingestion readiness |
+| REL28-03 | [OpenAI submission](https://developers.openai.com/plugins/deploy/submission) — same URL | Skills only route, real identity/role, scans and review distinct from publication | No portal/account action; broad materials table must be read with track-specific requirements |
+| REL28-04 | [OpenAI submission errors](https://developers.openai.com/plugins/deploy/submission-errors) — same URL | Skills-only optional URLs; scans/identity/attestations; remote-MCP-only additional requirements | No MCP, endpoint/domain proof, demo credentials or fake attestations added to Kiyo |
+| REL28-05 | [Copilot CLI plugin reference](https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-plugin-reference) — same URL | Prepared source/catalog and managed controls | Custom native discovery is not curated listing acceptance |
+| REL28-06 | [VS Code agent plugins](https://code.visualstudio.com/docs/agent-customization/agent-plugins) — same URL | Source/catalog UI and client-specific support | No VSIX/runtime or automatic cross-client support inferred |
+
+[Submission checklists](../release/submission-checklists.md) leave owner metadata,
+destination, authority and live evidence unresolved. The
+[local release runbook](../release/runbook.md) builds without credentials/network;
+ordinary inventories are not formal SBOMs, signatures or attestations.
+

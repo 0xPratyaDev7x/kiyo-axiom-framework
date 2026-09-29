@@ -1,0 +1,282 @@
+{
+  "bundled_third_party_runtime_components": [],
+  "formal_sbom": false,
+  "format": "kiyo-attribution-inventory-1",
+  "limitations": "No legal clearance or license grant inferred for external documents. No external text fetched by pipeline; ISO full text is not bundled. Human review of authored prose remains required.",
+  "project_license": {
+    "observed_heading": "MIT License",
+    "path": "LICENSE",
+    "publication_confirmation": "OWNER_REQUIRED",
+    "sha256": "8e0c945706c844311a05cdd010ce2a67f373118c4474529b9c0cae62d2c6b070"
+  },
+  "third_party_reference_citations": [
+    {
+      "canonical_files": [
+        "src/kiyo/profiles/angular.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://angular.dev/reference/configs/workspace-config"
+    },
+    {
+      "canonical_files": [
+        "platforms/claude/resources/activation.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://code.claude.com/docs/en/memory"
+    },
+    {
+      "canonical_files": [
+        "platforms/claude/resources/activation.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://code.claude.com/docs/en/plugins/components"
+    },
+    {
+      "canonical_files": [
+        "platforms/claude/resources/activation.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://code.claude.com/docs/en/skills"
+    },
+    {
+      "canonical_files": [
+        "platforms/claude/resources/activation.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://code.claude.com/docs/en/vs-code"
+    },
+    {
+      "canonical_files": [
+        "platforms/copilot/resources/activation.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://code.visualstudio.com/docs/agent-customization/agent-skills"
+    },
+    {
+      "canonical_files": [
+        "platforms/copilot/resources/activation.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://code.visualstudio.com/docs/agent-customization/custom-instructions"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/framework/engineering/standards-mapping.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://csrc.nist.gov/pubs/sp/800/218/final"
+    },
+    {
+      "canonical_files": [
+        "platforms/copilot/resources/activation.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/add-custom-instructions"
+    },
+    {
+      "canonical_files": [
+        "platforms/copilot/resources/activation.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/add-skills"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/agent-security/owasp-ast10.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://genai.owasp.org/2025/12/09/owasp-top-10-for-agentic-applications-the-benchmark-for-agentic-security-in-the-age-of-autonomous-ai/"
+    },
+    {
+      "canonical_files": [
+        "platforms/codex/resources/activation.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://learn.chatgpt.com/docs/agent-configuration/agents-md"
+    },
+    {
+      "canonical_files": [
+        "platforms/codex/resources/activation.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://learn.chatgpt.com/docs/build-skills"
+    },
+    {
+      "canonical_files": [
+        "platforms/codex/resources/activation.md",
+        "src/kiyo/agent-security/control-ownership.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://learn.chatgpt.com/docs/plugins"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/profiles/dotnet.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://learn.microsoft.com/en-us/dotnet/core/testing/"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/profiles/dotnet.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://learn.microsoft.com/en-us/dotnet/core/tools/global-json"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/agent-security/owasp-ast10.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://owasp.github.io/www-project-agentic-skills-top-10/"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/agent-security/owasp-ast10.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://owasp.github.io/www-project-agentic-skills-top-10/ast01.html"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/agent-security/owasp-ast10.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://owasp.github.io/www-project-agentic-skills-top-10/ast02.html"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/agent-security/owasp-ast10.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://owasp.github.io/www-project-agentic-skills-top-10/ast03.html"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/agent-security/owasp-ast10.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://owasp.github.io/www-project-agentic-skills-top-10/ast04.html"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/agent-security/owasp-ast10.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://owasp.github.io/www-project-agentic-skills-top-10/ast05.html"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/agent-security/owasp-ast10.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://owasp.github.io/www-project-agentic-skills-top-10/ast06.html"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/agent-security/owasp-ast10.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://owasp.github.io/www-project-agentic-skills-top-10/ast07.html"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/agent-security/owasp-ast10.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://owasp.github.io/www-project-agentic-skills-top-10/ast08.html"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/agent-security/owasp-ast10.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://owasp.github.io/www-project-agentic-skills-top-10/ast09.html"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/agent-security/owasp-ast10.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://owasp.github.io/www-project-agentic-skills-top-10/ast10.html"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/agent-security/application-security.md",
+        "src/kiyo/framework/engineering/standards-mapping.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://owasp.org/projects/asvs"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/profiles/python.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://packaging.python.org/en/latest/guides/writing-pyproject-toml/"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/framework/engineering/standards-mapping.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://www.iso.org/standard/72089.html"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/framework/engineering/standards-mapping.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://www.iso.org/standard/78176.html"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/framework/engineering/standards-mapping.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://www.iso.org/standard/79428.html"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/framework/engineering/standards-mapping.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://www.iso.org/standard/79429.html"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/framework/engineering/standards-mapping.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://www.iso.org/standard/79430.html"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/framework/engineering/standards-mapping.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://www.iso.org/standard/81291.html"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/framework/engineering/standards-mapping.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://www.iso.org/standard/90219.html"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/profiles/postgresql.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://www.postgresql.org/docs/current/libpq-exec.html"
+    },
+    {
+      "canonical_files": [
+        "src/kiyo/profiles/postgresql.md"
+      ],
+      "treatment": "Reference attribution, not vendored runtime",
+      "url": "https://www.postgresql.org/docs/current/tutorial-transactions.html"
+    }
+  ]
+}

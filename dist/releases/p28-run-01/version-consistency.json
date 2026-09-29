@@ -1,0 +1,12 @@
+{
+  "product_version": "UNSET",
+  "publication_version_gate": "OWNER_REQUIRED",
+  "scope": "Manifest identity/version equality; not semantic-version/schema or owner approval",
+  "status": "PASS",
+  "values": {
+    "derived:.codex-plugin/plugin.json": null,
+    "platforms/claude/.claude-plugin/plugin.json": null,
+    "platforms/codex/plugin.json": null,
+    "platforms/copilot/plugin.json": null
+  }
+}

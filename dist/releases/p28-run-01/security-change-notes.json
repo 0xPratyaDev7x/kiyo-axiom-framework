@@ -1,0 +1,13 @@
+{
+  "ast_controls": [
+    "KIYO-SEC-004",
+    "KIYO-SEC-005",
+    "KIYO-SEC-007",
+    "KIYO-SEC-009"
+  ],
+  "baseline": "docs/evidence/packaging/artifact-inventory.json",
+  "baseline_sha256": "f6b27d1153fef40784cf774043737b7bcf4874401a624ac6cbb8edc735e3bd10",
+  "changed_product_inputs": [],
+  "limitations": "No changed allowlisted bytes does not close prior native/behavior/security gaps",
+  "review": "Compare changed instructions, metadata, resources, access/destinations and approvals"
+}

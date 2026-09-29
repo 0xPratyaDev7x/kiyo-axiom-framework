@@ -1,9 +1,38 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **27 Documentation**.
-Task status: **DONE for the requested documentation and offline checks**.
-Native workflow/activation evidence remains unchanged; full six-target integration
-acceptance remains PARTIALLY COMPLETE.
+Snapshot: 2026-09-29. Current prompt: **28 Release Tooling**.
+Task status: **DONE for developer tooling, local artifacts and available checks**.
+Local package status: **PACKAGE_VALIDATED_WITH_LIMITATIONS**. Host verification
+is not promoted; publication remains **BLOCKED / NOT_PUBLISHED**.
+
+## Prompt 28 delivered scope
+
+- [Local coordinator](../../tools/release_candidate.py) reuses existing builders
+  and tests: Validate → Package twice → Inspect payload → Run tests → inventory →
+  readiness. No CI/publish automation or consumer runtime added.
+- [Final rehearsal](../../dist/releases/p28-run-02/pipeline.json) exits 0; first
+  run retained. Three actual ZIPs and complete inventories reproduce exactly.
+  [Checksums](../../dist/releases/p28-run-02/SHA256SUMS) match unchanged product
+  bytes; actual base f368ecf736c3b4d9558e77ab030487a00f071602 plus worktree hashes.
+- 37 static/negative checks PASS against the selected fresh candidate; eight
+  release-tool regressions PASS. Packaging records ten PASS and PKG-08 BLOCKED
+  (Windows 1314); no hidden exception or native acceptance.
+- Four manifest version values consistently UNSET. Actual dependency/attribution
+  inventories record no payload runtime dependency and 38 reference citations;
+  these are not formal SBOMs. Signature NOT_SIGNED; provenance NOT_ATTESTED.
+- [Runbook](../release/runbook.md), [submission gates](../release/submission-checklists.md)
+  and [security lifecycle](../release/security-lifecycle.md) retain real owner
+  inputs, per-target evidence, disclosure/update/revocation and human authority.
+  [Six official pages](../research/SOURCES.md#prompt-28-release-source-check)
+  rechecked, no portal/account action.
+- [Validation report](../evidence/release/validation-report.md) separates local
+  package checks from HOST_VERIFIED and PUBLISHED. Current Core/skills/overlays,
+  original packages and LICENSE remain unchanged.
+
+REQ-006/053/059/064–067/076/077/079/080 gain partial tooling/documentation evidence.
+All 80 full verifications remain NOT_RUN (79 partial / 1 not implemented).
+No commit/tag/push/publish/register/global/account change or model/quota use.
+Memory Impact: **NONE**. Native/owner gaps remain release blockers.
 
 ## Prompt 27 delivered scope
 
@@ -902,7 +931,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 25 | Behavioral Tests | DONE | User selected offline: 48 host cases NOT_RUN; 13 helper checks PASS; no behavioral metrics |
 | 26 | Live Host Tests | DONE | Selected no-quota subset: Claude native discovery/validation; Codex disposable install/cache/uninstall; full six-target acceptance partial |
 | 27 | Documentation | DONE | Ten user/maintainer/draft documents; nine illustrative NOT_RUN walkthroughs; actual offline documentation audit; native gaps preserved |
-| 28 | Release Tooling | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 28 | Release Tooling | DONE | Two retained local rehearsals; exact candidate tests/inventories; package validated with Windows symlink limitation; NOT_SIGNED/NOT_ATTESTED/NOT_PUBLISHED |
 | 29 | Gap Audit | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 30 | Final Acceptance | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 
@@ -913,9 +942,9 @@ NOT_STARTED is a roadmap planning marker, not an additional task-result status.
 DEC-001 name, DEC-002 release license, DEC-003 publisher/destination and DEC-004
 Codex IDE treatment remain open. No release version, signature or approval invented.
 
-Safe to continue: **YES for a user-requested Prompt 28 Release Tooling**.
-Use the actual scoped results and retain NOT_TESTED/UNSUPPORTED gaps; release
-tooling must preserve owner gates and cannot establish release readiness by itself.
-No later model/quota/publication authority follows from P26 or P27.
-Next prompt: **28 Release Tooling**, only when requested by the user.
+Safe to continue: **YES for a user-requested Prompt 29 Gap Audit**.
+Reconcile actual acceptance evidence and open owner/native gates. A successful
+local release rehearsal is not publication readiness or full host verification.
+No later model/quota/publication authority follows from this step.
+Next prompt: **29 Gap Audit**, only when requested by the user.
 

@@ -12,7 +12,13 @@ Run from the repository root, using a fresh evidence filename:
 python -B tests/static/test_contracts.py --report docs/evidence/static/test-results-new.json
 ```
 
-An existing report is refused. Exit 0 means all selected assertions and required
+An existing report is refused. To inspect a fresh release candidate, supply both
+--inventory <candidate-inventory.json> and --archives <candidate-ZIP-directory>;
+without them, the retained P23 inventory/dist/archives remain the defaults.
+Candidate selection does not relax any group or negative fixture. Previous
+reports keep their original source hashes and scope.
+
+Exit 0 means all selected assertions and required
 rejections passed; exit 1 retains failures. JSON records command, exit code,
 stdout/stderr, UTC times, Python/OS, Git base observation, consulted/source/tool/
 fixture hashes, per-check scope/results and actual isolated subprocesses.
