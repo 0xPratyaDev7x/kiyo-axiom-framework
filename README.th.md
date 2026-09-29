@@ -3,7 +3,7 @@
 
 **ให้ AI coding agent ทำงานแบบวิศวกรมืออาชีพ: อ่านโปรเจกต์จริงก่อนลงมือ แก้แค่ที่สั่ง และรายงานตามหลักฐานจริง**
 
-📖 **อ่านเอกสารฉบับเต็มได้ที่ [kiyo-axiom.codejadee.com](https://kiyo-axiom.codejadee.com/)**
+📖 **อ่านเอกสารฉบับเต็มได้ที่ [https://kiyo-axiom.codejadee.com](https://kiyo-axiom.codejadee.com/)**
 
 Kiyo เป็นชุด Skill แบบ Markdown สำหรับ Claude Code, Codex และ GitHub Copilot
 ติดตั้งแล้วใช้ได้ทันที ไม่มี runtime, MCP, hook, database หรือ watcher ให้ดูแลเพิ่ม
