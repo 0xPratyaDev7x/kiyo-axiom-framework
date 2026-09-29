@@ -1834,3 +1834,51 @@ Publication readiness remains BLOCKED. Memory Impact: NONE. No consumer runtime,
 new dependency, global/organization permission change, commit/tag/push/publish
 or marketplace registration. Safe to continue: YES for user-requested
 Prompt 29 Gap Audit with current owner/native/final acceptance gaps retained.
+
+
+## Prompt 29 checks
+
+Date: 2026-09-29. Authorized completeness audit and targeted fixes; no host/model/
+quota or publication action. Baseline main, HEAD
+f5cb303b1713ce6f103760c0cad05fcd7e086fcf; initially clean. No applicable ancestor
+instructions or project .kiyo. This is author self-audit, not independent audit.
+
+[FINAL-GAP-AUDIT](FINAL-GAP-AUDIT.md) and [ledger](requirement-audit.json) reconcile
+all 80 unchanged criteria, actual files/procedures/cases/results and remaining
+limits: 78 authored IMPLEMENTED, REQ-010/061 PARTIALLY_IMPLEMENTED; every full
+registered acceptance verification stays NOT_RUN. 22 invariants assessed; 13
+gap records (four fixed, nine open), each with owner, next action and blocking scope.
+
+[Regression evidence](../evidence/gap-audit/validation-report.md) records:
+- Exact-stage failure reproduction: exit 1, nine test methods/ten failing subtests;
+  after fix exit 0/nine PASS. Existing negatives preserved and strengthened.
+- Readiness-write failure reproduction: exit 1, ten methods/one error; after fix
+  exit 0/ten PASS. Success record now waits for required readiness report I/O.
+- Two real fresh local pipelines exit 0; final p29-run-02 runs 37 static and ten
+  release regressions PASS, packaging ten PASS/PKG-08 BLOCKED (Windows 1314).
+- Eight ledger integrity/negative regressions PASS against final candidate;
+  no acceptance criterion was shortened or fake live result generated.
+- [Closure audit](../evidence/gap-audit/closure-audit-final.json) records current
+  paths/anchors/trace/build-state/hash and Git-scope checks.
+
+Final pipeline: Python 3.11.9, Windows-10-10.0.26200-SP0;
+2026-09-29T14:28:56.893334+00:00 to 2026-09-29T14:31:14.763330+00:00.
+[Actual commands/exits/source hashes](../../dist/releases/p29-run-02/pipeline.json)
+and [checksum file](../../dist/releases/p29-run-02/SHA256SUMS) preserve provenance
+limits. Two content inventories/archives reproduce exactly; 112 inputs and all
+three artifact hashes match P23. Eight Skills per archive and all shared references
+remain contained. No canonical content, native metadata, LICENSE or product byte
+changed. Selected schema/property tests do not establish behavioral safety.
+
+[Fix log](../evidence/gap-audit/fix-changelog.md) also records obsolete worked
+paths/native summary and stale implementation labels. Two preliminary read-only
+inspection syntax/encoding errors were corrected; no file mutation resulted.
+
+Static/manual inspection PASS is distinct from P25's 48 NOT_RUN observations,
+bounded historical forward-trial reports and P26's target-specific subsets.
+No new native evidence was created; no account absence, model identity or runtime
+enforcement inferred. Codex IDE plugin route remains UNSUPPORTED. Strict Claude
+validation and Codex public ingestion still fail missing owner metadata.
+General release BLOCKED, NOT_PUBLISHED, NOT_SIGNED, NOT_ATTESTED; full product
+acceptance and DEC-001–004 stay open. Memory Impact NONE.
+Safe to continue YES for user-requested Prompt 30 Final Acceptance; stop here.

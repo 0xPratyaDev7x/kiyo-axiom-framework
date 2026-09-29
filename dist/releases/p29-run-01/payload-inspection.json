@@ -1,0 +1,31 @@
+{
+  "limitation": "Static checker, not host loading or comprehensive secret scanning",
+  "scope": "Actual regular contained extraction, allowlist, eight Skills and relative references",
+  "scratch": "C:\\Users\\praty\\AppData\\Local\\Temp\\kiyo p28 release xygb_w9t",
+  "targets": {
+    "claude": {
+      "files": 794,
+      "local_links": 4956,
+      "payload_digest": "f4db50436dbed4f9158420dc36ef39ae2176bc4d74e387c78a325dd7d9e7d007",
+      "result": "PASS",
+      "shared_per_skill": 97,
+      "skills": 8
+    },
+    "codex": {
+      "files": 795,
+      "local_links": 4956,
+      "payload_digest": "0b6bdbf0526f4717e73729f989c4444bc9ed693870d035b0c49b6277f3f6fae4",
+      "result": "PASS",
+      "shared_per_skill": 97,
+      "skills": 8
+    },
+    "copilot": {
+      "files": 794,
+      "local_links": 4964,
+      "payload_digest": "819e8909c4341dabd1ff924d9188d280a709916b89e4e6a50d493912ebd134c2",
+      "result": "PASS",
+      "shared_per_skill": 97,
+      "skills": 8
+    }
+  }
+}

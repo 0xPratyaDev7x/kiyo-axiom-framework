@@ -7,7 +7,10 @@ This document originally selected the architecture. Prompt 20 implements the
 [Claude development bundle](../compatibility/claude-package.md) and a bounded
 developer packager. Prompt 21 adds the [Codex development bundle](../compatibility/codex-package.md);
 Prompt 22 adds the [Copilot development bundle](../compatibility/copilot-package.md).
-All live installations remain pending.
+Current evidence (Prompt 29 audit, 2026-09-29): [P26 native subsets](../compatibility/live-test-matrix.md)
+include Claude discovery and Codex disposable install/cache/uninstall. Agent
+loading, automatic activation, update and full six-target acceptance remain
+unverified. Dated sections below retain their original implementation scope.
 
 ## Single authored source, self-contained derived resources
 
@@ -33,21 +36,22 @@ content must not depend on another skill's SKILL.md or a source checkout.
 
 ## Worked reference path
 
-All names below are **planned examples**, not existing procedures or a tested
-package. `review` is the selected internal skill slug, not a reserved marketplace
-namespace. The same transform applies to all eight skills.
+The paths below match the authored Review procedure and generated payload,
+checked in Prompt 29. `review` is the internal skill slug, not a reserved
+marketplace namespace. Static path parity does not prove host execution.
+The same transform applies to all eight skills.
 
-| Stage | Planned path / operation | Why it stays self-contained |
+| Stage | Current path / operation | Why it stays self-contained |
 | --- | --- | --- |
 | Canonical entry | `src/kiyo/skills/review/SKILL.md` references `../../KIYO.md` and `../../workflows/review.md` | One authored bootstrap and review procedure |
-| Shared rule | `workflows/review.md` references `../framework/evidence.md` and stable Kiyo IDs | Long evidence rules are written once |
-| Template | The procedure references `../templates/review-report.md` | Neutral template contains no developer project facts |
+| Shared rule | `workflows/review.md` references `../framework/evidence-contract.md` and stable Kiyo IDs | Long evidence rules are written once |
+| Template | The procedure references `../templates/reports/review-report.md` | Neutral template contains no developer project facts |
 | Build transform | Rewrite skill-entry links to `./references/kiyo/KIYO.md` and `./references/kiyo/workflows/review.md` | Installed SKILL.md does not escape its directory |
 | Shared snapshot | Copy shared files with their relative directory layout intact | `../framework/` and `../templates/` still resolve inside the same snapshot |
-| Native root | `dist/<ecosystem>/skills/review/SKILL.md` plus `references/kiyo/` and native manifest | Host loads its native entry; the agent follows real installed relative paths |
+| Native root | Claude: `dist/claude/`; Codex/Copilot: `dist/<ecosystem>/kiyo-compass/`; each contains `skills/review/SKILL.md` and its `references/kiyo/` | Each documented host reads its native entry; actual resource reads still require host evidence |
 | Consumer output | Authorized report in user-selected project location, or answer only in read-only mode | Output is mutable project state, never written into installed resources |
 
-Illustrative payload (no files created here):
+Payload shape (actual artifacts are linked from the distribution build guide):
 
 ```text
 <native-package-root>/

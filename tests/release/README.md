@@ -7,16 +7,19 @@ network, credentials, signing or publishing. Run with a fresh report path:
 python -B tests/release/test_release.py --report <fresh-developer-report.json>
 ```
 
-The [suite](test_release.py) checks eight properties: unset version remains an
+The [suite](test_release.py) checks ten properties: unset version remains an
 owner gate; mixed versions/type mismatches are rejected; identity mismatch is
 rejected; output escape/overwrite is refused with human bytes preserved;
 failed/blocked evidence cannot become unqualified PACKAGE_VALIDATED; a failed
 pipeline retains NOT_SIGNED/NOT_PUBLISHED error evidence; static tests read the
 explicit candidate and reject an escaping archive path; dependency/attribution
-inventory avoids fabricated runtimes and owner license approval.
+inventory avoids fabricated runtimes and owner license approval; incomplete,
+duplicate, unnamed, unknown or reordered stages cannot validate a package;
+a failed readiness-report write leaves a failed pipeline record and exit.
 
-These are regression checks for the new release tooling, not eight agent cases.
+These are developer release-tool regressions, not agent behavior cases.
 Temporary fixtures are retained for inspection. The pipeline also runs the
 existing static and packaging suites; mandatory negatives remain intact.
 See [runbook](../../docs/release/runbook.md) and
 [actual results](../../docs/evidence/release/validation-report.md).
+Prompt 29 preserves the [failing reproduction and rerun](../../docs/evidence/gap-audit/validation-report.md).

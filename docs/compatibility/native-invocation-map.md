@@ -1,5 +1,17 @@
 # Kiyo Compass — Native invocation map
 
+## Current evidence boundary — Prompt 29
+
+Audited 2026-09-29 against the [P26 live records](live-test-matrix.md) and shipped
+adapters. Claude CLI discovery and Codex local installation/cache/uninstall have
+bounded native evidence. **No explicit Skill invocation or automatic Core loading
+has a completed Kiyo host test.** Syntax below remains DOCUMENTED_ONLY or UNKNOWN
+as marked; Codex IDE native plugins remain UNSUPPORTED. Use the
+[current user selection table](../user/README.md#select-a-skill) and target protocols.
+The original baseline and P20–22 sections below are dated historical research,
+not a claim that later native checks never occurred. No new documentation fetch
+or host session was performed by this audit.
+
 Original baseline: **2026-09-28**; Claude rechecked **2026-09-29** under CL20-01–13; Codex under CX21-01–12; Copilot under CP22-01–16. Source IDs: [SOURCES](../research/SOURCES.md).
 Syntax below is **DOCUMENTED_ONLY**, not execution evidence.
 Skill invocation on all six targets is **NOT_TESTED**; Codex IDE plugin capability

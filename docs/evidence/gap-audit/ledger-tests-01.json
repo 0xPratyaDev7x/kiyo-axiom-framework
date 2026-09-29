@@ -1,0 +1,19 @@
+{
+  "command": [
+    "C:\\Users\\praty\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "-B",
+    "tests/audit/test_gap_audit.py",
+    "--report",
+    "docs/evidence/gap-audit/ledger-tests-01.json"
+  ],
+  "exit_code": 0,
+  "started_utc": "2026-09-29T14:25:54.462487+00:00",
+  "finished_utc": "2026-09-29T14:25:54.771882+00:00",
+  "tests_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "output": "test_01_actual_ledger_files_cases_and_evidence (__main__.AuditTests.test_01_actual_ledger_files_cases_and_evidence) ... ok\ntest_02_omission_and_duplicate_rejected (__main__.AuditTests.test_02_omission_and_duplicate_rejected) ... ok\ntest_03_acceptance_reduction_rejected (__main__.AuditTests.test_03_acceptance_reduction_rejected) ... ok\ntest_04_unowned_gap_rejected (__main__.AuditTests.test_04_unowned_gap_rejected) ... ok\ntest_05_fake_full_pass_rejected (__main__.AuditTests.test_05_fake_full_pass_rejected) ... ok\ntest_06_missing_or_escaping_resource_rejected (__main__.AuditTests.test_06_missing_or_escaping_resource_rejected) ... ok\ntest_07_release_claim_rejected (__main__.AuditTests.test_07_release_claim_rejected) ... ok\ntest_08_recorded_product_inputs_preserved (__main__.AuditTests.test_08_recorded_product_inputs_preserved) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.310s\n\nOK\n",
+  "ledger_sha256": "e8186e5019a503ab309194e3dc9a100fff3468294c0033fa6b7ba71ba6ed2caf",
+  "test_source_sha256": "bc296f0e77e21323c312b91f6e1d653fdcc21cd34626fb2ff51f1f05ed2559e7",
+  "limitations": "Ledger integrity and synthetic negatives only; no semantic, behavioral, native or standards conformance proof"
+}

@@ -15,6 +15,25 @@ One canonical specification with necessary self-contained native overlays.
 
 ## Current repository observation
 
+Prompt 29 baseline, 2026-09-29: main, HEAD
+f5cb303b1713ce6f103760c0cad05fcd7e086fcf; initially clean. No applicable ancestor
+AGENTS/CLAUDE or project .kiyo was found. No global/account/host/model/quota or
+publication operation was performed.
+
+Start with [FINAL-GAP-AUDIT](FINAL-GAP-AUDIT.md), [current TRACEABILITY](TRACEABILITY.md)
+and [ledger](requirement-audit.json). All 80 unchanged criteria are mapped;
+78 authored implementations, two partial native requirements, all full acceptance
+NOT_RUN. Manual/static checks and bounded historical/native records are separate.
+Thirteen gaps have actions/blocking scopes; four fixed, nine open.
+
+[Final P29 pipeline](../../dist/releases/p29-run-02/pipeline.json) records current
+developer tooling and unchanged product bytes. Read
+[regression evidence](../evidence/gap-audit/validation-report.md) and
+[fix changelog](../evidence/gap-audit/fix-changelog.md); retain failed reproductions.
+Do not use historical generic DONE labels as host or release acceptance.
+
+## Prompt 28 repository observation — historical
+
 Observed for Prompt 28 on 2026-09-29:
 
 - Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework.
@@ -1025,16 +1044,34 @@ developer-only. Future real version/owner fields require deliberate canonical/
 native/static-contract review, not weakening assertions to obtain green output.
 The tool creates a local rehearsal, never a publication-ready approval by itself.
 
+## Prompt 29 audit continuity
+
+The current matrix deliberately separates authored implementation from full
+verification. Do not restore the former blanket 79 partial/one unimplemented
+labels or promote static checks to agent behavior. Reserved TC-REQ IDs are still
+planned acceptance methods; the audit lists concrete partial cases/results.
+
+Two developer release fixes require six exact ordered stages and truthful failed
+readiness I/O. Existing 21 static negatives and 48 unrun behavioral observations
+remain intact. Documentation-only corrections fix old worked paths and distinguish
+historical research from current bounded native checks. Payload hashes match P23;
+no consumer component or native metadata was added.
+
+Use the eight ledger regressions in tests/audit/test_gap_audit.py only for ledger
+integrity; they do not establish semantic/host compliance. P26 historical checker
+remains pinned to P26. Real native/model tests still require actual environment,
+account and quota authority; the user's no-quota choice has not been overridden.
+
 ## Exact next action
 
-Prompt 28 release engineering and available checks are complete. Stop.
-**Next: Prompt 29 Gap Audit**, only when supplied by the user.
-Read Build Contract, full requirements/traceability, actual layer-separated
-evidence, release readiness and owner/native gaps. Reconcile criteria without
-promoting static evidence or silently filling missing metadata.
+Prompt 29 completeness audit and scoped fixes are complete. Stop.
+**Next: Prompt 30 Final Acceptance**, only when supplied by the user.
+Read Build Contract, FINAL-GAP-AUDIT, current traceability, final regression and
+per-target evidence plus owner gaps. Assess acceptance honestly; no publishing,
+new model/quota use or bypass of a release blocker follows automatically.
 
-Safe to continue: **YES for Prompt 29 Gap Audit**. Publication remains BLOCKED,
-NOT_PUBLISHED, NOT_SIGNED and NOT_ATTESTED; DEC-001–004 and live/update/activation/
-filesystem-symlink limitations remain. Memory Impact: NONE.
-No subsequent task or model/quota/publication authority follows from this handoff.
+Safe to continue: **YES for Prompt 30 Final Acceptance**. General release remains
+BLOCKED; NOT_PUBLISHED, NOT_SIGNED and NOT_ATTESTED. DEC-001–004 and full behavioral/
+native update/activation, metadata and filesystem limitations remain.
+Memory Impact: NONE.
 

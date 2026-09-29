@@ -51,9 +51,15 @@ class ReleaseTests(unittest.TestCase):
     def test_05_failed_or_blocked_evidence_never_plain_validated(self):
         self.assertEqual(release.package_status([], []), "PACKAGE_NOT_VALIDATED")
         self.assertEqual(release.package_status([{"status": "FAIL"}], []), "PACKAGE_NOT_VALIDATED")
-        self.assertEqual(release.package_status([{"status": "PASS"}], [{"id": "PKG-08"}]),
+        complete = [{"name": name, "status": "PASS"} for name in release.STAGES]
+        self.assertEqual(release.package_status(complete, [{"id": "PKG-08"}]),
                          "PACKAGE_VALIDATED_WITH_LIMITATIONS")
-        self.assertEqual(release.package_status([{"status": "PASS"}], []), "PACKAGE_VALIDATED")
+        self.assertEqual(release.package_status(complete, []), "PACKAGE_VALIDATED")
+        for index in range(len(complete)):
+            for status in ("FAIL", "BLOCKED", "NOT_RUN", "NOT_APPLICABLE"):
+                changed = [dict(row) for row in complete]
+                changed[index]["status"] = status
+                self.assertEqual(release.package_status(changed, []), "PACKAGE_NOT_VALIDATED")
 
     def test_06_pipeline_failure_retains_report_and_no_success(self):
         scratch = Path(tempfile.mkdtemp(prefix="kiyo p28 failure test "))
@@ -89,6 +95,42 @@ class ReleaseTests(unittest.TestCase):
         self.assertEqual(attribution["project_license"]["publication_confirmation"], "OWNER_REQUIRED")
         self.assertEqual(attribution["project_license"]["sha256"], release.sha((ROOT / "LICENSE").read_bytes()))
         self.assertTrue(attribution["third_party_reference_citations"])
+
+    def test_09_incomplete_or_reordered_pipeline_cannot_validate(self):
+        names = ("Validate", "Package", "Inspect payload", "Run tests",
+                 "Artifact inventory", "Release-readiness report")
+        complete = [{"name": name, "status": "PASS"} for name in names]
+        for index in range(len(complete)):
+            with self.subTest(missing=names[index]):
+                self.assertEqual(release.package_status(complete[:index] + complete[index+1:], []),
+                                 "PACKAGE_NOT_VALIDATED")
+        for invalid in (complete[::-1], complete + [complete[0]],
+                        [{"status": "PASS"}],
+                        [{"name": "SYNTHETIC UNKNOWN", "status": "PASS"}]):
+            with self.subTest(stages=invalid):
+                self.assertEqual(release.package_status(invalid, []), "PACKAGE_NOT_VALIDATED")
+
+    def test_10_readiness_write_failure_cannot_leave_success_record(self):
+        scratch = Path(tempfile.mkdtemp(prefix="kiyo p29 report failure "))
+        out = scratch / "dist/releases/failure"
+        original_write = release.write
+        def deny_readiness(path, value):
+            if path.name == "readiness.md":
+                raise OSError("SYNTHETIC readiness output unavailable")
+            original_write(path, value)
+        def completed_prerequisite(pipeline, name, action):
+            # Unit fixture only: isolate final report I/O, never claim a real build.
+            pipeline.stages.append({"name": name, "status": "PASS"})
+        with patch.object(release, "ROOT", scratch), patch.object(release.pack, "inputs", return_value={}), \
+                patch.object(release, "snapshot", return_value={}), \
+                patch.object(release.Pipeline, "stage", completed_prerequisite), \
+                patch.object(release, "write", deny_readiness), patch("sys.stdout", new=io.StringIO()):
+            self.assertEqual(release.run(out), 1)
+        result = json.loads((out / "pipeline.json").read_bytes())
+        self.assertEqual(result["exit_code"], 1)
+        self.assertEqual(result["package_status"], "PACKAGE_NOT_VALIDATED")
+        self.assertEqual(result["stages"][-1]["status"], "FAIL")
+        self.assertIn("SYNTHETIC readiness output unavailable", result["failure"])
 
 
 def main():

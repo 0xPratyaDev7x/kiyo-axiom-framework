@@ -27,6 +27,8 @@ SUPPORT = ("docs/build/REQUIREMENTS.md", "docs/build/TRACEABILITY.md",
            "tests/behavioral/agent-security/scenarios.md")
 TARGETS = ("claude-cli", "claude-vscode", "codex-cli", "codex-ide",
            "copilot-cli", "copilot-vscode")
+STAGES = ("Validate", "Package", "Inspect payload", "Run tests",
+          "Artifact inventory", "Release-readiness report")
 
 
 def now():
@@ -118,7 +120,8 @@ def review_inventories(inputs):
 
 def package_status(stages, blocked):
     # The optional Windows symlink probe never disappears into an exit-zero summary.
-    if not stages or any(s["status"] != "PASS" for s in stages):
+    if (tuple(s.get("name") for s in stages) != STAGES
+            or any(s.get("status") != "PASS" for s in stages)):
         return "PACKAGE_NOT_VALIDATED"
     return "PACKAGE_VALIDATED_WITH_LIMITATIONS" if blocked else "PACKAGE_VALIDATED"
 
@@ -295,9 +298,7 @@ def run(output):
     except Exception as error:
         state.update(exit_code=1, package_status="PACKAGE_NOT_VALIDATED",
                      failure=f"{type(error).__name__}: {error}")
-    state["finished_utc"] = now()
     state.pop("inventory", None)  # Full content/provenance is in its separate inventory.
-    write(output / "pipeline.json", state)
     summary = ["# Local release readiness", "", "Generated developer evidence; not a release or publication.",
                "", f"- Package: **{state['package_status']}**",
                "- Host: **NOT_HOST_VERIFIED** (six statuses in pipeline.json)",
@@ -311,7 +312,19 @@ def run(output):
                "", "Publication blockers:", *["- " + b for b in state["publication_blockers"]], ""]
     if "failure" in state:
         summary += ["Failure: " + state["failure"], ""]
-    write(output / "readiness.md", "\n".join(summary))
+    try:
+        write(output / "readiness.md", "\n".join(summary))
+    except (OSError, ValueError) as error:
+        failure = f"Readiness output failed: {type(error).__name__}: {error}"
+        state.update(exit_code=1, package_status="PACKAGE_NOT_VALIDATED",
+                     failure=(state.get("failure", "") + "; " + failure).lstrip("; "))
+        if pipeline.stages and pipeline.stages[-1]["name"] == "Release-readiness report":
+            pipeline.stages[-1].update(status="FAIL", error=failure)
+    if pipeline.stages and pipeline.stages[-1]["name"] == "Release-readiness report":
+        pipeline.stages[-1]["finished_utc"] = now()
+    state["finished_utc"] = now()
+    # Persist success only after required report I/O has actually succeeded.
+    write(output / "pipeline.json", state)
     print(json.dumps({"output": str(output), "package_status": state["package_status"],
                       "publication": state["publication_status"], "exit_code": state["exit_code"]}))
     return state["exit_code"]

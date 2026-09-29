@@ -304,3 +304,23 @@ approved decisions. Record the real authority, scope, evidence and date; preserv
 prior decisions and human edits rather than rewriting approved intent to match
 implementation drift.
 
+
+
+## Prompt 29 audit scope and status interpretation
+
+Authorized by the user's Prompt 29 request on 2026-09-29: audit all REQ-001–080,
+inspect actual files/evidence, fix targeted in-scope defects, run affected
+regressions, update build state and stop before Prompt 30.
+
+[Current audit](FINAL-GAP-AUDIT.md) treats IMPLEMENTED as authored static content/
+developer deliverable, independently of full acceptance verification. This corrects
+stale trace labels; it changes no acceptance criterion or native support claim.
+REQ-010 remains partial for unverified native selectors/unsupported route;
+REQ-061 remains partial for owner-incomplete release metadata/ingestion.
+Full registered verification remains NOT_RUN, with actual subsets separately linked.
+
+The two release-tool guards, current worked paths and evidence pointers are
+bounded corrections, not an architecture redesign, version assignment, schema
+expansion or release approval. DEC-001–004 remain OPEN. No new account, publisher,
+license, signature, host/quota or publication authority was inferred.
+

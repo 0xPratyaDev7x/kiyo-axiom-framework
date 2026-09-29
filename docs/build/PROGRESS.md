@@ -1,9 +1,35 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **28 Release Tooling**.
-Task status: **DONE for developer tooling, local artifacts and available checks**.
-Local package status: **PACKAGE_VALIDATED_WITH_LIMITATIONS**. Host verification
-is not promoted; publication remains **BLOCKED / NOT_PUBLISHED**.
+Snapshot: 2026-09-29. Current prompt: **29 Completeness Audit**.
+Task status: **DONE for the audit, targeted fixes and available regressions**.
+General product release: **BLOCKED**. No full HOST_VERIFIED or PUBLISHED claim.
+
+## Prompt 29 delivered scope
+
+- [Final gap audit](FINAL-GAP-AUDIT.md) and [80-row ledger](requirement-audit.json)
+  inspect actual criteria/files/cases/evidence: **78 IMPLEMENTED /
+  2 PARTIALLY_IMPLEMENTED (REQ-010/061)** for authored deliverables.
+  All full registered acceptance verifications remain NOT_RUN; scoped static
+  PASS is distinct. No requirement was changed or removed.
+- 22 invariants assessed; 13 classified gap records include next action,
+  control owner and blocking scope. Four records are fixed; nine remain open.
+  Owner/IDE/model/activation/update gates remain explicit.
+- Two release-tool defects fixed: incomplete/reordered stage evidence cannot
+  validate; required readiness write failure cannot leave a successful record.
+  Failing reproductions are retained with successful regressions.
+- Architecture worked paths/current native evidence pointers and stale trace
+  implementation labels corrected. Canonical content, eight Skills, manifests,
+  package bytes and existing LICENSE preserved.
+- [Fresh final pipeline](../../dist/releases/p29-run-02/pipeline.json) and
+  [regression report](../evidence/gap-audit/validation-report.md) carry actual
+  commands/results; package status retains WITH_LIMITATIONS for Windows PKG-08.
+  No host/model/account/quota/installation/signing/publication action occurred.
+- [Target recommendations](FINAL-GAP-AUDIT.md#per-target-readiness-recommendation)
+  permit only appropriately authorized development evaluation; Codex IDE native
+  plugin support stays UNSUPPORTED. Memory Impact NONE.
+
+Earlier sections below retain their dated prompt scope. Their counts, hashes
+and future-work descriptions are historical; the P29 ledger is current.
 
 ## Prompt 28 delivered scope
 
@@ -932,7 +958,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 26 | Live Host Tests | DONE | Selected no-quota subset: Claude native discovery/validation; Codex disposable install/cache/uninstall; full six-target acceptance partial |
 | 27 | Documentation | DONE | Ten user/maintainer/draft documents; nine illustrative NOT_RUN walkthroughs; actual offline documentation audit; native gaps preserved |
 | 28 | Release Tooling | DONE | Two retained local rehearsals; exact candidate tests/inventories; package validated with Windows symlink limitation; NOT_SIGNED/NOT_ATTESTED/NOT_PUBLISHED |
-| 29 | Gap Audit | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 29 | Gap Audit | DONE | All 80 IDs reconciled; 22 invariants; targeted release/documentation fixes with retained failures and actual regressions; release gates remain |
 | 30 | Final Acceptance | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 
 NOT_STARTED is a roadmap planning marker, not an additional task-result status.
@@ -942,9 +968,8 @@ NOT_STARTED is a roadmap planning marker, not an additional task-result status.
 DEC-001 name, DEC-002 release license, DEC-003 publisher/destination and DEC-004
 Codex IDE treatment remain open. No release version, signature or approval invented.
 
-Safe to continue: **YES for a user-requested Prompt 29 Gap Audit**.
-Reconcile actual acceptance evidence and open owner/native gates. A successful
-local release rehearsal is not publication readiness or full host verification.
+Safe to continue: **YES for user-requested Prompt 30 Final Acceptance**.
+Use FINAL-GAP-AUDIT and the current trace/evidence; retain every open release gate.
 No later model/quota/publication authority follows from this step.
-Next prompt: **29 Gap Audit**, only when requested by the user.
+Next prompt: **30 Final Acceptance**, only when requested by the user.
 
