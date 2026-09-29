@@ -1,5 +1,9 @@
 # Kiyo Compass
 
+Final build handoff: [Final Acceptance Report](docs/build/FINAL-ACCEPTANCE.md).
+Static content is authored and local packages validated with stated limits;
+full host acceptance and publication remain blocked. No public release exists.
+
 **AI Engineering & Governance Framework for coding agents.**
 
 Kiyo gives a coding agent a shared way to investigate a repository, choose the

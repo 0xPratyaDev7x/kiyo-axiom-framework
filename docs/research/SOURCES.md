@@ -403,3 +403,36 @@ destination, authority and live evidence unresolved. The
 [local release runbook](../release/runbook.md) builds without credentials/network;
 ordinary inventories are not formal SBOMs, signatures or attestations.
 
+## Prompt 30 publication source check
+
+Checked **2026-09-29**. The successful official fetches below returned exactly
+the linked requested URL; no redirect was reported. Links followed from another
+page are navigation, not inferred redirects. Status **DOCUMENTED_ONLY**.
+[Publication runbook](../release/publication-runbook.md) applies these sources
+only to an owner-authorized future route; no publication, account or host run.
+
+| ID | Requested URL / actual destination | Purpose | Limitation |
+| --- | --- | --- | --- |
+| PUB30-01 | [Claude publish](https://code.claude.com/docs/en/plugins/publish) — same | Custom versus directory/official channels; native command forms | Current docs can exceed local 2.1.220; no catalog/listing test |
+| PUB30-02 | [Claude submit](https://claude.com/docs/plugins/submit) — same, followed from PUB30-01 | Portal sequence and review/publication boundary | No account, form or approvals inspected |
+| PUB30-03 | [Claude checklist](https://claude.com/docs/plugins/pre-submission-checklist) — same, followed from PUB30-02 | README/license and file-count preflight | Local comparison only; not a portal rejection |
+| PUB30-04 | [OpenAI packaging](https://developers.openai.com/plugins/build/plugins) — same | Repository catalog and CLI source management | Desktop/workspace examples not IDE evidence |
+| PUB30-05 | [OpenAI submit](https://developers.openai.com/plugins/deploy/submission) — same | Skills-only submission, roles, review and publication | No authenticated form action |
+| PUB30-06 | [OpenAI errors](https://developers.openai.com/plugins/deploy/submission-errors) — same | Track-specific archive/identity/scan requirements | Refines broad materials table; no scan or ingestion rerun |
+| PUB30-07 | [OpenAI conversion guidance](https://developers.openai.com/plugins/guides/submit-claude-plugin) — same | Local-access review-route caveat | Applicability to Kiyo is a flagged inference for owner clarification |
+| PUB30-08 | [GitHub CLI reference](https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-plugin-reference) — same | Source/catalog lifecycle forms | Kiyo CLI NOT_TESTED |
+| PUB30-09 | [GitHub marketplace creation](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-marketplace) — same, followed from PUB30-08 | Custom catalog layout and source paths | Not acceptance into a curated repository |
+| PUB30-10 | [VS Code agent plugins](https://code.visualstudio.com/docs/agent-customization/agent-plugins) — same | Source/UI install and lifecycle | Kiyo IDE NOT_TESTED; not VSIX |
+| PUB30-11 | [OpenAI supported surfaces](https://learn.chatgpt.com/docs/plugins) — same | Codex IDE native plugin exclusion reconfirmed | Standalone Skills are a separate unadopted route |
+
+Read-only navigation to the official [OpenAI portal](https://platform.openai.com/plugins)
+returned that URL with no readable page lines; authenticated UI/role/identity
+remain UNKNOWN. The Claude portal address is documented by PUB30-02 and was not
+used. One attempted GitHub path ending `create-a-plugin-marketplace` returned
+an internal error/no matching content; it supports no claim. PUB30-09 was then
+obtained through the actual link in the official reference.
+
+Current native local versions remain the P26 observations, not new P30 runs.
+Other standards/AST pages retain their original check dates and draft/full-text
+limitations; this is not a blanket refresh of all vendor or standards sources.
+

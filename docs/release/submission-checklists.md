@@ -1,5 +1,10 @@
 # Native submission readiness checklists
 
+P30 final handoff: use the [exact publication runbook](publication-runbook.md)
+and [owner actions](owner-actions.md). Additional route-specific gates are
+GAP30-01 (Claude listing README/file-count review) and GAP30-02 (OpenAI local-access
+review-route clarification). Existing checkboxes remain unapproved.
+
 Checked **2026-09-29**. These are inactive review checklists, not submissions.
 [Source register](../research/SOURCES.md#prompt-28-release-source-check) records
 requested/returned URLs, status and limitations. All portal/curated behavior

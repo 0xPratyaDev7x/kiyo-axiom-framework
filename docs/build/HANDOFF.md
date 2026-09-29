@@ -13,7 +13,49 @@ Review, Test, Security, Architecture, Memory. Workflow Router, Governance Review
 Skill Audit and Self-check remain shared procedures/submodes.
 One canonical specification with necessary self-contained native overlays.
 
-## Current repository observation
+## Current repository observation — final step
+
+Prompt 30 baseline, 2026-09-29: main, HEAD
+f5a6b3b428eb4e7096e0620a52ee7ccdd2fbace4, initially clean. No applicable ancestor
+AGENTS/CLAUDE or project .kiyo found. No global/account/host/model/quota or
+publication operation occurred. The current worktree adds final delivery records
+and developer-only checking; this task creates no commit.
+
+Start with [FINAL-ACCEPTANCE](FINAL-ACCEPTANCE.md), the
+[owner actions](../release/owner-actions.md) and
+[publication runbook](../release/publication-runbook.md).
+Task DONE means the requested final assessment/handoff was delivered.
+Overall product acceptance remains PARTIALLY COMPLETE; public release BLOCKED.
+
+Readiness: CONTENT_READY for authored static content;
+PACKAGE_VALIDATED_WITH_LIMITATIONS; no full HOST_VERIFIED; PUBLISHING_READY false;
+PUBLISHED false. Product version UNSET; NOT_SIGNED / NOT_ATTESTED.
+[Final candidate](../../dist/releases/p30-run-01/pipeline.json) records actual
+base/input hashes and two identical builds. 37 static/10 release PASS;
+packaging 10 PASS, Windows filesystem-symlink probe BLOCKED.
+[Final evidence](../evidence/acceptance/validation-report.md) preserves scope.
+
+All 80 unchanged requirements retain 78 authored implementations / two partial
+(REQ-010/061); full AC verification remains NOT_RUN. P29's four fixed/nine open
+records are historical and preserved. P30 completes the assessment portion of
+GAP29-10, not human launch acceptance. GAP30-01 adds Claude directory preparation/
+file-count handling; GAP30-02 flags OpenAI local-access route clarification.
+No route has been silently selected or rejected.
+
+P25 48 cases remain NOT_RUN. P26 has two bounded native Codex checks PASS out of
+72 records plus partial Claude discovery/cache observations; no complete target
+workflow/activation/update or IDE claim. Codex IDE native plugins UNSUPPORTED,
+reconfirmed by PUB30-11; fallback requires DEC-004. Earlier no-quota authority
+persists. No new consumer runtime or policy enforcement exists.
+
+Use [80-ID delivery chain](../evidence/acceptance/p30-check-02/handoff-inventory.json)
+and candidate SHA256SUMS to inspect exact artifacts. Per-file inventory carries
+native transformations; payloads are unchanged from P29. Root README in this
+checkout is not a shipped Claude listing README. No supplied template placeholder
+is represented as populated owner metadata. Prior runs and failing reproductions
+stay intact. Source/contract snapshots predate final closure prose as recorded.
+
+## Prompt 29 repository observation — historical
 
 Prompt 29 baseline, 2026-09-29: main, HEAD
 f5cb303b1713ce6f103760c0cad05fcd7e086fcf; initially clean. No applicable ancestor
@@ -1064,14 +1106,19 @@ account and quota authority; the user's no-quota choice has not been overridden.
 
 ## Exact next action
 
-Prompt 29 completeness audit and scoped fixes are complete. Stop.
-**Next: Prompt 30 Final Acceptance**, only when supplied by the user.
-Read Build Contract, FINAL-GAP-AUDIT, current traceability, final regression and
-per-target evidence plus owner gaps. Assess acceptance honestly; no publishing,
-new model/quota use or bypass of a release blocker follows automatically.
+The 30-step build authoring, audit and final handoff process stops here.
+There is no Prompt 31. The next action belongs to the owner: review
+[FINAL-ACCEPTANCE](FINAL-ACCEPTANCE.md) and resolve the twelve
+[owner actions](../release/owner-actions.md), beginning with name/version/license,
+publisher, target/channel scope and actual verification authority.
 
-Safe to continue: **YES for Prompt 30 Final Acceptance**. General release remains
-BLOCKED; NOT_PUBLISHED, NOT_SIGNED and NOT_ATTESTED. DEC-001–004 and full behavioral/
-native update/activation, metadata and filesystem limitations remain.
-Memory Impact: NONE.
+Do not commit/tag/push/submit/publish or change remote/account/settings on the
+basis of Prompt 30. A future operator needs an explicit task and any scoped
+authority for the exact candidate/action; external gates remain binding.
+Preserve user Memory/policy and human instruction sections on any future native
+test, update or uninstall.
+
+Safe to continue: **YES for owner decisions and separately authorized follow-up**;
+**NO for public release or unverified support claims**. Product PARTIALLY COMPLETE,
+release BLOCKED. Final assessment/handoff DONE. Memory Impact NONE. Stop.
 

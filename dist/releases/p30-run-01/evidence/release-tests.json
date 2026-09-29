@@ -1,0 +1,24 @@
+{
+  "command": [
+    "C:\\Users\\praty\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "-B",
+    "tests/release/test_release.py",
+    "--report",
+    "C:\\Users\\praty\\source\\@0xPratya7x\\kiyo-codejadee-framework\\kiyo-codejadee-framework\\dist\\releases\\p30-run-01\\evidence\\release-tests.json"
+  ],
+  "errors": 0,
+  "exit_code": 0,
+  "failures": 0,
+  "finished_utc": "2026-09-29T14:46:12.097628+00:00",
+  "format": "kiyo-release-tests-1",
+  "limitations": "Developer helper and synthetic failure tests only; no host/signing/publication",
+  "output": "test_01_unset_is_consistent_but_not_release_version (__main__.ReleaseTests.test_01_unset_is_consistent_but_not_release_version) ... ok\ntest_02_mixed_versions_rejected (__main__.ReleaseTests.test_02_mixed_versions_rejected) ... ok\ntest_03_identity_mismatch_rejected (__main__.ReleaseTests.test_03_identity_mismatch_rejected) ... ok\ntest_04_output_scope_and_overwrite_refused (__main__.ReleaseTests.test_04_output_scope_and_overwrite_refused) ... ok\ntest_05_failed_or_blocked_evidence_never_plain_validated (__main__.ReleaseTests.test_05_failed_or_blocked_evidence_never_plain_validated) ... ok\ntest_06_pipeline_failure_retains_report_and_no_success (__main__.ReleaseTests.test_06_pipeline_failure_retains_report_and_no_success) ... ok\ntest_07_static_suite_reads_selected_candidate_and_refuses_escape (__main__.ReleaseTests.test_07_static_suite_reads_selected_candidate_and_refuses_escape) ... ok\ntest_08_unsigned_inventory_has_no_fabricated_dependencies (__main__.ReleaseTests.test_08_unsigned_inventory_has_no_fabricated_dependencies) ... ok\ntest_09_incomplete_or_reordered_pipeline_cannot_validate (__main__.ReleaseTests.test_09_incomplete_or_reordered_pipeline_cannot_validate) ... ok\ntest_10_readiness_write_failure_cannot_leave_success_record (__main__.ReleaseTests.test_10_readiness_write_failure_cannot_leave_success_record) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.426s\n\nOK\n",
+  "skipped": 0,
+  "source_sha256": {
+    "tests/release/test_release.py": "627f03c34447b30be6b0c5475e449b24cefed50f3132b33fc35777fd9e2216a0",
+    "tests/static/test_contracts.py": "732bd3c4e5d168f6eb99316010acb3731fe29cd278dc7884f44534c956b473d8",
+    "tools/release_candidate.py": "0827d90f4780c7dce9969b0d8fb89ed2ac388b71e6d95d268e47fe323fa14ccf"
+  },
+  "started_utc": "2026-09-29T14:46:11.671577+00:00",
+  "tests_run": 10
+}

@@ -1882,3 +1882,28 @@ validation and Codex public ingestion still fail missing owner metadata.
 General release BLOCKED, NOT_PUBLISHED, NOT_SIGNED, NOT_ATTESTED; full product
 acceptance and DEC-001–004 stay open. Memory Impact NONE.
 Safe to continue YES for user-requested Prompt 30 Final Acceptance; stop here.
+
+## Prompt 30 — final acceptance and stop
+
+Observed 2026-09-29: main, HEAD f5a6b3b428eb4e7096e0620a52ee7ccdd2fbace4;
+initial tree/index clean. No applicable ancestor AGENTS/CLAUDE or project .kiyo.
+Read Build Contract, all 80 ACs, current trace/decisions/gap ledger, actual
+product/packages and dated evidence; source research adds PUB30-01–11.
+No host/model/quota, signing, publication or global/account operation.
+
+| Check | Method / scope | Actual result / evidence | Limitation |
+| --- | --- | --- | --- |
+| P30-C01 Baseline and preserved inputs | Git root/branch/status; canonical/native/LICENSE and prior evidence | [Final checks](../evidence/acceptance/p30-check-02/checks.json), FA-01 | No production or independent audit claim |
+| P30-C02 Fresh available pipeline | Existing release_candidate.py, fresh p30-run-01, two builds | Exit 0; [actual six-stage record](../../dist/releases/p30-run-01/pipeline.json), 37 static/10 release PASS | Packaging ten PASS plus filesystem PKG-08 BLOCKED, Windows 1314 |
+| P30-C03 Inventory and provenance | Actual archive/member digests, eight Skills, source transformations and version checks | [Candidate inventory](../../dist/releases/p30-run-01/artifact-inventory.json), [80-ID handoff chain](../evidence/acceptance/p30-check-02/handoff-inventory.json) | Product version UNSET; checksums not signature/identity |
+| P30-C04 Requirement ledger | Existing eight audit regressions | [Exit 0/eight PASS](../evidence/acceptance/ledger-tests-01.json) | All 80 full verification methods still NOT_RUN |
+| P30-C05 Official route research | Eleven official documents/actual returned URLs | [Source register](../research/SOURCES.md#prompt-30-publication-source-check), DOCUMENTED_ONLY | One incorrect GitHub path failed then actual official link used; portal UI not inspected |
+| P30-C06 Final handoff checks | Developer-only acceptance_handoff.py; five checks, exact command/output in record | [Checks](../evidence/acceptance/p30-check-02/checks.json), [coverage report](../evidence/acceptance/validation-report.md) | Documents/bytes/evidence consistency, not host/behavior/publication |
+| P30-C07 Final decision | Separate five readiness dimensions and all owner gaps | [FINAL-ACCEPTANCE](FINAL-ACCEPTANCE.md), [owner actions](../release/owner-actions.md) | Task assessment DONE, product PARTIALLY COMPLETE, public release BLOCKED |
+
+All required build records updated. Four pillars/eight Skills and shared content
+are authored; three actual native static packages exist. Original requirements,
+product bytes and historical evidence preserved. No placeholder is represented
+as confirmed release metadata. Additional GAP30-01/02 have actions/blocking scopes.
+Memory Impact NONE. Safe to continue only for owner decisions/separately
+authorized follow-up; no publication authority. Next prompt: none. Stop.

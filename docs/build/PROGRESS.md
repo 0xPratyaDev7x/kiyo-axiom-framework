@@ -1,8 +1,27 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **29 Completeness Audit**.
-Task status: **DONE for the audit, targeted fixes and available regressions**.
-General product release: **BLOCKED**. No full HOST_VERIFIED or PUBLISHED claim.
+Snapshot: 2026-09-29. Current prompt: **30 Final Acceptance — final step**.
+Task status: **DONE for the requested acceptance assessment and local handoff**.
+Overall product acceptance: **PARTIALLY COMPLETE**. Public release: **BLOCKED**.
+No complete HOST_VERIFIED, PUBLISHING_READY or PUBLISHED claim.
+
+## Prompt 30 delivered scope
+
+- [Final Acceptance Report](FINAL-ACCEPTANCE.md) separates authored content,
+  package validation, independent host evidence and publication.
+- [Fresh pipeline](../../dist/releases/p30-run-01/pipeline.json): two identical
+  real builds, inventories/checksums/source revision; 37 static/10 release
+  regressions PASS, packaging 10 PASS / PKG-08 BLOCKED (Windows 1314).
+- [Final evidence](../evidence/acceptance/validation-report.md) and
+  [80-ID chain](../evidence/acceptance/p30-check-02/handoff-inventory.json)
+  retain 78 authored implementations/two partial native requirements.
+  All full acceptance checks remain NOT_RUN; no new host/model turn.
+- [Official publication runbook](../release/publication-runbook.md) and
+  [owner actions](../release/owner-actions.md) preserve missing inputs.
+  GAP30-01/02 add channel-specific preparation/review gates.
+- Original requirements/LICENSE, eight Skills, canonical/native bytes and prior
+  evidence preserved. No runtime, global settings, publication or release
+  approval added. Memory Impact NONE. Stop; no next numbered prompt.
 
 ## Prompt 29 delivered scope
 
@@ -959,7 +978,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 27 | Documentation | DONE | Ten user/maintainer/draft documents; nine illustrative NOT_RUN walkthroughs; actual offline documentation audit; native gaps preserved |
 | 28 | Release Tooling | DONE | Two retained local rehearsals; exact candidate tests/inventories; package validated with Windows symlink limitation; NOT_SIGNED/NOT_ATTESTED/NOT_PUBLISHED |
 | 29 | Gap Audit | DONE | All 80 IDs reconciled; 22 invariants; targeted release/documentation fixes with retained failures and actual regressions; release gates remain |
-| 30 | Final Acceptance | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 30 | Final Acceptance | DONE | Final assessment/local handoff delivered; product PARTIALLY COMPLETE, public release BLOCKED; actual P30 evidence and owner gates retained |
 
 NOT_STARTED is a roadmap planning marker, not an additional task-result status.
 
@@ -968,8 +987,8 @@ NOT_STARTED is a roadmap planning marker, not an additional task-result status.
 DEC-001 name, DEC-002 release license, DEC-003 publisher/destination and DEC-004
 Codex IDE treatment remain open. No release version, signature or approval invented.
 
-Safe to continue: **YES for user-requested Prompt 30 Final Acceptance**.
-Use FINAL-GAP-AUDIT and the current trace/evidence; retain every open release gate.
-No later model/quota/publication authority follows from this step.
-Next prompt: **30 Final Acceptance**, only when requested by the user.
+Safe to continue: **YES for owner decisions and separately authorized follow-up**;
+**NO for publication or full-host claims** while gates remain.
+Use FINAL-ACCEPTANCE and the owner-action list. No model/quota/publication authority
+follows automatically. Next prompt: **none — final step complete; stop**.
 

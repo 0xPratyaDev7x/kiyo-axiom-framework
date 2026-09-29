@@ -1,6 +1,6 @@
 # Kiyo Compass — Traceability
 
-Snapshot: **Prompt 29 Completeness Audit, 2026-09-29**.
+Snapshot: **Prompt 30 Final Acceptance, 2026-09-29**.
 Read [unchanged full criteria](REQUIREMENTS.md),
 [the per-requirement audit](FINAL-GAP-AUDIT.md) and
 [machine-readable evidence ledger](requirement-audit.json).
@@ -19,6 +19,19 @@ f5cb303b1713ce6f103760c0cad05fcd7e086fcf. Their dated evidence files are unchang
 Six targets remain independent; Codex IDE native plugins UNSUPPORTED.
 Owner DEC-001–004 stay open; publication remains BLOCKED.
 Every linked gap in the audit names next action and blocking scope.
+
+P30 [final assessment](FINAL-ACCEPTANCE.md), [fresh actual regression evidence](../evidence/acceptance/validation-report.md)
+and [80-ID package/evidence chain](../evidence/acceptance/p30-check-02/handoff-inventory.json)
+apply across every row below. Package content is unchanged; no full verification
+status is promoted. Direct output mappings distinguish shipped guidance from
+non-payload documentation/tooling. The P29 audit/ledger remains a dated record.
+
+[Owner actions](../release/owner-actions.md) retain all open gates. P30 delivers
+GAP29-10's assessment; human launch acceptance remains open. GAP30-01 adds a
+Claude-directory preparation gap affecting REQ-004/061/078/079; GAP30-02 adds
+OpenAI route clarification affecting REQ-004/061/079. Neither is a live portal
+failure, and neither changes authored-content counts. PUBLISHING_READY/PUBLISHED
+remain false. Final step stops here; no later prompt is automatically authorized.
 
 | Requirement | Acceptance criteria | Implementing files | Skills / shared procedures | Platform scope | Test cases | Actual evidence | Implementation status | Verification status | Remaining gap / decision |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

@@ -1,0 +1,83 @@
+{
+  "command": [
+    "C:\\Users\\praty\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "-B",
+    "-"
+  ],
+  "started_utc": "2026-09-29T15:02:29.711257+00:00",
+  "scope": "Final on-disk handoff/hash/preservation inspection, no new host/model or publication",
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "-c",
+        "safe.directory=C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework",
+        "-c",
+        "core.excludesFile=",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "f5a6b3b428eb4e7096e0620a52ee7ccdd2fbace4\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "safe.directory=C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework",
+        "-c",
+        "core.excludesFile=",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/release/submission-checklists.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/research/SOURCES.md', LF will be replaced by CRLF the next time Git touches it\n"
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "safe.directory=C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework",
+        "-c",
+        "core.excludesFile=",
+        "diff",
+        "--cached",
+        "--name-only"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "safe.directory=C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework",
+        "-c",
+        "core.excludesFile=",
+        "ls-files",
+        "--others",
+        "--exclude-standard"
+      ],
+      "exit_code": 0,
+      "stdout": "dist/releases/p30-run-01/SHA256SUMS\ndist/releases/p30-run-01/archives/kiyo-compass-claude-development.zip\ndist/releases/p30-run-01/archives/kiyo-compass-codex-development.zip\ndist/releases/p30-run-01/archives/kiyo-compass-copilot-development.zip\ndist/releases/p30-run-01/artifact-inventory.json\ndist/releases/p30-run-01/attribution-inventory.json\ndist/releases/p30-run-01/dependency-inventory.json\ndist/releases/p30-run-01/evidence/packaging.json\ndist/releases/p30-run-01/evidence/release-tests.json\ndist/releases/p30-run-01/evidence/static.json\ndist/releases/p30-run-01/payload-inspection.json\ndist/releases/p30-run-01/pipeline.json\ndist/releases/p30-run-01/readiness.md\ndist/releases/p30-run-01/repeat-inventory.json\ndist/releases/p30-run-01/reproducibility/kiyo-compass-claude-development.zip\ndist/releases/p30-run-01/reproducibility/kiyo-compass-codex-development.zip\ndist/releases/p30-run-01/reproducibility/kiyo-compass-copilot-development.zip\ndist/releases/p30-run-01/security-change-notes.json\ndist/releases/p30-run-01/source-revision.json\ndist/releases/p30-run-01/version-consistency.json\ndocs/build/FINAL-ACCEPTANCE.md\ndocs/evidence/acceptance/checker-before-01.py\ndocs/evidence/acceptance/ledger-tests-01.json\ndocs/evidence/acceptance/p30-check-01/checks.json\ndocs/evidence/acceptance/p30-check-02/SHA256SUMS\ndocs/evidence/acceptance/p30-check-02/checks.json\ndocs/evidence/acceptance/p30-check-02/handoff-inventory.json\ndocs/evidence/acceptance/validation-report.md\ndocs/release/owner-actions.md\ndocs/release/publication-runbook.md\ntools/acceptance_handoff.py\n",
+      "stderr": ""
+    }
+  ],
+  "checks": {
+    "final_checker_exit_zero": true,
+    "documentation_hashes_current": true,
+    "successful_checker_source_preserved": true,
+    "failed_checker_source_preserved": true,
+    "three_archives_current": true,
+    "complete_requirement_skill_chains": true,
+    "head_preserved": true,
+    "diff_check_and_index": true,
+    "new_files_within_scope": true
+  },
+  "new_file_count": 31,
+  "finished_utc": "2026-09-29T15:02:29.909955+00:00",
+  "exit_code": 0
+}

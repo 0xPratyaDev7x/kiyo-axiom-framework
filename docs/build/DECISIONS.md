@@ -324,3 +324,18 @@ bounded corrections, not an architecture redesign, version assignment, schema
 expansion or release approval. DEC-001–004 remain OPEN. No new account, publisher,
 license, signature, host/quota or publication authority was inferred.
 
+## Prompt 30 final assessment boundary
+
+The user authorized final acceptance inspection, local artifact/native publication
+handoff, current official-source runbook, final checks and closure of build state.
+This supplies no commit/tag/push/publish/marketplace submission, remote/account
+change or paid/model authority. No release identity, version, license change,
+publisher, signing mechanism or Codex IDE fallback was selected.
+
+[Final assessment](FINAL-ACCEPTANCE.md) records static content readiness and
+bounded package validation independently of full host and publication readiness.
+The owner still decides DEC-001–004 and the [remaining actions](../release/owner-actions.md).
+GAP30-01/02 are newly documented route-specific constraints, not accepted
+architecture changes or actual platform rejections. Product bytes remain unchanged.
+The 30-step process ends here; no later task is automatically authorized.
+

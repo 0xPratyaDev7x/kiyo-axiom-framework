@@ -1,0 +1,85 @@
+{
+  "format": "kiyo-final-acceptance-checks-1",
+  "command": [
+    "C:\\Users\\praty\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "-B",
+    "tools/acceptance_handoff.py",
+    "--output",
+    "docs/evidence/acceptance/p30-check-01"
+  ],
+  "started_utc": "2026-09-29T14:58:59.689779+00:00",
+  "checks": [
+    {
+      "id": "FA-01-baseline-preservation",
+      "started_utc": "2026-09-29T14:58:59.713802+00:00",
+      "status": "FAIL",
+      "error": "ValueError: LICENSE changed",
+      "finished_utc": "2026-09-29T14:58:59.833671+00:00"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "-c",
+        "safe.directory=C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework",
+        "-c",
+        "core.excludesFile=",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "f5a6b3b428eb4e7096e0620a52ee7ccdd2fbace4\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "safe.directory=C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework",
+        "-c",
+        "core.excludesFile=",
+        "diff",
+        "--cached",
+        "--name-only"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "safe.directory=C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework",
+        "-c",
+        "core.excludesFile=",
+        "diff",
+        "--name-only",
+        "f5a6b3b428eb4e7096e0620a52ee7ccdd2fbace4"
+      ],
+      "exit_code": 0,
+      "stdout": "README.md\ndocs/build/BASELINE.md\ndocs/build/DECISIONS.md\ndocs/build/HANDOFF.md\ndocs/build/OPEN-ISSUES.md\ndocs/build/PROGRESS.md\ndocs/build/TRACEABILITY.md\ndocs/release/submission-checklists.md\ndocs/research/SOURCES.md\n",
+      "stderr": "warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/release/submission-checklists.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/research/SOURCES.md', LF will be replaced by CRLF the next time Git touches it\n"
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "safe.directory=C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework",
+        "-c",
+        "core.excludesFile=",
+        "show",
+        "f5a6b3b428eb4e7096e0620a52ee7ccdd2fbace4:LICENSE"
+      ],
+      "exit_code": 0,
+      "stdout": "MIT License\n\nCopyright (c) 2026 Pratya S.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "stderr": ""
+    }
+  ],
+  "limitations": "Offline artifact/document/record checks; no behavioral, portal or host execution.",
+  "exit_code": 1,
+  "failure": "ValueError: LICENSE changed",
+  "finished_utc": "2026-09-29T14:58:59.833671+00:00",
+  "script_sha256": "afdf58c22330ce6095e5de498ec1d21c81d7ecf52e0e4bd8fbfe378644fa9b56"
+}

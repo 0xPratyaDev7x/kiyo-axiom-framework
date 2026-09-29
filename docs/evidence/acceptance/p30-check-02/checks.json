@@ -1,0 +1,238 @@
+{
+  "format": "kiyo-final-acceptance-checks-1",
+  "command": [
+    "C:\\Users\\praty\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "-B",
+    "tools/acceptance_handoff.py",
+    "--output",
+    "docs/evidence/acceptance/p30-check-02"
+  ],
+  "started_utc": "2026-09-29T15:00:19.088986+00:00",
+  "checks": [
+    {
+      "id": "FA-01-baseline-preservation",
+      "started_utc": "2026-09-29T15:00:19.099019+00:00",
+      "status": "PASS",
+      "observed": {
+        "head": "f5a6b3b428eb4e7096e0620a52ee7ccdd2fbace4",
+        "preserved_product_inputs": 112,
+        "tracked_changes": [
+          "README.md",
+          "docs/build/BASELINE.md",
+          "docs/build/DECISIONS.md",
+          "docs/build/HANDOFF.md",
+          "docs/build/OPEN-ISSUES.md",
+          "docs/build/PROGRESS.md",
+          "docs/build/TRACEABILITY.md",
+          "docs/release/submission-checklists.md",
+          "docs/research/SOURCES.md"
+        ],
+        "memory_impact": "NONE",
+        "trace_snapshot_note": "Final trace prose postdates pipeline; criteria and product unchanged"
+      },
+      "finished_utc": "2026-09-29T15:00:19.244167+00:00"
+    },
+    {
+      "id": "FA-02-actual-artifacts",
+      "started_utc": "2026-09-29T15:00:19.244167+00:00",
+      "status": "PASS",
+      "observed": {
+        "claude": {
+          "path": "dist/releases/p30-run-01/archives/kiyo-compass-claude-development.zip",
+          "sha256": "10bc505a083f86276d0ba78ebb4c06fa64f93143ff607eed63898ffafc711672",
+          "bytes": 3837321,
+          "files": 794,
+          "skills": [
+            "init",
+            "requirement",
+            "implement",
+            "review",
+            "test",
+            "security",
+            "architecture",
+            "memory"
+          ],
+          "root_readme_present": false
+        },
+        "codex": {
+          "path": "dist/releases/p30-run-01/archives/kiyo-compass-codex-development.zip",
+          "sha256": "8c2594d3767dad46e66358b69afecbe0ce7787bfccb5dc3e035f5bb55522de5c",
+          "bytes": 3844279,
+          "files": 795,
+          "skills": [
+            "init",
+            "requirement",
+            "implement",
+            "review",
+            "test",
+            "security",
+            "architecture",
+            "memory"
+          ],
+          "root_readme_present": false
+        },
+        "copilot": {
+          "path": "dist/releases/p30-run-01/archives/kiyo-compass-copilot-development.zip",
+          "sha256": "9a5130c9fd2f102b18ce7b0fa3dc42f20e660834c357703299f3a6d3a4e2e4df",
+          "bytes": 3848521,
+          "files": 794,
+          "skills": [
+            "init",
+            "requirement",
+            "implement",
+            "review",
+            "test",
+            "security",
+            "architecture",
+            "memory"
+          ],
+          "root_readme_present": false
+        }
+      },
+      "finished_utc": "2026-09-29T15:00:19.349943+00:00"
+    },
+    {
+      "id": "FA-03-requirement-chain",
+      "started_utc": "2026-09-29T15:00:19.349943+00:00",
+      "status": "PASS",
+      "observed": {
+        "requirements": 80,
+        "implementation": {
+          "IMPLEMENTED": 78,
+          "PARTIALLY_IMPLEMENTED": 2
+        },
+        "full_verification": "80 NOT_RUN"
+      },
+      "finished_utc": "2026-09-29T15:00:19.563984+00:00"
+    },
+    {
+      "id": "FA-04-evidence-separation",
+      "started_utc": "2026-09-29T15:00:19.563984+00:00",
+      "status": "PASS",
+      "observed": {
+        "pipeline": "dist/releases/p30-run-01/pipeline.json",
+        "static_pass": 37,
+        "release_regressions_pass": 10,
+        "behavioral_not_run": 48,
+        "live_checks": {
+          "NOT_RUN": 70,
+          "PASS": 2
+        },
+        "targets": {
+          "claude-cli": {
+            "host_version": "2.1.220",
+            "scope": "Claude session-only directory/ZIP metadata discovery verified; marketplace installation not attempted.",
+            "full_behavioral_suite": "NOT_TESTED",
+            "evidence": "docs/evidence/live/claude-cli.json"
+          },
+          "claude-vscode": {
+            "host_version": "Installed metadata 2.1.283 / 2.1.284; active UNKNOWN",
+            "scope": "No native IDE integration executed.",
+            "full_behavioral_suite": "NOT_TESTED",
+            "evidence": "docs/evidence/live/claude-vscode.json"
+          },
+          "codex-cli": {
+            "host_version": "0.158.0",
+            "scope": "Disposable marketplace installation, plugin listing, native cache and uninstall observed.",
+            "full_behavioral_suite": "NOT_TESTED",
+            "evidence": "docs/evidence/live/codex-cli.json"
+          },
+          "codex-ide": {
+            "host_version": "Installed metadata 26.917.62051; active UNKNOWN",
+            "scope": "No native IDE integration executed.",
+            "full_behavioral_suite": "NOT_TESTED",
+            "evidence": "docs/evidence/live/codex-ide.json"
+          },
+          "copilot-cli": {
+            "host_version": "UNKNOWN",
+            "scope": "No native CLI integration executed.",
+            "full_behavioral_suite": "NOT_TESTED",
+            "evidence": "docs/evidence/live/copilot-cli.json"
+          },
+          "copilot-vscode": {
+            "host_version": "UNKNOWN",
+            "scope": "No native IDE integration executed.",
+            "full_behavioral_suite": "NOT_TESTED",
+            "evidence": "docs/evidence/live/copilot-vscode.json"
+          }
+        }
+      },
+      "finished_utc": "2026-09-29T15:00:19.564983+00:00"
+    },
+    {
+      "id": "FA-05-delivery-references",
+      "started_utc": "2026-09-29T15:00:19.564983+00:00",
+      "status": "PASS",
+      "observed": {
+        "markdown_documents": 13,
+        "local_links": 1436,
+        "scope": "Inline links/headings in delivery docs; current output locators checked structurally before creation; external sources separately researched"
+      },
+      "finished_utc": "2026-09-29T15:00:21.584156+00:00"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "-c",
+        "safe.directory=C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework",
+        "-c",
+        "core.excludesFile=",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "f5a6b3b428eb4e7096e0620a52ee7ccdd2fbace4\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "safe.directory=C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework",
+        "-c",
+        "core.excludesFile=",
+        "diff",
+        "--cached",
+        "--name-only"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "safe.directory=C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework",
+        "-c",
+        "core.excludesFile=",
+        "diff",
+        "--name-only",
+        "f5a6b3b428eb4e7096e0620a52ee7ccdd2fbace4"
+      ],
+      "exit_code": 0,
+      "stdout": "README.md\ndocs/build/BASELINE.md\ndocs/build/DECISIONS.md\ndocs/build/HANDOFF.md\ndocs/build/OPEN-ISSUES.md\ndocs/build/PROGRESS.md\ndocs/build/TRACEABILITY.md\ndocs/release/submission-checklists.md\ndocs/research/SOURCES.md\n",
+      "stderr": "warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/release/submission-checklists.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/research/SOURCES.md', LF will be replaced by CRLF the next time Git touches it\n"
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "safe.directory=C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework",
+        "-c",
+        "core.excludesFile=",
+        "show",
+        "f5a6b3b428eb4e7096e0620a52ee7ccdd2fbace4:LICENSE"
+      ],
+      "exit_code": 0,
+      "stdout": "MIT License\n\nCopyright (c) 2026 Pratya S.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+      "stderr": ""
+    }
+  ],
+  "limitations": "Offline artifact/document/record checks; no behavioral, portal or host execution.",
+  "exit_code": 0,
+  "finished_utc": "2026-09-29T15:00:21.610265+00:00",
+  "script_sha256": "cd152d5cdc6ccf598883e594ff0567b25d70e777cd3ab7ac913c9b9eebc0220b"
+}
