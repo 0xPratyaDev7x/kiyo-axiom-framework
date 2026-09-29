@@ -1,17 +1,17 @@
 # Kiyo Compass — Native invocation map
 
-Checked: **2026-09-28**. Source IDs: [SOURCES](../research/SOURCES.md).
+Original baseline: **2026-09-28**; Claude rechecked **2026-09-29** under CL20-01–13. Source IDs: [SOURCES](../research/SOURCES.md).
 Syntax below is **DOCUMENTED_ONLY**, not execution evidence.
 All six targets are **NOT_TESTED**. Angle-bracket tokens are metavariables,
-not runnable Kiyo release identifiers. No public name, namespace or skill slug
-is finalized by this document.
+not runnable Kiyo release identifiers. No publication name or namespace is finalized. Prompt 20 uses the development
+working namespace kiyo-compass with the eight canonical skill slugs.
 
 ## Six separate invocation surfaces
 
 | Target | Discover / manage | Explicit skill selection | Automatic selection | Limitation / source / checked |
 | --- | --- | --- | --- | --- |
-| Claude Code CLI | `/plugin`; shell `claude plugin list` | Plugin `/<plugin>:<skill>`; standalone `/<skill>` | Description match unless disabled | C01/C02/C06/C07, 2026-09-28; explicit selection does not approve all tools/actions. |
-| Claude Code VS Code | Claude panel `/plugins` | Claude panel `/<plugin>:<skill>` | Claude description match | C05/C06/C07, 2026-09-28; separate from Copilot's chat UI; actual menu entry untested. |
+| Claude Code CLI | `/plugin`; shell `claude plugin list` | Plugin `/<plugin>:<skill>`; standalone `/<skill>` | Description match unless disabled | CL20-01/02/05/09, 2026-09-29; working package /kiyo-compass:<skill>, actual selection untested; no action approval implied. |
+| Claude Code VS Code | Claude panel `/plugins` | Claude panel `/<plugin>:<skill>` | Claude description match | CL20-02/04/09, 2026-09-29; /kiyo-compass:<skill> documented convention, independent Claude panel entry untested. |
 | Codex CLI | `/plugins` for plugins; `/skills` for skills | `$<skill>` or selector entry | Description match | O04/O05, 2026-09-28; exact plugin-qualified name UNKNOWN; select actual discovered entry. |
 | Codex IDE Extension | `/skills` for standalone skills | Standalone `$<skill>`; plugin invocation **UNSUPPORTED** | Standalone description match only | O04/O05, 2026-09-28; cannot advertise native Kiyo plugin install/invocation here. |
 | GitHub Copilot CLI | `/skills list`, `/skills info`; shell `copilot plugin list` | `/<skill-name>` in prompt | Prompt/description match | G01/G03, 2026-09-28; exact plugin namespace/collision spelling UNKNOWN; do not copy VS Code spelling. |
@@ -60,4 +60,17 @@ The eight public skills remain Init, Requirement, Implement, Review, Test,
 Security, Architecture and Memory. Router, Governance Review, Skill Audit and
 Self-check stay shared procedures. Prompt 03 will map these logical identities
 to native names within supported surfaces; this research creates no commands.
+
+
+## Prompt 20 concrete Claude mapping
+
+The [native reference](../../platforms/claude/resources/activation.md) lists all
+eight /kiyo-compass:<skill> selectors for the prepared development manifest.
+Name/description frontmatter stays canonical. Logical modes are request text,
+not extra commands; /kiyo-init is not supplied. These are DOCUMENTED_ONLY names,
+not VERIFIED invocations. Source/date/limitations and CLI/VS Code observations:
+[Claude field map](claude-package.md), checked 2026-09-29.
+Both live targets remain NOT_TESTED. The current
+[disposable protocol](claude-installation-test-protocol.md) supersedes historical
+Claude lifecycle examples for future testing; nothing was installed or published.
 

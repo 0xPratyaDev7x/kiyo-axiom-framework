@@ -1,9 +1,45 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **19 Organization Policies**.
-Task status: **DONE** for Prompt 19; scoped static policy/config checks passed.
-Product status: shared guidance/profiles/templates and canonical Init/Requirement/Implement/Review/Test/Security/Architecture/Memory authored;
-exactly eight public entries. Native packages and complete acceptance remain pending. No runtime engine.
+Snapshot: 2026-09-29. Current prompt: **20 Claude**.
+Task status: **DONE** for Prompt 20; scoped offline package checks passed.
+Product status: eight canonical skills and Claude development distribution authored;
+other native packages, live compatibility and complete acceptance remain pending. No runtime engine.
+
+## Prompt 20 delivered scope
+
+- Revalidated thirteen current official Claude documentation sources with dates,
+  observed destinations and limits in [SOURCES](../research/SOURCES.md#prompt-20-claude-revalidation).
+  CLI and VS Code evidence remain independent.
+- Added a minimal [Claude overlay](../../platforms/claude/README.md), inactive
+  owner-input marketplace template, native invocation/activation reference and
+  developer-only [packager](../../tools/package_claude.py).
+  The working namespace is kiyo-compass; no release identity/version was invented.
+- Generated [dist/claude manifest](../../dist/claude/.claude-plugin/plugin.json)
+  and eight self-contained skill trees: 794 files, 97 canonical shared resources
+  per skill, no hooks/MCP/runtime. Canonical 105 product files and 68 controls
+  remain unchanged. Shared duplication is generated, not separately authored.
+- Offline checks passed: 4,956 contained references, source parity, independent
+  relocation, repeat no-op and five rejection cases. Entry budgets and a
+  114-word sample managed block passed static checks. These do not prove loading,
+  native approval enforcement or Init behavior.
+- Recorded [actual evidence/inventory](../evidence/claude/package-checks.md),
+  [disposable protocol](../compatibility/claude-installation-test-protocol.md)
+  and [16 integration specifications](../../tests/integration/claude/scenarios.md).
+  Native validation and all integration cases remain NOT_RUN; all six native
+  targets remain NOT_TESTED. Live tests are deferred to Prompt 26.
+- Actual terminal version is 2.1.220; scoped extension manifests declare
+  2.1.283 / 2.1.284. Active extension/VS Code version/account remain UNKNOWN.
+  No install, marketplace registration, publication or global setting change.
+
+Coverage: partial artifact/documentation coverage for
+REQ-002/003/004/005/006/007/009/010/026/027/059/060/061/064/067/076/077/078/079;
+REQ-080 continuity. REQ-002/003/006/076/078/079 newly partial:
+**79 PARTIALLY_IMPLEMENTED / 1 NOT_IMPLEMENTED**. All 80 full verifications
+remain NOT_RUN; REQ-001 and final release acceptance remain unresolved.
+
+Checks: [Prompt 20 evidence](BASELINE.md#prompt-20-checks).
+Memory Impact: **NONE for developer project memory**. No project bootstrap or
+Memory/config/policy was created. Owner publication decisions remain open.
 
 ## Prompt 19 delivered scope
 
@@ -663,7 +699,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 17 | Architecture Skill | DONE | P17-C01–C07 PASS; static/resource checks and bounded read-only source trials; native NOT_TESTED |
 | 18 | Memory Skill | DONE | P18-C01–C07 PASS; static/resource/inventory checks and bounded mode/no-op/concurrency trials; native NOT_TESTED |
 | 19 | Organization Policies | DONE | P19-C01–C07 PASS; static/resource checks and bounded read-only policy trials; native NOT_TESTED |
-| 20 | Claude | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 20 | Claude | DONE | P20-C01–C07 PASS; offline package/parity/relocation checks; native validator NOT_RUN, both Claude targets NOT_TESTED |
 | 21 | Codex | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 22 | Copilot | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 23 | Packaging/Parity | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -683,9 +719,9 @@ Outstanding owner decisions: DEC-001 final name, DEC-002 release license,
 DEC-003 publisher/destination and DEC-004 treatment of Codex IDE's native-plugin
 gap before compatibility/release claims. See OPEN-ISSUES for technical gaps.
 
-Safe to continue: **YES for a user-requested Prompt 20 Claude**.
-Static content/policy contracts are ready; revalidate official native schemas and
-resolve dependent owner/host gaps before packaging/activation claims. Later work
-is not authorized by this handoff alone.
-Next prompt: **20 Claude**, only when requested by the user.
+Safe to continue: **YES for a user-requested Prompt 21 Codex**.
+Canonical content and the Claude packaging pattern are available; revalidate
+current OpenAI documentation and the independent IDE capability gap before
+schema-dependent decisions. No publication or native compatibility is approved.
+Next prompt: **21 Codex**, only when requested by the user.
 

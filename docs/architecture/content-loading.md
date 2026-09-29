@@ -4,8 +4,9 @@ Decision date: **2026-09-29**. Architecture, not observed execution. Inputs:
 [ADR-001](decisions/ADR-001-static-canonical-packages.md), REQ-009–017/025–028/054
 in [REQUIREMENTS](../build/REQUIREMENTS.md), and Prompt 02
 [activation modes](../compatibility/activation-modes.md) / [invocation map](../compatibility/native-invocation-map.md).
-Native source checks remain **2026-09-28, DOCUMENTED_ONLY** with their recorded
-limits; all six live loading results are NOT_TESTED.
+Original native source checks are **2026-09-28, DOCUMENTED_ONLY**. Claude-only
+Prompt 20 revalidation is **2026-09-29**, with [current limits](../compatibility/claude-package.md);
+all six live loading results remain NOT_TESTED.
 
 ## Ordered instruction use
 
@@ -126,3 +127,17 @@ missing/poisoned memory, unavailable skills and preserved human edits. Each of
 the six live rows needs its own explicit/implicit/no-bootstrap/bootstrap,
 relocation/update/uninstall evidence and observed environment. These are planned
 checks; Prompt 03 checks only the architecture documents.
+
+## Prompt 20 Claude adapter
+
+The generated entry's conditional [Claude reference](../../platforms/claude/resources/activation.md)
+uses the existing canonical Init managed-block shape plus a native selection
+sentence. It is packaged inside every skill and does not copy a second Core.
+A static sample block measured 114 words; rendering must still count actual
+project locators/text. No project CLAUDE.md was created in this build.
+
+Root/.claude CLAUDE.md and newer AGENTS selection are documented facilities with
+version/context limits, not universal automatic Core loading. Preserve existing
+instruction choice and human sections. Live selection/loading, authorized Init
+behavior and update/uninstall preservation remain Prompt 26 tests, separately
+for terminal and extension. Offline resource containment is not that evidence.

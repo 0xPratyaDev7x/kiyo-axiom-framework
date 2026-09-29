@@ -1,0 +1,12 @@
+{
+  "name": "{{OWNER_CONFIRMED_MARKETPLACE_NAME}}",
+  "owner": {
+    "name": "{{OWNER_CONFIRMED_OWNER_NAME}}"
+  },
+  "plugins": [
+    {
+      "name": "kiyo-compass",
+      "source": "./plugins/kiyo-compass"
+    }
+  ]
+}

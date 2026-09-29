@@ -4,6 +4,8 @@ Original baseline: **2026-09-28**, Asia/Bangkok (Prompt 02).
 Prompt 07 rechecked W01/W02 and added W05–W15 on **2026-09-29**.
 Prompt 09 rechecked S01–S07 and added E01–E06 on **2026-09-29**.
 
+Prompt 20 adds CL20-01–CL20-13 on **2026-09-29** for Claude packaging.
+
 ## Evidence rules
 
 - **VERIFIED**: a named, actually executed observation/check with reproducible evidence and a narrow scope. In this prompt it applies to repository/document checks, never to Kiyo host behavior.
@@ -183,4 +185,44 @@ version, public versus private distribution, intended supported host versions/OS
 truthful capabilities, asset rights and any required privacy/terms URLs. No
 identity, account entitlement, signature, review acceptance or marketplace
 reservation is established by this research. No submission was made.
+
+
+## Prompt 20 Claude revalidation
+
+All rows in this section are **DOCUMENTED_ONLY**, checked **2026-09-29**.
+The observed destination is the requested URL: the web tool reported no redirect
+for these successful opens. This is not an independently captured HTTP chain.
+The legacy /docs/en/discover-plugins URL was also opened; it returned the
+installation page without a reported redirect. Current overview links led to
+/docs/en/plugins/create and /docs/en/plugins/install; those exact destinations
+were followed and used below. No guessed HTTP status/intermediate hop is recorded.
+
+| ID | Requested official URL / observed destination | Checked | Limitation |
+| --- | --- | --- | --- |
+| CL20-01 | [Plugin manifest](https://code.claude.com/docs/en/plugins-reference) — same reported URL | 2026-09-29 | name/description/default skills path; authoritative native validator deferred |
+| CL20-02 | [Skills/frontmatter](https://code.claude.com/docs/en/skills) — same reported URL | 2026-09-29 | Namespaced selection/metadata and optional controls; no observed Kiyo invocation |
+| CL20-03 | [Project instruction loading](https://code.claude.com/docs/en/memory) — same reported URL | 2026-09-29 | CLAUDE.md and version-dependent AGENTS selection; no target loading trace |
+| CL20-04 | [Claude VS Code](https://code.claude.com/docs/en/vs-code) — same reported URL | 2026-09-29 | Panel management, prerequisites and scope; active extension not established |
+| CL20-05 | [Create plugin](https://code.claude.com/docs/en/plugins/create) — same reported URL | 2026-09-29 | Skill-only layout and session --plugin-dir; no session run |
+| CL20-06 | [Plugin components](https://code.claude.com/docs/en/plugins/components) — same reported URL | 2026-09-29 | Plugin-root CLAUDE.md excluded from project context; no runtime added |
+| CL20-07 | [Create marketplace](https://code.claude.com/docs/en/plugin-marketplaces) — same reported URL | 2026-09-29 | Required catalog structure and relative source base; template is inactive |
+| CL20-08 | [Marketplace reference](https://code.claude.com/docs/en/plugins/marketplace-reference) — same reported URL | 2026-09-29 | Root/entry fields; owner/name unresolved, no catalog registration |
+| CL20-09 | [Install and manage](https://code.claude.com/docs/en/plugins/install) — same reported URL | 2026-09-29 | Scope and maintenance forms; no installation/update/uninstall |
+| CL20-10 | [Plugin loading](https://code.claude.com/docs/en/plugins/loading) — same reported URL | 2026-09-29 | Local-directory in-place versus copied cache; native relocation untested |
+| CL20-11 | [Host setup](https://code.claude.com/docs/en/setup) — same reported URL | 2026-09-29 | OS/hardware prerequisites, not a tested Kiyo minimum |
+| CL20-12 | [Claude directory](https://code.claude.com/docs/en/claude-directory) — same reported URL | 2026-09-29 | Configuration-root relocation documentation, not proven isolation |
+| CL20-13 | [Environment variables](https://code.claude.com/docs/en/env-vars) — same reported URL | 2026-09-29 | CLAUDE_CONFIG_DIR for future isolated protocol; no process setting changed |
+
+The original C01–C08 rows preserve Prompt 02's dated baseline. For Prompt 20
+Claude decisions use [the current field map](../compatibility/claude-package.md)
+and [test protocol](../compatibility/claude-installation-test-protocol.md).
+No OpenAI/Copilot/standards source was refreshed by this Claude-only pass.
+
+Observed locally, separately from public documentation: terminal --version
+returned 2.1.220 (Claude Code); scoped on-disk VS Code extension manifests declare
+2.1.283 and 2.1.284 with engine ^1.94.0. The active extension, running VS Code
+version, account and provider/model remain UNKNOWN. See
+[actual check evidence](../evidence/claude/package-checks.md).
+Both native targets remain NOT_TESTED; no install/activation/cache/lifecycle claim
+follows from the observations or offline generated-package checks.
 

@@ -32,7 +32,8 @@ Prompt 16 adds name/directory security and logical ID **kiyo.security**.
 Prompt 17 adds name/directory architecture and logical ID **kiyo.architecture**.
 Prompt 18 adds name/directory memory and logical ID **kiyo.memory**.
 All eight canonical entries are authored; no extra router/governance/self-check
-entry exists. Native catalogs and per-target acceptance remain pending.
+entry exists. Prompt 20 adds a Claude development bundle; native catalog
+registration and per-target acceptance remain pending.
 assess/run/write and Security application/skills/governance/self-check are logical
 submodes under their existing public skills, not universal native command arguments.
 Memory show/check/sync/repair likewise describe logical effects, not native permissions.
@@ -131,3 +132,17 @@ unsupported Codex IDE plugin route is accepted (DEC-004). Marketplace availabili
 curated listing, signatures, account authority and publication approvals need
 actual evidence. None is inferred from a local folder, copyright name or
 custom-source install. These gates do not prevent Prompt 04 Core authoring.
+
+## Prompt 20 working native identity
+
+The Claude manifest uses kiyo-compass solely as the development slug of the
+existing working name. The eight selectors derive from that manifest plus
+canonical skill names; see [current mapping](../compatibility/claude-package.md).
+No final namespace availability, owner publication decision, initial product
+release number or signature is asserted. Version/author/repository/license
+metadata is omitted rather than guessed. Root LICENSE is copied unchanged.
+
+The inactive marketplace template retains unresolved owner/name tokens.
+A later owner-selected identity/version must be reviewed and reflected in
+manifest, catalog, native adapter, docs and rebuilt outputs together.
+Build reproducibility hashes identify actual bytes, not a released version.

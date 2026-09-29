@@ -199,3 +199,16 @@ Prompt 07 adds six agent-security references and four neutral optional record
 templates under templates/skill-governance; developer scenario specifications
 stay outside the payload. Installed product references remain self-contained. No consumer runtime dependency,
 generator, MCP, hook, service, database, telemetry or Kiyo installer is introduced.
+
+## Prompt 20 concrete Claude package
+
+platforms/claude now holds the minimal native manifest, inactive owner-dependent
+marketplace template and one native activation resource. tools/package_claude.py
+is developer-only. dist/claude contains the derived manifest, LICENSE and eight
+complete skills; docs/evidence/claude holds inventory/checks outside the payload.
+[Claude documentation](../compatibility/claude-package.md) and integration
+specifications define current limits. Other platform outputs remain planned.
+
+This introduces no new canonical Core, mutable project state, public skill,
+native extension executable or consumer build dependency. The canonical 105
+product files and their 68 control IDs are unchanged.

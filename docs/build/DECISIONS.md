@@ -194,6 +194,17 @@ skill-creator's independent forward-testing guidance supports bounded read-only
 synthetic fixture evaluations. This is developer validation, not real policy
 adoption, central governance, product orchestration or native enforcement.
 
+Prompt 20 was subsequently authorized on 2026-09-29: revalidate Claude official
+schemas/loading separately for CLI/VS Code; author the minimal static native
+distribution, overlay, inactive marketplace template, protocol and scenarios;
+perform offline checks/update build state and stop before Prompt 21.
+A developer-only standard-library packager is within the Build Contract.
+kiyo-compass is a provisional namespace derived from the existing working name;
+it is not a final owner-approved identity. Optional release metadata remains
+omitted; unresolved catalog tokens are excluded from the payload.
+No native session/install/global settings/publication is authorized here;
+live tests remain deferred to Prompt 26. Canonical product content is unchanged.
+
 ## Pending owner decisions
 
 | ID | Decision | Current evidence / status | Who decides | Latest needed / effect | Resolution evidence |
@@ -204,7 +215,7 @@ adoption, central governance, product orchestration or native enforcement.
 | DEC-004 | Treatment of Codex IDE native-plugin support gap | OPEN. Official [plugin documentation](https://learn.chatgpt.com/docs/plugins) excludes IDE plugins; [skills documentation](https://learn.chatgpt.com/docs/build-skills) supports standalone IDE skills. Checked 2026-09-28; DOCUMENTED_ONLY, live NOT_TESTED | Repository/product owner | Before promising six-target native installation or accepting a standalone fallback; does not block Prompt 03 design of documented surfaces | No fallback or scope reduction approved |
 
 Ask only when an unresolved choice blocks the current authorized prompt. Existing
-instructions authorize Prompt 19 Organization Policies authoring/validation and build-state updates. Do not ask for
+instructions authorize Prompt 20 Claude packaging/offline validation and build-state updates. Do not ask for
 premature publication decisions to complete that scope. Publication metadata still
 requiring confirmation is listed in [SOURCES](../research/SOURCES.md#publication-information-still-requiring-the-owner).
 
@@ -215,8 +226,9 @@ Prompt 03 selects [the canonical layout](../architecture/framework-layout.md)
 and overlay boundaries; this refines future paths without rewriting requirements.
 No native manifest syntax, version policy, signing identity or marketplace
 availability was decided in Prompt 01. Prompt 02 now records documented formats
-in [platform capabilities](../compatibility/platform-capabilities.md), but does
-not choose/build overlays. Copilot plugin-rule semantics, exact Codex/Copilot CLI
+in [platform capabilities](../compatibility/platform-capabilities.md), but did
+not choose/build overlays. Prompt 20 now revalidates and builds Claude only;
+Copilot plugin-rule semantics, exact Codex/Copilot CLI
 plugin-skill selector details and custom lifecycle tests remain open.
 
 ADR-001 is accepted for build design within the user's Prompt 03 scope: one

@@ -3,7 +3,9 @@
 Decision date: **2026-09-29**. Selected design:
 [ADR-001](decisions/ADR-001-static-canonical-packages.md). Requirements:
 [REQ-002–007/026/027/053/054/059/064/067/076–079](../build/REQUIREMENTS.md).
-No generator, manifest, package or installation is implemented by this document.
+This document originally selected the architecture. Prompt 20 implements the
+[Claude development bundle](../compatibility/claude-package.md) and a bounded
+developer packager; other native outputs and all live installations remain pending.
 
 ## Single authored source, self-contained derived resources
 
@@ -152,7 +154,7 @@ No default publisher, release version or signing identity is manufactured.
 
 | Layer | Future acceptance evidence | Current state |
 | --- | --- | --- |
-| Static package validation | Native schema; exactly eight entries; complete relative references; clean-room copy with checkout unavailable; normalized body/control parity; neutral templates; two builds with identical inputs and equal artifact digests | NOT_RUN; no package/generator yet |
+| Static package validation | Native schema; exactly eight entries; complete relative references; standalone copy; normalized body/control parity; neutral templates; two builds with identical inputs and equal artifact digests | Claude offline checks PASS in [P20 evidence](../evidence/claude/package-checks.md); native validator NOT_RUN; other platforms pending |
 | Behavioral evaluation | Agent follows bootstrap then selected procedure; uses relevant template; preserves permissions, project policy, read-only effects and existing memory location | NOT_RUN |
 | Six independent live tests | Observed host/OS/account-policy scope; install, discover, invoke, implicit selection, relocated/cache resource reads, update, disable and uninstall | NOT_TESTED for every target; unsupported IDE route stays explicit |
 
@@ -167,3 +169,22 @@ policy/memory or automatically refresh the project block. Uninstall must not
 delete that user state. Adapter maintenance follows
 [content-loading](content-loading.md#adapter-ownership-and-lifecycle). Exact native
 cache/update behavior and relocation remain evidence gates, not assumed facts.
+
+## Prompt 20 implemented transform
+
+[tools/package_claude.py](../../tools/package_claude.py) generates dist/claude from
+105 canonical product files, one Claude activation overlay and native manifest,
+plus root LICENSE. Each of eight skills gets 97 unchanged shared resources.
+Entry bodies differ only by local reference destinations, LF normalization and
+a conditional link to the packaged Claude adapter; canonical skills remain unchanged.
+The adapter's source ../kiyo references are validated at their rendered
+references/claude location. No operational link requires the developer tree.
+
+The native manifest contains name/description only. The owner-incomplete
+marketplace template stays outside the plugin. Source/output hashes and actual
+base revision are in [the Claude inventory](../evidence/claude/package-inventory.json);
+the generator's own digest/environment and tests are in
+[package checks](../evidence/claude/package-checks.md).
+Identical output is a no-op; different pre-existing output is rejected without
+overwrite/deletion. This bounded builder is not a generalized cross-platform
+release engine or a consumer installation dependency.

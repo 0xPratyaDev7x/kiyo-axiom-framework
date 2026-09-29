@@ -1,17 +1,19 @@
 # Kiyo Compass — Platform capabilities
 
-Checked: **2026-09-28**. Sources: [source register](../research/SOURCES.md).
+Original research: **2026-09-28**; Claude refreshed **2026-09-29** in
+[Prompt 20 field map](claude-package.md) / CL20-01–CL20-13. Sources: [source register](../research/SOURCES.md).
 C/O/G/V/A IDs below identify its exact official source rows. Every capability is
 DOCUMENTED_ONLY unless explicitly marked otherwise. Every live result is
-**NOT_TESTED**; installed host versions, account entitlements and environment
-availability were not inspected. This research does not imply they are absent.
+**NOT_TESTED**. Prompt 20 observes only Claude CLI --version and named extension
+metadata; active IDE/account context remains unknown. Other target environments
+were not inspected. Offline package validation is separate from native behavior.
 
 ## Target summary
 
-| Target | Native plugin capability | Observed version | Live state | Principal gap / sources (checked 2026-09-28) |
+| Target | Native plugin capability | Observed version | Live state | Principal gap / sources (Claude 2026-09-29; others 2026-09-28) |
 | --- | --- | --- | --- | --- |
-| Claude Code CLI | DOCUMENTED_ONLY | UNKNOWN | NOT_TESTED | Core/bootstrap and relocation tests pending; C01–C08 |
-| Claude Code VS Code | DOCUMENTED_ONLY | UNKNOWN | NOT_TESTED | Independent extension loading test pending; C05 |
+| Claude Code CLI | DOCUMENTED_ONLY; development package statically checked | CLI --version: 2.1.220 (2026-09-29) | NOT_TESTED | CL20-01–13 and [P20 evidence](../evidence/claude/package-checks.md); native validation/loading/cache/lifecycle deferred |
+| Claude Code VS Code | DOCUMENTED_ONLY; shared development bundle | Extension manifests 2.1.283 / 2.1.284; active version UNKNOWN (2026-09-29) | NOT_TESTED | CL20-04; independent extension loading/engine/cache/lifecycle pending |
 | Codex CLI | DOCUMENTED_ONLY | UNKNOWN | NOT_TESTED | Custom lifecycle, exact selector/cache details pending; O01/O04/O05 |
 | Codex IDE Extension | UNSUPPORTED | UNKNOWN | NOT_TESTED | Standalone skills only, native-plugin gap; O04/O05 |
 | GitHub Copilot CLI | DOCUMENTED_ONLY | UNKNOWN | NOT_TESTED | Rule semantics and plugin-skill namespace unresolved; G01/G03 |
@@ -41,6 +43,11 @@ is deferred. A native plugin is currently unavailable for the Codex IDE target.
 
 ## Claude Code CLI
 
+The table below retains Prompt 02 findings. Prompt 20's current schema/layout,
+actual development bundle, native invocation and local observations are in
+[Claude package](claude-package.md), checked 2026-09-29. Historical “no package”
+statements below are superseded for static artifacts only; live tests stay pending.
+
 | # | Topic | Documented capability / finding | Evidence and limitation |
 | --- | --- | --- | --- |
 | 1 | Manifest schema / file | `.claude-plugin/plugin.json`; manifest optional with conventional layout. If present, `name` is required; metadata and `skills` path string/array are available. Unknown top-level keys are stripped with validator warnings. | C04; 2026-09-28; do not add a fictitious `core` or `rules` key. Native validation NOT_RUN. |
@@ -56,6 +63,11 @@ is deferred. A native plugin is currently unavailable for the Codex IDE target.
 | 11 | Evidence / limits | DOCUMENTED_ONLY; live **NOT_TESTED**. No package, validator result, metadata/core loading trace or cache test exists. | C01–C08; 2026-09-28; future CLI evidence cannot stand in for IDE evidence. |
 
 ## Claude Code VS Code
+
+The table below retains Prompt 02 findings. Prompt 20's current schema/layout,
+actual development bundle, native invocation and local observations are in
+[Claude package](claude-package.md), checked 2026-09-29. Historical “no package”
+statements below are superseded for static artifacts only; live tests stay pending.
 
 | # | Topic | Documented capability / finding | Evidence and limitation |
 | --- | --- | --- | --- |

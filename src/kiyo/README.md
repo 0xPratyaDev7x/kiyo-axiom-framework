@@ -4,7 +4,7 @@ This directory is reserved for the single authored Kiyo product specification.
 Prompt 03 created this non-runtime authoring note. Prompt 04 adds
 [KIYO.md](KIYO.md), shared Core instructions, the control index and expected
 response examples under framework/. At that step skills/native packages were not implemented;
-native packages remain unimplemented and Core behavior on hosts remains untested. Prompt 05 adds the
+Prompt 20 now adds the Claude development distribution; Core behavior on hosts remains untested. Prompt 05 adds the
 [Memory specification](framework/memory-specification.md),
 [shared lifecycle](workflows/memory-lifecycle.md) and eight neutral topic templates
 under templates/memory/. These are product instructions, not this developer
@@ -101,7 +101,14 @@ The established .kiyo/policy.md config equivalent is preserved; no second locato
 provider choice, permission grant or policy engine is introduced. Init can propose
 drafts and Security governance can inspect completeness/conflicts. Sixteen
 developer scenario specifications remain separate from bounded trial evidence.
-Exactly eight public skills remain; real policy adoption and native packages are pending.
+Exactly eight public skills remain; real policy adoption is pending. Native packages
+were still pending at the close of Prompt 19.
+
+Prompt 20 generates a [Claude native development bundle](../../docs/compatibility/claude-package.md)
+from this unchanged canonical product content and a small native overlay.
+Eight complete resource snapshots preserve canonical bytes; the developer-only
+packager is not installed. Live CLI/VS Code trials remain separately NOT_TESTED.
+Other platforms, publication identities and final release acceptance remain pending.
 
 Follow [framework layout](../../docs/architecture/framework-layout.md),
 [content loading](../../docs/architecture/content-loading.md) and

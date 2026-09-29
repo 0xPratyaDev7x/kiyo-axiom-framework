@@ -15,25 +15,24 @@ One canonical specification with necessary self-contained native overlays.
 
 ## Current repository observation
 
-Observed for Prompt 19 on 2026-09-29:
+Observed for Prompt 20 on 2026-09-29:
 
 - Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework
-- Branch: main; HEAD: 33994c97470a82cf2db6e6179793028427f18f46.
-- Initial working tree and index clean; tracked LICENSE, eight build files and
-  five research/compatibility files, six architecture documents, source README,
-  100 product files, thirteen behavioral specification files and eight developer evidence
-  records (141 Markdown files total). Prompt 18 was committed before this work;
-  previous checkout/HEAD/uncommitted snapshots are historical, not current facts.
-- No applicable AGENTS.md found in repository or checked ancestors; no .kiyo
-  project/product memory present.
-- Git used a per-command safe.directory override for this exact root;
-  global settings were not changed.
-  The per-command empty core.excludesFile setting kept inventory independent of
-  unreadable global ignores.
-- LICENSE blob remains d2e60c5b160ed4f9ca096215e72efee5769936b1.
-- No product version file, manifest or Git tag found in the scoped inventory.
-- Prompt 19 creates seven Markdown files and changes sixteen existing Markdown files. No commits,
-  tags, pushes, installs, publication or global settings changes were made here.
+- Branch: main; HEAD: f5b6f57bbda7ea0f33d7726312357b4e5d690a65.
+- Initial tree/index clean; 148 Markdown files under docs/src/tests, including
+  105 canonical product files. Prompt 19 was committed before this work.
+  Earlier checkout snapshots are historical, not current facts.
+- No applicable AGENTS.md in the scoped repository/ancestor inspection; no .kiyo.
+- Git used exact-root per-command safe.directory and empty core.excludesFile;
+  no global configuration changed. LICENSE blob remains
+  d2e60c5b160ed4f9ca096215e72efee5769936b1. No version or tag was selected.
+- Prompt 20 adds nine authored files, one generated inventory and 794 distribution
+  files; modifies fifteen existing Markdown files. All 105 canonical product
+  files remain unchanged; source README is developer documentation.
+- Terminal --version returned 2.1.220 (Claude Code). Two scoped extension
+  manifests declare 2.1.283 / 2.1.284; active extension and running VS Code version
+  UNKNOWN. No native plugin validator/install/session was run.
+- No commits, tags, pushes, installs, publication or global setting changes.
 
 Recheck root, branch, index, unstaged/untracked changes and user edits on resume.
 Preserve LICENSE and the 80 original requirements. See BASELINE for check results.
@@ -161,7 +160,22 @@ Revalidate volatile schema details before
 implementing native packages; use native references, not old chat, local skill
 scaffolds or the OWASP proposed universal format.
 
+24. [Claude package field map](../compatibility/claude-package.md),
+    [overlay](../../platforms/claude/README.md),
+    [offline evidence](../evidence/claude/package-checks.md),
+    [installation protocol](../compatibility/claude-installation-test-protocol.md)
+    and [integration specifications](../../tests/integration/claude/scenarios.md).
+
 ## Completed work and evidence
+
+Prompt 20 adds the first generated native artifact, for Claude only. It contains
+eight entries and shared resources; offline source parity, 4,956 local links,
+relocation, reproducibility and negative checks passed. Native validator NOT_RUN;
+both Claude targets and all other targets NOT_TESTED. Sixteen new integration
+cases remain NOT_RUN per host. See [P20 checks](BASELINE.md#prompt-20-checks).
+Current totals are 79 PARTIALLY_IMPLEMENTED / 1 NOT_IMPLEMENTED; all 80 full
+verifications remain NOT_RUN. Subsequent paragraphs preserve prior prompt scopes
+and historical counts, not current completion claims.
 
 Prompt 01 registered all REQ-001–080 and the build contract/roadmap.
 Prompt 02 researched 11 dimensions for each of six targets and created the five
@@ -412,7 +426,7 @@ changed. Temporary synthetic fixture state is recorded separately in forward evi
 - Do not generate manifests, public skills, release versions or all later trees
   to make scaffolding look complete. Keep schema gaps and owner decisions open.
 
-## Shared boundaries for Prompt 20
+## Shared boundaries for Prompt 21
 
 Use Memory as context, validate material claims, preserve approved intent and
 surface conflicting sources through the real native hierarchy. Do not treat
@@ -781,18 +795,44 @@ Policy draft/edit/adoption approval is distinct from executing a later action.
 Resolve meaningful conflict through actual authorized evidence/decision, keeping
 independent permitted work available; never weaken policy to pass a task.
 
+## Claude distribution continuity
+
+The developer-only tools/package_claude.py copies canonical shared content into
+each skill's references/kiyo, remaps only entry links and appends one conditional
+Claude reference. Do not hand-edit generated dist. Source/output hashes and
+transforms are recorded in docs/evidence/claude/package-inventory.json.
+The builder rejects changed existing output instead of overwriting human files;
+future replacement/release workflows need their own scope. No end-user generator.
+
+Working namespace kiyo-compass gives /kiyo-compass:<skill>; /kiyo-init is not
+provided. This is DOCUMENTED_ONLY, not observed discovery. Metadata selection
+and always-loaded Core are distinct. Plugin-root CLAUDE.md is not project context
+under current official docs. Init's native reference renders the canonical
+managed locator block only with actual scope/authorization, preserves human
+sections and existing instruction-file choice, and avoids cache-path imports.
+No runtime hook or permission-enforcement claim.
+
+Only Claude sources were refreshed on 2026-09-29. The observed CLI is older than
+some documented facilities; extension metadata does not identify the active
+engine. Prompt 26 must test CLI and VS Code separately in verified disposable
+contexts. Catalog registration can affect user configuration; the inactive
+template is not registration-ready. No existing global profile may be changed.
+Publication identity, version, publisher/destination and license confirmation
+remain pending; custom source metadata does not establish curated listing.
+
 ## Exact next action
 
-Prompt 19 is complete within static Organization Policies authoring scope; stop here.
-**Next: Prompt 20 Claude**, only when supplied by the user.
-Recheck repository and read the files above. Revalidate current official native
-documentation before schema-dependent Claude work; use the actual requested
-Prompt 20 scope, not old chat or a guessed manifest. Preserve native/owner gates.
-Do not infer authority for real organization adoption, developer-project Init,
-dangerous operations, publication, other platforms or later prompts.
+Prompt 20 is complete within static Claude distribution/offline validation scope;
+stop here. **Next: Prompt 21 Codex**, only when supplied by the user.
+Recheck repository and read the files above. Revalidate current official OpenAI
+documentation, redirects, native schema and independent CLI/IDE support. Preserve
+DEC-004's unresolved IDE gap until current evidence/authorized decisions resolve it.
+Do not copy Claude fields or infer Codex behavior from the Claude artifact.
+No authority for publication, real project Init, native live testing or later
+prompts follows from this handoff.
 
-Safe to continue: **YES for a user-requested Prompt 20 Claude**.
-Shared content, policy/config contracts and all eight canonical skills are ready;
-official schema revalidation and actual native evidence remain necessary for
-dependent packaging/activation claims. No automatic continuation is authorized.
+Safe to continue: **YES for a user-requested Prompt 21 Codex**.
+Canonical content and an offline packaging pattern are ready; current Codex
+schema/capability research remains a prerequisite for its dependent decisions.
+Owner publication blockers and six independent native NOT_TESTED states remain.
 

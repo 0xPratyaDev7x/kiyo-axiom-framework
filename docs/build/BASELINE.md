@@ -1459,3 +1459,76 @@ Memory Impact: **NONE for developer project memory**. No .kiyo/config/policy/Mem
 state, platform overlays, tools, dist, dependency, runtime, central governance,
 commit/tag/push/PR/deployment/publication or host permission change was introduced.
 Stop after Prompt 19; Prompt 20 Claude requires its own user request.
+
+## Prompt 20 checks
+
+Checked 2026-09-29. Scope: Claude-only static native distribution, current
+documentation, developer-only packaging and offline validation. Native live tests
+are explicitly deferred by the user to Prompt 26. This is not a release or
+native compatibility acceptance.
+
+Initial root/branch/HEAD/tree/index were checked: main at
+f5b6f57bbda7ea0f33d7726312357b4e5d690a65, clean, no tags or applicable scoped
+AGENTS.md and no .kiyo. Initial docs/src/tests held 148 Markdown files;
+105 canonical product files and 68 controls. Prompt 19 was committed previously.
+LICENSE blob d2e60c5b160ed4f9ca096215e72efee5769936b1 is unchanged.
+Current owner decisions remain unresolved; no version/publisher was invented.
+
+Official sources and observed destinations:
+[CL20-01–13](../research/SOURCES.md#prompt-20-claude-revalidation), checked
+2026-09-29, DOCUMENTED_ONLY. Web opens reported no redirects; current overview
+links were followed to create/install destinations. No HTTP-chain capture claimed.
+No Codex/Copilot/standards refresh occurred in this Claude-only prompt.
+Actual terminal --version output was 2.1.220 (Claude Code), exit 0.
+Scoped on-disk extension metadata declares 2.1.283 / 2.1.284; active extension,
+running VS Code/account/provider remain UNKNOWN. Native targets stay NOT_TESTED.
+
+| ID / Name | Applicability | Command/method | Inspected scope | Execution status | Observed result | Evidence location | Limitations | Baseline relation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| P20-C01 Baseline/current sources | Required start and native decision input | Read-only Git/root/instructions; official web opens; inspected executable --version and named extension manifests | Baseline plus thirteen Claude sources and bounded local metadata | PASS | Clean baseline; sources/date/destinations recorded; CLI 2.1.220, extension metadata 2.1.283/2.1.284 | [Sources](../research/SOURCES.md#prompt-20-claude-revalidation), [observations](../evidence/claude/package-checks.md) | Metadata/version is not active installation or behavior; no credentials inspected | Actual Prompt 20 base above |
+| P20-C02 Native fields/catalog | Required minimal static schema choices | Official field-map review; Python JSON/frontmatter checks | Two-field manifest, eight name/description entries, inactive catalog template | PASS | Only documented selected fields emitted; unresolved owner tokens excluded from payload | [Field map](../compatibility/claude-package.md), [overlay](../../platforms/claude/README.md) | Native validator NOT_RUN; optional metadata warnings possible; template not registration-ready | First Claude overlay, working identity only |
+| P20-C03 Content/parity/closure | Required complete self-contained distribution | Inspected python tools/package_claude.py; source/output hashes; independent reverse-entry transform | 108 actual inputs and 794 output files | PASS | Eight entries, 97 shared resources each, eight native references, LICENSE/manifest; 4,956 contained links; canonical content preserved | [Artifact checks](../evidence/claude/package-checks.md), [inventory](../evidence/claude/package-inventory.json) | Static closure/hashes are not host loading or signatures | 105 unchanged canonical product files |
+| P20-C04 Relocation/no-op/rejections | Required developer packager behavior | Repeat build from different cwd; second isolated output/inventory; five negative mutations | Two equivalent trees; repeat snapshots and invalid payload/output cases | PASS | Equal digest/bytes/inventory; repeat leaves all 794 bytes/mtimes intact; five invalid cases rejected, human bytes preserved | [Executed methods/results](../evidence/claude/package-checks.md) | Filesystem relocation is not native cache execution; no exhaustive race/symlink security trial | Before/after snapshots, no real user output overwritten |
+| P20-C05 Activation/protocol/specifications | Required documentation and future live plan | Inspect rendered entries/reference; sample canonical managed block; count/check integration cases | Eight selectors, conditional Init adapter, CLI/VS Code protocol and sixteen cases | PASS | Entry budgets pass; sample block 114 words; cases retain NOT_RUN independently per host; no hook/core-autoload guarantee | [Activation reference](../../platforms/claude/resources/activation.md), [protocol](../compatibility/claude-installation-test-protocol.md), [scenarios](../../tests/integration/claude/scenarios.md) | Static sample is not Init preservation or activation behavior; no native command beyond --version | Core budget unchanged; all native results still absent |
+| P20-C06 Build continuity | Required closing records | One-off Python table/link/count validation | 80 trace rows, 30-step roadmap, nine issues and four owner decisions | PASS | 79 partial / 1 not implemented; 80 full verifications NOT_RUN; six native targets NOT_TESTED; next Prompt 21 | This section, TRACEABILITY/PROGRESS/HANDOFF | No full requirement verification inferred | Actual final counts; six newly partial |
+| P20-C07 Scope/preservation | Required final diff/resource check | Read-only Git diff --check and inline Python hash/link/scope assertions | 946 Markdown files, requested additions, LICENSE, index/HEAD, canonical source and runtime exclusions | PASS | 7,591 local links resolve; 105 canonical product files unchanged; 15 modified / 804 new files match allowlist; artifact digests retained | This section and artifact inventory | Static reference/scope checks, not global/native/live verification | Initial clean tree and actual artifact inventory |
+
+The exact artifact digest/size, builder and template digests, rendered entry
+budgets, source/output hashes and executed-method boundaries are in
+[package checks](../evidence/claude/package-checks.md). Generated output is
+3,651,629 bytes; inventory is developer evidence outside the payload.
+Seven Prompt 20 checks are distinct from the five CLAUDE-STATIC checks there.
+
+Files added: nine authored files (overlay manifest/catalog/reference/README,
+developer packager, two compatibility documents, integration specification,
+artifact check record), one generated source inventory and 794 dist files.
+Existing files changed: six build records, SOURCES, three compatibility maps,
+four architecture documents and developer source README (15). No canonical
+product rule, template or entry changed. No actual project bootstrap was added.
+
+REQ-002/003/006/076/078/079 gain partial artifact/tooling/protocol coverage;
+REQ-004/005/007/009/010/026/027/059/060/061/064/067/077 retain partial status with
+Claude artifact evidence; REQ-080 continuity updated. Actual totals: 79 partial /
+1 not implemented, all 80 full verifications NOT_RUN. Other native packages and
+all six live target results remain pending. Native validator NOT_RUN and sixteen
+integration scenarios NOT_RUN per Claude host are explicit deferred checks.
+
+Final validator ran through a PowerShell here-string with Python, read-only Git,
+hashlib, pathlib and the inspected packager's in-memory payload validator. Its
+first run stopped on Windows default text decoding in the validator; specifying
+UTF-8 fixed the developer check. An added EOF blank line was removed after the
+first diff --check warning. The repeated complete validator passed, including
+all 946 Markdown files, 7,591 local links, 695 canonical links and 68 controls.
+Overlay resource links were evaluated at their documented rendered location.
+These validation corrections did not change the generated artifact or product.
+Git LF/CRLF notices are distinct from whitespace errors.
+
+No dependencies installed, native settings changed, catalog registered, package
+installed or published. The only Claude executable invocation was --version.
+Developer Python is not shipped; consumer payload has no executable, MCP or hook.
+No commit/tag/push/PR/deployment or owner publication decision was made.
+
+Memory Impact: **NONE for developer project memory**. No .kiyo store/config/policy
+or bootstrap created. Stop after Prompt 20. Safe to continue with a user-requested
+Prompt 21 Codex after its own current schema and independent IDE-gap revalidation;
+no automatic continuation or release authority.

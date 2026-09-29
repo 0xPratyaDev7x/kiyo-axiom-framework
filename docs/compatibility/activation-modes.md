@@ -1,6 +1,7 @@
 # Kiyo Compass — Activation and resource loading
 
-Checked: **2026-09-28**. Official source IDs:
+Original baseline: **2026-09-28**; Claude loading rechecked **2026-09-29**
+in [Prompt 20](claude-package.md) (CL20-02/03/04/06/10). Official source IDs:
 [SOURCES](../research/SOURCES.md). Capability evidence is **DOCUMENTED_ONLY**;
 all live activation, relocation and maintenance checks are **NOT_TESTED**.
 Kiyo remains advisory and static.
@@ -97,4 +98,21 @@ reviewable policy. No uninstall/cleanup was attempted here.
 Prompt 02 stops at research. Prompt 03 may design around documented capabilities;
 Codex IDE native packaging and unresolved rule/selector/cache contracts remain
 gated. Later implementation and live evaluation cannot be replaced by these pages.
+
+
+## Prompt 20 Claude implementation boundary
+
+The Claude development package now contains eight rendered entries and their
+shared snapshots; a conditional [native adapter reference](../../platforms/claude/resources/activation.md)
+directs authorized Init to the existing managed-block procedure. Explicit skill
+selection and description matching need no separate project block to be possible.
+Neither proves that Core loads on every task. Project guidance and packaged Core
+reads remain separate, advisory capabilities.
+
+The native exclusion of plugin-root CLAUDE.md was rechecked (CL20-06,
+2026-09-29). Modern AGENTS.md selection has version/context conditions (CL20-03);
+the observed terminal 2.1.220 must not inherit a newer feature claim.
+No actual project instruction file or host setting was changed. Offline
+resource copies resolve from their own paths; native cache loading remains
+NOT_TESTED separately for CLI and VS Code. See [actual checks](../evidence/claude/package-checks.md).
 
