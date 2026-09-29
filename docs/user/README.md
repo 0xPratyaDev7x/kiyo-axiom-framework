@@ -124,6 +124,12 @@ action. A report file is written only within authorized output scope.
 PASS/FAIL/NOT_RUN/NOT_APPLICABLE/BLOCKED describe checks; DONE/PARTIALLY COMPLETE/
 BLOCKED/DECISION REQUIRED describe the task. A completed review is not evidence
 that tests passed. Missing environment is not N/A.
+
+Replies follow the language of your latest message: write in English and Kiyo
+answers in English; write in Thai and it answers only in Thai. Say “answer in
+English” (or any language) to override. Code, commands, paths and status labels
+stay unchanged, and project files keep the repository's own language convention.
+See [response language](../../src/kiyo/framework/reporting-contract.md#response-language).
 [Evidence Contract](../../src/kiyo/framework/evidence-contract.md);
 [report templates](../../src/kiyo/framework/reporting-contract.md).
 

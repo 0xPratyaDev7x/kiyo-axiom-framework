@@ -2,10 +2,10 @@
   "artifact_status": "DEVELOPMENT_UNRELEASED",
   "format": "kiyo-codex-ide-source-inventory-1",
   "metrics": {
-    "bytes": 3677337,
+    "bytes": 3690993,
     "files": 793,
-    "local_links": 4964,
-    "payload_digest": "f648ff8612b4a42feeefe10b7596476efa21863fc22897924fd5637966ac05aa",
+    "local_links": 4972,
+    "payload_digest": "4b1a36c8b1946ca8417a013b08f55e6cea968ce97866696adb252ddc0e8f41f1",
     "skills": 8
   },
   "outputs": {
@@ -87,10 +87,10 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-architecture/references/kiyo/framework/bootstrap.md": {
-      "bytes": 3644,
-      "sha256": "019593560277c9e61b117a9a32896ee5df3b27e4545bf9899840eef8dc2f8813",
+      "bytes": 3747,
+      "sha256": "fe071f395940cd032a45b1cc1f5928258d3e4b949e3b509e3f898b16a05bc06c",
       "source": "src/kiyo/framework/bootstrap.md",
-      "source_sha256": "019593560277c9e61b117a9a32896ee5df3b27e4545bf9899840eef8dc2f8813",
+      "source_sha256": "fe071f395940cd032a45b1cc1f5928258d3e4b949e3b509e3f898b16a05bc06c",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-architecture/references/kiyo/framework/context-loading.md": {
@@ -178,10 +178,10 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-architecture/references/kiyo/framework/init-activation.md": {
-      "bytes": 7843,
-      "sha256": "3f76f9fd82ca5aa57f2e0927af5eca8ad8667234d78ffc62c397ff53b6eb6cc2",
+      "bytes": 7757,
+      "sha256": "ef71e2b0eec9ee57cd816ce3175205d402fa9f09685c584edf0fa1b7f1a2f2d0",
       "source": "src/kiyo/framework/init-activation.md",
-      "source_sha256": "3f76f9fd82ca5aa57f2e0927af5eca8ad8667234d78ffc62c397ff53b6eb6cc2",
+      "source_sha256": "ef71e2b0eec9ee57cd816ce3175205d402fa9f09685c584edf0fa1b7f1a2f2d0",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-architecture/references/kiyo/framework/init-discovery.md": {
@@ -213,17 +213,17 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-architecture/references/kiyo/framework/project-configuration.md": {
-      "bytes": 5608,
-      "sha256": "8e487aa063d098cb37c5f0ef5831967d8fbc04bc267d8b80937f63c01092a4df",
+      "bytes": 5817,
+      "sha256": "8e752b622e1a7dbc0404d59f340884e1ac27a2a249b0ef3218631a011913fd04",
       "source": "src/kiyo/framework/project-configuration.md",
-      "source_sha256": "8e487aa063d098cb37c5f0ef5831967d8fbc04bc267d8b80937f63c01092a4df",
+      "source_sha256": "8e752b622e1a7dbc0404d59f340884e1ac27a2a249b0ef3218631a011913fd04",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-architecture/references/kiyo/framework/reporting-contract.md": {
-      "bytes": 6052,
-      "sha256": "443ae933d79b8a4626a4536cdf6eba6fac02f3694111a340ff585d02567debe5",
+      "bytes": 7515,
+      "sha256": "8e983c957f3ee5ece42e520dfc311372392c3e19399a41d35098a3f338ac424a",
       "source": "src/kiyo/framework/reporting-contract.md",
-      "source_sha256": "443ae933d79b8a4626a4536cdf6eba6fac02f3694111a340ff585d02567debe5",
+      "source_sha256": "8e983c957f3ee5ece42e520dfc311372392c3e19399a41d35098a3f338ac424a",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-architecture/references/kiyo/framework/requirement-readiness.md": {
@@ -381,10 +381,10 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-architecture/references/kiyo/templates/init/project-context.md": {
-      "bytes": 3128,
-      "sha256": "7b2f0ee4bafc2116bd7d8543ab1c4ba37b27a4b075d3c5af3ff3276c5571584f",
+      "bytes": 3146,
+      "sha256": "5d43b3c0fe430a2df525d7d985e2eb67155f1fc3fb8e933639770c4d70b5cce2",
       "source": "src/kiyo/templates/init/project-context.md",
-      "source_sha256": "7b2f0ee4bafc2116bd7d8543ab1c4ba37b27a4b075d3c5af3ff3276c5571584f",
+      "source_sha256": "5d43b3c0fe430a2df525d7d985e2eb67155f1fc3fb8e933639770c4d70b5cce2",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-architecture/references/kiyo/templates/memory/architecture.md": {
@@ -780,10 +780,10 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-implement/references/kiyo/framework/bootstrap.md": {
-      "bytes": 3644,
-      "sha256": "019593560277c9e61b117a9a32896ee5df3b27e4545bf9899840eef8dc2f8813",
+      "bytes": 3747,
+      "sha256": "fe071f395940cd032a45b1cc1f5928258d3e4b949e3b509e3f898b16a05bc06c",
       "source": "src/kiyo/framework/bootstrap.md",
-      "source_sha256": "019593560277c9e61b117a9a32896ee5df3b27e4545bf9899840eef8dc2f8813",
+      "source_sha256": "fe071f395940cd032a45b1cc1f5928258d3e4b949e3b509e3f898b16a05bc06c",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-implement/references/kiyo/framework/context-loading.md": {
@@ -871,10 +871,10 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-implement/references/kiyo/framework/init-activation.md": {
-      "bytes": 7843,
-      "sha256": "3f76f9fd82ca5aa57f2e0927af5eca8ad8667234d78ffc62c397ff53b6eb6cc2",
+      "bytes": 7757,
+      "sha256": "ef71e2b0eec9ee57cd816ce3175205d402fa9f09685c584edf0fa1b7f1a2f2d0",
       "source": "src/kiyo/framework/init-activation.md",
-      "source_sha256": "3f76f9fd82ca5aa57f2e0927af5eca8ad8667234d78ffc62c397ff53b6eb6cc2",
+      "source_sha256": "ef71e2b0eec9ee57cd816ce3175205d402fa9f09685c584edf0fa1b7f1a2f2d0",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-implement/references/kiyo/framework/init-discovery.md": {
@@ -906,17 +906,17 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-implement/references/kiyo/framework/project-configuration.md": {
-      "bytes": 5608,
-      "sha256": "8e487aa063d098cb37c5f0ef5831967d8fbc04bc267d8b80937f63c01092a4df",
+      "bytes": 5817,
+      "sha256": "8e752b622e1a7dbc0404d59f340884e1ac27a2a249b0ef3218631a011913fd04",
       "source": "src/kiyo/framework/project-configuration.md",
-      "source_sha256": "8e487aa063d098cb37c5f0ef5831967d8fbc04bc267d8b80937f63c01092a4df",
+      "source_sha256": "8e752b622e1a7dbc0404d59f340884e1ac27a2a249b0ef3218631a011913fd04",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-implement/references/kiyo/framework/reporting-contract.md": {
-      "bytes": 6052,
-      "sha256": "443ae933d79b8a4626a4536cdf6eba6fac02f3694111a340ff585d02567debe5",
+      "bytes": 7515,
+      "sha256": "8e983c957f3ee5ece42e520dfc311372392c3e19399a41d35098a3f338ac424a",
       "source": "src/kiyo/framework/reporting-contract.md",
-      "source_sha256": "443ae933d79b8a4626a4536cdf6eba6fac02f3694111a340ff585d02567debe5",
+      "source_sha256": "8e983c957f3ee5ece42e520dfc311372392c3e19399a41d35098a3f338ac424a",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-implement/references/kiyo/framework/requirement-readiness.md": {
@@ -1074,10 +1074,10 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-implement/references/kiyo/templates/init/project-context.md": {
-      "bytes": 3128,
-      "sha256": "7b2f0ee4bafc2116bd7d8543ab1c4ba37b27a4b075d3c5af3ff3276c5571584f",
+      "bytes": 3146,
+      "sha256": "5d43b3c0fe430a2df525d7d985e2eb67155f1fc3fb8e933639770c4d70b5cce2",
       "source": "src/kiyo/templates/init/project-context.md",
-      "source_sha256": "7b2f0ee4bafc2116bd7d8543ab1c4ba37b27a4b075d3c5af3ff3276c5571584f",
+      "source_sha256": "5d43b3c0fe430a2df525d7d985e2eb67155f1fc3fb8e933639770c4d70b5cce2",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-implement/references/kiyo/templates/memory/architecture.md": {
@@ -1473,10 +1473,10 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-init/references/kiyo/framework/bootstrap.md": {
-      "bytes": 3644,
-      "sha256": "019593560277c9e61b117a9a32896ee5df3b27e4545bf9899840eef8dc2f8813",
+      "bytes": 3747,
+      "sha256": "fe071f395940cd032a45b1cc1f5928258d3e4b949e3b509e3f898b16a05bc06c",
       "source": "src/kiyo/framework/bootstrap.md",
-      "source_sha256": "019593560277c9e61b117a9a32896ee5df3b27e4545bf9899840eef8dc2f8813",
+      "source_sha256": "fe071f395940cd032a45b1cc1f5928258d3e4b949e3b509e3f898b16a05bc06c",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-init/references/kiyo/framework/context-loading.md": {
@@ -1564,10 +1564,10 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-init/references/kiyo/framework/init-activation.md": {
-      "bytes": 7843,
-      "sha256": "3f76f9fd82ca5aa57f2e0927af5eca8ad8667234d78ffc62c397ff53b6eb6cc2",
+      "bytes": 7757,
+      "sha256": "ef71e2b0eec9ee57cd816ce3175205d402fa9f09685c584edf0fa1b7f1a2f2d0",
       "source": "src/kiyo/framework/init-activation.md",
-      "source_sha256": "3f76f9fd82ca5aa57f2e0927af5eca8ad8667234d78ffc62c397ff53b6eb6cc2",
+      "source_sha256": "ef71e2b0eec9ee57cd816ce3175205d402fa9f09685c584edf0fa1b7f1a2f2d0",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-init/references/kiyo/framework/init-discovery.md": {
@@ -1599,17 +1599,17 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-init/references/kiyo/framework/project-configuration.md": {
-      "bytes": 5608,
-      "sha256": "8e487aa063d098cb37c5f0ef5831967d8fbc04bc267d8b80937f63c01092a4df",
+      "bytes": 5817,
+      "sha256": "8e752b622e1a7dbc0404d59f340884e1ac27a2a249b0ef3218631a011913fd04",
       "source": "src/kiyo/framework/project-configuration.md",
-      "source_sha256": "8e487aa063d098cb37c5f0ef5831967d8fbc04bc267d8b80937f63c01092a4df",
+      "source_sha256": "8e752b622e1a7dbc0404d59f340884e1ac27a2a249b0ef3218631a011913fd04",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-init/references/kiyo/framework/reporting-contract.md": {
-      "bytes": 6052,
-      "sha256": "443ae933d79b8a4626a4536cdf6eba6fac02f3694111a340ff585d02567debe5",
+      "bytes": 7515,
+      "sha256": "8e983c957f3ee5ece42e520dfc311372392c3e19399a41d35098a3f338ac424a",
       "source": "src/kiyo/framework/reporting-contract.md",
-      "source_sha256": "443ae933d79b8a4626a4536cdf6eba6fac02f3694111a340ff585d02567debe5",
+      "source_sha256": "8e983c957f3ee5ece42e520dfc311372392c3e19399a41d35098a3f338ac424a",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-init/references/kiyo/framework/requirement-readiness.md": {
@@ -1767,10 +1767,10 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-init/references/kiyo/templates/init/project-context.md": {
-      "bytes": 3128,
-      "sha256": "7b2f0ee4bafc2116bd7d8543ab1c4ba37b27a4b075d3c5af3ff3276c5571584f",
+      "bytes": 3146,
+      "sha256": "5d43b3c0fe430a2df525d7d985e2eb67155f1fc3fb8e933639770c4d70b5cce2",
       "source": "src/kiyo/templates/init/project-context.md",
-      "source_sha256": "7b2f0ee4bafc2116bd7d8543ab1c4ba37b27a4b075d3c5af3ff3276c5571584f",
+      "source_sha256": "5d43b3c0fe430a2df525d7d985e2eb67155f1fc3fb8e933639770c4d70b5cce2",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-init/references/kiyo/templates/memory/architecture.md": {
@@ -2166,10 +2166,10 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-memory/references/kiyo/framework/bootstrap.md": {
-      "bytes": 3644,
-      "sha256": "019593560277c9e61b117a9a32896ee5df3b27e4545bf9899840eef8dc2f8813",
+      "bytes": 3747,
+      "sha256": "fe071f395940cd032a45b1cc1f5928258d3e4b949e3b509e3f898b16a05bc06c",
       "source": "src/kiyo/framework/bootstrap.md",
-      "source_sha256": "019593560277c9e61b117a9a32896ee5df3b27e4545bf9899840eef8dc2f8813",
+      "source_sha256": "fe071f395940cd032a45b1cc1f5928258d3e4b949e3b509e3f898b16a05bc06c",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-memory/references/kiyo/framework/context-loading.md": {
@@ -2257,10 +2257,10 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-memory/references/kiyo/framework/init-activation.md": {
-      "bytes": 7843,
-      "sha256": "3f76f9fd82ca5aa57f2e0927af5eca8ad8667234d78ffc62c397ff53b6eb6cc2",
+      "bytes": 7757,
+      "sha256": "ef71e2b0eec9ee57cd816ce3175205d402fa9f09685c584edf0fa1b7f1a2f2d0",
       "source": "src/kiyo/framework/init-activation.md",
-      "source_sha256": "3f76f9fd82ca5aa57f2e0927af5eca8ad8667234d78ffc62c397ff53b6eb6cc2",
+      "source_sha256": "ef71e2b0eec9ee57cd816ce3175205d402fa9f09685c584edf0fa1b7f1a2f2d0",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-memory/references/kiyo/framework/init-discovery.md": {
@@ -2292,17 +2292,17 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-memory/references/kiyo/framework/project-configuration.md": {
-      "bytes": 5608,
-      "sha256": "8e487aa063d098cb37c5f0ef5831967d8fbc04bc267d8b80937f63c01092a4df",
+      "bytes": 5817,
+      "sha256": "8e752b622e1a7dbc0404d59f340884e1ac27a2a249b0ef3218631a011913fd04",
       "source": "src/kiyo/framework/project-configuration.md",
-      "source_sha256": "8e487aa063d098cb37c5f0ef5831967d8fbc04bc267d8b80937f63c01092a4df",
+      "source_sha256": "8e752b622e1a7dbc0404d59f340884e1ac27a2a249b0ef3218631a011913fd04",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-memory/references/kiyo/framework/reporting-contract.md": {
-      "bytes": 6052,
-      "sha256": "443ae933d79b8a4626a4536cdf6eba6fac02f3694111a340ff585d02567debe5",
+      "bytes": 7515,
+      "sha256": "8e983c957f3ee5ece42e520dfc311372392c3e19399a41d35098a3f338ac424a",
       "source": "src/kiyo/framework/reporting-contract.md",
-      "source_sha256": "443ae933d79b8a4626a4536cdf6eba6fac02f3694111a340ff585d02567debe5",
+      "source_sha256": "8e983c957f3ee5ece42e520dfc311372392c3e19399a41d35098a3f338ac424a",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-memory/references/kiyo/framework/requirement-readiness.md": {
@@ -2460,10 +2460,10 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-memory/references/kiyo/templates/init/project-context.md": {
-      "bytes": 3128,
-      "sha256": "7b2f0ee4bafc2116bd7d8543ab1c4ba37b27a4b075d3c5af3ff3276c5571584f",
+      "bytes": 3146,
+      "sha256": "5d43b3c0fe430a2df525d7d985e2eb67155f1fc3fb8e933639770c4d70b5cce2",
       "source": "src/kiyo/templates/init/project-context.md",
-      "source_sha256": "7b2f0ee4bafc2116bd7d8543ab1c4ba37b27a4b075d3c5af3ff3276c5571584f",
+      "source_sha256": "5d43b3c0fe430a2df525d7d985e2eb67155f1fc3fb8e933639770c4d70b5cce2",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-memory/references/kiyo/templates/memory/architecture.md": {
@@ -2859,10 +2859,10 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-requirement/references/kiyo/framework/bootstrap.md": {
-      "bytes": 3644,
-      "sha256": "019593560277c9e61b117a9a32896ee5df3b27e4545bf9899840eef8dc2f8813",
+      "bytes": 3747,
+      "sha256": "fe071f395940cd032a45b1cc1f5928258d3e4b949e3b509e3f898b16a05bc06c",
       "source": "src/kiyo/framework/bootstrap.md",
-      "source_sha256": "019593560277c9e61b117a9a32896ee5df3b27e4545bf9899840eef8dc2f8813",
+      "source_sha256": "fe071f395940cd032a45b1cc1f5928258d3e4b949e3b509e3f898b16a05bc06c",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-requirement/references/kiyo/framework/context-loading.md": {
@@ -2950,10 +2950,10 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-requirement/references/kiyo/framework/init-activation.md": {
-      "bytes": 7843,
-      "sha256": "3f76f9fd82ca5aa57f2e0927af5eca8ad8667234d78ffc62c397ff53b6eb6cc2",
+      "bytes": 7757,
+      "sha256": "ef71e2b0eec9ee57cd816ce3175205d402fa9f09685c584edf0fa1b7f1a2f2d0",
       "source": "src/kiyo/framework/init-activation.md",
-      "source_sha256": "3f76f9fd82ca5aa57f2e0927af5eca8ad8667234d78ffc62c397ff53b6eb6cc2",
+      "source_sha256": "ef71e2b0eec9ee57cd816ce3175205d402fa9f09685c584edf0fa1b7f1a2f2d0",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-requirement/references/kiyo/framework/init-discovery.md": {
@@ -2985,17 +2985,17 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-requirement/references/kiyo/framework/project-configuration.md": {
-      "bytes": 5608,
-      "sha256": "8e487aa063d098cb37c5f0ef5831967d8fbc04bc267d8b80937f63c01092a4df",
+      "bytes": 5817,
+      "sha256": "8e752b622e1a7dbc0404d59f340884e1ac27a2a249b0ef3218631a011913fd04",
       "source": "src/kiyo/framework/project-configuration.md",
-      "source_sha256": "8e487aa063d098cb37c5f0ef5831967d8fbc04bc267d8b80937f63c01092a4df",
+      "source_sha256": "8e752b622e1a7dbc0404d59f340884e1ac27a2a249b0ef3218631a011913fd04",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-requirement/references/kiyo/framework/reporting-contract.md": {
-      "bytes": 6052,
-      "sha256": "443ae933d79b8a4626a4536cdf6eba6fac02f3694111a340ff585d02567debe5",
+      "bytes": 7515,
+      "sha256": "8e983c957f3ee5ece42e520dfc311372392c3e19399a41d35098a3f338ac424a",
       "source": "src/kiyo/framework/reporting-contract.md",
-      "source_sha256": "443ae933d79b8a4626a4536cdf6eba6fac02f3694111a340ff585d02567debe5",
+      "source_sha256": "8e983c957f3ee5ece42e520dfc311372392c3e19399a41d35098a3f338ac424a",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-requirement/references/kiyo/framework/requirement-readiness.md": {
@@ -3153,10 +3153,10 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-requirement/references/kiyo/templates/init/project-context.md": {
-      "bytes": 3128,
-      "sha256": "7b2f0ee4bafc2116bd7d8543ab1c4ba37b27a4b075d3c5af3ff3276c5571584f",
+      "bytes": 3146,
+      "sha256": "5d43b3c0fe430a2df525d7d985e2eb67155f1fc3fb8e933639770c4d70b5cce2",
       "source": "src/kiyo/templates/init/project-context.md",
-      "source_sha256": "7b2f0ee4bafc2116bd7d8543ab1c4ba37b27a4b075d3c5af3ff3276c5571584f",
+      "source_sha256": "5d43b3c0fe430a2df525d7d985e2eb67155f1fc3fb8e933639770c4d70b5cce2",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-requirement/references/kiyo/templates/memory/architecture.md": {
@@ -3552,10 +3552,10 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-review/references/kiyo/framework/bootstrap.md": {
-      "bytes": 3644,
-      "sha256": "019593560277c9e61b117a9a32896ee5df3b27e4545bf9899840eef8dc2f8813",
+      "bytes": 3747,
+      "sha256": "fe071f395940cd032a45b1cc1f5928258d3e4b949e3b509e3f898b16a05bc06c",
       "source": "src/kiyo/framework/bootstrap.md",
-      "source_sha256": "019593560277c9e61b117a9a32896ee5df3b27e4545bf9899840eef8dc2f8813",
+      "source_sha256": "fe071f395940cd032a45b1cc1f5928258d3e4b949e3b509e3f898b16a05bc06c",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-review/references/kiyo/framework/context-loading.md": {
@@ -3643,10 +3643,10 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-review/references/kiyo/framework/init-activation.md": {
-      "bytes": 7843,
-      "sha256": "3f76f9fd82ca5aa57f2e0927af5eca8ad8667234d78ffc62c397ff53b6eb6cc2",
+      "bytes": 7757,
+      "sha256": "ef71e2b0eec9ee57cd816ce3175205d402fa9f09685c584edf0fa1b7f1a2f2d0",
       "source": "src/kiyo/framework/init-activation.md",
-      "source_sha256": "3f76f9fd82ca5aa57f2e0927af5eca8ad8667234d78ffc62c397ff53b6eb6cc2",
+      "source_sha256": "ef71e2b0eec9ee57cd816ce3175205d402fa9f09685c584edf0fa1b7f1a2f2d0",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-review/references/kiyo/framework/init-discovery.md": {
@@ -3678,17 +3678,17 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-review/references/kiyo/framework/project-configuration.md": {
-      "bytes": 5608,
-      "sha256": "8e487aa063d098cb37c5f0ef5831967d8fbc04bc267d8b80937f63c01092a4df",
+      "bytes": 5817,
+      "sha256": "8e752b622e1a7dbc0404d59f340884e1ac27a2a249b0ef3218631a011913fd04",
       "source": "src/kiyo/framework/project-configuration.md",
-      "source_sha256": "8e487aa063d098cb37c5f0ef5831967d8fbc04bc267d8b80937f63c01092a4df",
+      "source_sha256": "8e752b622e1a7dbc0404d59f340884e1ac27a2a249b0ef3218631a011913fd04",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-review/references/kiyo/framework/reporting-contract.md": {
-      "bytes": 6052,
-      "sha256": "443ae933d79b8a4626a4536cdf6eba6fac02f3694111a340ff585d02567debe5",
+      "bytes": 7515,
+      "sha256": "8e983c957f3ee5ece42e520dfc311372392c3e19399a41d35098a3f338ac424a",
       "source": "src/kiyo/framework/reporting-contract.md",
-      "source_sha256": "443ae933d79b8a4626a4536cdf6eba6fac02f3694111a340ff585d02567debe5",
+      "source_sha256": "8e983c957f3ee5ece42e520dfc311372392c3e19399a41d35098a3f338ac424a",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-review/references/kiyo/framework/requirement-readiness.md": {
@@ -3846,10 +3846,10 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-review/references/kiyo/templates/init/project-context.md": {
-      "bytes": 3128,
-      "sha256": "7b2f0ee4bafc2116bd7d8543ab1c4ba37b27a4b075d3c5af3ff3276c5571584f",
+      "bytes": 3146,
+      "sha256": "5d43b3c0fe430a2df525d7d985e2eb67155f1fc3fb8e933639770c4d70b5cce2",
       "source": "src/kiyo/templates/init/project-context.md",
-      "source_sha256": "7b2f0ee4bafc2116bd7d8543ab1c4ba37b27a4b075d3c5af3ff3276c5571584f",
+      "source_sha256": "5d43b3c0fe430a2df525d7d985e2eb67155f1fc3fb8e933639770c4d70b5cce2",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-review/references/kiyo/templates/memory/architecture.md": {
@@ -4245,10 +4245,10 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-security/references/kiyo/framework/bootstrap.md": {
-      "bytes": 3644,
-      "sha256": "019593560277c9e61b117a9a32896ee5df3b27e4545bf9899840eef8dc2f8813",
+      "bytes": 3747,
+      "sha256": "fe071f395940cd032a45b1cc1f5928258d3e4b949e3b509e3f898b16a05bc06c",
       "source": "src/kiyo/framework/bootstrap.md",
-      "source_sha256": "019593560277c9e61b117a9a32896ee5df3b27e4545bf9899840eef8dc2f8813",
+      "source_sha256": "fe071f395940cd032a45b1cc1f5928258d3e4b949e3b509e3f898b16a05bc06c",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-security/references/kiyo/framework/context-loading.md": {
@@ -4336,10 +4336,10 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-security/references/kiyo/framework/init-activation.md": {
-      "bytes": 7843,
-      "sha256": "3f76f9fd82ca5aa57f2e0927af5eca8ad8667234d78ffc62c397ff53b6eb6cc2",
+      "bytes": 7757,
+      "sha256": "ef71e2b0eec9ee57cd816ce3175205d402fa9f09685c584edf0fa1b7f1a2f2d0",
       "source": "src/kiyo/framework/init-activation.md",
-      "source_sha256": "3f76f9fd82ca5aa57f2e0927af5eca8ad8667234d78ffc62c397ff53b6eb6cc2",
+      "source_sha256": "ef71e2b0eec9ee57cd816ce3175205d402fa9f09685c584edf0fa1b7f1a2f2d0",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-security/references/kiyo/framework/init-discovery.md": {
@@ -4371,17 +4371,17 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-security/references/kiyo/framework/project-configuration.md": {
-      "bytes": 5608,
-      "sha256": "8e487aa063d098cb37c5f0ef5831967d8fbc04bc267d8b80937f63c01092a4df",
+      "bytes": 5817,
+      "sha256": "8e752b622e1a7dbc0404d59f340884e1ac27a2a249b0ef3218631a011913fd04",
       "source": "src/kiyo/framework/project-configuration.md",
-      "source_sha256": "8e487aa063d098cb37c5f0ef5831967d8fbc04bc267d8b80937f63c01092a4df",
+      "source_sha256": "8e752b622e1a7dbc0404d59f340884e1ac27a2a249b0ef3218631a011913fd04",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-security/references/kiyo/framework/reporting-contract.md": {
-      "bytes": 6052,
-      "sha256": "443ae933d79b8a4626a4536cdf6eba6fac02f3694111a340ff585d02567debe5",
+      "bytes": 7515,
+      "sha256": "8e983c957f3ee5ece42e520dfc311372392c3e19399a41d35098a3f338ac424a",
       "source": "src/kiyo/framework/reporting-contract.md",
-      "source_sha256": "443ae933d79b8a4626a4536cdf6eba6fac02f3694111a340ff585d02567debe5",
+      "source_sha256": "8e983c957f3ee5ece42e520dfc311372392c3e19399a41d35098a3f338ac424a",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-security/references/kiyo/framework/requirement-readiness.md": {
@@ -4539,10 +4539,10 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-security/references/kiyo/templates/init/project-context.md": {
-      "bytes": 3128,
-      "sha256": "7b2f0ee4bafc2116bd7d8543ab1c4ba37b27a4b075d3c5af3ff3276c5571584f",
+      "bytes": 3146,
+      "sha256": "5d43b3c0fe430a2df525d7d985e2eb67155f1fc3fb8e933639770c4d70b5cce2",
       "source": "src/kiyo/templates/init/project-context.md",
-      "source_sha256": "7b2f0ee4bafc2116bd7d8543ab1c4ba37b27a4b075d3c5af3ff3276c5571584f",
+      "source_sha256": "5d43b3c0fe430a2df525d7d985e2eb67155f1fc3fb8e933639770c4d70b5cce2",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-security/references/kiyo/templates/memory/architecture.md": {
@@ -4938,10 +4938,10 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-test/references/kiyo/framework/bootstrap.md": {
-      "bytes": 3644,
-      "sha256": "019593560277c9e61b117a9a32896ee5df3b27e4545bf9899840eef8dc2f8813",
+      "bytes": 3747,
+      "sha256": "fe071f395940cd032a45b1cc1f5928258d3e4b949e3b509e3f898b16a05bc06c",
       "source": "src/kiyo/framework/bootstrap.md",
-      "source_sha256": "019593560277c9e61b117a9a32896ee5df3b27e4545bf9899840eef8dc2f8813",
+      "source_sha256": "fe071f395940cd032a45b1cc1f5928258d3e4b949e3b509e3f898b16a05bc06c",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-test/references/kiyo/framework/context-loading.md": {
@@ -5029,10 +5029,10 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-test/references/kiyo/framework/init-activation.md": {
-      "bytes": 7843,
-      "sha256": "3f76f9fd82ca5aa57f2e0927af5eca8ad8667234d78ffc62c397ff53b6eb6cc2",
+      "bytes": 7757,
+      "sha256": "ef71e2b0eec9ee57cd816ce3175205d402fa9f09685c584edf0fa1b7f1a2f2d0",
       "source": "src/kiyo/framework/init-activation.md",
-      "source_sha256": "3f76f9fd82ca5aa57f2e0927af5eca8ad8667234d78ffc62c397ff53b6eb6cc2",
+      "source_sha256": "ef71e2b0eec9ee57cd816ce3175205d402fa9f09685c584edf0fa1b7f1a2f2d0",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-test/references/kiyo/framework/init-discovery.md": {
@@ -5064,17 +5064,17 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-test/references/kiyo/framework/project-configuration.md": {
-      "bytes": 5608,
-      "sha256": "8e487aa063d098cb37c5f0ef5831967d8fbc04bc267d8b80937f63c01092a4df",
+      "bytes": 5817,
+      "sha256": "8e752b622e1a7dbc0404d59f340884e1ac27a2a249b0ef3218631a011913fd04",
       "source": "src/kiyo/framework/project-configuration.md",
-      "source_sha256": "8e487aa063d098cb37c5f0ef5831967d8fbc04bc267d8b80937f63c01092a4df",
+      "source_sha256": "8e752b622e1a7dbc0404d59f340884e1ac27a2a249b0ef3218631a011913fd04",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-test/references/kiyo/framework/reporting-contract.md": {
-      "bytes": 6052,
-      "sha256": "443ae933d79b8a4626a4536cdf6eba6fac02f3694111a340ff585d02567debe5",
+      "bytes": 7515,
+      "sha256": "8e983c957f3ee5ece42e520dfc311372392c3e19399a41d35098a3f338ac424a",
       "source": "src/kiyo/framework/reporting-contract.md",
-      "source_sha256": "443ae933d79b8a4626a4536cdf6eba6fac02f3694111a340ff585d02567debe5",
+      "source_sha256": "8e983c957f3ee5ece42e520dfc311372392c3e19399a41d35098a3f338ac424a",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-test/references/kiyo/framework/requirement-readiness.md": {
@@ -5232,10 +5232,10 @@
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-test/references/kiyo/templates/init/project-context.md": {
-      "bytes": 3128,
-      "sha256": "7b2f0ee4bafc2116bd7d8543ab1c4ba37b27a4b075d3c5af3ff3276c5571584f",
+      "bytes": 3146,
+      "sha256": "5d43b3c0fe430a2df525d7d985e2eb67155f1fc3fb8e933639770c4d70b5cce2",
       "source": "src/kiyo/templates/init/project-context.md",
-      "source_sha256": "7b2f0ee4bafc2116bd7d8543ab1c4ba37b27a4b075d3c5af3ff3276c5571584f",
+      "source_sha256": "5d43b3c0fe430a2df525d7d985e2eb67155f1fc3fb8e933639770c4d70b5cce2",
       "transform": "byte-copy"
     },
     ".agents/skills/kiyo-test/references/kiyo/templates/memory/architecture.md": {
@@ -5563,7 +5563,7 @@
   },
   "python": "3.11.9",
   "revision_scope": "Base commit; input hashes describe actual worktree bytes.",
-  "source_git_head": "0569e6542cca905bb78de661ee84b653287c0362",
+  "source_git_head": "85f54d1c62d90424117d4d9a66a2e2e5a019c0fb",
   "sources": [
     "LICENSE",
     "platforms/codex-ide/resources/activation.md",

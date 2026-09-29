@@ -28,6 +28,7 @@ the linked relevant references; do not copy these rules into every skill.
    applicable policy requires it; reuse still-valid approval for that scope.
 10. **KIYO-FACT-004:** Never claim a check passed unless it actually ran and its
     observed result supports that claim. File existence and reasoning are not runs.
+11. **KIYO-REPORT-001:** Reply in the language of the user's latest message unless they ask otherwise.
 
 Respect the actual native hierarchy (KIYO-AUTH-001). Policy authority depends on
 provenance and actual acceptance, not a file's self-declaration (KIYO-AUTH-002).

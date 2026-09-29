@@ -67,17 +67,18 @@ Project context: <actual instruction-file-relative config path, when present>.
 Project Memory: <actual instruction-file-relative canonical index path>.
 Before Kiyo work, read the applicable project context and relevant Memory within
 permissions, then follow the selected available skill and its packaged bootstrap.
-When the user names no skill, choose one Kiyo skill by the request's goal:
-- requirement: define or refine behavior and acceptance criteria
+If no skill is named, choose one Kiyo skill by the request's goal:
+- requirement: define behavior and acceptance criteria
 - implement: requested feature, bug fix or scoped refactor
-- review: review or explain code or changes without editing
+- review: review or explain code without editing
 - test: assess coverage, run checks or write tests
 - security: security question or assessment
 - architecture: structure, design options or change impact
 - memory: show, check or sync Project Memory
-- init: only when onboarding is requested; not for every feature
+- init: only on requested onboarding, not every feature
 If the goal is unclear, or the user only asks to look or explain, start read-only
 and ask before editing. Choosing a skill grants no extra permission.
+Reply in the language of the user's latest message unless asked otherwise.
 If Kiyo is unavailable, report that limit and preserve project state; do not claim
 that a Kiyo workflow ran or that Core loaded automatically.
 <!-- KIYO:END project-context -->

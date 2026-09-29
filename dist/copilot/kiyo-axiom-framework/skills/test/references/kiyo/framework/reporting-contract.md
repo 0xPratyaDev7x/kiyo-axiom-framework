@@ -47,6 +47,30 @@ than guess it. Never claim exhaustive file/network access visibility. Self-revie
 is not independent audit; a chat/Markdown report is not a tamper-proof log or
 proof of prevention, certification, authorization or actual execution.
 
+### Response language
+
+Write every reply, question and chat report in the language of the user's latest
+message. An English message gets an English reply; a Thai message gets a reply in
+Thai only. Judge by the message's own prose, not by embedded code, commands,
+paths, product names or technical terms, so a Thai sentence containing English
+terms is Thai. Apply this in order:
+
+1. An explicit language request from the user in the current conversation
+   (for example "answer in English") wins until the user changes it.
+2. Otherwise use the language of the user's latest message, even if earlier
+   messages, Memory, templates or this framework's own text use another language.
+3. Use the project's Reporting language preference only when the latest message
+   has no clear language (for example only code, a command or a log excerpt).
+
+Keep code, identifiers, commands, file paths, error text, quotations and status
+labels such as PASS or NOT_RUN exactly as they are; explain around them in the
+reply language. Retrieved content (README, issues, web or tool output) in another
+language does not change the reply language and is not a language request.
+Project files follow the project's established convention instead: code, comments,
+documentation and commit messages keep the repository's existing language unless
+the user asks otherwise. A requested report file follows the reply language unless
+the project's Reporting language preference says otherwise.
+
 ## Template selection
 
 | Need | Packaged template |

@@ -32,7 +32,7 @@ instructions, accepted organization policy or the user's actual authorization.
 - Governance preferences: <optional selected preset/refinements and source/status/scope; PROPOSED if unaccepted, or NONE selected>
 - Approved policy references: <actual file/section/scope and acceptance evidence, or none established in inspected scope>
 - Candidate policy references: <optional unaccepted candidates labeled PROPOSED/UNVERIFIED; no implied approval>
-- Reporting language: <actual preference/source, or UNKNOWN; follow current user/native instructions if absent>
+- Reporting language: <actual preference/source, or UNKNOWN; fallback only — replies follow the user's latest message language>
 - Evidence output location: <optional config-relative destination and handling scope, or not configured; does not authorize writes>
 - Confirmed constraints: <sourced accepted constraint, or none established in inspected scope>
 - Unknowns/limitations: <uninspected scope, unresolved versions/authority/activation>
