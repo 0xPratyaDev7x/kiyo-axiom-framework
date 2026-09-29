@@ -28,7 +28,7 @@ def safe_extract(data, destination):
         require(len({p.casefold() for p in names}) == len(names), "Duplicate/case-colliding member")
         for item in members:
             parts = PurePosixPath(item.filename).parts
-            require(item.filename.startswith("kiyo-compass/") and len(parts) > 1
+            require(item.filename.startswith("kiyo-axiom-framework/") and len(parts) > 1
                     and not item.filename.startswith("/") and "\\" not in item.filename
                     and ":" not in item.filename and all(p not in (".", "..") for p in parts)
                     and "//" not in item.filename, "Unsafe ZIP member")
@@ -40,7 +40,7 @@ def safe_extract(data, destination):
             target.parent.mkdir(parents=True, exist_ok=True)
             with target.open("xb") as handle:
                 handle.write(archive.read(item))
-    return destination / "kiyo-compass"
+    return destination / "kiyo-axiom-framework"
 
 
 def rejects(fn, label):
@@ -93,7 +93,7 @@ def main():
         payloads[target] = files
         require({p: sha(b) for p, b in files.items()} ==
                 {p: v["sha256"] for p, v in row["outputs"].items()}, "Extracted inventory differs")
-        previous = ROOT / ("dist/claude" if target == "claude" else f"dist/{target}/kiyo-compass")
+        previous = ROOT / ("dist/claude" if target == "claude" else f"dist/{target}/kiyo-axiom-framework")
         require(files == verify.collect(previous), "Existing generated distribution drift")
         for p, provenance in row["outputs"].items():
             original = inputs[provenance["source"]]
@@ -163,9 +163,9 @@ def main():
 
     unsafe = []
     for label, filename, mode in (
-        ("zip-traversal", "kiyo-compass/../../outside.md", 0o100644),
+        ("zip-traversal", "kiyo-axiom-framework/../../outside.md", 0o100644),
         ("zip-absolute", "/outside.md", 0o100644),
-        ("zip-symlink", "kiyo-compass/link.md", 0o120777),
+        ("zip-symlink", "kiyo-axiom-framework/link.md", 0o120777),
     ):
         stream = io.BytesIO()
         with zipfile.ZipFile(stream, "w") as z:
@@ -176,7 +176,7 @@ def main():
         unsafe.append(rejects(lambda: safe_extract(stream.getvalue(), scratch / label), label))
     stream = io.BytesIO()
     with zipfile.ZipFile(stream, "w") as z:
-        for name in ("kiyo-compass/A.md", "kiyo-compass/a.md"):
+        for name in ("kiyo-axiom-framework/A.md", "kiyo-axiom-framework/a.md"):
             item = zipfile.ZipInfo(name)
             item.external_attr = 0o100644 << 16
             z.writestr(item, b"SYNTHETIC")

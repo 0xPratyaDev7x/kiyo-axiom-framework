@@ -55,7 +55,7 @@ def output_path(path):
 
 
 def versions(manifests):
-    require(manifests and {m.get("name") for m in manifests.values()} == {"kiyo-compass"},
+    require(manifests and {m.get("name") for m in manifests.values()} == {"kiyo-axiom-framework"},
             "Native identity mismatch")
     values = {path: m.get("version") for path, m in manifests.items()}
     require(all(v is None or isinstance(v, str) and v.strip() for v in values.values()),

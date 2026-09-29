@@ -16,7 +16,7 @@ CLI and IDE live Kiyo results are independently NOT_TESTED.
 describes a portable root manifest and a supported compatibility layout.
 Kiyo authors one [portable input](../../platforms/codex/plugin.json) and derives
 the compatibility manifest from it. This is an OpenAI-specific packaging decision,
-not a renamed Claude manifest. Output: dist/codex/kiyo-compass.
+not a renamed Claude manifest. Output: dist/codex/kiyo-axiom-framework.
 
 | Selected surface | Treatment / justification | Source and limitation |
 | --- | --- | --- |

@@ -1,12 +1,12 @@
 {
   "name": "kiyo-codejadee",
-  "description": "Kiyo Compass engineering and governance skills for Claude Code.",
+  "description": "Kiyo Axiom Framework engineering and governance skills for Claude Code.",
   "owner": {
     "name": "0xPratyaDev7x"
   },
   "plugins": [
     {
-      "name": "kiyo-compass",
+      "name": "kiyo-axiom-framework",
       "source": "./dist/claude",
       "description": "Eight static Kiyo engineering and governance skills with shared guidance and project-owned memory."
     }

@@ -33,7 +33,7 @@ def validate_manifest(manifest):
     require(isinstance(name, str) and 1 <= len(name) <= 64
             and re.fullmatch(r"(?!.*(?:--|\.\.))[a-z0-9](?:[a-z0-9.-]*[a-z0-9])?", name),
             "Invalid portable name")
-    require(name == "kiyo-compass", "Unexpected working identity")
+    require(name == "kiyo-axiom-framework", "Unexpected working identity")
     require(isinstance(manifest["description"], str) and manifest["description"].strip(),
             "Missing development description")
 
@@ -128,13 +128,13 @@ def validate_payload(payload):
 def main():
     root = Path(__file__).resolve().parents[1]
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=root / "dist/copilot/kiyo-compass")
+    parser.add_argument("--output", type=Path, default=root / "dist/copilot/kiyo-axiom-framework")
     parser.add_argument("--inventory", type=Path, default=root / "docs/evidence/copilot/package-inventory.json")
     args = parser.parse_args()
     output, inventory = args.output.absolute(), args.inventory.absolute()
     reject_links(output)
     reject_links(inventory)
-    require(output.name == "kiyo-compass", "Outer plugin folder must match working identity")
+    require(output.name == "kiyo-axiom-framework", "Outer plugin folder must match working identity")
     require(not inventory.resolve().is_relative_to(output.resolve()), "Inventory must be outside payload")
     for tree in ("src", "platforms"):
         require(not output.resolve().is_relative_to((root / tree).resolve()), "Output cannot be source/overlay")

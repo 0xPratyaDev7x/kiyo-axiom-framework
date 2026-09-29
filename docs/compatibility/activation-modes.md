@@ -1,4 +1,4 @@
-# Kiyo Compass — Activation and resource loading
+# Kiyo Axiom Framework — Activation and resource loading
 
 Original baseline: **2026-09-28**; Claude loading rechecked **2026-09-29**
 in [Prompt 20](claude-package.md) (CL20-02/03/04/06/10); Codex rechecked

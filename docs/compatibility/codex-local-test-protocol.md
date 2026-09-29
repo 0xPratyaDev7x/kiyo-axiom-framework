@@ -14,7 +14,7 @@ checks and the local ingestion validator. No session, install or live invocation
 
 ## Preflight and isolation
 
-Use the prepared dist/codex/kiyo-compass artifact; no end-user generator.
+Use the prepared dist/codex/kiyo-axiom-framework artifact; no end-user generator.
 Record actual artifact digest, CLI/OS/extension versions, permitted account context,
 test scope and output location. Preserve real native policies and approvals.
 The current candidate has three missing release identity fields; record the
@@ -50,11 +50,11 @@ observed in local 0.158.0 help; **only their --help variants ran in Prompt 21**:
 | Planned action | Form / evidence | Limit |
 | --- | --- | --- |
 | Source registration | codex plugin marketplace add <authorized-catalog-root>; CX21-01 and local help | Mutates native configuration; disposable context only |
-| Install | codex plugin add kiyo-compass@<confirmed-catalog-name>; local help | No inferred --scope local option; verify actual storage/config effects |
+| Install | codex plugin add kiyo-axiom-framework@<confirmed-catalog-name>; local help | No inferred --scope local option; verify actual storage/config effects |
 | Discover | /plugins then a new session; CX21-06 | Browser availability does not prove all eight skills loaded |
 | Select skill | /skills or $ picker; CX21-04 | Select actual Kiyo entry; record qualified spelling/source instead of guessing |
 | Refresh Git catalog | codex plugin marketplace upgrade <confirmed-catalog-name>; local help | Refreshes catalog snapshot; not a verified installed payload update |
-| Uninstall | codex plugin remove kiyo-compass@<confirmed-catalog-name>; local help | Help says it removes local cache; actual project-state preservation still needs testing |
+| Uninstall | codex plugin remove kiyo-axiom-framework@<confirmed-catalog-name>; local help | Help says it removes local cache; actual project-state preservation still needs testing |
 
 Angle-bracket tokens are metavariables, not literal commands. No safety-bypass,
 approval-disabling or global-install flags are proposed. Project config is loaded

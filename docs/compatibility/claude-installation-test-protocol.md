@@ -69,10 +69,10 @@ After isolation is verified, the documented command forms include:
 ```text
 claude plugin validate <catalog-root>
 claude plugin marketplace add <catalog-root>
-claude plugin install kiyo-compass@<confirmed-catalog-name> --scope local
+claude plugin install kiyo-axiom-framework@<confirmed-catalog-name> --scope local
 claude plugin list
-claude plugin update kiyo-compass@<confirmed-catalog-name>
-claude plugin uninstall kiyo-compass@<confirmed-catalog-name> --scope local
+claude plugin update kiyo-axiom-framework@<confirmed-catalog-name>
+claude plugin uninstall kiyo-axiom-framework@<confirmed-catalog-name> --scope local
 ```
 
 [Install/maintenance](https://code.claude.com/docs/en/plugins/install), CL20-09,

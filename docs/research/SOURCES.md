@@ -1,4 +1,4 @@
-# Kiyo Compass — Research sources
+# Kiyo Axiom Framework — Research sources
 
 Original baseline: **2026-09-28**, Asia/Bangkok (Prompt 02).
 Prompt 07 rechecked W01/W02 and added W05–W15 on **2026-09-29**.

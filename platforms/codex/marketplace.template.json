@@ -5,10 +5,10 @@
   },
   "plugins": [
     {
-      "name": "kiyo-compass",
+      "name": "kiyo-axiom-framework",
       "source": {
         "source": "local",
-        "path": "./plugins/kiyo-compass"
+        "path": "./plugins/kiyo-axiom-framework"
       },
       "policy": {
         "installation": "AVAILABLE",

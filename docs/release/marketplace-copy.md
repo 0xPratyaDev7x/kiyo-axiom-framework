@@ -9,8 +9,8 @@ an active manifest, catalog entry, public listing or publication authorization.
 
 | Field | Observed value / source | Publication boundary |
 | --- | --- | --- |
-| Working display name | Kiyo Compass, [Codex interface](../../platforms/codex/plugin.json) | Final name and availability require DEC-001 |
-| Working native name | kiyo-compass in all three overlays | Not a reserved namespace or publisher identity |
+| Working display name | Kiyo Axiom Framework, [Codex interface](../../platforms/codex/plugin.json) | Final name and availability require DEC-001 |
+| Working native name | kiyo-axiom-framework in all three overlays | Not a reserved namespace or publisher identity |
 | Claude description | Eight static Kiyo engineering and governance skills with shared guidance and project-owned memory. | Actual [manifest](../../platforms/claude/.claude-plugin/plugin.json) text |
 | Codex/Copilot description | Eight static engineering and governance skills with shared guidance and project-owned memory. | Actual [Codex](../../platforms/codex/plugin.json) / [Copilot](../../platforms/copilot/plugin.json) text |
 | Codex short description | Engineering workflow guidance | Actual interface metadata |
@@ -22,7 +22,7 @@ an active manifest, catalog entry, public listing or publication authorization.
 
 ## Proposed description
 
-Kiyo Compass provides eight Markdown Skills for repository onboarding,
+Kiyo Axiom Framework provides eight Markdown Skills for repository onboarding,
 requirements, implementation, review, testing, security, architecture and
 project-owned Memory. Shared guidance asks the host agent to inspect evidence,
 keep changes within scope, preserve read-only intent and report actual checks

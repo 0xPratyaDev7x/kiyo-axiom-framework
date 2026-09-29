@@ -11,7 +11,7 @@ This is a static agent plugin, not a VSIX, GitHub App or hosted extension servic
 - [Native adapter](resources/activation.md): target-specific selection/loading
   procedure, appended conditionally to each canonical entry.
 - [Developer packager](../../tools/package_copilot.py): produces
-  dist/copilot/kiyo-compass plus an external provenance inventory.
+  dist/copilot/kiyo-axiom-framework plus an external provenance inventory.
 
 Use python -B tools/package_copilot.py only while developing this repository.
 Existing identical output is a no-op; different output is rejected without
@@ -46,7 +46,7 @@ standard VS Code extension directory; this is not proof of system-wide absence.
 No marketplace JSON or recommendation/settings file is activated or supplied
 with fabricated values. Before catalog/curated publication obtain the real
 publication name, version, owner/publisher, authorized repository/source/ref,
-destination and release-license confirmation. Existing working kiyo-compass and
+destination and release-license confirmation. Existing working kiyo-axiom-framework and
 LICENSE do not establish these decisions. See [release gates](../../docs/compatibility/copilot-installation.md#owner-and-publication-gates).
 The artifact is DEVELOPMENT_UNRELEASED; no listing, reservation, signature,
 certification or six-target compatibility claim is made.

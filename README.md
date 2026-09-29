@@ -1,4 +1,4 @@
-# Kiyo Compass
+# Kiyo Axiom Framework
 
 Final build handoff: [Final Acceptance Report](docs/build/FINAL-ACCEPTANCE.md).
 Static content is authored and local packages validated with stated limits;
@@ -64,7 +64,13 @@ OS, account or IDE. Codex's observed fallback version 1.0.0 is not a Kiyo releas
    For Claude Code, this repository is itself a custom marketplace
    ([.claude-plugin/marketplace.json](.claude-plugin/marketplace.json)):
    run `/plugin marketplace add 0xPratyaDev7x/kiyo-codejadee-framework`, then
-   `/plugin install kiyo-compass@kiyo-codejadee`.
+   `/plugin install kiyo-axiom-framework@kiyo-codejadee`.
+   Codex ([.agents/plugins/marketplace.json](.agents/plugins/marketplace.json)):
+   `codex plugin marketplace add 0xPratyaDev7x/kiyo-codejadee-framework`, then
+   `codex plugin add kiyo-axiom-framework@kiyo-codejadee`.
+   GitHub Copilot ([.github/plugin/marketplace.json](.github/plugin/marketplace.json)):
+   `copilot plugin marketplace add 0xPratyaDev7x/kiyo-codejadee-framework`, then
+   `copilot plugin install kiyo-axiom-framework@kiyo-codejadee`.
 2. Confirm the Kiyo source and eight entries in that host. Select **Init**
    explicitly using the [native selection table](docs/user/README.md#select-a-skill).
 3. Start with: “Preview onboarding for this repository; report evidence,

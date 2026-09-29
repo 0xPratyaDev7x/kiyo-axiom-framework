@@ -1,6 +1,6 @@
-# Kiyo Compass — Requirement Registry
+# Kiyo Axiom Framework — Requirement Registry
 
-Kiyo Compass is a working name containing Kiyo, not an approved publication identity.
+Kiyo Axiom Framework is a working name containing Kiyo, not an approved publication identity.
 This registry captures the user's Prompt 01 requirements without changing their IDs
 or source wording. English expansions make the intended scope and observable
 acceptance criteria explicit; the original Thai requirement remains authoritative
@@ -36,11 +36,11 @@ Skill Audit and Self-check are shared procedures or submodes.
 
 ## REQ-001
 
-**Source requirement:** REQ-001: Branding มี Kiyo; Kiyo Compass เป็น working name; ไม่เดาความพร้อมของชื่อใน Marketplace
+**Source requirement:** REQ-001: Branding มี Kiyo; Kiyo Axiom Framework เป็น working name; ไม่เดาความพร้อมของชื่อใน Marketplace
 
 - **Objective:** Preserve Kiyo branding without inventing a release identity.
 - **Scope:** Working name, release name, marketplace availability, license and publisher decisions.
-- **Observable acceptance criteria (AC-001):** Drafts label Kiyo Compass as a working name and retain Kiyo branding; release identity and marketplace availability stay unconfirmed until owner decisions and evidence exist; existing LICENSE is preserved.
+- **Observable acceptance criteria (AC-001):** Drafts label Kiyo Axiom Framework as a working name and retain Kiyo branding; release identity and marketplace availability stay unconfirmed until owner decisions and evidence exist; existing LICENSE is preserved.
 - **Dependencies:** Owner decisions DEC-001, DEC-002, DEC-003; marketplace research.
 - **Planned implementation area:** docs/branding.md; platform manifests (future)
 - **Planned verification:** TC-REQ-001 (PLANNED): Inspect draft labels and manifests; verify every availability claim has dated evidence and every release identity has explicit owner approval.

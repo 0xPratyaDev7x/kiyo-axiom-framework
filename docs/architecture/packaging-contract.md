@@ -1,4 +1,4 @@
-# Kiyo Compass — Static native packaging contract
+# Kiyo Axiom Framework — Static native packaging contract
 
 Decision date: **2026-09-29**. Selected design:
 [ADR-001](decisions/ADR-001-static-canonical-packages.md). Requirements:
@@ -48,7 +48,7 @@ The same transform applies to all eight skills.
 | Template | The procedure references `../templates/reports/review-report.md` | Neutral template contains no developer project facts |
 | Build transform | Rewrite skill-entry links to `./references/kiyo/KIYO.md` and `./references/kiyo/workflows/review.md` | Installed SKILL.md does not escape its directory |
 | Shared snapshot | Copy shared files with their relative directory layout intact | `../framework/` and `../templates/` still resolve inside the same snapshot |
-| Native root | Claude: `dist/claude/`; Codex/Copilot: `dist/<ecosystem>/kiyo-compass/`; each contains `skills/review/SKILL.md` and its `references/kiyo/` | Each documented host reads its native entry; actual resource reads still require host evidence |
+| Native root | Claude: `dist/claude/`; Codex/Copilot: `dist/<ecosystem>/kiyo-axiom-framework/`; each contains `skills/review/SKILL.md` and its `references/kiyo/` | Each documented host reads its native entry; actual resource reads still require host evidence |
 | Consumer output | Authorized report in user-selected project location, or answer only in read-only mode | Output is mutable project state, never written into installed resources |
 
 Payload shape (actual artifacts are linked from the distribution build guide):
@@ -201,7 +201,7 @@ release engine or a consumer installation dependency.
 files, a distinct portable OpenAI manifest/adapter and root LICENSE. It derives
 the compatibility manifest from the portable input; it does not consume Claude
 metadata. Existing developer filesystem/hash helpers are reused unchanged.
-dist/codex/kiyo-compass is the plugin root; its outer name matches the working ID.
+dist/codex/kiyo-axiom-framework is the plugin root; its outer name matches the working ID.
 
 The generated entry/remapping/shared-snapshot contract is unchanged. Only the
 conditional native adapter differs by target. Both manifests carry truthful
@@ -221,7 +221,7 @@ three-field Agent Plugins 1.0.0 manifest and a shared CLI/VS Code adapter.
 Current primary sources justify that manifest intersection; no compatibility
 manifest, client extension, native permission field or VSIX is necessary.
 
-dist/copilot/kiyo-compass contains eight entries with unchanged canonical shared
+dist/copilot/kiyo-axiom-framework contains eight entries with unchanged canonical shared
 snapshots. Source/resource resolution uses the same recorded transform as the
 earlier artifacts, with its own native reference. Existing filesystem/hash
 helpers are reused; Claude/Codex manifests and generated outputs are not inputs.

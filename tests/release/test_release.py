@@ -17,17 +17,17 @@ import test_contracts as static
 
 class ReleaseTests(unittest.TestCase):
     def test_01_unset_is_consistent_but_not_release_version(self):
-        result = release.versions({"a": {"name": "kiyo-compass"}, "b": {"name": "kiyo-compass"}})
+        result = release.versions({"a": {"name": "kiyo-axiom-framework"}, "b": {"name": "kiyo-axiom-framework"}})
         self.assertEqual(result["product_version"], "UNSET")
         self.assertEqual(result["publication_version_gate"], "OWNER_REQUIRED")
 
     def test_02_mixed_versions_rejected(self):
         for other in ("9.8.7", None):
             with self.assertRaisesRegex(ValueError, "inconsistent native versions"):
-                release.versions({"a": {"name": "kiyo-compass", "version": "9.8.6"},
-                                  "b": {"name": "kiyo-compass", "version": other}})
+                release.versions({"a": {"name": "kiyo-axiom-framework", "version": "9.8.6"},
+                                  "b": {"name": "kiyo-axiom-framework", "version": other}})
         with self.assertRaisesRegex(ValueError, "Invalid version"):
-            release.versions({"a": {"name": "kiyo-compass", "version": 1}})
+            release.versions({"a": {"name": "kiyo-axiom-framework", "version": 1}})
 
     def test_03_identity_mismatch_rejected(self):
         with self.assertRaisesRegex(ValueError, "identity mismatch"):

@@ -22,7 +22,7 @@ independent audit or certification.
 | PUBLISHING_READY | NO / BLOCKED | Real release identity/version/license confirmation/publisher/source/account/approvals and required native evidence missing. Channel-specific gaps below also remain. |
 | PUBLISHED | NO | No platform publication or public listing evidence. Local artifacts, source revision and SHA256 do not establish publication or publisher identity. |
 
-Product version **UNSET**; native working namespace **kiyo-compass**.
+Product version **UNSET**; native working namespace **kiyo-axiom-framework**.
 The identifier **p30-run-01** versions this local evidence snapshot, not the
 product. Signature **NOT_SIGNED**; provenance **NOT_ATTESTED**.
 No artifact here is represented as ready for submission.
@@ -56,13 +56,13 @@ intent and are not normalized to match code. G4 does not authorize autonomy.
 
 These files were built/read/hashed in the final pipeline and checked again by the
 [handoff audit](../evidence/acceptance/p30-check-02/checks.json).
-Each archive has one kiyo-compass root; the file count excludes directory entries.
+Each archive has one kiyo-axiom-framework root; the file count excludes directory entries.
 
 | Ecosystem | Actual artifact | Files / public Skills | SHA256 |
 | --- | --- | --- | --- |
-| Claude | [development ZIP](../../dist/releases/p30-run-01/archives/kiyo-compass-claude-development.zip) | 794 / 8 | `10bc505a083f86276d0ba78ebb4c06fa64f93143ff607eed63898ffafc711672` |
-| Codex | [development ZIP](../../dist/releases/p30-run-01/archives/kiyo-compass-codex-development.zip) | 795 / 8 | `8c2594d3767dad46e66358b69afecbe0ce7787bfccb5dc3e035f5bb55522de5c` |
-| Copilot | [development ZIP](../../dist/releases/p30-run-01/archives/kiyo-compass-copilot-development.zip) | 794 / 8 | `9a5130c9fd2f102b18ce7b0fa3dc42f20e660834c357703299f3a6d3a4e2e4df` |
+| Claude | [development ZIP](../../dist/releases/p30-run-01/archives/kiyo-axiom-framework-claude-development.zip) | 794 / 8 | `10bc505a083f86276d0ba78ebb4c06fa64f93143ff607eed63898ffafc711672` |
+| Codex | [development ZIP](../../dist/releases/p30-run-01/archives/kiyo-axiom-framework-codex-development.zip) | 795 / 8 | `8c2594d3767dad46e66358b69afecbe0ce7787bfccb5dc3e035f5bb55522de5c` |
+| Copilot | [development ZIP](../../dist/releases/p30-run-01/archives/kiyo-axiom-framework-copilot-development.zip) | 794 / 8 | `9a5130c9fd2f102b18ce7b0fa3dc42f20e660834c357703299f3a6d3a4e2e4df` |
 
 [SHA256SUMS](../../dist/releases/p30-run-01/SHA256SUMS),
 [per-file source/output inventory](../../dist/releases/p30-run-01/artifact-inventory.json),

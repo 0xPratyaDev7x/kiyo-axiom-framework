@@ -21,7 +21,7 @@ authorize adding them.
 
 ## Selected native format and field justification
 
-Use one root **plugin.json** at dist/copilot/kiyo-compass. CLI and VS Code
+Use one root **plugin.json** at dist/copilot/kiyo-axiom-framework. CLI and VS Code
 independently document Agent Plugins 1.0.0; the CLI also documents 1.1.0, but
 VS Code support for that newer marker was not established here. Selecting 1.0.0
 is the evidenced intersection, not a claim that every client extension is portable.
@@ -30,7 +30,7 @@ CP22-01/02/07/10/11; no native parser run.
 | Shipped field / file | Meaning and basis | Limit |
 | --- | --- | --- |
 | $schema | Exact Agent Plugins 1.0.0 schema URL; required, CP22-10 | Format identity, not product release version |
-| name: kiyo-compass | Required package ID derived from existing working name; lowercase valid form, CP22-10 | No publication reservation or owner-final identity |
+| name: kiyo-axiom-framework | Required package ID derived from existing working name; lowercase valid form, CP22-10 | No publication reservation or owner-final identity |
 | description | Optional string describing actual static content, CP22-10 | Does not grant permissions |
 | `skills/<name>/SKILL.md` | Immediate native skill directories, CP22-02/07 | No component-path override field or root SKILL.md fallback |
 | YAML name / description | Existing canonical names and matching directories, CP22-03/08 | Eight plain slugs; no manual namespace in frontmatter |
@@ -55,7 +55,7 @@ agents/openai.yaml, rule folder, permissions or safety flags are needed.
 | Manifest/discovery | Root recognized 1.0.0 marker; fixed skills directory | Same 1.0.0 root format and skills discovery | CP22-01/02/07; older installed versions need their own test |
 | Native source | Local directory, repo/subdir, Git URL or registered catalog | Source Git URL, catalog UI or explicit local plugin location | CP22-01/05/07; source registration can write native state |
 | Skill metadata | name/description plus optional native fields | Matching name/directory, <=64 name and <=1024 description | CP22-03/08; Kiyo ships only common name/description |
-| Explicit use | /skills list/info; generic `/<skill-name>` documented, exact plugin qualification UNKNOWN | Slash menu /kiyo-compass:<skill>; /skills configuration | CP22-03/08; CLI built-in/name collisions require observation |
+| Explicit use | /skills list/info; generic `/<skill-name>` documented, exact plugin qualification UNKNOWN | Slash menu /kiyo-axiom-framework:<skill>; /skills configuration | CP22-03/08; CLI built-in/name collisions require observation |
 | Inferred use | Prompt/description match followed by entry injection | Metadata, selected body, then relevant referenced resources | CP22-03/08; neither promises selection on every request |
 | Project guidance | Applicable .github/copilot-instructions.md and path-specific applyTo; instruction files combined | Copilot Agent Host or Local session instructions; selected harness/settings matter | CP22-04/09; preserve conflicts/scope, no universal precedence |
 | Plugin rules | com.github.copilot/rules component location documented | Same namespace listed | CP22-01/07; exact rule trigger/frontmatter/always-on semantics UNKNOWN; omitted |

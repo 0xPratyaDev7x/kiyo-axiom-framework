@@ -3,7 +3,7 @@
 Checked **2026-09-29**. Procedures are DOCUMENTED_ONLY, not executed installation
 results. Sources [CP22-01/02/05/06/07/08](../research/SOURCES.md#prompt-22-copilot-revalidation).
 Both live targets remain NOT_TESTED. The development artifact is
-dist/copilot/kiyo-compass; consumers never run the developer generator.
+dist/copilot/kiyo-axiom-framework; consumers never run the developer generator.
 
 ## Before native changes
 
@@ -14,7 +14,7 @@ Do not install into the current global profile for this build. Prompt 26's
 
 Instructions below are planned forms, not commands already run. Angle-bracket
 tokens require real observed/owner-supplied values. No marketplace or publisher
-is claimed available. Working identity kiyo-compass is provisional.
+is claimed available. Working identity kiyo-axiom-framework is provisional.
 
 ## Copilot CLI
 

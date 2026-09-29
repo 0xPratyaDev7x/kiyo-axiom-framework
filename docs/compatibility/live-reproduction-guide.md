@@ -46,8 +46,8 @@ command; use the native executable resolved from the installed launcher.
 | Native validation | claude plugin validate <extracted-plugin-root> | Exit 0 with missing version/author warnings |
 | Strict validation | claude plugin validate --strict <extracted-plugin-root> | Actual exit 1; preserve warnings, no fabricated metadata |
 | Empty isolated inventory | claude plugin list --json | Actual empty list in fresh child state only |
-| Directory discovery | claude --plugin-dir <extracted-plugin-root> plugin details kiyo-compass | Actual eight component names; no agent turn |
-| ZIP discovery | claude --plugin-dir <copied-local-zip> plugin details kiyo-compass | Same eight names; persistent list remains empty |
+| Directory discovery | claude --plugin-dir <extracted-plugin-root> plugin details kiyo-axiom-framework | Actual eight component names; no agent turn |
+| ZIP discovery | claude --plugin-dir <copied-local-zip> plugin details kiyo-axiom-framework | Same eight names; persistent list remains empty |
 
 See [directory run](../evidence/live/claude-native-attempt-02.json) and
 [ZIP run](../evidence/live/claude-zip-attempt-01.json). Shell metadata inspection
@@ -64,7 +64,7 @@ under the present no-quota scope.
 ## Codex CLI: reproduced no-quota lifecycle subset
 
 In the disposable catalog, place the unchanged plugin at
-plugins/kiyo-compass and write .agents/plugins/marketplace.json containing:
+plugins/kiyo-axiom-framework and write .agents/plugins/marketplace.json containing:
 
 ```json
 {
@@ -72,8 +72,8 @@ plugins/kiyo-compass and write .agents/plugins/marketplace.json containing:
   "interface": { "displayName": "Kiyo P26 disposable local test" },
   "plugins": [
     {
-      "name": "kiyo-compass",
-      "source": { "source": "local", "path": "./plugins/kiyo-compass" }
+      "name": "kiyo-axiom-framework",
+      "source": { "source": "local", "path": "./plugins/kiyo-axiom-framework" }
     }
   ]
 }
@@ -90,7 +90,7 @@ Run with the disposable child state and synthetic project cwd:
 codex --version
 codex plugin marketplace add <disposable-catalog-root> --json
 codex plugin list --marketplace kiyo-p26-disposable --available --json
-codex plugin add kiyo-compass@kiyo-p26-disposable --json
+codex plugin add kiyo-axiom-framework@kiyo-p26-disposable --json
 codex plugin list --marketplace kiyo-p26-disposable --json
 ```
 
@@ -111,7 +111,7 @@ these management commands; do not disable that host restriction.
 After recording project/cache snapshots, uninstall only the verified candidate:
 
 ```text
-codex plugin remove kiyo-compass@kiyo-p26-disposable --json
+codex plugin remove kiyo-axiom-framework@kiyo-p26-disposable --json
 codex plugin list --marketplace kiyo-p26-disposable --available --json
 codex plugin marketplace remove kiyo-p26-disposable --json
 ```

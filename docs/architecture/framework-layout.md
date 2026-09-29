@@ -1,8 +1,8 @@
-# Kiyo Compass — Canonical framework layout
+# Kiyo Axiom Framework — Canonical framework layout
 
 Decision date: **2026-09-29**. Status: architecture selected for this build in
 [ADR-001](decisions/ADR-001-static-canonical-packages.md); product implementation
-and package execution remain pending. Kiyo Compass is a working name.
+and package execution remain pending. Kiyo Axiom Framework is a working name.
 
 ## Inputs and evidence boundary
 
@@ -217,7 +217,7 @@ product files and their 68 control IDs are unchanged.
 
 platforms/codex contains one portable manifest input, an inactive catalog template
 and a native instruction adapter. tools/package_codex.py generates
-dist/codex/kiyo-compass with portable/compatibility manifests, LICENSE and eight
+dist/codex/kiyo-axiom-framework with portable/compatibility manifests, LICENSE and eight
 self-contained skill trees. Developer evidence stays in docs/evidence/codex.
 No independent Core copy is authored; all 105 product files/68 controls remain
 unchanged. See [Codex field map](../compatibility/codex-package.md).
@@ -231,7 +231,7 @@ The native IDE gap and owner-dependent ingestion/publication gates remain explic
 platforms/copilot supplies one independently evidenced Agent Plugins 1.0.0
 manifest and a native instructions adapter for two separately tested targets.
 [tools/package_copilot.py](../../tools/package_copilot.py) generates
-dist/copilot/kiyo-compass; [inventory/checks](../evidence/copilot/package-checks.md)
+dist/copilot/kiyo-axiom-framework; [inventory/checks](../evidence/copilot/package-checks.md)
 remain developer-only. All eight skill snapshots contain their resources.
 
 This completes the three native development overlays, not Prompt 23 general

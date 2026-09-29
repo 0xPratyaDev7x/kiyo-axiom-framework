@@ -231,7 +231,7 @@ record describes its own narrower observed scope.
 
 ### REQ-001
 
-- Criterion: [AC-001](REQUIREMENTS.md#req-001). Drafts label Kiyo Compass as a working name and retain Kiyo branding; release identity and marketplace availability stay unconfirmed until owner decisions and evidence exist; existing LICENSE is preserved.
+- Criterion: [AC-001](REQUIREMENTS.md#req-001). Drafts label Kiyo Axiom Framework as a working name and retain Kiyo branding; release identity and marketplace availability stay unconfirmed until owner decisions and evidence exist; existing LICENSE is preserved.
 - Implementing files: [src/kiyo/KIYO.md:6](../../src/kiyo/KIYO.md); [README.md:20](../../README.md); [LICENSE:1](../../LICENSE); [docs/release/marketplace-copy.md:8](../../docs/release/marketplace-copy.md).
 - Skills/shared procedures: all; linked files above define the shared steps.
 - Actual inspection: Working name and development disclaimer are explicit; existing MIT file preserved, publication identity not invented.

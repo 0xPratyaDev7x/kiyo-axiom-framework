@@ -53,7 +53,7 @@ def make_payload(root):
     manifest_path = "platforms/claude/.claude-plugin/plugin.json"
     manifest = json.loads(read_input(root, manifest_path))
     require(set(manifest) == {"name", "description"}, "Unexpected manifest fields")
-    require(manifest["name"] == "kiyo-compass" and isinstance(manifest["description"], str)
+    require(manifest["name"] == "kiyo-axiom-framework" and isinstance(manifest["description"], str)
             and manifest["description"].strip(), "Unexpected working identity or description")
     add(".claude-plugin/plugin.json", manifest_path)
     add("LICENSE", "LICENSE")
@@ -101,7 +101,7 @@ def validate_payload(payload):
     require(set(p.split("/")[0] for p in payload) == {".claude-plugin", "skills", "LICENSE"},
             "Unexpected payload root")
     manifest = json.loads(payload[".claude-plugin/plugin.json"])
-    require(set(manifest) == {"name", "description"} and manifest["name"] == "kiyo-compass",
+    require(set(manifest) == {"name", "description"} and manifest["name"] == "kiyo-axiom-framework",
             "Unsupported manifest mutation")
     entries = sorted(p.split("/")[1] for p in payload if re.fullmatch(r"skills/[^/]+/SKILL.md", p))
     require(entries == sorted(SKILLS), "Missing/extra entry")

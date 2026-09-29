@@ -1,4 +1,4 @@
-# Kiyo Compass — Standards baseline
+# Kiyo Axiom Framework — Standards baseline
 
 Original baseline: **2026-09-28**. S01–S07 rechecked **2026-09-29** for Prompt 09;
 other refreshes retain their explicitly scoped dates below. Official source IDs resolve in

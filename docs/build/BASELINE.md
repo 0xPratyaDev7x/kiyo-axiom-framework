@@ -1,4 +1,4 @@
-# Kiyo Compass — Baseline and Check Evidence
+# Kiyo Axiom Framework — Baseline and Check Evidence
 
 ## Initial repository observation
 
@@ -97,7 +97,7 @@ prompt's scope. No memory initialization or sync is performed.
 Observed 2026-09-28 in Asia/Bangkok. Root:
 C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework.
 Branch main; HEAD aa843a5c690d232d110c744eaecf30997c233908
-(Add TRACEABILITY documentation for Kiyo Compass requirements and implementation statuses).
+(Add TRACEABILITY documentation for Kiyo Axiom Framework requirements and implementation statuses).
 Initial status, unstaged diff and staged diff had no entries. Tracked inventory:
 LICENSE plus eight docs/build files. No repository/ancestor AGENTS.md found.
 The old Prompt 01 root/HEAD remains historical evidence above, not the current
@@ -211,7 +211,7 @@ and ADR only; project memory is not initialized or modified.
 Observed 2026-09-29 (Asia/Bangkok). Root:
 C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework.
 Branch main; HEAD 73972148ba6705c915a01195972acac4fc09482a
-(feat: Add architecture documentation for Kiyo Compass).
+(feat: Add architecture documentation for Kiyo Axiom Framework).
 Initial status, staged and unstaged diff statistics were empty. Prompt 03 was
 committed before this work. Inventory contained LICENSE and 19 Markdown files:
 eight build, five research/compatibility, five architecture and source README.
@@ -1562,7 +1562,7 @@ No permission question or installation followed from those defaults.
 | P21-C05 Activation/protocol/specifications | Required target/scope limits | Inspect native adapter, render sample canonical block, count/match scenario rows | AGENTS scopes, explicit/implicit distinction, protocol and 18 expected cases | PASS | 108-word sample; entry budgets pass; no override/global edits; IDE unsupported and all cases unrun | [Adapter](../../platforms/codex/resources/activation.md), [protocol](../compatibility/codex-local-test-protocol.md), [cases](../../tests/integration/codex/scenarios.md) | Rendering is not Init/loading/approval evidence; 250-word limit is Kiyo's | Canonical block and Core unchanged |
 | P21-C06 Build continuity | Required close | Read-only final table/link/count validation | 80 trace rows, roadmap, nine issues/four owner decisions | PASS | All IDs retained; 21 trace rows reference P21; next Prompt 22 unstarted; all full verifications NOT_RUN and six live targets NOT_TESTED | This section and build state | No full acceptance inferred; C08 FAIL retained | 79 partial / 1 not implemented unchanged |
 | P21-C07 Scope/preservation | Required final diff/check | Exact-file/Git/hash/reference validation; git diff --check | New Codex work, previous artifact, source/LICENSE/index/HEAD | PASS | 15 modified / 806 new; 105 canonical and 794 Claude files unchanged; 1,745 Markdown files, 12,766 local links, 695 canonical links and 68 controls checked; whitespace clean | This section and artifact inventory | Static worktree evidence, not native live behavior | Baseline index/HEAD/LICENSE preserved |
-| P21-C08 Ingestion readiness | Required bundled validator execution; release gate | python -B installed plugin-creator/scripts/validate_plugin.py dist/codex/kiyo-compass | Compatibility manifest and eight skill entries | FAIL | Exit 1: absent version, author object, interface.developerName | [Exact diagnostics and validator hashes](../evidence/codex/package-checks.md#ingestion-failure-retained) | Stricter ingestion profile, not portable root schema or native runtime; readiness BLOCKED until owner evidence | Previously unresolved release/publisher inputs, not a canonical content regression |
+| P21-C08 Ingestion readiness | Required bundled validator execution; release gate | python -B installed plugin-creator/scripts/validate_plugin.py dist/codex/kiyo-axiom-framework | Compatibility manifest and eight skill entries | FAIL | Exit 1: absent version, author object, interface.developerName | [Exact diagnostics and validator hashes](../evidence/codex/package-checks.md#ingestion-failure-retained) | Stricter ingestion profile, not portable root schema or native runtime; readiness BLOCKED until owner evidence | Previously unresolved release/publisher inputs, not a canonical content regression |
 
 Artifact size/digest, tooling hashes, actual source/output provenance, entry
 budgets, command grammar and validator limits are recorded in

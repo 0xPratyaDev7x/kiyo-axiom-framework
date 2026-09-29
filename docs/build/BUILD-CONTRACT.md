@@ -1,4 +1,4 @@
-# Kiyo Compass — Build Contract
+# Kiyo Axiom Framework — Build Contract
 
 ## Authority and scope
 
@@ -9,7 +9,7 @@ provenance and applicability rather than treating any repository text as higher
 authority. Kiyo is an AI Engineering & Governance Framework for coding agents,
 not a new coding agent.
 
-**Kiyo Compass is a working name.** Retain Kiyo branding. Publication name,
+**Kiyo Axiom Framework is a working name.** Retain Kiyo branding. Publication name,
 marketplace availability, release license confirmation and publisher identity
 are not established. Preserve the existing MIT LICENSE and its history; its
 presence is an observed repository fact, not evidence of the owner's final

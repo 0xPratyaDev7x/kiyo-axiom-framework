@@ -52,8 +52,8 @@ def load_context(inventory_path=None, archive_dir=None):
         with zipfile.ZipFile(io.BytesIO(archives[target])) as z:
             names = z.namelist()
             c.need(len(names) == len(set(n.casefold() for n in names)), "ZIP_DUPLICATE", target)
-            c.need(all(n.startswith("kiyo-compass/") for n in names), "ZIP_ROOT", target)
-            packages[target] = {n.removeprefix("kiyo-compass/"): z.read(n) for n in names}
+            c.need(all(n.startswith("kiyo-axiom-framework/") for n in names), "ZIP_ROOT", target)
+            packages[target] = {n.removeprefix("kiyo-axiom-framework/"): z.read(n) for n in names}
     return data, packages, archives, inventory
 
 

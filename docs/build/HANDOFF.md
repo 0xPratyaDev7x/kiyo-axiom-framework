@@ -1,8 +1,8 @@
-# Kiyo Compass — Handoff
+# Kiyo Axiom Framework — Handoff
 
 ## Resume without the prior chat
 
-Kiyo Compass is the working-name AI Engineering & Governance Framework for coding
+Kiyo Axiom Framework is the working-name AI Engineering & Governance Framework for coding
 agents. It is static, Markdown-first, vendor-neutral and advisory. Native hosts
 use tools and enforce permissions. No Kiyo runtime, hooks, MCP, daemon, telemetry,
 central installer, Virtual Office or agent-team orchestration is authorized.
@@ -923,7 +923,7 @@ transforms are recorded in docs/evidence/claude/package-inventory.json.
 The builder rejects changed existing output instead of overwriting human files;
 future replacement/release workflows need their own scope. No end-user generator.
 
-Working namespace kiyo-compass gives /kiyo-compass:<skill>; /kiyo-init is not
+Working namespace kiyo-axiom-framework gives /kiyo-axiom-framework:<skill>; /kiyo-init is not
 provided. This is DOCUMENTED_ONLY, not observed discovery. Metadata selection
 and always-loaded Core are distinct. Plugin-root CLAUDE.md is not project context
 under current official docs. Init's native reference renders the canonical
@@ -941,7 +941,7 @@ remain pending; custom source metadata does not establish curated listing.
 
 ## Codex distribution continuity
 
-The prepared root is dist/codex/kiyo-compass. tools/package_codex.py reads canonical
+The prepared root is dist/codex/kiyo-axiom-framework. tools/package_codex.py reads canonical
 content and platforms/codex/plugin.json, derives the compatibility manifest and
 copies a distinct native adapter. It reuses only audited developer filesystem/
 hash helpers from the existing packager, not Claude schema or product artifacts.
@@ -970,7 +970,7 @@ silently substitute standalone/global skill installation. DEC-004 stays open.
 
 ## Copilot distribution continuity
 
-dist/copilot/kiyo-compass is generated from canonical source and independent
+dist/copilot/kiyo-axiom-framework is generated from canonical source and independent
 platforms/copilot input. Only $schema/name/description are needed. No permission
 or component-path fields, client extension, VSIX, hook, MCP or Actions runtime.
 Existing file/hash helpers are reused unchanged; old native manifests are not inputs.
@@ -978,7 +978,7 @@ Source/output digests and actual Git base remain outside the installed payload.
 
 CLI generic slash syntax does not establish the exact Kiyo namespace or resolve
 built-in init/review collisions. Inspect actual discovery; do not substitute a
-built-in or copy VS Code's /kiyo-compass:<skill> syntax into CLI. Both native
+built-in or copy VS Code's /kiyo-axiom-framework:<skill> syntax into CLI. Both native
 results remain NOT_TESTED. Plugin rules are not used as an unverified Core loader.
 
 The adapter reuses canonical Init guidance, preserves .github/copilot-instructions.md,

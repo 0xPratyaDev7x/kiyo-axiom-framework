@@ -19,7 +19,7 @@ The overlay alone is not installable. Eight skills each contain all 97 shared
 canonical references plus one native activation reference. No source checkout,
 Python, hook, MCP, executable, extension runtime or generator is needed by users.
 
-kiyo-compass is a development namespace derived from the working name, not a
+kiyo-axiom-framework is a development namespace derived from the working name, not a
 reserved/final release identity. No version, author, repository URL, homepage,
 signature or publication-license selection was invented. Missing optional
 metadata may yield native validation warnings; authoritative native validation
@@ -29,14 +29,14 @@ is NOT_RUN in this prompt. Local version inspection is not Kiyo execution.
 
 | Surface / field | Selected value or treatment | Official source / limit |
 | --- | --- | --- |
-| .claude-plugin/plugin.json: name | kiyo-compass, working identifier; required string | [Manifest](https://code.claude.com/docs/en/plugins-reference), CL20-01; namespaces components, publication approval separate |
+| .claude-plugin/plugin.json: name | kiyo-axiom-framework, working identifier; required string | [Manifest](https://code.claude.com/docs/en/plugins-reference), CL20-01; namespaces components, publication approval separate |
 | manifest description | Short truthful static-skill description | CL20-01; optional metadata, not enforcement |
 | manifest component paths | Omitted; skills/ uses documented default | CL20-01 / [components](https://code.claude.com/docs/en/plugins/components), CL20-06; no rules/core field |
 | manifest version / author / repository / homepage / license | Omitted pending actual owner release inputs | CL20-01; no fabricated values, missing metadata warnings remain visible |
 | SKILL.md name / description | Unchanged canonical values, eight distinct names | [Skills](https://code.claude.com/docs/en/skills), CL20-02; frontmatter before body |
 | Native visibility/invocation/tool fields | No added fields; no model/tool grant or hidden/manual-only override | CL20-02 documents disable-model-invocation, user-invocable and allowed-tools; Kiyo contracts stay Markdown |
 | Marketplace root name / owner.name / plugins | Unresolved owner tokens plus one plugin entry in inactive template | [Marketplace reference](https://code.claude.com/docs/en/plugins/marketplace-reference), CL20-08; template requires owner inputs |
-| Marketplace plugins[].name / source | kiyo-compass and ./plugins/kiyo-compass | [Create marketplace](https://code.claude.com/docs/en/plugin-marketplaces), CL20-07; relative to catalog root, not .claude-plugin |
+| Marketplace plugins[].name / source | kiyo-axiom-framework and ./plugins/kiyo-axiom-framework | [Create marketplace](https://code.claude.com/docs/en/plugin-marketplaces), CL20-07; relative to catalog root, not .claude-plugin |
 
 Checked date for every row: 2026-09-29. Schema source inspection does not prove
 a validator accepted this artifact. No top-level Kiyo permission, risk, policy,
@@ -46,7 +46,7 @@ visibility or sandbox key is emitted. Existing host permissions still govern.
 
 The exact eight selectors and conditional managed-block instructions are in the
 [shipped native reference](../../platforms/claude/resources/activation.md), rendered
-inside each skill. Select /kiyo-compass:init, :requirement, :implement, :review,
+inside each skill. Select /kiyo-axiom-framework:init, :requirement, :implement, :review,
 :test, :security, :architecture or :memory using the full slash/plugin prefix.
 These follow documented naming, not observed menu entries. No /kiyo-init alias,
 ninth router/governance/self-check skill or mode parser is created.

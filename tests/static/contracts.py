@@ -177,7 +177,7 @@ def manifests(data, packages, builders):
         if target == "codex":
             expected.add("extensions")
         need(set(source) == expected, "MANIFEST_FIELDS", target + " unexpected/missing properties")
-        need(source["name"] == "kiyo-compass" and isinstance(source["description"], str)
+        need(source["name"] == "kiyo-axiom-framework" and isinstance(source["description"], str)
              and bool(source["description"].strip()), "MANIFEST_IDENTITY", target)
         payload = dict(packages[target])
         payload[".claude-plugin/plugin.json" if target == "claude" else "plugin.json"] = data[path]
@@ -212,7 +212,7 @@ def identity(files, packages):
         for p, b in payload.items():
             if p.endswith("plugin.json"):
                 manifest = json.loads(b)
-                need(manifest["name"] == "kiyo-compass", "MANIFEST_IDENTITY", target)
+                need(manifest["name"] == "kiyo-axiom-framework", "MANIFEST_IDENTITY", target)
                 need(not {"version","author","repository","license","publisher"} & set(manifest),
                      "UNAPPROVED_RELEASE_IDENTITY", target)
         for skill in SKILLS:

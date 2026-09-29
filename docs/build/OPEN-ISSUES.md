@@ -1,4 +1,4 @@
-# Kiyo Compass — Open Issues
+# Kiyo Axiom Framework — Open Issues
 
 Snapshot: Prompt 30, 2026-09-29. Shared guidance and canonical Init/Requirement/Implement/Review/Test/Security/Architecture/Memory
 are authored: exactly eight public entries. Claude/Codex/Copilot development

@@ -14,17 +14,17 @@ publisher. Obtain the complete prepared payload, not only SKILL.md or platforms/
 
 | Target | Prepared payload / native route | Evidence boundary |
 | --- | --- | --- |
-| Claude Code CLI | [Claude ZIP](../../dist/archives/kiyo-compass-claude-development.zip); load its extracted kiyo-compass root with session-only --plugin-dir | Directory/ZIP metadata discovery VERIFIED on 2.1.220; invocation NOT_TESTED |
+| Claude Code CLI | [Claude ZIP](../../dist/archives/kiyo-axiom-framework-claude-development.zip); load its extracted kiyo-axiom-framework root with session-only --plugin-dir | Directory/ZIP metadata discovery VERIFIED on 2.1.220; invocation NOT_TESTED |
 | Claude Code VS Code | Same Claude payload; Claude panel /plugins for an actual approved marketplace/source | DOCUMENTED_ONLY; Kiyo UI install NOT_TESTED; no ready public source supplied |
-| Codex CLI | [Codex ZIP](../../dist/archives/kiyo-compass-codex-development.zip); register an approved local catalog, install its actual plugin ID, start a new session | Disposable local install/cache/uninstall VERIFIED on 0.158.0; agent behavior NOT_TESTED |
+| Codex CLI | [Codex ZIP](../../dist/archives/kiyo-axiom-framework-codex-development.zip); register an approved local catalog, install its actual plugin ID, start a new session | Disposable local install/cache/uninstall VERIFIED on 0.158.0; agent behavior NOT_TESTED |
 | Codex IDE Extension | No supported native plugin route | UNSUPPORTED; do not silently copy Skills into a global directory as a fallback |
-| GitHub Copilot CLI | [Copilot ZIP](../../dist/archives/kiyo-compass-copilot-development.zip); native direct-directory install or actual approved catalog | DOCUMENTED_ONLY; native storage can be user-scoped, not a promised project-only install |
+| GitHub Copilot CLI | [Copilot ZIP](../../dist/archives/kiyo-axiom-framework-copilot-development.zip); native direct-directory install or actual approved catalog | DOCUMENTED_ONLY; native storage can be user-scoped, not a promised project-only install |
 | GitHub Copilot VS Code | Same Copilot payload; approved source through Agent Plugins UI, or documented local plugin location in an explicitly chosen settings scope | DOCUMENTED_ONLY; NOT_TESTED; agent plugin, not a VSIX |
 
 For a Claude local trial, extract into a chosen directory, open the intended
 project and substitute its real extracted path:
 ```text
-claude --plugin-dir "<extracted kiyo-compass root>"
+claude --plugin-dir "<extracted kiyo-axiom-framework root>"
 ```
 This opens a host session. Model use requires your account/authorization; the
 recorded no-quota checks exercised only metadata commands. Do not run a global
@@ -65,12 +65,12 @@ Mode words such as assess or sync are plain intent, not a promised host parser.
 
 | Host | Explicit selection for this development namespace | Status |
 | --- | --- | --- |
-| Claude CLI | /kiyo-compass:init; replace init with the chosen slug | DOCUMENTED_ONLY |
+| Claude CLI | /kiyo-axiom-framework:init; replace init with the chosen slug | DOCUMENTED_ONLY |
 | Claude VS Code | Same namespaced selector in the Claude panel | DOCUMENTED_ONLY, independent of CLI |
 | Codex CLI | Open /skills or the $ picker and select the entry from Kiyo | DOCUMENTED_ONLY; exact qualified spelling UNKNOWN |
 | Codex IDE | No Kiyo native plugin selector | UNSUPPORTED |
 | Copilot CLI | Use /skills list and /skills info to identify the Kiyo source, then its actual exposed selector | Generic /<skill-name> documented; Kiyo qualification UNKNOWN |
-| Copilot VS Code | /kiyo-compass:init, or choose the Kiyo entry in Configure Skills | DOCUMENTED_ONLY |
+| Copilot VS Code | /kiyo-axiom-framework:init, or choose the Kiyo entry in Configure Skills | DOCUMENTED_ONLY |
 
 All eight slugs are init, requirement, implement, review, test, security,
 architecture and memory. Do not substitute /kiyo-init, a guessed Codex alias,

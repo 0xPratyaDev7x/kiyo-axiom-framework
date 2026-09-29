@@ -122,7 +122,7 @@ do not create empty skill files or a second core tree to imitate completeness.
 
 This README is developer-only and excluded from native payloads. Future product
 instructions must not depend on it or on developer documentation. Keep populated
-project policy/memory out of this directory. Kiyo Compass remains a working name;
+project policy/memory out of this directory. Kiyo Axiom Framework remains a working name;
 no release version, publisher or license decision is introduced here.
 
 ## Prompt 22 Copilot output

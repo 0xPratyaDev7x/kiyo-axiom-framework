@@ -1,4 +1,4 @@
-# Kiyo Compass — Progress
+# Kiyo Axiom Framework — Progress
 
 Snapshot: 2026-09-29. Current prompt: **30 Final Acceptance — final step**.
 Task status: **DONE for the requested acceptance assessment and local handoff**.
@@ -217,7 +217,7 @@ No installation/publication or actual user-state write. Memory Impact: **NONE**.
   Both targets independently document the selected format; no unsupported
   fields, permission settings, VSIX, App, service or extra public skill.
 - [Developer packager](../../tools/package_copilot.py) produced
-  [794-file bundle](../../dist/copilot/kiyo-compass/plugin.json), eight entries,
+  [794-file bundle](../../dist/copilot/kiyo-axiom-framework/plugin.json), eight entries,
   97 shared resources each and a contained native adapter. All 105 canonical
   product files and 1,589 previous Claude/Codex payload files are unchanged.
 - Actual offline checks pass for 4,964 local links, frontmatter/canonical parity,
@@ -247,7 +247,7 @@ Owner decisions and six live targets remain open. Memory Impact: **NONE**.
   a portable root manifest and generated compatibility manifest, documented
   package interface, inactive catalog template and minimal AGENTS guidance.
   Optional agents/openai.yaml is unnecessary and omitted. No Claude manifest reuse.
-- Generated [Codex plugin](../../dist/codex/kiyo-compass/plugin.json):
+- Generated [Codex plugin](../../dist/codex/kiyo-axiom-framework/plugin.json):
   795 files, eight entries, 97 shared references per entry plus native adapters.
   Canonical 105 files/68 controls and all 794 prior Claude artifact files remain
   unchanged. Only developer packaging uses Python; no consumer runtime.
@@ -282,7 +282,7 @@ remain open. Memory Impact: **NONE for developer project memory**.
 - Added a minimal [Claude overlay](../../platforms/claude/README.md), inactive
   owner-input marketplace template, native invocation/activation reference and
   developer-only [packager](../../tools/package_claude.py).
-  The working namespace is kiyo-compass; no release identity/version was invented.
+  The working namespace is kiyo-axiom-framework; no release identity/version was invented.
 - Generated [dist/claude manifest](../../dist/claude/.claude-plugin/plugin.json)
   and eight self-contained skill trees: 794 files, 97 canonical shared resources
   per skill, no hooks/MCP/runtime. Canonical 105 product files and 68 controls

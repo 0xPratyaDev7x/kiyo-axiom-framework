@@ -1,4 +1,4 @@
-# Kiyo Compass — Native invocation map
+# Kiyo Axiom Framework — Native invocation map
 
 ## Current evidence boundary — Prompt 29
 
@@ -23,18 +23,18 @@ for the evidence-bounded development routes. P27's
 [source refresh](../research/SOURCES.md#prompt-27-documentation-source-check)
 does not change any observed result. Angle-bracket tokens are metavariables,
 not runnable Kiyo release identifiers. No publication name or namespace is finalized. Prompt 20 uses the development
-working namespace kiyo-compass with the eight canonical skill slugs.
+working namespace kiyo-axiom-framework with the eight canonical skill slugs.
 
 ## Six separate invocation surfaces
 
 | Target | Discover / manage | Explicit skill selection | Automatic selection | Limitation / source / checked |
 | --- | --- | --- | --- | --- |
-| Claude Code CLI | `/plugin`; shell `claude plugin list` | Plugin `/<plugin>:<skill>`; standalone `/<skill>` | Description match unless disabled | CL20-01/02/05/09, 2026-09-29; working package /kiyo-compass:<skill>, actual selection untested; no action approval implied. |
-| Claude Code VS Code | Claude panel `/plugins` | Claude panel `/<plugin>:<skill>` | Claude description match | CL20-02/04/09, 2026-09-29; /kiyo-compass:<skill> documented convention, independent Claude panel entry untested. |
+| Claude Code CLI | `/plugin`; shell `claude plugin list` | Plugin `/<plugin>:<skill>`; standalone `/<skill>` | Description match unless disabled | CL20-01/02/05/09, 2026-09-29; working package /kiyo-axiom-framework:<skill>, actual selection untested; no action approval implied. |
+| Claude Code VS Code | Claude panel `/plugins` | Claude panel `/<plugin>:<skill>` | Claude description match | CL20-02/04/09, 2026-09-29; /kiyo-axiom-framework:<skill> documented convention, independent Claude panel entry untested. |
 | Codex CLI | /plugins; /skills or $ mention picker | Select actual Kiyo source entry | Description match; not guaranteed | CX21-04/06, 2026-09-29; exact plugin-qualified spelling UNKNOWN. Local 0.158.0 help separately exposes plugin add/remove; no invocation tested. |
 | Codex IDE Extension | /skills or $ for standalone skills only | Plugin invocation **UNSUPPORTED** | Standalone description match only | CX21-04/06, 2026-09-29; no native Kiyo plugin route or approved standalone fallback. |
 | GitHub Copilot CLI | /skills list/info; copilot plugin list | Generic /<skill-name> documented; resolve actual Kiyo source before selection | Prompt/description match | CP22-03, 2026-09-29; plugin qualification/built-in init/review collision unresolved; never substitute a host built-in for Kiyo. |
-| GitHub Copilot VS Code | /skills; Extensions @agentPlugins | /kiyo-compass:<skill> for the development package | Relevance match unless disabled | CP22-07/08, 2026-09-29; host supplies prefix, actual UI selection NOT_TESTED. |
+| GitHub Copilot VS Code | /skills; Extensions @agentPlugins | /kiyo-axiom-framework:<skill> for the development package | Relevance match unless disabled | CP22-07/08, 2026-09-29; host supplies prefix, actual UI selection NOT_TESTED. |
 
 These are three different acts: managing a plugin, explicitly selecting a skill,
 and asking naturally for a task. Natural language such as “review this change”
@@ -84,7 +84,7 @@ to native names within supported surfaces; this research creates no commands.
 ## Prompt 20 concrete Claude mapping
 
 The [native reference](../../platforms/claude/resources/activation.md) lists all
-eight /kiyo-compass:<skill> selectors for the prepared development manifest.
+eight /kiyo-axiom-framework:<skill> selectors for the prepared development manifest.
 Name/description frontmatter stays canonical. Logical modes are request text,
 not extra commands; /kiyo-init is not supplied. These are DOCUMENTED_ONLY names,
 not VERIFIED invocations. Source/date/limitations and CLI/VS Code observations:

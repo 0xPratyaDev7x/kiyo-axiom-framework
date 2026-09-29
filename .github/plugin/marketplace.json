@@ -1,0 +1,13 @@
+{
+  "name": "kiyo-codejadee",
+  "owner": {
+    "name": "0xPratyaDev7x"
+  },
+  "plugins": [
+    {
+      "name": "kiyo-axiom-framework",
+      "source": "./dist/copilot/kiyo-axiom-framework",
+      "description": "Eight static Kiyo engineering and governance skills with shared guidance and project-owned memory."
+    }
+  ]
+}

@@ -63,7 +63,7 @@ dependency/scanner/browser install or Actions execution is needed.
    Record UI registration and physical storage independently; discovery of a
    CLI-installed candidate is a separate trial path.
 3. Inspect Configure Skills, slash-menu qualification and source. Invoke all eight
-   entries with actual /kiyo-compass:<skill> UI selections only when discovered.
+   entries with actual /kiyo-axiom-framework:<skill> UI selections only when discovered.
    No selection trace means no verified invocation.
 4. Separately test implicit matching, unrelated tasks, explicit mode mismatch,
    actual Core reads and missing resources. A supported slash entry does not

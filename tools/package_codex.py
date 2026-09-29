@@ -35,7 +35,7 @@ def compatibility_manifest(portable):
 def validate_manifests(portable, compatibility):
     require(set(portable) == {"$schema", "name", "description", "extensions"},
             "Unexpected portable manifest fields")
-    require(portable["$schema"] == SCHEMA and portable["name"] == "kiyo-compass",
+    require(portable["$schema"] == SCHEMA and portable["name"] == "kiyo-axiom-framework",
             "Unexpected schema or working identity")
     require(isinstance(portable["description"], str) and portable["description"].strip(),
             "Description is required for this artifact")
@@ -156,13 +156,13 @@ def validate_payload(payload):
 def main():
     root = Path(__file__).resolve().parents[1]
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=root / "dist/codex/kiyo-compass")
+    parser.add_argument("--output", type=Path, default=root / "dist/codex/kiyo-axiom-framework")
     parser.add_argument("--inventory", type=Path, default=root / "docs/evidence/codex/package-inventory.json")
     args = parser.parse_args()
     output, inventory = args.output.absolute(), args.inventory.absolute()
     reject_links(output)
     reject_links(inventory)
-    require(output.name == "kiyo-compass", "Outer plugin folder must match working manifest name")
+    require(output.name == "kiyo-axiom-framework", "Outer plugin folder must match working manifest name")
     require(not inventory.resolve().is_relative_to(output.resolve()), "Inventory must be outside payload")
     for tree in ("src", "platforms"):
         require(not output.resolve().is_relative_to((root / tree).resolve()), "Output cannot be source/overlay")

@@ -1,4 +1,4 @@
-# Kiyo Compass — Decisions
+# Kiyo Axiom Framework — Decisions
 
 Snapshot date: 2026-09-29. “Owner” below is a role, not an invented person,
 publisher or approver. No approval date is assigned to unresolved decisions.
@@ -8,7 +8,7 @@ publisher or approver. No approval date is assigned to unresolved decisions.
 The user supplied these instructions in Prompt 01; they are recorded in
 [BUILD-CONTRACT.md](BUILD-CONTRACT.md), not inferred product approvals:
 
-- Use Kiyo Compass as a working name containing Kiyo.
+- Use Kiyo Axiom Framework as a working name containing Kiyo.
 - Build a file-based, Markdown-first, vendor-neutral framework with no runtime.
 - Use the four pillars, exactly eight public skills and four shared procedures/
   submodes described in the contract.
@@ -199,7 +199,7 @@ schemas/loading separately for CLI/VS Code; author the minimal static native
 distribution, overlay, inactive marketplace template, protocol and scenarios;
 perform offline checks/update build state and stop before Prompt 21.
 A developer-only standard-library packager is within the Build Contract.
-kiyo-compass is a provisional namespace derived from the existing working name;
+kiyo-axiom-framework is a provisional namespace derived from the existing working name;
 it is not a final owner-approved identity. Optional release metadata remains
 omitted; unresolved catalog tokens are excluded from the payload.
 No native session/install/global settings/publication is authorized here;
@@ -269,7 +269,7 @@ artifact states, not proof of malice. Stop before Prompt 29.
 
 | ID | Decision | Current evidence / status | Who decides | Latest needed / effect | Resolution evidence |
 | --- | --- | --- | --- | --- | --- |
-| DEC-001 | Final publication name and native marketplace identifiers | OPEN. Kiyo Compass is only the working name; marketplace availability UNKNOWN | Repository/product owner | Before final release identities or marketplace registration/publication; does not block scope or research | None |
+| DEC-001 | Final publication name and native marketplace identifiers | OPEN. Kiyo Axiom Framework is only the working name; marketplace availability UNKNOWN | Repository/product owner | Before final release identities or marketplace registration/publication; does not block scope or research | None |
 | DEC-002 | Confirm license intended for publication | OPEN. Existing root LICENSE is MIT and must remain intact; final owner confirmation is not supplied | Repository/product owner | Before release/legal metadata is finalized or the existing license is changed; does not block Prompt 01/02 | None |
 | DEC-003 | Publisher identity, namespace and authorized publication destination | OPEN. No publisher/account evidence or approval supplied; do not infer from repository path or copyright | Repository/product owner | Before final publisher metadata, registration or publication; does not block Prompt 01/02 | None |
 | DEC-004 | Treatment of Codex IDE native-plugin support gap | OPEN. Official [plugin documentation](https://learn.chatgpt.com/docs/plugins) excludes IDE plugins; [skills documentation](https://learn.chatgpt.com/docs/build-skills) supports standalone IDE skills. Rechecked 2026-09-29 (CX21-04/06 and NL26-09); DOCUMENTED_ONLY, live NOT_TESTED | Repository/product owner | Before promising six-target native installation or accepting a standalone fallback; does not block Prompt 03 design of documented surfaces | No fallback or scope reduction approved |

@@ -5,8 +5,8 @@
   },
   "plugins": [
     {
-      "name": "kiyo-compass",
-      "source": "./plugins/kiyo-compass"
+      "name": "kiyo-axiom-framework",
+      "source": "./plugins/kiyo-axiom-framework"
     }
   ]
 }

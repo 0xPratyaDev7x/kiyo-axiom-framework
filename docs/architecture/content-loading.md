@@ -1,4 +1,4 @@
-# Kiyo Compass — Content loading contract
+# Kiyo Axiom Framework — Content loading contract
 
 Decision date: **2026-09-29**. Architecture, not observed execution. Inputs:
 [ADR-001](decisions/ADR-001-static-canonical-packages.md), REQ-009–017/025–028/054

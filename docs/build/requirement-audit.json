@@ -411,7 +411,7 @@
     {
       "id": "REQ-001",
       "acceptance_id": "AC-001",
-      "acceptance": "Drafts label Kiyo Compass as a working name and retain Kiyo branding; release identity and marketplace availability stay unconfirmed until owner decisions and evidence exist; existing LICENSE is preserved.",
+      "acceptance": "Drafts label Kiyo Axiom Framework as a working name and retain Kiyo branding; release identity and marketplace availability stay unconfirmed until owner decisions and evidence exist; existing LICENSE is preserved.",
       "implementing_files": [
         "src/kiyo/KIYO.md",
         "README.md",

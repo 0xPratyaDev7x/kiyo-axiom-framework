@@ -1,4 +1,4 @@
-# Kiyo Compass — Platform capabilities
+# Kiyo Axiom Framework — Platform capabilities
 
 Original research: **2026-09-28**; Claude, Codex and Copilot refreshed **2026-09-29**.
 Copilot's [Prompt 22 field map](copilot-package.md) / CP22-01–16 supersedes its

@@ -1,4 +1,4 @@
-# Kiyo Compass — Traceability
+# Kiyo Axiom Framework — Traceability
 
 Snapshot: **Prompt 30 Final Acceptance, 2026-09-29**.
 Read [unchanged full criteria](REQUIREMENTS.md),

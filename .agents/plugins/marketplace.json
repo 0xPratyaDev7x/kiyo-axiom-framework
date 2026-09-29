@@ -1,0 +1,20 @@
+{
+  "name": "kiyo-codejadee",
+  "interface": {
+    "displayName": "Kiyo Codejadee"
+  },
+  "plugins": [
+    {
+      "name": "kiyo-axiom-framework",
+      "source": {
+        "source": "local",
+        "path": "./dist/codex/kiyo-axiom-framework"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

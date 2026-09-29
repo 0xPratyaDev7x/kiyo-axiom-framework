@@ -23,7 +23,7 @@ This prompt creates no portal draft or remote registration.
 
 | Gate | Required evidence / owner input | Current state / limitation |
 | --- | --- | --- |
-| Identity | Confirm final package/display names, semantic release version and intended release license | Working kiyo-compass / Kiyo Compass only; no release number selected; existing LICENSE preserved; DEC-001/002 |
+| Identity | Confirm final package/display names, semantic release version and intended release license | Working kiyo-axiom-framework / Kiyo Axiom Framework only; no release number selected; existing LICENSE preserved; DEC-001/002 |
 | Publisher | Real author.name, interface.developerName, verified developer/business identity and authorized submitting organization/account | UNKNOWN; DEC-003; local ingestion validator FAIL for missing publisher fields |
 | Submission authority | Actual role granting submission write access; current portal labels it Apps Management | Not inspected or granted by this task; no account/role changes |
 | Interface | Truthful display/short/long descriptions, category and applicable prompts/capabilities within current limits | Neutral draft copy exists; owner review pending; metadata grants no runtime permission |

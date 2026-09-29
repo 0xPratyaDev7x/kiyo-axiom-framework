@@ -1,4 +1,4 @@
-# Kiyo Compass — Naming and versioning
+# Kiyo Axiom Framework — Naming and versioning
 
 Decision date: **2026-09-29**. Design under
 [ADR-001](decisions/ADR-001-static-canonical-packages.md) and
@@ -8,7 +8,7 @@ Repository observations and limits are in
 
 ## Preserve observed identity and history
 
-Kiyo Compass remains a working name. Preserve the existing repository name,
+Kiyo Axiom Framework remains a working name. Preserve the existing repository name,
 root MIT LICENSE, requirement IDs, build history and research files. No product
 version file, native manifest or Git tag was found in the inspected baseline;
 this does not authorize inventing an initial release number, publisher or account.
@@ -135,7 +135,7 @@ custom-source install. These gates do not prevent Prompt 04 Core authoring.
 
 ## Prompt 20 working native identity
 
-The Claude manifest uses kiyo-compass solely as the development slug of the
+The Claude manifest uses kiyo-axiom-framework solely as the development slug of the
 existing working name. The eight selectors derive from that manifest plus
 canonical skill names; see [current mapping](../compatibility/claude-package.md).
 No final namespace availability, owner publication decision, initial product
@@ -149,7 +149,7 @@ Build reproducibility hashes identify actual bytes, not a released version.
 
 ## Prompt 21 Codex identity and ingestion boundary
 
-Codex retains the same working kiyo-compass identity and eight canonical slugs.
+Codex retains the same working kiyo-axiom-framework identity and eight canonical slugs.
 Its portable and derived compatibility manifests agree; no product release
 number, author or developerName is invented. The stricter local ingestion
 validator fails those absent fields, as recorded in [P21 evidence](../evidence/codex/package-checks.md).
@@ -162,7 +162,7 @@ Publication and native live compatibility remain separate gates.
 
 ## Prompt 22 Copilot working identity
 
-The minimal shared CLI/VS Code input retains kiyo-compass and all eight canonical
+The minimal shared CLI/VS Code input retains kiyo-axiom-framework and all eight canonical
 slugs; it adds no numeric release or publisher. The actual JSON schema's optional
 metadata does not waive final owner/release decisions. No catalog with fake owner
 values is supplied. Copilot native defaults differ from Codex ingestion gates.

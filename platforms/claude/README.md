@@ -1,8 +1,8 @@
 # Claude overlay — development, not published
 
 The native manifest input is [.claude-plugin/plugin.json](.claude-plugin/plugin.json).
-It contains only name and description. The working namespace kiyo-compass is
-derived from the existing Kiyo Compass working name; it is not a final owner
+It contains only name and description. The working namespace kiyo-axiom-framework is
+derived from the existing Kiyo Axiom Framework working name; it is not a final owner
 publication decision. Optional release version, author, repository, homepage and
 license metadata are omitted until evidenced/confirmed. Root LICENSE bytes are
 preserved in the generated bundle without deciding a new publication license.
@@ -43,7 +43,7 @@ automation remains later work.
 input, not installed or included in the plugin. Its required owner/name tokens
 are deliberately unresolved. Before materializing .claude-plugin/marketplace.json
 at an approved catalog root, obtain the real marketplace name/owner authority,
-confirm the plugin namespace and copy the prepared bundle to plugins/kiyo-compass.
+confirm the plugin namespace and copy the prepared bundle to plugins/kiyo-axiom-framework.
 If the owner changes the plugin ID, update the manifest, entry name, path,
 invocation documentation and derived package together through a reviewed change.
 

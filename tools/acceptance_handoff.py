@@ -147,13 +147,13 @@ def main():
                      "Archive digest changed")
                 need(blob == (RUN / "reproducibility" / item["archive"]).read_bytes(), "Repeat bytes differ")
                 with zipfile.ZipFile(archive) as zipped:
-                    files = {n.removeprefix("kiyo-compass/"): zipped.read(n) for n in zipped.namelist()}
+                    files = {n.removeprefix("kiyo-axiom-framework/"): zipped.read(n) for n in zipped.namelist()}
                 need({p: sha(b) for p, b in files.items()} ==
                      {p: r["sha256"] for p, r in item["outputs"].items()}, "Member inventory mismatch")
                 need(sorted(p.split("/")[1] for p in files if re.fullmatch(r"skills/[^/]+/SKILL.md", p))
                      == sorted(SKILLS), "Public Skill inventory mismatch")
                 metadata = {p: json.loads(b) for p, b in files.items() if p.endswith("plugin.json")}
-                need(all(m.get("version") is None and m["name"] == "kiyo-compass" for m in metadata.values()),
+                need(all(m.get("version") is None and m["name"] == "kiyo-axiom-framework" for m in metadata.values()),
                      "Invented identity/version")
                 entries[target] = {"path": archive.relative_to(ROOT).as_posix(), "sha256": sha(blob),
                                    "bytes": len(blob), "files": len(files), "skills": list(SKILLS),

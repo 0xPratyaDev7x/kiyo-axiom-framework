@@ -48,7 +48,7 @@ private notes, build logs, fixtures, developer scripts, node_modules and generat
 source are outside selection. Synthetic exclusion tests do not prove all allowed
 prose is free of secrets: content review remains a release responsibility.
 
-Each ZIP has one kiyo-compass/ root, eight public SKILL.md files, a full shared
+Each ZIP has one kiyo-axiom-framework/ root, eight public SKILL.md files, a full shared
 snapshot beneath each skill, the respective activation adapter, legal material
 and native metadata. Inventory/test/parity reports remain outside the ZIP.
 There is no hook, MCP, executable, VSIX, Actions runtime or consumer generator.
@@ -61,7 +61,7 @@ There is no hook, MCP, executable, VSIX, Actions runtime or consumer generator.
 | Canonical SKILL.md | CRLF to LF; trim terminal whitespace as existing builder does; local ../../ link destinations to ./references/kiyo/; append one conditional native adapter reference | Remove declared suffix and reverse link remap, then compare entire body/frontmatter |
 | Native manifest and adapter | Byte copy from that target's reviewed overlay | Input/output inventory and existing target validator |
 | Codex compatibility manifest | Existing derivation from portable identity/interface, plus documented ./skills/ | Existing Codex selected-field validator; this is not public ingestion acceptance |
-| ZIP | Sorted members; kiyo-compass/ prefix; regular 0644 mode; ZIP_STORED; fixed 1980-01-01 epoch; no extra/comment data | Inspect member metadata and compare two archive digests |
+| ZIP | Sorted members; kiyo-axiom-framework/ prefix; regular 0644 mode; ZIP_STORED; fixed 1980-01-01 epoch; no extra/comment data | Inspect member metadata and compare two archive digests |
 
 The fixed ZIP epoch is a serialization constant, never a claimed creation date.
 Content inventory hashes sorted relative paths plus actual file SHA-256 values.

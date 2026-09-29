@@ -52,7 +52,7 @@ def archive_bytes(payload):
     with zipfile.ZipFile(stream, "w", compression=zipfile.ZIP_STORED) as archive:
         for path, data in sorted(payload.items()):
             # Fixed ZIP epoch is serialization metadata, NOT an observed build date.
-            item = zipfile.ZipInfo("kiyo-compass/" + path, (1980, 1, 1, 0, 0, 0))
+            item = zipfile.ZipInfo("kiyo-axiom-framework/" + path, (1980, 1, 1, 0, 0, 0))
             item.create_system = 3
             item.external_attr = 0o100644 << 16
             item.compress_type = zipfile.ZIP_STORED
@@ -114,7 +114,7 @@ def assemble(root):
             require(row["sha256"] == sha(payload[dest]), f"Output hash mismatch: {dest}")
             if row["transform"] == "byte-copy":
                 require(payload[dest] == before[row["source"]], f"Copy differs: {dest}")
-        filename = f"kiyo-compass-{target}-development.zip"
+        filename = f"kiyo-axiom-framework-{target}-development.zip"
         archives[filename] = archive_bytes(payload)
         records[target] = {"archive": filename, "archive_sha256": sha(archives[filename]),
                            "archive_bytes": len(archives[filename]), "metrics": metrics,
