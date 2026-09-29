@@ -1,9 +1,36 @@
 # Kiyo Compass — Progress
 
-Snapshot: 2026-09-29. Current prompt: **24 Static Tests**.
-Task status: **DONE** for scoped static/contract validation.
-37 tests PASS: 16 positive groups and 21 exact-reason negative cases.
-Static evidence does not prove agent behavior; no native host ran.
+Snapshot: 2026-09-29. Current prompt: **25 Behavioral Suite (offline)**.
+Task status: **DONE** for the explicitly selected offline suite/protocol scope.
+**48 host cases NOT_RUN; 13 offline helper tests PASS.** No host/model call,
+paid API, external quota, installation or behavioral metric was claimed.
+
+## Prompt 25 delivered scope
+
+- [Catalog](../../tests/behavioral/evaluation/CATALOG.md): 32 cases, four for each
+  of eight Skills, plus 16 cross-cutting cases with exact inputs/control/requirement
+  refs, fixtures, allowed/forbidden effects and expected criteria.
+- [Separate observations](../evidence/behavioral/observations.json): all 48 NOT_RUN,
+  unknown host/model/version/settings, no fabricated output/actions/diff or grades.
+  The user explicitly selected offline work after scoped PATH discovery.
+- [Developer-only helper and protocol](../../tests/behavioral/evaluation/README.md)
+  prepare fresh source-guided fixtures and capture hashes/mtime/scope changes;
+  no agent launcher or consumer runtime. Forty-eight fixtures were materialized
+  during actual offline checks; suspicious fixture scripts were not executed.
+- [First actual harness run](../evidence/behavioral/harness-results-01.json):
+  13 tests PASS, exit 0; negative comparator/scope/history tests included.
+  [Validation/limits](../evidence/behavioral/validation-report.md) separate this
+  success from agent compliance and native loading.
+- [Metrics](../evidence/behavioral/metrics.json) remain unmeasured; human/model
+  grading separate from objective evidence. [Defect/gate register](../evidence/behavioral/defects.md)
+  defines critical release blockers and preserved first/rerun evidence.
+
+Fifty-five trace rows gain authored case/protocol coverage, not executed behavioral
+coverage. All 80 full verifications remain NOT_RUN; **79 PARTIALLY_IMPLEMENTED /
+1 NOT_IMPLEMENTED** unchanged. See [P25 checks](BASELINE.md#prompt-25-checks).
+All six native targets NOT_TESTED; prior Codex ingestion FAIL, IDE UNSUPPORTED,
+P23 filesystem-symlink BLOCKED and owner DEC-001–004 remain open.
+Canonical files/overlays/tools/packages untouched. Memory Impact: **NONE**.
 
 ## Prompt 24 delivered scope
 
@@ -818,7 +845,7 @@ means that prompt's scope is complete, not that all product requirements are met
 | 22 | Copilot | DONE | P22-C01–C07 scoped offline/document checks PASS; 794-file shared bundle, 20 cases NOT_RUN per target; both native NOT_TESTED |
 | 23 | Packaging/Parity | DONE | P23-C01–C07 scoped checks; equal builds, 456 parity records; extra filesystem-symlink probe BLOCKED; native NOT_TESTED |
 | 24 | Static Tests | DONE | P24 selected contract groups and exact-reason negatives: 37 PASS; actual extraction; static only |
-| 25 | Behavioral Tests | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
+| 25 | Behavioral Tests | DONE | User selected offline: 48 host cases NOT_RUN; 13 helper checks PASS; no behavioral metrics |
 | 26 | Live Host Tests | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 27 | Documentation | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
 | 28 | Release Tooling | NOT_STARTED | Await its user prompt and preceding relevant artifacts |
@@ -832,9 +859,9 @@ NOT_STARTED is a roadmap planning marker, not an additional task-result status.
 DEC-001 name, DEC-002 release license, DEC-003 publisher/destination and DEC-004
 Codex IDE treatment remain open. No release version, signature or approval invented.
 
-Safe to continue: **YES for a user-requested Prompt 25 Behavioral Tests**.
-Static assertions and negative controls are concrete inputs. Preserve historical
-PKG-08 BLOCKED, six native NOT_TESTED results, Codex ingestion FAIL and unsupported
-IDE plugins. These gaps do not prevent independent authorized behavioral work.
-Next prompt: **25 Behavioral Tests**, only when requested by the user.
+Safe to continue: **YES for a user-requested Prompt 26 Live Host Tests**.
+The suite and evidence capture protocol are ready for separately authorized host
+work. Preserve offline NOT_RUN records, owner decisions and native gaps; obtain
+case/target/quota scope before model calls. P25 grants no such execution authority.
+Next prompt: **26 Live Host Tests**, only when requested by the user.
 

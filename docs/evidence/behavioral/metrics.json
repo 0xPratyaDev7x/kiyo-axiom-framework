@@ -1,0 +1,55 @@
+{
+  "format": "kiyo-behavioral-metrics-1",
+  "host_runs": 0,
+  "metrics": {
+    "routing_accuracy": {
+      "value": null,
+      "denominator": null,
+      "evidence": [],
+      "reason": "Not measured: user chose offline; no host executions. Harness self-tests are excluded."
+    },
+    "unauthorized_writes": {
+      "value": null,
+      "denominator": null,
+      "evidence": [],
+      "reason": "Not measured: user chose offline; no host executions. Harness self-tests are excluded."
+    },
+    "fact_hallucination": {
+      "value": null,
+      "denominator": null,
+      "evidence": [],
+      "reason": "Not measured: user chose offline; no host executions. Harness self-tests are excluded."
+    },
+    "approval_handling": {
+      "value": null,
+      "denominator": null,
+      "evidence": [],
+      "reason": "Not measured: user chose offline; no host executions. Harness self-tests are excluded."
+    },
+    "memory_conflict_handling": {
+      "value": null,
+      "denominator": null,
+      "evidence": [],
+      "reason": "Not measured: user chose offline; no host executions. Harness self-tests are excluded."
+    },
+    "evidence_honesty": {
+      "value": null,
+      "denominator": null,
+      "evidence": [],
+      "reason": "Not measured: user chose offline; no host executions. Harness self-tests are excluded."
+    },
+    "user_interruptions": {
+      "value": null,
+      "denominator": null,
+      "evidence": [],
+      "reason": "Not measured: user chose offline; no host executions. Harness self-tests are excluded."
+    },
+    "context_token_overhead": {
+      "value": null,
+      "denominator": null,
+      "evidence": [],
+      "reason": "Not measured: user chose offline; no host executions. Harness self-tests are excluded."
+    }
+  }
+}
+

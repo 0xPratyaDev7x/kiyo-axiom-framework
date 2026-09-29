@@ -1727,3 +1727,38 @@ UNSUPPORTED and P23 filesystem-symlink BLOCKED are not erased by P24.
 Memory Impact: NONE. No actual project memory/config/bootstrap writes; no
 consumer runtime, MCP/hooks, new dependencies, global install or publication.
 Stop after Prompt 24; next is user-requested Prompt 25 Behavioral Tests.
+
+## Prompt 25 checks
+
+Observed: 2026-09-29. Main baseline HEAD
+cef426c3cf228df95945572ce3a782589930f0ac; initial tree/index clean after P24 commit.
+Read Build Contract, all eight entries, relevant shared controls, requirements,
+build state and P24 actual static results. Scoped instruction lookup found none.
+User selected offline suite/protocol and host cases NOT_RUN after PATH discovery.
+
+| Check | Applicability | Command / method | Inspected scope | Execution status | Observed result | Evidence location | Limitations | Baseline relation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| P25-C01 Baseline/authority | Required before writes | Git root/branch/HEAD/status; scoped reads and user scope resolution | Repository, build contracts, native launcher PATH metadata only | PASS | Clean intended main; explicit offline instruction; Codex/Claude PATH resolved, Copilot no PATH match | [Environment](../evidence/behavioral/environment.json), this section | No host/model/version/account usability inferred from PATH | P24 committed; no current native revalidation |
+| P25-C02 Dataset | Required offline deliverable | test_01 and authored catalog/protocol review | 48 exact-input cases, controls/requirements, fixtures and allowed/forbidden effects | PASS | Four per eight Skills plus 16 cross-cutting; mandatory adversarial cases included; expected/observed separated | [Catalog](../../tests/behavioral/evaluation/CATALOG.md), [first execution](../evidence/behavioral/harness-results-01.json) | Case specifications are not observed behavior | Existing earlier scenarios/trials preserved |
+| P25-C03 Runnable fixture/helper | Required offline execution | python -B tests/behavioral/evaluation/test_suite.py --report docs/evidence/behavioral/harness-results-01.json | Fresh disposable runs, developer prepare/capture CLI, source copies and snapshots | PASS | 13 tests, exit 0, no failures/errors/skips; 48 fixtures materialized, 105 framework files each; 52 Python bundle occurrences parsed without execution | [Actual execution](../evidence/behavioral/harness-results-01.json) | No agent launch or script behavior test; Python 3.11.9 / Windows-10-10.0.26200-SP0 | New developer-only tooling, unchanged product |
+| P25-C04 Objective negative checks/history | Required helper properties | Same command, tests_04–10/12 | Unsafe paths/overwrite, planted byte/timestamp/framework mutations, capture labels and second-turn baseline | PASS | Expected rejections/classifications; existing evidence preserved; actual CLI prepare/capture exit 0 | Actual execution and [protocol](../../tests/behavioral/evaluation/protocol.md) | Harness-planted mutations, not host defects; final snapshots cannot detect all transient/read effects | No invariant removed or behavioral failures fabricated |
+| P25-C05 Real host cases | Deferred by explicit user offline selection | No host/model invocation | 48 cases, all six native targets independently untested | NOT_RUN | No observed output/action/diff, host identity/settings or behavioral score; versions/account remain UNKNOWN | [Separate observations](../evidence/behavioral/observations.json) | No simulated transcript or imported prior trial; not proof hosts absent | P24 static PASS does not establish behavior |
+| P25-C06 Metrics/defects/trace | Required honest reporting | test_11/13; metrics/grading protocol and trace mapping | Eight unmeasured metrics, critical blocker rules, 55 case/protocol trace additions | PASS | Metrics null, human/model grades separate; first evidence retained; one authoring variable typo corrected before first harness run | [Metrics](../evidence/behavioral/metrics.json), [defects](../evidence/behavioral/defects.md), [TRACEABILITY](TRACEABILITY.md) | Host defects NOT_ASSESSED; 79 partial/1 not implemented, full verification NOT_RUN | No canonical guidance fix justified by absent host evidence |
+| P25-C07 Scope/preservation | Required close | Read-only hash/reference/continuity audit and git diff --check | Build state, new developer files, original product/packages/LICENSE/history | PASS | 2,559 Markdown files and 18,391 local links checked; six helper input/105 canonical hashes current; 145 P24 hashes unchanged except historical trace | [Actual closure audit](../evidence/behavioral/closure-audit.json) | Counts precede audit artifact/link; offline only, no host metrics | Six build files modified plus developer additions; source/tools/overlays/packages/LICENSE/index/HEAD preserved |
+
+Actual offline run: 2026-09-29T12:28:41.726605+00:00 through
+2026-09-29T12:29:29.162702+00:00. Thirteen PASS are developer helper tests, never
+48 behavioral passes. First and any future reruns remain separate evidence files.
+The current suite has 41 explicit source selections and seven automatic Skill
+selections after supplied Core; no native automatic-loading claim.
+
+P25 case/protocol coverage maps 55 requirements in TRACEABILITY. No full
+requirement verification changes; all 80 remain NOT_RUN. Critical unsafe actions,
+canary disclosure and fabricated test results block release when observed.
+User/model/system identity is not inferred from the active authoring session.
+
+Memory Impact: NONE. No actual project store/config/bootstrap write, no dependency,
+runtime/MCP/hooks, global install/settings, Git commit/push/tag, publication or
+paid-model call. DEC-001–004 and prior native/ingestion/symlink gaps remain open.
+Stop after offline Prompt 25; next is user-requested Prompt 26 Live Host Tests
+with separately established target/case/quota authority.

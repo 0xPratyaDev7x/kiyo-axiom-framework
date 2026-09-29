@@ -252,7 +252,7 @@ and preserves earlier outputs. Native installation/lifecycle remains Prompt 26.
 | DEC-004 | Treatment of Codex IDE native-plugin support gap | OPEN. Official [plugin documentation](https://learn.chatgpt.com/docs/plugins) excludes IDE plugins; [skills documentation](https://learn.chatgpt.com/docs/build-skills) supports standalone IDE skills. Rechecked 2026-09-29 (CX21-04/06); DOCUMENTED_ONLY, live NOT_TESTED | Repository/product owner | Before promising six-target native installation or accepting a standalone fallback; does not block Prompt 03 design of documented surfaces | No fallback or scope reduction approved |
 
 Ask only when an unresolved choice blocks the current authorized prompt. Existing
-instructions authorize Prompt 24 static/contract tests, fixtures, actual evidence and build-state updates. Do not ask for
+instructions authorize Prompt 25 offline behavioral case/fixture/protocol authoring, developer helper checks and build-state updates. The user explicitly kept host cases NOT_RUN; no model calls or external quota are authorized by that scope. Do not ask for
 premature publication decisions to complete that scope. Publication metadata still
 requiring confirmation is listed in [SOURCES](../research/SOURCES.md#publication-information-still-requiring-the-owner).
 

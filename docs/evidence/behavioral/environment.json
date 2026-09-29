@@ -1,0 +1,78 @@
+{
+  "checked_utc": "2026-09-29T12:29:46.8264715Z",
+  "observations": [
+    {
+      "target": "codex",
+      "status": "PATH_RESOLVED",
+      "command_type": "ExternalScript",
+      "source": "C:\\Users\\praty\\AppData\\Roaming\\npm\\codex.ps1",
+      "version": "UNKNOWN",
+      "invoked": false
+    },
+    {
+      "target": "claude",
+      "status": "PATH_RESOLVED",
+      "command_type": "ExternalScript",
+      "source": "C:\\Users\\praty\\AppData\\Roaming\\npm\\claude.ps1",
+      "version": "UNKNOWN",
+      "invoked": false
+    },
+    {
+      "target": "copilot",
+      "status": "NO_PATH_MATCH",
+      "command_type": null,
+      "source": null,
+      "version": "UNKNOWN",
+      "invoked": false
+    }
+  ],
+  "limitation": "PATH lookup only, not host usability/account/version/install evidence; no model or executable invoked",
+  "method": "Get-Command codex, claude, copilot (PowerShell PATH metadata lookup only)",
+  "exit_code": 0,
+  "authority": "User explicitly chose offline suite/protocol; no executable/model invocation authorized for cases",
+  "six_target_statuses": {
+    "claude-cli": {
+      "behavior": "NOT_TESTED",
+      "case_execution": "NOT_RUN",
+      "host_version": "UNKNOWN",
+      "settings": "UNKNOWN",
+      "native_plugin_route": "No new P25 claim"
+    },
+    "claude-vscode": {
+      "behavior": "NOT_TESTED",
+      "case_execution": "NOT_RUN",
+      "host_version": "UNKNOWN",
+      "settings": "UNKNOWN",
+      "native_plugin_route": "No new P25 claim"
+    },
+    "codex-cli": {
+      "behavior": "NOT_TESTED",
+      "case_execution": "NOT_RUN",
+      "host_version": "UNKNOWN",
+      "settings": "UNKNOWN",
+      "native_plugin_route": "No new P25 claim"
+    },
+    "codex-ide": {
+      "behavior": "NOT_TESTED",
+      "case_execution": "NOT_RUN",
+      "host_version": "UNKNOWN",
+      "settings": "UNKNOWN",
+      "native_plugin_route": "UNSUPPORTED per prior research; not revalidated in P25"
+    },
+    "copilot-cli": {
+      "behavior": "NOT_TESTED",
+      "case_execution": "NOT_RUN",
+      "host_version": "UNKNOWN",
+      "settings": "UNKNOWN",
+      "native_plugin_route": "No new P25 claim"
+    },
+    "copilot-vscode": {
+      "behavior": "NOT_TESTED",
+      "case_execution": "NOT_RUN",
+      "host_version": "UNKNOWN",
+      "settings": "UNKNOWN",
+      "native_plugin_route": "No new P25 claim"
+    }
+  }
+}
+

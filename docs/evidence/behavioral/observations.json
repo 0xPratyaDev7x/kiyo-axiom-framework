@@ -1,0 +1,1886 @@
+{
+  "format": "kiyo-behavioral-observations-1",
+  "checked_date": "2026-09-29",
+  "authority": {
+    "source": "User response in this task",
+    "text": "ทำ suite/protocol แบบ offline; host cases คง NOT_RUN",
+    "scope": "No model calls or external quota"
+  },
+  "expected_results_location": "tests/behavioral/evaluation/catalog.json",
+  "host_runs": 0,
+  "records": [
+    {
+      "case_id": "BEH-INIT-01",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-INIT-01",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-INIT-02",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-INIT-02",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-INIT-03",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-INIT-03",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-INIT-04",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-INIT-04",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-REQ-01",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-REQ-01",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-REQ-02",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-REQ-02",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-REQ-03",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-REQ-03",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-REQ-04",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-REQ-04",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-IMPL-01",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-IMPL-01",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-IMPL-02",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-IMPL-02",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-IMPL-03",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-IMPL-03",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-IMPL-04",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-IMPL-04",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-REV-01",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-REV-01",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-REV-02",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-REV-02",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-REV-03",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-REV-03",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-REV-04",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-REV-04",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-TEST-01",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-TEST-01",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-TEST-02",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-TEST-02",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-TEST-03",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-TEST-03",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-TEST-04",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-TEST-04",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-SEC-01",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-SEC-01",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-SEC-02",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-SEC-02",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-SEC-03",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-SEC-03",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-SEC-04",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-SEC-04",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-ARCH-01",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-ARCH-01",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-ARCH-02",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-ARCH-02",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-ARCH-03",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-ARCH-03",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-ARCH-04",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-ARCH-04",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-MEM-01",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-MEM-01",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-MEM-02",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-MEM-02",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-MEM-03",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-MEM-03",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-MEM-04",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-MEM-04",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-X-01",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-X-01",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-X-02",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-X-02",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-X-03",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-X-03",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-X-04",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-X-04",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-X-05",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-X-05",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-X-06",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-X-06",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-X-07",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "automatic",
+        "delivery": "Automatic skill selection after explicitly supplied Core; no native auto-load claim",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-X-07",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-X-08",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "automatic",
+        "delivery": "Automatic skill selection after explicitly supplied Core; no native auto-load claim",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-X-08",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-X-09",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-X-09",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-X-10",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-X-10",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-X-11",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "explicit",
+        "delivery": "Explicit selected source entry and Core in operator envelope",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-X-11",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-X-12",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "automatic",
+        "delivery": "Automatic skill selection after explicitly supplied Core; no native auto-load claim",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-X-12",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-X-13",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "automatic",
+        "delivery": "Automatic skill selection after explicitly supplied Core; no native auto-load claim",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-X-13",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-X-14",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "automatic",
+        "delivery": "Automatic skill selection after explicitly supplied Core; no native auto-load claim",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-X-14",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-X-15",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "automatic",
+        "delivery": "Automatic skill selection after explicitly supplied Core; no native auto-load claim",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-X-15",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    },
+    {
+      "case_id": "BEH-X-16",
+      "host": {
+        "target": "UNSELECTED",
+        "host_version": "UNKNOWN",
+        "model": "UNKNOWN",
+        "model_version": "UNKNOWN",
+        "provider_account": "UNKNOWN",
+        "settings": "UNKNOWN",
+        "sources": []
+      },
+      "activation": {
+        "requested": "automatic",
+        "delivery": "Automatic skill selection after explicitly supplied Core; no native auto-load claim",
+        "observed": null,
+        "status": "NOT_VERIFIED"
+      },
+      "observed": {
+        "outputs": [],
+        "actions": [],
+        "diff": null,
+        "tool_evidence": [],
+        "user_interruptions": null,
+        "context_tokens": null
+      },
+      "objective_assessment": {
+        "result": null,
+        "evidence": []
+      },
+      "human_grade": null,
+      "model_grade": null,
+      "result": "NOT_RUN",
+      "evidence_path": "docs/evidence/behavioral/observations.json#BEH-X-16",
+      "limitations": [
+        "User explicitly selected offline suite/protocol; no host was invoked.",
+        "Empty observation arrays mean not observed, not zero effects or success.",
+        "Prior bounded source trials were not imported as these case executions."
+      ]
+    }
+  ]
+}
+

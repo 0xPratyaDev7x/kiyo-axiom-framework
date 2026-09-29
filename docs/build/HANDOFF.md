@@ -15,33 +15,36 @@ One canonical specification with necessary self-contained native overlays.
 
 ## Current repository observation
 
-Observed for Prompt 24 on 2026-09-29:
+Observed for Prompt 25 on 2026-09-29:
 
 - Root: C:/Users/praty/source/@0xPratya7x/kiyo-codejadee-framework/kiyo-codejadee-framework
-- Branch main; HEAD 434f1df4729130d195650fcc40f007572e4e6759. Initial tree/index
-  clean; Prompt 23 committed before task. No scoped instructions or .kiyo found.
-  Git uses per-command exact safe.directory/core.excludesFile only.
-- LICENSE blob d2e60c5b160ed4f9ca096215e72efee5769936b1 preserved; no version/tag.
-  All 105 canonical files, three overlays, original builders and distributions
-  are unchanged. P24 adds only developer tests/evidence and build-state updates.
-- tests/static uses Python standard library: 16 positive groups plus 21 synthetic
-  negatives. Final execution: 37 PASS, exit 0, zero failures/errors/skips. Retain
-  initial failed report and checker fixes; they were not product regressions.
-- Three actual ZIP extractions (794/795/794 files, eight Skills each) pass source-
-  denied standalone inspection from fresh paths with spaces. Shared copies,
-  allowed entry transforms and P23 input/output hashes agree. Not an OS sandbox.
-- P23 extra filesystem symlink probe remains BLOCKED (Windows 1314); ZIP regular
-  membership/rejection evidence remains valid. No native POSIX execution.
-- Python 3.11.9 / Windows-10-10.0.26200-SP0 observed. P24 inspected no native
-  host/account/version. Native behavior NOT_TESTED, Codex ingestion FAIL and
-  Codex IDE native plugins UNSUPPORTED remain distinct unresolved results.
-- 40 trace rows gain partial static evidence; 79 partial/1 not implemented,
-  all 80 full requirement verifications NOT_RUN. No release readiness claim.
-- No project bootstrap/policy/Memory, global setting, install, dependency, runtime,
-  commit/tag/push/PR, signature or publication was created.
+- Branch main; HEAD cef426c3cf228df95945572ce3a782589930f0ac; initial tree/index
+  clean, Prompt 24 committed. No applicable scoped instructions or .kiyo found.
+  Git uses exact per-command safe.directory/core.excludesFile only.
+- Existing LICENSE/naming/version/history, 105 canonical product files, native
+  overlays, original builders and packages remain untouched. No extra public Skill.
+- User explicitly chose “ทำ suite/protocol แบบ offline; host cases คง NOT_RUN”.
+  No host/model, paid API, external quota, global changes or installation occurred.
+- Source-guided catalog has 48 cases: four per Skill plus 16 cross-cutting;
+  31 synthetic fixture bundles. Expected criteria and observed records are separate.
+  Host/model/version/settings are UNKNOWN/UNSELECTED; all 48 records NOT_RUN.
+- Actual offline command ran 13 helper tests PASS, zero failures/errors/skips.
+  It materialized 48 cases with all 105 framework files and exercised prepare/
+  capture CLI. Synthetic helper mutations are not host defects or metric samples.
+- Codex/Claude launch scripts resolve on PATH; Copilot command has no PATH match.
+  No executable was invoked for version/account/usability; no absence inferred.
+  Python 3.11.9 / Windows-10-10.0.26200-SP0 observed from helper execution.
+- All eight behavioral metrics unmeasured, model/human grading absent. All six
+  native targets remain NOT_TESTED; Codex IDE plugin route UNSUPPORTED, prior
+  ingestion FAIL and P23 filesystem-symlink BLOCKED retained.
+- 55 trace rows gain authored case/protocol coverage; 79 partial/1 not implemented,
+  all 80 full requirement verifications NOT_RUN. No behavioral/release acceptance.
+- No actual project Memory/bootstrap/policy, dependency, runtime, Git commit/tag/
+  push/PR, publication or signature was created.
 
 Recheck root/branch/user edits on resume. Preserve LICENSE and all 80 requirements.
-See [P24 validation](../evidence/static/validation-report.md) for exact limits.
+See [P25 validation](../evidence/behavioral/validation-report.md) and
+[environment evidence](../evidence/behavioral/environment.json).
 
 ## Read order
 
@@ -941,8 +944,8 @@ Read [test contract](../../tests/static/README.md),
 [actual final execution](../evidence/static/test-results-final.json),
 [validation history](../evidence/static/validation-report.md) and
 [coverage interpretation](../evidence/static/coverage-interpretation.md).
-The final report hashes current test source/fixtures, product inputs and trace
-data. Earlier execution files preserve their earlier snapshots. Reruns require
+The P24 final report hashes its test source/fixtures, product inputs and P24 trace
+snapshot. P25's trace additions postdate that run; treat its trace hash as historical. Earlier execution files preserve their earlier snapshots. Reruns require
 a fresh report path; do not overwrite evidence.
 
 No assertion or mandatory negative was removed to get green output. Pinned
@@ -953,17 +956,41 @@ agent compliance, security enforcement or host discovery. Behavioral/live work
 not run by this suite stays NOT_TESTED; scenario execution stays NOT_RUN.
 Source trials from earlier prompts retain their original bounded scope.
 
+## Behavioral suite continuity
+
+Read [catalog](../../tests/behavioral/evaluation/CATALOG.md),
+[protocol](../../tests/behavioral/evaluation/protocol.md),
+[metrics/grading](../../tests/behavioral/evaluation/metrics-and-grading.md),
+[actual helper evidence](../evidence/behavioral/harness-results-01.json),
+[observations](../evidence/behavioral/observations.json) and
+[defect/gates](../evidence/behavioral/defects.md).
+Developer helper: tests/behavioral/evaluation/runner.py, prepare/capture only.
+It refuses existing destinations and capture labels, has no agent launcher and
+never executes fixture scripts. Runs are disposable and outside the checkout;
+no automatic deletion. Fixtures and operator oracles never enter product payloads.
+
+Keep all 48 NOT_RUN records. They reflect explicit offline scope, not a claim
+that hosts are unavailable. No simulated transcript or old forward trial is a
+new P25 case result. Seven automatic-selection cases supply Core explicitly;
+this does not test native auto-loading. Fresh actual host work must record exact
+identity/settings/resource delivery, preserve operator oracle separation and
+establish native safety/quotas without global permission changes.
+
+Objective snapshots do not prove no transient writes/reads/disclosure. A human
+must inspect actual tool/action evidence and semantic patches; any model grade
+is separate and needs its own authority. Critical unauthorized effects or fake
+results block release. Preserve first attempt and rerun as separate records.
+No canonical fix was justified by the unrun behavioral cases.
+
 ## Exact next action
 
-Prompt 24 scoped static/contract tests are complete. Stop here.
-**Next: Prompt 25 Behavioral Tests**, only when supplied by the user.
-Recheck root/branch/user edits, read Build Contract and current evidence, then
-execute only that prompt. Use the actual canonical/package contracts and keep
-static, behavioral and native evidence independent. Do not invent owner fields,
-host capabilities, installation results or a Codex IDE fallback.
+Prompt 25 offline suite/protocol delivery is complete. Stop here.
+**Next: Prompt 26 Live Host Tests**, only when supplied by the user.
+Recheck baseline and Build Contract, inspect authorized host prerequisites and
+obtain specific case/target/quota authority before any model call. P25's offline
+choice is not permission for later runs, installations or public submission.
 
-Safe to continue: **YES for a user-requested Prompt 25 Behavioral Tests**.
-Contracts, tested packages and failure-detecting fixtures are concrete inputs;
-owner/native gaps still gate release and compatibility claims. Memory Impact: NONE.
-No later work, installation or publication is authorized by this handoff alone.
+Safe to continue: **YES for a user-requested Prompt 26 Live Host Tests**.
+Prepared fixtures/protocols provide inputs; owner/native gaps remain visible.
+Memory Impact: NONE. No later work is authorized by this handoff alone.
 

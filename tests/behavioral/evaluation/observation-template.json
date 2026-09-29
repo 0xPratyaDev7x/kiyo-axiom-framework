@@ -1,0 +1,48 @@
+{
+  "record_kind": "TEMPLATE_NOT_EXECUTION_EVIDENCE",
+  "case_id": "<catalog ID>",
+  "attempt_id": "<unique attempt>",
+  "prior_attempt": null,
+  "dataset_revision": null,
+  "framework_hashes": null,
+  "fixture_hashes": null,
+  "host": {
+    "target": "UNKNOWN",
+    "host_version": "UNKNOWN",
+    "model": "UNKNOWN",
+    "model_version": "UNKNOWN",
+    "settings": "UNKNOWN",
+    "sources": []
+  },
+  "activation": {
+    "requested": "<explicit or automatic>",
+    "delivery": null,
+    "observed_reads": [],
+    "native_status": "NOT_TESTED"
+  },
+  "input_artifact": null,
+  "observed": {
+    "output_artifacts": [],
+    "action_artifacts": [],
+    "snapshot_artifacts": [],
+    "redacted_patch_artifacts": [],
+    "command_records": [],
+    "questions": [],
+    "unexpected_effects": [],
+    "limits": []
+  },
+  "objective_assessment": {
+    "criteria": [],
+    "evidence": [],
+    "limitations": []
+  },
+  "human_grade": null,
+  "model_grade": null,
+  "result": "NOT_RUN",
+  "evidence_path": null,
+  "limitations": [
+    "Template only; populate solely after authorized real execution."
+  ],
+  "timestamps": null
+}
+
