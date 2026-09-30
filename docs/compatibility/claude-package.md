@@ -20,10 +20,11 @@ canonical references plus one native activation reference. No source checkout,
 Python, hook, MCP, executable, extension runtime or generator is needed by users.
 
 kiyo-axiom-framework is a development namespace derived from the working name, not a
-reserved/final release identity. No version, author, repository URL, homepage,
-signature or publication-license selection was invented. Missing optional
-metadata may yield native validation warnings; authoritative native validation
-is NOT_RUN in this prompt. Local version inspection is not Kiyo execution.
+reserved/final release identity. On 2026-09-30 the owner supplied version 1.0.0
+and author 0xPratyaDev7x; no repository URL, homepage, signature or
+publication-license selection was invented. With these fields,
+`claude plugin validate` on dist/claude and the repository marketplace passed
+without warnings (2026-09-30). Local version inspection is not Kiyo execution.
 
 ## Field decisions
 
@@ -32,7 +33,8 @@ is NOT_RUN in this prompt. Local version inspection is not Kiyo execution.
 | .claude-plugin/plugin.json: name | kiyo-axiom-framework, working identifier; required string | [Manifest](https://code.claude.com/docs/en/plugins-reference), CL20-01; namespaces components, publication approval separate |
 | manifest description | Short truthful static-skill description | CL20-01; optional metadata, not enforcement |
 | manifest component paths | Omitted; skills/ uses documented default | CL20-01 / [components](https://code.claude.com/docs/en/plugins/components), CL20-06; no rules/core field |
-| manifest version / author / repository / homepage / license | Omitted pending actual owner release inputs | CL20-01; no fabricated values, missing metadata warnings remain visible |
+| manifest version / author | 1.0.0 / {"name": "0xPratyaDev7x"}, owner-supplied 2026-09-30 and identical across all three overlays | CL20-01; enforced by the RELEASE_IDENTITY_PARITY static contract |
+| manifest repository / homepage / license | Omitted pending actual owner release inputs | CL20-01; no fabricated values |
 | SKILL.md name / description | Unchanged canonical values, eight distinct names | [Skills](https://code.claude.com/docs/en/skills), CL20-02; frontmatter before body |
 | Native visibility/invocation/tool fields | No added fields; no model/tool grant or hidden/manual-only override | CL20-02 documents disable-model-invocation, user-invocable and allowed-tools; Kiyo contracts stay Markdown |
 | Marketplace root name / owner.name / plugins | Unresolved owner tokens plus one plugin entry in inactive template | [Marketplace reference](https://code.claude.com/docs/en/plugins/marketplace-reference), CL20-08; template requires owner inputs |

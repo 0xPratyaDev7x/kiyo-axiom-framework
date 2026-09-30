@@ -24,3 +24,13 @@ assessment was run here; absence of an observed failure is not proof of safety.
 
 Prompt 27 documentation may proceed using these limits. Compatibility/release
 acceptance must retain the unresolved rows.
+
+## Update 2026-09-30
+
+Added as a new record; the 2026-09-29 snapshot above is unchanged.
+
+| Gate | New observation | Still open |
+| --- | --- | --- |
+| Account/quota authority | Owner authorized paid runs. The [live E2E harness](../../tests/live/e2e/README.md) passed all eight Skills (happy and failure paths) on Claude Code 2.1.220 and codex-cli 0.158.0; Codex also passed review through a marketplace-installed plugin, removed afterwards | Claude implicit selection without an Init block was 0/6 (2/2 with it); Codex runs also loaded the operator's personal skills |
+| Copilot host | Copilot CLI 1.0.89 installed with owner approval; isolated `COPILOT_HOME` marketplace add, install (8 skills) and `copilot skill list` PASS | **Documented exception (AGENTS.md Rule 1):** model execution BLOCKED until an entitled account runs `copilot login`; a classic `ghp_` token is rejected. Copilot in VS Code NOT_TESTED |
+| Release identity | Owner supplied version `1.0.0` and author `0xPratyaDev7x`; `claude plugin validate --strict` PASS for plugin and marketplace | Publisher/destination, license confirmation, Codex `interface.developerName` |

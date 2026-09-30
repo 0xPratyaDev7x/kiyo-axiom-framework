@@ -1,0 +1,11 @@
+{
+  "id": "mismatched-release-version",
+  "synthetic": true,
+  "group": "G05",
+  "operation": "replace",
+  "path": "platforms/copilot/plugin.json",
+  "match": "\"version\": \"1.0.0\"",
+  "value": "\"version\": \"9.9.9\"",
+  "expected_code": "RELEASE_IDENTITY_PARITY",
+  "expected_detail": "copilot"
+}

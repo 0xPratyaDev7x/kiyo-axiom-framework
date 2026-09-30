@@ -174,8 +174,14 @@ Guides in this repository:
 
 ## Project status
 
-Kiyo is a **development preview** (working name, no public release yet).
-You can install it from this repository's marketplace, but full agent-workflow testing on every host is not finished.
+Kiyo is a **development preview**: plugin manifests carry version `1.0.0`, but there is no public release yet.
+Install it from this repository's marketplace. As of 2026-09-30, all eight Skills passed live
+end-to-end runs (happy and failure paths) on Claude Code and Codex; on Copilot CLI, install and
+Skill discovery are verified but model runs still need an entitled `copilot login`.
+On Claude Code, invoke a Skill explicitly or run Init first: without Init, Claude usually
+answers directly instead of selecting a Kiyo Skill.
+
+- Rerun the live checks yourself: [live E2E harness](tests/live/e2e/README.md) (launches paid agent sessions).
 
 - Kiyo guides the agent; permissions and command execution remain the host's job.
   Kiyo does not provide a sandbox or guarantee agent compliance.

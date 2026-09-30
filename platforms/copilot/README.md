@@ -7,7 +7,7 @@ This is a static agent plugin, not a VSIX, GitHub App or hosted extension servic
 
 ## Authored inputs and derived output
 
-- [plugin.json](plugin.json): root schema marker, working name and description only.
+- [plugin.json](plugin.json): root schema marker, working name, version, description and author.
 - [Native adapter](resources/activation.md): target-specific selection/loading
   procedure, appended conditionally to each canonical entry.
 - [Developer packager](../../tools/package_copilot.py): produces
@@ -35,11 +35,13 @@ and [integration specifications](../../tests/integration/copilot/scenarios.md).
 [source/output inventory](../../docs/evidence/copilot/package-inventory.json)
 are developer evidence outside the payload.
 
-CLI and VS Code remain independently NOT_TESTED. Documentation establishes
-capabilities, not successful Kiyo installation. Exact CLI qualification and
-plugin rule-loader semantics remain UNKNOWN. The current local lookup did not
-resolve copilot on PATH or matching Copilot extension metadata in the inspected
-standard VS Code extension directory; this is not proof of system-wide absence.
+Copilot CLI 1.0.89 (2026-09-30, isolated COPILOT_HOME): `copilot plugin marketplace add`
+on this repository resolved .github/plugin/marketplace.json, `copilot plugin install`
+reported 8 skills, and `copilot skill list` showed all eight as plugin skills.
+Model execution is BLOCKED until an entitled account signs in with `copilot login`
+(a classic `ghp_` token is rejected); see the
+[live E2E harness](../../tests/live/e2e/README.md). Copilot in VS Code remains
+NOT_TESTED. Exact CLI qualification and plugin rule-loader semantics remain UNKNOWN.
 
 ## Owner-required inputs
 

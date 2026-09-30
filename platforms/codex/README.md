@@ -35,10 +35,10 @@ No MCP, app registration, hooks, network service or global settings are added.
 
 ## Readiness limits
 
-The working name is not an owner-approved release identity. Version, author and
-interface.developerName are absent pending real release/publisher evidence.
-The bundled plugin-creator ingestion validator reports **FAIL** for these three
-missing fields. Offline layout/parity checks do not erase that result. See
+The working name is not an owner-approved release identity. Version 1.0.0 and
+author are owner-supplied (2026-09-30); interface.developerName is still absent
+pending real publisher evidence. The bundled plugin-creator ingestion validator
+reported **FAIL** for the three fields on 2026-09-29 and was not rerun. Offline layout/parity checks do not erase that result. See
 [actual evidence](../../docs/evidence/codex/package-checks.md).
 
 [marketplace.template.json](marketplace.template.json) is inactive, outside the

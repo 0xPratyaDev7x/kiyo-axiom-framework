@@ -27,6 +27,15 @@ def sha(data):
     return hashlib.sha256(data).hexdigest()
 
 
+def require_release_metadata(manifest):
+    # Owner-supplied release identity shared by all three native manifests.
+    require(isinstance(manifest.get("version"), str)
+            and re.fullmatch(r"\d+\.\d+\.\d+", manifest["version"]), "Invalid manifest version")
+    author = manifest.get("author")
+    require(isinstance(author, dict) and set(author) == {"name"}
+            and isinstance(author["name"], str) and author["name"].strip(), "Invalid manifest author")
+
+
 def reject_links(path):
     for part in (path, *path.parents):
         if part.exists() or part.is_symlink():
@@ -52,9 +61,10 @@ def make_payload(root):
                                    "bytes": len(payload[destination])}
     manifest_path = "platforms/claude/.claude-plugin/plugin.json"
     manifest = json.loads(read_input(root, manifest_path))
-    require(set(manifest) == {"name", "description"}, "Unexpected manifest fields")
+    require(set(manifest) == {"name", "version", "description", "author"}, "Unexpected manifest fields")
     require(manifest["name"] == "kiyo-axiom-framework" and isinstance(manifest["description"], str)
             and manifest["description"].strip(), "Unexpected working identity or description")
+    require_release_metadata(manifest)
     add(".claude-plugin/plugin.json", manifest_path)
     add("LICENSE", "LICENSE")
     src = root / "src/kiyo"
@@ -101,8 +111,9 @@ def validate_payload(payload):
     require(set(p.split("/")[0] for p in payload) == {".claude-plugin", "skills", "LICENSE"},
             "Unexpected payload root")
     manifest = json.loads(payload[".claude-plugin/plugin.json"])
-    require(set(manifest) == {"name", "description"} and manifest["name"] == "kiyo-axiom-framework",
-            "Unsupported manifest mutation")
+    require(set(manifest) == {"name", "version", "description", "author"}
+            and manifest["name"] == "kiyo-axiom-framework", "Unsupported manifest mutation")
+    require_release_metadata(manifest)
     entries = sorted(p.split("/")[1] for p in payload if re.fullmatch(r"skills/[^/]+/SKILL.md", p))
     require(entries == sorted(SKILLS), "Missing/extra entry")
     texts, anchors = {}, {}

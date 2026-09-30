@@ -43,7 +43,7 @@ command; use the native executable resolved from the installed launcher.
 | Operation | Command form | Evidence / expected boundary |
 | --- | --- | --- |
 | Version | claude --version | Actual 2.1.220 |
-| Native validation | claude plugin validate <extracted-plugin-root> | Exit 0 with missing version/author warnings |
+| Native validation | claude plugin validate <extracted-plugin-root> | Exit 0 without warnings (version/author set 2026-09-30) |
 | Strict validation | claude plugin validate --strict <extracted-plugin-root> | Actual exit 1; preserve warnings, no fabricated metadata |
 | Empty isolated inventory | claude plugin list --json | Actual empty list in fresh child state only |
 | Directory discovery | claude --plugin-dir <extracted-plugin-root> plugin details kiyo-axiom-framework | Actual eight component names; no agent turn |

@@ -12,7 +12,7 @@ sys.dont_write_bytecode = True
 # Only common file/hash helpers; no Claude manifest or payload construction.
 from package_claude import (
     SKILLS, SHARED, LINK, require, sha, reject_links, read_input,
-    write_new_or_identical, slug,
+    write_new_or_identical, slug, require_release_metadata,
 )
 
 SCHEMA = "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json"
@@ -26,8 +26,9 @@ SUFFIX = (
 def validate_manifest(manifest):
     # CP22-01/07/10 establish this closed, skills-only subset for both targets.
     # This local subset check is not a host parser or a full operational validator.
-    require(isinstance(manifest, dict) and set(manifest) == {"$schema", "name", "description"},
+    require(isinstance(manifest, dict) and set(manifest) == {"$schema", "name", "version", "description", "author"},
             "Unexpected portable manifest fields")
+    require_release_metadata(manifest)
     require(manifest["$schema"] == SCHEMA, "Unsupported selected schema")
     name = manifest["name"]
     require(isinstance(name, str) and 1 <= len(name) <= 64

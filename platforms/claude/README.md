@@ -1,16 +1,16 @@
 # Claude overlay — development, not published
 
 The native manifest input is [.claude-plugin/plugin.json](.claude-plugin/plugin.json).
-It contains only name and description. The working namespace kiyo-axiom-framework is
+It contains name, version, description and author. The working namespace kiyo-axiom-framework is
 derived from the existing Kiyo Axiom Framework working name; it is not a final owner
-publication decision. Optional release version, author, repository, homepage and
-license metadata are omitted until evidenced/confirmed. Root LICENSE bytes are
+publication decision. Version 1.0.0 and author are owner-supplied (2026-09-30);
+repository, homepage and license metadata are omitted until evidenced/confirmed. Root LICENSE bytes are
 preserved in the generated bundle without deciding a new publication license.
 
 [Schema and native invocation evidence](../../docs/compatibility/claude-package.md)
 records official sources checked 2026-09-29, actual local observations and limits.
-The native manifest validator was NOT_RUN; missing optional author/version may
-produce warnings. Do not describe this development artifact as release-ready.
+`claude plugin validate` (including `--strict`) passed without
+warnings on 2026-09-30. Do not describe this development artifact as release-ready.
 
 ## Developer build
 

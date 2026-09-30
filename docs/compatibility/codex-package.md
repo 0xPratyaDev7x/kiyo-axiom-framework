@@ -22,15 +22,18 @@ not a renamed Claude manifest. Output: dist/codex/kiyo-axiom-framework.
 | --- | --- | --- |
 | root plugin.json | Agent Plugins 1.0.0 schema URL, working name and truthful description | CX21-01; current portable format; selected-field checks, not live host acceptance |
 | extensions.com.openai.interface | displayName, shortDescription, longDescription, category, capabilities and defaultPrompt | CX21-01; presentation only, no tool grants; empty capabilities makes no catalog capability claim |
-| .codex-plugin/plugin.json | Generated matching name/description/interface and skills: ./skills/ | CX21-01; supported compatibility path; portable inline interface wins, no merge |
+| .codex-plugin/plugin.json | Generated matching name/version/description/author/interface and skills: ./skills/ | CX21-01; supported compatibility path; portable inline interface wins, no merge |
 | skills/<name>/SKILL.md | Eight unchanged canonical names/descriptions; remapped contained references | [Codex skills](https://learn.chatgpt.com/docs/build-skills), CX21-04; no universal host-mode parser |
 | agents/openai.yaml | Omitted as optional and unnecessary for current CLI package | CX21-04; desktop appearance/dependency examples are not universal CLI/IDE obligations |
-| version / author / interface.developerName | Omitted until owner supplies real values | [Submission errors](https://developers.openai.com/plugins/deploy/submission-errors), CX21-10; required for ingestion/publication, so readiness is BLOCKED |
+| version / author | 1.0.0 / 0xPratyaDev7x, owner-supplied 2026-09-30; Codex installs the cached plugin as version 1.0.0 | CX21-01 |
+| interface.developerName | Omitted until owner supplies a real value | [Submission errors](https://developers.openai.com/plugins/deploy/submission-errors), CX21-10; required for ingestion/publication, so readiness is BLOCKED |
 | apps / MCP / hooks / permissions / core / rules | No runtime components or invented enforcement fields | [Plugin architecture](https://developers.openai.com/plugins/concepts/plugins), CX21-02; skill-only is documented; absence of a general rule loader claim is not sandboxing |
 
 All rows checked 2026-09-29. Root portable metadata may omit release version
 under CX21-01; CX21-10's ingestion checks are stricter. The local bundled validator
-actually returned FAIL for version, author and interface.developerName.
+actually returned FAIL for version, author and interface.developerName on
+2026-09-29; version and author were supplied on 2026-09-30, so only
+interface.developerName remains open (not re-validated with the bundled validator).
 This is an unresolved ingestion/release gate, not a successful validation or proof
 a native reader rejects all development use. Host acceptance remains NOT_TESTED.
 See [checks](../evidence/codex/package-checks.md) and [publication gates](codex-submission.md).

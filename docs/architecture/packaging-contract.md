@@ -186,7 +186,7 @@ a conditional link to the packaged Claude adapter; canonical skills remain uncha
 The adapter's source ../kiyo references are validated at their rendered
 references/claude location. No operational link requires the developer tree.
 
-The native manifest contains name/description only. The owner-incomplete
+The native manifest contains name, version, description and author only. The owner-incomplete
 marketplace template stays outside the plugin. Source/output hashes and actual
 base revision are in [the Claude inventory](../evidence/claude/package-inventory.json);
 the generator's own digest/environment and tests are in

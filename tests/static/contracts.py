@@ -170,10 +170,15 @@ def mandatory(files):
 
 
 def manifests(data, packages, builders):
+    releases = set()
     for target, builder in builders.items():
         path = "platforms/claude/.claude-plugin/plugin.json" if target == "claude" else f"platforms/{target}/plugin.json"
         source = json.loads(text(data, path))
-        expected = {"name", "description"} if target == "claude" else {"$schema", "name", "description"}
+        releases.add((source.get("version"), json.dumps(source.get("author"), sort_keys=True)))
+        need(len(releases) == 1, "RELEASE_IDENTITY_PARITY", target + " version/author differs from other overlays")
+        expected = {"name", "version", "description", "author"}
+        if target != "claude":
+            expected.add("$schema")
         if target == "codex":
             expected.add("extensions")
         need(set(source) == expected, "MANIFEST_FIELDS", target + " unexpected/missing properties")
@@ -208,17 +213,21 @@ def identity(files, packages):
     for skill in SKILLS:
         s = text(files, f"skills/{skill}/SKILL.md")
         need("**kiyo." + skill + "**" in s and "Canonical name: " + skill in s, "LOGICAL_ID", skill)
+    releases = set()
     for target, payload in packages.items():
         for p, b in payload.items():
             if p.endswith("plugin.json"):
                 manifest = json.loads(b)
                 need(manifest["name"] == "kiyo-axiom-framework", "MANIFEST_IDENTITY", target)
-                need(not {"version","author","repository","license","publisher"} & set(manifest),
+                need(not {"repository","license","publisher"} & set(manifest),
                      "UNAPPROVED_RELEASE_IDENTITY", target)
+                releases.add((manifest.get("version"), json.dumps(manifest.get("author"), sort_keys=True)))
         for skill in SKILLS:
             for p, b in files.items():
                 if not p.startswith("skills/"):
                     need(payload.get(f"skills/{skill}/references/kiyo/"+p) == b, "CONTENT_PARITY", target+"/"+p)
+    need(len(releases) == 1 and "null" not in next(iter(releases)) and None not in next(iter(releases)),
+         "RELEASE_IDENTITY_PARITY", "all native manifests share one version/author")
     return len(ids)
 
 
@@ -296,7 +305,7 @@ def enums_and_examples(files, data):
     for (key,body), decision in zip(cases,expected):
         m = re.search(r"Governance: \*\*(G[1-4])[^*]*\*\*\. Risk: \*\*([^*]+)\*\*\. Decision: \*\*([A-Z]+)\*\*",body)
         need(m is not None and m[2] in RISK|{"Unknown (not assigned)"} and m[3]==decision, "EXAMPLE_DECISION",key)
-        need(all(re.search(r"(?m)^- "+re.escape(d)+": \S",body) for d in dimensions), "RISK_DIMENSIONS",key)
+        need(all(re.search(r"(?m)^- "+re.escape(d)+r": \S",body) for d in dimensions), "RISK_DIMENSIONS",key)
     evidence = text(data,"tests/behavioral/verification/scenarios.md")
     record = table(section(evidence,"Complete check-record illustration — EVID-01"),"Field")
     need(set(record) == {"Name","Applicability","Command/method","Inspected scope","Execution status","Observed result",

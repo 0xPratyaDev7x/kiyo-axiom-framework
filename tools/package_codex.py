@@ -12,7 +12,7 @@ sys.dont_write_bytecode = True
 # Reuse only audited filesystem/hash helpers, not Claude schema or payload creation.
 from package_claude import (
     SKILLS, SHARED, LINK, require, sha, reject_links, read_input,
-    write_new_or_identical, slug,
+    write_new_or_identical, slug, require_release_metadata,
 )
 
 SUFFIX = (
@@ -26,15 +26,18 @@ SCHEMA = "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json"
 def compatibility_manifest(portable):
     return {
         "name": portable["name"],
+        "version": portable["version"],
         "description": portable["description"],
+        "author": portable["author"],
         "skills": "./skills/",
         "interface": portable["extensions"]["com.openai"]["interface"],
     }
 
 
 def validate_manifests(portable, compatibility):
-    require(set(portable) == {"$schema", "name", "description", "extensions"},
+    require(set(portable) == {"$schema", "name", "version", "description", "author", "extensions"},
             "Unexpected portable manifest fields")
+    require_release_metadata(portable)
     require(portable["$schema"] == SCHEMA and portable["name"] == "kiyo-axiom-framework",
             "Unexpected schema or working identity")
     require(isinstance(portable["description"], str) and portable["description"].strip(),
@@ -59,7 +62,7 @@ def validate_manifests(portable, compatibility):
             "Invalid starter prompts")
     require(compatibility == compatibility_manifest(portable),
             "Compatibility manifest diverges from portable input")
-    # Submission still needs owner-supplied version/author/developerName.
+    # Submission still needs an owner-supplied interface.developerName.
     # This is a selected-field development check, not public-ingestion validation.
 
 

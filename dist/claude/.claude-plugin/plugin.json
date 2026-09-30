@@ -1,4 +1,8 @@
 {
   "name": "kiyo-axiom-framework",
-  "description": "Eight static Kiyo engineering and governance skills with shared guidance and project-owned memory."
+  "version": "1.0.0",
+  "description": "Eight static Kiyo engineering and governance skills with shared guidance and project-owned memory.",
+  "author": {
+    "name": "0xPratyaDev7x"
+  }
 }

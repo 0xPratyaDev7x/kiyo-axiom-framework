@@ -43,8 +43,8 @@ documented character and boundary restrictions. The local packager checks the
 three selected fields, with no schema download at consumer time.
 Native acceptance and optional-field/full operational conformance are not implied.
 
-No version, author, repository URL, publisher ID, marketplace ID or signature is
-invented. No compatibility manifest is necessary for this selected shared format.
+Version 1.0.0 and author 0xPratyaDev7x are owner-supplied (2026-09-30); no
+repository URL, publisher ID, marketplace ID or signature is invented. No compatibility manifest is necessary for this selected shared format.
 No extensions.com.github.copilot metadata, allowed-tools, visibility fields,
 agents/openai.yaml, rule folder, permissions or safety flags are needed.
 

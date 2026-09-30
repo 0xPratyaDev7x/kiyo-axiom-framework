@@ -174,8 +174,13 @@ Requirement มีสถานะความพร้อมอีกชุด: 
 
 ## สถานะโปรเจกต์
 
-Kiyo อยู่ในช่วง **development preview** (ชื่อยังเป็น working name และยังไม่มี public release)
-ติดตั้งผ่าน marketplace ของ repo นี้ได้ แต่การทดสอบ agent workflow แบบเต็มบนทุก host ยังไม่เสร็จ
+Kiyo อยู่ในช่วง **development preview** โดย plugin manifest ระบุ version `1.0.0` แต่ยังไม่มี public release
+ติดตั้งผ่าน marketplace ของ repo นี้ได้ ณ วันที่ 2026-09-30 ทั้ง 8 Skill ผ่านการทดสอบ end-to-end จริง
+(ทั้งกรณีปกติและกรณีผิดพลาด) บน Claude Code และ Codex ส่วน Copilot CLI ยืนยันการติดตั้งและการค้นพบ Skill แล้ว
+แต่การรันกับโมเดลยังต้อง `copilot login` ด้วยบัญชีที่มีสิทธิ์ Copilot
+บน Claude Code ให้เรียก Skill ตรง ๆ หรือรัน Init ก่อน เพราะถ้ายังไม่ได้ Init ปกติ Claude จะตอบเองโดยไม่เลือก Skill ของ Kiyo
+
+- รันการทดสอบจริงซ้ำได้เอง: [live E2E harness](tests/live/e2e/README.md) (จะเปิด agent session ที่มีค่าใช้จ่าย)
 
 - Kiyo เป็นแนวทางให้ agent ทำตาม ส่วนสิทธิ์และการรันคำสั่งยังเป็นของ host
   Kiyo ไม่ได้ทำ sandbox และไม่รับประกันว่า agent จะทำตามทุกครั้ง

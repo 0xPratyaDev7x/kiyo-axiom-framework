@@ -1,6 +1,6 @@
 # Synthetic negative fixtures
 
-Checked: 2026-09-29. These 21 JSON records describe in-memory mutations of the
+Checked: 2026-09-29. These 23 JSON records describe in-memory mutations of the
 reviewed product snapshot; they are not shipped examples or executable attacks.
 No real secrets are used. Each must raise its expected code and include the
 specified diagnostic fragment. A precondition failure or unrelated error FAILs
@@ -18,7 +18,9 @@ the test; it cannot count as successful rejection.
 | [duplicate-skill](duplicate-skill.json) | G01 | DUPLICATE_SKILL | duplicate |
 | [escaping-link](escaping-link.json) | G04 | RESOURCE_ESCAPE | SYNTHETIC-outside |
 | [fake-project-fact](fake-project-fact.json) | G11 | TEMPLATE_PROJECT_FACT | observed_date |
+| [invalid-release-version](invalid-release-version.json) | G05 | MANIFEST_PROPERTIES | Invalid manifest version |
 | [invalid-frontmatter](invalid-frontmatter.json) | G02 | FRONTMATTER_FIELDS | review |
+| [mismatched-release-version](mismatched-release-version.json) | G05 | RELEASE_IDENTITY_PARITY | copilot |
 | [missing-approval-boundary](missing-approval-boundary.json) | G07 | APPROVAL_BOUNDARY_MISSING | KIYO-AUTH-003 |
 | [missing-ast-owner](missing-ast-owner.json) | G09 | AST_FIELDS | AST01 |
 | [missing-procedure](missing-procedure.json) | G03 | REQUIRED_FILE | workflows/review.md |

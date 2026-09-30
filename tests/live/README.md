@@ -8,7 +8,9 @@ lives here; actual observations live under
 Use [reproduction](../../docs/compatibility/live-reproduction-guide.md) for
 disposable prerequisites, command provenance and fixture preparation.
 Use [matrix](../../docs/compatibility/live-test-matrix.md) for actual statuses.
-No test here launches a paid agent automatically. The user selected no-quota
+No test here launches a paid agent automatically. The explicit, paid
+[live E2E harness](e2e/README.md) runs all eight Skills on Claude Code, Codex and
+Copilot CLI and grades each run. The user selected no-quota
 native checks for Prompt 26; later model cases require fresh scoped authority.
 
 Audit evidence records without launching any native host:

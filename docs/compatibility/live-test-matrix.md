@@ -81,3 +81,10 @@ Update needs a real reviewed second candidate and verified replacement method.
 
 [Owner-required remaining tests](live-owner-required-tests.md) gate compatibility/
 release claims. Documentation work can continue with these limits visible.
+
+## 2026-09-30 update
+
+Live model runs now exist. All eight Skills passed the
+[live E2E harness](../../tests/live/e2e/README.md) on Claude Code and Codex; Copilot CLI
+install/discovery passed and model execution is BLOCKED pending `copilot login`
+([details](live-owner-required-tests.md#update-2026-09-30)). The Prompt 26 record above is unchanged.

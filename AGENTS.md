@@ -20,13 +20,19 @@ Checklist before calling a feature done:
 3. **New source files** — register them in `tools/packaging-inputs.json` (sorted, unique)
    so the builders include them.
 4. **Regenerate `dist/`** with the `tools/package_*.py` builders. Never hand-edit `dist/`.
+   The builders refuse to overwrite changed output or inventories, and the default
+   `docs/evidence/*/package-inventory.json` files are historical, so pass a fresh
+   `--inventory` path (and remove the stale `dist/<target>` first) — see
+   `docs/developer/maintainer-guide.md`.
 5. **Marketplace manifests** — keep `.claude-plugin/marketplace.json`,
    `.github/plugin/marketplace.json` and `.agents/plugins/marketplace.json` consistent.
 6. **Docs** — update `README.md` **and** `README.th.md` together, plus the relevant
    `docs/compatibility/*` pages (activation matrix, native invocation map, package docs).
 7. **Tests** — add or update tests under `tests/` for all three platforms
    (`tests/integration/{claude,codex,copilot}`, `tests/packaging`, `tests/static`), then run
-   `python -m pytest tests`.
+   `python -m pytest tests` (this also runs the static-contract and packaging scripts via
+   `tests/test_script_suites.py`). For behavior changes, rerun the paid live harness
+   `tests/live/e2e/run.py` on the hosts you can access.
 
 ## Naming
 
@@ -40,5 +46,7 @@ Checklist before calling a feature done:
 - `docs/evidence/`, `dist/releases/` and `docs/build/` are historical records with recorded
   hashes — do not bulk-rewrite them.
 - Do not commit or push unless explicitly asked.
-- Known pre-existing failure: `tests/audit/test_gap_audit.py::test_08_recorded_product_inputs_preserved`
-  fails on a clean checkout; do not mistake it for a regression.
+- The whole suite is expected to pass. `test_08_recorded_product_inputs_preserved` checks that
+  the P29 record still names real allowlisted inputs, not that product bytes are frozen.
+- Release identity (`version`, `author`) must stay identical across the three platform
+  manifests; the `RELEASE_IDENTITY_PARITY` static contract enforces it.

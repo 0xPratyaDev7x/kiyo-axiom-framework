@@ -1,0 +1,11 @@
+{
+  "id": "invalid-release-version",
+  "synthetic": true,
+  "group": "G05",
+  "operation": "replace",
+  "path": "platforms/claude/.claude-plugin/plugin.json",
+  "match": "\"version\": \"1.0.0\"",
+  "value": "\"version\": \"v1\"",
+  "expected_code": "MANIFEST_PROPERTIES",
+  "expected_detail": "Invalid manifest version"
+}
