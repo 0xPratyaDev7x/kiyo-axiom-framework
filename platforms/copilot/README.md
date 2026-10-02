@@ -50,5 +50,5 @@ with fabricated values. Before catalog/curated publication obtain the real
 publication name, version, owner/publisher, authorized repository/source/ref,
 destination and release-license confirmation. Existing working kiyo-axiom-framework and
 LICENSE do not establish these decisions. See [release gates](../../docs/compatibility/copilot-installation.md#owner-and-publication-gates).
-The artifact is DEVELOPMENT_UNRELEASED; no listing, reservation, signature,
+The artifact is 1.0.0 beta (marketplace install and Skill discovery verified, model runs not yet); no listing, reservation, signature,
 certification or six-target compatibility claim is made.

@@ -10,9 +10,10 @@ records actual destinations and limits; portal steps are DOCUMENTED_ONLY.
 ## Stop gates and exact candidate
 
 Use [Final Acceptance](../build/FINAL-ACCEPTANCE.md) and
-[owner actions](owner-actions.md) first. Current ZIPs are development previews,
-not submission-ready files. Product version is UNSET. A build identifier or a
-host's fallback version does not replace an owner-approved release version.
+[owner actions](owner-actions.md) first. Product version is 1.0.0 (owner-supplied
+2026-09-30, identical in all three manifests). The current ZIPs are not yet
+submission-ready for any official directory (see OA-11 and OA-12). A build
+identifier does not replace the owner-approved release version.
 
 Before any future external action, obtain a real approved name/version/license,
 publisher identity, prepared source/ref, destination, visibility, account authority

@@ -1,4 +1,4 @@
-# Codex IDE overlay — development artifact
+# Codex IDE overlay — experimental (standalone Skills)
 
 The Codex IDE extension (VS Code and compatible editors) does not load native
 plugins; per [Codex skills](https://learn.chatgpt.com/docs/build-skills),

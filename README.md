@@ -73,7 +73,7 @@ Kiyo makes your agent:
 
 What Kiyo does **not** promise: it guides the agent, but permissions and command execution remain the host's job.
 It is not a sandbox, it cannot guarantee that an agent complies, and it does not certify ISO/OWASP compliance.
-It is a development preview ([status](#project-status)).
+Version 1.0.0 is stable for Claude Code and Codex; GitHub Copilot support is beta ([status](#project-status)).
 
 ### Four pillars
 
@@ -254,10 +254,17 @@ Every change ships on **all three platforms** (Claude Code, Codex, Copilot); the
 
 ## Project status
 
-Kiyo is a **development preview**: plugin manifests carry version `1.0.0`, but there is no public release yet.
-Install it from this repository's marketplace. As of 2026-09-30, all eight Skills passed live
-end-to-end runs (happy and failure paths) on Claude Code and Codex; on Copilot CLI, install and
-Skill discovery are verified but model runs still need an entitled `copilot login`.
+**Kiyo 1.0.0 is a stable release for Claude Code and Codex.** Install it from this repository's
+marketplace. GitHub Copilot support is **beta** and the Codex IDE route is **experimental**:
+
+| Host | Status | What is verified |
+| --- | --- | --- |
+| Claude Code (CLI) | ✅ Stable | Live E2E on 2026-09-30 (Claude Code 2.1.220): all eight Skills passed, happy and failure paths. The VS Code panel uses the same package but was not tested separately |
+| Codex CLI | ✅ Stable | Live E2E on 2026-09-30 (codex-cli 0.158.0): all eight Skills passed, including Review through a marketplace-installed plugin |
+| GitHub Copilot (CLI / VS Code) | 🧪 Beta | Marketplace add, install (8 Skills) and Skill discovery verified on Copilot CLI. Model-run behavior is **not yet verified**, and Copilot VS Code was not tested |
+| Codex IDE Extension | 🧪 Experimental | Standalone-Skill route only; discovery is documented, Kiyo use is not tested |
+
+Kiyo is not yet listed in any official plugin directory.
 On Claude Code, invoke a Skill explicitly or run Init first: in our runs, without Init Claude
 usually answered directly instead of selecting a Kiyo Skill. Automatic selection is never guaranteed.
 
@@ -270,8 +277,9 @@ usually answered directly instead of selecting a Kiyo Skill. Automatic selection
 - It does not certify ISO/OWASP compliance or any provider's privacy terms.
 - Per-host test results: [compatibility matrix](docs/compatibility/live-test-matrix.md)
   and [Final Acceptance Report](docs/build/FINAL-ACCEPTANCE.md). Both are historical snapshots
-  from 2026-09-29, older than the live E2E results above, so they still show product version
-  `UNSET` and live Skill invocation as `NOT_TESTED`.
+  from 2026-09-29, older than the live E2E results above and the 1.0.0 identity, so they still show
+  product version `UNSET` and live Skill invocation as `NOT_TESTED`.
+- Release history: [CHANGELOG](CHANGELOG.md).
 
 ## License
 

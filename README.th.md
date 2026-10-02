@@ -72,7 +72,7 @@ Kiyo ทำให้ agent ของคุณ:
 
 สิ่งที่ Kiyo **ไม่ได้สัญญา:** Kiyo เป็นแนวทางให้ agent ทำตาม ส่วนสิทธิ์และการรันคำสั่งยังเป็นของ host
 ไม่ใช่ sandbox ไม่รับประกันว่า agent จะทำตามทุกครั้ง และไม่ได้รับรอง ISO/OWASP compliance
-ตอนนี้เป็น development preview ([สถานะ](#สถานะโปรเจกต์))
+เวอร์ชัน 1.0.0 เป็น stable สำหรับ Claude Code และ Codex ส่วนการรองรับ GitHub Copilot ยังเป็น beta ([สถานะ](#สถานะโปรเจกต์))
 
 ### สี่เสาหลัก
 
@@ -252,10 +252,17 @@ Requirement มีสถานะความพร้อมอีกชุด: 
 
 ## สถานะโปรเจกต์
 
-Kiyo อยู่ในช่วง **development preview** โดย plugin manifest ระบุ version `1.0.0` แต่ยังไม่มี public release
-ติดตั้งผ่าน marketplace ของ repo นี้ได้ ณ วันที่ 2026-09-30 ทั้ง 8 Skill ผ่านการทดสอบ end-to-end จริง
-(ทั้งกรณีปกติและกรณีผิดพลาด) บน Claude Code และ Codex ส่วน Copilot CLI ยืนยันการติดตั้งและการค้นพบ Skill แล้ว
-แต่การรันกับโมเดลยังต้อง `copilot login` ด้วยบัญชีที่มีสิทธิ์ Copilot
+**Kiyo 1.0.0 เป็น stable release สำหรับ Claude Code และ Codex** ติดตั้งผ่าน marketplace ของ repo นี้
+ส่วนการรองรับ GitHub Copilot เป็น **beta** และช่องทาง Codex IDE เป็น **experimental**:
+
+| Host | สถานะ | สิ่งที่ยืนยันแล้ว |
+| --- | --- | --- |
+| Claude Code (CLI) | ✅ Stable | Live E2E เมื่อ 2026-09-30 (Claude Code 2.1.220): ทั้ง 8 Skill ผ่าน ทั้งกรณีปกติและกรณีผิดพลาด แผง VS Code ใช้แพ็กเกจเดียวกันแต่ยังไม่ได้ทดสอบแยก |
+| Codex CLI | ✅ Stable | Live E2E เมื่อ 2026-09-30 (codex-cli 0.158.0): ทั้ง 8 Skill ผ่าน รวมถึง Review ผ่าน plugin ที่ติดตั้งจาก marketplace |
+| GitHub Copilot (CLI / VS Code) | 🧪 Beta | ยืนยัน marketplace add, การติดตั้ง (8 Skill) และการค้นพบ Skill บน Copilot CLI แล้ว แต่ **ยังไม่ได้ยืนยันพฤติกรรมเมื่อรันกับโมเดล** และยังไม่ได้ทดสอบ Copilot VS Code |
+| Codex IDE Extension | 🧪 Experimental | ใช้ช่องทาง standalone Skill เท่านั้น มีเอกสารเรื่องการค้นพบแต่ยังไม่ได้ทดสอบการใช้งาน Kiyo |
+
+Kiyo ยังไม่อยู่ใน plugin directory ทางการของเจ้าใด
 บน Claude Code ให้เรียก Skill ตรง ๆ หรือรัน Init ก่อน เพราะจากที่เรารัน ถ้ายังไม่ได้ Init ปกติ Claude จะตอบเองโดยไม่เลือก Skill ของ Kiyo
 และการเลือก Skill อัตโนมัติไม่ได้รับประกัน
 
@@ -267,7 +274,8 @@ Kiyo อยู่ในช่วง **development preview** โดย plugin man
 - ไม่ได้รับรอง ISO/OWASP compliance หรือนโยบาย privacy ของ provider ใด ๆ
 - ผลทดสอบรายละเอียดของแต่ละ host: [compatibility matrix](docs/compatibility/live-test-matrix.md)
   และ [Final Acceptance Report](docs/build/FINAL-ACCEPTANCE.md) ทั้งสองเป็น snapshot ย้อนหลังของ 2026-09-29
-  เก่ากว่าผล live E2E ด้านบน จึงยังแสดง product version เป็น `UNSET` และการเรียก Skill จริงเป็น `NOT_TESTED`
+  เก่ากว่าผล live E2E ด้านบนและการกำหนด identity 1.0.0 จึงยังแสดง product version เป็น `UNSET` และการเรียก Skill จริงเป็น `NOT_TESTED`
+- ประวัติการออกเวอร์ชัน: [CHANGELOG](CHANGELOG.md)
 
 ## License
 
