@@ -1,4 +1,4 @@
-# Claude overlay — development, not published
+# Claude overlay — 1.0.0 (stable, not listed in an official directory)
 
 The native manifest input is [.claude-plugin/plugin.json](.claude-plugin/plugin.json).
 It contains name, version, description and author. The working namespace kiyo-axiom-framework is
@@ -10,7 +10,7 @@ preserved in the generated bundle without deciding a new publication license.
 [Schema and native invocation evidence](../../docs/compatibility/claude-package.md)
 records official sources checked 2026-09-29, actual local observations and limits.
 `claude plugin validate` (including `--strict`) passed without
-warnings on 2026-09-30. Do not describe this development artifact as release-ready.
+warnings on 2026-09-30. Stable for Claude Code CLI per the 2026-09-30 live E2E; it is not listed in Anthropic's official directory.
 
 ## Developer build
 

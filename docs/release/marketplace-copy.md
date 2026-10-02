@@ -1,6 +1,6 @@
 # Marketplace copy — owner review draft
 
-**DRAFT / DEVELOPMENT_UNRELEASED / NOT SUBMITTED.**
+**DRAFT / 1.0.0 (stable: Claude Code, Codex CLI) / NOT SUBMITTED to any directory.**
 Checked **2026-09-29** against real overlay metadata and
 [release decisions](../build/DECISIONS.md). This file is copy for review, not
 an active manifest, catalog entry, public listing or publication authorization.
@@ -16,7 +16,7 @@ an active manifest, catalog entry, public listing or publication authorization.
 | Codex short description | Engineering workflow guidance | Actual interface metadata |
 | Codex category | Productivity | Actual interface metadata, not a universal host field |
 | Codex default prompt | Review the supplied changes without editing files. | Suggestion, not native permission enforcement |
-| Version | UNSET | Obtain real release version/history; ignore native fallback 1.0.0 as identity |
+| Version | 1.0.0, owner-supplied 2026-09-30 and identical in all three manifests | Parity is enforced by the RELEASE_IDENTITY_PARITY static contract; see the [CHANGELOG](../../CHANGELOG.md) |
 | License | Existing root MIT LICENSE | Preserve it; obtain release confirmation under DEC-002 |
 | Publisher, URLs, signature | Not supplied/established | Do not infer identity, remote URL or signing from local paths |
 
@@ -32,11 +32,11 @@ The prepared packages contain static guidance and native metadata. They add no
 Kiyo runtime, hooks, MCP server or consumer generator. Host permissions and
 organization policy remain authoritative within their actual scope.
 
-This is a development preview: Claude CLI metadata discovery and Codex CLI
-disposable installation/cache/removal have bounded evidence. Kiyo agent-workflow
-and automatic activation tests remain unexecuted; other targets have documented
-or unsupported capabilities as shown in the
-[support matrix](../../README.md#support-and-evidence).
+Status: stable for Claude Code and Codex CLI (live E2E, 2026-09-30), beta for
+GitHub Copilot (install and Skill discovery verified, model runs not yet) and
+experimental for the Codex IDE Extension (standalone Skills, not tested). Automatic
+activation is never guaranteed. See the
+[support matrix](../../README.md#project-status).
 
 ## Owner-required before publication
 

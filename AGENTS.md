@@ -38,8 +38,8 @@ Checklist before calling a feature done:
 
 - Product / plugin name: **`kiyo-axiom-framework`** (marketplace name is the same).
   Do not reintroduce `kiyo-codejadee`.
-- The GitHub repo URL and `kiyo-axiom.codejadee.com` docs domain still contain `codejadee`;
-  that is intentional until they are renamed.
+- The GitHub repo is `0xPratyaDev7x/kiyo-axiom-framework`. Only the `kiyo-axiom.codejadee.com`
+  docs domain still contains `codejadee`; that is intentional until it is renamed.
 
 ## Other rules
 

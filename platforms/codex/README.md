@@ -1,4 +1,4 @@
-# Codex overlay — development artifact
+# Codex overlay — 1.0.0 (stable for Codex CLI, not listed in an official directory)
 
 The authored [portable manifest](plugin.json) follows current
 [OpenAI packaging documentation](https://developers.openai.com/plugins/build/plugins),

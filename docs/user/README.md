@@ -9,8 +9,11 @@ a usage protocol, not new successful host runs.
 
 ## Install or load a prepared package
 
-These are DEVELOPMENT_UNRELEASED candidates, with no public listing or approved
-publisher. Obtain the complete prepared payload, not only SKILL.md or platforms/:
+These are version 1.0.0 packages distributed through this repository's marketplace
+and the ZIPs below: stable for Claude Code and Codex CLI, beta for GitHub Copilot,
+experimental for the Codex IDE Extension (see
+[Project status](../../README.md#project-status)). None has an official directory
+listing yet. Obtain the complete prepared payload, not only SKILL.md or platforms/:
 
 | Target | Prepared payload / native route | Evidence boundary |
 | --- | --- | --- |
@@ -63,7 +66,7 @@ administrator; do not broaden permissions or use bypass flags.
 Logical IDs such as kiyo.init identify Kiyo procedures, not universal commands.
 Mode words such as assess or sync are plain intent, not a promised host parser.
 
-| Host | Explicit selection for this development namespace | Status |
+| Host | Explicit selection for the kiyo-axiom-framework namespace | Status |
 | --- | --- | --- |
 | Claude CLI | /kiyo-axiom-framework:init; replace init with the chosen slug | DOCUMENTED_ONLY |
 | Claude VS Code | Same namespaced selector in the Claude panel | DOCUMENTED_ONLY, independent of CLI |
