@@ -44,19 +44,19 @@ This repository is already a custom marketplace. Pick the commands for your host
 
 **Claude Code** (CLI / VS Code)
 ```text
-/plugin marketplace add 0xPratyaDev7x/kiyo-codejadee-framework
+/plugin marketplace add 0xPratyaDev7x/kiyo-axiom-framework
 /plugin install kiyo-axiom-framework@kiyo-axiom-framework
 ```
 
 **Codex (CLI / VS Code)**
 ```text
-codex plugin marketplace add 0xPratyaDev7x/kiyo-codejadee-framework
+codex plugin marketplace add 0xPratyaDev7x/kiyo-axiom-framework
 codex plugin add kiyo-axiom-framework@kiyo-axiom-framework
 ```
 
 **GitHub Copilot** (CLI / VS Code)
 ```text
-copilot plugin marketplace add 0xPratyaDev7x/kiyo-codejadee-framework
+copilot plugin marketplace add 0xPratyaDev7x/kiyo-axiom-framework
 copilot plugin install kiyo-axiom-framework@kiyo-axiom-framework
 ```
 
@@ -84,7 +84,10 @@ Create the proposed local Memory/config; preserve existing instructions.
 ```
 
 By default Kiyo creates Memory in `.kiyo/memory` and config in `.kiyo/policy.md`,
-without touching your source code, tests or dependencies.
+without touching your source code, tests, dependencies or global settings. Init may also
+propose a small managed bootstrap block for your existing `AGENTS.md` / `CLAUDE.md` /
+Copilot instructions; it only writes it within what you approved and never overwrites
+a block you edited by hand.
 
 ### 3. Daily work
 
@@ -133,6 +136,17 @@ The eight slugs are `init`, `requirement`, `implement`, `review`, `test`, `secur
 
 > Don't confuse these with host built-ins such as `/init` or `/review`.
 
+### Governance levels and stack profiles
+
+- **Governance G1–G4** is Kiyo's advisory model for what a task may do: **G1 Observe** (read only),
+  **G2 Assist** (ordinary scoped code/docs/tests changes), **G3 Controlled** (sensitive changes need
+  scoped human approval) and **G4 Restricted** (production, destructive or security-critical actions
+  are not executed by default). These are not native permission settings: the host still decides
+  what the agent can access. Details: [Governance](docs/user/governance.md).
+- **Stack profiles** for **.NET**, **Angular**, **PostgreSQL** and **Python** add conditional
+  checks, but only after Kiyo has inspected your actual versions, config and architecture.
+  Kiyo never assumes or imposes a stack, and it follows the patterns your project already uses.
+
 ### Reading a report
 
 | Label | Meaning |
@@ -169,6 +183,22 @@ Guides in this repository:
 - [Troubleshooting](docs/user/troubleshooting.md)
 - [Nine illustrative walkthroughs](docs/user/walkthroughs.md)
 - [Maintainer guide](docs/developer/maintainer-guide.md)
+
+---
+
+## 🛠️ For contributors
+
+| Path | Role |
+| --- | --- |
+| `src/kiyo/` | Canonical, platform-neutral content: Core, governance, agent-security, workflows, profiles, templates and the eight Skills |
+| `platforms/{claude,codex,codex-ide,copilot}/` | Per-host manifests, activation resources and READMEs |
+| `dist/` | **Generated** distributions and ZIPs. Never hand-edit; rebuild with `tools/package_*.py` |
+| `.claude-plugin/`, `.github/plugin/`, `.agents/plugins/` | Marketplace manifests for Claude Code, Copilot and Codex |
+| `tests/` | Static, packaging, integration, behavioral and live suites |
+
+Every change ships on **all three platforms** (Claude Code, Codex, Copilot); the rules and checklist are in
+[AGENTS.md](AGENTS.md). Before sending a change, run `python -m pytest tests` and read the
+[maintainer guide](docs/developer/maintainer-guide.md) for rebuilding `dist/`.
 
 ---
 

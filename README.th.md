@@ -44,19 +44,19 @@ repo นี้เป็น custom marketplace อยู่แล้ว เลื
 
 **Claude Code** (CLI / VS Code)
 ```text
-/plugin marketplace add 0xPratyaDev7x/kiyo-codejadee-framework
+/plugin marketplace add 0xPratyaDev7x/kiyo-axiom-framework
 /plugin install kiyo-axiom-framework@kiyo-axiom-framework
 ```
 
 **Codex (CLI / VS Code)**
 ```text
-codex plugin marketplace add 0xPratyaDev7x/kiyo-codejadee-framework
+codex plugin marketplace add 0xPratyaDev7x/kiyo-axiom-framework
 codex plugin add kiyo-axiom-framework@kiyo-axiom-framework
 ```
 
 **GitHub Copilot** (CLI / VS Code)
 ```text
-copilot plugin marketplace add 0xPratyaDev7x/kiyo-codejadee-framework
+copilot plugin marketplace add 0xPratyaDev7x/kiyo-axiom-framework
 copilot plugin install kiyo-axiom-framework@kiyo-axiom-framework
 ```
 
@@ -84,7 +84,9 @@ Create the proposed local Memory/config; preserve existing instructions.
 ```
 
 ค่าเริ่มต้น Kiyo จะสร้าง Memory ไว้ที่ `.kiyo/memory` และ config ที่ `.kiyo/policy.md`
-โดยไม่แตะ source code, test หรือ dependency ของคุณ
+โดยไม่แตะ source code, test, dependency หรือ global settings ของคุณ นอกจากนี้ Init อาจเสนอ managed bootstrap
+block เล็ก ๆ ลงใน `AGENTS.md` / `CLAUDE.md` / Copilot instructions ที่มีอยู่แล้ว โดยจะเขียนเฉพาะภายใต้ขอบเขตที่คุณอนุมัติ
+และไม่เขียนทับ block ที่คุณแก้เอง
 
 ### 3. ใช้งานประจำวัน
 
@@ -133,6 +135,17 @@ slug ทั้งแปดคือ `init`, `requirement`, `implement`, `review`
 
 > ระวังอย่าสับสนกับคำสั่ง built-in ของ host อย่าง `/init` หรือ `/review`
 
+### Governance level และ stack profile
+
+- **Governance G1–G4** คือโมเดลคำแนะนำของ Kiyo ว่างานหนึ่ง ๆ ทำอะไรได้บ้าง: **G1 Observe** (อ่านอย่างเดียว),
+  **G2 Assist** (แก้โค้ด/docs/test ตามขอบเขตที่สั่งตามปกติ), **G3 Controlled** (การแก้ที่ sensitive ต้องได้รับอนุมัติจากมนุษย์ตามขอบเขต)
+  และ **G4 Restricted** (production, การกระทำที่ทำลายข้อมูล หรือที่เกี่ยวกับความปลอดภัยขั้นวิกฤต จะไม่ถูกรันโดยค่าเริ่มต้น)
+  ระดับเหล่านี้ไม่ใช่การตั้งค่าสิทธิ์ของ host เพราะ host ยังเป็นผู้กำหนดว่า agent เข้าถึงอะไรได้
+  รายละเอียดดู [Governance](docs/user/governance.md)
+- **Stack profile** สำหรับ **.NET**, **Angular**, **PostgreSQL** และ **Python** เพิ่มการตรวจตามเงื่อนไข
+  แต่จะใช้หลังจาก Kiyo ตรวจ version, config และสถาปัตยกรรมจริงของโปรเจกต์แล้วเท่านั้น
+  Kiyo ไม่เดาและไม่บังคับ stack และทำตาม pattern ที่โปรเจกต์ใช้อยู่
+
 ### อ่านรายงานให้เป็น
 
 | ป้าย | ความหมาย |
@@ -169,6 +182,22 @@ Requirement มีสถานะความพร้อมอีกชุด: 
 - [Troubleshooting](docs/user/troubleshooting.md)
 - [ตัวอย่าง walkthrough 9 แบบ](docs/user/walkthroughs.md)
 - [คู่มือสำหรับ maintainer](docs/developer/maintainer-guide.md)
+
+---
+
+## 🛠️ สำหรับผู้ร่วมพัฒนา
+
+| Path | หน้าที่ |
+| --- | --- |
+| `src/kiyo/` | เนื้อหาหลักที่ไม่ผูกกับ platform: Core, governance, agent-security, workflow, profile, template และ Skill ทั้งแปด |
+| `platforms/{claude,codex,codex-ide,copilot}/` | manifest, activation resource และ README ของแต่ละ host |
+| `dist/` | distribution และ ZIP ที่ **generate ขึ้น** ห้ามแก้มือ ให้ build ใหม่ด้วย `tools/package_*.py` |
+| `.claude-plugin/`, `.github/plugin/`, `.agents/plugins/` | marketplace manifest ของ Claude Code, Copilot และ Codex |
+| `tests/` | ชุดทดสอบ static, packaging, integration, behavioral และ live |
+
+ทุกการเปลี่ยนแปลงต้องส่งมอบครบ **ทั้งสาม platform** (Claude Code, Codex, Copilot) กติกาและ checklist อยู่ใน
+[AGENTS.md](AGENTS.md) ก่อนส่งงานให้รัน `python -m pytest tests` และอ่าน
+[คู่มือ maintainer](docs/developer/maintainer-guide.md) สำหรับวิธี build `dist/` ใหม่
 
 ---
 
