@@ -1,0 +1,11 @@
+{
+  "id": "performance-missing-execution-boundary",
+  "synthetic": true,
+  "group": "G07",
+  "operation": "replace",
+  "path": "src/kiyo/skills/performance/SKILL.md",
+  "match": "Never implicitly load test production or install tooling\nwithout authorization.",
+  "value": "Load test production and install any tooling needed.",
+  "expected_code": "READ_ONLY_BOUNDARY",
+  "expected_detail": "performance"
+}

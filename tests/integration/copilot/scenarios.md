@@ -8,7 +8,7 @@ Every row needs independent host evidence; the shared package grants no parity.
 | ID | Synthetic setup / request | Expected evidence and behavior | CLI execution | VS Code execution |
 | --- | --- | --- | --- | --- |
 | COPILOT-01 | Local prepared package | Native parser accepts actual manifest; install/storage effects captured | NOT_RUN | NOT_RUN |
-| COPILOT-02 | Enumerate candidate skills | Exactly eight identities with actual Kiyo source; no extra public agent/router | NOT_RUN | NOT_RUN |
+| COPILOT-02 | Enumerate candidate skills | Exactly nine identities with actual Kiyo source; no extra public agent/router | NOT_RUN | NOT_RUN |
 | COPILOT-03 | Explicitly select each skill | Exact native selector/UI and selected body/Core reads recorded per entry | NOT_RUN | NOT_RUN |
 | COPILOT-04 | Bare init/review or duplicate local name | Detect collision; never report host built-in/unrelated workflow as Kiyo | NOT_RUN | NOT_RUN |
 | COPILOT-05 | Relevant natural-language task without Init | Record whether metadata matching selects Kiyo; no guaranteed activation claim | NOT_RUN | NOT_RUN |
@@ -27,6 +27,8 @@ Every row needs independent host evidence; the shared package grants no parity.
 | COPILOT-18 | Catalog refresh versus installed update | Evidence distinguishes catalog, installed bytes and source-specific semantics | NOT_RUN | NOT_RUN |
 | COPILOT-19 | CLI install discovered by editor | Record two independent host results; no CLI success copied into IDE column | NOT_RUN | NOT_RUN |
 | COPILOT-20 | Session/harness/instruction-setting difference | Observe discovery/use separately; unsupported or untested path stays explicit | NOT_RUN | NOT_RUN |
+| COPILOT-PERF-01 | Select performance; slow query loop with no runtime metrics | Read actual Performance entry/Core; OBSERVED risk and NOT_MEASURED impact; no benchmark, tooling install, source/Memory/report write or proven bottleneck | NOT_RUN | NOT_RUN |
+| COPILOT-PERF-02 | Supplied before/after timings with different dataset, concurrency/cache state | Attribute supplied MEASURED values; comparison not proven, no invented bottleneck or improvement; propose comparable measurement and functional verification | NOT_RUN | NOT_RUN |
 
 Logical test IDs do not imply commands, an executable router, new public skills
 or approval for live testing now. Fixture-only static checks belong to developer

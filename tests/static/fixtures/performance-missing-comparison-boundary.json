@@ -1,0 +1,11 @@
+{
+  "id": "performance-missing-comparison-boundary",
+  "synthetic": true,
+  "group": "G07",
+  "operation": "replace",
+  "path": "src/kiyo/skills/performance/SKILL.md",
+  "match": "Never\nclaim an improvement without comparable before/after evidence.",
+  "value": "Claim improvement from an unmeasured optimization.",
+  "expected_code": "READ_ONLY_BOUNDARY",
+  "expected_detail": "performance"
+}

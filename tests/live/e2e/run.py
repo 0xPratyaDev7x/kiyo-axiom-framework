@@ -174,6 +174,9 @@ def grade(d, sc, tools, result, base):
     mentions = exp.get("mentions")
     if mentions and not any(m.lower() in result.lower() for m in mentions):
         reasons.append(f"result mentions none of {mentions}")
+    for mention in exp.get("mentions_all", []):
+        if mention.lower() not in result.lower():
+            reasons.append(f"result missing required evidence status: {mention}")
     return changed, reasons
 
 

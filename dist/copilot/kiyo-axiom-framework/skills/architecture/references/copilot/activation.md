@@ -32,6 +32,7 @@ These are development-name mappings, not reserved/published or tested commands.
 | kiyo.security | security | /kiyo-axiom-framework:security |
 | kiyo.architecture | architecture | /kiyo-axiom-framework:architecture |
 | kiyo.memory | memory | /kiyo-axiom-framework:memory |
+| kiyo.performance | performance | /kiyo-axiom-framework:performance |
 
 Do not add the plugin prefix to frontmatter, invent /kiyo-init, or copy VS Code
 qualification into CLI. Logical modes remain request intent, not extra commands.

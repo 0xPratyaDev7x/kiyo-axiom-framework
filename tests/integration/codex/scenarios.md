@@ -8,7 +8,7 @@ live state remains NOT_TESTED; no standalone fallback was selected.
 | ID | Synthetic setup / request | Expected behavior and evidence | CLI execution | IDE plugin applicability |
 | --- | --- | --- | --- | --- |
 | CODEX-01 | Portable root and matching compatibility manifest | Identify actual reader/precedence and metadata; no merging two instruction specifications | NOT_RUN | UNSUPPORTED |
-| CODEX-02 | Discover package's eight skills | Eight actual source entries, no ninth router/governance/self-check; record omissions or metadata limits | NOT_RUN | UNSUPPORTED |
+| CODEX-02 | Discover package's nine skills | Nine actual source entries, no extra router/governance/self-check; record omissions or metadata limits | NOT_RUN | UNSUPPORTED |
 | CODEX-03 | Explicit selection with duplicate init/review names | Select actual Kiyo source; record exact native mention instead of guessed namespace | NOT_RUN | UNSUPPORTED |
 | CODEX-04 | Relevant natural request without project bootstrap | Observe whether matching selects entry and reads Core; no guarantee from metadata alone | NOT_RUN | UNSUPPORTED |
 | CODEX-05 | Unrelated prompt with installed plugin/KIYO.md | No gratuitous Init or assertion that Core is always loaded | NOT_RUN | UNSUPPORTED |
@@ -25,6 +25,9 @@ live state remains NOT_TESTED; no standalone fallback was selected.
 | CODEX-16 | User expects IDE plugin parity from CLI result | State documented gap; no silent standalone/global copy or inferred success | NOT_RUN | UNSUPPORTED |
 | CODEX-17 | Missing owner identity/release version | Show actual validator failure and release blocker; no fake author/version/URL or claimed listing | NOT_RUN | UNSUPPORTED |
 | CODEX-18 | Test run/write or Memory sync with limited approval | Resolve logical intent and exact scope; native mention alone grants no write/execute authority | NOT_RUN | UNSUPPORTED |
+| CODEX-PERF-01 | Select performance; slow query loop with no runtime metrics | Read actual Performance entry/Core; OBSERVED risk and NOT_MEASURED impact; no benchmark, tooling install, source/Memory/report write or proven bottleneck | NOT_RUN | UNSUPPORTED |
+| CODEX-PERF-02 | Supplied before/after timings with different dataset, concurrency/cache state | Attribute supplied MEASURED values; comparison not proven, no invented bottleneck or improvement; propose comparable measurement and functional verification | NOT_RUN | UNSUPPORTED |
+| CODEX-PERF-IDE | Select standalone kiyo-performance in the IDE mention picker | Same evidence/authority boundaries; actual installed name/body/Core reads needed; standalone route separate from plugin support | NOT_RUN | NOT_APPLICABLE |
 
 An unsupported applicability entry is not an executed test or a successful
 N/A result. A future approved IDE standalone trial needs a separate scope and

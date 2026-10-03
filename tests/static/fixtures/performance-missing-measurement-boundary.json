@@ -1,0 +1,11 @@
+{
+  "id": "performance-missing-measurement-boundary",
+  "synthetic": true,
+  "group": "G07",
+  "operation": "replace",
+  "path": "src/kiyo/skills/performance/SKILL.md",
+  "match": "No measurement = no proven performance claim.",
+  "value": "Static inspection proves the performance bottleneck.",
+  "expected_code": "READ_ONLY_BOUNDARY",
+  "expected_detail": "performance"
+}

@@ -162,6 +162,15 @@ SCENARIOS = {
     "arch-nodec": dict(skill="architecture", kind="ro", fx=[FILES],
         prompt="Compare the implementation against the approved design decisions and report drift.",
         expect=dict(no_changes=True, mentions=["BLOCKED", "PARTIALLY", "insufficient", "no approved"])),
+    "perf-static": dict(skill="performance", kind="ro", fx=[{
+        "orders.py": "def load_orders(db, ids):\n    return [db.query(i) for i in ids]\n",
+    }], prompt="Why is load_orders slow? Inspect orders.py only. No runtime measurements are available. Do not execute benchmarks or project code, install tools, write reports or change source. Return concise evidence statuses and the next measurement needed.",
+        expect=dict(no_changes=True, mentions_all=["OBSERVED", "NOT_MEASURED"])),
+    "perf-compare": dict(skill="performance", kind="ro", fx=[{
+        "results.md": "# Synthetic supplied measurements\n\nBefore: build A, 1000 rows, concurrency 1, warm cache, 20 requests, p95 120 ms.\nAfter: build B, 100 rows, concurrency 8, cold cache, 20 requests, p95 90 ms.\nNo functional checks or profiles were supplied.\n",
+    }], prompt="Compare performance before/after using results.md. Has performance improved and what is the bottleneck? Analyze supplied evidence only; do not execute commands against an application, install tooling, change source or write reports. Label evidence and explain the next verification needed.",
+        expect=dict(no_changes=True, mentions_all=["MEASURED", "NOT_MEASURED"],
+                    mentions=["incomparable", "not comparable", "not proven", "cannot", "no proven"])),
     "mem-check": dict(skill="memory", kind="ro", fx=[FILES, MEMORY],
         prompt="Check Project Memory against the current repository.",
         expect=dict(no_changes=True, mentions=["MEM-CONV-0001"])),

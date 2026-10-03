@@ -245,7 +245,7 @@ def main():
             require(all(i.date_time == (1980, 1, 1, 0, 0, 0) and i.compress_type == zipfile.ZIP_STORED
                         and i.external_attr >> 16 == 0o100644 for i in z.infolist()), "ZIP metadata drift")
     passed("PKG-09", {"controls": len(control_ids), "canonical_files": sum(p.startswith("src/kiyo/") for p in inputs),
-                      "templates": len(templates), "public_skills_per_package": 8,
+                      "templates": len(templates), "public_skills_per_package": len(pack.claude.SKILLS),
                       "archive_epoch": "fixed serialization value; not build date"})
     report = {"format": "kiyo-packaging-tests-1", "checked_at_utc": datetime.now(timezone.utc).isoformat(),
               "python": platform.python_version(), "os": platform.platform(),

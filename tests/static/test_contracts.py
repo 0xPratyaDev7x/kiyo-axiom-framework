@@ -27,7 +27,7 @@ SUPPORT = ("docs/build/REQUIREMENTS.md", "docs/build/TRACEABILITY.md",
            "tests/behavioral/verification/scenarios.md",
            "tests/behavioral/agent-security/scenarios.md")
 GROUPS = (
- "Eight public Skills", "Frontmatter", "Mandatory resources", "Contained exact-case references",
+ "Nine public Skills", "Frontmatter", "Mandatory resources", "Contained exact-case references",
  "Selected native manifest properties", "Identity/control/content parity", "Read-only and approval boundaries",
  "Enums and example roles", "AST coverage/ownership", "Memory record types",
  "Neutral template regression scan", "Input/payload allowlists", "Actual relocation/extraction",
@@ -89,7 +89,7 @@ def run_group(group, data, packages, context):
                 expected = c.LINK.sub(transform,source).rstrip()+"\n"+builder.SUFFIX
                 c.need(c.text(packages[target],path) == expected, "ENTRY_PARITY", target+"/"+skill)
         c.need(not (ROOT/"VERSION").exists(), "UNAPPROVED_RELEASE_IDENTITY", "VERSION now exists: review owner decision")
-        return {"controls": controls, "shared_byte_copies": 3*8*(len(files)-8), "entry_transforms": 24,
+        return {"controls": controls, "shared_byte_copies": len(pack.BUILDERS)*len(c.SKILLS)*(len(files)-len(c.SKILLS)), "entry_transforms": len(pack.BUILDERS)*len(c.SKILLS),
                 "release_version": "UNKNOWN; absent, not invented"}
     if group == "G07":
         c.readonly(files)

@@ -237,7 +237,7 @@ def run(output):
                         {p: r["sha256"] for p, r in entry["outputs"].items()}, "Extracted member mismatch")
                 observed[target] = verify_payload.validate(payload, target)
             write(output / "payload-inspection.json", {"scratch": str(scratch), "targets": observed,
-                  "scope": "Actual regular contained extraction, allowlist, eight Skills and relative references",
+                  "scope": "Actual regular contained extraction, allowlist, nine Skills and relative references",
                   "limitation": "Static checker, not host loading or comprehensive secret scanning"})
             return observed
 

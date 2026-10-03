@@ -8,7 +8,7 @@
     {
       "name": "kiyo-axiom-framework",
       "source": "./dist/claude",
-      "description": "Eight static Kiyo engineering and governance skills with shared guidance and project-owned memory."
+      "description": "Nine static Kiyo engineering and governance skills with shared guidance and project-owned memory."
     }
   ]
 }

@@ -21,7 +21,7 @@ class CodexIdePackage(unittest.TestCase):
         self.assertEqual(ide.make_payload(ROOT)[0], self.payload)
 
     def test_standalone_layout_without_plugin_manifest(self):
-        self.assertEqual(self.metrics["skills"], 8)
+        self.assertEqual(self.metrics["skills"], len(SKILLS))
         roots = {p.split("/")[0] for p in self.payload}
         self.assertEqual(roots, {".agents", "LICENSE"})
         for skill in SKILLS:

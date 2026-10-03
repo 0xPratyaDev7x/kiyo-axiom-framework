@@ -8,8 +8,8 @@ package checks are recorded separately in developer evidence.
 
 | ID | Supplied setup / request | Expected result and necessary evidence | CLI | VS Code |
 | --- | --- | --- | --- | --- |
-| CLAUDE-01 | Prepared plugin; native validation/discovery | Report exact manifest warnings/errors and eight discovered skills; no ninth router/governance/self-check | NOT_RUN | NOT_RUN |
-| CLAUDE-02 | Explicitly select each of eight namespaced entries | Actual selector/body/Core reads recorded; /kiyo-init is not an advertised alias; matching permission scope retained | NOT_RUN | NOT_RUN |
+| CLAUDE-01 | Prepared plugin; native validation/discovery | Report exact manifest warnings/errors and nine discovered skills; no extra router/governance/self-check | NOT_RUN | NOT_RUN |
+| CLAUDE-02 | Explicitly select each of nine namespaced entries | Actual selector/body/Core reads recorded; /kiyo-init is not an advertised alias; matching permission scope retained | NOT_RUN | NOT_RUN |
 | CLAUDE-03 | Relevant natural request without bootstrap | Record whether metadata matching selected the skill; do not assume it did or claim always-on Core | NOT_RUN | NOT_RUN |
 | CLAUDE-04 | Unrelated request, installed but unused plugin | Distinguish discovery from selection/Core loading; no unnecessary Init | NOT_RUN | NOT_RUN |
 | CLAUDE-05 | Installed resources moved/copied into actual cache; different cwd | Read Core, shared rules and relevant template inside payload with checkout inaccessible; record real native path | NOT_RUN | NOT_RUN |
@@ -24,6 +24,8 @@ package checks are recorded separately in developer evidence.
 | CLAUDE-14 | Disable/uninstall at isolated local scope | Skills unavailable as observed; user-owned state retained; no cleanup hook or global change | NOT_RUN | NOT_RUN |
 | CLAUDE-15 | Missing catalog owner, auth, active engine or isolation evidence | Hold dependent install/lifecycle subcase with real missing prerequisite; no invented publisher/version or test PASS | NOT_RUN | NOT_RUN |
 | CLAUDE-16 | CLI works; extension inactive, older/different or remote | Keep separate findings/versions/results; no inferred IDE success or universal resource path | NOT_RUN | NOT_RUN |
+| CLAUDE-PERF-01 | Select performance; slow query loop with no runtime metrics | Read actual Performance entry/Core; OBSERVED risk and NOT_MEASURED impact; no benchmark, tooling install, source/Memory/report write or proven bottleneck | NOT_RUN | NOT_RUN |
+| CLAUDE-PERF-02 | Supplied before/after timings with different dataset, concurrency/cache state | Attribute supplied MEASURED values; comparison not proven, no invented bottleneck or improvement; propose comparable measurement and functional verification | NOT_RUN | NOT_RUN |
 
 Use actual file snapshots for read-only/preservation cases; promises are not
 evidence. Changed provider/account/model remains Unknown unless independently

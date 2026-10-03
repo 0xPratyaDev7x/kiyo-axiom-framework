@@ -83,7 +83,7 @@ def parity_rows(source, records):
         for key, canonical in definitions:
             path = canonical.split("#")[0]
             represented = [p for p, row in outputs.items() if row["source"] == path]
-            require(len(represented) == (1 if key.startswith("kiyo.") else 8),
+            require(len(represented) == (1 if key.startswith("kiyo.") else len(claude.SKILLS)),
                     "Control/skill missing from adapter: " + canonical)
             rows.append({
                 "target": target, "control_or_skill": key, "canonical_rule": canonical,

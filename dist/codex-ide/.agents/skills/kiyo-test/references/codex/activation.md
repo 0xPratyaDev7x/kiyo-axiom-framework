@@ -9,7 +9,7 @@ This file is a native overlay, not another Core or a permission setting.
 ## Route and installed location
 
 The Codex IDE extension does not load native plugins; it loads **standalone
-skills only**. This package ships the eight Kiyo entries as standalone skills
+skills only**. This package ships the nine Kiyo entries as standalone skills
 under .agents/skills. Documented discovery covers the repository scope
 ($CWD/.agents/skills, parent folders inside the Git repository, and
 $REPO_ROOT/.agents/skills) and the user scope ($HOME/.agents/skills).
@@ -36,6 +36,7 @@ do not substitute a similarly named unrelated skill. Do not invent /kiyo-init,
 | kiyo.security | kiyo-security | Application, skills, governance or self-check assessment |
 | kiyo.architecture | kiyo-architecture | Analyze observed/intended structure read-only |
 | kiyo.memory | kiyo-memory | Show/check or authorized sync/repair |
+| kiyo.performance | kiyo-performance | Evidence-driven investigation; execution separately scoped |
 
 The entry body names its canonical name (for example init); that is the Kiyo
 identity, while the kiyo- form is the native selector. Mode words describe user

@@ -4,7 +4,7 @@ import posixpath
 import re
 from urllib.parse import unquote
 
-SKILLS = ("init", "requirement", "implement", "review", "test", "security", "architecture", "memory")
+SKILLS = ("init", "requirement", "implement", "review", "test", "security", "architecture", "memory", "performance")
 CHECKS = {"PASS", "FAIL", "NOT_RUN", "NOT_APPLICABLE", "BLOCKED"}
 TASKS = {"DONE", "PARTIALLY COMPLETE", "BLOCKED", "DECISION REQUIRED"}
 RISK = {"LOW", "MEDIUM", "HIGH", "CRITICAL"}
@@ -26,6 +26,7 @@ PROCEDURES = {
  "test": ("workflows/test.md", ("templates/test-plan.md", "templates/reports/test-report.md")),
  "security": ("workflows/security.md", ("templates/reports/security-finding.md", "templates/reports/self-check-report.md")),
  "architecture": ("workflows/architecture.md", ("templates/reports/architecture-observation.md", "templates/reports/architecture-impact-report.md")),
+ "performance": ("workflows/performance.md", ("templates/reports/performance-report.md",)),
  "memory": ("workflows/memory-lifecycle.md", ("templates/reports/memory-diff.md", "templates/reports/memory-sync-report.md", "templates/reports/memory-repair-report.md")),
 }
 MANDATORY = {"KIYO.md", "framework/bootstrap.md", "framework/control-index.md",
@@ -109,8 +110,8 @@ def skill_inventory(files):
     found = entries(files)
     names = [frontmatter(files, p)["name"] for p in found]
     need(len(names) == len(set(names)), "DUPLICATE_SKILL", "duplicate native/canonical name")
-    need({p.split("/")[1] for p in found} == set(SKILLS) and len(found) == 8,
-         "SKILL_INVENTORY", "exactly eight public skill directories")
+    need({p.split("/")[1] for p in found} == set(SKILLS) and len(found) == len(SKILLS),
+         "SKILL_INVENTORY", "exactly nine public skill directories")
     need({p for p in files if p.endswith("/SKILL.md")} == set(found),
          "SKILL_INVENTORY", "unexpected nested skill entry")
 
@@ -234,6 +235,14 @@ def identity(files, packages):
 # Normative clause regression checks, not natural-language permission enforcement.
 # Equivalent rewrites need deliberate review of the assertion and original requirement.
 BOUNDARIES = {
+ "skills/performance/SKILL.md": [
+  "No measurement = no proven performance claim.",
+  "Static inspection can identify risks or observations, never prove a performance bottleneck.",
+  "Do not invent benchmark results, latency, throughput, memory usage or any other metric.",
+  "Benchmark, profiling and load-test commands are **EXECUTE** actions, even when described as diagnostic.",
+  "Never implicitly load test production or install tooling without authorization.",
+  "Finding a bottleneck does not authorize changing production code.",
+  "Never claim an improvement without comparable before/after evidence."],
  "workflows/read-only-flow.md": [
   "No source, test, memory, index, report-file, formatter, settings or approval-record writes are permitted by this flow.",
   "the write is outside this flow and grants no source/memory edit."],
@@ -409,6 +418,7 @@ def substance(files):
       "test":("Select the requested effects","Mode-specific work","Report and complete"),
       "security":("Scope and access","Assessment and evidence"),
       "architecture":("Scope and effects","Analysis and outputs"),
+      "performance":("Scope and authority","Evidence and investigation","Report and complete"),
       "memory":("Select intent and scope","Workflow","Boundaries and reporting")}
     for name,values in headings.items():
         for heading in values:

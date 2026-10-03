@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "kiyo-axiom-framework",
   "version": "1.0.0",
-  "description": "Eight static engineering and governance skills with shared guidance and project-owned memory.",
+  "description": "Nine static engineering and governance skills with shared guidance and project-owned memory.",
   "author": {
     "name": "0xPratyaDev7x"
   }

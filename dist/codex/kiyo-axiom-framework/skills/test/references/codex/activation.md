@@ -24,6 +24,7 @@ $kiyo.init or a Claude-style selector. A package identifier is not a skill comma
 | kiyo.security | security | Application, skills, governance or self-check assessment |
 | kiyo.architecture | architecture | Analyze observed/intended structure read-only |
 | kiyo.memory | memory | Show/check or authorized sync/repair |
+| kiyo.performance | performance | Evidence-driven investigation; execution separately scoped |
 
 Mode words describe user intent, not a guaranteed native command parser.
 The IDE extension's native plugin path is **UNSUPPORTED** in current docs.

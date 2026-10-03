@@ -8,7 +8,7 @@ not a reserved marketplace identity, approved publisher or product release.
 ## Selecting a skill
 
 The [native skill convention](https://code.claude.com/docs/en/skills) is
-/plugin-name:skill-name. With this manifest the eight explicit selectors are:
+/plugin-name:skill-name. With this manifest the nine explicit selectors are:
 
 | Logical skill | Documented selector for this bundle |
 | --- | --- |
@@ -20,6 +20,7 @@ The [native skill convention](https://code.claude.com/docs/en/skills) is
 | kiyo.security | /kiyo-axiom-framework:security |
 | kiyo.architecture | /kiyo-axiom-framework:architecture |
 | kiyo.memory | /kiyo-axiom-framework:memory |
+| kiyo.performance | /kiyo-axiom-framework:performance |
 
 Confirm the actual discovered namespace before invocation. /kiyo-init is not
 an alias supplied by this package. Test/Memory/Security modes are natural-language

@@ -14,8 +14,8 @@ from urllib.parse import unquote
 ROOT = Path(__file__).resolve().parents[1]
 RUN = ROOT / "dist/releases/p30-run-01"
 BASE = "f5a6b3b428eb4e7096e0620a52ee7ccdd2fbace4"
-SKILLS = ("init", "requirement", "implement", "review", "test", "security", "architecture", "memory")
-CASE_PREFIX = dict(zip(SKILLS, ("INIT", "REQ", "IMPL", "REV", "TEST", "SEC", "ARCH", "MEM")))
+SKILLS = ("init", "requirement", "implement", "review", "test", "security", "architecture", "memory", "performance")
+CASE_PREFIX = dict(zip(SKILLS, ("INIT", "REQ", "IMPL", "REV", "TEST", "SEC", "ARCH", "MEM", "PERF")))
 TARGETS = ("claude-cli", "claude-vscode", "codex-cli", "codex-ide", "copilot-cli", "copilot-vscode")
 DOCS = ("docs/build/FINAL-ACCEPTANCE.md", "docs/build/PROGRESS.md",
         "docs/build/HANDOFF.md", "docs/build/OPEN-ISSUES.md",

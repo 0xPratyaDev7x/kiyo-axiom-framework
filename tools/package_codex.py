@@ -85,7 +85,7 @@ def make_payload(root):
     add("LICENSE", "LICENSE")
     src = root / "src/kiyo"
     require(sorted(p.parent.name for p in (src / "skills").glob("*/SKILL.md")) == sorted(SKILLS),
-            "Expected exactly eight canonical entries")
+            "Expected exactly nine canonical entries")
     shared = [src / "KIYO.md"]
     for directory in SHARED:
         folder = src / directory

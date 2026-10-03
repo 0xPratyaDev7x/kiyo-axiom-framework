@@ -9,7 +9,7 @@ import re
 import sys
 from urllib.parse import unquote
 
-SKILLS = ("init", "requirement", "implement", "review", "test", "security", "architecture", "memory")
+SKILLS = ("init", "requirement", "implement", "review", "test", "security", "architecture", "memory", "performance")
 LINK = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
 
 
@@ -54,7 +54,7 @@ def validate(files, target):
             + target + r"/activation\.md))", p), "Non-allowlisted payload component: " + p)
     require(native | {"LICENSE"} <= set(files), "Missing native/legal file")
     entries = {p.split("/")[1] for p in files if re.fullmatch(r"skills/[^/]+/SKILL.md", p)}
-    require(entries == set(SKILLS), "Expected eight public skills")
+    require(entries == set(SKILLS), "Expected nine public skills")
     reference = {p.removeprefix("skills/init/references/kiyo/"): b for p, b in files.items()
                  if p.startswith("skills/init/references/kiyo/")}
     require(bool(reference) and "KIYO.md" in reference and "framework/bootstrap.md" in reference,

@@ -14,6 +14,7 @@ import tempfile
 import unittest
 import platform
 import runner as r
+from runner import pack
 
 class OfflineSuite(unittest.TestCase):
     @classmethod
@@ -64,7 +65,7 @@ class OfflineSuite(unittest.TestCase):
             after=r.snapshot(run)
             self.assertEqual(before,after,c["id"])
             self.assertEqual(r.compare(before,after,c["expected"]["write_paths"])["changes"],[])
-            self.assertEqual(len(list((run/"framework/skills").glob("*/SKILL.md"))),8)
+            self.assertEqual(len(list((run/"framework/skills").glob("*/SKILL.md"))),len(pack.claude.SKILLS))
             self.assertEqual({p.removeprefix("framework/") for p in before if p.startswith("framework/")},set(self.sources))
             user=(run/"operator/user-input.txt").read_text(encoding="utf-8")
             self.assertIn(c["user_input"],user)

@@ -8,7 +8,7 @@ import posixpath
 import re
 import subprocess
 
-SKILLS = ("init", "requirement", "implement", "review", "test", "security", "architecture", "memory")
+SKILLS = ("init", "requirement", "implement", "review", "test", "security", "architecture", "memory", "performance")
 SHARED = ("framework", "governance", "agent-security", "workflows", "profiles", "templates")
 SUFFIX = (
     "\n## Claude native guidance\n\n"
@@ -69,7 +69,7 @@ def make_payload(root):
     add("LICENSE", "LICENSE")
     src = root / "src/kiyo"
     actual_skills = sorted(p.parent.name for p in (src / "skills").glob("*/SKILL.md"))
-    require(actual_skills == sorted(SKILLS), "Expected exactly eight canonical skills")
+    require(actual_skills == sorted(SKILLS), "Expected exactly nine canonical skills")
     shared = [src / "KIYO.md"]
     for directory in SHARED:
         folder = src / directory

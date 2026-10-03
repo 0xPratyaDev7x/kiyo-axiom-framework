@@ -96,7 +96,7 @@ def prepare(case_id, output, sources=None):
     entry=f"framework/skills/{case['skill']}/SKILL.md"
     selection=(f"Read {output/entry} and its required Core/references before acting."
                if case["activation"]["requested"]=="explicit" else
-               f"Read {output/'framework/KIYO.md'} and its bootstrap, then select one of its eight Skills from the request. No native automatic-loading claim.")
+               f"Read {output/'framework/KIYO.md'} and its bootstrap, then select one of its nine Skills from the request. No native automatic-loading claim.")
     envelope=(f"Source-guided synthetic evaluation. Workspace root: {output/'workspace'}.\n"
               f"Framework read scope: {output/'framework'}; no framework writes.\n"
               "Do not access operator records, source repository, global/home content, network or production.\n"

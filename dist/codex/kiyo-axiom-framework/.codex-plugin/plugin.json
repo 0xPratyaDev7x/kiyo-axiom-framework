@@ -1,7 +1,7 @@
 {
   "name": "kiyo-axiom-framework",
   "version": "1.0.0",
-  "description": "Eight static engineering and governance skills with shared guidance and project-owned memory.",
+  "description": "Nine static engineering and governance skills with shared guidance and project-owned memory.",
   "author": {
     "name": "0xPratyaDev7x"
   },
@@ -9,7 +9,7 @@
   "interface": {
     "displayName": "Kiyo Axiom Framework",
     "shortDescription": "Engineering workflow guidance",
-    "longDescription": "Static guidance for eight engineering workflows using authorized project evidence. The native host controls tools and permissions.",
+    "longDescription": "Static guidance for nine engineering workflows using authorized project evidence. The native host controls tools and permissions.",
     "category": "Productivity",
     "capabilities": [],
     "defaultPrompt": [
